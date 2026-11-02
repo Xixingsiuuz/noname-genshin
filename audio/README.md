@@ -676,22 +676,9 @@ SP桑多涅复用 sandrone 原声与未经裁剪的源文件：析构集齐项�
 新增原声单独保留。逐条固定增益 +3.39 dB，响度 −19.82 → −16.45 LUFS，真峰值 −4.89 → −1.53 dBTP；以优菈 −14.25 LUFS 为目标，峰值余量优先，未强行增益至削波。无裁剪、无变速，来源、字节数、成品SHA256及测量记录见 ayato/originals/ayato-sources.json，清单同步更新。语法及原生台词解析测试通过，未进行游戏内听音实测。
 
 
+
 ## 芙宁娜
 
-中文原声来源：https://wiki.biligame.com/ys/芙宁娜语音 。未经裁剪、不变速；原文件、网页快照、来源URL与字节数见 `furina/originals/furina-sources.json`，下载工具为 `tools/fetch_furina_audio.py`。闪耀、欢宴、终谕成功、终谕失败、独泣各两句，阵亡三句，走原生 audio 与 dieAudios 随机池及语音开关。欢宴仅确认发动后由 logSkill 播放；特效挂载、扣血记录和到期清理不播音。
+按用户指定重新配置：闪耀扣血战技一至三，回血战技四至六；使命成功后两池各追加同伴低血一、二；欢宴爆发一至三；终谕成功初次见面0–14.25秒（结束静音13.9607–14.5505秒），失败下雨；独泣倒下一、二；阵亡仅倒下三。原声不变速，完整源录音、条目URL、字节数及裁剪范围见 furina/originals/furina-sources.json。
 
-- fan_shanyao1：元素爆发·其二；闪耀时刻！
-- fan_shanyao2：元素战技·其五；光芒啊。
-- fan_huanyan1：元素爆发·其一；让世界热闹起来吧。
-- fan_huanyan2：元素爆发·其三；欢唱，以我之名！
-- fan_zhongyu_success1：同伴生命值低·其一；见识下我的实力！
-- fan_zhongyu_success2：加入队伍·其一；果然还是离不开我啊。
-- fan_zhongyu_failure1：生命值低·其一；总之先休战…
-- fan_zhongyu_failure2：生命值低·其二；情况不妙呀！
-- fan_duqi1：重受击·其一；干什么啊！
-- fan_duqi2：重受击·其二；别打了！
-- fan_furina：倒下·其一；算是…一种解脱吗？
-- fan_furina_extra1：倒下·其二；我还是没能做到…
-- fan_furina_extra2：倒下·其三；别看我…丢人的样子…
-
-尚未游戏内试听与对局实测。
+复现：python tools/fetch_furina_audio.py --ffmpeg D:/FormatFactory/ffmpeg.exe --trim 0 14.25。尚未游戏内试听；裁剪按句长及静音段核对，需实听确认字音。

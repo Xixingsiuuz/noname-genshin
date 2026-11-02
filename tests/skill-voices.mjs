@@ -93,3 +93,8 @@ assert("fan_shanyao" in skillVoiceGroups, "Furina now has audio");
 console.log(`PASS: native Audio detail text for ${Object.keys(skillVoiceGroups).length} skills across ${roles.length + 1} characters; branch/death subtitles, silent skills, idempotence and unchanged playback (no live UI test).`);
 
 
+
+for (const [skill, count] of Object.entries({fan_shanyao_loss:3,fan_shanyao_heal:3,fan_shanyao_loss_success:5,fan_shanyao_heal_success:5,fan_huanyan:3,fan_zhongyu_success:1,fan_zhongyu_failure:1,fan_duqi:2})) {
+ assert.equal(Audio.skill({skill,args:[]}).fileList.length,count,skill+' actual pool');
+}
+console.log('PASS: Furina native audio pool sizes');

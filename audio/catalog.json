@@ -3717,18 +3717,6 @@
   {
     "role": "furina",
     "path": "audio/furina/die/fan_furina.mp3",
-    "bytes": 94250,
-    "sha256": "2bd6015823d9e5330dc0658ceb06a2c16c84acb46ec845a389f5bb1b6abe1369"
-  },
-  {
-    "role": "furina",
-    "path": "audio/furina/die/fan_furina_extra1.mp3",
-    "bytes": 86513,
-    "sha256": "74f7d85983940aa3cc44ecd9c7b5889592ed4a54b8bfdefaa7e86c45373ba34c"
-  },
-  {
-    "role": "furina",
-    "path": "audio/furina/die/fan_furina_extra2.mp3",
     "bytes": 98328,
     "sha256": "5d4213ca8e12a44ae4900c998b55c11a35bfe590e8af2c17253d0b15273fe350"
   },
@@ -3812,15 +3800,111 @@
   },
   {
     "role": "furina",
+    "path": "audio/furina/originals/下雨的时候….mp3",
+    "bytes": 151904,
+    "sha256": "426772dc83c47173240395dbe088a0eeba2b3343f2e91dc9853c775b5f5e487d"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/倒下·其一.mp3",
+    "bytes": 94250,
+    "sha256": "2bd6015823d9e5330dc0658ceb06a2c16c84acb46ec845a389f5bb1b6abe1369"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/倒下·其三.mp3",
+    "bytes": 98328,
+    "sha256": "5d4213ca8e12a44ae4900c998b55c11a35bfe590e8af2c17253d0b15273fe350"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/倒下·其二.mp3",
+    "bytes": 86513,
+    "sha256": "74f7d85983940aa3cc44ecd9c7b5889592ed4a54b8bfdefaa7e86c45373ba34c"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/元素战技·其一.mp3",
+    "bytes": 43162,
+    "sha256": "427569c973ecd0e60a966cbc4cdca7e2073139ef19c130f2cd2b44c8ae9f384a"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/元素战技·其三.mp3",
+    "bytes": 34963,
+    "sha256": "cd57d2f36be55f5ded1829e77d3b7fa820bb33750e4863bbaae4195da7fc7c01"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/元素战技·其二.mp3",
+    "bytes": 35424,
+    "sha256": "47df74fc6039cfdd7aa1c91aa13a9fae530622a07e47937475f6d904b7e6025d"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/元素战技·其五.mp3",
+    "bytes": 30988,
+    "sha256": "534aec4e4f927aa9e4e5c9ec2b751d1a63d765f55122957e666bac1d88f52b65"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/元素战技·其六.mp3",
+    "bytes": 34687,
+    "sha256": "e892c0f3c1c8ecb703e79a3015169a4be1e3197a35d0991c50db485e5b3e74fd"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/元素战技·其四.mp3",
+    "bytes": 22071,
+    "sha256": "1a43c62aad1f0866032882401f02d4b49c7e53055cca328a2f087c9735731ce8"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/元素爆发·其一.mp3",
+    "bytes": 57371,
+    "sha256": "017af52c90908c6952ca9c806e81d476808067725a28fdbb57557cffe6090b54"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/元素爆发·其三.mp3",
+    "bytes": 67134,
+    "sha256": "c3d6f05a06fe8b4dcc3376902fc0373fa0dae9a5788ae0f0028e339f6069b00d"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/元素爆发·其二.mp3",
+    "bytes": 42254,
+    "sha256": "ed969692940aa8deec4f26b0ce25fb67219ef251af66b642760cb624a9c99cda"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/初次见面….mp3",
+    "bytes": 627244,
+    "sha256": "f7f25dcccb0f313ca0cb5aa7de3e354389dbea00ef984d8fd3dbffcef9e114a7"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/同伴生命值低·其一.mp3",
+    "bytes": 48122,
+    "sha256": "4d1b955c2b98768c6c751ff3d925b37ef6300730609fba0c638c172beaf4e77e"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/同伴生命值低·其二.mp3",
+    "bytes": 36946,
+    "sha256": "a136ff65f24aa861360ebe607df4ec902bab97df3c9f194d10f727969152ff3c"
+  },
+  {
+    "role": "furina",
     "path": "audio/furina/skill/fan_duqi1.mp3",
-    "bytes": 41635,
-    "sha256": "2a2cc3b471c11c929e4a6ec7ddc8385852e32547fc6e6eafea4dd949507a3066"
+    "bytes": 94250,
+    "sha256": "2bd6015823d9e5330dc0658ceb06a2c16c84acb46ec845a389f5bb1b6abe1369"
   },
   {
     "role": "furina",
     "path": "audio/furina/skill/fan_duqi2.mp3",
-    "bytes": 31621,
-    "sha256": "2a070c47f320c9643c9c5cb17b375e65e7bd7cb4af7e634744593188449a94af"
+    "bytes": 86513,
+    "sha256": "74f7d85983940aa3cc44ecd9c7b5889592ed4a54b8bfdefaa7e86c45373ba34c"
   },
   {
     "role": "furina",
@@ -3831,43 +3915,73 @@
   {
     "role": "furina",
     "path": "audio/furina/skill/fan_huanyan2.mp3",
-    "bytes": 67134,
-    "sha256": "c3d6f05a06fe8b4dcc3376902fc0373fa0dae9a5788ae0f0028e339f6069b00d"
-  },
-  {
-    "role": "furina",
-    "path": "audio/furina/skill/fan_shanyao1.mp3",
     "bytes": 42254,
     "sha256": "ed969692940aa8deec4f26b0ce25fb67219ef251af66b642760cb624a9c99cda"
   },
   {
     "role": "furina",
-    "path": "audio/furina/skill/fan_shanyao2.mp3",
-    "bytes": 30988,
-    "sha256": "534aec4e4f927aa9e4e5c9ec2b751d1a63d765f55122957e666bac1d88f52b65"
+    "path": "audio/furina/skill/fan_huanyan3.mp3",
+    "bytes": 67134,
+    "sha256": "c3d6f05a06fe8b4dcc3376902fc0373fa0dae9a5788ae0f0028e339f6069b00d"
   },
   {
     "role": "furina",
-    "path": "audio/furina/skill/fan_zhongyu_failure1.mp3",
-    "bytes": 58800,
-    "sha256": "34d147a1dda932bbfea968bd9bf85571f4f5d7c374192b8483e1d31f6601546a"
-  },
-  {
-    "role": "furina",
-    "path": "audio/furina/skill/fan_zhongyu_failure2.mp3",
-    "bytes": 60297,
-    "sha256": "003735e25f9a0a0082d585fe677ba5ac112eb55444a0f64755ae3c2f6706a830"
-  },
-  {
-    "role": "furina",
-    "path": "audio/furina/skill/fan_zhongyu_success1.mp3",
+    "path": "audio/furina/skill/fan_shanyao_ally1.mp3",
     "bytes": 48122,
     "sha256": "4d1b955c2b98768c6c751ff3d925b37ef6300730609fba0c638c172beaf4e77e"
   },
   {
     "role": "furina",
-    "path": "audio/furina/skill/fan_zhongyu_success2.mp3",
-    "bytes": 51472,
-    "sha256": "880c7e5a40b478c75d445a6014492bdfd3d330e46e0bf30db2bc1ec337d4e7f0"
+    "path": "audio/furina/skill/fan_shanyao_ally2.mp3",
+    "bytes": 36946,
+    "sha256": "a136ff65f24aa861360ebe607df4ec902bab97df3c9f194d10f727969152ff3c"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/skill/fan_shanyao_heal1.mp3",
+    "bytes": 22071,
+    "sha256": "1a43c62aad1f0866032882401f02d4b49c7e53055cca328a2f087c9735731ce8"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/skill/fan_shanyao_heal2.mp3",
+    "bytes": 30988,
+    "sha256": "534aec4e4f927aa9e4e5c9ec2b751d1a63d765f55122957e666bac1d88f52b65"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/skill/fan_shanyao_heal3.mp3",
+    "bytes": 34687,
+    "sha256": "e892c0f3c1c8ecb703e79a3015169a4be1e3197a35d0991c50db485e5b3e74fd"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/skill/fan_shanyao_loss1.mp3",
+    "bytes": 43162,
+    "sha256": "427569c973ecd0e60a966cbc4cdca7e2073139ef19c130f2cd2b44c8ae9f384a"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/skill/fan_shanyao_loss2.mp3",
+    "bytes": 35424,
+    "sha256": "47df74fc6039cfdd7aa1c91aa13a9fae530622a07e47937475f6d904b7e6025d"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/skill/fan_shanyao_loss3.mp3",
+    "bytes": 34963,
+    "sha256": "cd57d2f36be55f5ded1829e77d3b7fa820bb33750e4863bbaae4195da7fc7c01"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/skill/fan_zhongyu_failure.mp3",
+    "bytes": 151904,
+    "sha256": "426772dc83c47173240395dbe088a0eeba2b3343f2e91dc9853c775b5f5e487d"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/skill/fan_zhongyu_success.mp3",
+    "bytes": 164468,
+    "sha256": "46217e6122ed48e81ed3b86dd15cb9a13d944a05d83a71bedd2b5fc71b90f77c"
   }
 ]

@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-const status={},lib={},get={distance:(a,b)=>(b.seat-a.seat+8)%8},game={};
+const status={},lib={},get={distance:(a,b)=>(b.seat-a.seat+8)%8},game={trySkillAudio(){}};
 const engine=readFileSync(new URL('../../../noname/library/index.js',import.meta.url),'utf8');
 const comparator=engine.match(/seat: (function\(a, b\) \{[\s\S]*?\n    \}),\r?\n    position:/)[1];
 lib.sort={seat:new Function('lib','_status','game','get',`return (${comparator})`)(lib,status,game,get)};
@@ -25,3 +25,12 @@ draws=[];delete status.currentPhase;players[7].alive=false;
 await skills.fan_shanyao.content({}, {name:'damage'},owner);
 assert.deepEqual(draws,[[4,2],[6,2],[1,2],[3,2]]);
 console.log('欢宴顺序检查通过：本地引擎排序、乱序选择、跨座次起点、回合外回退、离场排除及成功后摸牌数');
+
+const voices=[];game.trySkillAudio=(id)=>voices.push(id);
+delete owner.storage.fan_zhongyu_state;
+for(const name of ['loseHp','damage','recover']) await skills.fan_shanyao.content({}, {name},owner);
+owner.storage.fan_zhongyu_state='success';
+for(const name of ['loseHp','damage','recover']) await skills.fan_shanyao.content({}, {name},owner);
+assert.deepEqual(voices,['fan_shanyao_loss','fan_shanyao_loss','fan_shanyao_heal','fan_shanyao_loss_success','fan_shanyao_loss_success','fan_shanyao_heal_success']);
+assert.equal(skills.fan_shanyao.audio,false);
+console.log('PASS: Furina loss/damage/heal audio routing before and after success');

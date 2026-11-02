@@ -8,8 +8,13 @@ function clearHuanyanEffects(player) {
 }
 
 export default {
+  fan_shanyao_loss: { audio: "ext:原神/audio/furina/skill:3" },
+  fan_shanyao_loss_success: { audio: ["ext:原神/audio/furina/skill/fan_shanyao_loss1.mp3","ext:原神/audio/furina/skill/fan_shanyao_loss2.mp3","ext:原神/audio/furina/skill/fan_shanyao_loss3.mp3","ext:原神/audio/furina/skill/fan_shanyao_ally1.mp3","ext:原神/audio/furina/skill/fan_shanyao_ally2.mp3"] },
+  fan_shanyao_heal: { audio: "ext:原神/audio/furina/skill:3" },
+  fan_shanyao_heal_success: { audio: ["ext:原神/audio/furina/skill/fan_shanyao_heal1.mp3","ext:原神/audio/furina/skill/fan_shanyao_heal2.mp3","ext:原神/audio/furina/skill/fan_shanyao_heal3.mp3","ext:原神/audio/furina/skill/fan_shanyao_ally1.mp3","ext:原神/audio/furina/skill/fan_shanyao_ally2.mp3"] },
+
   fan_shanyao: {
-    audio: "ext:原神/audio/furina/skill:2",
+    audio: false,
     locked: true,
     forced: true,
     init(player) {
@@ -38,6 +43,8 @@ export default {
       return event.num > 0;
     },
     async content(event, trigger, player) {
+      const voice = "fan_shanyao_" + (trigger.name === "recover" ? "heal" : "loss") + (player.storage.fan_zhongyu_state === "success" ? "_success" : "");
+      game.trySkillAudio(voice, player, true);
       let count = trigger.name === "recover" ? 2 : 1;
       if (player.storage.fan_zhongyu_state === "success") count++;
       await player.draw(count);
@@ -50,7 +57,7 @@ export default {
     },
   },
   fan_huanyan: {
-    audio: "ext:原神/audio/furina/skill:2",
+    audio: "ext:原神/audio/furina/skill:3",
     trigger: { player: "phaseUseBegin" },
     direct: true,
     filter(event, player) {
@@ -140,7 +147,7 @@ export default {
     group: ["fan_zhongyu_success", "fan_zhongyu_failure"],
     subSkill: {
       success: {
-        audio: "ext:原神/audio/furina/skill:2",
+        audio: "ext:原神/audio/furina/skill:true",
         trigger: { player: "phaseZhunbeiBegin" },
         forced: true,
         skillAnimation: true,
@@ -154,7 +161,7 @@ export default {
         },
       },
       failure: {
-        audio: "ext:原神/audio/furina/skill:2",
+        audio: "ext:原神/audio/furina/skill:true",
         trigger: { player: "dying" },
         forced: true,
         filter(event, player) {

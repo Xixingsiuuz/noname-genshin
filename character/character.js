@@ -98,7 +98,7 @@ const characters = {
     "wei",
     4,
     ["fan_shanyao", "fan_huanyan", "fan_zhongyu"],
-    ["ext:原神/image/character/portraits/furina.png", "die:ext:原神/audio/furina/die:true", "die:ext:原神/audio/furina/die/fan_furina_extra1.mp3", "die:ext:原神/audio/furina/die/fan_furina_extra2.mp3"]],
+    ["ext:原神/image/character/portraits/furina.png", "die:ext:原神/audio/furina/die:true"]],
 };
 export const originalPortraits = {};
 for (const [id, definition] of Object.entries(characters)) {

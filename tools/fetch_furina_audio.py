@@ -5,12 +5,12 @@ from fetch_yelan_audio import fetch
 
 ROOT = Path(__file__).resolve().parents[1]
 ENTRIES = {
- 'fan_shanyao1':'元素爆发·其二','fan_shanyao2':'元素战技·其五',
- 'fan_huanyan1':'元素爆发·其一','fan_huanyan2':'元素爆发·其三',
- 'fan_zhongyu_success1':'同伴生命值低·其一','fan_zhongyu_success2':'加入队伍·其一',
- 'fan_zhongyu_failure1':'生命值低·其一','fan_zhongyu_failure2':'生命值低·其二',
- 'fan_duqi1':'重受击·其一','fan_duqi2':'重受击·其二',
- 'fan_furina':'倒下·其一','fan_furina_extra1':'倒下·其二','fan_furina_extra2':'倒下·其三',
+ **{'fan_shanyao_loss'+str(i):'元素战技·其'+n for i,n in enumerate(['一','二','三'],1)},
+ **{'fan_shanyao_heal'+str(i):'元素战技·其'+n for i,n in enumerate(['四','五','六'],1)},
+ **{'fan_huanyan'+str(i):'元素爆发·其'+n for i,n in enumerate(['一','二','三'],1)},
+ 'fan_shanyao_ally1':'同伴生命值低·其一','fan_shanyao_ally2':'同伴生命值低·其二',
+ 'fan_zhongyu_success':'初次见面…','fan_zhongyu_failure':'下雨的时候…',
+ 'fan_duqi1':'倒下·其一','fan_duqi2':'倒下·其二','fan_furina':'倒下·其三',
 }
 
 def main():
@@ -29,13 +29,14 @@ def main():
         start = source.index('>'+label+'<')
         section = html.unescape(source[start:start+3000])
         url = re.search(r'data-src="(https://patchwiki\.biligame\.com/[^"<>]+\.(?:mp3|ogg))"', section).group(1)
-        original = base/'originals'/(name+Path(url).suffix)
+        original = base/'originals'/(label+Path(url).suffix)
         if not original.exists(): original.write_bytes(fetch(url))
         data = original.read_bytes()
         assert len(data)>1000 and not data.lstrip().startswith(b'<')
         output = base/('die' if name.startswith('fan_furina') else 'skill')/(name+'.mp3')
         trim = None
-        if name == 'fan_langhua_start':
+        if name == 'fan_zhongyu_success':
+            if not args.trim: raise ValueError("success requires --trim and --ffmpeg")
             if args.trim:
                 assert args.ffmpeg
                 trim = args.trim
