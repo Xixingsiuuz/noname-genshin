@@ -1,0 +1,285 @@
+{
+  "page": "https://wiki.biligame.com/ys/%E4%B8%83%E4%B8%83%E8%AF%AD%E9%9F%B3",
+  "clips": {
+    "fan_due_gain1": {
+      "label": "元素战技·其一",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b1/VO_ZH_Qiqi_Elemental_Skill_1_01.ogg",
+      "text": "流转不息。",
+      "bytes": 42122,
+      "original": "audio/qiqi/originals/fan_due_gain1.ogg",
+      "original_sha256": "664c8df237eb75917c0034966bdbf7778a4068c6a5b597fc611f661c335b3c29",
+      "output": "audio/qiqi/skill/fan_due_gain1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_due_gain1",
+        "gain_db": 1.24,
+        "before": {
+          "lufs": -15.49,
+          "true_peak_dbtp": -2.96,
+          "mean_dbfs": -15.9,
+          "peak_dbfs": -3.0
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -1.72,
+          "mean_dbfs": -14.7,
+          "peak_dbfs": -1.8
+        }
+      },
+      "sha256": "024493fa25641c1cb5b567ab71e8d82c947eeeb5c7c137e7bea25737c69863af",
+      "output_bytes": 16316
+    },
+    "fan_due_gain2": {
+      "label": "元素战技·其二",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/ca/VO_ZH_Qiqi_Elemental_Skill_1_02.ogg",
+      "text": "生生不绝。",
+      "bytes": 50251,
+      "original": "audio/qiqi/originals/fan_due_gain2.ogg",
+      "original_sha256": "c8bc94a70f6aab8babd6b4d2bf4c506d8a837741365624801e17b13f3cd281ab",
+      "output": "audio/qiqi/skill/fan_due_gain2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_due_gain2",
+        "gain_db": 0.34,
+        "before": {
+          "lufs": -15.91,
+          "true_peak_dbtp": -1.84,
+          "mean_dbfs": -16.3,
+          "peak_dbfs": -1.9
+        },
+        "after": {
+          "lufs": -15.59,
+          "true_peak_dbtp": -1.61,
+          "mean_dbfs": -15.9,
+          "peak_dbfs": -1.6
+        }
+      },
+      "sha256": "bcb4560aa2b2c8758ada26c56e5b3c7712a6730cecae63de0eec8b9df6e95604",
+      "output_bytes": 19676
+    },
+    "fan_due_give1": {
+      "label": "元素战技·其三",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/29/VO_ZH_Qiqi_Elemental_Skill_1_03.ogg",
+      "text": "去。",
+      "bytes": 19280,
+      "original": "audio/qiqi/originals/fan_due_give1.ogg",
+      "original_sha256": "05b8cf84329f1fc42842e96a55b24184159bee14601d3c54b61d092d94acd9b5",
+      "output": "audio/qiqi/skill/fan_due_give1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_due_give1",
+        "gain_db": -0.8,
+        "before": {
+          "lufs": -13.45,
+          "true_peak_dbtp": -1.56,
+          "mean_dbfs": -13.9,
+          "peak_dbfs": -1.6
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -2.35,
+          "mean_dbfs": -14.7,
+          "peak_dbfs": -2.4
+        }
+      },
+      "sha256": "86023ae898d516e42ed97ec175b87dcd1a0a3e2953baabb0e7109c8c660880b3",
+      "output_bytes": 6764
+    },
+    "fan_due_give2": {
+      "label": "元素战技·其四",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1c/VO_ZH_Qiqi_Elemental_Skill_1_04.ogg",
+      "text": "起。",
+      "bytes": 19274,
+      "original": "audio/qiqi/originals/fan_due_give2.ogg",
+      "original_sha256": "df0dde5f9df25a13cccd2d4aebdd03d75dbd0850077ba4087ead4fa3c7b24738",
+      "output": "audio/qiqi/skill/fan_due_give2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_due_give2",
+        "gain_db": 0.78,
+        "before": {
+          "lufs": -15.45,
+          "true_peak_dbtp": -2.28,
+          "mean_dbfs": -15.9,
+          "peak_dbfs": -2.6
+        },
+        "after": {
+          "lufs": -14.55,
+          "true_peak_dbtp": -1.48,
+          "mean_dbfs": -15.1,
+          "peak_dbfs": -1.8
+        }
+      },
+      "sha256": "3f573c499990ed3bff4353e47ea789efd0246e275ed10082b7645172832b6112",
+      "output_bytes": 6548
+    },
+    "fan_huihai_voice1": {
+      "label": "元素爆发·其一",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/VO_ZH_Qiqi_Elemental_Burst_01.ogg",
+      "text": "听诏，宣此诰命。",
+      "bytes": 82511,
+      "original": "audio/qiqi/originals/fan_huihai_voice1.ogg",
+      "original_sha256": "ba22e279c00fa5c1db04383a46e7d00483883c95ecd54f9911e31c741de95da4",
+      "output": "audio/qiqi/skill/fan_huihai_voice1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_huihai_voice1",
+        "gain_db": 0.68,
+        "before": {
+          "lufs": -14.93,
+          "true_peak_dbtp": -3.66,
+          "mean_dbfs": -15.9,
+          "peak_dbfs": -3.7
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -2.87,
+          "mean_dbfs": -15.2,
+          "peak_dbfs": -2.9
+        }
+      },
+      "sha256": "70e0e64cfce4ab5afb351335e82a31f7c28ab943218bb3424af7fcae1329606b",
+      "output_bytes": 32732
+    },
+    "fan_huihai_voice2": {
+      "label": "元素爆发·其二",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/78/VO_ZH_Qiqi_Elemental_Burst_02.ogg",
+      "text": "真名，度厄真君。",
+      "bytes": 81346,
+      "original": "audio/qiqi/originals/fan_huihai_voice2.ogg",
+      "original_sha256": "d61daa727eb1e088a6e1143f6279c5dec4e2c81ad11576760f24121417558dcb",
+      "output": "audio/qiqi/skill/fan_huihai_voice2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_huihai_voice2",
+        "gain_db": 0.09,
+        "before": {
+          "lufs": -14.34,
+          "true_peak_dbtp": -3.52,
+          "mean_dbfs": -15.0,
+          "peak_dbfs": -3.5
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -3.82,
+          "mean_dbfs": -14.9,
+          "peak_dbfs": -3.8
+        }
+      },
+      "sha256": "42f3ad84fbf12ec44f9e7b599f99bc8b9a2f64072a219369c265bddfbe2a0b40",
+      "output_bytes": 31748
+    },
+    "fan_huihai_voice3": {
+      "label": "元素爆发·其三",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f4/VO_ZH_Qiqi_Elemental_Burst_03.ogg",
+      "text": "玉签，仙法开匣。",
+      "bytes": 85001,
+      "original": "audio/qiqi/originals/fan_huihai_voice3.ogg",
+      "original_sha256": "0f2a7713c5d30f4f0dfba44abad71c2032aab8514344a77ca853ea7898ff0185",
+      "output": "audio/qiqi/skill/fan_huihai_voice3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_huihai_voice3",
+        "gain_db": 0.95,
+        "before": {
+          "lufs": -15.2,
+          "true_peak_dbtp": -3.46,
+          "mean_dbfs": -16.1,
+          "peak_dbfs": -3.5
+        },
+        "after": {
+          "lufs": -14.26,
+          "true_peak_dbtp": -2.4,
+          "mean_dbfs": -15.2,
+          "peak_dbfs": -2.4
+        }
+      },
+      "sha256": "48ebc7fe088e16d8ce722bfe369f8526e0b34a1474046e187abbe9b9fb86debe",
+      "output_bytes": 32444
+    },
+    "fan_qiqi1": {
+      "label": "倒下·其一",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4c/VO_ZH_Qiqi_Fallen_01.ogg",
+      "text": "还会…被封印吗…",
+      "bytes": 105822,
+      "original": "audio/qiqi/originals/fan_qiqi1.ogg",
+      "original_sha256": "68c37428a5c666d8b9dd3b63b535dcc0c046009f825a063759977066800ca281",
+      "output": "audio/qiqi/die/fan_qiqi1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_qiqi1",
+        "gain_db": 2.63,
+        "before": {
+          "lufs": -17.27,
+          "true_peak_dbtp": -4.13,
+          "mean_dbfs": -18.8,
+          "peak_dbfs": -4.4
+        },
+        "after": {
+          "lufs": -14.66,
+          "true_peak_dbtp": -1.62,
+          "mean_dbfs": -16.2,
+          "peak_dbfs": -1.7
+        }
+      },
+      "sha256": "5977f14759314057d14c63e539cadb78f95ef988f539e34f9c3a2ddd34950bd0",
+      "output_bytes": 41036
+    },
+    "fan_qiqi2": {
+      "label": "倒下·其二",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/55/VO_ZH_Qiqi_Fallen_02.ogg",
+      "text": "好冷…",
+      "bytes": 37001,
+      "original": "audio/qiqi/originals/fan_qiqi2.ogg",
+      "original_sha256": "2dd28e2df6268b51dc67b8c970c1c3c12a696445707e26fe50be7fb241d4f729",
+      "output": "audio/qiqi/die/fan_qiqi2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_qiqi2",
+        "gain_db": 1.7,
+        "before": {
+          "lufs": -15.95,
+          "true_peak_dbtp": -4.17,
+          "mean_dbfs": -17.3,
+          "peak_dbfs": -4.2
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -2.46,
+          "mean_dbfs": -15.6,
+          "peak_dbfs": -2.5
+        }
+      },
+      "sha256": "e6a085f54743a11079bb0c1858214bed82b82b7af1623b2e786621ea40bf6837",
+      "output_bytes": 13868
+    },
+    "fan_qiqi3": {
+      "label": "倒下·其三",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/41/VO_ZH_Qiqi_Fallen_03.ogg",
+      "text": "不要…",
+      "bytes": 23769,
+      "original": "audio/qiqi/originals/fan_qiqi3.ogg",
+      "original_sha256": "1af39e7b01cfd3aeb406f35a8cf8a6d81c494bb1df1ab2c2963894ff0853d486",
+      "output": "audio/qiqi/die/fan_qiqi3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_qiqi3",
+        "gain_db": 1.71,
+        "before": {
+          "lufs": -15.96,
+          "true_peak_dbtp": -4.41,
+          "mean_dbfs": -17.4,
+          "peak_dbfs": -4.4
+        },
+        "after": {
+          "lufs": -14.26,
+          "true_peak_dbtp": -2.57,
+          "mean_dbfs": -15.7,
+          "peak_dbfs": -2.6
+        }
+      },
+      "sha256": "7e04c773c5b1523cea5cdb50b1eae3829cfff81e0f369c83cb7c5eb8c2ad9a0f",
+      "output_bytes": 8636
+    }
+  }
+}

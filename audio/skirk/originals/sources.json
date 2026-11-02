@@ -1,0 +1,135 @@
+{
+  "page": "https://wiki.biligame.com/ys/丝柯克语音",
+  "clips": {
+    "fan_jianliu_backup1": {
+      "label": "元素战技·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3a/c6i8v7b4rob3o4r1nal35euvkokc9g5.mp3",
+      "text": "溢流。",
+      "bytes": 9089,
+      "sha256": "a73d4bbef45e34169a1b048a23e7ad0e2fea76d756bb82288c817bbe88d1cf20",
+      "original": "audio/skirk/originals/fan_jianliu_backup1.mp3",
+      "output": "audio/skirk/skill/fan_jianliu_backup1.mp3",
+      "trim_seconds": null
+    },
+    "fan_jianliu_backup2": {
+      "label": "元素战技·其四",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4d/ar6lpc4xsiutiisf6lv0ihon9p0dczz.mp3",
+      "text": "破空。",
+      "bytes": 9154,
+      "sha256": "2a0dd2b679c10f8891d1a73e64852701834928887848b63a6ac5d233b252d228",
+      "original": "audio/skirk/originals/fan_jianliu_backup2.mp3",
+      "output": "audio/skirk/skill/fan_jianliu_backup2.mp3",
+      "trim_seconds": null
+    },
+    "fan_jianliu_backup3": {
+      "label": "元素战技·其五",
+      "url": "https://patchwiki.biligame.com/images/ys/3/39/mthx5u87b58mx13lz989807aa9ar08z.mp3",
+      "text": "踏刃。",
+      "bytes": 8185,
+      "sha256": "c5a779c703672f961f02a592986913ac650231032c445edb7730e60524fc15a5",
+      "original": "audio/skirk/originals/fan_jianliu_backup3.mp3",
+      "output": "audio/skirk/skill/fan_jianliu_backup3.mp3",
+      "trim_seconds": null
+    },
+    "fan_guiji1": {
+      "label": "元素爆发·其四",
+      "url": "https://patchwiki.biligame.com/images/ys/3/34/p2a7q66jma03f7ow8l6axnihowi5pe9.mp3",
+      "text": "力量啊…",
+      "bytes": 9777,
+      "sha256": "1910cd9afba3c23c34f215867cf871d24972c721409c42c691ebcaaeb753c602",
+      "original": "audio/skirk/originals/fan_guiji1.mp3",
+      "output": "audio/skirk/skill/fan_guiji1.mp3",
+      "trim_seconds": null
+    },
+    "fan_guiji2": {
+      "label": "元素战技·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/2/25/sgtcwnr8t01f6rqu0k8nuex020jha5p.mp3",
+      "text": "湮散。",
+      "bytes": 8661,
+      "sha256": "00f8634170192a0550cfa8a8ebf2c838a0ce058fc4ecb6950de693ee32a8cb3b",
+      "original": "audio/skirk/originals/fan_guiji2.mp3",
+      "output": "audio/skirk/skill/fan_guiji2.mp3",
+      "trim_seconds": null
+    },
+    "fan_guiji_capture1": {
+      "label": "元素爆发·其五",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2c/6cf38xnkj3xb6iy12p9c5stal6s154v.mp3",
+      "text": "归于我。",
+      "bytes": 10097,
+      "sha256": "430122ee4571274049274accfb3b8890e60157a79abb64bef918365452106782",
+      "original": "audio/skirk/originals/fan_guiji_capture1.mp3",
+      "output": "audio/skirk/skill/fan_guiji_capture1.mp3",
+      "trim_seconds": null
+    },
+    "fan_guiji_capture2": {
+      "label": "元素战技·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3d/r89gnxuncqrbvfj4svi9re9zwot79tm.mp3",
+      "text": "尽没。",
+      "bytes": 8338,
+      "sha256": "5790f53ae88f7a58d1ce5b82a74e9be5224fd072bd227e707e8770e7f146621d",
+      "original": "audio/skirk/originals/fan_guiji_capture2.mp3",
+      "output": "audio/skirk/skill/fan_guiji_capture2.mp3",
+      "trim_seconds": null
+    },
+    "fan_xingmie1": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f3/jlk8e9dsfrbufkzmj1l7wlpdggh8hl9.mp3",
+      "text": "沉于渊海。",
+      "bytes": 15461,
+      "sha256": "6fee288699aa8336bc685f485ca7caea5dd6ec9d89eb9fd075e6f679babc58bf",
+      "original": "audio/skirk/originals/fan_xingmie1.mp3",
+      "output": "audio/skirk/skill/fan_xingmie1.mp3",
+      "trim_seconds": null
+    },
+    "fan_xingmie2": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d6/ahxavaqiquukqr46zvanz85wvfdczxs.mp3",
+      "text": "群星寂灭。",
+      "bytes": 14448,
+      "sha256": "50021fcdd6e7a10b145a8645372ae5a74867ff17e45d99adc9e49d0be5fc553e",
+      "original": "audio/skirk/originals/fan_xingmie2.mp3",
+      "output": "audio/skirk/skill/fan_xingmie2.mp3",
+      "trim_seconds": null
+    },
+    "fan_xingmie3": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6f/pd5crm7nfdr98opxrb3sjysrlj837xt.mp3",
+      "text": "更迭万象。",
+      "bytes": 14597,
+      "sha256": "8f0bfadee68db16c781f086c1e6d3fdc5e4da2ec5d71cb38deb7b931b33f7a14",
+      "original": "audio/skirk/originals/fan_xingmie3.mp3",
+      "output": "audio/skirk/skill/fan_xingmie3.mp3",
+      "trim_seconds": null
+    },
+    "fan_skirk1": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3f/r5mogm1w6wucwdtda31f4i49zac7mv6.mp3",
+      "text": "星海默然，覆灭无声…",
+      "bytes": 37835,
+      "sha256": "97c66bbd631eb65dada682713ce05ae8c4572d5e06969cb5dcfc61a6e3541e0a",
+      "original": "audio/skirk/originals/fan_skirk1.mp3",
+      "output": "audio/skirk/die/fan_skirk1.mp3",
+      "trim_seconds": null
+    },
+    "fan_skirk2": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/d/dd/0g6oxaer2l3ap06p72qxfeldur133sy.mp3",
+      "text": "必须有人…来…",
+      "bytes": 32908,
+      "sha256": "5f590097d0d65d78526ccab3e805a8b045b3351783728358f32100534b36887e",
+      "original": "audio/skirk/originals/fan_skirk2.mp3",
+      "output": "audio/skirk/die/fan_skirk2.mp3",
+      "trim_seconds": null
+    },
+    "fan_skirk3": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/8/80/q2skgubm7bgw4khzlpmkbk2n5oc45kg.mp3",
+      "text": "还不够强…吗？",
+      "bytes": 26750,
+      "sha256": "66cd1f510d264bad93478148e99f1b67240532260c3c50d59e283deb4abc974c",
+      "original": "audio/skirk/originals/fan_skirk3.mp3",
+      "output": "audio/skirk/die/fan_skirk3.mp3",
+      "trim_seconds": null
+    }
+  }
+}

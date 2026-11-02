@@ -1,0 +1,95 @@
+{
+  "page": "https://wiki.biligame.com/ys/莱欧斯利语音",
+  "clips": {
+    "fan_dianyu1": {
+      "label": "元素战技·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/1/1e/hmnkeoce6m3zz37z58oabaizso38g1m.mp3",
+      "text": "别跑啊。",
+      "bytes": 9808,
+      "sha256": "f8c0944b8f7b8f245378c855c734a2c0b2b1b9ae376e34ec8edaec4640b856ba",
+      "original": "audio/wriothesley/originals/fan_dianyu1.mp3",
+      "output": "audio/wriothesley/skill/fan_dianyu1.mp3",
+      "trim_seconds": null
+    },
+    "fan_dianyu2": {
+      "label": "元素战技·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/5/55/9sv48wdlapw30tm4hb1l376t8hx0mmn.mp3",
+      "text": "请留步。",
+      "bytes": 10003,
+      "sha256": "8e00f6a021d916638e634daa33adfb5a19e8a16cfd312bcd245af585ed97368b",
+      "original": "audio/wriothesley/originals/fan_dianyu2.mp3",
+      "output": "audio/wriothesley/skill/fan_dianyu2.mp3",
+      "trim_seconds": null
+    },
+    "fan_dianyu_end_voice1": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a1/rvoezxw7f162qir9nhj1w3ft711s89p.mp3",
+      "text": "一路顺风。",
+      "bytes": 12451,
+      "sha256": "d54f7599f93549a63c865185c47d02db3d36e1b80ba3be8c6d98ef9e40435b18",
+      "original": "audio/wriothesley/originals/fan_dianyu_end_voice1.mp3",
+      "output": "audio/wriothesley/skill/fan_dianyu_end_voice1.mp3",
+      "trim_seconds": null
+    },
+    "fan_dianyu_end_voice2": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/5/52/3d61i76528v6jnuep8704lru9q0pjs9.mp3",
+      "text": "注意防寒。",
+      "bytes": 14256,
+      "sha256": "349a6de986ad530fe3816bd04f46afc7d1d79e09c99f6e48b4c1eb44491dc21a",
+      "original": "audio/wriothesley/originals/fan_dianyu_end_voice2.mp3",
+      "output": "audio/wriothesley/skill/fan_dianyu_end_voice2.mp3",
+      "trim_seconds": null
+    },
+    "fan_dianyu_gain_voice1": {
+      "label": "打开宝箱·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/4/47/pbik9by3daonwqtiec17e2ss6qmwsxo.mp3",
+      "text": "没有锁吗？真方便啊。",
+      "bytes": 30123,
+      "sha256": "c917a8cdc52bb8b895032f9c000f12f73db518a46a62eca55405041cb9b10737",
+      "original": "audio/wriothesley/originals/fan_dianyu_gain_voice1.mp3",
+      "output": "audio/wriothesley/skill/fan_dianyu_gain_voice1.mp3",
+      "trim_seconds": null
+    },
+    "fan_dianyu_gain_voice2": {
+      "label": "打开宝箱·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/6/67/sf7u9zio1y5ijds6kh58gxlutfd23qi.mp3",
+      "text": "无主之物最好归公…所以这里什么都没有，对吧？",
+      "bytes": 45705,
+      "sha256": "6f745f5b018bd2151bb81a055b26397676d35897e4230ae82b4e5d7ee93012c9",
+      "original": "audio/wriothesley/originals/fan_dianyu_gain_voice2.mp3",
+      "output": "audio/wriothesley/skill/fan_dianyu_gain_voice2.mp3",
+      "trim_seconds": null
+    },
+    "fan_wriothesley1": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/9/93/2l1j09zevebfomrbove8rij0e724pur.mp3",
+      "text": "抱歉，没能守住…",
+      "bytes": 24333,
+      "sha256": "2589d3fbd1e74814dbb9971762d2385fbcab256e3ea4cc7144752c7e0336aec7",
+      "original": "audio/wriothesley/originals/fan_wriothesley1.mp3",
+      "output": "audio/wriothesley/die/fan_wriothesley1.mp3",
+      "trim_seconds": null
+    },
+    "fan_wriothesley2": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/7/73/feea1cyblgd1hqhg2s4lqgh3grttvwx.mp3",
+      "text": "孤注一掷的后果…",
+      "bytes": 29403,
+      "sha256": "0629c292bf3db387c473d386ff4e545b0dc4273dc1178bc11ed9e903c5ea489f",
+      "original": "audio/wriothesley/originals/fan_wriothesley2.mp3",
+      "output": "audio/wriothesley/die/fan_wriothesley2.mp3",
+      "trim_seconds": null
+    },
+    "fan_wriothesley3": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a6/7fqhd4lu0whzqjoqs6lv58ztf3kna9h.mp3",
+      "text": "我没有异议。",
+      "bytes": 23533,
+      "sha256": "7b990a9d75250d00e8c3c945ba14454bfa8979b961eecaae77be337bdd569872",
+      "original": "audio/wriothesley/originals/fan_wriothesley3.mp3",
+      "output": "audio/wriothesley/die/fan_wriothesley3.mp3",
+      "trim_seconds": null
+    }
+  }
+}

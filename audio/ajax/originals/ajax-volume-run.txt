@@ -1,0 +1,303 @@
+{
+  "target_lufs": -14.25,
+  "references": [
+    {
+      "path": "audio/eula/skill/fan_langhua_high1.mp3",
+      "lufs": -12.1,
+      "true_peak_dbtp": -1.02,
+      "mean_dbfs": -12.5,
+      "peak_dbfs": -1.1
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_high2.mp3",
+      "lufs": -14.37,
+      "true_peak_dbtp": -1.53,
+      "mean_dbfs": -15.9,
+      "peak_dbfs": -1.6
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_low1.mp3",
+      "lufs": -12.6,
+      "true_peak_dbtp": -1.22,
+      "mean_dbfs": -15.1,
+      "peak_dbfs": -1.6
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_low2.mp3",
+      "lufs": -14.95,
+      "true_peak_dbtp": -1.98,
+      "mean_dbfs": -16.3,
+      "peak_dbfs": -2.0
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_mid1.mp3",
+      "lufs": -13.4,
+      "true_peak_dbtp": -1.64,
+      "mean_dbfs": -14.6,
+      "peak_dbfs": -1.7
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_mid2.mp3",
+      "lufs": -14.14,
+      "true_peak_dbtp": -0.38,
+      "mean_dbfs": -14.8,
+      "peak_dbfs": -0.4
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_start.mp3",
+      "lufs": -18.17,
+      "true_peak_dbtp": -3.32,
+      "mean_dbfs": -19.2,
+      "peak_dbfs": -3.4
+    },
+    {
+      "path": "audio/eula/die/fan_eula.mp3",
+      "lufs": -15.72,
+      "true_peak_dbtp": -0.95,
+      "mean_dbfs": -18.1,
+      "peak_dbfs": -1.1
+    }
+  ],
+  "clips": [
+    {
+      "id": "fan_jingwu_convert_voice",
+      "text": "要上了！",
+      "gain_db": -1.78,
+      "before": {
+        "lufs": -14.25,
+        "true_peak_dbtp": 0.28,
+        "mean_dbfs": -15.1,
+        "peak_dbfs": -0.0
+      },
+      "after": {
+        "lufs": -15.95,
+        "true_peak_dbtp": -1.67,
+        "mean_dbfs": -16.8,
+        "peak_dbfs": -1.8
+      }
+    },
+    {
+      "id": "fan_jingwu_gain_voice",
+      "text": "破绽，稍纵即逝！",
+      "gain_db": -1.02,
+      "before": {
+        "lufs": -13.35,
+        "true_peak_dbtp": -0.48,
+        "mean_dbfs": -13.3,
+        "peak_dbfs": -0.5
+      },
+      "after": {
+        "lufs": -14.37,
+        "true_peak_dbtp": -1.37,
+        "mean_dbfs": -14.3,
+        "peak_dbfs": -1.4
+      }
+    },
+    {
+      "id": "fan_jingwu_damage_voice",
+      "text": "逃得掉吗！",
+      "gain_db": -2.78,
+      "before": {
+        "lufs": -11.47,
+        "true_peak_dbtp": -1.17,
+        "mean_dbfs": -13.0,
+        "peak_dbfs": -1.2
+      },
+      "after": {
+        "lufs": -14.27,
+        "true_peak_dbtp": -3.99,
+        "mean_dbfs": -15.8,
+        "peak_dbfs": -4.0
+      }
+    },
+    {
+      "id": "fan_jingwu_draw_voice",
+      "text": "相当不错！",
+      "gain_db": -1.55,
+      "before": {
+        "lufs": -15.65,
+        "true_peak_dbtp": 0.05,
+        "mean_dbfs": -18.8,
+        "peak_dbfs": -0.0
+      },
+      "after": {
+        "lufs": -17.15,
+        "true_peak_dbtp": -1.42,
+        "mean_dbfs": -20.3,
+        "peak_dbfs": -1.4
+      }
+    },
+    {
+      "id": "fan_kuanglan",
+      "text": "势如狂澜！",
+      "gain_db": -2.45,
+      "before": {
+        "lufs": -11.8,
+        "true_peak_dbtp": -0.17,
+        "mean_dbfs": -12.6,
+        "peak_dbfs": -0.2
+      },
+      "after": {
+        "lufs": -14.3,
+        "true_peak_dbtp": -2.69,
+        "mean_dbfs": -15.0,
+        "peak_dbfs": -2.7
+      }
+    },
+    {
+      "id": "fan_ajax",
+      "text": "怎能这样…得而复失…",
+      "gain_db": -1.54,
+      "before": {
+        "lufs": -12.71,
+        "true_peak_dbtp": -1.56,
+        "mean_dbfs": -12.9,
+        "peak_dbfs": -1.6
+      },
+      "after": {
+        "lufs": -14.24,
+        "true_peak_dbtp": -2.89,
+        "mean_dbfs": -14.4,
+        "peak_dbfs": -2.9
+      }
+    },
+    {
+      "id": "fan_jingwu_convert_voice2",
+      "text": "来吧！",
+      "gain_db": -0.22,
+      "before": {
+        "lufs": -14.65,
+        "true_peak_dbtp": -1.28,
+        "mean_dbfs": -15.3,
+        "peak_dbfs": -1.3
+      },
+      "after": {
+        "lufs": -14.95,
+        "true_peak_dbtp": -1.44,
+        "mean_dbfs": -15.6,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_jingwu_gain_voice2",
+      "text": "真让人摩拳擦掌！",
+      "gain_db": -1.53,
+      "before": {
+        "lufs": -15.45,
+        "true_peak_dbtp": 0.03,
+        "mean_dbfs": -16.1,
+        "peak_dbfs": -0.0
+      },
+      "after": {
+        "lufs": -16.98,
+        "true_peak_dbtp": -1.64,
+        "mean_dbfs": -17.6,
+        "peak_dbfs": -1.7
+      }
+    },
+    {
+      "id": "fan_jingwu_damage_voice2",
+      "text": "忍着点，这可是很痛的。",
+      "gain_db": -1.08,
+      "before": {
+        "lufs": -14.6,
+        "true_peak_dbtp": -0.42,
+        "mean_dbfs": -14.8,
+        "peak_dbfs": -0.4
+      },
+      "after": {
+        "lufs": -15.67,
+        "true_peak_dbtp": -1.62,
+        "mean_dbfs": -15.9,
+        "peak_dbfs": -1.6
+      }
+    },
+    {
+      "id": "fan_jingwu_draw_voice2",
+      "text": "好！再去寻找更多宝藏吧！",
+      "gain_db": -1.62,
+      "before": {
+        "lufs": -16.06,
+        "true_peak_dbtp": 0.12,
+        "mean_dbfs": -17.0,
+        "peak_dbfs": -0.0
+      },
+      "after": {
+        "lufs": -17.68,
+        "true_peak_dbtp": -1.13,
+        "mean_dbfs": -18.6,
+        "peak_dbfs": -1.1
+      }
+    },
+    {
+      "id": "fan_kuanglan2",
+      "text": "睁大眼睛看着吧！",
+      "gain_db": -1.62,
+      "before": {
+        "lufs": -15.95,
+        "true_peak_dbtp": 0.12,
+        "mean_dbfs": -16.9,
+        "peak_dbfs": -0.0
+      },
+      "after": {
+        "lufs": -17.56,
+        "true_peak_dbtp": -1.3,
+        "mean_dbfs": -18.5,
+        "peak_dbfs": -1.3
+      }
+    },
+    {
+      "id": "fan_kuanglan_repay_voice1",
+      "text": "哈！有点意思。",
+      "gain_db": -0.93,
+      "before": {
+        "lufs": -16.41,
+        "true_peak_dbtp": -0.57,
+        "mean_dbfs": -17.6,
+        "peak_dbfs": -0.6
+      },
+      "after": {
+        "lufs": -17.34,
+        "true_peak_dbtp": -1.74,
+        "mean_dbfs": -18.5,
+        "peak_dbfs": -1.7
+      }
+    },
+    {
+      "id": "fan_kuanglan_repay_voice2",
+      "text": "生死边缘而已，我很擅长处理。",
+      "gain_db": -1.52,
+      "before": {
+        "lufs": -15.46,
+        "true_peak_dbtp": 0.02,
+        "mean_dbfs": -15.7,
+        "peak_dbfs": -0.0
+      },
+      "after": {
+        "lufs": -16.95,
+        "true_peak_dbtp": -1.38,
+        "mean_dbfs": -17.2,
+        "peak_dbfs": -1.4
+      }
+    },
+    {
+      "id": "fan_ajax2",
+      "text": "失手了…",
+      "gain_db": -0.48,
+      "before": {
+        "lufs": -13.77,
+        "true_peak_dbtp": -1.44,
+        "mean_dbfs": -17.1,
+        "peak_dbfs": -1.4
+      },
+      "after": {
+        "lufs": -14.21,
+        "true_peak_dbtp": -1.83,
+        "mean_dbfs": -17.5,
+        "peak_dbfs": -1.8
+      }
+    }
+  ],
+  "method": "Per-source static gain only; no trim, speed change or synthesis; encoded true peak <= -1 dBTP.",
+  "limitations": "No manual listening, native UI or live match validation."
+}

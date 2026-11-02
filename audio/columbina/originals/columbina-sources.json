@@ -1,0 +1,61 @@
+{
+  "page": "https://wiki.biligame.com/ys/哥伦比娅语音",
+  "language": "zh-CN",
+  "clips": {
+    "fan_xiangchou1": {
+      "label": "突破的感受·起",
+      "url": "https://patchwiki.biligame.com/images/ys/3/37/qyn1ey51h2zi53zpi83h3118bar51zf.mp3",
+      "bytes": 24274
+    },
+    "fan_xiangchou2": {
+      "label": "突破的感受·承",
+      "url": "https://patchwiki.biligame.com/images/ys/4/45/d3w0nb4f0j9xhs5cnjh1rht3tt0uzlv.mp3",
+      "bytes": 25151
+    },
+    "fan_xiangchou3": {
+      "label": "突破的感受·转",
+      "url": "https://patchwiki.biligame.com/images/ys/9/97/npr27pw6zoc56gfekb18657k0b0i75j.mp3",
+      "bytes": 25960
+    },
+    "fan_sulv1": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/9/91/2n5e274x3tigroa51ly6gmovs4u9hse.mp3",
+      "bytes": 21184
+    },
+    "fan_sulv2": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3c/03n805y3xxhry3z2g3f1jwc6njewuku.mp3",
+      "bytes": 29365
+    },
+    "fan_xiayin_use1": {
+      "label": "打开宝箱·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/1/13/1ji7vk80yku760ylakq1ib0ufhe2v39.mp3",
+      "bytes": 18435
+    },
+    "fan_xiayin_use2": {
+      "label": "打开宝箱·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/9/9b/p0h199t8o9il26b1igoi6rsdvkbrki9.mp3",
+      "bytes": 19787
+    },
+    "fan_zhenyue_reveal": {
+      "label": "元素战技·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/7/72/qaq8qkx8f3mw6u8ijvxoyv71axoqu3t.mp3",
+      "bytes": 11778
+    },
+    "fan_columbina": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/9/9e/1zbte19jt8ayi5k0llwfa8y3op5vhim.mp3",
+      "bytes": 25741
+    },
+    "fan_xiayin_flip1": {
+      "label": "元素战技·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/9/95/l719pra1czg3ohkorv3nvuck3k6awx7.mp3",
+      "bytes": 11027
+    },
+    "fan_xiayin_flip2": {
+      "label": "元素战技·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/2/24/r0c8ig9rpqpkbmikqweo4qr03zuz3vl.mp3",
+      "bytes": 11052
+    }
+  }
+}

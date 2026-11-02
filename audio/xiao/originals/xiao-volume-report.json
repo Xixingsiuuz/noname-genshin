@@ -1,0 +1,186 @@
+{
+  "target_lufs": -14.25,
+  "reference": "Eula playback median",
+  "clips": [
+    {
+      "id": "fan_nuowu_start1",
+      "gain_db": -0.57,
+      "before": {
+        "lufs": -16.5,
+        "true_peak_dbtp": -0.93,
+        "mean_dbfs": -20.0,
+        "peak_dbfs": -1.0,
+        "measurement_padding_seconds": 1
+      },
+      "after": {
+        "lufs": -17.0,
+        "true_peak_dbtp": -1.37,
+        "mean_dbfs": -20.6,
+        "peak_dbfs": -1.4,
+        "measurement_padding_seconds": 1
+      }
+    },
+    {
+      "id": "fan_nuowu_start2",
+      "gain_db": -1.8,
+      "before": {
+        "lufs": -12.45,
+        "true_peak_dbtp": -2.63,
+        "mean_dbfs": -12.6,
+        "peak_dbfs": -2.6
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -4.38,
+        "mean_dbfs": -14.4,
+        "peak_dbfs": -4.4
+      }
+    },
+    {
+      "id": "fan_nuowu_start3",
+      "gain_db": -0.08,
+      "before": {
+        "lufs": -14.39,
+        "true_peak_dbtp": -1.42,
+        "mean_dbfs": -17.2,
+        "peak_dbfs": -1.4,
+        "measurement_padding_seconds": 1
+      },
+      "after": {
+        "lufs": -14.49,
+        "true_peak_dbtp": -1.46,
+        "mean_dbfs": -17.2,
+        "peak_dbfs": -1.5,
+        "measurement_padding_seconds": 1
+      }
+    },
+    {
+      "id": "fan_nuowu_damage1",
+      "gain_db": -1.65,
+      "before": {
+        "lufs": -12.6,
+        "true_peak_dbtp": -1.36,
+        "mean_dbfs": -14.0,
+        "peak_dbfs": -1.4
+      },
+      "after": {
+        "lufs": -14.2,
+        "true_peak_dbtp": -2.83,
+        "mean_dbfs": -15.7,
+        "peak_dbfs": -2.9
+      }
+    },
+    {
+      "id": "fan_nuowu_damage2",
+      "gain_db": -2.42,
+      "before": {
+        "lufs": -11.83,
+        "true_peak_dbtp": -1.74,
+        "mean_dbfs": -11.6,
+        "peak_dbfs": -1.7
+      },
+      "after": {
+        "lufs": -14.24,
+        "true_peak_dbtp": -4.06,
+        "mean_dbfs": -14.0,
+        "peak_dbfs": -4.1
+      }
+    },
+    {
+      "id": "fan_nuowu_damage3",
+      "gain_db": -1.98,
+      "before": {
+        "lufs": -12.27,
+        "true_peak_dbtp": -1.91,
+        "mean_dbfs": -12.2,
+        "peak_dbfs": -1.9
+      },
+      "after": {
+        "lufs": -14.22,
+        "true_peak_dbtp": -3.67,
+        "mean_dbfs": -14.2,
+        "peak_dbfs": -3.7
+      }
+    },
+    {
+      "id": "fan_jiangmo1",
+      "gain_db": 6.13,
+      "before": {
+        "lufs": -24.03,
+        "true_peak_dbtp": -7.63,
+        "mean_dbfs": -25.1,
+        "peak_dbfs": -7.7
+      },
+      "after": {
+        "lufs": -17.94,
+        "true_peak_dbtp": -1.59,
+        "mean_dbfs": -19.0,
+        "peak_dbfs": -1.6
+      }
+    },
+    {
+      "id": "fan_jiangmo2",
+      "gain_db": 5.17,
+      "before": {
+        "lufs": -23.03,
+        "true_peak_dbtp": -6.67,
+        "mean_dbfs": -25.8,
+        "peak_dbfs": -6.7
+      },
+      "after": {
+        "lufs": -17.85,
+        "true_peak_dbtp": -1.88,
+        "mean_dbfs": -20.6,
+        "peak_dbfs": -1.9
+      }
+    },
+    {
+      "id": "fan_xiao1",
+      "gain_db": 2.23,
+      "before": {
+        "lufs": -16.48,
+        "true_peak_dbtp": -4.53,
+        "mean_dbfs": -20.0,
+        "peak_dbfs": -4.5
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -2.19,
+        "mean_dbfs": -17.8,
+        "peak_dbfs": -2.2
+      }
+    },
+    {
+      "id": "fan_xiao2",
+      "gain_db": 2.3,
+      "before": {
+        "lufs": -16.55,
+        "true_peak_dbtp": -4.05,
+        "mean_dbfs": -19.2,
+        "peak_dbfs": -4.1
+      },
+      "after": {
+        "lufs": -14.23,
+        "true_peak_dbtp": -1.52,
+        "mean_dbfs": -16.9,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_xiao3",
+      "gain_db": 0.88,
+      "before": {
+        "lufs": -15.13,
+        "true_peak_dbtp": -3.65,
+        "mean_dbfs": -18.2,
+        "peak_dbfs": -3.7
+      },
+      "after": {
+        "lufs": -14.21,
+        "true_peak_dbtp": -2.15,
+        "mean_dbfs": -17.3,
+        "peak_dbfs": -2.2
+      }
+    }
+  ]
+}

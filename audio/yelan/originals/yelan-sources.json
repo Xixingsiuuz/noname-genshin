@@ -1,0 +1,52 @@
+{
+  "page": "https://wiki.biligame.com/ys/夜兰语音",
+  "language": "zh-CN",
+  "verified_date": "2026-10-25",
+  "clips": {
+    "fan_kuanghuo1": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8c/orxg4hp985omlktomdpsx395r0ljciz.mp3",
+      "bytes": 22796,
+      "original": "audio/yelan/originals/fan_kuanghuo1.mp3",
+      "output": "audio/yelan/skill/fan_kuanghuo1.mp3",
+      "output_bytes": 22796,
+      "trim_seconds": null
+    },
+    "fan_kuanghuo2": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/e/ea/nvbznrhwqsfcqls7bugexo1uw73yeeh.mp3",
+      "bytes": 14156,
+      "original": "audio/yelan/originals/fan_kuanghuo2.mp3",
+      "output": "audio/yelan/skill/fan_kuanghuo2.mp3",
+      "output_bytes": 14156,
+      "trim_seconds": null
+    },
+    "fan_yuantu1": {
+      "label": "元素战技·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/4/43/g6gfn9e4imcqqqu5xyx3ad9alsa0tma.mp3",
+      "bytes": 6380,
+      "original": "audio/yelan/originals/fan_yuantu1.mp3",
+      "output": "audio/yelan/skill/fan_yuantu1.mp3",
+      "output_bytes": 6380,
+      "trim_seconds": null
+    },
+    "fan_yuantu2": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/5/5c/6wnw46xu7g7xvugnkfqkhsixnrdm16i.mp3",
+      "bytes": 21068,
+      "original": "audio/yelan/originals/fan_yuantu2.mp3",
+      "output": "audio/yelan/skill/fan_yuantu2.mp3",
+      "output_bytes": 21068,
+      "trim_seconds": null
+    },
+    "fan_yelan": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c9/hu88w69azo7w0ug13niyncbmuy9b2wi.mp3",
+      "bytes": 29420,
+      "original": "audio/yelan/originals/fan_yelan.mp3",
+      "output": "audio/yelan/die/fan_yelan.mp3",
+      "output_bytes": 29420,
+      "trim_seconds": null
+    }
+  }
+}

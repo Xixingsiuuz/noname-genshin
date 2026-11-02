@@ -1,0 +1,307 @@
+{
+  "target_lufs": -14.25,
+  "references": [
+    {
+      "path": "audio/eula/skill/fan_langhua_high1.mp3",
+      "lufs": -12.1,
+      "true_peak_dbtp": -1.02,
+      "mean_dbfs": -12.5,
+      "peak_dbfs": -1.1
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_high2.mp3",
+      "lufs": -14.37,
+      "true_peak_dbtp": -1.53,
+      "mean_dbfs": -15.9,
+      "peak_dbfs": -1.6
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_low1.mp3",
+      "lufs": -12.6,
+      "true_peak_dbtp": -1.22,
+      "mean_dbfs": -15.1,
+      "peak_dbfs": -1.6
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_low2.mp3",
+      "lufs": -14.95,
+      "true_peak_dbtp": -1.98,
+      "mean_dbfs": -16.3,
+      "peak_dbfs": -2.0
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_mid1.mp3",
+      "lufs": -13.4,
+      "true_peak_dbtp": -1.64,
+      "mean_dbfs": -14.6,
+      "peak_dbfs": -1.7
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_mid2.mp3",
+      "lufs": -14.14,
+      "true_peak_dbtp": -0.38,
+      "mean_dbfs": -14.8,
+      "peak_dbfs": -0.4
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_start.mp3",
+      "lufs": -18.17,
+      "true_peak_dbtp": -3.32,
+      "mean_dbfs": -19.2,
+      "peak_dbfs": -3.4
+    },
+    {
+      "path": "audio/eula/die/fan_eula.mp3",
+      "lufs": -15.72,
+      "true_peak_dbtp": -0.95,
+      "mean_dbfs": -18.1,
+      "peak_dbfs": -1.1
+    }
+  ],
+  "method": "Per-clip static gain only; no trim or speed changes; encoded true peak <= -1 dBTP",
+  "clips": [
+    {
+      "id": "fan_chihun_gain1",
+      "text": "点燃吧。",
+      "gain_db": -1.51,
+      "before": {
+        "lufs": -13.87,
+        "true_peak_dbtp": 0.01,
+        "mean_dbfs": -14.2,
+        "peak_dbfs": 0.0
+      },
+      "after": {
+        "lufs": -15.4,
+        "true_peak_dbtp": -1.3,
+        "mean_dbfs": -15.8,
+        "peak_dbfs": -1.3
+      }
+    },
+    {
+      "id": "fan_chihun_gain2",
+      "text": "烈日随我。",
+      "gain_db": 2.66,
+      "before": {
+        "lufs": -17.43,
+        "true_peak_dbtp": -4.16,
+        "mean_dbfs": -17.3,
+        "peak_dbfs": -4.2
+      },
+      "after": {
+        "lufs": -14.78,
+        "true_peak_dbtp": -1.61,
+        "mean_dbfs": -14.7,
+        "peak_dbfs": -1.7
+      }
+    },
+    {
+      "id": "fan_chihun_gain3",
+      "text": "焚灭不净！",
+      "gain_db": -1.1,
+      "before": {
+        "lufs": -18.07,
+        "true_peak_dbtp": -0.4,
+        "mean_dbfs": -19.3,
+        "peak_dbfs": -0.8
+      },
+      "after": {
+        "lufs": -19.19,
+        "true_peak_dbtp": -1.14,
+        "mean_dbfs": -20.5,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_chihun_overflow1",
+      "text": "还不错，我很喜欢。",
+      "gain_db": -1.44,
+      "before": {
+        "lufs": -18.22,
+        "true_peak_dbtp": -0.06,
+        "mean_dbfs": -18.9,
+        "peak_dbfs": -0.1
+      },
+      "after": {
+        "lufs": -19.66,
+        "true_peak_dbtp": -1.5,
+        "mean_dbfs": -20.3,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_chihun_overflow2",
+      "text": "要加速了。",
+      "gain_db": -2.06,
+      "before": {
+        "lufs": -12.77,
+        "true_peak_dbtp": 0.04,
+        "mean_dbfs": -13.9,
+        "peak_dbfs": 0.0
+      },
+      "after": {
+        "lufs": -14.79,
+        "true_peak_dbtp": -1.57,
+        "mean_dbfs": -16.0,
+        "peak_dbfs": -1.6
+      }
+    },
+    {
+      "id": "fan_chihun_convert1",
+      "text": "当然没问题。",
+      "gain_db": -1.53,
+      "before": {
+        "lufs": -17.59,
+        "true_peak_dbtp": 0.03,
+        "mean_dbfs": -19.6,
+        "peak_dbfs": -0.0
+      },
+      "after": {
+        "lufs": -19.09,
+        "true_peak_dbtp": -1.42,
+        "mean_dbfs": -21.1,
+        "peak_dbfs": -1.4
+      }
+    },
+    {
+      "id": "fan_chihun_convert2",
+      "text": "我随时准备就绪。",
+      "gain_db": -0.46,
+      "before": {
+        "lufs": -17.53,
+        "true_peak_dbtp": -1.04,
+        "mean_dbfs": -18.4,
+        "peak_dbfs": -1.3
+      },
+      "after": {
+        "lufs": -17.98,
+        "true_peak_dbtp": -2.18,
+        "mean_dbfs": -18.9,
+        "peak_dbfs": -2.7
+      }
+    },
+    {
+      "id": "fan_fentian_charge1",
+      "text": "动力全开！",
+      "gain_db": -1.52,
+      "before": {
+        "lufs": -13.76,
+        "true_peak_dbtp": 0.02,
+        "mean_dbfs": -14.1,
+        "peak_dbfs": -0.0
+      },
+      "after": {
+        "lufs": -15.34,
+        "true_peak_dbtp": -1.34,
+        "mean_dbfs": -15.7,
+        "peak_dbfs": -1.3
+      }
+    },
+    {
+      "id": "fan_fentian_charge2",
+      "text": "谁要阻拦？",
+      "gain_db": -1.55,
+      "before": {
+        "lufs": -12.72,
+        "true_peak_dbtp": 0.05,
+        "mean_dbfs": -14.5,
+        "peak_dbfs": 0.0
+      },
+      "after": {
+        "lufs": -14.27,
+        "true_peak_dbtp": -1.42,
+        "mean_dbfs": -16.0,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_fentian_fire1",
+      "text": "恭听太阳的轰鸣！",
+      "gain_db": -3.29,
+      "before": {
+        "lufs": -10.96,
+        "true_peak_dbtp": 0.2,
+        "mean_dbfs": -11.6,
+        "peak_dbfs": 0.0
+      },
+      "after": {
+        "lufs": -14.24,
+        "true_peak_dbtp": -2.82,
+        "mean_dbfs": -14.9,
+        "peak_dbfs": -2.8
+      }
+    },
+    {
+      "id": "fan_fentian_fire2",
+      "text": "无赦天火！",
+      "gain_db": -3.17,
+      "before": {
+        "lufs": -11.08,
+        "true_peak_dbtp": 0.09,
+        "mean_dbfs": -10.9,
+        "peak_dbfs": 0.0
+      },
+      "after": {
+        "lufs": -14.23,
+        "true_peak_dbtp": -2.51,
+        "mean_dbfs": -14.0,
+        "peak_dbfs": -2.5
+      }
+    },
+    {
+      "id": "fan_fentian_fire3",
+      "text": "埋葬于赤焰之下！",
+      "gain_db": -2.7,
+      "before": {
+        "lufs": -12.5,
+        "true_peak_dbtp": 0.1,
+        "mean_dbfs": -13.2,
+        "peak_dbfs": 0.0
+      },
+      "after": {
+        "lufs": -15.19,
+        "true_peak_dbtp": -1.5,
+        "mean_dbfs": -15.9,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_zailin",
+      "text": "也该认真起来了。",
+      "gain_db": -0.22,
+      "before": {
+        "lufs": -16.25,
+        "true_peak_dbtp": -1.28,
+        "mean_dbfs": -17.0,
+        "peak_dbfs": -1.3
+      },
+      "after": {
+        "lufs": -16.47,
+        "true_peak_dbtp": -1.33,
+        "mean_dbfs": -17.2,
+        "peak_dbfs": -1.4
+      }
+    },
+    {
+      "id": "fan_mavuika",
+      "text": "火，不会熄灭…",
+      "gain_db": -3.11,
+      "before": {
+        "lufs": -15.06,
+        "true_peak_dbtp": 1.09,
+        "mean_dbfs": -20.3,
+        "peak_dbfs": 0.0
+      },
+      "after": {
+        "lufs": -18.17,
+        "true_peak_dbtp": -1.44,
+        "mean_dbfs": -23.4,
+        "peak_dbfs": -1.6
+      }
+    }
+  ],
+  "not_verified": [
+    "人工试听",
+    "游戏界面",
+    "真实对局及联机播放"
+  ]
+}

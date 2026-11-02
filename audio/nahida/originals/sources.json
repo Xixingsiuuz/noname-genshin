@@ -1,0 +1,575 @@
+{
+  "page": "https://wiki.biligame.com/ys/纳西妲语音",
+  "clips": [
+    {
+      "id": "fan_huaqiu_start_voice1",
+      "label": "加入队伍·其一",
+      "text": "我等你好久啦。",
+      "url": "https://patchwiki.biligame.com/images/ys/8/85/0k75xa9r4mfvs0rf2w68hkzoziidiq5.mp3",
+      "bytes": 39208,
+      "sha256": "9fdd1ed199121665f25958e3929609144acd9d4fc741059addcfd9027dc144ab",
+      "original": "audio/nahida/originals/fan_huaqiu_start_voice1-023eda5e87.mp3",
+      "output": "audio/nahida/skill/fan_huaqiu_start_voice1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "9fdd1ed199121665f25958e3929609144acd9d4fc741059addcfd9027dc144ab",
+      "output_bytes": 14924,
+      "output_sha256": "08ed2bb31d6a71221e45023fafc07a729ed4f3f052ee28111c221a09e5c886f7",
+      "volume": {
+        "id": "fan_huaqiu_start_voice1",
+        "gain_db": 2.24,
+        "before": {
+          "lufs": -16.49,
+          "true_peak_dbtp": -4.29,
+          "mean_dbfs": -16.6,
+          "peak_dbfs": -4.4
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -2.04,
+          "mean_dbfs": -14.4,
+          "peak_dbfs": -2.1
+        }
+      }
+    },
+    {
+      "id": "fan_huaqiu_start_voice2",
+      "label": "加入队伍·其二",
+      "text": "没去过的地方还有很多呢。",
+      "url": "https://patchwiki.biligame.com/images/ys/8/83/6jpew1fv4xuhngbvvaypf0ymfbpa1t3.mp3",
+      "bytes": 68538,
+      "sha256": "a9173e208e01996fd5a2b2db6a642843394bd56b645a9bf62f39e988b36a61ae",
+      "original": "audio/nahida/originals/fan_huaqiu_start_voice2-151de1e7fa.mp3",
+      "output": "audio/nahida/skill/fan_huaqiu_start_voice2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "a9173e208e01996fd5a2b2db6a642843394bd56b645a9bf62f39e988b36a61ae",
+      "output_bytes": 26636,
+      "output_sha256": "f005fbe7dc8fc1462965e744eb86b2fdbb530a4374c6b5e790d7daf4f63cb374",
+      "volume": {
+        "id": "fan_huaqiu_start_voice2",
+        "gain_db": 2.29,
+        "before": {
+          "lufs": -16.73,
+          "true_peak_dbtp": -3.79,
+          "mean_dbfs": -16.7,
+          "peak_dbfs": -4.0
+        },
+        "after": {
+          "lufs": -14.42,
+          "true_peak_dbtp": -1.72,
+          "mean_dbfs": -14.5,
+          "peak_dbfs": -1.7
+        }
+      }
+    },
+    {
+      "id": "fan_huaqiu_guard_voice1",
+      "label": "闲聊·邀请",
+      "text": "不知道干什么的话，要不要我带你去转转呀？",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2d/cd45sfm1jl8katsi68th5gsh2r2w4vm.mp3",
+      "bytes": 114992,
+      "sha256": "d6a841a5e513e95313dc0a1be63d14d915b1ab1bcabbe29fdc7e0e19bf24edac",
+      "original": "audio/nahida/originals/fan_huaqiu_guard_voice1-00bec10ae3.mp3",
+      "output": "audio/nahida/skill/fan_huaqiu_guard_voice1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "d6a841a5e513e95313dc0a1be63d14d915b1ab1bcabbe29fdc7e0e19bf24edac",
+      "output_bytes": 43172,
+      "output_sha256": "9765dc23290d3800dcc90ef673404510a2574ca98675ab4353bd19422ce79480",
+      "volume": {
+        "id": "fan_huaqiu_guard_voice1",
+        "gain_db": 0.77,
+        "before": {
+          "lufs": -17.58,
+          "true_peak_dbtp": -2.27,
+          "mean_dbfs": -17.9,
+          "peak_dbfs": -2.3
+        },
+        "after": {
+          "lufs": -16.81,
+          "true_peak_dbtp": -1.52,
+          "mean_dbfs": -17.1,
+          "peak_dbfs": -1.6
+        }
+      }
+    },
+    {
+      "id": "fan_huaqiu_guard_voice2",
+      "label": "闲聊·心事",
+      "text": "又有心事吗？我来陪你一起想吧。",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f4/fm2otnsxjo5he9bokl45qgg5zv3o7m8.mp3",
+      "bytes": 122523,
+      "sha256": "9d74c527ff4a9d0ac19bbd98121b21239798cde85f1c17de9c64645ce3cb395e",
+      "original": "audio/nahida/originals/fan_huaqiu_guard_voice2-8ff71ca13a.mp3",
+      "output": "audio/nahida/skill/fan_huaqiu_guard_voice2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "9d74c527ff4a9d0ac19bbd98121b21239798cde85f1c17de9c64645ce3cb395e",
+      "output_bytes": 43772,
+      "output_sha256": "958299e3ccb8d73e8096e8191035688ebadc8eefcbac87f965e5ae2895a7ee4a",
+      "volume": {
+        "id": "fan_huaqiu_guard_voice2",
+        "gain_db": -0.28,
+        "before": {
+          "lufs": -17.65,
+          "true_peak_dbtp": -1.22,
+          "mean_dbfs": -19.7,
+          "peak_dbfs": -1.2
+        },
+        "after": {
+          "lufs": -17.93,
+          "true_peak_dbtp": -1.64,
+          "mean_dbfs": -20.0,
+          "peak_dbfs": -1.6
+        }
+      }
+    },
+    {
+      "id": "fan_huaqiu_end_voice1",
+      "label": "闲聊·感受",
+      "text": "果然要亲眼去看，才能感受到世界的美。",
+      "url": "https://patchwiki.biligame.com/images/ys/b/b8/kp1p8m2nfk52ra5zj3ooqqjlf6purc5.mp3",
+      "bytes": 132104,
+      "sha256": "ba9d4d3d1a70ea54ddbe81624b41a14f8171be9633d3711b3a0e6e0169436cd2",
+      "original": "audio/nahida/originals/fan_huaqiu_end_voice1-f6abe90795.mp3",
+      "output": "audio/nahida/skill/fan_huaqiu_end_voice1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "ba9d4d3d1a70ea54ddbe81624b41a14f8171be9633d3711b3a0e6e0169436cd2",
+      "output_bytes": 52364,
+      "output_sha256": "61a9daaf87bb2d8ab15afd6ea4980934e15d0b63de5d9d1db74a44aa8e8e5d2a",
+      "volume": {
+        "id": "fan_huaqiu_end_voice1",
+        "gain_db": 3.64,
+        "before": {
+          "lufs": -18.13,
+          "true_peak_dbtp": -5.14,
+          "mean_dbfs": -18.4,
+          "peak_dbfs": -5.2
+        },
+        "after": {
+          "lufs": -14.48,
+          "true_peak_dbtp": -1.42,
+          "mean_dbfs": -14.8,
+          "peak_dbfs": -1.4
+        }
+      }
+    },
+    {
+      "id": "fan_wenshou_select_voice1",
+      "label": "元素战技·其一",
+      "text": "记住你了。",
+      "url": "https://patchwiki.biligame.com/images/ys/7/72/7678oawwhywqopmagpk2n13aj9qiyao.mp3",
+      "bytes": 27241,
+      "sha256": "d5cf64918b733b915bd01ce2503aaa14c4e45f33135af1e2d2b6d057c939bc24",
+      "original": "audio/nahida/originals/fan_wenshou_select_voice1-003c244bb2.mp3",
+      "output": "audio/nahida/skill/fan_wenshou_select_voice1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "d5cf64918b733b915bd01ce2503aaa14c4e45f33135af1e2d2b6d057c939bc24",
+      "output_bytes": 9908,
+      "output_sha256": "857591f3920d4f81323604fb64db8805b2fc143b64a843a17dfc5b97a0cfa6eb",
+      "volume": {
+        "id": "fan_wenshou_select_voice1",
+        "gain_db": -1.04,
+        "before": {
+          "lufs": -13.5,
+          "true_peak_dbtp": -0.46,
+          "mean_dbfs": -14.0,
+          "peak_dbfs": -0.5
+        },
+        "after": {
+          "lufs": -14.55,
+          "true_peak_dbtp": -1.58,
+          "mean_dbfs": -15.0,
+          "peak_dbfs": -1.6
+        }
+      }
+    },
+    {
+      "id": "fan_wenshou_select_voice2",
+      "label": "元素战技·其五",
+      "text": "手牵手~",
+      "url": "https://patchwiki.biligame.com/images/ys/3/37/5jdewkjl32opxbzfcxdmcoovfovhuz7.mp3",
+      "bytes": 45254,
+      "sha256": "877cd29cc29bdfa74d4360c02056c8770d78b0666ad56cbb8dd6667a00891665",
+      "original": "audio/nahida/originals/fan_wenshou_select_voice2-6edf0bceb1.mp3",
+      "output": "audio/nahida/skill/fan_wenshou_select_voice2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "877cd29cc29bdfa74d4360c02056c8770d78b0666ad56cbb8dd6667a00891665",
+      "output_bytes": 16988,
+      "output_sha256": "430e3d882923ba345ed8454d1ec09c9fd11d3d8d8c294a18140bbcfd4b6cb60c",
+      "volume": {
+        "id": "fan_wenshou_select_voice2",
+        "gain_db": -0.08,
+        "before": {
+          "lufs": -14.17,
+          "true_peak_dbtp": -3.37,
+          "mean_dbfs": -15.1,
+          "peak_dbfs": -3.4
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -3.42,
+          "mean_dbfs": -15.2,
+          "peak_dbfs": -3.5
+        }
+      }
+    },
+    {
+      "id": "fan_wenshou_bless_voice1",
+      "label": "突破的感受·起",
+      "text": "变聪明啦~",
+      "url": "https://patchwiki.biligame.com/images/ys/9/9e/almrax52aza4v4fafjoj1icq9u2wcws.mp3",
+      "bytes": 30242,
+      "sha256": "0deb179a9b5458e3267081ae6bce22bcea526b70b124fc302c20f1c62ddb4e8f",
+      "original": "audio/nahida/originals/fan_wenshou_bless_voice1-3410bc5600.mp3",
+      "output": "audio/nahida/skill/fan_wenshou_bless_voice1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "0deb179a9b5458e3267081ae6bce22bcea526b70b124fc302c20f1c62ddb4e8f",
+      "output_bytes": 11180,
+      "output_sha256": "ae580c4c9edd2f70bd8bf5bee51e705a0f6ac514e0ddfd1a50dfdd872952f25c",
+      "volume": {
+        "id": "fan_wenshou_bless_voice1",
+        "gain_db": 1.84,
+        "before": {
+          "lufs": -16.09,
+          "true_peak_dbtp": -6.3,
+          "mean_dbfs": -16.6,
+          "peak_dbfs": -6.4
+        },
+        "after": {
+          "lufs": -14.27,
+          "true_peak_dbtp": -4.48,
+          "mean_dbfs": -14.8,
+          "peak_dbfs": -4.5
+        }
+      }
+    },
+    {
+      "id": "fan_wenshou_bless_voice2",
+      "label": "元素战技·其六",
+      "text": "全都看见咯。",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3a/q6lkwgmdp1texq0we26rw60e5kkco9p.mp3",
+      "bytes": 39779,
+      "sha256": "ca6eacc295e4e5daa79f27919db1a9ee88340381dafd2f10df223ae604cd8879",
+      "original": "audio/nahida/originals/fan_wenshou_bless_voice2-57c2340277.mp3",
+      "output": "audio/nahida/skill/fan_wenshou_bless_voice2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "ca6eacc295e4e5daa79f27919db1a9ee88340381dafd2f10df223ae604cd8879",
+      "output_bytes": 14804,
+      "output_sha256": "b489b8dcdaed7cb5a19f6c82b4873d06217dbab986871c5470f06c3e548a9ae7",
+      "volume": {
+        "id": "fan_wenshou_bless_voice2",
+        "gain_db": -1.49,
+        "before": {
+          "lufs": -12.76,
+          "true_peak_dbtp": -0.71,
+          "mean_dbfs": -14.0,
+          "peak_dbfs": -0.8
+        },
+        "after": {
+          "lufs": -14.3,
+          "true_peak_dbtp": -2.35,
+          "mean_dbfs": -15.5,
+          "peak_dbfs": -2.4
+        }
+      }
+    },
+    {
+      "id": "fan_wenshou_punish_voice1",
+      "label": "元素战技·其三",
+      "text": "等下有点痛哦。",
+      "url": "https://patchwiki.biligame.com/images/ys/2/22/bqd0omsev7t8nip4s4z2i4mt9fw434x.mp3",
+      "bytes": 38579,
+      "sha256": "23a46c1ee0be9f127e436561315295066d7322856ea28eb3676ec6ae9a4fe6c2",
+      "original": "audio/nahida/originals/fan_wenshou_punish_voice1-34a3b07e77.mp3",
+      "output": "audio/nahida/skill/fan_wenshou_punish_voice1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "23a46c1ee0be9f127e436561315295066d7322856ea28eb3676ec6ae9a4fe6c2",
+      "output_bytes": 14564,
+      "output_sha256": "44deee78311efc25f6973b94392122ccc400b624eb6e929f8d43e1edbd539502",
+      "volume": {
+        "id": "fan_wenshou_punish_voice1",
+        "gain_db": -1.2,
+        "before": {
+          "lufs": -13.05,
+          "true_peak_dbtp": -1.14,
+          "mean_dbfs": -13.1,
+          "peak_dbfs": -1.1
+        },
+        "after": {
+          "lufs": -14.27,
+          "true_peak_dbtp": -2.45,
+          "mean_dbfs": -14.3,
+          "peak_dbfs": -2.5
+        }
+      }
+    },
+    {
+      "id": "fan_wenshou_punish_voice2",
+      "label": "打开宝箱·其一",
+      "text": "好奇心值得嘉奖哦。",
+      "url": "https://patchwiki.biligame.com/images/ys/5/5b/pva78fedg3w84kd5y8gdqjcmsly7aaj.mp3",
+      "bytes": 55254,
+      "sha256": "c2fb75b05b5fbdf001d18ec441d12ed88c75ce527c682bd0572d69e60258660f",
+      "original": "audio/nahida/originals/fan_wenshou_punish_voice2-a01372e22e.mp3",
+      "output": "audio/nahida/skill/fan_wenshou_punish_voice2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "c2fb75b05b5fbdf001d18ec441d12ed88c75ce527c682bd0572d69e60258660f",
+      "output_bytes": 20756,
+      "output_sha256": "f464bbba21f8f23304ec40c3a3ed3fc5aedd7dbfa8d52d12b9a640d5f1584388",
+      "volume": {
+        "id": "fan_wenshou_punish_voice2",
+        "gain_db": -1.63,
+        "before": {
+          "lufs": -12.79,
+          "true_peak_dbtp": 0.13,
+          "mean_dbfs": -13.3,
+          "peak_dbfs": -0.0
+        },
+        "after": {
+          "lufs": -14.45,
+          "true_peak_dbtp": -1.38,
+          "mean_dbfs": -14.9,
+          "peak_dbfs": -1.4
+        }
+      }
+    },
+    {
+      "id": "fan_wenshou_gain_voice1",
+      "label": "打开宝箱·其二",
+      "text": "是源自谁的馈赠呢？",
+      "url": "https://patchwiki.biligame.com/images/ys/e/ec/52moz5qtnhvct5czo5fquylunujf9lz.mp3",
+      "bytes": 68262,
+      "sha256": "4cfc228b54ed24a0280a2f694616510e2cd621b8ea115b8ad2b75088f9f762df",
+      "original": "audio/nahida/originals/fan_wenshou_gain_voice1-3eaf6e6873.mp3",
+      "output": "audio/nahida/skill/fan_wenshou_gain_voice1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "4cfc228b54ed24a0280a2f694616510e2cd621b8ea115b8ad2b75088f9f762df",
+      "output_bytes": 25844,
+      "output_sha256": "d22cfd6183ff39a284152f8405baaa16fd6f21a34fdc6f2fc2e8da305e43564a",
+      "volume": {
+        "id": "fan_wenshou_gain_voice1",
+        "gain_db": -1.3,
+        "before": {
+          "lufs": -13.62,
+          "true_peak_dbtp": -0.2,
+          "mean_dbfs": -13.8,
+          "peak_dbfs": -0.2
+        },
+        "after": {
+          "lufs": -14.9,
+          "true_peak_dbtp": -1.35,
+          "mean_dbfs": -15.1,
+          "peak_dbfs": -1.4
+        }
+      }
+    },
+    {
+      "id": "fan_wenshou_gain_voice2",
+      "label": "打开宝箱·其三",
+      "text": "有你想要的吗？",
+      "url": "https://patchwiki.biligame.com/images/ys/6/68/71s26zt4q31h0k8wmxph3z8jpbt3jw0.mp3",
+      "bytes": 39200,
+      "sha256": "ea54ce6c6327056f007edcf7db141a28bfef85a2cc06120c87741c15b4828904",
+      "original": "audio/nahida/originals/fan_wenshou_gain_voice2-3be9b6fdcc.mp3",
+      "output": "audio/nahida/skill/fan_wenshou_gain_voice2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "ea54ce6c6327056f007edcf7db141a28bfef85a2cc06120c87741c15b4828904",
+      "output_bytes": 14300,
+      "output_sha256": "b07650eea5a0910b231fe8bb3f70a9026a0754995663c8e2e7835aa754e3c79e",
+      "volume": {
+        "id": "fan_wenshou_gain_voice2",
+        "gain_db": -1.14,
+        "before": {
+          "lufs": -13.11,
+          "true_peak_dbtp": -2.51,
+          "mean_dbfs": -13.1,
+          "peak_dbfs": -2.6
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -3.66,
+          "mean_dbfs": -14.2,
+          "peak_dbfs": -3.7
+        }
+      }
+    },
+    {
+      "id": "fan_huanjing_voice1",
+      "label": "元素爆发·其一",
+      "text": "来我家做客吧~",
+      "url": "https://patchwiki.biligame.com/images/ys/3/32/kgfdhyegf97mpzdc1uuox83wq74nuaz.mp3",
+      "bytes": 44886,
+      "sha256": "4190ad11c6fd01c6d1b9d8fe1c341075e355911b597b06feeb05c408201ff37a",
+      "original": "audio/nahida/originals/fan_huanjing_voice1-782462fddd.mp3",
+      "output": "audio/nahida/skill/fan_huanjing_voice1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "4190ad11c6fd01c6d1b9d8fe1c341075e355911b597b06feeb05c408201ff37a",
+      "output_bytes": 16292,
+      "output_sha256": "d3a2aa15cd0e415d3c53a99801bc01b229aaa6bbced58b8ef70b7e48dc40650d",
+      "volume": {
+        "id": "fan_huanjing_voice1",
+        "gain_db": -1.6,
+        "before": {
+          "lufs": -12.68,
+          "true_peak_dbtp": 0.1,
+          "mean_dbfs": -13.0,
+          "peak_dbfs": -0.0
+        },
+        "after": {
+          "lufs": -14.3,
+          "true_peak_dbtp": -1.51,
+          "mean_dbfs": -14.6,
+          "peak_dbfs": -1.6
+        }
+      }
+    },
+    {
+      "id": "fan_huanjing_voice2",
+      "label": "元素爆发·其三",
+      "text": "此即智慧之殿堂。",
+      "url": "https://patchwiki.biligame.com/images/ys/f/fc/8o9uhfp217edto0vhy3oj08ct2un67n.mp3",
+      "bytes": 85612,
+      "sha256": "8ec5c9ea74855a1f7bc7afd3c41be881c137d4aa433a27fb4b7b9b826c8886f4",
+      "original": "audio/nahida/originals/fan_huanjing_voice2-742f7b9d80.mp3",
+      "output": "audio/nahida/skill/fan_huanjing_voice2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "8ec5c9ea74855a1f7bc7afd3c41be881c137d4aa433a27fb4b7b9b826c8886f4",
+      "output_bytes": 31580,
+      "output_sha256": "21ac47c79c91a07e62e3b9d9a985a5b28c98954dc5f9a3d7016ad8d43fc35909",
+      "volume": {
+        "id": "fan_huanjing_voice2",
+        "gain_db": -0.74,
+        "before": {
+          "lufs": -14.69,
+          "true_peak_dbtp": -0.76,
+          "mean_dbfs": -15.2,
+          "peak_dbfs": -0.8
+        },
+        "after": {
+          "lufs": -15.42,
+          "true_peak_dbtp": -1.56,
+          "mean_dbfs": -15.9,
+          "peak_dbfs": -1.6
+        }
+      }
+    },
+    {
+      "id": "fan_huanjing_voice3",
+      "label": "元素爆发·其二",
+      "text": "知识，与你分享。",
+      "url": "https://patchwiki.biligame.com/images/ys/5/5e/ib10ei7vd1xz5v0umnuyqlnpybukjum.mp3",
+      "bytes": 63403,
+      "sha256": "13b9318cdcc0d9d16e978c3aadc1501736a7a1b548414c19ca993494f9fc9bfb",
+      "original": "audio/nahida/originals/fan_huanjing_voice3-7d35207bfe.mp3",
+      "output": "audio/nahida/skill/fan_huanjing_voice3.mp3",
+      "trim_seconds": null,
+      "original_sha256": "13b9318cdcc0d9d16e978c3aadc1501736a7a1b548414c19ca993494f9fc9bfb",
+      "output_bytes": 24668,
+      "output_sha256": "c161e4050c722302c26a49a3e399c53c9ec926c6d93a6eb5d5505e2856690c77",
+      "volume": {
+        "id": "fan_huanjing_voice3",
+        "gain_db": -0.85,
+        "before": {
+          "lufs": -14.05,
+          "true_peak_dbtp": -0.65,
+          "mean_dbfs": -14.5,
+          "peak_dbfs": -0.7
+        },
+        "after": {
+          "lufs": -14.89,
+          "true_peak_dbtp": -1.46,
+          "mean_dbfs": -15.4,
+          "peak_dbfs": -1.5
+        }
+      }
+    },
+    {
+      "id": "fan_nahida1",
+      "label": "倒下·其一",
+      "text": "生命…终有尽时…",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6d/6fo5ccaxw0k8rqlioral2npkuqqg50n.mp3",
+      "bytes": 99245,
+      "sha256": "d1233f2629b21e2f07952ae82a8dade0389eaee7edb94e12ab861c055cd6821e",
+      "original": "audio/nahida/originals/fan_nahida1-4b56aaec4a.mp3",
+      "output": "audio/nahida/die/fan_nahida1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "d1233f2629b21e2f07952ae82a8dade0389eaee7edb94e12ab861c055cd6821e",
+      "output_bytes": 39188,
+      "output_sha256": "9a94035483594191a327a612537f8860b28978b14ed379ac370f42f2325da39f",
+      "volume": {
+        "id": "fan_nahida1",
+        "gain_db": 4.1,
+        "before": {
+          "lufs": -19.43,
+          "true_peak_dbtp": -5.6,
+          "mean_dbfs": -20.8,
+          "peak_dbfs": -5.6
+        },
+        "after": {
+          "lufs": -15.34,
+          "true_peak_dbtp": -1.63,
+          "mean_dbfs": -16.7,
+          "peak_dbfs": -1.6
+        }
+      }
+    },
+    {
+      "id": "fan_nahida2",
+      "label": "倒下·其二",
+      "text": "枯萎之刻…",
+      "url": "https://patchwiki.biligame.com/images/ys/6/65/rilba2vvzlq54t35w0f6aulei2ts361.mp3",
+      "bytes": 56584,
+      "sha256": "d4229e232ef4bb6b0cbed9c68730aef26bd01e20460baaa39e7f7ceaba5af8b2",
+      "original": "audio/nahida/originals/fan_nahida2-85664bc22d.mp3",
+      "output": "audio/nahida/die/fan_nahida2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "d4229e232ef4bb6b0cbed9c68730aef26bd01e20460baaa39e7f7ceaba5af8b2",
+      "output_bytes": 21524,
+      "output_sha256": "94bd4dbb299aa3b1674c6b967b2a8f9ca7e14b3b3fd726e235294d5bfdf4b3b8",
+      "volume": {
+        "id": "fan_nahida2",
+        "gain_db": 3.65,
+        "before": {
+          "lufs": -18.72,
+          "true_peak_dbtp": -5.15,
+          "mean_dbfs": -19.6,
+          "peak_dbfs": -5.2
+        },
+        "after": {
+          "lufs": -15.06,
+          "true_peak_dbtp": -1.51,
+          "mean_dbfs": -15.9,
+          "peak_dbfs": -1.5
+        }
+      }
+    },
+    {
+      "id": "fan_nahida3",
+      "label": "倒下·其三",
+      "text": "我…不明白…",
+      "url": "https://patchwiki.biligame.com/images/ys/2/25/3v2kbc8achugpb42iqc71fuv2pkkizp.mp3",
+      "bytes": 71005,
+      "sha256": "a85e9ef74a8260153e2f7e9c20a4397dd80d3381de8313f36535ac87ba36bc07",
+      "original": "audio/nahida/originals/fan_nahida3-03e33b3209.mp3",
+      "output": "audio/nahida/die/fan_nahida3.mp3",
+      "trim_seconds": null,
+      "original_sha256": "a85e9ef74a8260153e2f7e9c20a4397dd80d3381de8313f36535ac87ba36bc07",
+      "output_bytes": 25340,
+      "output_sha256": "2d5b8fc30e1a9ce2a2d330ad1b81f5ca00558758f99e3a1a02ebfe55de710827",
+      "volume": {
+        "id": "fan_nahida3",
+        "gain_db": 2.83,
+        "before": {
+          "lufs": -20.2,
+          "true_peak_dbtp": -4.33,
+          "mean_dbfs": -21.7,
+          "peak_dbfs": -4.4
+        },
+        "after": {
+          "lufs": -17.37,
+          "true_peak_dbtp": -1.47,
+          "mean_dbfs": -18.8,
+          "peak_dbfs": -1.5
+        }
+      }
+    }
+  ]
+}

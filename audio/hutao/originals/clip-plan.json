@@ -1,0 +1,17 @@
+{
+  "fan_qiyun_intro": {"source":"intro","trim":[0.65,5.81]},
+  "fan_qiyun_sun": {"source":"sun","trim":[1.65,8.45],"text":"太阳出来我晒太阳，月亮出来我晒月亮咯~"},
+  "fan_qiyun_morning": {"source":"morning"},
+  "fan_qiyun_name": {"source":"name","trim":[0.8,8.35],"text":"胡桃的胡是胡吃海喝的胡，胡桃的桃却不是淘气的淘！"},
+  "fan_qiyun_hilichurl": {"source":"hilichurl"},
+  "fan_qiyun_ningguang": {"source":"ningguang","text":"天权凝光，富甲一方；明眸善睐，桃羞杏让；目达耳通，百了千当！"},
+  "fan_wangsheng_customer1": {"source":"customers","trim":[0.5,1.75],"text":"一个客户，"},
+  "fan_wangsheng_customer2": {"source":"customers","trim":[1.75,3.05],"text":"两个客户，"},
+  "fan_wangsheng_customer3": {"source":"customers","trim":[3.12,4.4],"text":"三个客户…"},
+  "fan_youdie_burst1": {"source":"burst1"},
+  "fan_youdie_burst2": {"source":"burst2"},
+  "fan_youdie_burst3": {"source":"burst3"},
+  "fan_hutao1": {"source":"die1","folder":"die"},
+  "fan_hutao2": {"source":"die2","folder":"die"},
+  "fan_hutao3": {"source":"die3","folder":"die"}
+}

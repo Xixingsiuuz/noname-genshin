@@ -1,0 +1,145 @@
+{
+  "page": "https://wiki.biligame.com/ys/%E7%94%98%E9%9B%A8%E8%AF%AD%E9%9F%B3",
+  "clips": {
+    "fan_liutian": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3a/n0hb1nbhpd0pfj79rpsc1llu9r51qgm.mp3",
+      "text": "风雪的缩影。",
+      "bytes": 28448,
+      "original_sha256": "623f3e9d00dc3c55bf699e576bcb4259c70626a504421f8d5016a396d07a7bee",
+      "original": "audio/ganyu/originals/fan_liutian.mp3",
+      "output": "audio/ganyu/skill/fan_liutian.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_liutian",
+        "gain_db": -0.01,
+        "before": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -4.05,
+          "mean_dbfs": -18.2,
+          "peak_dbfs": -4.1
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -4.05,
+          "mean_dbfs": -18.2,
+          "peak_dbfs": -4.1
+        }
+      },
+      "sha256": "f1f72d1ab1014939cfd1144cd82d448f44550649e21279cedea57af257db2689",
+      "output_bytes": 21548
+    },
+    "fan_linji": {
+      "label": "元素战技·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/9/9b/80cnt8w105vgmzjplq9gtw6fpjauqsq.mp3",
+      "text": "禁止接触。",
+      "bytes": 20000,
+      "original_sha256": "b2749d3eedab336160e11c760e050ffc2fa1ab8a1a5bf464d1c4b950930eacee",
+      "original": "audio/ganyu/originals/fan_linji.mp3",
+      "output": "audio/ganyu/skill/fan_linji.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_linji",
+        "gain_db": -0.9,
+        "before": {
+          "lufs": -13.35,
+          "true_peak_dbtp": -4.46,
+          "mean_dbfs": -17.8,
+          "peak_dbfs": -4.7
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -5.35,
+          "mean_dbfs": -18.6,
+          "peak_dbfs": -5.6
+        }
+      },
+      "sha256": "fe7773e73de2c436e40f196477d799364ba666268c75caffbedf2100e5d701be",
+      "output_bytes": 13916
+    },
+    "fan_linji_charge": {
+      "label": "元素战技·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6e/h93axyhqjfzwv48hhzxi6ei8nlj34f3.mp3",
+      "text": "闲人勿扰。",
+      "bytes": 19232,
+      "original_sha256": "070fbc7078d6befcdeb0f5a1bbddb41db851a8561e7af47b490d98e062305a74",
+      "original": "audio/ganyu/originals/fan_linji_charge.mp3",
+      "output": "audio/ganyu/skill/fan_linji_charge.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_linji_charge",
+        "gain_db": -2.89,
+        "before": {
+          "lufs": -11.36,
+          "true_peak_dbtp": -2.64,
+          "mean_dbfs": -16.0,
+          "peak_dbfs": -2.7
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -5.63,
+          "mean_dbfs": -18.9,
+          "peak_dbfs": -5.7
+        }
+      },
+      "sha256": "13c452ce5badf64ef9144ddd0d31455763cc8c135e946d08470d062983d03673",
+      "output_bytes": 13868
+    },
+    "fan_xingzuo": {
+      "label": "打开宝箱·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/9/96/kjqgaf4p9r8pyl66wm86pty3mqk55uw.mp3",
+      "text": "有所收获，就是一件好事。",
+      "bytes": 40736,
+      "original_sha256": "084fb8156bb1dca100f31c8f1c27433c67836c3f697853ebd2d51e8b5e476985",
+      "original": "audio/ganyu/originals/fan_xingzuo.mp3",
+      "output": "audio/ganyu/skill/fan_xingzuo.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_xingzuo",
+        "gain_db": 1.07,
+        "before": {
+          "lufs": -15.32,
+          "true_peak_dbtp": -3.74,
+          "mean_dbfs": -19.4,
+          "peak_dbfs": -3.9
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -2.66,
+          "mean_dbfs": -18.3,
+          "peak_dbfs": -2.8
+        }
+      },
+      "sha256": "0e06d557bddc1e25fa9d8dfb9357fd6654cbbdd80e1fb0940865b13d6336ec6c",
+      "output_bytes": 32876
+    },
+    "fan_ganyu": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6b/t8wdaz658n6w538zgi4sj66jfbrsp68.mp3",
+      "text": "帝君…对不起…",
+      "bytes": 52256,
+      "original_sha256": "fac55e186af2167a2f5a6d1d05d5578ac38f2b6e9c0069bd4d3d4aabe245931e",
+      "original": "audio/ganyu/originals/fan_ganyu.mp3",
+      "output": "audio/ganyu/die/fan_ganyu.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_ganyu",
+        "gain_db": -0.79,
+        "before": {
+          "lufs": -13.46,
+          "true_peak_dbtp": -2.07,
+          "mean_dbfs": -19.0,
+          "peak_dbfs": -3.2
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -2.58,
+          "mean_dbfs": -19.8,
+          "peak_dbfs": -3.5
+        }
+      },
+      "sha256": "f9195ed8500db95f1ec8863311e988f7e7eac7cff14b028b1ea110f8f9af6c80",
+      "output_bytes": 38900
+    }
+  }
+}

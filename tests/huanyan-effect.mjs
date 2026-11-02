@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {setHuanyanEffect} from '../ui/huanyan-effect.js';
+function node(){return {children:[],attributes:{},appendChild(n){this.children.push(n);n.parent=this;},setAttribute(k,v){this.attributes[k]=v;},querySelector(s){return this.children.find(n=>n.attributes.class===s.slice(1))||null;},remove(){this.parent.children=this.parent.children.filter(n=>n!==this);}};}
+const head=node();globalThis.document={head,createElement:node,createElementNS:node,getElementById:id=>head.children.find(n=>n.id===id)};
+const target={node:{avatar:node()}},a={},b={};
+setHuanyanEffect(target,a,true);const effect=target.node.avatar.children[0];
+assert.equal(effect.attributes['aria-hidden'],'true');
+setHuanyanEffect(target,a,true);assert.equal(target.node.avatar.children.length,1);
+setHuanyanEffect(target,b,true);setHuanyanEffect(target,a,false);assert.equal(target.node.avatar.children[0],effect);
+setHuanyanEffect(target,b,false);assert.equal(target.node.avatar.children.length,0);
+const broadcast=new Function(`return (${setHuanyanEffect.toString()})`)();broadcast(target,a,true);assert.equal(target.node.avatar.children.length,1);broadcast(target,a,false);
+assert.equal(head.children.length,1);assert.match(head.children[0].textContent,/pointer-events:none/);assert.match(head.children[0].textContent,/prefers-reduced-motion/);
+delete globalThis.document;setHuanyanEffect(target,a,true);
+console.log('欢宴特效：重复挂载、多来源清理、广播独立执行、无 DOM 环境检查通过');

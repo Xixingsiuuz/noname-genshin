@@ -1,0 +1,261 @@
+{
+  "page": "https://wiki.biligame.com/ys/%E7%90%B4%E8%AF%AD%E9%9F%B3",
+  "clips": {
+    "fan_fengya_voice1": {
+      "label": "元素战技·其一",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/db/VO_ZH_Jean_Elemental_Skill_1_01.ogg",
+      "text": "一决胜负！",
+      "bytes": 30706,
+      "original": "audio/jean/originals/fan_fengya_voice1.ogg",
+      "original_sha256": "3c90789137a99b1abe003217f9ddaf4594f0fcb4ff2afe9c3fbc04941d9cbb0b",
+      "output": "audio/jean/skill/fan_fengya_voice1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_fengya_voice1",
+        "gain_db": -0.75,
+        "before": {
+          "lufs": -15.57,
+          "true_peak_dbtp": -0.75,
+          "mean_dbfs": -16.6,
+          "peak_dbfs": -0.9
+        },
+        "after": {
+          "lufs": -16.32,
+          "true_peak_dbtp": -1.46,
+          "mean_dbfs": -17.3,
+          "peak_dbfs": -1.6
+        }
+      },
+      "sha256": "d4d3dd0224afc362394bdbc09bb947dd7075cf188f35fe0c06dd1bc4b84a832d",
+      "output_bytes": 11516
+    },
+    "fan_fengya_voice2": {
+      "label": "元素战技·其二",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a5/VO_ZH_Jean_Elemental_Skill_1_02.ogg",
+      "text": "…哈！",
+      "bytes": 14893,
+      "original": "audio/jean/originals/fan_fengya_voice2.ogg",
+      "original_sha256": "be031d3e926853889ff8eb5020ce275add9c20948064b145e88a71314a28afa3",
+      "output": "audio/jean/skill/fan_fengya_voice2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_fengya_voice2",
+        "gain_db": 0.21,
+        "before": {
+          "lufs": -14.46,
+          "true_peak_dbtp": -2.56,
+          "mean_dbfs": -17.8,
+          "peak_dbfs": -2.6,
+          "measurement_padding_seconds": 1
+        },
+        "after": {
+          "lufs": -14.21,
+          "true_peak_dbtp": -2.54,
+          "mean_dbfs": -17.6,
+          "peak_dbfs": -2.5,
+          "measurement_padding_seconds": 1
+        }
+      },
+      "sha256": "45e953205f7f10ebe43685e47192a5aa2f247067d6a00a8eb8c9c173fab63fe7",
+      "output_bytes": 5180
+    },
+    "fan_fengya_voice3": {
+      "label": "元素战技·其三",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a5/VO_ZH_Jean_Elemental_Skill_1_03.ogg",
+      "text": "…散！",
+      "bytes": 16568,
+      "original": "audio/jean/originals/fan_fengya_voice3.ogg",
+      "original_sha256": "c8018db72ee494c057799d3540111a1900993203dab467302f87d11a40f078ad",
+      "output": "audio/jean/skill/fan_fengya_voice3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_fengya_voice3",
+        "gain_db": -2.05,
+        "before": {
+          "lufs": -13.8,
+          "true_peak_dbtp": 0.55,
+          "mean_dbfs": -19.6,
+          "peak_dbfs": -0.0,
+          "measurement_padding_seconds": 1
+        },
+        "after": {
+          "lufs": -15.86,
+          "true_peak_dbtp": -1.68,
+          "mean_dbfs": -21.7,
+          "peak_dbfs": -1.7,
+          "measurement_padding_seconds": 1
+        }
+      },
+      "sha256": "6c13ac51aca22b097fff0e4c1412504088da57d944db1cbd112398db0fc7fcbf",
+      "output_bytes": 5612
+    },
+    "fan_shiya_heal1": {
+      "label": "元素爆发·其一",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/86/VO_ZH_Jean_Elemental_Burst_01.ogg",
+      "text": "风，回应我吧。",
+      "bytes": 55290,
+      "original": "audio/jean/originals/fan_shiya_heal1.ogg",
+      "original_sha256": "429e07fea39f26fd3bcbc4046f5395bf4d00c5a727da429824bfd7ce7ccbe11b",
+      "output": "audio/jean/skill/fan_shiya_heal1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_shiya_heal1",
+        "gain_db": -2.17,
+        "before": {
+          "lufs": -12.08,
+          "true_peak_dbtp": -1.82,
+          "mean_dbfs": -13.2,
+          "peak_dbfs": -1.8
+        },
+        "after": {
+          "lufs": -14.22,
+          "true_peak_dbtp": -3.91,
+          "mean_dbfs": -15.3,
+          "peak_dbfs": -3.9
+        }
+      },
+      "sha256": "bde0e1246dcaa3b584959ba0af3962c40e21dba5c5ff9a429e9c6423c8504852",
+      "output_bytes": 21212
+    },
+    "fan_shiya_heal2": {
+      "label": "元素爆发·其二",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b1/VO_ZH_Jean_Elemental_Burst_02.ogg",
+      "text": "以剑为誓！",
+      "bytes": 33322,
+      "original": "audio/jean/originals/fan_shiya_heal2.ogg",
+      "original_sha256": "2e4dfff8fac5ec4500ee19397b9b2964737699c64136773d9879895417127d12",
+      "output": "audio/jean/skill/fan_shiya_heal2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_shiya_heal2",
+        "gain_db": -4.98,
+        "before": {
+          "lufs": -9.27,
+          "true_peak_dbtp": -0.08,
+          "mean_dbfs": -10.3,
+          "peak_dbfs": -0.3
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -4.05,
+          "mean_dbfs": -15.3,
+          "peak_dbfs": -4.8
+        }
+      },
+      "sha256": "80552e4d076d6ae930bdaaaf439c893fb66d8f025b9727fc8d1bb2943ec172e7",
+      "output_bytes": 12380
+    },
+    "fan_shiya_heal3": {
+      "label": "元素爆发·其三",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/VO_ZH_Jean_Elemental_Burst_03.ogg",
+      "text": "风之神，请指引我们。",
+      "bytes": 60647,
+      "original": "audio/jean/originals/fan_shiya_heal3.ogg",
+      "original_sha256": "61041697b073a1b0fa80ea2c33a1270ecc8dcaefe904e15a53757c20aa6eff64",
+      "output": "audio/jean/skill/fan_shiya_heal3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_shiya_heal3",
+        "gain_db": -3.57,
+        "before": {
+          "lufs": -10.68,
+          "true_peak_dbtp": -1.25,
+          "mean_dbfs": -11.3,
+          "peak_dbfs": -1.3
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -4.81,
+          "mean_dbfs": -14.9,
+          "peak_dbfs": -4.8
+        }
+      },
+      "sha256": "1406fac086f756714f15117ec346126dd18268b6e353898333397750b84f14cf",
+      "output_bytes": 24524
+    },
+    "fan_jean1": {
+      "label": "倒下·其一",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5a/VO_ZH_Jean_Fallen_01.ogg",
+      "text": "蒙德…",
+      "bytes": 44717,
+      "original": "audio/jean/originals/fan_jean1.ogg",
+      "original_sha256": "f699ac4c620d6e2522fcea9d111ac5733b46044d984f8f977a06188204d8f2d1",
+      "output": "audio/jean/die/fan_jean1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_jean1",
+        "gain_db": -0.09,
+        "before": {
+          "lufs": -14.16,
+          "true_peak_dbtp": -2.54,
+          "mean_dbfs": -14.2,
+          "peak_dbfs": -2.6
+        },
+        "after": {
+          "lufs": -14.22,
+          "true_peak_dbtp": -2.76,
+          "mean_dbfs": -14.3,
+          "peak_dbfs": -2.8
+        }
+      },
+      "sha256": "1c7cc64eb980ec09cdada175f25cb1ec39b00230c37d27b50ccd545bcb600aae",
+      "output_bytes": 15596
+    },
+    "fan_jean2": {
+      "label": "倒下·其二",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/18/VO_ZH_Jean_Fallen_02.ogg",
+      "text": "个人的力量是有极限的…",
+      "bytes": 82159,
+      "original": "audio/jean/originals/fan_jean2.ogg",
+      "original_sha256": "b8d7007ffb6a463f7263ea7bb1b7172708f877e6015c27a4ec30374f2bc81bb9",
+      "output": "audio/jean/die/fan_jean2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_jean2",
+        "gain_db": -2.7,
+        "before": {
+          "lufs": -11.55,
+          "true_peak_dbtp": -1.37,
+          "mean_dbfs": -12.2,
+          "peak_dbfs": -1.8
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -3.42,
+          "mean_dbfs": -14.9,
+          "peak_dbfs": -4.6
+        }
+      },
+      "sha256": "953901be3391da84ec5354d3b83f5217ef7c1a455983a5f1507f20dc06d99199",
+      "output_bytes": 31964
+    },
+    "fan_jean3": {
+      "label": "倒下·其三",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b1/VO_ZH_Jean_Fallen_03.ogg",
+      "text": "我…还不够称职…",
+      "bytes": 94313,
+      "original": "audio/jean/originals/fan_jean3.ogg",
+      "original_sha256": "3446522e795c9d872987e78e80c7de1c6fc22a89f61fa99cfbaa3c2789d6cf0b",
+      "output": "audio/jean/die/fan_jean3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_jean3",
+        "gain_db": 0.51,
+        "before": {
+          "lufs": -16.16,
+          "true_peak_dbtp": -2.01,
+          "mean_dbfs": -16.9,
+          "peak_dbfs": -2.1
+        },
+        "after": {
+          "lufs": -15.62,
+          "true_peak_dbtp": -1.39,
+          "mean_dbfs": -16.4,
+          "peak_dbfs": -1.4
+        }
+      },
+      "sha256": "79ea9463eeb1e84f23bb6c62c89986cc824ca87f6801b8a6339cfd4d341fb319",
+      "output_bytes": 37316
+    }
+  }
+}

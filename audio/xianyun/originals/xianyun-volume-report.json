@@ -1,0 +1,161 @@
+{
+  "target_lufs": -14.25,
+  "reference": "Median of current Eula local playback clips",
+  "references": [
+    {
+      "path": "audio/eula/skill/fan_langhua_high1.mp3",
+      "lufs": -12.1,
+      "true_peak_dbtp": -1.02,
+      "mean_dbfs": -12.5,
+      "peak_dbfs": -1.1
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_high2.mp3",
+      "lufs": -14.37,
+      "true_peak_dbtp": -1.53,
+      "mean_dbfs": -15.9,
+      "peak_dbfs": -1.6
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_low1.mp3",
+      "lufs": -12.6,
+      "true_peak_dbtp": -1.22,
+      "mean_dbfs": -15.1,
+      "peak_dbfs": -1.6
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_low2.mp3",
+      "lufs": -14.95,
+      "true_peak_dbtp": -1.98,
+      "mean_dbfs": -16.3,
+      "peak_dbfs": -2.0
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_mid1.mp3",
+      "lufs": -13.4,
+      "true_peak_dbtp": -1.64,
+      "mean_dbfs": -14.6,
+      "peak_dbfs": -1.7
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_mid2.mp3",
+      "lufs": -14.14,
+      "true_peak_dbtp": -0.38,
+      "mean_dbfs": -14.8,
+      "peak_dbfs": -0.4
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_start.mp3",
+      "lufs": -18.17,
+      "true_peak_dbtp": -3.32,
+      "mean_dbfs": -19.2,
+      "peak_dbfs": -3.4
+    },
+    {
+      "path": "audio/eula/die/fan_eula.mp3",
+      "lufs": -15.72,
+      "true_peak_dbtp": -0.95,
+      "mean_dbfs": -18.1,
+      "peak_dbfs": -1.1
+    }
+  ],
+  "method": "static gain, intact originals, encoded true peak <= -1 dBTP",
+  "clips": [
+    {
+      "id": "fan_luanyin1",
+      "gain_db": -1.51,
+      "before": {
+        "lufs": -14.67,
+        "true_peak_dbtp": 0.01,
+        "mean_dbfs": -15.1,
+        "peak_dbfs": -0.0
+      },
+      "after": {
+        "lufs": -16.17,
+        "true_peak_dbtp": -1.51,
+        "mean_dbfs": -16.6,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_luanyin2",
+      "gain_db": -1.49,
+      "before": {
+        "lufs": -12.76,
+        "true_peak_dbtp": -0.42,
+        "mean_dbfs": -15.0,
+        "peak_dbfs": -0.8
+      },
+      "after": {
+        "lufs": -14.21,
+        "true_peak_dbtp": -2.22,
+        "mean_dbfs": -16.5,
+        "peak_dbfs": -2.3
+      }
+    },
+    {
+      "id": "fan_luanyin3",
+      "gain_db": -0.41,
+      "before": {
+        "lufs": -15.23,
+        "true_peak_dbtp": -1.09,
+        "mean_dbfs": -16.0,
+        "peak_dbfs": -1.1
+      },
+      "after": {
+        "lufs": -15.64,
+        "true_peak_dbtp": -1.37,
+        "mean_dbfs": -16.4,
+        "peak_dbfs": -1.4
+      }
+    },
+    {
+      "id": "fan_xianzhu1",
+      "gain_db": 1.44,
+      "before": {
+        "lufs": -17.01,
+        "true_peak_dbtp": -2.94,
+        "mean_dbfs": -17.9,
+        "peak_dbfs": -3.0
+      },
+      "after": {
+        "lufs": -15.55,
+        "true_peak_dbtp": -1.47,
+        "mean_dbfs": -16.5,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_xianzhu2",
+      "gain_db": 2.2,
+      "before": {
+        "lufs": -16.45,
+        "true_peak_dbtp": -4.08,
+        "mean_dbfs": -16.6,
+        "peak_dbfs": -4.1
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -1.94,
+        "mean_dbfs": -14.5,
+        "peak_dbfs": -1.9
+      }
+    },
+    {
+      "id": "fan_xianyun",
+      "gain_db": 5.93,
+      "before": {
+        "lufs": -23.18,
+        "true_peak_dbtp": -7.43,
+        "mean_dbfs": -25.0,
+        "peak_dbfs": -8.0
+      },
+      "after": {
+        "lufs": -17.25,
+        "true_peak_dbtp": -1.53,
+        "mean_dbfs": -19.1,
+        "peak_dbfs": -2.2
+      }
+    }
+  ]
+}

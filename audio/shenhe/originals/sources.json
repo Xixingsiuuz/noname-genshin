@@ -1,0 +1,165 @@
+{
+  "source_page": "https://wiki.biligame.com/ys/申鹤语音",
+  "verified": "2026-11-01",
+  "clips": [
+    {
+      "role": "shenhe",
+      "path": "audio/shenhe/die/fan_shenhe_extra1.mp3",
+      "original": "audio/shenhe/originals/fan_shenhe_extra1.mp3",
+      "entry": "倒下·其二",
+      "text": "死丧既定…",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f8/fbkryf076utk6vvmf7g0nohr62tkgj7.mp3",
+      "bytes": 75275,
+      "sha256": "e8d323ee48b93f8ebbe0b300381761ba7e3f63a5eb8c8eaa28045a5e8b653a92",
+      "trim": null
+    },
+    {
+      "role": "shenhe",
+      "path": "audio/shenhe/die/fan_shenhe_extra2.mp3",
+      "original": "audio/shenhe/originals/fan_shenhe_extra2.mp3",
+      "entry": "倒下·其三",
+      "text": "劫煞为灾…",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d3/turkdu87mrilczdw2nt60a65vu1j981.mp3",
+      "bytes": 103697,
+      "sha256": "b99a1a3d0e80d36a1e608f2f29bd0ed7d884a8a4bd26dc2c626823fd6fd39675",
+      "trim": null
+    },
+    {
+      "role": "shenhe",
+      "path": "audio/shenhe/skill/fan_xinzhai.mp3",
+      "original": "audio/shenhe/originals/fan_xinzhai.mp3",
+      "entry": "普通受击·其一",
+      "text": "不成气候。",
+      "url": "https://patchwiki.biligame.com/images/ys/7/7a/8it18j3kgwnook8pr3jiwxwy9bm8d2j.mp3",
+      "bytes": 53542,
+      "sha256": "8d2319ca36cad5935fd0d710d17c2381b7498a15e9c69f034e26d3e027615f2c",
+      "duration_seconds": 1.65,
+      "trim": null
+    },
+    {
+      "role": "shenhe",
+      "path": "audio/shenhe/skill/fan_yizhou1.mp3",
+      "original": "audio/shenhe/originals/fan_yizhou1.mp3",
+      "entry": "元素战技·其六",
+      "text": "付君真形！",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2a/jglbtfq0iiz3wlueecsa0vw0um3ibut.mp3",
+      "bytes": 41839,
+      "sha256": "07a0ea49aa76de1af744da1576d70bb503ce098d2d59c0b30cb16a60c5c51e09",
+      "duration_seconds": 1.28,
+      "trim": null
+    },
+    {
+      "role": "shenhe",
+      "path": "audio/shenhe/skill/fan_yizhou2.mp3",
+      "original": "audio/shenhe/originals/fan_yizhou2.mp3",
+      "entry": "元素战技·其一",
+      "text": "听令！",
+      "url": "https://patchwiki.biligame.com/images/ys/c/cb/6vcusau1qttarvrdl02udgp1s2ripjr.mp3",
+      "bytes": 33479,
+      "sha256": "9e6710a72eaa03a67d448fdab0a7e17264ffcf99ec2916db8afef11143b6b1da",
+      "duration_seconds": 1.02,
+      "trim": null
+    },
+    {
+      "role": "shenhe",
+      "path": "audio/shenhe/skill/fan_lingwei.mp3",
+      "original": "audio/shenhe/originals/fan_lingwei.mp3",
+      "entry": "元素爆发·其三",
+      "text": "依律奉行！",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8c/bzb55wqhzw9pgchd0h9fahqpvtl55dh.mp3",
+      "bytes": 57721,
+      "sha256": "9fee1b305f53edb3092af0bf46869730bcdc4328840424ad87be2852f16d2a02",
+      "duration_seconds": 1.78,
+      "trim": null
+    },
+    {
+      "role": "shenhe",
+      "path": "audio/shenhe/die/fan_shenhe.mp3",
+      "original": "audio/shenhe/originals/fan_shenhe.mp3",
+      "entry": "倒下·其一",
+      "text": "难逃…宿命…",
+      "url": "https://patchwiki.biligame.com/images/ys/9/98/q5l44om45kz3rs6ofwz4pyyw8zry4hh.mp3",
+      "bytes": 90322,
+      "sha256": "89d837983a364fc7813cd610cb9eedde9a524a3df7eb6b6df4c6e978750dcf01",
+      "duration_seconds": 2.8,
+      "trim": null
+    },
+    {
+      "role": "shenhe",
+      "path": "audio/shenhe/skill/fan_yizhou_start_extra.mp3",
+      "original": "audio/shenhe/originals/fan_yizhou_start_extra.mp3",
+      "entry": "元素战技·其四",
+      "text": "炼气化神！",
+      "url": "https://patchwiki.biligame.com/images/ys/7/7a/etnllql1ne162ptenzdsbno4rzfhza4.mp3",
+      "bytes": 53542,
+      "sha256": "ad825b895ac7ac1ee8453776d4eaec9c9dcf41a130476d33e522ac6518872254",
+      "trim": null
+    },
+    {
+      "role": "shenhe",
+      "path": "audio/shenhe/skill/fan_yizhou_move_extra1.mp3",
+      "original": "audio/shenhe/originals/fan_yizhou_move_extra1.mp3",
+      "entry": "元素战技·其二",
+      "text": "显！",
+      "url": "https://patchwiki.biligame.com/images/ys/f/fd/nzzx55eth7bj43m1yfjc08fqfqds0z9.mp3",
+      "bytes": 64408,
+      "sha256": "467d4f316bb0cbfb8a63b65597c979c835850c90ea087e3e0e11a474df3132f1",
+      "trim": null
+    },
+    {
+      "role": "shenhe",
+      "path": "audio/shenhe/skill/fan_yizhou_move_extra2.mp3",
+      "original": "audio/shenhe/originals/fan_yizhou_move_extra2.mp3",
+      "entry": "元素战技·其三",
+      "text": "魂出！",
+      "url": "https://patchwiki.biligame.com/images/ys/f/fc/az932mia0o4w93ptok0y8imcxe0m8fi.mp3",
+      "bytes": 40167,
+      "sha256": "e431bcebd32cb4283ebc415d8c732cd10841266c153c1e17a5579b4d67eb2152",
+      "trim": null
+    },
+    {
+      "role": "shenhe",
+      "path": "audio/shenhe/skill/fan_lingwei_extra1.mp3",
+      "original": "audio/shenhe/originals/fan_lingwei_extra1.mp3",
+      "entry": "元素爆发·其一",
+      "text": "天真敕奏！",
+      "url": "https://patchwiki.biligame.com/images/ys/8/83/giwv1eavlh70d2rmtabtc5bumuy8vxb.mp3",
+      "bytes": 56885,
+      "sha256": "54d31ebae0748db77ee8cd13be33aee2b1b4d7d5f168efde954410867373b370",
+      "trim": null
+    },
+    {
+      "role": "shenhe",
+      "path": "audio/shenhe/skill/fan_lingwei_extra2.mp3",
+      "original": "audio/shenhe/originals/fan_lingwei_extra2.mp3",
+      "entry": "元素爆发·其二",
+      "text": "寒冰变神！",
+      "url": "https://patchwiki.biligame.com/images/ys/6/65/q63jyxwcr0syhpc3i9oe0l29id8yrme.mp3",
+      "bytes": 57721,
+      "sha256": "d4076fe3125dc57d587ef4077a52ace20207a889826802881fab78330df6253d",
+      "trim": null
+    },
+    {
+      "role": "shenhe",
+      "path": "audio/shenhe/skill/fan_xinzhai_extra1.mp3",
+      "original": "audio/shenhe/originals/fan_xinzhai_extra1.mp3",
+      "entry": "闲聊·要诀",
+      "text": "回向正道，保身护命…",
+      "url": "https://patchwiki.biligame.com/images/ys/8/82/mxet0y513iz6l4xprxaqs8e21wutstb.mp3",
+      "bytes": 105368,
+      "sha256": "7c457671a0590e12c837241637c9c783ccc6afe336c3d0f260a837955d8d0f4d",
+      "trim": null
+    },
+    {
+      "role": "shenhe",
+      "path": "audio/shenhe/skill/fan_xinzhai_extra2.mp3",
+      "original": "audio/shenhe/originals/fan_xinzhai_extra2.mp3",
+      "entry": "下雨的时候…",
+      "text": "按照凡人的做法，这种时候，是否应该…撑伞？",
+      "url": "https://patchwiki.biligame.com/images/ys/4/43/tq3vx8n1ne9q2iwpffofrc6mo6wup3x.mp3",
+      "bytes": 229084,
+      "sha256": "eae47a9f918892896c17e115ae8df4f68fc59aedd883658a576887690e6e99c1",
+      "trim": null
+    }
+  ]
+}

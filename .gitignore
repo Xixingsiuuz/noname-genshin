@@ -1,0 +1,30 @@
+# Local backups and generated review images
+/backups/
+/*-review*.jpg
+/*-review*.png
+/*-check.png
+/timing-audit.txt
+
+# Dependencies, caches, and editor state
+AGENTS.md
+CLAUDE.md
+.agents/
+.codex/
+.claude/
+.cursor/
+.github/agents/
+.github/copilot-instructions.md
+node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key

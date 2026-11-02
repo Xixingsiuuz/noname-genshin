@@ -1,0 +1,203 @@
+{
+  "page": "https://wiki.biligame.com/ys/可莉语音",
+  "clips": {
+    "fan_huohua_blast1": {
+      "label": "元素战技·其一",
+      "text": "蹦蹦炸弹！",
+      "url": "https://patchwiki.biligame.com/images/ys/3/30/11ig8mu42l1nph7k4ooqyp5q7k25zv4.mp3",
+      "bytes": 31488,
+      "original": "audio/klee/originals/fan_huohua_blast1.mp3",
+      "output": "audio/klee/skill/fan_huohua_blast1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "d9713f0c5f3e259dc36fb38ade6c2f7925be542b79c3be52ca2250f6268c9233",
+      "volume": {
+        "id": "fan_huohua_blast1",
+        "gain_db": -0.62,
+        "before": {
+          "lufs": -13.63,
+          "true_peak_dbtp": -4.81,
+          "mean_dbfs": -18.9,
+          "peak_dbfs": -4.8
+        },
+        "after": {
+          "lufs": -14.26,
+          "true_peak_dbtp": -5.49,
+          "mean_dbfs": -19.6,
+          "peak_dbfs": -5.5
+        }
+      },
+      "output_bytes": 29540,
+      "sha256": "c1fb1463d9934d40b7b039ed793970b394d0204a11abdd4f7df31fd483f3af64"
+    },
+    "fan_huohua_blast2": {
+      "label": "元素爆发·其一",
+      "text": "轰轰火花！",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3e/m9r6n8n7zcqitmrx27idxkcidhhoqna.mp3",
+      "bytes": 32640,
+      "original": "audio/klee/originals/fan_huohua_blast2.mp3",
+      "output": "audio/klee/skill/fan_huohua_blast2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "0d8c14942c30841bd78d494d1657310d5e0772362d1c02410facc12497e8d9e6",
+      "volume": {
+        "id": "fan_huohua_blast2",
+        "gain_db": -3.18,
+        "before": {
+          "lufs": -11.07,
+          "true_peak_dbtp": -3.77,
+          "mean_dbfs": -15.9,
+          "peak_dbfs": -3.8
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -6.88,
+          "mean_dbfs": -19.0,
+          "peak_dbfs": -6.9
+        }
+      },
+      "output_bytes": 28988,
+      "sha256": "ef745f87007e9e98b68499dcc1651d107607b66369c7afe683a7e7e0a83ec5e4"
+    },
+    "fan_taopao1": {
+      "label": "冲刺开始·其一",
+      "text": "啦啦啦~",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2c/slgg7xuth5f6e81c7xpnfmrgdlxca26.mp3",
+      "bytes": 15021,
+      "original": "audio/klee/originals/fan_taopao1.mp3",
+      "output": "audio/klee/skill/fan_taopao1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "2838d40c0d1d5fdfaf2041e30ee866e2e9a8b59d311ffd6dccd76697087462f7",
+      "volume": {
+        "id": "fan_taopao1",
+        "gain_db": -1.58,
+        "before": {
+          "lufs": -12.67,
+          "true_peak_dbtp": -4.28,
+          "mean_dbfs": -17.7,
+          "peak_dbfs": -4.3
+        },
+        "after": {
+          "lufs": -14.27,
+          "true_peak_dbtp": -5.82,
+          "mean_dbfs": -19.3,
+          "peak_dbfs": -5.9
+        }
+      },
+      "output_bytes": 14492,
+      "sha256": "0493d2d4bbf6f0b401495515f5ce68c68126e32c31b55e9c6b2847206cb385a3"
+    },
+    "fan_taopao2": {
+      "label": "冲刺开始·其二",
+      "text": "哒哒哒~",
+      "url": "https://patchwiki.biligame.com/images/ys/5/51/73v77t4do8jtew3scvwrx9tvrk3sovs.mp3",
+      "bytes": 22272,
+      "original": "audio/klee/originals/fan_taopao2.mp3",
+      "output": "audio/klee/skill/fan_taopao2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "51ca44e240c7a9cf1600ca7a9904bd918120be05827e5098563a7555167654e0",
+      "volume": {
+        "id": "fan_taopao2",
+        "gain_db": 4.5,
+        "before": {
+          "lufs": -18.75,
+          "true_peak_dbtp": -6.29,
+          "mean_dbfs": -24.1,
+          "peak_dbfs": -6.4
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -1.76,
+          "mean_dbfs": -19.6,
+          "peak_dbfs": -1.9
+        }
+      },
+      "output_bytes": 23468,
+      "sha256": "2ebef9634d9eb1e466a9c34fc7bf897ae494346d43d7c6b86a06652402b6104c"
+    },
+    "fan_taopao3": {
+      "label": "生命值低·其二",
+      "text": "琴团长…他欺负我…",
+      "url": "https://patchwiki.biligame.com/images/ys/9/91/hyozx0bv4q2djkoqk7x3nhesuw6l12h.mp3",
+      "bytes": 54912,
+      "original": "audio/klee/originals/fan_taopao3.mp3",
+      "output": "audio/klee/skill/fan_taopao3.mp3",
+      "trim_seconds": null,
+      "original_sha256": "22f5c441b19c12c2bbbd92f5d1497be4ba06c9b7b7e00c9fe8e92e589a7cd997",
+      "volume": {
+        "id": "fan_taopao3",
+        "gain_db": -1.38,
+        "before": {
+          "lufs": -12.87,
+          "true_peak_dbtp": -3.59,
+          "mean_dbfs": -17.3,
+          "peak_dbfs": -3.6
+        },
+        "after": {
+          "lufs": -14.26,
+          "true_peak_dbtp": -4.95,
+          "mean_dbfs": -18.7,
+          "peak_dbfs": -5.0
+        }
+      },
+      "output_bytes": 51332,
+      "sha256": "0661eabbcb935b41cf84a558adffa63786b2c4c73d0049d354f0c80b409f3f60"
+    },
+    "fan_klee": {
+      "label": "倒下·其一",
+      "text": "看我成功开溜…！啊，失败了。",
+      "url": "https://patchwiki.biligame.com/images/ys/0/01/84ny32y1zne75evvmcx80k1ybk6fpx9.mp3",
+      "bytes": 80640,
+      "original": "audio/klee/originals/fan_klee.mp3",
+      "output": "audio/klee/die/fan_klee.mp3",
+      "trim_seconds": null,
+      "original_sha256": "024677f4e8eead79db5247ccec6d4481701224c7341c52badaef4b82e907d23d",
+      "volume": {
+        "id": "fan_klee",
+        "gain_db": -0.34,
+        "before": {
+          "lufs": -13.91,
+          "true_peak_dbtp": -4.69,
+          "mean_dbfs": -18.2,
+          "peak_dbfs": -4.7
+        },
+        "after": {
+          "lufs": -14.26,
+          "true_peak_dbtp": -5.06,
+          "mean_dbfs": -18.6,
+          "peak_dbfs": -5.1
+        }
+      },
+      "output_bytes": 79652,
+      "sha256": "81fbae035026822466abe6ab2fde11aae1dba2b9825888d55b33911ab38c7efb"
+    },
+    "fan_huohua_blast3": {
+      "label": "用户指定：可莉，磅！",
+      "text": "可莉，磅！",
+      "url": null,
+      "source_path": "C:\\Users\\22697\\Downloads\\可莉语音\\可莉，磅！.mp3",
+      "bytes": 54599,
+      "original": "audio/klee/originals/fan_huohua_blast3.mp3",
+      "output": "audio/klee/skill/fan_huohua_blast3.mp3",
+      "trim_seconds": null,
+      "text_verification": "用户文件名，尚未人工试听",
+      "original_sha256": "1b4b54b608a0a5f0924df19da0eba3b05dd1d73d501ca47123fda186774bbd44",
+      "volume": {
+        "id": "fan_huohua_blast3",
+        "gain_db": 11.36,
+        "before": {
+          "lufs": -25.93,
+          "true_peak_dbtp": -12.86,
+          "mean_dbfs": -31.6,
+          "peak_dbfs": -12.9
+        },
+        "after": {
+          "lufs": -14.56,
+          "true_peak_dbtp": -1.58,
+          "mean_dbfs": -20.3,
+          "peak_dbfs": -1.6
+        }
+      },
+      "output_bytes": 48645,
+      "sha256": "e135f383aff3e0b64a0073068e900cd712352ec8fbde9f7e3af2860092ae0abc"
+    }
+  }
+}

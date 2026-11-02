@@ -1,0 +1,502 @@
+{
+  "page": "https://wiki.biligame.com/ys/达达利亚语音",
+  "clips": {
+    "fan_jingwu_convert_voice": {
+      "label": "元素战技·其一",
+      "text": "要上了！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/VO_ZH_Tartaglia_Elemental_Skill_1_01.ogg/revision/latest?cb=20221113222157",
+      "bytes": 21868,
+      "original": "audio/ajax/originals/fan_jingwu_convert_voice.ogg",
+      "output": "audio/ajax/skill/fan_jingwu_convert_voice.mp3",
+      "trim_seconds": null,
+      "original_sha256": "caacd09e33d0f06788af42195c8a8a12a41d1879f18b87389228d206cde01529",
+      "media_file": "VO_ZH_Tartaglia_Elemental_Skill_1_01.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Tartaglia/Voice-Overs/Chinese",
+      "volume": {
+        "id": "fan_jingwu_convert_voice",
+        "text": "要上了！",
+        "gain_db": -1.78,
+        "before": {
+          "lufs": -14.25,
+          "true_peak_dbtp": 0.28,
+          "mean_dbfs": -15.1,
+          "peak_dbfs": -0.0
+        },
+        "after": {
+          "lufs": -15.95,
+          "true_peak_dbtp": -1.67,
+          "mean_dbfs": -16.8,
+          "peak_dbfs": -1.8
+        }
+      },
+      "output_bytes": 7772,
+      "sha256": "770282054c2d431ab25086773f2d1d7496b87733c2b5897697fe60c0d2038c21"
+    },
+    "fan_jingwu_gain_voice": {
+      "label": "元素爆发·其三",
+      "text": "破绽，稍纵即逝！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c9/VO_ZH_Tartaglia_Elemental_Burst_03.ogg/revision/latest?cb=20221113222152",
+      "bytes": 50970,
+      "original": "audio/ajax/originals/fan_jingwu_gain_voice.ogg",
+      "output": "audio/ajax/skill/fan_jingwu_gain_voice.mp3",
+      "trim_seconds": null,
+      "original_sha256": "2a8e536b471f609185ca767fd3f4b73c50f3e281f5d6e97426a4a3b512fe83da",
+      "media_file": "VO_ZH_Tartaglia_Elemental_Burst_03.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Tartaglia/Voice-Overs/Chinese",
+      "volume": {
+        "id": "fan_jingwu_gain_voice",
+        "text": "破绽，稍纵即逝！",
+        "gain_db": -1.02,
+        "before": {
+          "lufs": -13.35,
+          "true_peak_dbtp": -0.48,
+          "mean_dbfs": -13.3,
+          "peak_dbfs": -0.5
+        },
+        "after": {
+          "lufs": -14.37,
+          "true_peak_dbtp": -1.37,
+          "mean_dbfs": -14.3,
+          "peak_dbfs": -1.4
+        }
+      },
+      "output_bytes": 18548,
+      "sha256": "b4848d1da4a89c4097ab2080354224edc6559d020c4f34de3cca53abec916a73"
+    },
+    "fan_jingwu_damage_voice": {
+      "label": "元素爆发·其二",
+      "text": "逃得掉吗！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/VO_ZH_Tartaglia_Elemental_Burst_02.ogg/revision/latest?cb=20221113222150",
+      "bytes": 27855,
+      "original": "audio/ajax/originals/fan_jingwu_damage_voice.ogg",
+      "output": "audio/ajax/skill/fan_jingwu_damage_voice.mp3",
+      "trim_seconds": null,
+      "original_sha256": "c681d78c5cc1d95b4137e5477aa656c7d00f9fd407941b9692921bcccd5e70af",
+      "media_file": "VO_ZH_Tartaglia_Elemental_Burst_02.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Tartaglia/Voice-Overs/Chinese",
+      "volume": {
+        "id": "fan_jingwu_damage_voice",
+        "text": "逃得掉吗！",
+        "gain_db": -2.78,
+        "before": {
+          "lufs": -11.47,
+          "true_peak_dbtp": -1.17,
+          "mean_dbfs": -13.0,
+          "peak_dbfs": -1.2
+        },
+        "after": {
+          "lufs": -14.27,
+          "true_peak_dbtp": -3.99,
+          "mean_dbfs": -15.8,
+          "peak_dbfs": -4.0
+        }
+      },
+      "output_bytes": 9644,
+      "sha256": "5df4709704721600a4011583e7d41a08cb3b5cb27a5dc84fb97c7e9a3c4ef8f0"
+    },
+    "fan_jingwu_draw_voice": {
+      "label": "打开宝箱·其二",
+      "text": "相当不错！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3d/VO_ZH_Tartaglia_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221113222355",
+      "bytes": 58611,
+      "original": "audio/ajax/originals/fan_jingwu_draw_voice.ogg",
+      "output": "audio/ajax/skill/fan_jingwu_draw_voice.mp3",
+      "trim_seconds": null,
+      "original_sha256": "8de456716b9e7767fb41198c138d7dac2e2e8970864bbbca0b2e8d78c72c8aa3",
+      "media_file": "VO_ZH_Tartaglia_Opening_Treasure_Chest_02.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Tartaglia/Voice-Overs/Chinese",
+      "volume": {
+        "id": "fan_jingwu_draw_voice",
+        "text": "相当不错！",
+        "gain_db": -1.55,
+        "before": {
+          "lufs": -15.65,
+          "true_peak_dbtp": 0.05,
+          "mean_dbfs": -18.8,
+          "peak_dbfs": -0.0
+        },
+        "after": {
+          "lufs": -17.15,
+          "true_peak_dbtp": -1.42,
+          "mean_dbfs": -20.3,
+          "peak_dbfs": -1.4
+        }
+      },
+      "output_bytes": 22172,
+      "sha256": "47da6ec3bd939f58d70824319217f6f05201b59b9bb7fb7ff9491a50fc3e460b"
+    },
+    "fan_kuanglan": {
+      "label": "元素战技·其三",
+      "text": "势如狂澜！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/VO_ZH_Tartaglia_Elemental_Skill_1_03.ogg/revision/latest?cb=20221113222201",
+      "bytes": 32230,
+      "original": "audio/ajax/originals/fan_kuanglan.ogg",
+      "output": "audio/ajax/skill/fan_kuanglan.mp3",
+      "trim_seconds": null,
+      "original_sha256": "a638b7346521b7cbca2b781f080a9b30cf1598166584f1b83654cbcdb643b963",
+      "media_file": "VO_ZH_Tartaglia_Elemental_Skill_1_03.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Tartaglia/Voice-Overs/Chinese",
+      "volume": {
+        "id": "fan_kuanglan",
+        "text": "势如狂澜！",
+        "gain_db": -2.45,
+        "before": {
+          "lufs": -11.8,
+          "true_peak_dbtp": -0.17,
+          "mean_dbfs": -12.6,
+          "peak_dbfs": -0.2
+        },
+        "after": {
+          "lufs": -14.3,
+          "true_peak_dbtp": -2.69,
+          "mean_dbfs": -15.0,
+          "peak_dbfs": -2.7
+        }
+      },
+      "output_bytes": 11780,
+      "sha256": "7f3e6ceb24e5648d8ee1ea538d19478dcf5a2151b1417a7408178859cee0246e"
+    },
+    "fan_ajax": {
+      "label": "倒下·其一",
+      "text": "怎能这样…得而复失…",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/VO_ZH_Tartaglia_Fallen_01.ogg/revision/latest?cb=20221113222222",
+      "bytes": 83002,
+      "original": "audio/ajax/originals/fan_ajax.ogg",
+      "output": "audio/ajax/die/fan_ajax1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "cf791b5a7d6bd7e7237e58a74f3de90b27571e3791babf03bbc57844afe4f562",
+      "media_file": "VO_ZH_Tartaglia_Fallen_01.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Tartaglia/Voice-Overs/Chinese",
+      "volume": {
+        "id": "fan_ajax",
+        "text": "怎能这样…得而复失…",
+        "gain_db": -1.54,
+        "before": {
+          "lufs": -12.71,
+          "true_peak_dbtp": -1.56,
+          "mean_dbfs": -12.9,
+          "peak_dbfs": -1.6
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -2.89,
+          "mean_dbfs": -14.4,
+          "peak_dbfs": -2.9
+        }
+      },
+      "output_bytes": 30524,
+      "sha256": "41be6cc0478a4e73e977647dd787c9d28928875bd09f4c5232a4e2839068e180"
+    },
+    "fan_jingwu_convert_voice2": {
+      "label": "元素战技·其四",
+      "text": "来吧！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/13/VO_ZH_Tartaglia_Elemental_Skill_1_04.ogg/revision/latest?cb=20221113222204",
+      "bytes": 19421,
+      "original": "audio/ajax/originals/fan_jingwu_convert_voice2.ogg",
+      "output": "audio/ajax/skill/fan_jingwu_convert_voice2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "00ac0d6cddcf2cdfc4dd9e0765be5ca7a5ea96c336a159b243413fc347264232",
+      "media_file": "VO_ZH_Tartaglia_Elemental_Skill_1_04.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Tartaglia/Voice-Overs/Chinese",
+      "volume": {
+        "id": "fan_jingwu_convert_voice2",
+        "text": "来吧！",
+        "gain_db": -0.22,
+        "before": {
+          "lufs": -14.65,
+          "true_peak_dbtp": -1.28,
+          "mean_dbfs": -15.3,
+          "peak_dbfs": -1.3
+        },
+        "after": {
+          "lufs": -14.95,
+          "true_peak_dbtp": -1.44,
+          "mean_dbfs": -15.6,
+          "peak_dbfs": -1.5
+        }
+      },
+      "output_bytes": 6884,
+      "sha256": "f35e75b7a0b4af1f5e843718b3c9e7684254e517b88a6266ebeae8f050fa8d63"
+    },
+    "fan_jingwu_gain_voice2": {
+      "label": "打开宝箱·其三",
+      "text": "真让人摩拳擦掌！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/74/VO_ZH_Tartaglia_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20221113222357",
+      "bytes": 47571,
+      "original": "audio/ajax/originals/fan_jingwu_gain_voice2.ogg",
+      "output": "audio/ajax/skill/fan_jingwu_gain_voice2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "a2c29ebc634255188260fefd061f9222b3ea5aa10d87f078b0cffe135c77bf40",
+      "media_file": "VO_ZH_Tartaglia_Opening_Treasure_Chest_03.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Tartaglia/Voice-Overs/Chinese",
+      "volume": {
+        "id": "fan_jingwu_gain_voice2",
+        "text": "真让人摩拳擦掌！",
+        "gain_db": -1.53,
+        "before": {
+          "lufs": -15.45,
+          "true_peak_dbtp": 0.03,
+          "mean_dbfs": -16.1,
+          "peak_dbfs": -0.0
+        },
+        "after": {
+          "lufs": -16.98,
+          "true_peak_dbtp": -1.64,
+          "mean_dbfs": -17.6,
+          "peak_dbfs": -1.7
+        }
+      },
+      "output_bytes": 17564,
+      "sha256": "cab5c0977d0ab12d486561e0c1a4707a70680ff0c0b99f2677d1e23cb0a6adf5"
+    },
+    "fan_jingwu_damage_voice2": {
+      "label": "元素爆发·其四",
+      "text": "忍着点，这可是很痛的。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/58/VO_ZH_Tartaglia_Elemental_Burst_04.ogg/revision/latest?cb=20221113222155",
+      "bytes": 54946,
+      "original": "audio/ajax/originals/fan_jingwu_damage_voice2.ogg",
+      "output": "audio/ajax/skill/fan_jingwu_damage_voice2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "2eaf22d0972017184a9a7959a04a78586d4cfcb83d4286c641c57e97aec2c97e",
+      "media_file": "VO_ZH_Tartaglia_Elemental_Burst_04.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Tartaglia/Voice-Overs/Chinese",
+      "volume": {
+        "id": "fan_jingwu_damage_voice2",
+        "text": "忍着点，这可是很痛的。",
+        "gain_db": -1.08,
+        "before": {
+          "lufs": -14.6,
+          "true_peak_dbtp": -0.42,
+          "mean_dbfs": -14.8,
+          "peak_dbfs": -0.4
+        },
+        "after": {
+          "lufs": -15.67,
+          "true_peak_dbtp": -1.62,
+          "mean_dbfs": -15.9,
+          "peak_dbfs": -1.6
+        }
+      },
+      "output_bytes": 21692,
+      "sha256": "74aab5448b24bf32a65200139c7e903a5e98178500a0fd4ee4c2b81a40eab632"
+    },
+    "fan_jingwu_draw_voice2": {
+      "label": "打开宝箱·其一",
+      "text": "好！再去寻找更多宝藏吧！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f3/VO_ZH_Tartaglia_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221113222353",
+      "bytes": 87919,
+      "original": "audio/ajax/originals/fan_jingwu_draw_voice2.ogg",
+      "output": "audio/ajax/skill/fan_jingwu_draw_voice2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "e716530faba09df5b4652e83f6a8f2c18d81714ba6511c920f6c1ce562a4da45",
+      "media_file": "VO_ZH_Tartaglia_Opening_Treasure_Chest_01.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Tartaglia/Voice-Overs/Chinese",
+      "volume": {
+        "id": "fan_jingwu_draw_voice2",
+        "text": "好！再去寻找更多宝藏吧！",
+        "gain_db": -1.62,
+        "before": {
+          "lufs": -16.06,
+          "true_peak_dbtp": 0.12,
+          "mean_dbfs": -17.0,
+          "peak_dbfs": -0.0
+        },
+        "after": {
+          "lufs": -17.68,
+          "true_peak_dbtp": -1.13,
+          "mean_dbfs": -18.6,
+          "peak_dbfs": -1.1
+        }
+      },
+      "output_bytes": 36236,
+      "sha256": "d3b01c8c4f9976e97980bbbb572c36bbd50f14a5ee13c1acdf21841e11362dc9"
+    },
+    "fan_kuanglan2": {
+      "label": "加入队伍·其二",
+      "text": "睁大眼睛看着吧！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/VO_ZH_Tartaglia_Joining_Party_02.ogg/revision/latest?cb=20221114014203",
+      "bytes": 47574,
+      "original": "audio/ajax/originals/fan_kuanglan2.ogg",
+      "output": "audio/ajax/skill/fan_kuanglan2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "ec68c6ea103359e02d71e08b8944d70ce610133d701cd6be38d91eb531c79996",
+      "media_file": "VO_ZH_Tartaglia_Joining_Party_02.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Tartaglia/Voice-Overs/Chinese",
+      "volume": {
+        "id": "fan_kuanglan2",
+        "text": "睁大眼睛看着吧！",
+        "gain_db": -1.62,
+        "before": {
+          "lufs": -15.95,
+          "true_peak_dbtp": 0.12,
+          "mean_dbfs": -16.9,
+          "peak_dbfs": -0.0
+        },
+        "after": {
+          "lufs": -17.56,
+          "true_peak_dbtp": -1.3,
+          "mean_dbfs": -18.5,
+          "peak_dbfs": -1.3
+        }
+      },
+      "output_bytes": 18428,
+      "sha256": "0776276d2f0d27c30c981771c0ba609f97ea51cb696ec943feba4a4e60ed7164"
+    },
+    "fan_kuanglan_repay_voice1": {
+      "label": "生命值低·其一",
+      "text": "哈！有点意思。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1c/VO_ZH_Tartaglia_Low_HP_01.ogg/revision/latest?cb=20221113222334",
+      "bytes": 52726,
+      "original": "audio/ajax/originals/fan_kuanglan_repay_voice1.ogg",
+      "output": "audio/ajax/skill/fan_kuanglan_repay_voice1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "dc313314723d6fa07748fa4bed279dc6cc7bfe5ab85488855635f78b9621dc7b",
+      "media_file": "VO_ZH_Tartaglia_Low_HP_01.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Tartaglia/Voice-Overs/Chinese",
+      "volume": {
+        "id": "fan_kuanglan_repay_voice1",
+        "text": "哈！有点意思。",
+        "gain_db": -0.93,
+        "before": {
+          "lufs": -16.41,
+          "true_peak_dbtp": -0.57,
+          "mean_dbfs": -17.6,
+          "peak_dbfs": -0.6
+        },
+        "after": {
+          "lufs": -17.34,
+          "true_peak_dbtp": -1.74,
+          "mean_dbfs": -18.5,
+          "peak_dbfs": -1.7
+        }
+      },
+      "output_bytes": 20396,
+      "sha256": "472bd2fd6ec49a892b87f08750cb1f777f24c877ca4aea555d78047eb308f4c0"
+    },
+    "fan_kuanglan_repay_voice2": {
+      "label": "生命值低·其三",
+      "text": "生死边缘而已，我很擅长处理。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cc/VO_ZH_Tartaglia_Low_HP_03.ogg/revision/latest?cb=20221113222339",
+      "bytes": 82897,
+      "original": "audio/ajax/originals/fan_kuanglan_repay_voice2.ogg",
+      "output": "audio/ajax/skill/fan_kuanglan_repay_voice2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "71d49724d48db1d51d56f504af63b4985cfed0f39d2a0353a98ed78bdaa36c01",
+      "media_file": "VO_ZH_Tartaglia_Low_HP_03.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Tartaglia/Voice-Overs/Chinese",
+      "volume": {
+        "id": "fan_kuanglan_repay_voice2",
+        "text": "生死边缘而已，我很擅长处理。",
+        "gain_db": -1.52,
+        "before": {
+          "lufs": -15.46,
+          "true_peak_dbtp": 0.02,
+          "mean_dbfs": -15.7,
+          "peak_dbfs": -0.0
+        },
+        "after": {
+          "lufs": -16.95,
+          "true_peak_dbtp": -1.38,
+          "mean_dbfs": -17.2,
+          "peak_dbfs": -1.4
+        }
+      },
+      "output_bytes": 31964,
+      "sha256": "025b8e25f734c5e546163a607e81d1dfc072c06797a59802c76e177df35ffa09"
+    },
+    "fan_ajax2": {
+      "label": "倒下·其二",
+      "text": "失手了…",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/VO_ZH_Tartaglia_Fallen_02.ogg/revision/latest?cb=20221113222224",
+      "bytes": 68476,
+      "original": "audio/ajax/originals/fan_ajax2.ogg",
+      "output": "audio/ajax/die/fan_ajax2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "4fc9eb12411e85ae898cecee1427fa1e37bccebb73b887590582557fb07a5f96",
+      "media_file": "VO_ZH_Tartaglia_Fallen_02.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Tartaglia/Voice-Overs/Chinese",
+      "volume": {
+        "id": "fan_ajax2",
+        "text": "失手了…",
+        "gain_db": -0.48,
+        "before": {
+          "lufs": -13.77,
+          "true_peak_dbtp": -1.44,
+          "mean_dbfs": -17.1,
+          "peak_dbfs": -1.4
+        },
+        "after": {
+          "lufs": -14.21,
+          "true_peak_dbtp": -1.83,
+          "mean_dbfs": -17.5,
+          "peak_dbfs": -1.8
+        }
+      },
+      "output_bytes": 25940,
+      "sha256": "8743ebab3ed845c010c48eab63d73f285b1b4ef701ee0fb9c26b72f5c4154687"
+    }
+  },
+  "loudness_reference": {
+    "target_lufs": -14.25,
+    "references": [
+      {
+        "path": "audio/eula/skill/fan_langhua_high1.mp3",
+        "lufs": -12.1,
+        "true_peak_dbtp": -1.02,
+        "mean_dbfs": -12.5,
+        "peak_dbfs": -1.1
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_high2.mp3",
+        "lufs": -14.37,
+        "true_peak_dbtp": -1.53,
+        "mean_dbfs": -15.9,
+        "peak_dbfs": -1.6
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_low1.mp3",
+        "lufs": -12.6,
+        "true_peak_dbtp": -1.22,
+        "mean_dbfs": -15.1,
+        "peak_dbfs": -1.6
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_low2.mp3",
+        "lufs": -14.95,
+        "true_peak_dbtp": -1.98,
+        "mean_dbfs": -16.3,
+        "peak_dbfs": -2.0
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_mid1.mp3",
+        "lufs": -13.4,
+        "true_peak_dbtp": -1.64,
+        "mean_dbfs": -14.6,
+        "peak_dbfs": -1.7
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_mid2.mp3",
+        "lufs": -14.14,
+        "true_peak_dbtp": -0.38,
+        "mean_dbfs": -14.8,
+        "peak_dbfs": -0.4
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_start.mp3",
+        "lufs": -18.17,
+        "true_peak_dbtp": -3.32,
+        "mean_dbfs": -19.2,
+        "peak_dbfs": -3.4
+      },
+      {
+        "path": "audio/eula/die/fan_eula.mp3",
+        "lufs": -15.72,
+        "true_peak_dbtp": -0.95,
+        "mean_dbfs": -18.1,
+        "peak_dbfs": -1.1
+      }
+    ],
+    "method": "Per-source static gain only; no trim, speed change or synthesis; encoded true peak <= -1 dBTP.",
+    "limitations": "No manual listening, native UI or live match validation."
+  }
+}

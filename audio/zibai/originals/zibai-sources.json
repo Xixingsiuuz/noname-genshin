@@ -1,0 +1,504 @@
+{
+  "page": "https://wiki.biligame.com/ys/兹白语音",
+  "language": "zh-CN",
+  "verified_date": "2026-10-25",
+  "clips": {
+    "fan_sanxiang_leave_yun": {
+      "label": "兹踞，再见...愿月光永远照耀你",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹踞，再见...愿月光永远照耀你.mp3",
+      "url": null,
+      "bytes": 117654,
+      "original": "audio/zibai/originals/兹踞，再见...愿月光永远照耀你.mp3",
+      "output": "audio/zibai/skill/fan_sanxiang_leave_yun.mp3",
+      "output_bytes": 100324,
+      "trim_seconds": null,
+      "sha256": "22ee7661039d00f28ab58bf03673b763687c08ba8fcdd9e64b6e8989dbf3520b",
+      "volume": {
+        "gain_db": 5.7,
+        "before_mean_dbfs": -25.2,
+        "before_peak_dbfs": -8.1,
+        "after_mean_dbfs": -19.5,
+        "after_peak_dbfs": -2.5,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_sanxiang_leave_yan": {
+      "label": "兹踬，是时候了，拿走你要的东西吧",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹踬，是时候了，拿走你要的东西吧.mp3",
+      "url": null,
+      "bytes": 147030,
+      "original": "audio/zibai/originals/兹踬，是时候了，拿走你要的东西吧.mp3",
+      "output": "audio/zibai/skill/fan_sanxiang_leave_yan.mp3",
+      "output_bytes": 134596,
+      "trim_seconds": null,
+      "sha256": "5c4f3d61c3866d465e5ab288ddb02564a01511618112f371cb81c2e2b4d276f1",
+      "volume": {
+        "gain_db": 6.9,
+        "before_mean_dbfs": -28.0,
+        "before_peak_dbfs": -8.9,
+        "after_mean_dbfs": -21.1,
+        "after_peak_dbfs": -2.1,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_sanxiang_leave_ren1": {
+      "label": "兹蹻，水无定，花有尽，会相逢",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹蹻，水无定，花有尽，会相逢.mp3",
+      "url": null,
+      "bytes": 123414,
+      "original": "audio/zibai/originals/兹蹻，水无定，花有尽，会相逢.mp3",
+      "output": "audio/zibai/skill/fan_sanxiang_leave_ren1.mp3",
+      "output_bytes": 111316,
+      "trim_seconds": null,
+      "sha256": "ac3cd917f509223b9cbbd0c3a1f4c0a3e1e49186980f391bf1f8618b08e69da0",
+      "volume": {
+        "gain_db": 4.3,
+        "before_mean_dbfs": -26.5,
+        "before_peak_dbfs": -6.3,
+        "after_mean_dbfs": -22.2,
+        "after_peak_dbfs": -2.0,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_sanxiang_leave_ren2": {
+      "label": "兹蹻，不怕人生长在别离中",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹蹻，不怕人生长在别离中.mp3",
+      "url": null,
+      "bytes": 110742,
+      "original": "audio/zibai/originals/兹蹻，不怕人生长在别离中.mp3",
+      "output": "audio/zibai/skill/fan_sanxiang_leave_ren2.mp3",
+      "output_bytes": 101092,
+      "trim_seconds": null,
+      "sha256": "9929ba250244d280495ffd862b7d63619ed4f58d79f905e60b87667d6630cfed",
+      "volume": {
+        "gain_db": 8,
+        "before_mean_dbfs": -27.5,
+        "before_peak_dbfs": -12.7,
+        "after_mean_dbfs": -19.5,
+        "after_peak_dbfs": -4.6,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_yunjian_form1": {
+      "label": "兹踞，你看起来很困惑...",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹踞，你看起来很困惑....mp3",
+      "url": null,
+      "bytes": 52889,
+      "original": "audio/zibai/originals/兹踞，你看起来很困惑....mp3",
+      "output": "audio/zibai/skill/fan_yunjian_form1.mp3",
+      "output_bytes": 48471,
+      "trim_seconds": null,
+      "sha256": "efa891833f937e4c44009eff98f93b89e05e6ee07c05e1aaa0351cea711ad03d",
+      "volume": {
+        "gain_db": 3.2,
+        "before_mean_dbfs": -22.7,
+        "before_peak_dbfs": -9.8,
+        "after_mean_dbfs": -19.5,
+        "after_peak_dbfs": -6.5,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_yunjian_form2": {
+      "label": "兹踞，我一直也走不到头",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹踞，我一直也走不到头.mp3",
+      "url": null,
+      "bytes": 56433,
+      "original": "audio/zibai/originals/兹踞，我一直也走不到头.mp3",
+      "output": "audio/zibai/skill/fan_yunjian_form2.mp3",
+      "output_bytes": 51799,
+      "trim_seconds": null,
+      "sha256": "30eb6a1c0d7f432ee3c73681af508bec5c46d9a402da15065be657e40f3c65a9",
+      "volume": {
+        "gain_db": 7.6,
+        "before_mean_dbfs": -28.2,
+        "before_peak_dbfs": -9.6,
+        "after_mean_dbfs": -20.6,
+        "after_peak_dbfs": -1.9,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_yanjian_damage1": {
+      "label": "兹踬，黄毛小儿！",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹踬，黄毛小儿！.mp3",
+      "url": null,
+      "bytes": 66801,
+      "original": "audio/zibai/originals/兹踬，黄毛小儿！.mp3",
+      "output": "audio/zibai/skill/fan_yanjian_damage1.mp3",
+      "output_bytes": 54847,
+      "trim_seconds": null,
+      "sha256": "d5626f23e8d7839e4ffaaf2a6791a73f97497b8ba28d76ce2b56b3f2faff30d2",
+      "volume": {
+        "gain_db": 7.2,
+        "before_mean_dbfs": -26.7,
+        "before_peak_dbfs": -9.3,
+        "after_mean_dbfs": -19.5,
+        "after_peak_dbfs": -2.0,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_yanjian_damage2": {
+      "label": "兹踬，执迷不悟！",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹踬，执迷不悟！.mp3",
+      "url": null,
+      "bytes": 72911,
+      "original": "audio/zibai/originals/兹踬，执迷不悟！.mp3",
+      "output": "audio/zibai/skill/fan_yanjian_damage2.mp3",
+      "output_bytes": 69021,
+      "trim_seconds": null,
+      "sha256": "54c74c39d13f52f3fe3db167ee7ef5e41a545bc8547dd0a6cec7b4d3807b3344",
+      "volume": {
+        "gain_db": 5.1,
+        "before_mean_dbfs": -24.6,
+        "before_peak_dbfs": -10.6,
+        "after_mean_dbfs": -19.5,
+        "after_peak_dbfs": -5.6,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_yanjian_control_voice1": {
+      "label": "兹踬，来吧，向我展示你的决心！",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹踬，来吧，向我展示你的决心！.mp3",
+      "url": null,
+      "bytes": 105256,
+      "original": "audio/zibai/originals/兹踬，来吧，向我展示你的决心！.mp3",
+      "output": "audio/zibai/skill/fan_yanjian_control_voice1.mp3",
+      "output_bytes": 98966,
+      "trim_seconds": null,
+      "sha256": "6675a0c5c20217f7123993dad19bad39bf1aeedba3a410c5849cb592af718f8a",
+      "volume": {
+        "gain_db": 4.3,
+        "before_mean_dbfs": -27.6,
+        "before_peak_dbfs": -6.3,
+        "after_mean_dbfs": -23.3,
+        "after_peak_dbfs": -2.0,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_yanjian_control_voice2": {
+      "label": "兹踬，我将以时间的诅咒和此身的记忆回应你！",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹踬，我将以时间的诅咒和此身的记忆回应你！.mp3",
+      "url": null,
+      "bytes": 144078,
+      "original": "audio/zibai/originals/兹踬，我将以时间的诅咒和此身的记忆回应你！.mp3",
+      "output": "audio/zibai/skill/fan_yanjian_control_voice2.mp3",
+      "output_bytes": 137884,
+      "trim_seconds": null,
+      "sha256": "99fd8f81198ca9eccf468bfd4025752dde8de6b895d21a01a5d16ef87af0cb76",
+      "volume": {
+        "gain_db": 4.8,
+        "before_mean_dbfs": -24.8,
+        "before_peak_dbfs": -6.8,
+        "after_mean_dbfs": -20.0,
+        "after_peak_dbfs": -2.0,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_renjian_reveal1": {
+      "label": "兹蹻，本仙就是白马仙人",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹蹻，本仙就是白马仙人.mp3",
+      "url": null,
+      "bytes": 65808,
+      "original": "audio/zibai/originals/兹蹻，本仙就是白马仙人.mp3",
+      "output": "audio/zibai/skill/fan_renjian_reveal1.mp3",
+      "output_bytes": 55054,
+      "trim_seconds": null,
+      "sha256": "d16e380527427c3aef1671a89abcb7fd7c99a3518e6a8592ac4edb9ca2d43f6c",
+      "volume": {
+        "gain_db": 4.1,
+        "before_mean_dbfs": -23.6,
+        "before_peak_dbfs": -10.0,
+        "after_mean_dbfs": -19.5,
+        "after_peak_dbfs": -5.8,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_renjian_reveal2": {
+      "label": "兹蹻，我是真的白马仙人",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹蹻，我是真的白马仙人.mp3",
+      "url": null,
+      "bytes": 68113,
+      "original": "audio/zibai/originals/兹蹻，我是真的白马仙人.mp3",
+      "output": "audio/zibai/skill/fan_renjian_reveal2.mp3",
+      "output_bytes": 59135,
+      "trim_seconds": null,
+      "sha256": "49724bd93f17b61fd31c2a8f6d20e286d2784968df4edede2f235e556eff9ea3",
+      "volume": {
+        "gain_db": 5.9,
+        "before_mean_dbfs": -25.4,
+        "before_peak_dbfs": -11.0,
+        "after_mean_dbfs": -19.5,
+        "after_peak_dbfs": -5.2,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_renjian_gift": {
+      "label": "兹蹻，你这人...倒也有几分趣味",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹蹻，你这人...倒也有几分趣味.mp3",
+      "url": null,
+      "bytes": 82929,
+      "original": "audio/zibai/originals/兹蹻，你这人...倒也有几分趣味.mp3",
+      "output": "audio/zibai/skill/fan_renjian_gift.mp3",
+      "output_bytes": 72799,
+      "trim_seconds": null,
+      "sha256": "ea35d58ef3f81b7a6b7d75512cfae2c4327c59775f7e49634dff0311cb0d8e14",
+      "volume": {
+        "gain_db": 5.0,
+        "before_mean_dbfs": -24.5,
+        "before_peak_dbfs": -9.7,
+        "after_mean_dbfs": -19.5,
+        "after_peak_dbfs": -4.6,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_yunjian_full2": {
+      "label": "兹白，对应的折扣数为九，八，五",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹白，对应的折扣数为九，八，五.mp3",
+      "url": null,
+      "bytes": 68165,
+      "original": "audio/zibai/originals/兹白，对应的折扣数为九，八，五.mp3",
+      "output": "audio/zibai/skill/fan_yunjian_full2.mp3",
+      "output_bytes": 61203,
+      "trim_seconds": null,
+      "sha256": "319948b95c8fa889e57d605807b7fde8a1224de14e2338a043798bcb050a22a6",
+      "volume": {
+        "gain_db": 4.5,
+        "before_mean_dbfs": -24.0,
+        "before_peak_dbfs": -7.7,
+        "after_mean_dbfs": -19.5,
+        "after_peak_dbfs": -3.1,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_yunjian_full3": {
+      "label": "兹白，折扣就应该是五折再减五折，零折",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹白，折扣就应该是五折再减五折，零折.mp3",
+      "url": null,
+      "bytes": 114826,
+      "original": "audio/zibai/originals/兹白，折扣就应该是五折再减五折，零折.mp3",
+      "output": "audio/zibai/skill/fan_yunjian_full3.mp3",
+      "output_bytes": 104504,
+      "trim_seconds": null,
+      "sha256": "378a565ad0ac009e96df8d869a68ed67adb2aacbeda614d05442d93b12602bc1",
+      "volume": {
+        "gain_db": 4.7,
+        "before_mean_dbfs": -24.9,
+        "before_peak_dbfs": -6.7,
+        "after_mean_dbfs": -20.2,
+        "after_peak_dbfs": -2.1,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_yunjian_full4": {
+      "label": "兹白，你...可曾学习过语文？",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹白，你...可曾学习过语文？.mp3",
+      "url": null,
+      "bytes": 103250,
+      "original": "audio/zibai/originals/兹白，你...可曾学习过语文？.mp3",
+      "output": "audio/zibai/skill/fan_yunjian_full4.mp3",
+      "output_bytes": 87384,
+      "trim_seconds": null,
+      "sha256": "7119bd75f9c24da0ebc27e1318d612b656864138eea1161b4495ab2d3366a5d7",
+      "volume": {
+        "gain_db": 5.7,
+        "before_mean_dbfs": -25.2,
+        "before_peak_dbfs": -8.1,
+        "after_mean_dbfs": -19.5,
+        "after_peak_dbfs": -2.4,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_yanjian_full_control_voice": {
+      "label": "兹白，你是那不知天高地厚的黄毛小儿，屡次三番前来阻我",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹白，你是那不知天高地厚的黄毛小儿，屡次三番前来阻我.mp3",
+      "url": null,
+      "bytes": 180438,
+      "original": "audio/zibai/originals/兹白，你是那不知天高地厚的黄毛小儿，屡次三番前来阻我.mp3",
+      "output": "audio/zibai/skill/fan_yanjian_full_control_voice.mp3",
+      "output_bytes": 158164,
+      "trim_seconds": null,
+      "sha256": "5c1babae65646565b802408792142a5eee35a4472f013711eb7ac965f5edeb57",
+      "volume": {
+        "gain_db": 4.8,
+        "before_mean_dbfs": -24.3,
+        "before_peak_dbfs": -8.0,
+        "after_mean_dbfs": -19.5,
+        "after_peak_dbfs": -3.2,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_renjian_full_reveal1": {
+      "label": "兹白，好了，看，它长大了",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹白，好了，看，它长大了.mp3",
+      "url": null,
+      "bytes": 130166,
+      "original": "audio/zibai/originals/兹白，好了，看，它长大了.mp3",
+      "output": "audio/zibai/skill/fan_renjian_full_reveal1.mp3",
+      "output_bytes": 104532,
+      "trim_seconds": null,
+      "sha256": "23be9a1d2749e13ba1edea77d698d2bc03bb1607a311ce4a864de790542a16b8",
+      "volume": {
+        "gain_db": 8,
+        "before_mean_dbfs": -31.6,
+        "before_peak_dbfs": -10.5,
+        "after_mean_dbfs": -23.6,
+        "after_peak_dbfs": -2.4,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_renjian_full_reveal2": {
+      "label": "兹白，那这不就是白马仙人显灵吗",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹白，那这不就是白马仙人显灵吗.mp3",
+      "url": null,
+      "bytes": 104818,
+      "original": "audio/zibai/originals/兹白，那这不就是白马仙人显灵吗.mp3",
+      "output": "audio/zibai/skill/fan_renjian_full_reveal2.mp3",
+      "output_bytes": 86960,
+      "trim_seconds": null,
+      "sha256": "d29c1ec6a03a4be00839de0984cb75bc73e9ec2bd59f3a34974007ecc2e01b32",
+      "volume": {
+        "gain_db": 5.6,
+        "before_mean_dbfs": -25.1,
+        "before_peak_dbfs": -8.0,
+        "after_mean_dbfs": -19.5,
+        "after_peak_dbfs": -2.3,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_renjian_full_gift": {
+      "label": "兹白，既然你想好了，那就放手去做吧",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹白，既然你想好了，那就放手去做吧.mp3",
+      "url": null,
+      "bytes": 103250,
+      "original": "audio/zibai/originals/兹白，既然你想好了，那就放手去做吧.mp3",
+      "output": "audio/zibai/skill/fan_renjian_full_gift.mp3",
+      "output_bytes": 96192,
+      "trim_seconds": null,
+      "sha256": "569c3772efe892b153f9df3947071b92862f2a9f9c41b351ec36960de0ef4208",
+      "volume": {
+        "gain_db": 6.6,
+        "before_mean_dbfs": -26.1,
+        "before_peak_dbfs": -8.7,
+        "after_mean_dbfs": -19.5,
+        "after_peak_dbfs": -2.1,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_nichi1": {
+      "label": "元素爆发·其一",
+      "source": "https://wiki.biligame.com/ys/兹白语音",
+      "url": "https://patchwiki.biligame.com/images/ys/4/45/e3jucl00r6foob16uapwqypu8l3zw31.mp3",
+      "bytes": 28204,
+      "original": "audio/zibai/originals/元素爆发·其一.mp3",
+      "output": "audio/zibai/skill/fan_nichi1.mp3",
+      "output_bytes": 28204,
+      "trim_seconds": null,
+      "sha256": "5d189a53df5fd8ddb0a719c53b8dfcdd1a5889aca310e8f73262e7fa4c4f9bd2",
+      "volume": {
+        "gain_db": 0,
+        "before_mean_dbfs": -16.4,
+        "before_peak_dbfs": -1.4,
+        "after_mean_dbfs": -16.4,
+        "after_peak_dbfs": -1.4,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_nichi2": {
+      "label": "元素爆发·其二",
+      "source": "https://wiki.biligame.com/ys/兹白语音",
+      "url": "https://patchwiki.biligame.com/images/ys/6/66/dt72fkdwmyu1rbtowa0i8jm1m0movqr.mp3",
+      "bytes": 28089,
+      "original": "audio/zibai/originals/元素爆发·其二.mp3",
+      "output": "audio/zibai/skill/fan_nichi2.mp3",
+      "output_bytes": 28089,
+      "trim_seconds": null,
+      "sha256": "e5196c885ad737891dae915b03b04e2db1de39bef06e270612a7ea138f5707be",
+      "volume": {
+        "gain_db": 0,
+        "before_mean_dbfs": -15.6,
+        "before_peak_dbfs": -1.4,
+        "after_mean_dbfs": -15.6,
+        "after_peak_dbfs": -1.4,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_nichi3": {
+      "label": "元素爆发·其三",
+      "source": "https://wiki.biligame.com/ys/兹白语音",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c3/prum0r7lyteq9hzaby8e1snk2hy5dqb.mp3",
+      "bytes": 29456,
+      "original": "audio/zibai/originals/元素爆发·其三.mp3",
+      "output": "audio/zibai/skill/fan_nichi3.mp3",
+      "output_bytes": 29456,
+      "trim_seconds": null,
+      "sha256": "acde2c60e6250836c3aa07883bef0ede7da45dc1ea0605f5f5eef930bbfcbd35",
+      "volume": {
+        "gain_db": 0,
+        "before_mean_dbfs": -15.0,
+        "before_peak_dbfs": -1.1,
+        "after_mean_dbfs": -15.0,
+        "after_peak_dbfs": -1.1,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_yanjian_full_damage1": {
+      "label": "元素战技·其二",
+      "source": "https://wiki.biligame.com/ys/兹白语音",
+      "url": "https://patchwiki.biligame.com/images/ys/2/25/hq1bwwu1j142udz142436a4wucy14wz.mp3",
+      "bytes": 11934,
+      "original": "audio/zibai/originals/元素战技·其二.mp3",
+      "output": "audio/zibai/skill/fan_yanjian_full_damage1.mp3",
+      "output_bytes": 11934,
+      "trim_seconds": null,
+      "sha256": "82d27bb9e350c86f0ede3696271998d4e5bab75fed5f675da6cd404ec4ed7e17",
+      "volume": {
+        "gain_db": 0,
+        "before_mean_dbfs": -14.9,
+        "before_peak_dbfs": -1.7,
+        "after_mean_dbfs": -14.9,
+        "after_peak_dbfs": -1.7,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_yanjian_full_damage2": {
+      "label": "元素战技·其三",
+      "source": "https://wiki.biligame.com/ys/兹白语音",
+      "url": "https://patchwiki.biligame.com/images/ys/1/1b/re7zerskwgenp98qtlwgezmrrn3qleq.mp3",
+      "bytes": 13177,
+      "original": "audio/zibai/originals/元素战技·其三.mp3",
+      "output": "audio/zibai/skill/fan_yanjian_full_damage2.mp3",
+      "output_bytes": 13177,
+      "trim_seconds": null,
+      "sha256": "a89119944ef905e3b55aef2c09b3e2d4c4854ec0181e0804473e9ea50c324f08",
+      "volume": {
+        "gain_db": 0,
+        "before_mean_dbfs": -14.1,
+        "before_peak_dbfs": -0.0,
+        "after_mean_dbfs": -14.1,
+        "after_peak_dbfs": -0.0,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    },
+    "fan_yunjian_full1": {
+      "label": "闲聊·数理",
+      "source": "https://wiki.biligame.com/ys/兹白语音",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6e/pasi8tntcg487amvx0p8nwg9pcv2hs9.mp3",
+      "bytes": 92647,
+      "original": "audio/zibai/originals/闲聊·数理.mp3",
+      "output": "audio/zibai/skill/fan_yunjian_full1.mp3",
+      "output_bytes": 27908,
+      "trim_seconds": [
+        0,
+        2.2
+      ],
+      "sha256": "e919bb7c9dfd11d8a0851411fee7283d8a2d350836b2ad101c2758e05338b3e9",
+      "volume": {
+        "gain_db": 0,
+        "before_mean_dbfs": -19.3,
+        "before_peak_dbfs": -5.5,
+        "after_mean_dbfs": -19.3,
+        "after_peak_dbfs": -5.4,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
+    }
+  }
+}

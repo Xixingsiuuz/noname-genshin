@@ -1,0 +1,425 @@
+{
+  "page": "https://wiki.biligame.com/ys/玛薇卡语音",
+  "clips": {
+    "fan_chihun_gain1": {
+      "label": "元素战技·其一",
+      "text": "点燃吧。",
+      "purpose": "战意实际增加",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c0/loznb0fxjqspaqbeogiiizqgmusezu9.mp3",
+      "bytes": 9754,
+      "original_sha256": "4eb35d15895ffbf23063591ad27911a5d1f135123d825f9bd53e7402f35e2049",
+      "original": "audio/mavuika/originals/fan_chihun_gain1.mp3",
+      "output": "audio/mavuika/skill/fan_chihun_gain1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_chihun_gain1",
+        "text": "点燃吧。",
+        "gain_db": -1.51,
+        "before": {
+          "lufs": -13.87,
+          "true_peak_dbtp": 0.01,
+          "mean_dbfs": -14.2,
+          "peak_dbfs": 0.0
+        },
+        "after": {
+          "lufs": -15.4,
+          "true_peak_dbtp": -1.3,
+          "mean_dbfs": -15.8,
+          "peak_dbfs": -1.3
+        }
+      },
+      "output_bytes": 8972,
+      "sha256": "180c1c7b3d16ef93fdc35f07dd6cf67d74ebc99790ae298dca90c1f17433cafd"
+    },
+    "fan_chihun_gain2": {
+      "label": "元素战技·其三",
+      "text": "烈日随我。",
+      "purpose": "战意实际增加",
+      "url": "https://patchwiki.biligame.com/images/ys/9/9a/171f3fl2g2fwcbyq0id4100i9hr4qsp.mp3",
+      "bytes": 11904,
+      "original_sha256": "13222710ebb041a48d5f0c72ffd3e547ae0953f3a3e497e658f0409549ffdbb5",
+      "original": "audio/mavuika/originals/fan_chihun_gain2.mp3",
+      "output": "audio/mavuika/skill/fan_chihun_gain2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_chihun_gain2",
+        "text": "烈日随我。",
+        "gain_db": 2.66,
+        "before": {
+          "lufs": -17.43,
+          "true_peak_dbtp": -4.16,
+          "mean_dbfs": -17.3,
+          "peak_dbfs": -4.2
+        },
+        "after": {
+          "lufs": -14.78,
+          "true_peak_dbtp": -1.61,
+          "mean_dbfs": -14.7,
+          "peak_dbfs": -1.7
+        }
+      },
+      "output_bytes": 11756,
+      "sha256": "6f9aca652828cc272ab445683d77f96d3b758a5db25197bfa78fce2c2ee10bd8"
+    },
+    "fan_chihun_gain3": {
+      "label": "元素战技·其二",
+      "text": "焚灭不净！",
+      "purpose": "战意实际增加",
+      "url": "https://patchwiki.biligame.com/images/ys/6/65/42ua0vlvculyfkrjkj07y1uq1sbikfr.mp3",
+      "bytes": 11873,
+      "original_sha256": "16f7e6451e347067a808d77565599d7bf7876e280b6436179da8a16fd5f78540",
+      "original": "audio/mavuika/originals/fan_chihun_gain3.mp3",
+      "output": "audio/mavuika/skill/fan_chihun_gain3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_chihun_gain3",
+        "text": "焚灭不净！",
+        "gain_db": -1.1,
+        "before": {
+          "lufs": -18.07,
+          "true_peak_dbtp": -0.4,
+          "mean_dbfs": -19.3,
+          "peak_dbfs": -0.8
+        },
+        "after": {
+          "lufs": -19.19,
+          "true_peak_dbtp": -1.14,
+          "mean_dbfs": -20.5,
+          "peak_dbfs": -1.5
+        }
+      },
+      "output_bytes": 12524,
+      "sha256": "b3eb15296b271f12dbfb5995cc1dba8450debe6d57fdbabe83cca08ff51b538b"
+    },
+    "fan_chihun_overflow1": {
+      "label": "打开宝箱·其三",
+      "text": "还不错，我很喜欢。",
+      "purpose": "满额改为摸牌",
+      "url": "https://patchwiki.biligame.com/images/ys/9/92/lepy3je5e7zs7csnbnnlctcysdrqyvy.mp3",
+      "bytes": 17378,
+      "original_sha256": "102a107f891f79ea4949c71c6f8fc55b9ea42e81c49a235c1c7e1e4f764d878d",
+      "original": "audio/mavuika/originals/fan_chihun_overflow1.mp3",
+      "output": "audio/mavuika/skill/fan_chihun_overflow1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_chihun_overflow1",
+        "text": "还不错，我很喜欢。",
+        "gain_db": -1.44,
+        "before": {
+          "lufs": -18.22,
+          "true_peak_dbtp": -0.06,
+          "mean_dbfs": -18.9,
+          "peak_dbfs": -0.1
+        },
+        "after": {
+          "lufs": -19.66,
+          "true_peak_dbtp": -1.5,
+          "mean_dbfs": -20.3,
+          "peak_dbfs": -1.5
+        }
+      },
+      "output_bytes": 18740,
+      "sha256": "bafb1c6ff858ea5fdd60702c155b4367df5144042a06edc2739f18d7a8d72a8c"
+    },
+    "fan_chihun_overflow2": {
+      "label": "元素战技·其四",
+      "text": "要加速了。",
+      "purpose": "满额改为摸牌",
+      "url": "https://patchwiki.biligame.com/images/ys/9/94/pcjc5t26c2iwi2wsiwn7rzbkm5yfk0i.mp3",
+      "bytes": 12356,
+      "original_sha256": "26def3d312408c7aea79ddc734e0bf21938ff383a54178732f1ffeb5022fa18a",
+      "original": "audio/mavuika/originals/fan_chihun_overflow2.mp3",
+      "output": "audio/mavuika/skill/fan_chihun_overflow2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_chihun_overflow2",
+        "text": "要加速了。",
+        "gain_db": -2.06,
+        "before": {
+          "lufs": -12.77,
+          "true_peak_dbtp": 0.04,
+          "mean_dbfs": -13.9,
+          "peak_dbfs": 0.0
+        },
+        "after": {
+          "lufs": -14.79,
+          "true_peak_dbtp": -1.57,
+          "mean_dbfs": -16.0,
+          "peak_dbfs": -1.6
+        }
+      },
+      "output_bytes": 12956,
+      "sha256": "e69e2e1210184e85a3520afed43bfe800416b36508e28c98c91f67fadcba0854"
+    },
+    "fan_chihun_convert1": {
+      "label": "加入队伍·其二",
+      "text": "当然没问题。",
+      "purpose": "确认换用基本牌",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2c/p2xq5880vuqmwdl62uyf5hogq7rg6fr.mp3",
+      "bytes": 18422,
+      "original_sha256": "539ca3ba1f688d07f46def63e077bfcab3106e4e30faef81c9fd7001273f8f26",
+      "original": "audio/mavuika/originals/fan_chihun_convert1.mp3",
+      "output": "audio/mavuika/skill/fan_chihun_convert1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_chihun_convert1",
+        "text": "当然没问题。",
+        "gain_db": -1.53,
+        "before": {
+          "lufs": -17.59,
+          "true_peak_dbtp": 0.03,
+          "mean_dbfs": -19.6,
+          "peak_dbfs": -0.0
+        },
+        "after": {
+          "lufs": -19.09,
+          "true_peak_dbtp": -1.42,
+          "mean_dbfs": -21.1,
+          "peak_dbfs": -1.4
+        }
+      },
+      "output_bytes": 20156,
+      "sha256": "67237adabba7d9bbf6327982bf9fea142a23cf7cc19707411bdecd03cd64ac88"
+    },
+    "fan_chihun_convert2": {
+      "label": "加入队伍·其三",
+      "text": "我随时准备就绪。",
+      "purpose": "确认换用基本牌",
+      "url": "https://patchwiki.biligame.com/images/ys/0/06/3j5jpa0h4qafsbi0u750z63gpm62cvu.mp3",
+      "bytes": 15501,
+      "original_sha256": "a2524138d1b06d6781bd14b7efe7ee43763c039e5d9ee52e17c1854c122736ee",
+      "original": "audio/mavuika/originals/fan_chihun_convert2.mp3",
+      "output": "audio/mavuika/skill/fan_chihun_convert2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_chihun_convert2",
+        "text": "我随时准备就绪。",
+        "gain_db": -0.46,
+        "before": {
+          "lufs": -17.53,
+          "true_peak_dbtp": -1.04,
+          "mean_dbfs": -18.4,
+          "peak_dbfs": -1.3
+        },
+        "after": {
+          "lufs": -17.98,
+          "true_peak_dbtp": -2.18,
+          "mean_dbfs": -18.9,
+          "peak_dbfs": -2.7
+        }
+      },
+      "output_bytes": 16628,
+      "sha256": "a4e4d0a8d00388112171d5a254ccdbd4dc12be5cc8d95b35107c36c5e7191c87"
+    },
+    "fan_fentian_charge1": {
+      "label": "元素战技·其五",
+      "text": "动力全开！",
+      "purpose": "支付战意增加出杀额度",
+      "url": "https://patchwiki.biligame.com/images/ys/b/bb/hptahz84e7qvmqjpr6txj32vfilq4yu.mp3",
+      "bytes": 11626,
+      "original_sha256": "8dba272e0a308902d76be8914feb3db34310e070a6aab47241062bbd54ba933f",
+      "original": "audio/mavuika/originals/fan_fentian_charge1.mp3",
+      "output": "audio/mavuika/skill/fan_fentian_charge1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_fentian_charge1",
+        "text": "动力全开！",
+        "gain_db": -1.52,
+        "before": {
+          "lufs": -13.76,
+          "true_peak_dbtp": 0.02,
+          "mean_dbfs": -14.1,
+          "peak_dbfs": -0.0
+        },
+        "after": {
+          "lufs": -15.34,
+          "true_peak_dbtp": -1.34,
+          "mean_dbfs": -15.7,
+          "peak_dbfs": -1.3
+        }
+      },
+      "output_bytes": 11492,
+      "sha256": "5ef57fd3d5236cc77000fe77446ba8e7f89f73c0a8a488a5126ebebd55bad77e"
+    },
+    "fan_fentian_charge2": {
+      "label": "元素战技·其六",
+      "text": "谁要阻拦？",
+      "purpose": "支付战意增加出杀额度",
+      "url": "https://patchwiki.biligame.com/images/ys/1/18/6kmam7stix0gm29eqdofi9i7cuzmvye.mp3",
+      "bytes": 11782,
+      "original_sha256": "134b5388974565bca3c0e93d905414a35cd308b4d2f32630cb53fe2dde4fdae4",
+      "original": "audio/mavuika/originals/fan_fentian_charge2.mp3",
+      "output": "audio/mavuika/skill/fan_fentian_charge2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_fentian_charge2",
+        "text": "谁要阻拦？",
+        "gain_db": -1.55,
+        "before": {
+          "lufs": -12.72,
+          "true_peak_dbtp": 0.05,
+          "mean_dbfs": -14.5,
+          "peak_dbfs": 0.0
+        },
+        "after": {
+          "lufs": -14.27,
+          "true_peak_dbtp": -1.42,
+          "mean_dbfs": -16.0,
+          "peak_dbfs": -1.5
+        }
+      },
+      "output_bytes": 12380,
+      "sha256": "555894a93ff66e28192f047e2283fdfa98e326ebe87a1ed27ad876767b17fd7a"
+    },
+    "fan_fentian_fire1": {
+      "label": "元素爆发·其一",
+      "text": "恭听太阳的轰鸣！",
+      "purpose": "确认阶段末火焰伤害",
+      "url": "https://patchwiki.biligame.com/images/ys/3/35/hir6yt9uecxyktbyh41y5zr84cjihvi.mp3",
+      "bytes": 21514,
+      "original_sha256": "5cf07b6a7645c3c4896011baad53639523b099de31885dda9b79cd9084049b84",
+      "original": "audio/mavuika/originals/fan_fentian_fire1.mp3",
+      "output": "audio/mavuika/skill/fan_fentian_fire1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_fentian_fire1",
+        "text": "恭听太阳的轰鸣！",
+        "gain_db": -3.29,
+        "before": {
+          "lufs": -10.96,
+          "true_peak_dbtp": 0.2,
+          "mean_dbfs": -11.6,
+          "peak_dbfs": 0.0
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -2.82,
+          "mean_dbfs": -14.9,
+          "peak_dbfs": -2.8
+        }
+      },
+      "output_bytes": 24548,
+      "sha256": "97d9128f75fc352ad1f1017020f45807be8375bd07ac859b565b2b895997bb40"
+    },
+    "fan_fentian_fire2": {
+      "label": "元素爆发·其二",
+      "text": "无赦天火！",
+      "purpose": "确认阶段末火焰伤害",
+      "url": "https://patchwiki.biligame.com/images/ys/4/48/eufybt6zm4gmcr064v2mnghgsjb0bz8.mp3",
+      "bytes": 18874,
+      "original_sha256": "e43ded51ac1cb8f526aa0c8448d86c828da18a91ab2b3fb8d829713c5d9378cf",
+      "original": "audio/mavuika/originals/fan_fentian_fire2.mp3",
+      "output": "audio/mavuika/skill/fan_fentian_fire2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_fentian_fire2",
+        "text": "无赦天火！",
+        "gain_db": -3.17,
+        "before": {
+          "lufs": -11.08,
+          "true_peak_dbtp": 0.09,
+          "mean_dbfs": -10.9,
+          "peak_dbfs": 0.0
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -2.51,
+          "mean_dbfs": -14.0,
+          "peak_dbfs": -2.5
+        }
+      },
+      "output_bytes": 21428,
+      "sha256": "518151985e6fd6e0249fb4f817fa7dcdd4d5deb9d2262475e28b907a5687fbb4"
+    },
+    "fan_fentian_fire3": {
+      "label": "元素爆发·其三",
+      "text": "埋葬于赤焰之下！",
+      "purpose": "确认阶段末火焰伤害",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6f/ayps259fzin1s85tdsnfjmsikfwxrig.mp3",
+      "bytes": 20129,
+      "original_sha256": "b11007a5e78e49ea4db9d417f9e471edc23d3b6e701c3d93355b50dd1331f72c",
+      "original": "audio/mavuika/originals/fan_fentian_fire3.mp3",
+      "output": "audio/mavuika/skill/fan_fentian_fire3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_fentian_fire3",
+        "text": "埋葬于赤焰之下！",
+        "gain_db": -2.7,
+        "before": {
+          "lufs": -12.5,
+          "true_peak_dbtp": 0.1,
+          "mean_dbfs": -13.2,
+          "peak_dbfs": 0.0
+        },
+        "after": {
+          "lufs": -15.19,
+          "true_peak_dbtp": -1.5,
+          "mean_dbfs": -15.9,
+          "peak_dbfs": -1.5
+        }
+      },
+      "output_bytes": 23804,
+      "sha256": "2be9c1bcbf4002b19002be803897b8c784382a5df6e896aa62d8056cb332b34b"
+    },
+    "fan_zailin": {
+      "label": "生命值低·其三",
+      "text": "也该认真起来了。",
+      "purpose": "确认濒死发动再临",
+      "url": "https://patchwiki.biligame.com/images/ys/c/cf/059i8zvdg7elojal19hz8fnfnd60so8.mp3",
+      "bytes": 14361,
+      "original_sha256": "480ad91ef2287d4226ec8364f201b21f5422357862970267458ce5e45dad1582",
+      "original": "audio/mavuika/originals/fan_zailin.mp3",
+      "output": "audio/mavuika/skill/fan_zailin.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_zailin",
+        "text": "也该认真起来了。",
+        "gain_db": -0.22,
+        "before": {
+          "lufs": -16.25,
+          "true_peak_dbtp": -1.28,
+          "mean_dbfs": -17.0,
+          "peak_dbfs": -1.3
+        },
+        "after": {
+          "lufs": -16.47,
+          "true_peak_dbtp": -1.33,
+          "mean_dbfs": -17.2,
+          "peak_dbfs": -1.4
+        }
+      },
+      "output_bytes": 15404,
+      "sha256": "dacfd6de4a130a2b24f99eeee03468d8f0c4f8d94362b7b62463ea40007b82a9"
+    },
+    "fan_mavuika": {
+      "label": "倒下·其一",
+      "text": "火，不会熄灭…",
+      "purpose": "阵亡",
+      "url": "https://patchwiki.biligame.com/images/ys/5/59/2rsu9o0n2zittf1hbgymn7kfx39e2yj.mp3",
+      "bytes": 26387,
+      "original_sha256": "671d72c297bee90630896092923d29dd1b39642753bbc6ed91a480600b88b557",
+      "original": "audio/mavuika/originals/fan_mavuika.mp3",
+      "output": "audio/mavuika/die/fan_mavuika.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_mavuika",
+        "text": "火，不会熄灭…",
+        "gain_db": -3.11,
+        "before": {
+          "lufs": -15.06,
+          "true_peak_dbtp": 1.09,
+          "mean_dbfs": -20.3,
+          "peak_dbfs": 0.0
+        },
+        "after": {
+          "lufs": -18.17,
+          "true_peak_dbtp": -1.44,
+          "mean_dbfs": -23.4,
+          "peak_dbfs": -1.6
+        }
+      },
+      "output_bytes": 31796,
+      "sha256": "d2d8bb43dd63cbc7eacd365f404ee9d0faeaa68375917a01ba866caec1435525"
+    }
+  }
+}

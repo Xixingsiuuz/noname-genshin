@@ -1,0 +1,317 @@
+{
+  "page": "https://wiki.biligame.com/ys/%E9%AD%88%E8%AF%AD%E9%9F%B3",
+  "clips": {
+    "fan_nuowu_start1": {
+      "label": "元素战技·其一",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/VO_ZH_Xiao_Elemental_Skill_1_01.ogg",
+      "text": "哼。",
+      "bytes": 13412,
+      "original": "audio/xiao/originals/fan_nuowu_start1.ogg",
+      "original_sha256": "167c2a78966de279b77005c0679a69c2ff4a6e3e73db9b6ad8a1da9794e1eedb",
+      "output": "audio/xiao/skill/fan_nuowu_start1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_nuowu_start1",
+        "gain_db": -0.57,
+        "before": {
+          "lufs": -16.5,
+          "true_peak_dbtp": -0.93,
+          "mean_dbfs": -20.0,
+          "peak_dbfs": -1.0,
+          "measurement_padding_seconds": 1
+        },
+        "after": {
+          "lufs": -17.0,
+          "true_peak_dbtp": -1.37,
+          "mean_dbfs": -20.6,
+          "peak_dbfs": -1.4,
+          "measurement_padding_seconds": 1
+        }
+      },
+      "sha256": "b07cdc25c274bb7f80adf822b2a2e1e1e965cc1c64af0e84bcb07d3d982a4fd1",
+      "output_bytes": 4508
+    },
+    "fan_nuowu_start2": {
+      "label": "元素战技·其二",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/VO_ZH_Xiao_Elemental_Skill_1_02.ogg",
+      "text": "无聊。",
+      "bytes": 21711,
+      "original": "audio/xiao/originals/fan_nuowu_start2.ogg",
+      "original_sha256": "de2072b6451525013fb0e911e888f2b629b9800673c0e837ca436c807e6e55b7",
+      "output": "audio/xiao/skill/fan_nuowu_start2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_nuowu_start2",
+        "gain_db": -1.8,
+        "before": {
+          "lufs": -12.45,
+          "true_peak_dbtp": -2.63,
+          "mean_dbfs": -12.6,
+          "peak_dbfs": -2.6
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -4.38,
+          "mean_dbfs": -14.4,
+          "peak_dbfs": -4.4
+        }
+      },
+      "sha256": "4bdf20c441ab3367633c0e74ce5cef9dd3969ac7eb3b5a45afff03b346335956",
+      "output_bytes": 7340
+    },
+    "fan_nuowu_start3": {
+      "label": "元素战技·其三",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0d/VO_ZH_Xiao_Elemental_Skill_1_03.ogg",
+      "text": "无用。",
+      "bytes": 16504,
+      "original": "audio/xiao/originals/fan_nuowu_start3.ogg",
+      "original_sha256": "8c1039fc1e084a8d97802d48dca99429afcfd80255120ee52b3bdb7b1028a4ef",
+      "output": "audio/xiao/skill/fan_nuowu_start3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_nuowu_start3",
+        "gain_db": -0.08,
+        "before": {
+          "lufs": -14.39,
+          "true_peak_dbtp": -1.42,
+          "mean_dbfs": -17.2,
+          "peak_dbfs": -1.4,
+          "measurement_padding_seconds": 1
+        },
+        "after": {
+          "lufs": -14.49,
+          "true_peak_dbtp": -1.46,
+          "mean_dbfs": -17.2,
+          "peak_dbfs": -1.5,
+          "measurement_padding_seconds": 1
+        }
+      },
+      "sha256": "adac2565fe89a65f0e80dc63e153ecc3abc74683339e7d8d9fa322ba797e42c1",
+      "output_bytes": 5804
+    },
+    "fan_nuowu_damage1": {
+      "label": "元素爆发·其一",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/30/VO_ZH_Xiao_Elemental_Burst_01.ogg",
+      "text": "就此消失。",
+      "bytes": 48998,
+      "original": "audio/xiao/originals/fan_nuowu_damage1.ogg",
+      "original_sha256": "07688ca1306176f78fa1e0c71e2b60d11afe382f048e0a3e8da952e3e5ac312a",
+      "output": "audio/xiao/skill/fan_nuowu_damage1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_nuowu_damage1",
+        "gain_db": -1.65,
+        "before": {
+          "lufs": -12.6,
+          "true_peak_dbtp": -1.36,
+          "mean_dbfs": -14.0,
+          "peak_dbfs": -1.4
+        },
+        "after": {
+          "lufs": -14.2,
+          "true_peak_dbtp": -2.83,
+          "mean_dbfs": -15.7,
+          "peak_dbfs": -2.9
+        }
+      },
+      "sha256": "f37c4204cb481248aa1570125658f8b05a8e4e90be081ddd00dc54b2aef8e2a3",
+      "output_bytes": 18644
+    },
+    "fan_nuowu_damage2": {
+      "label": "元素爆发·其二",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/76/VO_ZH_Xiao_Elemental_Burst_02.ogg",
+      "text": "靖妖傩舞。",
+      "bytes": 48517,
+      "original": "audio/xiao/originals/fan_nuowu_damage2.ogg",
+      "original_sha256": "ad386ee59125c63f9e7132ae0d17276fa1b2dff16359277a823e87e99a6b1c53",
+      "output": "audio/xiao/skill/fan_nuowu_damage2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_nuowu_damage2",
+        "gain_db": -2.42,
+        "before": {
+          "lufs": -11.83,
+          "true_peak_dbtp": -1.74,
+          "mean_dbfs": -11.6,
+          "peak_dbfs": -1.7
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -4.06,
+          "mean_dbfs": -14.0,
+          "peak_dbfs": -4.1
+        }
+      },
+      "sha256": "c4d21ac8ef2677f56db3bf37ab4875c776d419245c1811f249fffcda9ace0a70",
+      "output_bytes": 18140
+    },
+    "fan_nuowu_damage3": {
+      "label": "元素爆发·其三",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/VO_ZH_Xiao_Elemental_Burst_03.ogg",
+      "text": "悲鸣吧。",
+      "bytes": 33821,
+      "original": "audio/xiao/originals/fan_nuowu_damage3.ogg",
+      "original_sha256": "75016857ea276fa970e7fdcba914a118f5a534f14983525bacb7803b666a234d",
+      "output": "audio/xiao/skill/fan_nuowu_damage3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_nuowu_damage3",
+        "gain_db": -1.98,
+        "before": {
+          "lufs": -12.27,
+          "true_peak_dbtp": -1.91,
+          "mean_dbfs": -12.2,
+          "peak_dbfs": -1.9
+        },
+        "after": {
+          "lufs": -14.22,
+          "true_peak_dbtp": -3.67,
+          "mean_dbfs": -14.2,
+          "peak_dbfs": -3.7
+        }
+      },
+      "sha256": "734d2a42c8f9ace221fd59de799849b92533bc04860e4b8486b68c0255ba742d",
+      "output_bytes": 12284
+    },
+    "fan_jiangmo1": {
+      "label": "闲聊·荒魂",
+      "url": "https://patchwiki.biligame.com/images/ys/5/57/16xsek00zz6uvcqiuhadh1tru0wy6e4.mp3",
+      "text": "荒野上的孤魂，休想伤我分毫。",
+      "bytes": 38188,
+      "original": "audio/xiao/originals/fan_jiangmo1.mp3",
+      "original_sha256": "746c6d16505a9e8dc9776fe5fd94ca479ec1d601a29fdf8cc23566f8fd6243f1",
+      "output": "audio/xiao/skill/fan_jiangmo1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_jiangmo1",
+        "gain_db": 6.13,
+        "before": {
+          "lufs": -24.03,
+          "true_peak_dbtp": -7.63,
+          "mean_dbfs": -25.1,
+          "peak_dbfs": -7.7
+        },
+        "after": {
+          "lufs": -17.94,
+          "true_peak_dbtp": -1.59,
+          "mean_dbfs": -19.0,
+          "peak_dbfs": -1.6
+        }
+      },
+      "sha256": "d66ed3fb20ee36e5fda995648115f896411897ffb9a222bf4189ece6da1c689b",
+      "output_bytes": 41403
+    },
+    "fan_jiangmo2": {
+      "label": "闲聊·侵蚀",
+      "url": "https://patchwiki.biligame.com/images/ys/b/ba/n6pj11zzzd67l88vwj547pkfhpghb7m.mp3",
+      "text": "…呃啊…哼，想起了一些不愉快的事。",
+      "bytes": 71788,
+      "original": "audio/xiao/originals/fan_jiangmo2.mp3",
+      "original_sha256": "bb421f7108945bc2799beebb5ec2dc2e75a55aa3bb86bd5e8b4c9815c3a1768e",
+      "output": "audio/xiao/skill/fan_jiangmo2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_jiangmo2",
+        "gain_db": 5.17,
+        "before": {
+          "lufs": -23.03,
+          "true_peak_dbtp": -6.67,
+          "mean_dbfs": -25.8,
+          "peak_dbfs": -6.7
+        },
+        "after": {
+          "lufs": -17.85,
+          "true_peak_dbtp": -1.88,
+          "mean_dbfs": -20.6,
+          "peak_dbfs": -1.9
+        }
+      },
+      "sha256": "f1221c58a68beeeca7f96c9b1cf7d82641a316233567ab10c4f2167a7df1da58",
+      "output_bytes": 82347
+    },
+    "fan_xiao1": {
+      "label": "倒下·其一",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/21/VO_ZH_Xiao_Fallen_01.ogg",
+      "text": "这是…报应吗。",
+      "bytes": 78533,
+      "original": "audio/xiao/originals/fan_xiao1.ogg",
+      "original_sha256": "a4a58323800e44d7632df57ee9d0612cba37a7201660aeb82f8f415526889bed",
+      "output": "audio/xiao/die/fan_xiao1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_xiao1",
+        "gain_db": 2.23,
+        "before": {
+          "lufs": -16.48,
+          "true_peak_dbtp": -4.53,
+          "mean_dbfs": -20.0,
+          "peak_dbfs": -4.5
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -2.19,
+          "mean_dbfs": -17.8,
+          "peak_dbfs": -2.2
+        }
+      },
+      "sha256": "dc12a644d35a668ddf245ec1c5550cd6cf3304ff8f1bee0652356b577d585629",
+      "output_bytes": 30140
+    },
+    "fan_xiao2": {
+      "label": "倒下·其二",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/92/VO_ZH_Xiao_Fallen_02.ogg",
+      "text": "这一天…到来了呀。",
+      "bytes": 113298,
+      "original": "audio/xiao/originals/fan_xiao2.ogg",
+      "original_sha256": "66435dd9d2d7f36f3609450888964bc03c92c3eb21175ff7e8bc31031f507629",
+      "output": "audio/xiao/die/fan_xiao2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_xiao2",
+        "gain_db": 2.3,
+        "before": {
+          "lufs": -16.55,
+          "true_peak_dbtp": -4.05,
+          "mean_dbfs": -19.2,
+          "peak_dbfs": -4.1
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -1.52,
+          "mean_dbfs": -16.9,
+          "peak_dbfs": -1.5
+        }
+      },
+      "sha256": "84c9bb010a74c3486d23bc98e9eaad08996e4570640c5ee88a4c06432e6fc3e8",
+      "output_bytes": 43700
+    },
+    "fan_xiao3": {
+      "label": "倒下·其三",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/96/VO_ZH_Xiao_Fallen_03.ogg",
+      "text": "不可能…",
+      "bytes": 83009,
+      "original": "audio/xiao/originals/fan_xiao3.ogg",
+      "original_sha256": "097e127d7354a464508001a810d39105d1316517dd16523d078b84fe09148fd5",
+      "output": "audio/xiao/die/fan_xiao3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_xiao3",
+        "gain_db": 0.88,
+        "before": {
+          "lufs": -15.13,
+          "true_peak_dbtp": -3.65,
+          "mean_dbfs": -18.2,
+          "peak_dbfs": -3.7
+        },
+        "after": {
+          "lufs": -14.21,
+          "true_peak_dbtp": -2.15,
+          "mean_dbfs": -17.3,
+          "peak_dbfs": -2.2
+        }
+      },
+      "sha256": "b75e325bd477a3124c12b4aab9fb2f529392a35520c5df7a032fb9f2f0d59720",
+      "output_bytes": 31532
+    }
+  }
+}

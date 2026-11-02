@@ -1,0 +1,46 @@
+{
+  "source": "jean.png",
+  "specs": {
+    "jean-select-centered-20261028": [
+      [
+        850,
+        20,
+        1170,
+        468
+      ],
+      [
+        240,
+        336
+      ],
+      0.65
+    ],
+    "jean-centered-20261028": [
+      [
+        800,
+        15,
+        1220,
+        592
+      ],
+      [
+        360,
+        495
+      ],
+      0.6
+    ],
+    "jean-detail-centered-20261028": [
+      [
+        710,
+        10,
+        1310,
+        841
+      ],
+      [
+        780,
+        1080
+      ],
+      0
+    ]
+  },
+  "resampling": "Lanczos",
+  "review": "Reframed from user screenshots: selection +31%, arena +33%, detail +30%; face/upper-body horizontal center near source x=1010. Preview only; not tested in game. Previous portrait files preserved."
+}

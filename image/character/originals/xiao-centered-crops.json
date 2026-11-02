@@ -1,0 +1,34 @@
+{
+  "source": "xiao.png",
+  "coordinates": "normalized original image coordinates",
+  "resampling": "Lanczos",
+  "specs": {
+    "xiao-centered-20261027": [
+      [
+        0.045,
+        0.01,
+        0.615,
+        0.79
+      ],
+      [
+        360,
+        492
+      ],
+      0.65
+    ],
+    "xiao-detail-centered-20261027": [
+      [
+        0,
+        0.01,
+        0.78,
+        0.99
+      ],
+      [
+        1056,
+        1327
+      ],
+      0
+    ]
+  },
+  "review": "Image previews at screenshot dimensions; not live game verification"
+}

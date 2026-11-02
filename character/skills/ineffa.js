@@ -1,0 +1,143 @@
+import { lib, game, get, ui, _status } from "../../../../noname.js";
+
+const available = player => player.countCharge() > 0 && !player.hasSkill("fan_miyuan_used");
+const options = (event, player) => get.zhinangs().filter(name =>
+  (event._backup?.filterCard || event.filterCard)({ name }, player, event));
+const pendingConfirm = new WeakSet();
+function confirmAutomatic() {
+  const event = _status.event;
+  if (event?.name !== "chooseToUse" || event.skill !== "fan_miyuan_backup"
+    || !event.isMine() || pendingConfirm.has(event)) return true;
+  pendingConfirm.add(event);
+  queueMicrotask(() => {
+    try {
+      if (_status.event === event && event.skill === "fan_miyuan_backup" && game.check()) ui.click.ok();
+    } finally { pendingConfirm.delete(event); }
+  });
+  return true;
+}
+
+export default {
+  fan_wentai: {
+    trigger: { player: "phaseJieshuBegin" },
+    direct: true,
+    async content(event, trigger, player) {
+      const score = (target, effect) => {
+        const armor = Math.max(0, Math.min(1, 5 - target.hujia));
+        const equips = Math.min(2, Array.from(ui.discardPile.childNodes).filter(card =>
+          get.type(card, false) === "equip" && target.canEquip(card, false) && target.canUse(card, target)).length);
+        return get.attitude(player, target) * (effect === "armor" ? armor : equips * 1.5);
+      };
+      const result = await player.chooseButtonTarget({
+        createDialog: ["稳态：选择角色和效果", [[["armor", "获得护甲"], ["equip", "使用装备"]], "tdnodes"]],
+        selectButton: [0, 1], selectTarget: 1,
+        // 本地操作先选目标；AI原生流程先评估按钮，再评估目标。
+        filterButton: () => !_status.event.isMine() || ui.selected.targets.length === 1,
+        complexSelect: true,
+        manualConfirm: true, fanPairedConfirm: true,
+        filterTarget: () => true,
+        filterOk: () => ui.selected.buttons.length === 1 && ui.selected.targets.length === 1,
+        ai1: button => Math.max(...game.filterPlayer(() => true).map(target => score(target, button.link)
+          + (target !== player ? score(player, button.link === "armor" ? "equip" : "armor") : 0))),
+        ai2: target => {
+          const effect = ui.selected.buttons[0]?.link;
+          if (!effect) return Math.max(score(target, "armor"), score(target, "equip"));
+          return score(target, effect) + (target !== player ? score(player, effect === "armor" ? "equip" : "armor") : 0);
+        },
+      }).forResult();
+      if (!result.bool) return;
+      const target = result.targets?.[0], effect = result.links?.[0];
+      if (!target?.isIn() || !["armor", "equip"].includes(effect)) return;
+      player.logSkill("fan_wentai", target);
+      const execute = async (recipient, choice) => {
+        if (!recipient.isIn()) return;
+        if (choice === "armor") {
+          await recipient.changeHujia(1, "gain", 5);
+          return;
+        }
+        const attempted = new Set();
+        for (let count = 0; count < 2 && recipient.isIn(); count++) {
+          const cards = Array.from(ui.discardPile.childNodes).filter(card => !attempted.has(card)
+            && get.type(card, false) === "equip" && recipient.canEquip(card, false) && recipient.canUse(card, recipient));
+          if (!cards.length) break;
+          const card = cards.randomGet();
+          attempted.add(card);
+          await recipient.chooseUseTarget({ card, forced: true, nopopup: true });
+        }
+      };
+      await execute(target, effect);
+      if (target !== player) await execute(player, effect === "armor" ? "equip" : "armor");
+    },
+  },
+  fan_miyuan: {
+    chargeSkill: 4,
+    locked: false,
+    init(player) { player.addCharge(1, false); },
+    enable: "chooseToUse",
+    direct: true,
+    filter: (event, player) => available(player) && player.countCards("e") > 0 && options(event, player).length > 0,
+    hiddenCard: (player, name) => available(player) && player.countCards("e") > 0 && get.zhinangs().includes(name),
+    mod: {
+      maxHandcard(player, num) {
+        return num + player.countCards("e");
+      },
+    },
+    chooseButton: {
+      dialog(event, player) {
+        const dialog = ui.create.dialog("秘源：选择一张装备和智囊牌名", [options(event, player), "vcard"]);
+        dialog.add(player.getCards("e"));
+        return dialog;
+      },
+      select: 2,
+      filter(button, player) {
+        const isName = Array.isArray(button.link);
+        if (ui.selected.buttons.some(selected => selected !== button
+          && Array.isArray(selected.link) === isName)) return false;
+        return isName || (player.getCards("e").includes(button.link)
+          && game.checkMod(button.link, player, "unchanged", "cardEnabled2", player) !== false);
+      },
+      filterOk: () => ui.selected.buttons.length === 2
+        && ui.selected.buttons.filter(button => Array.isArray(button.link)).length === 1,
+      check: button => Array.isArray(button.link)
+        ? get.player().getUseValue({ name: button.link[2] }) : 7 - get.value(button.link),
+      backup(links, player) {
+        const material = links.find(link => !Array.isArray(link));
+        const card = { name: links.find(Array.isArray)[2], cards: [material] };
+        const info = get.info(card), range = lib.filter.selectTarget(card, player);
+        const automatic = !info.complexTarget && !info.complexSelect
+          && (info.notarget || range?.[1] === -1 || (range?.[0] === 0 && range?.[1] === 0));
+        return {
+          position: "e",
+          filterCard: card => card === material,
+          selectCard: -1,
+          viewAs: card,
+          popname: true,
+          direct: false,
+          manualConfirm: true,
+          filterOk() {
+            if (!available(player) || !player.getCards("e").includes(material)
+              || ui.selected.cards.length !== 1 || ui.selected.cards[0] !== material) return false;
+            return automatic ? confirmAutomatic() : true;
+          },
+          onuse(result, player) {
+            player.removeCharge(1);
+            player.addTempSkill("fan_miyuan_used", { global: "phaseAfter" });
+          },
+        };
+      },
+      prompt: links => `秘源：为【${get.translation(links.find(Array.isArray)[2])}】选择目标`,
+    },
+    group: "fan_miyuan_charge",
+    subSkill: {
+      charge: {
+        trigger: { player: "phaseZhunbeiBegin" },
+        forced: true,
+        locked: false,
+        filter: (event, player) => player.countCharge(true) > 0,
+        async content(event, trigger, player) { player.addCharge(1); },
+      },
+    },
+    ai: { order: 8, result: { player: 1 } },
+  },
+  fan_miyuan_used: { charlotte: true },
+};

@@ -1,0 +1,137 @@
+{
+  "page": "https://wiki.biligame.com/ys/菲林斯语音",
+  "clips": [
+    {
+      "id": "fan_zhangdeng1",
+      "label": "元素战技·其一",
+      "text": "看。",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3a/7u6yw24eidufl4lv0066mn4v8qxm6fg.mp3",
+      "bytes": 7660,
+      "sha256": "132c5f7f71987a3f49d5a605951d0036b3d43a6bc45ccceb5aa77715213fab47",
+      "original": "audio/flins/originals/fan_zhangdeng1-eec32ce217.mp3",
+      "output": "audio/flins/skill/fan_zhangdeng1.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_zhangdeng2",
+      "label": "元素战技·其二",
+      "text": "闭眼。",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c3/lvd42rpln6biaarm6pz4t2b0dtvzvvt.mp3",
+      "bytes": 10341,
+      "sha256": "784454e8649fefc8299612a2562338f6dc8679e8a34b6bb85cfd2f0d632af2c8",
+      "original": "audio/flins/originals/fan_zhangdeng2-fc268acd24.mp3",
+      "output": "audio/flins/skill/fan_zhangdeng2.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_zhangdeng3",
+      "label": "元素战技·其三",
+      "text": "安静。",
+      "url": "https://patchwiki.biligame.com/images/ys/1/14/ge5fy1jym33quh0449sbjraxoveoh49.mp3",
+      "bytes": 9981,
+      "sha256": "440e5b6cef22fa2a4cbc577d11f89a3cbce50eb3233473339929d3a9f170acd0",
+      "original": "audio/flins/originals/fan_zhangdeng3-29a14b2b7f.mp3",
+      "output": "audio/flins/skill/fan_zhangdeng3.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_zhangdeng_use_voice1",
+      "label": "元素爆发·其一",
+      "text": "怕黑吗？",
+      "url": "https://patchwiki.biligame.com/images/ys/0/04/p37p1mq9t0mh444pepjdg6rdedhuh32.mp3",
+      "bytes": 11787,
+      "sha256": "5987c2e8e1566e96cb88c4ff31f6e165c1e2f5a885b9e72d24b6a59114a1a325",
+      "original": "audio/flins/originals/fan_zhangdeng_use_voice1-5aeea200c8.mp3",
+      "output": "audio/flins/skill/fan_zhangdeng_use_voice1.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_zhangdeng_use_voice2",
+      "label": "元素爆发·其二",
+      "text": "入夜了。",
+      "url": "https://patchwiki.biligame.com/images/ys/6/67/0cqaejdc660owkzpwcvbkn4b6yltmcj.mp3",
+      "bytes": 12721,
+      "sha256": "5f2dbd532a2d25219aef34b60c3528b2b9b81038d7315532583510e0a034caf1",
+      "original": "audio/flins/originals/fan_zhangdeng_use_voice2-dd23028fdd.mp3",
+      "output": "audio/flins/skill/fan_zhangdeng_use_voice2.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_moke1",
+      "label": "元素爆发·其三",
+      "text": "坠灭。",
+      "url": "https://patchwiki.biligame.com/images/ys/1/11/kcipnvl566bmdpf58lpvsutmleheyl0.mp3",
+      "bytes": 12249,
+      "sha256": "3e718d7e7cd8c309c983ddc389f85a0580ea9b7aba23a4ed7b1e825a408448ba",
+      "original": "audio/flins/originals/fan_moke1-14359d05ab.mp3",
+      "output": "audio/flins/skill/fan_moke1.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_moke2",
+      "label": "元素爆发·其四",
+      "text": "夜客致访。",
+      "url": "https://patchwiki.biligame.com/images/ys/6/69/8aoeyw9y38581oduisknl86a5zrpmem.mp3",
+      "bytes": 16558,
+      "sha256": "373e99230bc5ecc90acd63b05d5e7661f189af105fa13baf29f5a09a6242a694",
+      "original": "audio/flins/originals/fan_moke2-f65deaae02.mp3",
+      "output": "audio/flins/skill/fan_moke2.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_moke3",
+      "label": "元素爆发·其五",
+      "text": "谨防，榻下爪眼。",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3b/ee3xzyjz453yqm2jhsz93eoz756pn33.mp3",
+      "bytes": 25022,
+      "sha256": "4a4be63c5fa8111dc99fb2eab5748538f8bf967f6ac9e4a19999d29fca5ba6b2",
+      "original": "audio/flins/originals/fan_moke3-5d03f227c4.mp3",
+      "output": "audio/flins/skill/fan_moke3.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_moke4",
+      "label": "元素爆发·其六",
+      "text": "睡吧，无梦地安眠。",
+      "url": "https://patchwiki.biligame.com/images/ys/2/25/nk2nf8bfnu029i6s0oq3dxormfiyck3.mp3",
+      "bytes": 26228,
+      "sha256": "bf77c35c54c436db75c5654b473f57df953545e92b10abe4181c305297357b56",
+      "original": "audio/flins/originals/fan_moke4-607112ed2c.mp3",
+      "output": "audio/flins/skill/fan_moke4.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_flins1",
+      "label": "倒下·其一",
+      "text": "我们墓里见。",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6a/difxyk4dlq2qr23sw0xoosokgyxb6c7.mp3",
+      "bytes": 14002,
+      "sha256": "f56f9f4234373950842a3882400838c3cb261ca1375670f966128504a78b7a0c",
+      "original": "audio/flins/originals/fan_flins1-4b84a6c68e.mp3",
+      "output": "audio/flins/die/fan_flins1.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_flins2",
+      "label": "倒下·其二",
+      "text": "熄灭吧…",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c8/msgnh0t3bgw6ac9vrquqibnck6sj70a.mp3",
+      "bytes": 14208,
+      "sha256": "c238e685e81dccefac56a5ba16dc139d0f6ffe9d4d97d7d758491cf826e270e4",
+      "original": "audio/flins/originals/fan_flins2-2b5ccc3052.mp3",
+      "output": "audio/flins/die/fan_flins2.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_flins3",
+      "label": "倒下·其三",
+      "text": "我必如雪崩再来。",
+      "url": "https://patchwiki.biligame.com/images/ys/9/9e/t1xj03da6e9eh52houds5wdqzxm64xv.mp3",
+      "bytes": 23043,
+      "sha256": "88e46ad23b15478d9f1e999bfcb6753d58773add99f0e2ebc19711eb0ded3299",
+      "original": "audio/flins/originals/fan_flins3-ccde038fe0.mp3",
+      "output": "audio/flins/die/fan_flins3.mp3",
+      "trim_seconds": null
+    }
+  ]
+}

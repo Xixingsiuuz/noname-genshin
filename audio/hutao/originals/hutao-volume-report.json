@@ -1,0 +1,247 @@
+{
+  "target_lufs": -14.25,
+  "method": "static gain, no speed change; encoded true peak <= -1 dBTP",
+  "human_listening": false,
+  "clips": [
+    {
+      "id": "fan_qiyun_intro",
+      "gain_db": 6.23,
+      "before": {
+        "lufs": -23.88,
+        "true_peak_dbtp": -7.73,
+        "mean_dbfs": -25.3,
+        "peak_dbfs": -7.8
+      },
+      "after": {
+        "lufs": -17.66,
+        "true_peak_dbtp": -1.48,
+        "mean_dbfs": -19.0,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_qiyun_sun",
+      "gain_db": 8.17,
+      "before": {
+        "lufs": -22.42,
+        "true_peak_dbtp": -10.77,
+        "mean_dbfs": -23.7,
+        "peak_dbfs": -10.8
+      },
+      "after": {
+        "lufs": -14.26,
+        "true_peak_dbtp": -2.6,
+        "mean_dbfs": -15.6,
+        "peak_dbfs": -2.6
+      }
+    },
+    {
+      "id": "fan_qiyun_morning",
+      "gain_db": 6.73,
+      "before": {
+        "lufs": -23.58,
+        "true_peak_dbtp": -8.23,
+        "mean_dbfs": -25.2,
+        "peak_dbfs": -8.3
+      },
+      "after": {
+        "lufs": -16.84,
+        "true_peak_dbtp": -1.6,
+        "mean_dbfs": -18.5,
+        "peak_dbfs": -1.6
+      }
+    },
+    {
+      "id": "fan_qiyun_name",
+      "gain_db": 6.27,
+      "before": {
+        "lufs": -24.38,
+        "true_peak_dbtp": -7.77,
+        "mean_dbfs": -25.8,
+        "peak_dbfs": -7.8
+      },
+      "after": {
+        "lufs": -18.11,
+        "true_peak_dbtp": -1.4,
+        "mean_dbfs": -19.6,
+        "peak_dbfs": -1.4
+      }
+    },
+    {
+      "id": "fan_qiyun_hilichurl",
+      "gain_db": -0.79,
+      "before": {
+        "lufs": -15.5,
+        "true_peak_dbtp": -0.71,
+        "mean_dbfs": -20.9,
+        "peak_dbfs": -0.9
+      },
+      "after": {
+        "lufs": -16.29,
+        "true_peak_dbtp": -1.48,
+        "mean_dbfs": -21.6,
+        "peak_dbfs": -1.7
+      }
+    },
+    {
+      "id": "fan_qiyun_ningguang",
+      "gain_db": 5.88,
+      "before": {
+        "lufs": -24.12,
+        "true_peak_dbtp": -7.38,
+        "mean_dbfs": -25.2,
+        "peak_dbfs": -7.4
+      },
+      "after": {
+        "lufs": -18.26,
+        "true_peak_dbtp": -1.47,
+        "mean_dbfs": -19.3,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_wangsheng_customer1",
+      "gain_db": 11.46,
+      "before": {
+        "lufs": -27.41,
+        "true_peak_dbtp": -12.96,
+        "mean_dbfs": -29.0,
+        "peak_dbfs": -13.0
+      },
+      "after": {
+        "lufs": -15.93,
+        "true_peak_dbtp": -1.31,
+        "mean_dbfs": -17.5,
+        "peak_dbfs": -1.4
+      }
+    },
+    {
+      "id": "fan_wangsheng_customer2",
+      "gain_db": 9.23,
+      "before": {
+        "lufs": -25.94,
+        "true_peak_dbtp": -10.73,
+        "mean_dbfs": -28.0,
+        "peak_dbfs": -10.7
+      },
+      "after": {
+        "lufs": -16.74,
+        "true_peak_dbtp": -1.71,
+        "mean_dbfs": -18.8,
+        "peak_dbfs": -1.7
+      }
+    },
+    {
+      "id": "fan_wangsheng_customer3",
+      "gain_db": 7.77,
+      "before": {
+        "lufs": -24.56,
+        "true_peak_dbtp": -9.27,
+        "mean_dbfs": -27.4,
+        "peak_dbfs": -9.3
+      },
+      "after": {
+        "lufs": -16.79,
+        "true_peak_dbtp": -1.15,
+        "mean_dbfs": -19.6,
+        "peak_dbfs": -1.1
+      }
+    },
+    {
+      "id": "fan_youdie_burst1",
+      "gain_db": -1.7,
+      "before": {
+        "lufs": -12.55,
+        "true_peak_dbtp": -3.49,
+        "mean_dbfs": -17.2,
+        "peak_dbfs": -3.5
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -5.21,
+        "mean_dbfs": -18.9,
+        "peak_dbfs": -5.2
+      }
+    },
+    {
+      "id": "fan_youdie_burst2",
+      "gain_db": -1.34,
+      "before": {
+        "lufs": -12.91,
+        "true_peak_dbtp": -4.84,
+        "mean_dbfs": -18.4,
+        "peak_dbfs": -4.9
+      },
+      "after": {
+        "lufs": -14.26,
+        "true_peak_dbtp": -6.15,
+        "mean_dbfs": -19.8,
+        "peak_dbfs": -6.2
+      }
+    },
+    {
+      "id": "fan_youdie_burst3",
+      "gain_db": -0.28,
+      "before": {
+        "lufs": -13.97,
+        "true_peak_dbtp": -4.18,
+        "mean_dbfs": -18.9,
+        "peak_dbfs": -4.2
+      },
+      "after": {
+        "lufs": -14.24,
+        "true_peak_dbtp": -4.72,
+        "mean_dbfs": -19.1,
+        "peak_dbfs": -4.8
+      }
+    },
+    {
+      "id": "fan_hutao1",
+      "gain_db": 3.16,
+      "before": {
+        "lufs": -17.44,
+        "true_peak_dbtp": -4.66,
+        "mean_dbfs": -21.4,
+        "peak_dbfs": -4.8
+      },
+      "after": {
+        "lufs": -14.27,
+        "true_peak_dbtp": -1.53,
+        "mean_dbfs": -18.3,
+        "peak_dbfs": -1.7
+      }
+    },
+    {
+      "id": "fan_hutao2",
+      "gain_db": -1.02,
+      "before": {
+        "lufs": -13.23,
+        "true_peak_dbtp": -1.16,
+        "mean_dbfs": -18.7,
+        "peak_dbfs": -1.2
+      },
+      "after": {
+        "lufs": -14.24,
+        "true_peak_dbtp": -2.1,
+        "mean_dbfs": -19.7,
+        "peak_dbfs": -2.1
+      }
+    },
+    {
+      "id": "fan_hutao3",
+      "gain_db": 0.23,
+      "before": {
+        "lufs": -14.48,
+        "true_peak_dbtp": -6.66,
+        "mean_dbfs": -21.5,
+        "peak_dbfs": -6.7
+      },
+      "after": {
+        "lufs": -14.26,
+        "true_peak_dbtp": -6.41,
+        "mean_dbfs": -21.3,
+        "peak_dbfs": -6.4
+      }
+    }
+  ]
+}

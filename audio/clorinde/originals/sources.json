@@ -1,0 +1,95 @@
+{
+  "page": "https://wiki.biligame.com/ys/克洛琳德语音",
+  "clips": {
+    "fan_zhuying1": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2c/2u0ggg56675ws34k7mg1ra5nhcjxyf9.mp3",
+      "text": "洞见恶孽，逐灭鬼影！",
+      "bytes": 23224,
+      "sha256": "edec33de2bd926b97fd28ddb5e9c7ea121afdd9a92dbea21240829aa02b7a8d0",
+      "original": "audio/clorinde/originals/元素爆发·其三.mp3",
+      "output": "audio/clorinde/skill/fan_zhuying1.mp3",
+      "trim_seconds": null
+    },
+    "fan_zhuying2": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/2/22/3wy5a8v4wixu4m2jnlh5my7pkr03ep7.mp3",
+      "text": "你的自证时刻。",
+      "bytes": 15684,
+      "sha256": "1fbf8720ef73c3d743857c058dd141eef25f8847672772fa680df4e50c61cbaf",
+      "original": "audio/clorinde/originals/元素爆发·其二.mp3",
+      "output": "audio/clorinde/skill/fan_zhuying2.mp3",
+      "trim_seconds": null
+    },
+    "fan_canguang1": {
+      "label": "元素战技·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/6/61/kx9ymtinwpch0md1tqwiapk7rz6z77r.mp3",
+      "text": "猎影！",
+      "bytes": 7534,
+      "sha256": "67305c5894a5111930c2a64b3e5ffa96bcb86769e7edb0425014a50c57f1c6db",
+      "original": "audio/clorinde/originals/元素战技·其三.mp3",
+      "output": "audio/clorinde/skill/fan_canguang1.mp3",
+      "trim_seconds": null
+    },
+    "fan_canguang2": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8e/o8i2kej9chcj2ohdcjx321jwaw0oie8.mp3",
+      "text": "射猎邪魔！",
+      "bytes": 14188,
+      "sha256": "fa4878917e34df6c85e297b50ae451f8909a7a23cef414bf88e167a2666b92c2",
+      "original": "audio/clorinde/originals/元素爆发·其一.mp3",
+      "output": "audio/clorinde/skill/fan_canguang2.mp3",
+      "trim_seconds": null
+    },
+    "fan_zhuying_gain_voice1": {
+      "label": "元素战技·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4a/5a3r9grp8qpbzmwogy0rpk27jhccojh.mp3",
+      "text": "预备。",
+      "bytes": 7289,
+      "sha256": "330043a74cb818e2fcbe8ce274f17d3f3950ccbf4753f5435d0880bacd927792",
+      "original": "audio/clorinde/originals/元素战技·其一.mp3",
+      "output": "audio/clorinde/skill/fan_zhuying_gain_voice1.mp3",
+      "trim_seconds": null
+    },
+    "fan_zhuying_gain_voice2": {
+      "label": "元素战技·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f2/huuhoksl0j49lkuhto4b28tni1u2st0.mp3",
+      "text": "上膛。",
+      "bytes": 8255,
+      "sha256": "77ed047fc287aa0acd50c0c1b2557d060c2341d75f9ccc26f784a5a0bfcaced0",
+      "original": "audio/clorinde/originals/元素战技·其二.mp3",
+      "output": "audio/clorinde/skill/fan_zhuying_gain_voice2.mp3",
+      "trim_seconds": null
+    },
+    "fan_clorinde1": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/9/95/5oltmwsh9qnt1n05dyf8vyyogupjdra.mp3",
+      "text": "胜负…已分…",
+      "bytes": 27839,
+      "sha256": "d627e657ef58d2cb2a08116499af6531fac33180290abe90446838553b64b8c6",
+      "original": "audio/clorinde/originals/倒下·其一.mp3",
+      "output": "audio/clorinde/die/fan_clorinde1.mp3",
+      "trim_seconds": null
+    },
+    "fan_clorinde2": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/9/96/pga9x3az5w1iolaggsddinqjxu2cmpb.mp3",
+      "text": "败者…当如此…",
+      "bytes": 25247,
+      "sha256": "dc8270e939bd169c64994ffd9d9e881e9dd93308d9e3d528c539436245e99d6c",
+      "original": "audio/clorinde/originals/倒下·其二.mp3",
+      "output": "audio/clorinde/die/fan_clorinde2.mp3",
+      "trim_seconds": null
+    },
+    "fan_clorinde3": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d5/n99y9dz7we0f8vvgfhpwzgi3zzmxd2i.mp3",
+      "text": "你已证明了名誉…",
+      "bytes": 26046,
+      "sha256": "8e81d03d3dc623e1473942c5744704b7a12f2aee7969d57eb227982ef73dff78",
+      "original": "audio/clorinde/originals/倒下·其三.mp3",
+      "output": "audio/clorinde/die/fan_clorinde3.mp3",
+      "trim_seconds": null
+    }
+  }
+}

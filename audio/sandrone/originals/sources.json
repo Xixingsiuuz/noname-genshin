@@ -1,0 +1,155 @@
+{
+  "page": "https://wiki.biligame.com/ys/桑多涅语音",
+  "clips": {
+    "fan_xigou_number": {
+      "label": "突破的感受·起",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c5/7tbj18e7phd3xled8dm5cwwr8t2k1dd.mp3",
+      "text": "解算开始。",
+      "bytes": 10897,
+      "sha256": "c2d96fe8c4d7507e78bf2d54a950973c71fdd4584caad5b060ef709d4876dea6",
+      "original": "audio/sandrone/originals/fan_xigou_number.mp3",
+      "output": "audio/sandrone/skill/fan_xigou_number.mp3",
+      "trim_seconds": null
+    },
+    "fan_xigou_suit": {
+      "label": "突破的感受·承",
+      "url": "https://patchwiki.biligame.com/images/ys/4/42/cd8j6spa6cgi7z9cf05i9xgwst3v92t.mp3",
+      "text": "填入变量。",
+      "bytes": 10971,
+      "sha256": "ae0bd981aa543ca924c2cd6abad0e8e65528aa454cd27f2e0e0adf3369b8583d",
+      "original": "audio/sandrone/originals/fan_xigou_suit.mp3",
+      "output": "audio/sandrone/skill/fan_xigou_suit.mp3",
+      "trim_seconds": null
+    },
+    "fan_xigou_type": {
+      "label": "突破的感受·转",
+      "url": "https://patchwiki.biligame.com/images/ys/4/41/snoo1h6kodfzzhginx3yoxj19v8m397.mp3",
+      "text": "进程良好。",
+      "bytes": 12101,
+      "sha256": "3787e174874adab9a402b6ce649c7a3f4564b1bc7b50c5c9fbe2335c2f8cd469",
+      "original": "audio/sandrone/originals/fan_xigou_type.mp3",
+      "output": "audio/sandrone/skill/fan_xigou_type.mp3",
+      "trim_seconds": null
+    },
+    "fan_xigou_view": {
+      "label": "突破的感受·合",
+      "url": "https://patchwiki.biligame.com/images/ys/9/9c/9s5f5mtxf0xrjap355pd6pgxy62rtyd.mp3",
+      "text": "析构万理。我果然厉害！啊哈哈哈。",
+      "bytes": 32753,
+      "sha256": "4f045cb337595c2cdd5b97aa9d29d9e3891500850ad9741e0057fd7674c588f8",
+      "original": "audio/sandrone/originals/fan_xigou_view.mp3",
+      "output": "audio/sandrone/skill/fan_xigou_view.mp3",
+      "trim_seconds": null
+    },
+    "fan_wanli_choice1": {
+      "label": "加入队伍·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8e/7dnbe6qe4zy63qc8v2tellcyjuelkqo.mp3",
+      "text": "该验证算式了。",
+      "bytes": 21064,
+      "sha256": "62ffd31fada4148761e9850f9f785ce458266abe00add5b88a49cf9363c3b4df",
+      "original": "audio/sandrone/originals/fan_wanli_choice1.mp3",
+      "output": "audio/sandrone/skill/fan_wanli_choice1.mp3",
+      "trim_seconds": null
+    },
+    "fan_wanli_choice2": {
+      "label": "加入队伍·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d5/6nloy5eymkeuwh4yn9ctpnv0uhmeimc.mp3",
+      "text": "我就好心帮帮你。",
+      "bytes": 22275,
+      "sha256": "e134200f7b1d03bc0e3225571f45a3b3b071d22a28949a2c5876b853b0f199ac",
+      "original": "audio/sandrone/originals/fan_wanli_choice2.mp3",
+      "output": "audio/sandrone/skill/fan_wanli_choice2.mp3",
+      "trim_seconds": null
+    },
+    "fan_wanli_choice3": {
+      "label": "加入队伍·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/7/7a/0m7fblk0fzuf3yfwfyx9aelq7d7pehm.mp3",
+      "text": "我们走，法洁欧。",
+      "bytes": 14748,
+      "sha256": "d809f4f02144d565a6149a3cf271b4e38a21d2d292267406342c72188b094cec",
+      "original": "audio/sandrone/originals/fan_wanli_choice3.mp3",
+      "output": "audio/sandrone/skill/fan_wanli_choice3.mp3",
+      "trim_seconds": null
+    },
+    "fan_wanli_beishui1": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/8/84/qgw3iz8dzcevgnfet4lgetfnqhbqtof.mp3",
+      "text": "演算，开始。",
+      "bytes": 15709,
+      "sha256": "cb686afe44a05904f6ef6fea289a536c1d973b7002f55c45dbfb09004134235a",
+      "original": "audio/sandrone/originals/fan_wanli_beishui1.mp3",
+      "output": "audio/sandrone/skill/fan_wanli_beishui1.mp3",
+      "trim_seconds": null
+    },
+    "fan_wanli_beishui2": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/2/26/t76evqdnibxkykt1nqyou4nvlnw0r31.mp3",
+      "text": "茶间余兴。",
+      "bytes": 15728,
+      "sha256": "f2e2bfd39b8de9999de143e5e63888dbdbc14110e944f4d681c5800177df2ece",
+      "original": "audio/sandrone/originals/fan_wanli_beishui2.mp3",
+      "output": "audio/sandrone/skill/fan_wanli_beishui2.mp3",
+      "trim_seconds": null
+    },
+    "fan_wanli_beishui3": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3e/3jvkspjc9ruslyvwr263i6gfj2ysc76.mp3",
+      "text": "哼，可笑。",
+      "bytes": 15776,
+      "sha256": "d08c8d75e0dbd58256b361d2dbf83af57bf7a948565014bda47d226d1f4c2f88",
+      "original": "audio/sandrone/originals/fan_wanli_beishui3.mp3",
+      "output": "audio/sandrone/skill/fan_wanli_beishui3.mp3",
+      "trim_seconds": null
+    },
+    "fan_yaoyue1": {
+      "label": "闲聊·茶会",
+      "url": "https://patchwiki.biligame.com/images/ys/0/0f/5lm0gtt2pcpxw3q8p1nclpe5ghfxudq.mp3",
+      "text": "差不多该约一次茶会了吧？也不知道其他人有没有空。",
+      "bytes": 48735,
+      "sha256": "1f915357bd07c1e3961167c1771a71e10ad742229a9ea49466920c4a3003791e",
+      "original": "audio/sandrone/originals/fan_yaoyue1.mp3",
+      "output": "audio/sandrone/skill/fan_yaoyue_voice1.mp3",
+      "trim_seconds": null
+    },
+    "fan_yaoyue2": {
+      "label": "闲聊·钢琴",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2f/h5pe04u5qy94yt96rke3asm9qntsw95.mp3",
+      "text": "我喜欢音乐，自学过很多乐器。你不信？哈，要是哪里有钢琴的话，我让你见识见识。",
+      "bytes": 71366,
+      "sha256": "229eccf3b27f0ef2fa417b619f6e5425f45fcbb054365874172ba7ef23442c59",
+      "original": "audio/sandrone/originals/fan_yaoyue2.mp3",
+      "output": "audio/sandrone/skill/fan_yaoyue_voice2.mp3",
+      "trim_seconds": null
+    },
+    "fan_sandrone1": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8e/i425ud9gmy0pg6tbzd3resdu4kgrhe2.mp3",
+      "text": "演算…出错了吗…",
+      "bytes": 21984,
+      "sha256": "6a977420a70939bf9238032a8774e0d9e19df2d7de1a13a6d8a4e40a98dc5b5b",
+      "original": "audio/sandrone/originals/fan_sandrone1.mp3",
+      "output": "audio/sandrone/die/fan_sandrone1.mp3",
+      "trim_seconds": null
+    },
+    "fan_sandrone2": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/4/40/ftz83om5kjf9vulcr82vlkl9mb3absl.mp3",
+      "text": "茶会…该结束了…",
+      "bytes": 26552,
+      "sha256": "eed52751471a38d3b81e834ca38d3c6c2d53ab06f461118bb427430afb0beeb2",
+      "original": "audio/sandrone/originals/fan_sandrone2.mp3",
+      "output": "audio/sandrone/die/fan_sandrone2.mp3",
+      "trim_seconds": null
+    },
+    "fan_sandrone3": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c4/g2wgpabjicas51da4w95178dbyxtzng.mp3",
+      "text": "很遗憾…但这就是结局…",
+      "bytes": 30348,
+      "sha256": "f33cfc227c2edc94f8efd0fb3e2a2d1f64ac1f76b045ba61eee25de7414c869e",
+      "original": "audio/sandrone/originals/fan_sandrone3.mp3",
+      "output": "audio/sandrone/die/fan_sandrone3.mp3",
+      "trim_seconds": null
+    }
+  }
+}

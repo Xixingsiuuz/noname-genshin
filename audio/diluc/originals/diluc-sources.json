@@ -1,0 +1,67 @@
+{
+  "page": "https://baike.mihoyo.com/ys/obc/content/75/detail",
+  "api": "https://api-takumi-static.mihoyo.com/common/blackboard/ys_obc/v1/content/info?app_sn=ys_obc&content_id=75",
+  "language": "zh-CN",
+  "clips": {
+    "fan_niyan1": {
+      "name": "元素战技·其一",
+      "content": "呵。",
+      "audio_url": "https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/e64c5244ab26fc03367e3b06d4e5bb38_3900944507231276154.mp3",
+      "bytes": 2636,
+      "output_bytes": 2636,
+      "output": "audio/diluc/skill/fan_niyan1.mp3",
+      "original": "audio/diluc/originals/fan_niyan1.mp3",
+      "trim_seconds": null
+    },
+    "fan_niyan2": {
+      "name": "元素战技·其二",
+      "content": "哈。",
+      "audio_url": "https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/c91df4f30a60035e1de3a115b7ac0c88_3317202904822872928.mp3",
+      "bytes": 2924,
+      "output_bytes": 2924,
+      "output": "audio/diluc/skill/fan_niyan2.mp3",
+      "original": "audio/diluc/originals/fan_niyan2.mp3",
+      "trim_seconds": null
+    },
+    "fan_niyan3": {
+      "name": "元素战技·其三",
+      "content": "哈！——",
+      "audio_url": "https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/c68626bc28a3151a9e64e6228e5bf30b_8459805930893568400.mp3",
+      "bytes": 8108,
+      "output_bytes": 8108,
+      "output": "audio/diluc/skill/fan_niyan3.mp3",
+      "original": "audio/diluc/originals/fan_niyan3.mp3",
+      "trim_seconds": null
+    },
+    "fan_chenxi1": {
+      "name": "中午好…",
+      "content": "想试试隐藏菜单吗？",
+      "audio_url": "https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/23792a94a1e8ddae98ebf9ed511330da_2568848686548879049.mp3",
+      "bytes": 16460,
+      "output_bytes": 16460,
+      "output": "audio/diluc/skill/fan_chenxi1.mp3",
+      "original": "audio/diluc/originals/fan_chenxi1.mp3",
+      "trim_seconds": null
+    },
+    "fan_chenxi2": {
+      "name": "闲聊·放松",
+      "content": "偶尔悠闲一下，也不错。",
+      "audio_url": "https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/831f9c500e6fc4c879dc780678e74be3_3092307130533823715.mp3",
+      "bytes": 24812,
+      "output_bytes": 24812,
+      "output": "audio/diluc/skill/fan_chenxi2.mp3",
+      "original": "audio/diluc/originals/fan_chenxi2.mp3",
+      "trim_seconds": null
+    },
+    "fan_diluc": {
+      "name": "倒下·其一",
+      "content": "计划…出错了吗…",
+      "audio_url": "https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/26bfe0fbe582f977e77a29ff50d530b7_883864363511886680.mp3",
+      "bytes": 49004,
+      "output_bytes": 49004,
+      "output": "audio/diluc/die/fan_diluc.mp3",
+      "original": "audio/diluc/originals/fan_diluc.mp3",
+      "trim_seconds": null
+    }
+  }
+}

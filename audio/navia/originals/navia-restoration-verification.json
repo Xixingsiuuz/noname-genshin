@@ -1,0 +1,26 @@
+[
+  {
+    "id": "fan_cijue_start1",
+    "source_output_waveform_correlation": 0.998970699887006,
+    "source_seconds": 1.896,
+    "output_seconds": 1.896,
+    "rms": 0.13309379392795323,
+    "human_listening": false
+  },
+  {
+    "id": "fan_cijue_start2",
+    "source_output_waveform_correlation": 0.9990777462244199,
+    "source_seconds": 2.52,
+    "output_seconds": 2.52,
+    "rms": 0.11494508152589854,
+    "human_listening": false
+  },
+  {
+    "id": "fan_cijue_start3",
+    "source_output_waveform_correlation": 0.9991180803763289,
+    "source_seconds": 1.992,
+    "output_seconds": 1.992,
+    "rms": 0.13657634638305477,
+    "human_listening": false
+  }
+]

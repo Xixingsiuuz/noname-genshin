@@ -1,0 +1,501 @@
+{
+  "page": "https://wiki.biligame.com/ys/%E8%8C%9C%E7%89%B9%E8%8F%88%E8%8E%89%E8%AF%AD%E9%9F%B3",
+  "clips": {
+    "fan_yingxin_start": {
+      "label": "突破的感受·合",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4f/lh7v2cszjlh0f1rj4jctkjkewd1w26t.mp3",
+      "text": "从今以后，我会一直与你同行。",
+      "bytes": 89212,
+      "original": "audio/citlali/originals/fan_yingxin_start.mp3",
+      "original_sha256": "a98c6718e734b119a26100b19096d13b6eb9f5523636a72baf5f58c14d1b320e",
+      "output": "audio/citlali/skill/fan_yingxin_start.mp3",
+      "trim_seconds": [
+        0,
+        2.95
+      ],
+      "trim_review": "waveform/silence boundary; no human listening performed",
+      "volume": {
+        "id": "fan_yingxin_start",
+        "gain_db": 2.64,
+        "before": {
+          "lufs": -19.55,
+          "true_peak_dbtp": -4.14,
+          "mean_dbfs": -20.2,
+          "peak_dbfs": -4.1
+        },
+        "after": {
+          "lufs": -16.92,
+          "true_peak_dbtp": -1.54,
+          "mean_dbfs": -17.6,
+          "peak_dbfs": -1.5
+        }
+      },
+      "sha256": "675671a17bf69333916d3e85ba153d2e3209ef950d58fd112fe047d38c024927",
+      "output_bytes": 35420
+    },
+    "fan_yingxin_draw1": {
+      "label": "加入队伍·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/8/87/attog5233igu5g300gh086jebyjwqqt.mp3",
+      "text": "那我肯定帮忙呀。",
+      "bytes": 22972,
+      "original": "audio/citlali/originals/fan_yingxin_draw1.mp3",
+      "original_sha256": "beb758cebaa0ccb3c5062c21674f9177c9fca444932c814ee4b20223d4802305",
+      "output": "audio/citlali/skill/fan_yingxin_draw1.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_yingxin_draw1",
+        "gain_db": 1.92,
+        "before": {
+          "lufs": -18.13,
+          "true_peak_dbtp": -3.42,
+          "mean_dbfs": -18.7,
+          "peak_dbfs": -3.5
+        },
+        "after": {
+          "lufs": -16.19,
+          "true_peak_dbtp": -1.58,
+          "mean_dbfs": -16.7,
+          "peak_dbfs": -1.6
+        }
+      },
+      "sha256": "90e0402ad1f3669c55941dbc71dc87ec5b2996c0cdf2d535fba075a153e53cf0",
+      "output_bytes": 26324
+    },
+    "fan_yingxin_draw2": {
+      "label": "关于欧洛伦…",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d4/54qmuqvmh8ukuid72okwg4rurpw5lsw.mp3",
+      "text": "哼哼。",
+      "bytes": 7569,
+      "original": "audio/citlali/originals/fan_yingxin_draw2.mp3",
+      "original_sha256": "189d9bb8a60e94c338ac4547b1202f359bba0d1c8ef7f1089be150db8d3c8dcb",
+      "output": "audio/citlali/skill/fan_yingxin_draw2.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_yingxin_draw2",
+        "gain_db": 5.15,
+        "before": {
+          "lufs": -20.95,
+          "true_peak_dbtp": -6.65,
+          "mean_dbfs": -20.6,
+          "peak_dbfs": -6.7
+        },
+        "after": {
+          "lufs": -15.85,
+          "true_peak_dbtp": -1.57,
+          "mean_dbfs": -15.5,
+          "peak_dbfs": -1.6
+        }
+      },
+      "sha256": "c19e3955d2d8d83b2f65e2cb5feb28ee740f108dae35c5fb63e56745386afba8",
+      "output_bytes": 6092
+    },
+    "fan_zhuyao_lose1": {
+      "label": "元素战技·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/7/7c/ntbjqfa43e42v1m0k9v0c186rg2x9lj.mp3",
+      "text": "出来干活！",
+      "bytes": 11765,
+      "original": "audio/citlali/originals/fan_zhuyao_lose1.mp3",
+      "original_sha256": "e075b32949cd25ad6571e85ca7db873814a1c1244c4ab8fcaf72d45086a3dc51",
+      "output": "audio/citlali/skill/fan_zhuyao_lose1.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_zhuyao_lose1",
+        "gain_db": 0.86,
+        "before": {
+          "lufs": -15.11,
+          "true_peak_dbtp": -3.46,
+          "mean_dbfs": -16.2,
+          "peak_dbfs": -4.1
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -2.77,
+          "mean_dbfs": -15.3,
+          "peak_dbfs": -3.4
+        }
+      },
+      "sha256": "a65c017ab3ffa391077b21c0c92ae5b7f360c54063f84efabf38f4d58f477d57",
+      "output_bytes": 12044
+    },
+    "fan_zhuyao_lose2": {
+      "label": "元素战技·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/5/53/mmgiby7rcm1q00bm7jl25so7d8vz9cy.mp3",
+      "text": "不必留情。",
+      "bytes": 11425,
+      "original": "audio/citlali/originals/fan_zhuyao_lose2.mp3",
+      "original_sha256": "47208e3146d371073bbfdaccdf9be1a97bc98a28e984e39180b576b2b20193de",
+      "output": "audio/citlali/skill/fan_zhuyao_lose2.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_zhuyao_lose2",
+        "gain_db": 0.44,
+        "before": {
+          "lufs": -14.69,
+          "true_peak_dbtp": -3.68,
+          "mean_dbfs": -16.1,
+          "peak_dbfs": -3.9
+        },
+        "after": {
+          "lufs": -14.19,
+          "true_peak_dbtp": -2.9,
+          "mean_dbfs": -15.6,
+          "peak_dbfs": -3.0
+        }
+      },
+      "sha256": "2766e754aabbe6884f5f0006c9c706479757d1b537315b69eff0d53ec9e4a2f1",
+      "output_bytes": 11180
+    },
+    "fan_zhuyao_draw1": {
+      "label": "元素战技·其四",
+      "url": "https://patchwiki.biligame.com/images/ys/d/da/20yqsz660ra1v21ck2qnoj5q6fmiey4.mp3",
+      "text": "小心…小心地…",
+      "bytes": 23927,
+      "original": "audio/citlali/originals/fan_zhuyao_draw1.mp3",
+      "original_sha256": "f08af90f0304b9378d70813404e50f1e5b5fc0606ffac1747d681148a6d972ec",
+      "output": "audio/citlali/skill/fan_zhuyao_draw1.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_zhuyao_draw1",
+        "gain_db": 0.8,
+        "before": {
+          "lufs": -15.05,
+          "true_peak_dbtp": -3.87,
+          "mean_dbfs": -16.8,
+          "peak_dbfs": -4.0
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -3.09,
+          "mean_dbfs": -16.0,
+          "peak_dbfs": -3.1
+        }
+      },
+      "sha256": "570e7b82a022be415cff85ae2a6834207ddf2612e2803b3372dcad16070caaf9",
+      "output_bytes": 29420
+    },
+    "fan_zhuyao_draw2": {
+      "label": "元素战技·其五",
+      "url": "https://patchwiki.biligame.com/images/ys/e/ee/sy6uant1h029g68zc8kvbutsdqrro08.mp3",
+      "text": "不会手抖的。",
+      "bytes": 14449,
+      "original": "audio/citlali/originals/fan_zhuyao_draw2.mp3",
+      "original_sha256": "4b9d058aaf9a61d240ef5d5798dc053e8e3a3c5708a508efe88a05abd89b25ee",
+      "output": "audio/citlali/skill/fan_zhuyao_draw2.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_zhuyao_draw2",
+        "gain_db": 0.5,
+        "before": {
+          "lufs": -16.73,
+          "true_peak_dbtp": -2.0,
+          "mean_dbfs": -17.8,
+          "peak_dbfs": -2.0
+        },
+        "after": {
+          "lufs": -16.25,
+          "true_peak_dbtp": -1.4,
+          "mean_dbfs": -17.3,
+          "peak_dbfs": -1.5
+        }
+      },
+      "sha256": "62a58c15269ff3d9250027e824b9ca9a16cdb97568bc897ce69cf80cd04455c8",
+      "output_bytes": 15764
+    },
+    "fan_zhuyao_chengshi": {
+      "label": "元素战技·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/e/e7/33u4uvx3y1qd2pg5gym5y0yt7uvxoak.mp3",
+      "text": "履行盟约吧，星魔们。",
+      "bytes": 20599,
+      "original": "audio/citlali/originals/fan_zhuyao_chengshi.mp3",
+      "original_sha256": "c76d0a5e611240e10165ee3f8b775fc8a1021197f4d07ac4aafd34ded30246cd",
+      "output": "audio/citlali/skill/fan_zhuyao_chengshi.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_zhuyao_chengshi",
+        "gain_db": 0.69,
+        "before": {
+          "lufs": -14.94,
+          "true_peak_dbtp": -3.44,
+          "mean_dbfs": -16.4,
+          "peak_dbfs": -3.4
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -2.71,
+          "mean_dbfs": -15.7,
+          "peak_dbfs": -2.7
+        }
+      },
+      "sha256": "7991f62d7ecb317b9ebf966a687aaddeae6a75114648c31a80fb3927aecd1efd",
+      "output_bytes": 23324
+    },
+    "fan_citlali_lianying1": {
+      "label": "打开宝箱·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4f/8symv93ca8ascptedv9vb0ro3h4e842.mp3",
+      "text": "先收下，答谢诸星的祈祷我替你做。",
+      "bytes": 29508,
+      "original": "audio/citlali/originals/fan_citlali_lianying1.mp3",
+      "original_sha256": "d6650d33e6e18ab0efb933561e3bf58254698f5aafa49dfbed630a5cbdbf0036",
+      "output": "audio/citlali/skill/fan_citlali_lianying1.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_citlali_lianying1",
+        "gain_db": -0.61,
+        "before": {
+          "lufs": -16.88,
+          "true_peak_dbtp": -0.89,
+          "mean_dbfs": -18.1,
+          "peak_dbfs": -0.9
+        },
+        "after": {
+          "lufs": -17.49,
+          "true_peak_dbtp": -1.47,
+          "mean_dbfs": -18.7,
+          "peak_dbfs": -1.5
+        }
+      },
+      "sha256": "c849c343f66755f536126f897c02b3a0aa4e2d54c330efa02ee77a22ff95d23d",
+      "output_bytes": 37292
+    },
+    "fan_citlali_lianying2": {
+      "label": "打开宝箱·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/4/43/d7rbdjt72f988pk0edhg0li5k8c5yrj.mp3",
+      "text": "挺好的，收下吧。",
+      "bytes": 15264,
+      "original": "audio/citlali/originals/fan_citlali_lianying2.mp3",
+      "original_sha256": "4770f17c467c06e7b144c41d48ecddcae0aad56a2f343076ba3ac41ce6c2b311",
+      "output": "audio/citlali/skill/fan_citlali_lianying2.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_citlali_lianying2",
+        "gain_db": 1.77,
+        "before": {
+          "lufs": -17.62,
+          "true_peak_dbtp": -3.27,
+          "mean_dbfs": -18.0,
+          "peak_dbfs": -3.6
+        },
+        "after": {
+          "lufs": -15.87,
+          "true_peak_dbtp": -1.21,
+          "mean_dbfs": -16.2,
+          "peak_dbfs": -1.4
+        }
+      },
+      "sha256": "651af038b101198b8ce3ff57ca1c6171f0f7cdededf9dfecf72e5a3a864f8be4",
+      "output_bytes": 16508
+    },
+    "fan_miyan_use1": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/1/18/rr6pfelsbq95ttkt59wsefzbvu7xbn6.mp3",
+      "text": "茜特菈琳、伊兹帕帕，给我上！",
+      "bytes": 21565,
+      "original": "audio/citlali/originals/fan_miyan_use1.mp3",
+      "original_sha256": "549eb240ba1c8ed61bc31af44d7ec0e88c4e052697daefbe1a5d45af22444cda",
+      "output": "audio/citlali/skill/fan_miyan_use1.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_miyan_use1",
+        "gain_db": 0.18,
+        "before": {
+          "lufs": -14.43,
+          "true_peak_dbtp": -2.98,
+          "mean_dbfs": -16.1,
+          "peak_dbfs": -3.2
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -2.81,
+          "mean_dbfs": -15.9,
+          "peak_dbfs": -3.1
+        }
+      },
+      "sha256": "dbf2d2de28264f20e422de79954586fbf6a8514c5f25c8881554701449d7e17b",
+      "output_bytes": 25724
+    },
+    "fan_miyan_use2": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f9/8l9ziizg8sqq3gp68wqgu2pbqv21f8e.mp3",
+      "text": "让你见识见识恶曜伤人！",
+      "bytes": 24501,
+      "original": "audio/citlali/originals/fan_miyan_use2.mp3",
+      "original_sha256": "4dcc91ea324cdee0a737a6d4bb63bc266cb0132c09e5c6a1a563c293b5c5f60f",
+      "output": "audio/citlali/skill/fan_miyan_use2.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_miyan_use2",
+        "gain_db": -0.11,
+        "before": {
+          "lufs": -14.14,
+          "true_peak_dbtp": -1.88,
+          "mean_dbfs": -16.3,
+          "peak_dbfs": -2.0
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -2.27,
+          "mean_dbfs": -16.4,
+          "peak_dbfs": -2.4
+        }
+      },
+      "sha256": "dbbb3f69e77251e397c28346c7678bd69e52bc24c8ed07ce3e9c467a7b0af79e",
+      "output_bytes": 29804
+    },
+    "fan_miyan_turn1": {
+      "label": "闲聊·喝酒",
+      "url": "https://patchwiki.biligame.com/images/ys/8/88/17wsot8vz4blcy57q8eiq7l1kvwgpgh.mp3",
+      "text": "岁月献给小酒杯，借钱九出十三归。",
+      "bytes": 90977,
+      "original": "audio/citlali/originals/fan_miyan_turn1.mp3",
+      "original_sha256": "9d320cee1cc114d99594df6d3e8f9642b1b7d57af0116b8f418b744ae1ef4ce1",
+      "output": "audio/citlali/skill/fan_miyan_turn1.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_miyan_turn1",
+        "gain_db": 6.29,
+        "before": {
+          "lufs": -20.73,
+          "true_peak_dbtp": -7.79,
+          "mean_dbfs": -20.5,
+          "peak_dbfs": -7.8
+        },
+        "after": {
+          "lufs": -14.42,
+          "true_peak_dbtp": -1.48,
+          "mean_dbfs": -14.2,
+          "peak_dbfs": -1.5
+        }
+      },
+      "sha256": "fdb662cafca294bf04a5307c26d09cbc611a14892a0b952c158922a7f7bf9aba",
+      "output_bytes": 115724
+    },
+    "fan_miyan_turn2": {
+      "label": "下雨的时候…",
+      "url": "https://patchwiki.biligame.com/images/ys/7/7a/04f9ki4kbyp1m8pyni0yiwk1g5wyjh1.mp3",
+      "text": "在家里看小说的好日子。",
+      "bytes": 39043,
+      "original": "audio/citlali/originals/fan_miyan_turn2.mp3",
+      "original_sha256": "840078d176280b280d6928b62ed311275f8908056dd11be9411a1fe37d5bf565",
+      "output": "audio/citlali/skill/fan_miyan_turn2.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_miyan_turn2",
+        "gain_db": 4.45,
+        "before": {
+          "lufs": -20.82,
+          "true_peak_dbtp": -5.95,
+          "mean_dbfs": -21.0,
+          "peak_dbfs": -6.0
+        },
+        "after": {
+          "lufs": -16.38,
+          "true_peak_dbtp": -1.57,
+          "mean_dbfs": -16.6,
+          "peak_dbfs": -1.6
+        }
+      },
+      "sha256": "8d10010ab31390912dec10b8b8800c109cd88870947defba7e213de2ea6d156b",
+      "output_bytes": 47996
+    },
+    "fan_citlali1": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/d/db/h0798xb98jqf1c5q1a3qd381r0ug9jr.mp3",
+      "text": "天上的诸曜啊…",
+      "bytes": 22904,
+      "original": "audio/citlali/originals/fan_citlali1.mp3",
+      "original_sha256": "4fc13ce2f3994ccc655b736f33ad18a3c13670b99d91adf027f1e7aae3c2036a",
+      "output": "audio/citlali/die/fan_citlali1.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_citlali1",
+        "gain_db": 8.71,
+        "before": {
+          "lufs": -25.19,
+          "true_peak_dbtp": -10.21,
+          "mean_dbfs": -27.0,
+          "peak_dbfs": -11.6
+        },
+        "after": {
+          "lufs": -16.48,
+          "true_peak_dbtp": -1.62,
+          "mean_dbfs": -18.3,
+          "peak_dbfs": -2.8
+        }
+      },
+      "sha256": "7e2c3f3c2d7dbd045bb76678b30b32af77cd8976552fcd9baf6618ef195fd790",
+      "output_bytes": 26444
+    },
+    "fan_citlali2": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/5/51/7e0mohrkz8amedczgdukd1lu6aq32fb.mp3",
+      "text": "大地的迷烟啊…",
+      "bytes": 23267,
+      "original": "audio/citlali/originals/fan_citlali2.mp3",
+      "original_sha256": "3a8ac4052d95a085fdd72eba9e6ff621577304e9531bd53f715adf8eb4c8f52f",
+      "output": "audio/citlali/die/fan_citlali2.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_citlali2",
+        "gain_db": 8.92,
+        "before": {
+          "lufs": -24.05,
+          "true_peak_dbtp": -10.42,
+          "mean_dbfs": -24.8,
+          "peak_dbfs": -11.2
+        },
+        "after": {
+          "lufs": -15.13,
+          "true_peak_dbtp": -1.51,
+          "mean_dbfs": -15.9,
+          "peak_dbfs": -2.5
+        }
+      },
+      "sha256": "626b5c24bca876f69e9611d35f25eca5ac492d20376ac327d6b5e06e81a10f01",
+      "output_bytes": 26156
+    },
+    "fan_citlali3": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/b/b5/sfkdlvikxkldpngl55fmgydb2581b4z.mp3",
+      "text": "对不起…",
+      "bytes": 14484,
+      "original": "audio/citlali/originals/fan_citlali3.mp3",
+      "original_sha256": "8eb25950c059e5726f5cb5c3ec70e047ff16a8ac29c772c69c3d80419dcb7615",
+      "output": "audio/citlali/die/fan_citlali3.mp3",
+      "trim_seconds": null,
+      "trim_review": null,
+      "volume": {
+        "id": "fan_citlali3",
+        "gain_db": 9.12,
+        "before": {
+          "lufs": -23.37,
+          "true_peak_dbtp": -10.81,
+          "mean_dbfs": -26.5,
+          "peak_dbfs": -10.8
+        },
+        "after": {
+          "lufs": -14.2,
+          "true_peak_dbtp": -1.96,
+          "mean_dbfs": -17.3,
+          "peak_dbfs": -2.2
+        }
+      },
+      "sha256": "ba0a2b58901ba54b7479a54ac938e3bbee4464e073f53b0bb595cec545c04573",
+      "output_bytes": 15740
+    }
+  }
+}

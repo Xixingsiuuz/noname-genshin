@@ -1,0 +1,220 @@
+{
+  "page": "https://wiki.biligame.com/ys/阿蕾奇诺语音",
+  "clips": {
+    "fan_chiyi1": {
+      "label": "打开宝箱·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/b/b7/6o5zed9zc6myh51ss0u7snaf606tibb.mp3",
+      "text": "不错的收获。",
+      "bytes": 38682,
+      "original": "audio/arlecchino/originals/fan_chiyi1.mp3",
+      "output": "audio/arlecchino/skill/fan_chiyi1.mp3",
+      "trim_seconds": null,
+      "output_bytes": 38682,
+      "sha256": "5dfa8f037604e68e2d7a1c160c10e4267054254b2a3b566c781c8c9818c20703"
+    },
+    "fan_chiyi2": {
+      "label": "打雷的时候…",
+      "url": "https://patchwiki.biligame.com/images/ys/2/23/5r9w2nbjrfj04pyy27urlj6bfhy8836.mp3",
+      "text": "无需畏惧，雷光也要避让我们。",
+      "bytes": 101788,
+      "original": "audio/arlecchino/originals/fan_chiyi2.mp3",
+      "output": "audio/arlecchino/skill/fan_chiyi2.mp3",
+      "trim_seconds": null,
+      "output_bytes": 101788,
+      "sha256": "dd4df423b0003c4aabb7c37729e1b248b8e004c3e13bff3597a723745e2f8375"
+    },
+    "fan_luhuo_start1": {
+      "label": "加入队伍·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/8/88/daudjnm8gfpd7wgmn7t0nj2d66xk8f6.mp3",
+      "text": "别担心，我会处理好。",
+      "bytes": 67059,
+      "original": "audio/arlecchino/originals/fan_luhuo_start1.mp3",
+      "output": "audio/arlecchino/skill/fan_luhuo_start1.mp3",
+      "trim_seconds": null,
+      "output_bytes": 67059,
+      "sha256": "fc56b60ed562316906c19d5605bb224643a907d503a46d01932dcc6931ff06ea"
+    },
+    "fan_luhuo_start2": {
+      "label": "加入队伍·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/5/58/9qpwgz6wwjahp69d54ofwoagvnlrxe2.mp3",
+      "text": "遇到解决不了的麻烦了？",
+      "bytes": 58005,
+      "original": "audio/arlecchino/originals/fan_luhuo_start2.mp3",
+      "output": "audio/arlecchino/skill/fan_luhuo_start2.mp3",
+      "trim_seconds": null,
+      "output_bytes": 58005,
+      "sha256": "0d0e7d015fa91911ae04b8916150985633937155d605239c161165a4141c417c"
+    },
+    "fan_luhuo_start3": {
+      "label": "加入队伍·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/2/25/ijtx2tm3ai3togzrkmebk8ru3pwmswk.mp3",
+      "text": "希望是一次有价值的合作。",
+      "bytes": 69288,
+      "original": "audio/arlecchino/originals/fan_luhuo_start3.mp3",
+      "output": "audio/arlecchino/skill/fan_luhuo_start3.mp3",
+      "trim_seconds": null,
+      "output_bytes": 69288,
+      "sha256": "f1fb96dede135bb2185a2c19f3927fdd9d34e9835811641ef482068492781ed4"
+    },
+    "fan_luhuo_draw1": {
+      "label": "下雪的时候…",
+      "url": "https://patchwiki.biligame.com/images/ys/7/76/pwspoloian7ytw8nbjs4snnd2qdkg7w.mp3",
+      "text": "身处寒冷之中，人们才会怀念火焰的温暖。",
+      "bytes": 136710,
+      "original": "audio/arlecchino/originals/fan_luhuo_draw1.mp3",
+      "output": "audio/arlecchino/skill/fan_luhuo_draw1.mp3",
+      "trim_seconds": null,
+      "output_bytes": 136710,
+      "sha256": "8a5af8bb62162459880f651ac9e8ccd5909d971fbb56a686afdcaca44d53d8df"
+    },
+    "fan_luhuo_draw2": {
+      "label": "闲聊·眼睛",
+      "url": "https://patchwiki.biligame.com/images/ys/5/53/bik4v5n7rcfz89bshzfwoc3l8rj6hmn.mp3",
+      "text": "不要一直盯着我的眼睛，不保证你会看到什么。",
+      "bytes": 130990,
+      "original": "audio/arlecchino/originals/fan_luhuo_draw2.mp3",
+      "output": "audio/arlecchino/skill/fan_luhuo_draw2.mp3",
+      "trim_seconds": null,
+      "output_bytes": 130990,
+      "sha256": "c60a28903177b0d56f400c520ff2a1d3d1f8bcff7ff8353e82bb0ae5d0e9dd18"
+    },
+    "fan_luhuo_attack1": {
+      "label": "想要了解阿蕾奇诺·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/7/73/14iogbak8n5lhooiq5xeivvmmne6tst.mp3",
+      "text": "壁炉之家无需讨好他人，我们像蜘蛛那样狩猎。",
+      "bytes": 568215,
+      "original": "audio/arlecchino/originals/fan_luhuo_attack1.mp3",
+      "output": "audio/arlecchino/skill/fan_luhuo_attack1.mp3",
+      "trim_seconds": [
+        14.65,
+        18.95
+      ],
+      "output_bytes": 50564,
+      "sha256": "c3c881aa8abe6383c68352a2368d4ba30585553a41527cc7b1a8abdd6659f29c"
+    },
+    "fan_luhuo_attack2": {
+      "label": "阿蕾奇诺的爱好…",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6c/c4kdt2ilor5c5opljes8z3hy1657z96.mp3",
+      "text": "我会把它垂死前的挣扎慢慢记下，一如我记下那些败者的结局。",
+      "bytes": 711470,
+      "original": "audio/arlecchino/originals/fan_luhuo_attack2.mp3",
+      "output": "audio/arlecchino/skill/fan_luhuo_attack2.mp3",
+      "trim_seconds": [
+        17.95,
+        23.77
+      ],
+      "output_bytes": 73580,
+      "sha256": "9c1a8255e2c702c080211b89e66eba4b70f1889c3e61358ecb89293759bc709b"
+    },
+    "fan_ruyue_rise1": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/5/57/cpyjr8jayv8jfwi2n2rsj0jj8fgmjx2.mp3",
+      "text": "于此升起。",
+      "bytes": 49243,
+      "original": "audio/arlecchino/originals/fan_ruyue_rise1.mp3",
+      "output": "audio/arlecchino/skill/fan_ruyue_rise1.mp3",
+      "trim_seconds": null,
+      "output_bytes": 49243,
+      "sha256": "3a5af9c94397d472c42626484fff2e0d7acf12bf2d8fcf7a3f378d7a37e398a1"
+    },
+    "fan_ruyue_fall1": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/d/db/2a3e7ck53v6xs74haochvo0bta1btq8.mp3",
+      "text": "于此坠落。",
+      "bytes": 44575,
+      "original": "audio/arlecchino/originals/fan_ruyue_fall1.mp3",
+      "output": "audio/arlecchino/skill/fan_ruyue_fall1.mp3",
+      "trim_seconds": null,
+      "output_bytes": 44575,
+      "sha256": "0d3edf03e23364c100c7443b04a107fa96b16e5c1691e9bd99e2a23317d8ab24"
+    },
+    "fan_ruyue_rise2": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/5/56/g97cgqeoblwwceof6svgme7jmii5jfg.mp3",
+      "text": "如月长存。",
+      "bytes": 50191,
+      "original": "audio/arlecchino/originals/fan_ruyue_rise2.mp3",
+      "output": "audio/arlecchino/skill/fan_ruyue_rise2.mp3",
+      "trim_seconds": null,
+      "output_bytes": 50191,
+      "sha256": "d4124d3e924f914026ecc7610e8b0035446a9223b0cfe65db56348d62a1d39fe"
+    },
+    "fan_ruyue_fall2": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/5/56/g97cgqeoblwwceof6svgme7jmii5jfg.mp3",
+      "text": "如月长存。",
+      "bytes": 50191,
+      "original": "audio/arlecchino/originals/fan_ruyue_fall2.mp3",
+      "output": "audio/arlecchino/skill/fan_ruyue_fall2.mp3",
+      "trim_seconds": null,
+      "output_bytes": 50191,
+      "sha256": "d4124d3e924f914026ecc7610e8b0035446a9223b0cfe65db56348d62a1d39fe"
+    },
+    "fan_ruyue_convert_voice1": {
+      "label": "元素战技·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/0/0f/b3ih9yc4j2uulaqs1zgi0s968iej59q.mp3",
+      "text": "贯穿。",
+      "bytes": 20346,
+      "original": "audio/arlecchino/originals/fan_ruyue_convert_voice1.mp3",
+      "output": "audio/arlecchino/skill/fan_ruyue_convert_voice1.mp3",
+      "trim_seconds": null,
+      "output_bytes": 20346,
+      "sha256": "354d23ff9051a8dff3ff63a46fd98ca5815cb908a6d6eabcafadaf6202c8cf6c"
+    },
+    "fan_ruyue_convert_voice2": {
+      "label": "元素战技·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/b/b3/e2yzeke8i4do2r2ukyjkyf2bednsxjo.mp3",
+      "text": "否决。",
+      "bytes": 24810,
+      "original": "audio/arlecchino/originals/fan_ruyue_convert_voice2.mp3",
+      "output": "audio/arlecchino/skill/fan_ruyue_convert_voice2.mp3",
+      "trim_seconds": null,
+      "output_bytes": 24810,
+      "sha256": "3067c5b1b512a731d61feb966cef929340058cef34a930ddb610a3258a3bcd00"
+    },
+    "fan_ruyue_convert_voice3": {
+      "label": "元素战技·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4f/mt7buflt85xpo46k9n6sean6gc6gmt2.mp3",
+      "text": "展现。",
+      "bytes": 20853,
+      "original": "audio/arlecchino/originals/fan_ruyue_convert_voice3.mp3",
+      "output": "audio/arlecchino/skill/fan_ruyue_convert_voice3.mp3",
+      "trim_seconds": null,
+      "output_bytes": 20853,
+      "sha256": "5531b66d05ae1b86f98225d603baa23521b78c99c612a7f0437d1097f624ba4f"
+    },
+    "fan_arlecchino1": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/9/92/2txg87q7kidgfqr4u3v17wjfvgiqf9u.mp3",
+      "text": "炉火，熄灭了…",
+      "bytes": 83900,
+      "original": "audio/arlecchino/originals/fan_arlecchino1.mp3",
+      "output": "audio/arlecchino/die/fan_arlecchino1.mp3",
+      "trim_seconds": null,
+      "output_bytes": 83900,
+      "sha256": "95fe32bb9493270fad90a155188cf37bfcc820600f26930489af1d99b96e1ba9"
+    },
+    "fan_arlecchino2": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8a/lkyv3ildcs4x1080ny3y3zhos3anuhl.mp3",
+      "text": "我听见…孩子们的歌声…",
+      "bytes": 118262,
+      "original": "audio/arlecchino/originals/fan_arlecchino2.mp3",
+      "output": "audio/arlecchino/die/fan_arlecchino2.mp3",
+      "trim_seconds": null,
+      "output_bytes": 118262,
+      "sha256": "fcf675bfc929c11187867dc9d2937a1e923e7676a85a6bbbe29c2a0bc33a367b"
+    },
+    "fan_arlecchino3": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/1/1e/q4af1uf6llrp0sfejcjdc9pehhi1oyu.mp3",
+      "text": "我不会接受这样的命运。",
+      "bytes": 106601,
+      "original": "audio/arlecchino/originals/fan_arlecchino3.mp3",
+      "output": "audio/arlecchino/die/fan_arlecchino3.mp3",
+      "trim_seconds": null,
+      "output_bytes": 106601,
+      "sha256": "8abe88d688e11fea6e675a3ad78383f048e81202347be3ed97b6c8b6e8b7a725"
+    }
+  }
+}

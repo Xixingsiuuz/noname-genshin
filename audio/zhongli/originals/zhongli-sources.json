@@ -1,0 +1,73 @@
+{
+  "page": "https://wiki.biligame.com/ys/钟离语音",
+  "language": "zh-CN",
+  "verified_date": "2026-10-26",
+  "clips": {
+    "fan_dixin_give1": {
+      "label": "元素战技·其五",
+      "text": "安如磐石。",
+      "url": "https://patchwiki.biligame.com/images/ys/7/7a/tm8o2vri1vzhqevyzc2k0wvu2mnz6aa.mp3",
+      "bytes": 17222,
+      "original": "audio/zhongli/originals/fan_dixin_give1.mp3",
+      "output": "audio/zhongli/skill/fan_dixin_give1.mp3",
+      "output_bytes": 17222,
+      "trim_seconds": null,
+      "container": "ogg"
+    },
+    "fan_dixin_give2": {
+      "label": "元素战技·其六",
+      "text": "固若金汤。",
+      "url": "https://patchwiki.biligame.com/images/ys/e/ed/0j9q2hqo1d31p3onv4ugy5yv0ipk4v3.mp3",
+      "bytes": 15593,
+      "original": "audio/zhongli/originals/fan_dixin_give2.mp3",
+      "output": "audio/zhongli/skill/fan_dixin_give2.mp3",
+      "output_bytes": 15593,
+      "trim_seconds": null,
+      "container": "ogg"
+    },
+    "fan_dixin_remove": {
+      "label": "元素战技·其三",
+      "text": "靡坚不摧。",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6a/fgn21yelsm0awkttu7fyluw9nwyskwj.mp3",
+      "bytes": 12861,
+      "original": "audio/zhongli/originals/fan_dixin_remove.mp3",
+      "output": "audio/zhongli/skill/fan_dixin_remove.mp3",
+      "output_bytes": 12861,
+      "trim_seconds": null,
+      "container": "ogg"
+    },
+    "fan_qianyan_armor": {
+      "label": "元素战技·其四",
+      "text": "俱收并蓄。",
+      "url": "https://patchwiki.biligame.com/images/ys/b/bb/e11pp449z14z20ylhl9zsu40mkjh2u8.mp3",
+      "bytes": 14686,
+      "original": "audio/zhongli/originals/fan_qianyan_armor.mp3",
+      "output": "audio/zhongli/skill/fan_qianyan_armor.mp3",
+      "output_bytes": 14686,
+      "trim_seconds": null,
+      "container": "ogg"
+    },
+    "fan_xianyou": {
+      "label": "闲聊·旅程",
+      "text": "旅程总有一天会迎来终点，不必匆忙。",
+      "url": "https://patchwiki.biligame.com/images/ys/2/27/t6so5b76ffd1o2gyc97ekiygua90inm.ogg",
+      "bytes": 29554,
+      "original": "audio/zhongli/originals/fan_xianyou.ogg",
+      "output": "audio/zhongli/skill/fan_xianyou.mp3",
+      "output_bytes": 29554,
+      "trim_seconds": null,
+      "container": "ogg"
+    },
+    "fan_zhongli": {
+      "label": "倒下·其三",
+      "text": "磐石…也会归于尘土…",
+      "url": "https://patchwiki.biligame.com/images/ys/c/cb/nhjkuxxez8sgu7ds0uw7v6o4ucw62q9.mp3",
+      "bytes": 31558,
+      "original": "audio/zhongli/originals/fan_zhongli.mp3",
+      "output": "audio/zhongli/die/fan_zhongli.mp3",
+      "output_bytes": 31558,
+      "trim_seconds": null,
+      "container": "ogg"
+    }
+  }
+}

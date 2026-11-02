@@ -1,0 +1,370 @@
+{
+  "page": "https://wiki.biligame.com/ys/温迪语音",
+  "clips": {
+    "fan_yinyou1": {
+      "label": "元素战技·其四",
+      "url": "https://patchwiki.biligame.com/images/ys/8/88/1ryq0y3467ltwggtp89eregs03qtelm.mp3",
+      "text": "一起来玩吧。",
+      "bytes": 55214,
+      "sha256": "0682e5c0353f5f9ba29181624aad4cb6a47be8dfb580e28ab38db41200e6ef86",
+      "original": "audio/venti/originals/fan_yinyou1.mp3",
+      "output": "audio/venti/skill/fan_yinyou1.mp3",
+      "trim_seconds": null,
+      "gain_db": -1.4699999999999989,
+      "before": {
+        "lufs": -18.14,
+        "true_peak_dbtp": -7.78,
+        "mean_dbfs": -22.3,
+        "peak_dbfs": -7.8
+      },
+      "after": {
+        "lufs": -19.62,
+        "true_peak_dbtp": -9.25,
+        "mean_dbfs": -23.8,
+        "peak_dbfs": -9.2
+      },
+      "output_bytes": 28302
+    },
+    "fan_yinyou2": {
+      "label": "打开宝箱·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2f/bsrykjhcvrgzmqde3faekzqa28nfnt6.mp3",
+      "text": "咳咳，请听一首，「宝箱之歌」！",
+      "bytes": 89069,
+      "sha256": "98dec8a6f3823dbe68e1cf8177e285a97418aba65175d7140354ca161225f8e7",
+      "original": "audio/venti/originals/fan_yinyou2.mp3",
+      "output": "audio/venti/skill/fan_yinyou2.mp3",
+      "trim_seconds": null,
+      "gain_db": 0.0,
+      "before": {
+        "lufs": -19.61,
+        "true_peak_dbtp": -8.83,
+        "mean_dbfs": -23.8,
+        "peak_dbfs": -8.9
+      },
+      "after": {
+        "lufs": -19.6,
+        "true_peak_dbtp": -8.76,
+        "mean_dbfs": -23.8,
+        "peak_dbfs": -8.8
+      },
+      "output_bytes": 45429
+    },
+    "fan_yinyou3": {
+      "label": "打开宝箱·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f5/bw5qbnqske81565t77p4lzc3qywvy14.mp3",
+      "text": "嘿嘿，要不要感谢「风神的眷顾」呀？",
+      "bytes": 60230,
+      "sha256": "f4045ae1033180532b01a8f23486860c156506bfbd762bafe9defacd2f9bab27",
+      "original": "audio/venti/originals/fan_yinyou3.mp3",
+      "output": "audio/venti/skill/fan_yinyou3.mp3",
+      "trim_seconds": null,
+      "gain_db": 1.0600000000000023,
+      "before": {
+        "lufs": -20.67,
+        "true_peak_dbtp": -7.91,
+        "mean_dbfs": -24.6,
+        "peak_dbfs": -7.9
+      },
+      "after": {
+        "lufs": -19.59,
+        "true_peak_dbtp": -6.92,
+        "mean_dbfs": -23.5,
+        "peak_dbfs": -6.9
+      },
+      "output_bytes": 44076
+    },
+    "fan_qingzhan1": {
+      "label": "闲聊·诗篇",
+      "url": "https://patchwiki.biligame.com/images/ys/b/be/qq6fxszuhs8m7qhve7pz2pljhvq3p0g.ogg",
+      "text": "动身吧，旅行者。佚失的诗篇，还在等着我们呢。",
+      "bytes": 31883,
+      "sha256": "c307bd0826ad928856574f2337b94ea393aaaf1d9abbfcbb755dc1e1c5e637cb",
+      "original": "audio/venti/originals/fan_qingzhan1.ogg",
+      "output": "audio/venti/skill/fan_qingzhan1.mp3",
+      "trim_seconds": null,
+      "gain_db": -0.39000000000000057,
+      "before": {
+        "lufs": -19.22,
+        "true_peak_dbtp": -6.67,
+        "mean_dbfs": -23.0,
+        "peak_dbfs": -7.2
+      },
+      "after": {
+        "lufs": -19.53,
+        "true_peak_dbtp": -7.09,
+        "mean_dbfs": -23.4,
+        "peak_dbfs": -7.7
+      },
+      "output_bytes": 51020
+    },
+    "fan_qingzhan2": {
+      "label": "早上好…",
+      "url": "https://patchwiki.biligame.com/images/ys/2/24/gneimtxg5crpqj6pm94xrnsstevrutj.ogg",
+      "text": "早，准备开始新的冒险了么？",
+      "bytes": 18180,
+      "sha256": "7f2b87a1967f1446d8bbd3077b22afb318d2f0f9bf2bae4aaa702d15583f886c",
+      "original": "audio/venti/originals/fan_qingzhan3.ogg",
+      "output": "audio/venti/skill/fan_qingzhan2.mp3",
+      "trim_seconds": null,
+      "gain_db": -0.5799999999999983,
+      "before": {
+        "lufs": -19.03,
+        "true_peak_dbtp": -7.31,
+        "mean_dbfs": -22.6,
+        "peak_dbfs": -7.3
+      },
+      "after": {
+        "lufs": -19.61,
+        "true_peak_dbtp": -7.9,
+        "mean_dbfs": -23.2,
+        "peak_dbfs": -7.9
+      },
+      "output_bytes": 27260
+    },
+    "fan_qingzhan_success1": {
+      "label": "打开宝箱·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/5/53/oxa2po3xv66wc0ynrsuqf2i3lfjrwj9.mp3",
+      "text": "收获不少，可以拿去换几瓶好酒啦。",
+      "bytes": 56468,
+      "sha256": "7259fc7871facadcbb469b4b1eb7dfc4ad9be95ac6bb724b49d4ac0edf1eca91",
+      "original": "audio/venti/originals/fan_qingzhan_success1.mp3",
+      "output": "audio/venti/skill/fan_qingzhan_success1.mp3",
+      "trim_seconds": null,
+      "gain_db": 0.75,
+      "before": {
+        "lufs": -20.36,
+        "true_peak_dbtp": -7.72,
+        "mean_dbfs": -24.2,
+        "peak_dbfs": -7.8
+      },
+      "after": {
+        "lufs": -19.59,
+        "true_peak_dbtp": -6.95,
+        "mean_dbfs": -23.4,
+        "peak_dbfs": -7.0
+      },
+      "output_bytes": 42383
+    },
+    "fan_qingzhan_success2": {
+      "label": "闲聊·弹琴",
+      "url": "https://patchwiki.biligame.com/images/ys/6/63/crvqa7vg3f8tqydocp0v5l3uinztxb4.ogg",
+      "text": "嗯…想接着听下去的话，送我一个苹果吧。",
+      "bytes": 34367,
+      "sha256": "f251d963e1e86d17648b0f3763477839cff1f872e63a8bca5af10317939e7bae",
+      "original": "audio/venti/originals/fan_qingzhan_success2.ogg",
+      "output": "audio/venti/skill/fan_qingzhan_success2.mp3",
+      "trim_seconds": null,
+      "gain_db": 0.28999999999999915,
+      "before": {
+        "lufs": -19.9,
+        "true_peak_dbtp": -6.53,
+        "mean_dbfs": -22.9,
+        "peak_dbfs": -6.6
+      },
+      "after": {
+        "lufs": -19.62,
+        "true_peak_dbtp": -6.3,
+        "mean_dbfs": -22.6,
+        "peak_dbfs": -6.4
+      },
+      "output_bytes": 56852
+    },
+    "fan_songshi1": {
+      "label": "突破的感受·转",
+      "url": "https://patchwiki.biligame.com/images/ys/b/b3/alhkl4o8xeb8gr27ornughx4n3w9wrc.ogg",
+      "text": "来，坐这边。我写了一首新诗哦，就叫它「旅行者之风」吧。",
+      "bytes": 38980,
+      "sha256": "c861df9fd2e681d40ec7d474775fd601767009e882b00f544c7091da5ab7d8bc",
+      "original": "audio/venti/originals/fan_songshi1.ogg",
+      "output": "audio/venti/skill/fan_songshi_voice1.mp3",
+      "trim_seconds": null,
+      "gain_db": -0.9399999999999977,
+      "before": {
+        "lufs": -18.67,
+        "true_peak_dbtp": -6.45,
+        "mean_dbfs": -22.4,
+        "peak_dbfs": -6.5
+      },
+      "after": {
+        "lufs": -19.61,
+        "true_peak_dbtp": -7.28,
+        "mean_dbfs": -23.3,
+        "peak_dbfs": -7.3
+      },
+      "output_bytes": 66428
+    },
+    "fan_venti1": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d4/m8myqo08092jojck9hudz70z41fz3np.mp3",
+      "text": "稍微睡一下吧…",
+      "bytes": 79533,
+      "sha256": "48bd96b27c43b06f75e61d516778eacc3a1b6ef6b16e5ca366734d795f572770",
+      "original": "audio/venti/originals/fan_venti1.mp3",
+      "output": "audio/venti/die/fan_venti1.mp3",
+      "trim_seconds": null,
+      "gain_db": -0.6999999999999993,
+      "before": {
+        "lufs": -18.91,
+        "true_peak_dbtp": -7.92,
+        "mean_dbfs": -23.9,
+        "peak_dbfs": -7.9
+      },
+      "after": {
+        "lufs": -19.61,
+        "true_peak_dbtp": -8.48,
+        "mean_dbfs": -24.6,
+        "peak_dbfs": -8.5
+      },
+      "output_bytes": 40892
+    },
+    "fan_venti2": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/5/5a/fbiah450q3whkk1c0tmae8jkx9f7b9g.mp3",
+      "text": "啊呀，弦断了…",
+      "bytes": 51035,
+      "sha256": "36f28ecdea948c67f29f00bd39d69c532add0692c315bcc1dab2259a0291ef9b",
+      "original": "audio/venti/originals/fan_venti2.mp3",
+      "output": "audio/venti/die/fan_venti2.mp3",
+      "trim_seconds": null,
+      "gain_db": 1.1000000000000014,
+      "before": {
+        "lufs": -20.71,
+        "true_peak_dbtp": -7.39,
+        "mean_dbfs": -26.1,
+        "peak_dbfs": -7.4
+      },
+      "after": {
+        "lufs": -19.62,
+        "true_peak_dbtp": -6.32,
+        "mean_dbfs": -25.0,
+        "peak_dbfs": -6.3
+      },
+      "output_bytes": 32945
+    },
+    "fan_venti3": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4f/5zgwfypoadxt6coafjdw0lkf0fzxy05.mp3",
+      "text": "扑通。",
+      "bytes": 10075,
+      "sha256": "851f7d7cce747899884c01f0602dce51b31156ff054abb545cc4237791c6e4b9",
+      "original": "audio/venti/originals/fan_venti3.mp3",
+      "output": "audio/venti/die/fan_venti3.mp3",
+      "trim_seconds": null,
+      "gain_db": 7.91,
+      "before": {
+        "lufs": -27.52,
+        "true_peak_dbtp": -13.31,
+        "mean_dbfs": -33.1,
+        "peak_dbfs": -13.4
+      },
+      "after": {
+        "lufs": -19.65,
+        "true_peak_dbtp": -5.34,
+        "mean_dbfs": -25.2,
+        "peak_dbfs": -5.4
+      },
+      "output_bytes": 12086
+    },
+    "fan_songshi2": {
+      "label": "温迪，阳光驱散灰烬",
+      "text": "阳光驱散灰烬，林间的风唱着往昔的旋律，归乡之路洒满果香。",
+      "url": "file:///C:/Users/22697/Downloads/%E6%B8%A9%E8%BF%AA%E8%AF%AD%E9%9F%B3/%E6%B8%A9%E8%BF%AA%EF%BC%8C%E9%98%B3%E5%85%89%E9%A9%B1%E6%95%A3%E7%81%B0%E7%83%AC.mp3",
+      "original": "audio/venti/originals/fan_songshi2.mp3",
+      "output": "audio/venti/skill/fan_songshi_voice2.mp3",
+      "bytes": 223057,
+      "trim_seconds": null,
+      "gain_db": 6.170000000000002,
+      "before": {
+        "lufs": -21.78,
+        "true_peak_dbtp": -10.46,
+        "mean_dbfs": -25.6,
+        "peak_dbfs": -10.5
+      },
+      "after": {
+        "lufs": -15.61,
+        "true_peak_dbtp": -4.17,
+        "mean_dbfs": -19.5,
+        "peak_dbfs": -4.3
+      },
+      "output_bytes": 194017,
+      "sha256": "2c1bfc0dd24e38a87b5d5d5df553a253c437e91d5dc75d56ae82079bbfc57d1d",
+      "transcript_source": "用户确认，2026-11-01",
+      "previous_gain_db": 2.1700000000000017
+    },
+    "fan_songshi3": {
+      "label": "温迪，见到了【时间】",
+      "text": "靠着铭刻在祭礼、诗歌、遗迹和古籍中的记忆，被视作微不足道的生灵们一次次【见】到了时间。",
+      "url": "file:///C:/Users/22697/Downloads/%E6%B8%A9%E8%BF%AA%E8%AF%AD%E9%9F%B3/%E6%B8%A9%E8%BF%AA%EF%BC%8C%E8%A7%81%E5%88%B0%E4%BA%86%E3%80%90%E6%97%B6%E9%97%B4%E3%80%91.mp3",
+      "original": "audio/venti/originals/fan_songshi3.mp3",
+      "output": "audio/venti/skill/fan_songshi_voice3.mp3",
+      "bytes": 229392,
+      "trim_seconds": null,
+      "gain_db": 6.740000000000002,
+      "before": {
+        "lufs": -22.35,
+        "true_peak_dbtp": -11.64,
+        "mean_dbfs": -26.0,
+        "peak_dbfs": -11.7
+      },
+      "after": {
+        "lufs": -15.6,
+        "true_peak_dbtp": -4.85,
+        "mean_dbfs": -19.2,
+        "peak_dbfs": -4.9
+      },
+      "output_bytes": 203952,
+      "sha256": "a6da0017f95ef56185a8d8472f0e7c5a02909fbe2d3bdbad35cfab7806fa8d73",
+      "transcript_source": "用户确认，2026-11-01",
+      "previous_gain_db": 2.740000000000002
+    },
+    "fan_jiushi1": {
+      "label": "温迪的爱好…",
+      "url": "https://patchwiki.biligame.com/images/ys/5/54/5p7mrnoxszc2yruh7yal1uqfq8ma7ta.ogg",
+      "text": "我喜欢酒！还有风！唔，如果能有用风酿的酒就好了。",
+      "bytes": 36091,
+      "sha256": "6517c2ebb204d54357a34520333c033e27b8661e8467b2b1fcf897fd8fb3fe3c",
+      "original": "audio/venti/originals/fan_qingzhan2.ogg",
+      "output": "audio/venti/skill/fan_jiushi1.mp3",
+      "trim_seconds": null,
+      "gain_db": 0.7199999999999989,
+      "before": {
+        "lufs": -20.33,
+        "true_peak_dbtp": -6.63,
+        "mean_dbfs": -23.8,
+        "peak_dbfs": -6.7
+      },
+      "after": {
+        "lufs": -19.61,
+        "true_peak_dbtp": -5.9,
+        "mean_dbfs": -23.1,
+        "peak_dbfs": -6.0
+      },
+      "output_bytes": 62180
+    },
+    "fan_jiushi2": {
+      "label": "收到赠礼·其一",
+      "text": "啊，好满足！明天也会有吧？后天也会有吧？",
+      "url": "https://patchwiki.biligame.com/images/ys/1/12/j3aiuo89ol5pctzuix8t3tfd0r0gssd.mp3",
+      "original": "audio/venti/originals/fan_jiushi2.mp3",
+      "output": "audio/venti/skill/fan_jiushi2.mp3",
+      "bytes": 148653,
+      "trim_seconds": null,
+      "gain_db": 0.75,
+      "before": {
+        "lufs": -20.36,
+        "true_peak_dbtp": -7.31,
+        "mean_dbfs": -24.3,
+        "peak_dbfs": -7.3
+      },
+      "after": {
+        "lufs": -19.6,
+        "true_peak_dbtp": -6.58,
+        "mean_dbfs": -23.5,
+        "peak_dbfs": -6.6
+      },
+      "output_bytes": 79052,
+      "sha256": "c2058dfc68abfa8776c344cd2a2b8ab8f3928d48fa0a810aedd77c49d3a35098"
+    }
+  },
+  "target_lufs": -19.61
+}

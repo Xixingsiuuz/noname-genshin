@@ -1,0 +1,443 @@
+{
+  "page": "https://wiki.biligame.com/ys/%E8%83%A1%E6%A1%83%E8%AF%AD%E9%9F%B3",
+  "clips": {
+    "fan_qiyun_intro": {
+      "label": "想要了解胡桃·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2f/ci17kr8v321lp2ghkoenat3c1oqjsns.mp3",
+      "text": "小巷派暗黑打油诗人，正是本人！",
+      "original": "audio/hutao/originals/intro.mp3",
+      "output": "audio/hutao/skill/fan_qiyun_intro.mp3",
+      "bytes": 46828,
+      "original_sha256": "8799738fcd7bd620b93082e1ccdd66a8c653b30f468aebfa9a41d4a6ffccff77",
+      "trim_seconds": [
+        0.65,
+        5.81
+      ],
+      "volume": {
+        "id": "fan_qiyun_intro",
+        "gain_db": 6.23,
+        "before": {
+          "lufs": -23.88,
+          "true_peak_dbtp": -7.73,
+          "mean_dbfs": -25.3,
+          "peak_dbfs": -7.8
+        },
+        "after": {
+          "lufs": -17.66,
+          "true_peak_dbtp": -1.48,
+          "mean_dbfs": -19.0,
+          "peak_dbfs": -1.5
+        }
+      },
+      "sha256": "d6152b73c6c500ab8cc7dfca067fd0ead5b05ee4d057b0aa6479ceb4fe49d25c",
+      "output_bytes": 53619
+    },
+    "fan_qiyun_sun": {
+      "label": "闲聊·偷懒",
+      "url": "https://patchwiki.biligame.com/images/ys/0/01/2fnjqvot4urhojue61nnct93s94kpg4.mp3",
+      "text": "太阳出来我晒太阳，月亮出来我晒月亮咯~",
+      "original": "audio/hutao/originals/sun.mp3",
+      "output": "audio/hutao/skill/fan_qiyun_sun.mp3",
+      "bytes": 70828,
+      "original_sha256": "15f1df74a424b6035e84d49511c8a0ba329dab4e353ba46f601e82211aa4a5fb",
+      "trim_seconds": [
+        1.65,
+        8.45
+      ],
+      "volume": {
+        "id": "fan_qiyun_sun",
+        "gain_db": 8.17,
+        "before": {
+          "lufs": -22.42,
+          "true_peak_dbtp": -10.77,
+          "mean_dbfs": -23.7,
+          "peak_dbfs": -10.8
+        },
+        "after": {
+          "lufs": -14.26,
+          "true_peak_dbtp": -2.6,
+          "mean_dbfs": -15.6,
+          "peak_dbfs": -2.6
+        }
+      },
+      "sha256": "26504f5cbb1237abab439ed340f1b316288a5df5090444da7d1a258de59f4fa4",
+      "output_bytes": 87483
+    },
+    "fan_qiyun_morning": {
+      "label": "早上好…",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8d/n8gei38e7k4v8os3scp7uormhc633ib.mp3",
+      "text": "嗯~早起身体好，晚睡人会飘。",
+      "original": "audio/hutao/originals/morning.mp3",
+      "output": "audio/hutao/skill/fan_qiyun_morning.mp3",
+      "bytes": 39724,
+      "original_sha256": "2ebc3a7ec9191aaa99ecb3adf9379e07b57df643f91787124a97c409c2aad8ec",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_qiyun_morning",
+        "gain_db": 6.73,
+        "before": {
+          "lufs": -23.58,
+          "true_peak_dbtp": -8.23,
+          "mean_dbfs": -25.2,
+          "peak_dbfs": -8.3
+        },
+        "after": {
+          "lufs": -16.84,
+          "true_peak_dbtp": -1.6,
+          "mean_dbfs": -18.5,
+          "peak_dbfs": -1.6
+        }
+      },
+      "sha256": "233f2429ae865af3e0fb696c008a5c7202e24e7b5a6d2d34b4dff1e9ba924163",
+      "output_bytes": 42627
+    },
+    "fan_qiyun_name": {
+      "label": "关于胡桃自己·名字",
+      "url": "https://patchwiki.biligame.com/images/ys/5/56/fjutt3fmqzb4fxbxqp9zbuqu7pmes24.mp3",
+      "text": "胡桃的胡是胡吃海喝的胡，胡桃的桃却不是淘气的淘！",
+      "original": "audio/hutao/originals/name.mp3",
+      "output": "audio/hutao/skill/fan_qiyun_name.mp3",
+      "bytes": 89452,
+      "original_sha256": "da2906aaeac73e5a159a5ae2657a0616088c663e49bfff983d49445672fcd55d",
+      "trim_seconds": [
+        0.8,
+        8.35
+      ],
+      "volume": {
+        "id": "fan_qiyun_name",
+        "gain_db": 6.27,
+        "before": {
+          "lufs": -24.38,
+          "true_peak_dbtp": -7.77,
+          "mean_dbfs": -25.8,
+          "peak_dbfs": -7.8
+        },
+        "after": {
+          "lufs": -18.11,
+          "true_peak_dbtp": -1.4,
+          "mean_dbfs": -19.6,
+          "peak_dbfs": -1.4
+        }
+      },
+      "sha256": "e2d37ecc0ef3b471533c8191362454809899ad3eac8da1acae7f075b55a094fb",
+      "output_bytes": 88707
+    },
+    "fan_qiyun_hilichurl": {
+      "label": "用户提供·待机语音",
+      "url": "file:///C:/Users/22697/Downloads/%E8%83%A1%E6%A1%83%EF%BC%8C%E5%A4%A7%E4%B8%98%E4%B8%98%E7%97%85%E4%BA%86%E4%BA%8C%E4%B8%98%E4%B8%98%E7%9E%A7....mp3",
+      "text": "大丘丘病了二丘丘瞧，三丘丘采药四丘丘熬",
+      "original": "audio/hutao/originals/hilichurl.mp3",
+      "output": "audio/hutao/skill/fan_qiyun_hilichurl.mp3",
+      "bytes": 199996,
+      "original_sha256": "a2b26ae0a413cb3c28971614d5c3f1ed9db23bab2ad68ac913dff8a955018592",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_qiyun_hilichurl",
+        "gain_db": -0.79,
+        "before": {
+          "lufs": -15.5,
+          "true_peak_dbtp": -0.71,
+          "mean_dbfs": -20.9,
+          "peak_dbfs": -0.9
+        },
+        "after": {
+          "lufs": -16.29,
+          "true_peak_dbtp": -1.48,
+          "mean_dbfs": -21.6,
+          "peak_dbfs": -1.7
+        }
+      },
+      "sha256": "335c0cd6b2448f715babf3c70fdcf6d3ba0ba1f90ee34e1f255aa10fa4b029eb",
+      "output_bytes": 172780
+    },
+    "fan_qiyun_ningguang": {
+      "label": "关于凝光…",
+      "url": "https://patchwiki.biligame.com/images/ys/f/fd/pk836bomrt9wpikb7f6p05av4jgslsy.mp3",
+      "text": "天权凝光，富甲一方；明眸善睐，桃羞杏让；目达耳通，百了千当！",
+      "original": "audio/hutao/originals/ningguang.mp3",
+      "output": "audio/hutao/skill/fan_qiyun_ningguang.mp3",
+      "bytes": 86380,
+      "original_sha256": "2b974c55ca3d88f6a9ed580562487b237d8f06fef2fc0f5a1c92eb8dfa5ab10b",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_qiyun_ningguang",
+        "gain_db": 5.88,
+        "before": {
+          "lufs": -24.12,
+          "true_peak_dbtp": -7.38,
+          "mean_dbfs": -25.2,
+          "peak_dbfs": -7.4
+        },
+        "after": {
+          "lufs": -18.26,
+          "true_peak_dbtp": -1.47,
+          "mean_dbfs": -19.3,
+          "peak_dbfs": -1.5
+        }
+      },
+      "sha256": "75ef7bfd1a4e6e09483a7f4792dbfc1ada68aabd1dd21393621cf6e2bc802816",
+      "output_bytes": 99123
+    },
+    "fan_wangsheng_customer1": {
+      "label": "闲聊·客户",
+      "url": "https://patchwiki.biligame.com/images/ys/7/77/tvyofehz8s6msfyrlui81yk3shng2jb.mp3",
+      "text": "一个客户，",
+      "original": "audio/hutao/originals/customers.mp3",
+      "output": "audio/hutao/skill/fan_wangsheng_customer1.mp3",
+      "bytes": 37420,
+      "original_sha256": "5a6c2ae7e7e39e459362617546adcce3073dba7431e3a3b005781975eabfea6f",
+      "trim_seconds": [
+        0.5,
+        1.75
+      ],
+      "volume": {
+        "id": "fan_wangsheng_customer1",
+        "gain_db": 11.46,
+        "before": {
+          "lufs": -27.41,
+          "true_peak_dbtp": -12.96,
+          "mean_dbfs": -29.0,
+          "peak_dbfs": -13.0
+        },
+        "after": {
+          "lufs": -15.93,
+          "true_peak_dbtp": -1.31,
+          "mean_dbfs": -17.5,
+          "peak_dbfs": -1.4
+        }
+      },
+      "sha256": "93bd3be4e69b7818f3963f9fc1c64b8b5427539512c48cfa903990e7e3d6f3bb",
+      "output_bytes": 15099
+    },
+    "fan_wangsheng_customer2": {
+      "label": "闲聊·客户",
+      "url": "https://patchwiki.biligame.com/images/ys/7/77/tvyofehz8s6msfyrlui81yk3shng2jb.mp3",
+      "text": "两个客户，",
+      "original": "audio/hutao/originals/customers.mp3",
+      "output": "audio/hutao/skill/fan_wangsheng_customer2.mp3",
+      "bytes": 37420,
+      "original_sha256": "5a6c2ae7e7e39e459362617546adcce3073dba7431e3a3b005781975eabfea6f",
+      "trim_seconds": [
+        1.75,
+        3.05
+      ],
+      "volume": {
+        "id": "fan_wangsheng_customer2",
+        "gain_db": 9.23,
+        "before": {
+          "lufs": -25.94,
+          "true_peak_dbtp": -10.73,
+          "mean_dbfs": -28.0,
+          "peak_dbfs": -10.7
+        },
+        "after": {
+          "lufs": -16.74,
+          "true_peak_dbtp": -1.71,
+          "mean_dbfs": -18.8,
+          "peak_dbfs": -1.7
+        }
+      },
+      "sha256": "ad75b134ea80ea2c8ac23e929080933fe0cbe842a759aabc0e9397ae034ad6c4",
+      "output_bytes": 16059
+    },
+    "fan_wangsheng_customer3": {
+      "label": "闲聊·客户",
+      "url": "https://patchwiki.biligame.com/images/ys/7/77/tvyofehz8s6msfyrlui81yk3shng2jb.mp3",
+      "text": "三个客户…",
+      "original": "audio/hutao/originals/customers.mp3",
+      "output": "audio/hutao/skill/fan_wangsheng_customer3.mp3",
+      "bytes": 37420,
+      "original_sha256": "5a6c2ae7e7e39e459362617546adcce3073dba7431e3a3b005781975eabfea6f",
+      "trim_seconds": [
+        3.12,
+        4.4
+      ],
+      "volume": {
+        "id": "fan_wangsheng_customer3",
+        "gain_db": 7.77,
+        "before": {
+          "lufs": -24.56,
+          "true_peak_dbtp": -9.27,
+          "mean_dbfs": -27.4,
+          "peak_dbfs": -9.3
+        },
+        "after": {
+          "lufs": -16.79,
+          "true_peak_dbtp": -1.15,
+          "mean_dbfs": -19.6,
+          "peak_dbfs": -1.1
+        }
+      },
+      "sha256": "7615a44c7811ce82f61f53bec94dc75ed81ca8b41f6c17d383f84fba0c2d049a",
+      "output_bytes": 13419
+    },
+    "fan_youdie_burst1": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a6/klxwtjkkpjut1j3lx9r3a7cfyy06qf9.mp3",
+      "text": "吃饱喝饱，一路走好！",
+      "original": "audio/hutao/originals/burst1.mp3",
+      "output": "audio/hutao/skill/fan_youdie_burst1.mp3",
+      "bytes": 39584,
+      "original_sha256": "fa1d2b8ae254d0537a1e471b45bddb1020f4fa426837a9feaa1146aa52c58271",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_youdie_burst1",
+        "gain_db": -1.7,
+        "before": {
+          "lufs": -12.55,
+          "true_peak_dbtp": -3.49,
+          "mean_dbfs": -17.2,
+          "peak_dbfs": -3.5
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -5.21,
+          "mean_dbfs": -18.9,
+          "peak_dbfs": -5.2
+        }
+      },
+      "sha256": "516a248b99302719b65838e0431884bdcd0f200f38c6a084bab7ad8d08f21e76",
+      "output_bytes": 34172
+    },
+    "fan_youdie_burst2": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/1/15/sbpquovm4o2gdxalp29gn76arms48ml.mp3",
+      "text": "再会啦！",
+      "original": "audio/hutao/originals/burst2.mp3",
+      "output": "audio/hutao/skill/fan_youdie_burst2.mp3",
+      "bytes": 17312,
+      "original_sha256": "ef89098f6d65238aa60849c4c699f9acc39f29129df284e52b1856686d206a29",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_youdie_burst2",
+        "gain_db": -1.34,
+        "before": {
+          "lufs": -12.91,
+          "true_peak_dbtp": -4.84,
+          "mean_dbfs": -18.4,
+          "peak_dbfs": -4.9
+        },
+        "after": {
+          "lufs": -14.26,
+          "true_peak_dbtp": -6.15,
+          "mean_dbfs": -19.8,
+          "peak_dbfs": -6.2
+        }
+      },
+      "sha256": "86bfc2f258622c24c745d78081d9f414e4e75ed40602976a06ab81ee4a4351b4",
+      "output_bytes": 14204
+    },
+    "fan_youdie_burst3": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/4/47/q8syirv151s1f9eqkggf30nm326mh5m.mp3",
+      "text": "蝶火燎原！",
+      "original": "audio/hutao/originals/burst3.mp3",
+      "output": "audio/hutao/skill/fan_youdie_burst3.mp3",
+      "bytes": 20000,
+      "original_sha256": "830c135419d1ca5f1aa2f4cb90d03787ebabacd2b55980f10da98757ed2efad0",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_youdie_burst3",
+        "gain_db": -0.28,
+        "before": {
+          "lufs": -13.97,
+          "true_peak_dbtp": -4.18,
+          "mean_dbfs": -18.9,
+          "peak_dbfs": -4.2
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -4.72,
+          "mean_dbfs": -19.1,
+          "peak_dbfs": -4.8
+        }
+      },
+      "sha256": "16d8478b371b756fec3b7b912ff9edfc3159ed191c9c679c7531f0b34d6b1b5a",
+      "output_bytes": 16988
+    },
+    "fan_hutao1": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c7/ivj2fif7on8qo9jzj2jsq6ce21y730k.mp3",
+      "text": "到我了吗…",
+      "original": "audio/hutao/originals/die1.mp3",
+      "output": "audio/hutao/die/fan_hutao1.mp3",
+      "bytes": 22688,
+      "original_sha256": "37f854ffe1099a529b2f6c06224712926cdcdf579d36a51b4945134533998163",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_hutao1",
+        "gain_db": 3.16,
+        "before": {
+          "lufs": -17.44,
+          "true_peak_dbtp": -4.66,
+          "mean_dbfs": -21.4,
+          "peak_dbfs": -4.8
+        },
+        "after": {
+          "lufs": -14.27,
+          "true_peak_dbtp": -1.53,
+          "mean_dbfs": -18.3,
+          "peak_dbfs": -1.7
+        }
+      },
+      "sha256": "0ef1453dd69cad1b1b4f44a82bc9110dc65458afcc8caff785f417952f8ba7e9",
+      "output_bytes": 18812
+    },
+    "fan_hutao2": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/1/19/p3ft6jd04qas091hcpxw2koecdltly6.mp3",
+      "text": "我记…仇…",
+      "original": "audio/hutao/originals/die2.mp3",
+      "output": "audio/hutao/die/fan_hutao2.mp3",
+      "bytes": 43424,
+      "original_sha256": "4be8c29961c51344b47ddf229454337bb9060845e69c42acff2d25f225abd5d5",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_hutao2",
+        "gain_db": -1.02,
+        "before": {
+          "lufs": -13.23,
+          "true_peak_dbtp": -1.16,
+          "mean_dbfs": -18.7,
+          "peak_dbfs": -1.2
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -2.1,
+          "mean_dbfs": -19.7,
+          "peak_dbfs": -2.1
+        }
+      },
+      "sha256": "4bc99f6d1c702b527068de5c3dfcd5f806c648e54e5639742da762fccefa1589",
+      "output_bytes": 37724
+    },
+    "fan_hutao3": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/b/ba/ri77ccb3sljnw0lud2fxtqefg9m9z7v.mp3",
+      "text": "呃啊——",
+      "original": "audio/hutao/originals/die3.mp3",
+      "output": "audio/hutao/die/fan_hutao3.mp3",
+      "bytes": 24224,
+      "original_sha256": "23026dd76fe0ace301fef0814c026a9035428dadf662e89b82291c98a486a560",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_hutao3",
+        "gain_db": 0.23,
+        "before": {
+          "lufs": -14.48,
+          "true_peak_dbtp": -6.66,
+          "mean_dbfs": -21.5,
+          "peak_dbfs": -6.7
+        },
+        "after": {
+          "lufs": -14.26,
+          "true_peak_dbtp": -6.41,
+          "mean_dbfs": -21.3,
+          "peak_dbfs": -6.4
+        }
+      },
+      "sha256": "9686b3957392e6862b97d733818fc16a9c61392288acef895444435e3c583cee",
+      "output_bytes": 20852
+    }
+  }
+}

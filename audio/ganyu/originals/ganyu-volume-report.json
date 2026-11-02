@@ -1,0 +1,86 @@
+{
+  "target_lufs": -14.25,
+  "method": "static gain, intact originals, encoded true peak <= -1 dBTP",
+  "clips": [
+    {
+      "id": "fan_liutian",
+      "gain_db": -0.01,
+      "before": {
+        "lufs": -14.24,
+        "true_peak_dbtp": -4.05,
+        "mean_dbfs": -18.2,
+        "peak_dbfs": -4.1
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -4.05,
+        "mean_dbfs": -18.2,
+        "peak_dbfs": -4.1
+      }
+    },
+    {
+      "id": "fan_linji",
+      "gain_db": -0.9,
+      "before": {
+        "lufs": -13.35,
+        "true_peak_dbtp": -4.46,
+        "mean_dbfs": -17.8,
+        "peak_dbfs": -4.7
+      },
+      "after": {
+        "lufs": -14.24,
+        "true_peak_dbtp": -5.35,
+        "mean_dbfs": -18.6,
+        "peak_dbfs": -5.6
+      }
+    },
+    {
+      "id": "fan_linji_charge",
+      "gain_db": -2.89,
+      "before": {
+        "lufs": -11.36,
+        "true_peak_dbtp": -2.64,
+        "mean_dbfs": -16.0,
+        "peak_dbfs": -2.7
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -5.63,
+        "mean_dbfs": -18.9,
+        "peak_dbfs": -5.7
+      }
+    },
+    {
+      "id": "fan_xingzuo",
+      "gain_db": 1.07,
+      "before": {
+        "lufs": -15.32,
+        "true_peak_dbtp": -3.74,
+        "mean_dbfs": -19.4,
+        "peak_dbfs": -3.9
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -2.66,
+        "mean_dbfs": -18.3,
+        "peak_dbfs": -2.8
+      }
+    },
+    {
+      "id": "fan_ganyu",
+      "gain_db": -0.79,
+      "before": {
+        "lufs": -13.46,
+        "true_peak_dbtp": -2.07,
+        "mean_dbfs": -19.0,
+        "peak_dbfs": -3.2
+      },
+      "after": {
+        "lufs": -14.23,
+        "true_peak_dbtp": -2.58,
+        "mean_dbfs": -19.8,
+        "peak_dbfs": -3.5
+      }
+    }
+  ]
+}

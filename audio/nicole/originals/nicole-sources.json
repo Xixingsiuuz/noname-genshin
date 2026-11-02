@@ -1,0 +1,480 @@
+{
+  "page": "https://wiki.biligame.com/ys/尼可语音",
+  "clips": {
+    "fan_tianlin_before1": {
+      "label": "晚上好…",
+      "url": "https://patchwiki.biligame.com/images/ys/d/dc/awwp3w3qp62e4cbc07zfbfe6fa6kmv6.mp3",
+      "original": "audio/nicole/originals/source-00.mp3",
+      "bytes": 208872,
+      "original_sha256": "66e05141e4449bb4a21f5428ed295b084553581464b6bf2c135359ea99841dea",
+      "output": "audio/nicole/skill/fan_tianlin_before1.mp3",
+      "output_bytes": 83084,
+      "sha256": "e8afb6d8296f46f41b630098daa539d42b2a25e0434d44d4c707750c128f3464",
+      "trim_seconds": [
+        0,
+        6.45
+      ],
+      "text": "晚上是灵感迸发最频繁的时间，所以也是以前的人遇到天使最多的时间。",
+      "gain_db": -0.68,
+      "measurement": {
+        "lufs": -17.2,
+        "true_peak_dbtp": -1.48,
+        "mean_dbfs": -18.3,
+        "peak_dbfs": -1.5
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_tianlin_before2": {
+      "label": "想要了解尼可·其五",
+      "url": "https://patchwiki.biligame.com/images/ys/e/e2/hoatg3d2uo8cc0tdlu7yxccoi40qm55.mp3",
+      "original": "audio/nicole/originals/source-01.mp3",
+      "bytes": 197736,
+      "original_sha256": "d0e6b5188322289244b6fa1e003567cf408139ae6d86636056597f8c01f64d44",
+      "output": "audio/nicole/skill/fan_tianlin_before2.mp3",
+      "output_bytes": 38660,
+      "sha256": "4ef758647b2a8ae422bc7f17f03d1a4234ff8a07f769e33b85b8bfd9934819c3",
+      "trim_seconds": [
+        17.45,
+        20.5
+      ],
+      "text": "神圣的潜力在你们所有人之中。",
+      "gain_db": 3.1,
+      "measurement": {
+        "lufs": -15.51,
+        "true_peak_dbtp": -1.54,
+        "mean_dbfs": -16.6,
+        "peak_dbfs": -1.5
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_duanyu_success": {
+      "label": "关于我们·代笔",
+      "url": "https://patchwiki.biligame.com/images/ys/7/7a/2s8oc0xl7rjek9a1odh17fh3y8eljlw.mp3",
+      "original": "audio/nicole/originals/source-02.mp3",
+      "bytes": 109194,
+      "original_sha256": "d33c377758156be76933a50a238b5d44ef53fcf1fa1b589a986730a0052ec654",
+      "output": "audio/nicole/skill/fan_duanyu_success.mp3",
+      "output_bytes": 64820,
+      "sha256": "4ea45c6ecf0714b48f583fc55f3d147078c4ee5b4cac2e66e12f32fa68d102ac",
+      "trim_seconds": [
+        0,
+        5.6
+      ],
+      "text": "你的见识也挺多的，怎么样，有没有兴趣来当我的新代笔啊。",
+      "gain_db": 0.28,
+      "measurement": {
+        "lufs": -17.69,
+        "true_peak_dbtp": -1.42,
+        "mean_dbfs": -19.0,
+        "peak_dbfs": -1.5
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_duanyu_failure": {
+      "label": "想要了解尼可·其五",
+      "url": "https://patchwiki.biligame.com/images/ys/e/e2/hoatg3d2uo8cc0tdlu7yxccoi40qm55.mp3",
+      "original": "audio/nicole/originals/source-01.mp3",
+      "bytes": 197736,
+      "original_sha256": "d0e6b5188322289244b6fa1e003567cf408139ae6d86636056597f8c01f64d44",
+      "output": "audio/nicole/skill/fan_duanyu_failure.mp3",
+      "output_bytes": 122468,
+      "sha256": "a84782b7763454844b7a4a0b337c9dd2ce834555adf2239ab1926267acbcf593",
+      "trim_seconds": [
+        5.45,
+        16.6
+      ],
+      "text": "我舍弃翅膀并非是坠落，而是为了触碰；我舍弃声音，也并非是缄默，只是为了在评价之前好好倾听。",
+      "gain_db": 1.29,
+      "measurement": {
+        "lufs": -19.63,
+        "true_peak_dbtp": -1.46,
+        "mean_dbfs": -21.3,
+        "peak_dbfs": -1.5
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_xuanji_story1": {
+      "label": "有什么想要分享…",
+      "url": "https://patchwiki.biligame.com/images/ys/9/90/ieh3s65moy2kccpomsfeh46l4w3fqsp.mp3",
+      "original": "audio/nicole/originals/source-03.mp3",
+      "bytes": 185928,
+      "original_sha256": "999864cce4a55042e91ed70005767da9fc7cb1822e34328f036f1530d1b6ad2f",
+      "output": "audio/nicole/skill/fan_xuanji_story1.mp3",
+      "output_bytes": 57884,
+      "sha256": "493a3aad5b96cc774c2b9c4f9ec509aa0773110d2581a531bb27528890c72001",
+      "trim_seconds": [
+        0,
+        5.15
+      ],
+      "text": "真的要说吗？真的要听我说吗？你其实也很想听对吧？",
+      "gain_db": -0.82,
+      "measurement": {
+        "lufs": -18.48,
+        "true_peak_dbtp": -1.49,
+        "mean_dbfs": -20.0,
+        "peak_dbfs": -1.5
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_tianlin_after1": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2c/t0fh8fvl1jwwwrbbp8cl2jvmnoingex.mp3",
+      "original": "audio/nicole/originals/source-08.mp3",
+      "bytes": 12997,
+      "original_sha256": "5ed9244b222cc219ef1d321697b89e30ee3ed820fbcaef1b5d0d6cb2e74e8884",
+      "output": "audio/nicole/skill/fan_tianlin_after1.mp3",
+      "output_bytes": 14612,
+      "sha256": "98602d5ce726cdb33edee1e3f7249f4ab52735cbdb08770faa84f0436b8cb0e2",
+      "trim_seconds": null,
+      "text": "对大家保密哦。",
+      "gain_db": 0.54,
+      "measurement": {
+        "lufs": -14.33,
+        "true_peak_dbtp": -1.67,
+        "mean_dbfs": -14.5,
+        "peak_dbfs": -1.7
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_tianlin_after2": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/c/cd/qlu55xz1hhps8q2gks8ffuifg2ldgt1.mp3",
+      "original": "audio/nicole/originals/source-09.mp3",
+      "bytes": 23860,
+      "original_sha256": "98eb5da41f387c2328279725060d943fce0d01ded9cf5c23e69d1a059f62d367",
+      "output": "audio/nicole/skill/fan_tianlin_after2.mp3",
+      "output_bytes": 32300,
+      "sha256": "47f61d2b3d4bbb785e12a5fefddc6c7f574af93c20b0be50045274f6ec781004",
+      "trim_seconds": null,
+      "text": "我一直，身在其中。",
+      "gain_db": -0.3,
+      "measurement": {
+        "lufs": -17.41,
+        "true_peak_dbtp": -1.47,
+        "mean_dbfs": -19.6,
+        "peak_dbfs": -1.5
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_tianlin_after3": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8c/cfxjledrcedtxv2jcqpk8y3rf7fmpwn.mp3",
+      "original": "audio/nicole/originals/source-10.mp3",
+      "bytes": 25128,
+      "original_sha256": "77c8900614b21c081fc031d2d7f5091a14bc33e5093c304e656ef1d9eab2eebe",
+      "output": "audio/nicole/skill/fan_tianlin_after3.mp3",
+      "output_bytes": 35804,
+      "sha256": "5b0ddf45cf1739c2133746a71439397d36ab71a5ce776369c216a96651fd3517",
+      "trim_seconds": null,
+      "text": "「吾以己心代天心」。",
+      "gain_db": 0.38,
+      "measurement": {
+        "lufs": -14.24,
+        "true_peak_dbtp": -1.63,
+        "mean_dbfs": -16.3,
+        "peak_dbfs": -1.9
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_tianlin_after4": {
+      "label": "闲聊·雕塑",
+      "url": "https://patchwiki.biligame.com/images/ys/7/77/s4epgstfbmhrqmo13tkrehptgip2hg1.mp3",
+      "original": "audio/nicole/originals/source-17.mp3",
+      "bytes": 30181,
+      "original_sha256": "31542a0c46e2c15484f636bc5dbeee11a9dc356159a8d592dd22363eb576847b",
+      "output": "audio/nicole/skill/fan_tianlin_after4.mp3",
+      "output_bytes": 37052,
+      "sha256": "a325947ea017de82b4256b4f4776b1d85f0b431c36c98b82a5bab251e59203d6",
+      "trim_seconds": null,
+      "text": "无须言语，托喻自明。",
+      "gain_db": 4.35,
+      "measurement": {
+        "lufs": -14.27,
+        "true_peak_dbtp": -2.43,
+        "mean_dbfs": -15.0,
+        "peak_dbfs": -2.5
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_tianlin_after5": {
+      "label": "闲聊·沉默",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d3/3jx35ilogq1jr51urm5r8bak5yjenkj.mp3",
+      "original": "audio/nicole/originals/source-18.mp3",
+      "bytes": 48875,
+      "original_sha256": "2342237d84f54f90396d8f7bbf4c62ae96f9e8b1acb40a6758b8bfb7e0e5f7ae",
+      "output": "audio/nicole/skill/fan_tianlin_after5.mp3",
+      "output_bytes": 63644,
+      "sha256": "62ad9f8bbb045479cbedf4f64059388dc5218573bf05836e252e61bf7df3df2d",
+      "trim_seconds": null,
+      "text": "我现在的本质？只是失去声音的「人」罢了。",
+      "gain_db": 3.96,
+      "measurement": {
+        "lufs": -16.77,
+        "true_peak_dbtp": -1.49,
+        "mean_dbfs": -19.4,
+        "peak_dbfs": -1.5
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_duanyu_guard1": {
+      "label": "元素战技·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/7/77/s3rjuhrmb2aclfjwiyb3z85ocjzqi2r.mp3",
+      "original": "audio/nicole/originals/source-11.mp3",
+      "bytes": 9766,
+      "original_sha256": "3ae1e137331c363a6fcedfca1dc4c4a479a1bca9b4082bcc527ae8e9a7bc9671",
+      "output": "audio/nicole/skill/fan_duanyu_guard1.mp3",
+      "output_bytes": 9692,
+      "sha256": "0bb4151a6186116b8ae1f6ab418c26bda5ca24d979e6ca5b2ca6b38244eaf6d4",
+      "trim_seconds": null,
+      "text": "拒绝。",
+      "gain_db": 0.05,
+      "measurement": {
+        "lufs": -14.41,
+        "true_peak_dbtp": -1.63,
+        "mean_dbfs": -15.8,
+        "peak_dbfs": -1.8
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_duanyu_guard2": {
+      "label": "元素战技·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/1/1b/0cwsf0rno2itq67snxg2r642uuosqj6.mp3",
+      "original": "audio/nicole/originals/source-12.mp3",
+      "bytes": 9916,
+      "original_sha256": "121856fd2c2b0bfc543c1b7903438b3d7236de5c28861e8f7b24dba47b198aa7",
+      "output": "audio/nicole/skill/fan_duanyu_guard2.mp3",
+      "output_bytes": 10076,
+      "sha256": "9a8065c44493066b8a19ed3e33ee52bb7a69fa811c80bb531f60194b73e4920a",
+      "trim_seconds": null,
+      "text": "退却。",
+      "gain_db": -0.93,
+      "measurement": {
+        "lufs": -14.22,
+        "true_peak_dbtp": -1.62,
+        "mean_dbfs": -16.7,
+        "peak_dbfs": -2.0
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_duanyu_guard3": {
+      "label": "元素战技·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/0/0b/gpb9qbijnubf9lbivi0vdl4sx5154td.mp3",
+      "original": "audio/nicole/originals/source-13.mp3",
+      "bytes": 9413,
+      "original_sha256": "398196933c71db09bcf1dc2462191c98c7fabf805cbe6f9f6b2a02df306c20a9",
+      "output": "audio/nicole/skill/fan_duanyu_guard3.mp3",
+      "output_bytes": 8228,
+      "sha256": "2c38cfa788964189778c2e4224b50d6e6de378cc49797c20a8541b2a2b1188b4",
+      "trim_seconds": null,
+      "text": "悖逆。",
+      "gain_db": -1.07,
+      "measurement": {
+        "lufs": -15.5,
+        "true_peak_dbtp": -1.46,
+        "mean_dbfs": -15.3,
+        "peak_dbfs": -1.5
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_tianlin_draw_voice1": {
+      "label": "加入队伍·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/9/92/ro5jfrca8q2h7xtpivk5k3xybtz71jo.mp3",
+      "original": "audio/nicole/originals/source-14.mp3",
+      "bytes": 14405,
+      "original_sha256": "1653964c6fe2fca19edcfc136cc4f3253e5b41328f5dbb297d7060580c518f00",
+      "output": "audio/nicole/skill/fan_tianlin_draw_voice1.mp3",
+      "output_bytes": 17372,
+      "sha256": "eb88a059bd05948f6995f03efac765763eefb29577081679043ffea980c4c457",
+      "trim_seconds": null,
+      "text": "我来揭示。",
+      "gain_db": 2.78,
+      "measurement": {
+        "lufs": -16.71,
+        "true_peak_dbtp": -1.46,
+        "mean_dbfs": -18.7,
+        "peak_dbfs": -1.5
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_tianlin_draw_voice2": {
+      "label": "加入队伍·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/7/70/pmwnr1ss88tloiue765cydi2tjgwzua.mp3",
+      "original": "audio/nicole/originals/source-15.mp3",
+      "bytes": 8033,
+      "original_sha256": "4724b184c9ab0a1ffff74b4a62288f2f68551d895484d759eae47923ddf0e459",
+      "output": "audio/nicole/skill/fan_tianlin_draw_voice2.mp3",
+      "output_bytes": 7244,
+      "sha256": "d19f5c510455a84801ff8146823f65bf2116a0982ce973ee418248354f10d632",
+      "trim_seconds": null,
+      "text": "呵呵…",
+      "gain_db": 9.7,
+      "measurement": {
+        "lufs": -20.35,
+        "true_peak_dbtp": -1.56,
+        "mean_dbfs": -19.1,
+        "peak_dbfs": -1.6
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_tianlin_draw_voice3": {
+      "label": "加入队伍·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4b/9eowwuj0htx3dmu61bj2pxp53pbyg0f.mp3",
+      "original": "audio/nicole/originals/source-16.mp3",
+      "bytes": 9871,
+      "original_sha256": "d07615b5a071b4bfb24f5ce75569cf70030884d88a26d4e0256639072bace7c8",
+      "output": "audio/nicole/skill/fan_tianlin_draw_voice3.mp3",
+      "output_bytes": 9356,
+      "sha256": "68b167ac3c663d2eb45655dff9d479e619482f0d0c7895f8906fe73db93f2500",
+      "trim_seconds": null,
+      "text": "……",
+      "gain_db": 11.92,
+      "measurement": {
+        "lufs": -15.13,
+        "true_peak_dbtp": -1.42,
+        "mean_dbfs": -16.2,
+        "peak_dbfs": -1.5
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_xuanji_story2": {
+      "label": "突破的感受·起",
+      "url": "https://patchwiki.biligame.com/images/ys/0/06/61j5wxtktcgjbwsd6xq91nbbf8gt5zq.mp3",
+      "original": "audio/nicole/originals/source-04.mp3",
+      "bytes": 88801,
+      "original_sha256": "5c876706936747efcb2c964fab2465511b70b1b0a260466dadfb1b5059b3d472",
+      "output": "audio/nicole/skill/fan_xuanji_story2.mp3",
+      "output_bytes": 117020,
+      "sha256": "808ad8c84b01749ed7148616fbe0c08d868e105a557c5040e52908cfad4ea3af",
+      "trim_seconds": null,
+      "text": "「众人顿时慌了神，他们看向尼可的眼神充满不可思议：『尼可，你在做什么？你打晕艾莉丝做什么？』…」",
+      "gain_db": -1.54,
+      "measurement": {
+        "lufs": -16.12,
+        "true_peak_dbtp": -1.07,
+        "mean_dbfs": -18.2,
+        "peak_dbfs": -1.1
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_xuanji_story3": {
+      "label": "突破的感受·承",
+      "url": "https://patchwiki.biligame.com/images/ys/3/31/r1zf181tr7ld3h4duyal14y8rtqrdsn.mp3",
+      "original": "audio/nicole/originals/source-05.mp3",
+      "bytes": 97628,
+      "original_sha256": "3c28a18b7704005769da09262f06e2c6c50f4edf904a159c522c80e34192e7b3",
+      "output": "audio/nicole/skill/fan_xuanji_story3.mp3",
+      "output_bytes": 131228,
+      "sha256": "9b94649f608eaa0200b787e109c0dfd21a42c741d50aba2377fc6f5121b76375",
+      "trim_seconds": null,
+      "text": "「尼可不慌不忙，伸出一根手指：『艾莉丝已经力量耗尽了。留在战场也只是累赘。带她下去休息吧。』」",
+      "gain_db": -1.44,
+      "measurement": {
+        "lufs": -18.54,
+        "true_peak_dbtp": -1.43,
+        "mean_dbfs": -20.0,
+        "peak_dbfs": -1.5
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_xuanji_story4": {
+      "label": "突破的感受·转",
+      "url": "https://patchwiki.biligame.com/images/ys/5/5a/owsz432u9zbshgf9cqck493n61uomvw.mp3",
+      "original": "audio/nicole/originals/source-06.mp3",
+      "bytes": 81551,
+      "original_sha256": "153b48615fcce5db222f113788d8bf5845199886bbb4e987f75c0551f5d0d2c3",
+      "output": "audio/nicole/skill/fan_xuanji_story4.mp3",
+      "output_bytes": 111548,
+      "sha256": "3020254b78e224e10ee3f423b3e0898a316743f69348149dc8596fe273c296ab",
+      "trim_seconds": null,
+      "text": "「『没有了艾莉丝，我们怎么匹敌莱茵多特？』众人对尼可的建议不屑一顾。只见尼可走上前去…」",
+      "gain_db": -1.52,
+      "measurement": {
+        "lufs": -19.21,
+        "true_peak_dbtp": -1.58,
+        "mean_dbfs": -20.1,
+        "peak_dbfs": -1.7
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_xuanji_story5": {
+      "label": "突破的感受·合",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d1/te0aajnrgwf45a5n4beo59mjprjbytw.mp3",
+      "original": "audio/nicole/originals/source-07.mp3",
+      "bytes": 131810,
+      "original_sha256": "5307681e777ea75ba2e85cb1f2fe87473ac6108f5643ff79509350a8e0d2a6b6",
+      "output": "audio/nicole/skill/fan_xuanji_story5.mp3",
+      "output_bytes": 188204,
+      "sha256": "a0b794bb5007c35dee66d91a2fd9bd1dd8bc4fbfa06dbca2381c25fdfa7f3108",
+      "trim_seconds": null,
+      "text": "「『在你们面前的，是在大地上流浪了数千年的天使。』云开夜散，登天金阶铺设而下，尼可一步一步踏上神性之梯。」",
+      "gain_db": -1.55,
+      "measurement": {
+        "lufs": -18.78,
+        "true_peak_dbtp": -1.29,
+        "mean_dbfs": -20.2,
+        "peak_dbfs": -1.3
+      },
+      "review": "silence-boundary analysis; not human-listened"
+    },
+    "fan_nicole1": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/7/76/8iovxvks9za9tg5li03nqvn8gr4ashu.mp3",
+      "text": "新小说点子…还没…说…",
+      "original": "audio/nicole/originals/death-source-1.mp3",
+      "bytes": 46964,
+      "original_sha256": "e8da8c5b1771d784ea4db1c6fb56c0e63d1e94e6c3f0b2b24ac92d02499f2ff8",
+      "output": "audio/nicole/die/fan_nicole1.mp3",
+      "output_bytes": 66836,
+      "sha256": "e50f8fb9520cde5a8dc0483f5c385581f05164815214b7873b65205d0812f0bb",
+      "trim_seconds": null,
+      "gain_db": 3.79,
+      "measurement": {
+        "lufs": -16.14,
+        "true_peak_dbtp": -1.55,
+        "mean_dbfs": -18.8,
+        "peak_dbfs": -1.6
+      },
+      "review": "uncut original; not human-listened"
+    },
+    "fan_nicole2": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/4/41/brzmzfx7udnsxh62c35rveczcq3urk1.mp3",
+      "text": "所有可能性…都收束…",
+      "original": "audio/nicole/originals/death-source-2.mp3",
+      "bytes": 37923,
+      "original_sha256": "1d484e76d163ec11c78bb8f926a87232b59432864ff350a8e154a7ea46cbd9f2",
+      "output": "audio/nicole/die/fan_nicole2.mp3",
+      "output_bytes": 51620,
+      "sha256": "709e0d14db774b90ef9d696eae80016ec28f53160443e41fc481e22c37479d35",
+      "trim_seconds": null,
+      "gain_db": 2.52,
+      "measurement": {
+        "lufs": -16.34,
+        "true_peak_dbtp": -1.51,
+        "mean_dbfs": -20.7,
+        "peak_dbfs": -1.7
+      },
+      "review": "uncut original; not human-listened"
+    },
+    "fan_nicole3": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/e/e1/a8lpo10wk0anbw2es3b7brhgf9io0vy.mp3",
+      "text": "……",
+      "original": "audio/nicole/originals/death-source-3.mp3",
+      "bytes": 12440,
+      "original_sha256": "e4ccaeca09c0c6b2aacb4f4748b64e13c161a14f877a9e13f07d0ff2817ab588",
+      "output": "audio/nicole/die/fan_nicole3.mp3",
+      "output_bytes": 12764,
+      "sha256": "e31414d53b811b357565841d9ffcb09ce2b628f20b531b38ce950ae99bb2fe74",
+      "trim_seconds": null,
+      "gain_db": 7.92,
+      "measurement": {
+        "lufs": -16.07,
+        "true_peak_dbtp": -1.65,
+        "mean_dbfs": -18.9,
+        "peak_dbfs": -1.8
+      },
+      "review": "uncut original; not human-listened"
+    }
+  }
+}

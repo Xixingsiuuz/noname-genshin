@@ -1,0 +1,65 @@
+{
+  "page": "https://wiki.biligame.com/ys/%E8%89%BE%E6%A2%85%E8%8E%89%E5%9F%83%E8%AF%AD%E9%9F%B3",
+  "entries": {
+    "加入队伍·其二": {
+      "url": "https://patchwiki.biligame.com/images/ys/6/68/gktio0a2wwo1s6naaulc5nihenmdq1i.mp3",
+      "text": "向你致意。",
+      "original": "audio/emilie/originals/source-01.mp3",
+      "bytes": 12754
+    },
+    "打开宝箱·其一": {
+      "url": "https://patchwiki.biligame.com/images/ys/3/30/o2ji9qfhqvx70q0xhx1yd3lw614crwk.mp3",
+      "text": "呵呵，是符合期待的收获吗？",
+      "original": "audio/emilie/originals/source-02.mp3",
+      "bytes": 28408
+    },
+    "打开宝箱·其二": {
+      "url": "https://patchwiki.biligame.com/images/ys/1/1e/5a02y8sbhs90rap0nsycdiiygay1uze.mp3",
+      "text": "需要我帮你收纳吗？",
+      "original": "audio/emilie/originals/source-03.mp3",
+      "bytes": 15443
+    },
+    "闲聊·灵感": {
+      "url": "https://patchwiki.biligame.com/images/ys/9/9c/oi6cm8w1ritqppxnqinhiwkicsrwf5w.mp3",
+      "text": "突然有了新的灵感…请稍等片刻，容我记录下来。",
+      "original": "audio/emilie/originals/source-04.mp3",
+      "bytes": 46828
+    },
+    "元素爆发·其一": {
+      "url": "https://patchwiki.biligame.com/images/ys/c/c7/lpkmofs06b0pa52sshq180pn5rrgm3y.mp3",
+      "text": "芬馥之语。",
+      "original": "audio/emilie/originals/source-05.mp3",
+      "bytes": 14500
+    },
+    "元素爆发·其二": {
+      "url": "https://patchwiki.biligame.com/images/ys/f/f2/n0pdixqpm944h1eoek97pfpwmoz4vh6.mp3",
+      "text": "雾散吧。",
+      "original": "audio/emilie/originals/source-06.mp3",
+      "bytes": 11064
+    },
+    "元素爆发·其三": {
+      "url": "https://patchwiki.biligame.com/images/ys/3/30/rvu9tovfa7gi3z2shwpj92fenbcciqq.mp3",
+      "text": "予我辉光。",
+      "original": "audio/emilie/originals/source-07.mp3",
+      "bytes": 14482
+    },
+    "倒下·其一": {
+      "url": "https://patchwiki.biligame.com/images/ys/e/e2/nrm12e1ypj53o188g01hf7rzw6ltx62.mp3",
+      "text": "泥土的气息…",
+      "original": "audio/emilie/originals/source-08.mp3",
+      "bytes": 19848
+    },
+    "倒下·其二": {
+      "url": "https://patchwiki.biligame.com/images/ys/0/08/jy1im6paswsi7li7maafd4xxa8jri6s.mp3",
+      "text": "如灯之熄…",
+      "original": "audio/emilie/originals/source-09.mp3",
+      "bytes": 22795
+    },
+    "倒下·其三": {
+      "url": "https://patchwiki.biligame.com/images/ys/d/dc/4p2llm87co8r6fsdxlhqk8tweiqpyf0.mp3",
+      "text": "到我了吗…",
+      "original": "audio/emilie/originals/source-10.mp3",
+      "bytes": 16617
+    }
+  }
+}

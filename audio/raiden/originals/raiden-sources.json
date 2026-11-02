@@ -1,0 +1,466 @@
+{
+  "page": "https://wiki.biligame.com/ys/雷电将军语音",
+  "loudness_reference": {
+    "target_lufs": -14.25,
+    "references": [
+      {
+        "path": "audio/eula/skill/fan_langhua_high1.mp3",
+        "lufs": -12.1,
+        "true_peak_dbtp": -1.02,
+        "mean_dbfs": -12.5,
+        "peak_dbfs": -1.1
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_high2.mp3",
+        "lufs": -14.37,
+        "true_peak_dbtp": -1.53,
+        "mean_dbfs": -15.9,
+        "peak_dbfs": -1.6
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_low1.mp3",
+        "lufs": -12.6,
+        "true_peak_dbtp": -1.22,
+        "mean_dbfs": -15.1,
+        "peak_dbfs": -1.6
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_low2.mp3",
+        "lufs": -14.95,
+        "true_peak_dbtp": -1.98,
+        "mean_dbfs": -16.3,
+        "peak_dbfs": -2.0
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_mid1.mp3",
+        "lufs": -13.4,
+        "true_peak_dbtp": -1.64,
+        "mean_dbfs": -14.6,
+        "peak_dbfs": -1.7
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_mid2.mp3",
+        "lufs": -14.14,
+        "true_peak_dbtp": -0.38,
+        "mean_dbfs": -14.8,
+        "peak_dbfs": -0.4
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_start.mp3",
+        "lufs": -18.17,
+        "true_peak_dbtp": -3.32,
+        "mean_dbfs": -19.2,
+        "peak_dbfs": -3.4
+      },
+      {
+        "path": "audio/eula/die/fan_eula.mp3",
+        "lufs": -15.72,
+        "true_peak_dbtp": -0.95,
+        "mean_dbfs": -18.1,
+        "peak_dbfs": -1.1
+      }
+    ],
+    "method": "static gain only; no speed change or compression; original sources retained; trim ranges per clip"
+  },
+  "clips": {
+    "fan_wuxiang_ready_voice": {
+      "label": "加入队伍·其三",
+      "text": "出征之时已至。",
+      "url": "https://patchwiki.biligame.com/images/ys/c/cf/29ayrghvu94v8dm297bhhz36xau0j28.mp3",
+      "bytes": 86978,
+      "original": "audio/raiden/originals/fan_wuxiang_ready_voice.mp3",
+      "output": "audio/raiden/skill/fan_wuxiang_ready_voice.mp3",
+      "trim_seconds": null,
+      "output_bytes": 28506,
+      "sha256": "7b04c548e7443a29e5ce943989bffdc3c5a4906b6fc5b58f38c75153a19b1223",
+      "volume": {
+        "gain_db": 3.98,
+        "before": {
+          "lufs": -18.23,
+          "true_peak_dbtp": -8.85,
+          "mean_dbfs": -24.6,
+          "peak_dbfs": -8.9
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -5.02,
+          "mean_dbfs": -20.6,
+          "peak_dbfs": -5.0
+        }
+      }
+    },
+    "fan_wuxiang_hurt_voice": {
+      "label": "重受击·其一",
+      "text": "无礼…",
+      "url": "https://patchwiki.biligame.com/images/ys/3/33/f1kbbs96nfuaaw6v78yj4s86aakbn9v.mp3",
+      "bytes": 70260,
+      "original": "audio/raiden/originals/fan_wuxiang_hurt_voice.mp3",
+      "output": "audio/raiden/skill/fan_wuxiang_hurt_voice.mp3",
+      "trim_seconds": null,
+      "output_bytes": 16322,
+      "sha256": "067b1029f3019680fa663d64a575cb74874d7c2f0dc1af33159fb69d0e3ab852",
+      "volume": {
+        "gain_db": 5.6,
+        "before": {
+          "lufs": -19.85,
+          "true_peak_dbtp": -9.2,
+          "mean_dbfs": -27.8,
+          "peak_dbfs": -9.2
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -3.4,
+          "mean_dbfs": -22.2,
+          "peak_dbfs": -3.5
+        }
+      }
+    },
+    "fan_wuxiang_sha_voice": {
+      "label": "元素战技·其三",
+      "text": "泡影看破！",
+      "url": "https://patchwiki.biligame.com/images/ys/b/b8/5c7tw6ny55n25ptsabkj1mgkc54p1le.mp3",
+      "bytes": 60229,
+      "original": "audio/raiden/originals/fan_wuxiang_sha_voice.mp3",
+      "output": "audio/raiden/skill/fan_wuxiang_sha_voice.mp3",
+      "trim_seconds": null,
+      "output_bytes": 18781,
+      "sha256": "bd1a7bd6ab783f0c8e78130aabdb1dbee830d48e96c36a49f5cff762a6ec2b2c",
+      "volume": {
+        "gain_db": 4.9,
+        "before": {
+          "lufs": -19.15,
+          "true_peak_dbtp": -7.46,
+          "mean_dbfs": -24.7,
+          "peak_dbfs": -7.5
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -2.54,
+          "mean_dbfs": -19.8,
+          "peak_dbfs": -2.6
+        }
+      }
+    },
+    "fan_wuxiang_duel_voice": {
+      "label": "元素战技·其二",
+      "text": "无处遁逃！",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a9/tk2nvr9dchhc59kk262pmmxx21lqo1n.mp3",
+      "bytes": 58557,
+      "original": "audio/raiden/originals/fan_wuxiang_duel_voice.mp3",
+      "output": "audio/raiden/skill/fan_wuxiang_duel_voice.mp3",
+      "trim_seconds": null,
+      "output_bytes": 18756,
+      "sha256": "d8c05e908e8708bf1970d81f5a6054611f02108deac2616070394ffebbfa8380",
+      "volume": {
+        "gain_db": 5.11,
+        "before": {
+          "lufs": -19.36,
+          "true_peak_dbtp": -8.54,
+          "mean_dbfs": -24.8,
+          "peak_dbfs": -8.6
+        },
+        "after": {
+          "lufs": -14.27,
+          "true_peak_dbtp": -3.4,
+          "mean_dbfs": -19.7,
+          "peak_dbfs": -3.5
+        }
+      }
+    },
+    "fan_wuxiang_thunder_voice1": {
+      "label": "元素爆发·其一",
+      "text": "无念，断绝！",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f8/dyenjzkvdkm95nwoj0l40mb24aa8ybx.mp3",
+      "bytes": 104533,
+      "original": "audio/raiden/originals/fan_wuxiang_thunder_voice1.mp3",
+      "output": "audio/raiden/skill/fan_wuxiang_thunder_voice1.mp3",
+      "trim_seconds": null,
+      "output_bytes": 34687,
+      "sha256": "22b92868ca91f6e8ca6749e047b19e02ca02637a56521a605b4f16f076eabd2f",
+      "volume": {
+        "gain_db": 5.4,
+        "before": {
+          "lufs": -20.13,
+          "true_peak_dbtp": -6.9,
+          "mean_dbfs": -27.0,
+          "peak_dbfs": -7.1
+        },
+        "after": {
+          "lufs": -14.73,
+          "true_peak_dbtp": -1.47,
+          "mean_dbfs": -21.6,
+          "peak_dbfs": -1.6
+        }
+      }
+    },
+    "fan_wuxiang_thunder_voice2": {
+      "label": "元素爆发·其二",
+      "text": "此刻，寂灭之时！",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d4/ll92702ilu34gg9uexewuui9sqq90f9.mp3",
+      "bytes": 118743,
+      "original": "audio/raiden/originals/fan_wuxiang_thunder_voice2.mp3",
+      "output": "audio/raiden/skill/fan_wuxiang_thunder_voice2.mp3",
+      "trim_seconds": null,
+      "output_bytes": 40558,
+      "sha256": "86a86c6bbc704ab6e4fa69f60bf90c99351ac5abf62e867fe7d4fc0cc871b93e",
+      "volume": {
+        "gain_db": 4.06,
+        "before": {
+          "lufs": -18.31,
+          "true_peak_dbtp": -7.07,
+          "mean_dbfs": -26.4,
+          "peak_dbfs": -7.1
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -2.93,
+          "mean_dbfs": -22.3,
+          "peak_dbfs": -2.9
+        }
+      }
+    },
+    "fan_wuxiang_thunder_voice3": {
+      "label": "元素爆发·其三",
+      "text": "稻光，亦是永恒！",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3e/ox1bgnpuz889e187azh1zeupfn5pyfh.mp3",
+      "bytes": 120415,
+      "original": "audio/raiden/originals/fan_wuxiang_thunder_voice3.mp3",
+      "output": "audio/raiden/skill/fan_wuxiang_thunder_voice3.mp3",
+      "trim_seconds": null,
+      "output_bytes": 39562,
+      "sha256": "23bab80bdd6429ef73607e3a95fe1e846940c41963ae37863ed616b02f3b474e",
+      "volume": {
+        "gain_db": 5.32,
+        "before": {
+          "lufs": -19.63,
+          "true_peak_dbtp": -6.82,
+          "mean_dbfs": -26.3,
+          "peak_dbfs": -6.9
+        },
+        "after": {
+          "lufs": -14.31,
+          "true_peak_dbtp": -1.48,
+          "mean_dbfs": -21.0,
+          "peak_dbfs": -1.6
+        }
+      }
+    },
+    "fan_yushen_voice": {
+      "label": "打开宝箱·其一",
+      "text": "收下吧，于我无用。",
+      "url": "https://patchwiki.biligame.com/images/ys/b/bf/jjlx3zqnhxq0br67kvpmwmeyfxfcrnp.mp3",
+      "bytes": 104533,
+      "original": "audio/raiden/originals/fan_yushen_voice.mp3",
+      "output": "audio/raiden/skill/fan_yushen_voice.mp3",
+      "trim_seconds": null,
+      "output_bytes": 36169,
+      "sha256": "d28b8ea610154f2347ddb4fe4dede7e847c6ac0c2ff6047e5c1276a7633dc4ab",
+      "volume": {
+        "gain_db": 5.7,
+        "before": {
+          "lufs": -19.99,
+          "true_peak_dbtp": -7.2,
+          "mean_dbfs": -25.6,
+          "peak_dbfs": -7.3
+        },
+        "after": {
+          "lufs": -14.29,
+          "true_peak_dbtp": -1.51,
+          "mean_dbfs": -19.9,
+          "peak_dbfs": -1.6
+        }
+      }
+    },
+    "fan_raiden": {
+      "label": "倒下·其一",
+      "text": "浮世一梦…",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d8/dgo2tscn52f8cxdgixl489sho5bu2of.mp3",
+      "bytes": 100353,
+      "original": "audio/raiden/originals/fan_raiden.mp3",
+      "output": "audio/raiden/die/fan_raiden.mp3",
+      "trim_seconds": null,
+      "output_bytes": 33510,
+      "sha256": "87631b310f3d73ba54565fdc9276513facdc2fd46bc67d11498b1281fc1afa33",
+      "volume": {
+        "gain_db": 6.61,
+        "before": {
+          "lufs": -20.86,
+          "true_peak_dbtp": -8.84,
+          "mean_dbfs": -28.4,
+          "peak_dbfs": -9.0
+        },
+        "after": {
+          "lufs": -14.51,
+          "true_peak_dbtp": -2.36,
+          "mean_dbfs": -21.8,
+          "peak_dbfs": -2.6
+        }
+      }
+    },
+    "fan_yushen_voice_hm": {
+      "label": "打开宝箱·其三",
+      "text": "嗯？",
+      "url": "https://patchwiki.biligame.com/images/ys/2/28/4045t7kxekro4wz90hwinvgn520e7er.mp3",
+      "bytes": 72768,
+      "original": "audio/raiden/originals/fan_yushen_voice_hm.mp3",
+      "output": "audio/raiden/skill/fan_yushen_voice_hm.mp3",
+      "trim_seconds": null,
+      "output_bytes": 13816,
+      "sha256": "d74a59738d230b5b591933e86367d6e09b1ab72a3114f567a2c373cb942ac7f1",
+      "volume": {
+        "gain_db": 6.64,
+        "before": {
+          "lufs": -21.26,
+          "true_peak_dbtp": -8.14,
+          "mean_dbfs": -29.7,
+          "peak_dbfs": -8.2
+        },
+        "after": {
+          "lufs": -15.39,
+          "true_peak_dbtp": -1.53,
+          "mean_dbfs": -23.1,
+          "peak_dbfs": -1.6
+        }
+      }
+    },
+    "fan_yushen_voice_cooking": {
+      "label": "影的烦恼…",
+      "text": "你不要让我做饭啦。我什么都能办到，但是真的不会做饭。",
+      "url": "https://patchwiki.biligame.com/images/ys/5/58/sxh9jnq5qxw22hl0ufetqx2x6rie738.mp3",
+      "bytes": 214038,
+      "original": "audio/raiden/originals/fan_yushen_voice_cooking.mp3",
+      "output": "audio/raiden/skill/fan_yushen_voice_cooking.mp3",
+      "trim_seconds": null,
+      "output_bytes": 87664,
+      "sha256": "bb9428d6639dac806e7f1a9be4ba70e49b6d7b255f04da366528ac4fa0ff0750",
+      "volume": {
+        "gain_db": 7.04,
+        "before": {
+          "lufs": -21.36,
+          "true_peak_dbtp": -8.54,
+          "mean_dbfs": -25.6,
+          "peak_dbfs": -8.7
+        },
+        "after": {
+          "lufs": -14.31,
+          "true_peak_dbtp": -1.56,
+          "mean_dbfs": -18.6,
+          "peak_dbfs": -1.8
+        }
+      }
+    },
+    "fan_yushen_awaken_voice": {
+      "label": "想要了解影·其四",
+      "text": "追求「永恒」可能也只是一种逃避罢了。",
+      "url": "https://patchwiki.biligame.com/images/ys/4/47/kypd7v25h34d8qs8nmtbuztcnv6lqpe.mp3",
+      "bytes": 603576,
+      "original": "audio/raiden/originals/fan_yushen_awaken_voice.mp3",
+      "output": "audio/raiden/skill/fan_yushen_awaken_voice.mp3",
+      "trim_seconds": [
+        0.6,
+        4.65
+      ],
+      "output_bytes": 62624,
+      "sha256": "bb3646932a13bfa7b81ffa8c062982b2fa0a03d0ed8bea665b7877309126e9a2",
+      "volume": {
+        "gain_db": 6.42,
+        "before": {
+          "lufs": -20.67,
+          "true_peak_dbtp": -9.73,
+          "mean_dbfs": -24.5,
+          "peak_dbfs": -10.4
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -3.14,
+          "mean_dbfs": -18.1,
+          "peak_dbfs": -3.8
+        }
+      }
+    },
+    "fan_suoguo_voice1": {
+      "label": "关于雷电将军自己·须臾",
+      "text": "雷鸣闪电，一瞬即逝。",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a2/keg3hjovdg5hxdhmltuycamlcoy8qle.mp3",
+      "bytes": 400448,
+      "original": "audio/raiden/originals/fan_suoguo_voice1.mp3",
+      "output": "audio/raiden/skill/fan_suoguo_voice1.mp3",
+      "trim_seconds": [
+        0.55,
+        3.95
+      ],
+      "output_bytes": 52771,
+      "sha256": "18a7eb0282fe3d28d2b410605c67f653cd143121b6d0abbcb6d2b8f36ec99fc8",
+      "volume": {
+        "gain_db": 6.34,
+        "before": {
+          "lufs": -20.59,
+          "true_peak_dbtp": -10.27,
+          "mean_dbfs": -25.3,
+          "peak_dbfs": -10.5
+        },
+        "after": {
+          "lufs": -14.27,
+          "true_peak_dbtp": -4.06,
+          "mean_dbfs": -19.0,
+          "peak_dbfs": -4.4
+        }
+      }
+    },
+    "fan_suoguo_voice2": {
+      "label": "关于雷电将军自己·永恒",
+      "text": "「磨损」是一件很可怕的事情。",
+      "url": "https://patchwiki.biligame.com/images/ys/3/38/lj43e6n9kv08w5ojfuuanwe4dkdolsw.mp3",
+      "bytes": 445587,
+      "original": "audio/raiden/originals/fan_suoguo_voice2.mp3",
+      "output": "audio/raiden/skill/fan_suoguo_voice2.mp3",
+      "trim_seconds": [
+        0.45,
+        3.55
+      ],
+      "output_bytes": 48597,
+      "sha256": "93fedb664706d343d57cc14313f331c709893c40b5e23ba171c4dbe12f452863",
+      "volume": {
+        "gain_db": 7.63,
+        "before": {
+          "lufs": -21.88,
+          "true_peak_dbtp": -9.94,
+          "mean_dbfs": -26.3,
+          "peak_dbfs": -9.9
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -2.22,
+          "mean_dbfs": -18.7,
+          "peak_dbfs": -2.2
+        }
+      }
+    },
+    "fan_suoguo_voice3": {
+      "label": "关于荒泷一斗…",
+      "text": "谁？",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a8/9udz2tokanovczf7uwqn0cukk4bo44y.mp3",
+      "bytes": 69424,
+      "original": "audio/raiden/originals/fan_suoguo_voice3.mp3",
+      "output": "audio/raiden/skill/fan_suoguo_voice3.mp3",
+      "trim_seconds": null,
+      "output_bytes": 17708,
+      "sha256": "3a6b5795f5f75ae2035653d82e414e5ccad9ec185ff3eccecfde1e8ac740eecc",
+      "volume": {
+        "gain_db": 6.26,
+        "before": {
+          "lufs": -20.62,
+          "true_peak_dbtp": -7.76,
+          "mean_dbfs": -29.5,
+          "peak_dbfs": -7.9
+        },
+        "after": {
+          "lufs": -14.41,
+          "true_peak_dbtp": -1.49,
+          "mean_dbfs": -23.2,
+          "peak_dbfs": -1.6
+        }
+      }
+    }
+  }
+}

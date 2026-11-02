@@ -1,0 +1,166 @@
+{
+  "target_lufs": -14.25,
+  "reference": "Eula playback median",
+  "clips": [
+    {
+      "id": "fan_due_gain1",
+      "gain_db": 1.24,
+      "before": {
+        "lufs": -15.49,
+        "true_peak_dbtp": -2.96,
+        "mean_dbfs": -15.9,
+        "peak_dbfs": -3.0
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -1.72,
+        "mean_dbfs": -14.7,
+        "peak_dbfs": -1.8
+      }
+    },
+    {
+      "id": "fan_due_gain2",
+      "gain_db": 0.34,
+      "before": {
+        "lufs": -15.91,
+        "true_peak_dbtp": -1.84,
+        "mean_dbfs": -16.3,
+        "peak_dbfs": -1.9
+      },
+      "after": {
+        "lufs": -15.59,
+        "true_peak_dbtp": -1.61,
+        "mean_dbfs": -15.9,
+        "peak_dbfs": -1.6
+      }
+    },
+    {
+      "id": "fan_due_give1",
+      "gain_db": -0.8,
+      "before": {
+        "lufs": -13.45,
+        "true_peak_dbtp": -1.56,
+        "mean_dbfs": -13.9,
+        "peak_dbfs": -1.6
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -2.35,
+        "mean_dbfs": -14.7,
+        "peak_dbfs": -2.4
+      }
+    },
+    {
+      "id": "fan_due_give2",
+      "gain_db": 0.78,
+      "before": {
+        "lufs": -15.45,
+        "true_peak_dbtp": -2.28,
+        "mean_dbfs": -15.9,
+        "peak_dbfs": -2.6
+      },
+      "after": {
+        "lufs": -14.55,
+        "true_peak_dbtp": -1.48,
+        "mean_dbfs": -15.1,
+        "peak_dbfs": -1.8
+      }
+    },
+    {
+      "id": "fan_huihai_voice1",
+      "gain_db": 0.68,
+      "before": {
+        "lufs": -14.93,
+        "true_peak_dbtp": -3.66,
+        "mean_dbfs": -15.9,
+        "peak_dbfs": -3.7
+      },
+      "after": {
+        "lufs": -14.23,
+        "true_peak_dbtp": -2.87,
+        "mean_dbfs": -15.2,
+        "peak_dbfs": -2.9
+      }
+    },
+    {
+      "id": "fan_huihai_voice2",
+      "gain_db": 0.09,
+      "before": {
+        "lufs": -14.34,
+        "true_peak_dbtp": -3.52,
+        "mean_dbfs": -15.0,
+        "peak_dbfs": -3.5
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -3.82,
+        "mean_dbfs": -14.9,
+        "peak_dbfs": -3.8
+      }
+    },
+    {
+      "id": "fan_huihai_voice3",
+      "gain_db": 0.95,
+      "before": {
+        "lufs": -15.2,
+        "true_peak_dbtp": -3.46,
+        "mean_dbfs": -16.1,
+        "peak_dbfs": -3.5
+      },
+      "after": {
+        "lufs": -14.26,
+        "true_peak_dbtp": -2.4,
+        "mean_dbfs": -15.2,
+        "peak_dbfs": -2.4
+      }
+    },
+    {
+      "id": "fan_qiqi1",
+      "gain_db": 2.63,
+      "before": {
+        "lufs": -17.27,
+        "true_peak_dbtp": -4.13,
+        "mean_dbfs": -18.8,
+        "peak_dbfs": -4.4
+      },
+      "after": {
+        "lufs": -14.66,
+        "true_peak_dbtp": -1.62,
+        "mean_dbfs": -16.2,
+        "peak_dbfs": -1.7
+      }
+    },
+    {
+      "id": "fan_qiqi2",
+      "gain_db": 1.7,
+      "before": {
+        "lufs": -15.95,
+        "true_peak_dbtp": -4.17,
+        "mean_dbfs": -17.3,
+        "peak_dbfs": -4.2
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -2.46,
+        "mean_dbfs": -15.6,
+        "peak_dbfs": -2.5
+      }
+    },
+    {
+      "id": "fan_qiqi3",
+      "gain_db": 1.71,
+      "before": {
+        "lufs": -15.96,
+        "true_peak_dbtp": -4.41,
+        "mean_dbfs": -17.4,
+        "peak_dbfs": -4.4
+      },
+      "after": {
+        "lufs": -14.26,
+        "true_peak_dbtp": -2.57,
+        "mean_dbfs": -15.7,
+        "peak_dbfs": -2.6
+      }
+    }
+  ]
+}

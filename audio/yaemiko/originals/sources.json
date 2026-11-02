@@ -1,0 +1,135 @@
+{
+  "page": "https://wiki.biligame.com/ys/八重神子语音",
+  "clips": {
+    "fan_tianhu_yang_voice1": {
+      "label": "关于五郎…",
+      "url": "https://patchwiki.biligame.com/images/ys/4/44/q2ea4lx0c2unvmgpnsbgbvpbbifqc9v.mp3",
+      "text": "五郎尾巴的色泽很漂亮，不过…还是我的更柔软一些。呵…",
+      "bytes": 124448,
+      "sha256": "d75af492330c7eb9588e42dca4e09eb49f72efeaef2fe53cb2185433330b7266",
+      "original": "audio/yaemiko/originals/fan_tianhu_yang_voice1.mp3",
+      "output": "audio/yaemiko/skill/fan_tianhu_yang_voice1.mp3",
+      "trim_seconds": null
+    },
+    "fan_tianhu_yang_voice2": {
+      "label": "下雪的时候…",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6f/qdrwvkkz16vkez1av32hy2o7d59got0.mp3",
+      "text": "未生灵智的小狐狸，往往会一头栽入雪地来觅食…想看我那样做？哼。",
+      "bytes": 149792,
+      "sha256": "ba937f48454fa70515fb368e2a5bc9a71094abd2abe81b6204dbd1e5f0fc6c60",
+      "original": "audio/yaemiko/originals/fan_tianhu_yang_voice2.mp3",
+      "output": "audio/yaemiko/skill/fan_tianhu_yang_voice2.mp3",
+      "trim_seconds": null
+    },
+    "fan_tianhu_yin_voice1": {
+      "label": "加入队伍·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/0/0d/jxxhoj86vtig6szowyqvs2gkjoux1j3.mp3",
+      "text": "去做点有意思的事吧。",
+      "bytes": 26144,
+      "sha256": "3086a0839728a8132770b7873a3af0a0ce442243be4e17ac2c64407967081621",
+      "original": "audio/yaemiko/originals/fan_tianhu_yin_voice1.mp3",
+      "output": "audio/yaemiko/skill/fan_tianhu_yin_voice1.mp3",
+      "trim_seconds": null
+    },
+    "fan_tianhu_yin_voice2": {
+      "label": "加入队伍·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/5/5b/3qj57qkftr3cks82xfb04vfnv0fkidx.mp3",
+      "text": "好吧，既然你都来邀请我了…",
+      "bytes": 49184,
+      "sha256": "1c71247bf43adab8ec5af2f2f8eed3c8c7a243ee818f28e178d60efca536d6d9",
+      "original": "audio/yaemiko/originals/fan_tianhu_yin_voice2.mp3",
+      "output": "audio/yaemiko/skill/fan_tianhu_yin_voice2.mp3",
+      "trim_seconds": null
+    },
+    "fan_yingxiang_voice1": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/f/fb/p9mi9vjlsb93h7fs8b5n92m32nyvp7t.mp3",
+      "text": "真瞳显现！",
+      "bytes": 27296,
+      "sha256": "95545ee02d58667595e2af8aaa8f1e21590a0185a8905e02b99a4c637468badf",
+      "original": "audio/yaemiko/originals/fan_yingxiang_voice1.mp3",
+      "output": "audio/yaemiko/skill/fan_yingxiang_voice1.mp3",
+      "trim_seconds": null
+    },
+    "fan_yingxiang_voice2": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/8/88/d02ap3ls1zpho3ppjrmh5we0moq8nz5.mp3",
+      "text": "雷霆侘寂！",
+      "bytes": 22688,
+      "sha256": "a6a947412f0dc900898757da4ab00a5dab02cd203922bff8f9ea2c25ed6d4e88",
+      "original": "audio/yaemiko/originals/fan_yingxiang_voice2.mp3",
+      "output": "audio/yaemiko/skill/fan_yingxiang_voice2.mp3",
+      "trim_seconds": null
+    },
+    "fan_yingxiang_voice3": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a3/8yi7dgpxu0js8pqkaa06ot9h0o8p9hz.mp3",
+      "text": "雷光凄美啊。",
+      "bytes": 31136,
+      "sha256": "d97f714de63c89442bd7ed90fcd16d8ab2ee8c3cdc8901c065d757558341bb72",
+      "original": "audio/yaemiko/originals/fan_yingxiang_voice3.mp3",
+      "output": "audio/yaemiko/skill/fan_yingxiang_voice3.mp3",
+      "trim_seconds": null
+    },
+    "fan_mingshen_voice1": {
+      "label": "打雷的时候…",
+      "url": "https://patchwiki.biligame.com/images/ys/4/45/ghlgzp7nrz8od2n2hfbf54e0s697qxu.mp3",
+      "text": "很多人会害怕打雷，不过我听到雷声只会觉得亲近。",
+      "bytes": 95264,
+      "sha256": "8bc04c6d1ca579acfd15c19da0875e102ac6f82dd8fda90a0579df7b924f3a3b",
+      "original": "audio/yaemiko/originals/fan_mingshen_voice1.mp3",
+      "output": "audio/yaemiko/skill/fan_mingshen_voice1.mp3",
+      "trim_seconds": null
+    },
+    "fan_mingshen_voice2": {
+      "label": "晚安…",
+      "url": "https://patchwiki.biligame.com/images/ys/1/14/4tyxac0tmzb5h1bkwy854mtxw5wlbvk.mp3",
+      "text": "该入眠了，呵，在夜里不听到连绵的雷声，甚至都会睡不安稳呢。",
+      "bytes": 139808,
+      "sha256": "54340efa7c63ab6d5b99a17192321346d585141132c7bf115acd644ca60cb939",
+      "original": "audio/yaemiko/originals/fan_mingshen_voice2.mp3",
+      "output": "audio/yaemiko/skill/fan_mingshen_voice2.mp3",
+      "trim_seconds": null
+    },
+    "fan_mingshen_easter_voice": {
+      "label": "关于雷电将军…",
+      "url": "https://patchwiki.biligame.com/images/ys/6/68/ry3ot3kmy7gtpwgvfy9zszkptis8cae.mp3",
+      "text": "明明想要出来，却一直把自己关在一心净土里，简直就是自我折磨嘛…从另一个角度来说，也挺可爱的不是吗。",
+      "bytes": 212000,
+      "sha256": "f9e931a49b967c8dd8a23406eb29aa912222b36dd2336d8b1858e02b26375e95",
+      "original": "audio/yaemiko/originals/fan_mingshen_easter_voice.mp3",
+      "output": "audio/yaemiko/skill/fan_mingshen_easter_voice.mp3",
+      "trim_seconds": null
+    },
+    "fan_yaemiko1": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/9/9e/iamqzag689tgdirnilbzbgltg4kc0so.mp3",
+      "text": "哎呀，玩过头了…",
+      "bytes": 43808,
+      "sha256": "91754f09087584a51070c1ec340256d65083d5de5e817a1f176ac44b62fa553a",
+      "original": "audio/yaemiko/originals/fan_yaemiko1.mp3",
+      "output": "audio/yaemiko/die/fan_yaemiko1.mp3",
+      "trim_seconds": null
+    },
+    "fan_yaemiko2": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/7/7b/740pg5c9iawro65jqlubgr1ch241z8s.mp3",
+      "text": "结局真是糟糕啊…",
+      "bytes": 42272,
+      "sha256": "e1a2a5e5f6c20db6ff3015a4da7e067f950c2d72f48a7c0256e229daf59dc9ba",
+      "original": "audio/yaemiko/originals/fan_yaemiko2.mp3",
+      "output": "audio/yaemiko/die/fan_yaemiko2.mp3",
+      "trim_seconds": null
+    },
+    "fan_yaemiko3": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/5/59/97nu18iip0ha7nijvhoiy9vbo12lxub.mp3",
+      "text": "止步于此，何谈永恒…",
+      "bytes": 61088,
+      "sha256": "3af7fcceb4953f2a1f36a1ea342220caf7bc6419bd9cbb8fd66aa90711e9397b",
+      "original": "audio/yaemiko/originals/fan_yaemiko3.mp3",
+      "output": "audio/yaemiko/die/fan_yaemiko3.mp3",
+      "trim_seconds": null
+    }
+  }
+}

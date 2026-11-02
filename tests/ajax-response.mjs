@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const read=p=>readFileSync(new URL(p,import.meta.url),'utf8');
+const content=read('../../../noname/library/element/content.js');
+const start=content.indexOf('    async (event, trigger, player) => {',content.indexOf('\n  chooseToRespond: ['));
+const end=content.indexOf('    async (event, trigger, player) => {',start+10);
+for(const auto of [false,true]) for(const invalid of [false,'material','cancel','switch','demand']) {
+ const callbacks=[],status={},events=[];
+ const lib={skill:{global:[]},config:{auto_confirm:auto},};
+ let valid=true,demand=true;
+ const player={getSkills:()=>['fan_jingwu_sha']};
+ const event={name:'chooseToRespond',skill:'fan_jingwu_sha_backup',player,isMine:()=>true,_backup:{filterCard:()=>demand}};
+ status.event=event;
+ const ui={confirm:{close:()=>events.push('close')},click:{ok(){events.push('ok');event.result={card:{name:'sha'}};events.push('resume');}},create:{dialog:()=>({})}};
+ const game={expandSkills(){},check:()=>true,pause:()=>events.push('pause')};
+ const get={info:id=>lib.skill[id]||{},card:()=>({})};
+ const skills=new Function('game','get','lib','ui','_status','setTimeout',read('../character/skills/ajax.js').replace(/^import .*;\r?\n/gm,'').replace('export default','return'))(game,get,lib,ui,status,fn=>callbacks.push(fn));
+ lib.skill.fan_jingwu_sha=skills.fan_jingwu.subSkill.sha;
+ lib.skill.fan_jingwu_sha_backup={viewAs:{name:'sha'},viewAsFilter:()=>valid,filterOk:()=>valid,manualConfirm:false};
+ const nativeStep=new Function('game','get','lib','ui','_status','return ('+content.slice(start,end).trim().replace(/,$/,'')+');')(game,get,lib,ui,status);
+ await nativeStep(event,{},player);
+ assert.equal(callbacks.length,1);
+ if(!auto) assert(events.includes('pause'),'native step pauses after check when auto-confirm is off');
+ if(invalid==='material')valid=false;
+ if(invalid==='cancel')event.skill=undefined;
+ if(invalid==='switch')status.event={};
+ if(invalid==='demand')demand=false;
+ callbacks[0]();
+ assert.equal(events.includes('ok'),!invalid);
+ if(!invalid&&!auto)assert(events.indexOf('pause')<events.indexOf('ok'));
+}
+console.log('PASS: Ajax native chooseToRespond first step plus deferred response, auto-confirm on/off, invalid material, cancellation, event switch and changed demand (simulation).');

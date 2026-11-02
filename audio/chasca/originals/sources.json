@@ -1,0 +1,306 @@
+{
+  "page": "https://wiki.biligame.com/ys/恰斯卡语音",
+  "clips": {
+    "fan_tiaoting1": {
+      "label": "加入队伍·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/2/26/4jgfd220qe47rqz25stbt7uafxp4xko.mp3",
+      "text": "这次又是谁在闹事？",
+      "bytes": 17198,
+      "sha256": "e387f26d5281ae2dd2dc652ca2015adc8aa68949006e72b003ec1a02dcca3a5f",
+      "original": "audio/chasca/originals/加入队伍·其一.mp3",
+      "output": "audio/chasca/skill/fan_tiaoting1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_tiaoting1",
+        "text": "这次又是谁在闹事？",
+        "gain_db": 1.09,
+        "previous": {
+          "lufs": -15.81,
+          "true_peak_dbtp": -2.59,
+          "mean_dbfs": -16.2,
+          "peak_dbfs": -2.6
+        },
+        "before": {
+          "lufs": -15.81,
+          "true_peak_dbtp": -2.59,
+          "mean_dbfs": -16.2,
+          "peak_dbfs": -2.6
+        },
+        "after": {
+          "lufs": -14.72,
+          "true_peak_dbtp": -1.67,
+          "mean_dbfs": -15.1,
+          "peak_dbfs": -1.7
+        }
+      },
+      "output_bytes": 18620
+    },
+    "fan_tiaoting2": {
+      "label": "加入队伍·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/b/b3/ooqbyyufvi9e4m83w83svh7odt1ych7.mp3",
+      "text": "今天的风声，不太安静呢。",
+      "bytes": 27910,
+      "sha256": "e1ca4d0fdd92357f33665cd2a20a871122ba177832be2a44a95c292b4592dd0f",
+      "original": "audio/chasca/originals/加入队伍·其二.mp3",
+      "output": "audio/chasca/skill/fan_tiaoting2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_tiaoting2",
+        "text": "今天的风声，不太安静呢。",
+        "gain_db": -1.0,
+        "previous": {
+          "lufs": -18.5,
+          "true_peak_dbtp": -0.5,
+          "mean_dbfs": -19.1,
+          "peak_dbfs": -0.5
+        },
+        "before": {
+          "lufs": -18.5,
+          "true_peak_dbtp": -0.5,
+          "mean_dbfs": -19.1,
+          "peak_dbfs": -0.5
+        },
+        "after": {
+          "lufs": -19.49,
+          "true_peak_dbtp": -1.49,
+          "mean_dbfs": -20.1,
+          "peak_dbfs": -1.5
+        }
+      },
+      "output_bytes": 31676
+    },
+    "fan_xixin1": {
+      "label": "打开宝箱·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f7/cqpdixhp8oqz3gs2unu5923wqertp0m.mp3",
+      "text": "分赃不均是起矛盾的大头。好在我用不上，你拿着就好。",
+      "bytes": 46049,
+      "sha256": "edaa535ab37ff209b84a91223ea12730b538004627f97bddeafa50affb54e02d",
+      "original": "audio/chasca/originals/打开宝箱·其一.mp3",
+      "output": "audio/chasca/skill/fan_xixin1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_xixin1",
+        "text": "分赃不均是起矛盾的大头。好在我用不上，你拿着就好。",
+        "gain_db": -1.53,
+        "previous": {
+          "lufs": -16.1,
+          "true_peak_dbtp": 0.03,
+          "mean_dbfs": -16.6,
+          "peak_dbfs": -0.0
+        },
+        "before": {
+          "lufs": -16.1,
+          "true_peak_dbtp": 0.03,
+          "mean_dbfs": -16.6,
+          "peak_dbfs": -0.0
+        },
+        "after": {
+          "lufs": -17.6,
+          "true_peak_dbtp": -1.2,
+          "mean_dbfs": -18.1,
+          "peak_dbfs": -1.2
+        }
+      },
+      "output_bytes": 55364
+    },
+    "fan_xixin2": {
+      "label": "闲聊·声音",
+      "url": "https://patchwiki.biligame.com/images/ys/4/40/h71qceqlfpfs39ylaoypmeufi3zdq42.mp3",
+      "text": "倘若任由深渊的声音牵引，我早就不是我自己了。比生存更难的是克服本能。",
+      "bytes": 62156,
+      "sha256": "6329ad08253ab00a4be92264f204bf27c508615e6dcb83ef6c5fa99fcfe8fcb6",
+      "original": "audio/chasca/originals/闲聊·声音.mp3",
+      "output": "audio/chasca/skill/fan_xixin2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_xixin2",
+        "text": "倘若任由深渊的声音牵引，我早就不是我自己了。比生存更难的是克服本能。",
+        "gain_db": 0.63,
+        "previous": {
+          "lufs": -19.89,
+          "true_peak_dbtp": -2.13,
+          "mean_dbfs": -20.2,
+          "peak_dbfs": -3.6
+        },
+        "before": {
+          "lufs": -19.89,
+          "true_peak_dbtp": -2.13,
+          "mean_dbfs": -20.2,
+          "peak_dbfs": -3.6
+        },
+        "after": {
+          "lufs": -19.28,
+          "true_peak_dbtp": -2.17,
+          "mean_dbfs": -19.6,
+          "peak_dbfs": -3.0
+        }
+      },
+      "output_bytes": 80180
+    },
+    "fan_xixin3": {
+      "label": "闲聊·俯瞰",
+      "url": "https://patchwiki.biligame.com/images/ys/b/bb/qoy3p7p7lz5f4opdo7a2yucrpgdzz1t.mp3",
+      "text": "如果迷失了方向，不如飞到高处去看看吧。",
+      "bytes": 32253,
+      "sha256": "1edb2c0dac02f0b9ffc49e1eb2c20a77ea793db34577645b45734c02e85a23b2",
+      "original": "audio/chasca/originals/闲聊·俯瞰.mp3",
+      "output": "audio/chasca/skill/fan_xixin3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_xixin3",
+        "text": "如果迷失了方向，不如飞到高处去看看吧。",
+        "gain_db": -0.15,
+        "previous": {
+          "lufs": -17.61,
+          "true_peak_dbtp": -1.35,
+          "mean_dbfs": -17.9,
+          "peak_dbfs": -1.4
+        },
+        "before": {
+          "lufs": -17.61,
+          "true_peak_dbtp": -1.35,
+          "mean_dbfs": -17.9,
+          "peak_dbfs": -1.4
+        },
+        "after": {
+          "lufs": -17.75,
+          "true_peak_dbtp": -1.53,
+          "mean_dbfs": -18.0,
+          "peak_dbfs": -1.5
+        }
+      },
+      "output_bytes": 37532
+    },
+    "fan_chasca1": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/1/19/8bx3q3qlwui296bzska51sanzv2eo1i.mp3",
+      "text": "妈…妈…",
+      "bytes": 23626,
+      "sha256": "703ac6f91d6f1f0b138887798185dbdbcbc558709072a7fb16875014fe0180ec",
+      "original": "audio/chasca/originals/倒下·其一.mp3",
+      "output": "audio/chasca/die/fan_chasca1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_chasca1",
+        "text": "妈…妈…",
+        "gain_db": 6.67,
+        "previous": {
+          "lufs": -24.01,
+          "true_peak_dbtp": -8.17,
+          "mean_dbfs": -25.5,
+          "peak_dbfs": -8.3
+        },
+        "before": {
+          "lufs": -24.01,
+          "true_peak_dbtp": -8.17,
+          "mean_dbfs": -25.5,
+          "peak_dbfs": -8.3
+        },
+        "after": {
+          "lufs": -17.32,
+          "true_peak_dbtp": -1.52,
+          "mean_dbfs": -18.8,
+          "peak_dbfs": -1.6
+        }
+      },
+      "output_bytes": 26876
+    },
+    "fan_chasca2": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a6/maa2iobb0dv6gs1m89oo22ggkf7m81h.mp3",
+      "text": "无法…超越…",
+      "bytes": 29758,
+      "sha256": "b80a1d68c7c8b6c7c079f5f3ac8fc86264262697f67df73ee049ee8aef0f704b",
+      "original": "audio/chasca/originals/倒下·其二.mp3",
+      "output": "audio/chasca/die/fan_chasca2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_chasca2",
+        "text": "无法…超越…",
+        "gain_db": 8.62,
+        "previous": {
+          "lufs": -25.86,
+          "true_peak_dbtp": -10.12,
+          "mean_dbfs": -27.2,
+          "peak_dbfs": -10.2
+        },
+        "before": {
+          "lufs": -25.86,
+          "true_peak_dbtp": -10.12,
+          "mean_dbfs": -27.2,
+          "peak_dbfs": -10.2
+        },
+        "after": {
+          "lufs": -17.22,
+          "true_peak_dbtp": -1.49,
+          "mean_dbfs": -18.6,
+          "peak_dbfs": -1.6
+        }
+      },
+      "output_bytes": 34364
+    }
+  },
+  "loudness_reference": {
+    "reference": "Eula current skill and death playback files",
+    "target_lufs": -14.25,
+    "method": "per-clip static gain; target Eula median integrated LUFS; true peak headroom -1.5 dBTP before encoding; verified encoded true peaks <= -1 dBTP; no compression or speed changes",
+    "references": [
+      {
+        "path": "audio/eula/skill/fan_langhua_high1.mp3",
+        "lufs": -12.1,
+        "true_peak_dbtp": -1.02,
+        "mean_dbfs": -12.5,
+        "peak_dbfs": -1.1
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_high2.mp3",
+        "lufs": -14.37,
+        "true_peak_dbtp": -1.53,
+        "mean_dbfs": -15.9,
+        "peak_dbfs": -1.6
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_low1.mp3",
+        "lufs": -12.6,
+        "true_peak_dbtp": -1.22,
+        "mean_dbfs": -15.1,
+        "peak_dbfs": -1.6
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_low2.mp3",
+        "lufs": -14.95,
+        "true_peak_dbtp": -1.98,
+        "mean_dbfs": -16.3,
+        "peak_dbfs": -2.0
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_mid1.mp3",
+        "lufs": -13.4,
+        "true_peak_dbtp": -1.64,
+        "mean_dbfs": -14.6,
+        "peak_dbfs": -1.7
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_mid2.mp3",
+        "lufs": -14.14,
+        "true_peak_dbtp": -0.38,
+        "mean_dbfs": -14.8,
+        "peak_dbfs": -0.4
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_start.mp3",
+        "lufs": -18.17,
+        "true_peak_dbtp": -3.32,
+        "mean_dbfs": -19.2,
+        "peak_dbfs": -3.4
+      },
+      {
+        "path": "audio/eula/die/fan_eula.mp3",
+        "lufs": -15.72,
+        "true_peak_dbtp": -0.95,
+        "mean_dbfs": -18.1,
+        "peak_dbfs": -1.1
+      }
+    ]
+  }
+}

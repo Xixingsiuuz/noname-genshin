@@ -1,0 +1,173 @@
+{
+  "page": "https://wiki.biligame.com/ys/%E9%97%B2%E4%BA%91%E8%AF%AD%E9%9F%B3",
+  "clips": {
+    "fan_luanyin1": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4a/g6x2znkb4pdxmujks2fcd5eux3hqmpv.mp3",
+      "text": "八风儛翮。",
+      "bytes": 40388,
+      "original_sha256": "cccaa1508e297431b61986112302e2ad5eb68aa99e38c7ccc2a663d27b486ea7",
+      "original": "audio/xianyun/originals/elemental-burst-01.mp3",
+      "output": "audio/xianyun/skill/fan_luanyin1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_luanyin1",
+        "gain_db": -1.51,
+        "before": {
+          "lufs": -14.67,
+          "true_peak_dbtp": 0.01,
+          "mean_dbfs": -15.1,
+          "peak_dbfs": -0.0
+        },
+        "after": {
+          "lufs": -16.17,
+          "true_peak_dbtp": -1.51,
+          "mean_dbfs": -16.6,
+          "peak_dbfs": -1.5
+        }
+      },
+      "sha256": "7b82d915b98b2420622325ab1831272abb0f057f2ad0a2dcc021f4f5d89c27a5",
+      "output_bytes": 14516
+    },
+    "fan_luanyin2": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2c/a0m8egk07w0nlpbxufulmdsfg8q4q8f.mp3",
+      "text": "仙人来哉！",
+      "bytes": 45398,
+      "original_sha256": "eeed07cb35f238e975373c133dd0cfa18019e612c95d190c259dfa2a73822a90",
+      "original": "audio/xianyun/originals/elemental-burst-02.mp3",
+      "output": "audio/xianyun/skill/fan_luanyin2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_luanyin2",
+        "gain_db": -1.49,
+        "before": {
+          "lufs": -12.76,
+          "true_peak_dbtp": -0.42,
+          "mean_dbfs": -15.0,
+          "peak_dbfs": -0.8
+        },
+        "after": {
+          "lufs": -14.21,
+          "true_peak_dbtp": -2.22,
+          "mean_dbfs": -16.5,
+          "peak_dbfs": -2.3
+        }
+      },
+      "sha256": "4a75129a43fa32e47013b08486c2b8e38bf1228b6dfa31d29576fb2e39a89ad4",
+      "output_bytes": 15836
+    },
+    "fan_luanyin3": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/7/7b/38mszj9vb7gffcre46ksljp2d9vsn5l.mp3",
+      "text": "风汇，孤云与归。",
+      "bytes": 69683,
+      "original_sha256": "009823163d43f1caeb5c81a2c8e87a56f2c7ed106c8cffdd9dd7d77c8ce9546a",
+      "original": "audio/xianyun/originals/elemental-burst-03.mp3",
+      "output": "audio/xianyun/skill/fan_luanyin3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_luanyin3",
+        "gain_db": -0.41,
+        "before": {
+          "lufs": -15.23,
+          "true_peak_dbtp": -1.09,
+          "mean_dbfs": -16.0,
+          "peak_dbfs": -1.1
+        },
+        "after": {
+          "lufs": -15.64,
+          "true_peak_dbtp": -1.37,
+          "mean_dbfs": -16.4,
+          "peak_dbfs": -1.4
+        }
+      },
+      "sha256": "b090820bbe7711dc042a0adf911065939a583ecc5d0367110742bdcbbfc4e3eb",
+      "output_bytes": 26828
+    },
+    "fan_xianzhu1": {
+      "label": "加入队伍·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/2/28/lqi9f1obeohdsgubejk1zrl3rlq5keh.mp3",
+      "text": "机关调试完毕，动身吧。",
+      "bytes": 79295,
+      "original_sha256": "10b499d208975870860555a6e4ca61fed4377e7b01a9fb8e7163b150b91244b5",
+      "original": "audio/xianyun/originals/joining-party-01.mp3",
+      "output": "audio/xianyun/skill/fan_xianzhu1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_xianzhu1",
+        "gain_db": 1.44,
+        "before": {
+          "lufs": -17.01,
+          "true_peak_dbtp": -2.94,
+          "mean_dbfs": -17.9,
+          "peak_dbfs": -3.0
+        },
+        "after": {
+          "lufs": -15.55,
+          "true_peak_dbtp": -1.47,
+          "mean_dbfs": -16.5,
+          "peak_dbfs": -1.5
+        }
+      },
+      "sha256": "e8375cb6572fc3207c77c9111407ed96255f49b28c4e5dc6a869c395e0c57e99",
+      "output_bytes": 30284
+    },
+    "fan_xianzhu2": {
+      "label": "加入队伍·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/7/70/57wgd7wdnlg58k22jeowcpf9lglwb79.mp3",
+      "text": "本仙日行千里，你可别跟丢了。",
+      "bytes": 92989,
+      "original_sha256": "6ec78eb4267bf6cfdf4ae1e8708c0fba6a34382b4ae67713822ec070b03a9959",
+      "original": "audio/xianyun/originals/joining-party-03.mp3",
+      "output": "audio/xianyun/skill/fan_xianzhu2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_xianzhu2",
+        "gain_db": 2.2,
+        "before": {
+          "lufs": -16.45,
+          "true_peak_dbtp": -4.08,
+          "mean_dbfs": -16.6,
+          "peak_dbfs": -4.1
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -1.94,
+          "mean_dbfs": -14.5,
+          "peak_dbfs": -1.9
+        }
+      },
+      "sha256": "fbcca8b864547e0a0f6ce0bb943d2beb9b2c9a23a54e35c66f043f61daf83e0f",
+      "output_bytes": 36380
+    },
+    "fan_xianyun": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/7/72/6olc7kxsbdq4nfo2y2zlxh8twveqlqy.mp3",
+      "text": "肚子空着…这次不算…",
+      "bytes": 91149,
+      "original": "audio/xianyun/originals/fan_xianyun.mp3",
+      "output": "audio/xianyun/die/fan_xianyun.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_xianyun",
+        "gain_db": 5.93,
+        "before": {
+          "lufs": -23.18,
+          "true_peak_dbtp": -7.43,
+          "mean_dbfs": -25.0,
+          "peak_dbfs": -8.0
+        },
+        "after": {
+          "lufs": -17.25,
+          "true_peak_dbtp": -1.53,
+          "mean_dbfs": -19.1,
+          "peak_dbfs": -2.2
+        }
+      },
+      "sha256": "c7b77aeed50760ad2bbd798d020c70cdc06521ad91c7d1d736f4a4c0d086bd51",
+      "output_bytes": 35660,
+      "original_sha256": "bfd4df340848523b328087cfc7afa94022fc9c6466aaf7919ef4b75c630f1472"
+    }
+  }
+}

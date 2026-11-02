@@ -1,0 +1,32 @@
+{
+  "fan_sanxing1": {
+    "name": "闲聊·收网",
+    "content": "暗线已经布置妥当，嗯，差不多该收网了…",
+    "audio_url": "https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/5c19c150df8b346915de785059a47467_2651012081568692138.mp3",
+    "audio_name": ""
+  },
+  "fan_sanxing2": {
+    "name": "关于神里绫人自己·代价",
+    "content": "万事皆有代价。既然寻求常人无法企及之事，那就必然付出世人无法想象的代价。",
+    "audio_url": "https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/03c38f16f57b9fded8433109340bdd19_4785033459137626163.mp3",
+    "audio_name": ""
+  },
+  "fan_xingjia1": {
+    "name": "打开宝箱·其一",
+    "content": "对你有用便好。",
+    "audio_url": "https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/b4e94ae008b53db67483d4ab73a07f50_7383838474019786277.mp3",
+    "audio_name": ""
+  },
+  "fan_xingjia2": {
+    "name": "突破的感受·承",
+    "content": "力量这种东西，果然只有掌握在自己手中，才能安心。",
+    "audio_url": "https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/41bdf44040c57fdaa5cbdf9971075cf0_6935509630408333312.mp3",
+    "audio_name": ""
+  },
+  "fan_ayato": {
+    "name": "倒下·其一",
+    "content": "百密终是有一疏么…",
+    "audio_url": "https://uploadstatic.mihoyo.com/ys-obc/2022/05/12/6276411/bbcd36430a4d513b987ce0b9bb084fbc_6641905462294321072.mp3",
+    "audio_name": ""
+  }
+}

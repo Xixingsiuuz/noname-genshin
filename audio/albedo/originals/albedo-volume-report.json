@@ -1,0 +1,86 @@
+{
+  "target_lufs": -14.25,
+  "method": "static gain only; no manual listening or live game test",
+  "clips": {
+    "fan_xiansheng": {
+      "text": "创生之法。",
+      "gain_db": -1.36,
+      "before": {
+        "lufs": -16.36,
+        "true_peak_dbtp": -0.14,
+        "mean_dbfs": -17.4,
+        "peak_dbfs": -0.2
+      },
+      "after": {
+        "lufs": -17.71,
+        "true_peak_dbtp": -1.51,
+        "mean_dbfs": -18.7,
+        "peak_dbfs": -1.5
+      }
+    },
+    "fan_baie": {
+      "text": "绽放吧。",
+      "gain_db": -0.31,
+      "before": {
+        "lufs": -16.58,
+        "true_peak_dbtp": -1.19,
+        "mean_dbfs": -17.4,
+        "peak_dbfs": -1.2
+      },
+      "after": {
+        "lufs": -16.88,
+        "true_peak_dbtp": -1.6,
+        "mean_dbfs": -17.7,
+        "peak_dbfs": -1.7
+      }
+    },
+    "fan_albedo": {
+      "text": "尘归尘，土归土…",
+      "gain_db": 2.05,
+      "before": {
+        "lufs": -19.36,
+        "true_peak_dbtp": -3.55,
+        "mean_dbfs": -20.5,
+        "peak_dbfs": -3.6
+      },
+      "after": {
+        "lufs": -17.31,
+        "true_peak_dbtp": -1.43,
+        "mean_dbfs": -18.5,
+        "peak_dbfs": -1.5
+      }
+    },
+    "fan_xiansheng_burst": {
+      "text": "冥古，于此显生。",
+      "gain_db": 0.17,
+      "before": {
+        "lufs": -16.87,
+        "true_peak_dbtp": -1.67,
+        "mean_dbfs": -17.6,
+        "peak_dbfs": -1.7
+      },
+      "after": {
+        "lufs": -16.7,
+        "true_peak_dbtp": -1.73,
+        "mean_dbfs": -17.5,
+        "peak_dbfs": -1.7
+      }
+    },
+    "fan_baie_ascension": {
+      "text": "「白垩」，即是变化的开始。",
+      "gain_db": -1.29,
+      "before": {
+        "lufs": -17.49,
+        "true_peak_dbtp": -0.21,
+        "mean_dbfs": -18.8,
+        "peak_dbfs": -0.2
+      },
+      "after": {
+        "lufs": -18.76,
+        "true_peak_dbtp": -1.5,
+        "mean_dbfs": -20.1,
+        "peak_dbfs": -1.5
+      }
+    }
+  }
+}

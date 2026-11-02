@@ -1,0 +1,80 @@
+{
+  "hutao": {
+    "original": "image/character/originals/hutao.png",
+    "boxes": [
+      [
+        85,
+        285,
+        535,
+        915
+      ],
+      [
+        75,
+        285,
+        495,
+        873
+      ],
+      [
+        15,
+        230,
+        735,
+        1238
+      ]
+    ],
+    "select_blur": 0.35,
+    "avatar_blur": 0.2,
+    "resampling": "LANCZOS"
+  },
+  "hutao-skin1": {
+    "original": "image/character/originals/hutao-skin1.jpg",
+    "boxes": [
+      [
+        160,
+        20,
+        1080,
+        1308
+      ],
+      [
+        160,
+        20,
+        1080,
+        1308
+      ],
+      [
+        0,
+        0,
+        1178,
+        1650
+      ]
+    ],
+    "select_blur": 0.35,
+    "avatar_blur": 0.2,
+    "resampling": "LANCZOS"
+  },
+  "hutao-skin2": {
+    "original": "image/character/originals/hutao-skin2.png",
+    "boxes": [
+      [
+        400,
+        120,
+        1120,
+        1128
+      ],
+      [
+        290,
+        70,
+        1250,
+        1414
+      ],
+      [
+        222,
+        0,
+        1332,
+        1554
+      ]
+    ],
+    "select_blur": 0.35,
+    "avatar_blur": 0.2,
+    "resampling": "LANCZOS"
+  }
+}

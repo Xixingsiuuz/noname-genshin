@@ -1,0 +1,226 @@
+{
+  "reference": "Eula current skill and death playback files",
+  "target_lufs": -14.25,
+  "method": "per-clip static gain; target Eula median integrated LUFS; true peak headroom -1.5 dBTP before encoding; verified encoded true peaks <= -1 dBTP; no compression or speed changes",
+  "references": [
+    {
+      "path": "audio/eula/skill/fan_langhua_high1.mp3",
+      "lufs": -12.1,
+      "true_peak_dbtp": -1.02,
+      "mean_dbfs": -12.5,
+      "peak_dbfs": -1.1
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_high2.mp3",
+      "lufs": -14.37,
+      "true_peak_dbtp": -1.53,
+      "mean_dbfs": -15.9,
+      "peak_dbfs": -1.6
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_low1.mp3",
+      "lufs": -12.6,
+      "true_peak_dbtp": -1.22,
+      "mean_dbfs": -15.1,
+      "peak_dbfs": -1.6
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_low2.mp3",
+      "lufs": -14.95,
+      "true_peak_dbtp": -1.98,
+      "mean_dbfs": -16.3,
+      "peak_dbfs": -2.0
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_mid1.mp3",
+      "lufs": -13.4,
+      "true_peak_dbtp": -1.64,
+      "mean_dbfs": -14.6,
+      "peak_dbfs": -1.7
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_mid2.mp3",
+      "lufs": -14.14,
+      "true_peak_dbtp": -0.38,
+      "mean_dbfs": -14.8,
+      "peak_dbfs": -0.4
+    },
+    {
+      "path": "audio/eula/skill/fan_langhua_start.mp3",
+      "lufs": -18.17,
+      "true_peak_dbtp": -3.32,
+      "mean_dbfs": -19.2,
+      "peak_dbfs": -3.4
+    },
+    {
+      "path": "audio/eula/die/fan_eula.mp3",
+      "lufs": -15.72,
+      "true_peak_dbtp": -0.95,
+      "mean_dbfs": -18.1,
+      "peak_dbfs": -1.1
+    }
+  ],
+  "clips": [
+    {
+      "id": "fan_tiaoting1",
+      "text": "这次又是谁在闹事？",
+      "gain_db": 1.09,
+      "previous": {
+        "lufs": -15.81,
+        "true_peak_dbtp": -2.59,
+        "mean_dbfs": -16.2,
+        "peak_dbfs": -2.6
+      },
+      "before": {
+        "lufs": -15.81,
+        "true_peak_dbtp": -2.59,
+        "mean_dbfs": -16.2,
+        "peak_dbfs": -2.6
+      },
+      "after": {
+        "lufs": -14.72,
+        "true_peak_dbtp": -1.67,
+        "mean_dbfs": -15.1,
+        "peak_dbfs": -1.7
+      }
+    },
+    {
+      "id": "fan_tiaoting2",
+      "text": "今天的风声，不太安静呢。",
+      "gain_db": -1.0,
+      "previous": {
+        "lufs": -18.5,
+        "true_peak_dbtp": -0.5,
+        "mean_dbfs": -19.1,
+        "peak_dbfs": -0.5
+      },
+      "before": {
+        "lufs": -18.5,
+        "true_peak_dbtp": -0.5,
+        "mean_dbfs": -19.1,
+        "peak_dbfs": -0.5
+      },
+      "after": {
+        "lufs": -19.49,
+        "true_peak_dbtp": -1.49,
+        "mean_dbfs": -20.1,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_xixin1",
+      "text": "分赃不均是起矛盾的大头。好在我用不上，你拿着就好。",
+      "gain_db": -1.53,
+      "previous": {
+        "lufs": -16.1,
+        "true_peak_dbtp": 0.03,
+        "mean_dbfs": -16.6,
+        "peak_dbfs": -0.0
+      },
+      "before": {
+        "lufs": -16.1,
+        "true_peak_dbtp": 0.03,
+        "mean_dbfs": -16.6,
+        "peak_dbfs": -0.0
+      },
+      "after": {
+        "lufs": -17.6,
+        "true_peak_dbtp": -1.2,
+        "mean_dbfs": -18.1,
+        "peak_dbfs": -1.2
+      }
+    },
+    {
+      "id": "fan_xixin2",
+      "text": "倘若任由深渊的声音牵引，我早就不是我自己了。比生存更难的是克服本能。",
+      "gain_db": 0.63,
+      "previous": {
+        "lufs": -19.89,
+        "true_peak_dbtp": -2.13,
+        "mean_dbfs": -20.2,
+        "peak_dbfs": -3.6
+      },
+      "before": {
+        "lufs": -19.89,
+        "true_peak_dbtp": -2.13,
+        "mean_dbfs": -20.2,
+        "peak_dbfs": -3.6
+      },
+      "after": {
+        "lufs": -19.28,
+        "true_peak_dbtp": -2.17,
+        "mean_dbfs": -19.6,
+        "peak_dbfs": -3.0
+      }
+    },
+    {
+      "id": "fan_xixin3",
+      "text": "如果迷失了方向，不如飞到高处去看看吧。",
+      "gain_db": -0.15,
+      "previous": {
+        "lufs": -17.61,
+        "true_peak_dbtp": -1.35,
+        "mean_dbfs": -17.9,
+        "peak_dbfs": -1.4
+      },
+      "before": {
+        "lufs": -17.61,
+        "true_peak_dbtp": -1.35,
+        "mean_dbfs": -17.9,
+        "peak_dbfs": -1.4
+      },
+      "after": {
+        "lufs": -17.75,
+        "true_peak_dbtp": -1.53,
+        "mean_dbfs": -18.0,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_chasca1",
+      "text": "妈…妈…",
+      "gain_db": 6.67,
+      "previous": {
+        "lufs": -24.01,
+        "true_peak_dbtp": -8.17,
+        "mean_dbfs": -25.5,
+        "peak_dbfs": -8.3
+      },
+      "before": {
+        "lufs": -24.01,
+        "true_peak_dbtp": -8.17,
+        "mean_dbfs": -25.5,
+        "peak_dbfs": -8.3
+      },
+      "after": {
+        "lufs": -17.32,
+        "true_peak_dbtp": -1.52,
+        "mean_dbfs": -18.8,
+        "peak_dbfs": -1.6
+      }
+    },
+    {
+      "id": "fan_chasca2",
+      "text": "无法…超越…",
+      "gain_db": 8.62,
+      "previous": {
+        "lufs": -25.86,
+        "true_peak_dbtp": -10.12,
+        "mean_dbfs": -27.2,
+        "peak_dbfs": -10.2
+      },
+      "before": {
+        "lufs": -25.86,
+        "true_peak_dbtp": -10.12,
+        "mean_dbfs": -27.2,
+        "peak_dbfs": -10.2
+      },
+      "after": {
+        "lufs": -17.22,
+        "true_peak_dbtp": -1.49,
+        "mean_dbfs": -18.6,
+        "peak_dbfs": -1.6
+      }
+    }
+  ]
+}

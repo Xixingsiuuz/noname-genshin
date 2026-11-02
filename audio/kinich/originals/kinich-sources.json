@@ -1,0 +1,107 @@
+{
+  "page": "https://wiki.biligame.com/ys/基尼奇语音",
+  "language": "zh-CN",
+  "verified_date": "2026-11-01",
+  "clips": {
+    "fan_xuanlie_sha_voice1": {
+      "label": "元素战技·其四",
+      "text": "目标上钩。",
+      "url": "https://patchwiki.biligame.com/images/ys/f/fa/60j19g23wqlnv7rs8mft7q6qldt66ew.mp3",
+      "bytes": 10229,
+      "original": "audio/kinich/originals/fan_xuanlie_sha_voice1.mp3",
+      "output": "audio/kinich/skill/fan_xuanlie_sha_voice1.mp3",
+      "output_bytes": 10229,
+      "trim_seconds": null
+    },
+    "fan_xuanlie_sha_voice2": {
+      "label": "元素战技·其五",
+      "text": "发现猎物。",
+      "url": "https://patchwiki.biligame.com/images/ys/8/88/3cwunfo6v0w8u2qd3sm6u89n2sbx0o1.mp3",
+      "bytes": 9219,
+      "original": "audio/kinich/originals/fan_xuanlie_sha_voice2.mp3",
+      "output": "audio/kinich/skill/fan_xuanlie_sha_voice2.mp3",
+      "output_bytes": 9219,
+      "trim_seconds": null
+    },
+    "fan_xuanlie_gain_voice1": {
+      "label": "打开宝箱·其一",
+      "text": "基尼奇：见者有份？\n阿乔：这种破烂你居然想要。",
+      "url": "https://patchwiki.biligame.com/images/ys/9/97/cd0fc37larmv6ytagl5az84mij96u1q.mp3",
+      "bytes": 26497,
+      "original": "audio/kinich/originals/fan_xuanlie_gain_voice1.mp3",
+      "output": "audio/kinich/skill/fan_xuanlie_gain_voice1.mp3",
+      "output_bytes": 26497,
+      "trim_seconds": null
+    },
+    "fan_xuanlie_gain_voice2": {
+      "label": "打开宝箱·其二",
+      "text": "基尼奇：万物皆有其用。\n阿乔：你是从小吃不饱饭？",
+      "url": "https://patchwiki.biligame.com/images/ys/4/42/phoctjvqy51z3x8dpol0bofhv25th1a.mp3",
+      "bytes": 31889,
+      "original": "audio/kinich/originals/fan_xuanlie_gain_voice2.mp3",
+      "output": "audio/kinich/skill/fan_xuanlie_gain_voice2.mp3",
+      "output_bytes": 31889,
+      "trim_seconds": null
+    },
+    "fan_shouxing_yang_voice1": {
+      "label": "元素战技·其六",
+      "text": "封锁退路。",
+      "url": "https://patchwiki.biligame.com/images/ys/4/49/f4axapzx9bnoidpz7fw0b0pucw4rnbp.mp3",
+      "bytes": 10346,
+      "original": "audio/kinich/originals/fan_shouxing_yang_voice1.mp3",
+      "output": "audio/kinich/skill/fan_shouxing_yang_voice1.mp3",
+      "output_bytes": 10346,
+      "trim_seconds": null
+    },
+    "fan_shouxing_yang_voice2": {
+      "label": "加入队伍·其二",
+      "text": "我来解决。",
+      "url": "https://patchwiki.biligame.com/images/ys/e/e6/jfiqin4omfiv82qhei5nvj7kaesqfdl.mp3",
+      "bytes": 10753,
+      "original": "audio/kinich/originals/fan_shouxing_yang_voice2.mp3",
+      "output": "audio/kinich/skill/fan_shouxing_yang_voice2.mp3",
+      "output_bytes": 10753,
+      "trim_seconds": null
+    },
+    "fan_shouxing_yin_voice1": {
+      "label": "加入队伍·其一",
+      "text": "成交，我接手了。",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8a/gqen3dk9oi52bquzqi4tzzwqvo0kmqu.mp3",
+      "bytes": 17681,
+      "original": "audio/kinich/originals/fan_shouxing_yin_voice1.mp3",
+      "output": "audio/kinich/skill/fan_shouxing_yin_voice1.mp3",
+      "output_bytes": 17681,
+      "trim_seconds": null
+    },
+    "fan_shouxing_yin_voice2": {
+      "label": "加入队伍·其三",
+      "text": "祝我们合作愉快。",
+      "url": "https://patchwiki.biligame.com/images/ys/0/05/bwrnykqvpvpde2s1z1edv16iotsmjp8.mp3",
+      "bytes": 13109,
+      "original": "audio/kinich/originals/fan_shouxing_yin_voice2.mp3",
+      "output": "audio/kinich/skill/fan_shouxing_yin_voice2.mp3",
+      "output_bytes": 13109,
+      "trim_seconds": null
+    },
+    "fan_kinich1": {
+      "label": "倒下·其一",
+      "text": "不要…回头…",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f0/p6w3etkmqtlmfpwny550hjvvgjo30sr.mp3",
+      "bytes": 27150,
+      "original": "audio/kinich/originals/fan_kinich1.mp3",
+      "output": "audio/kinich/die/fan_kinich1.mp3",
+      "output_bytes": 27150,
+      "trim_seconds": null
+    },
+    "fan_kinich2": {
+      "label": "倒下·其二",
+      "text": "凡事皆有代价…",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d2/kq5lhkh0lqt3xa8of547j5h8l37qufd.mp3",
+      "bytes": 33831,
+      "original": "audio/kinich/originals/fan_kinich2.mp3",
+      "output": "audio/kinich/die/fan_kinich2.mp3",
+      "output_bytes": 33831,
+      "trim_seconds": null
+    }
+  }
+}

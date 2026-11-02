@@ -1,0 +1,38 @@
+{
+  "source_page": "https://wiki.biligame.com/ys/神里绫华语音",
+  "clips": [
+    {
+      "role": "ayaka",
+      "path": "audio/ayaka/skill/fan_bailu_party.mp3",
+      "original": "audio/ayaka/originals/fan_bailu_party.mp3",
+      "entry": "加入队伍·其三",
+      "text": "呵呵，请多关照。",
+      "url": "https://patchwiki.biligame.com/images/ys/1/11/32s5m2aghxwsnemkoqej7tq4ju7m5t6.mp3",
+      "bytes": 41120,
+      "sha256": "2b665e031f89ade50406caa4b3b09be94cb3d608988e5a95b9c66318ea197497",
+      "trim": null
+    },
+    {
+      "role": "ayaka",
+      "path": "audio/ayaka/skill/fan_binghua_take_extra1.mp3",
+      "original": "audio/ayaka/originals/fan_binghua_take_extra1.mp3",
+      "entry": "元素爆发·其二",
+      "text": "樱吹雪。",
+      "url": "https://patchwiki.biligame.com/images/ys/7/74/errycwgf5e3w64maxkyetavyt3dfnvh.mp3",
+      "bytes": 19616,
+      "sha256": "5b0ef8c073ef8dd29d91137d553c65e8d4cd48188e11fb4f11df3ae00ef2f2e6",
+      "trim": null
+    },
+    {
+      "role": "ayaka",
+      "path": "audio/ayaka/skill/fan_binghua_take_extra2.mp3",
+      "original": "audio/ayaka/originals/fan_binghua_take_extra2.mp3",
+      "entry": "元素爆发·其三",
+      "text": "神里流…霜灭！",
+      "url": "https://patchwiki.biligame.com/images/ys/0/07/050wfiw8vcbg30tfac0eg7g07rjtvmg.mp3",
+      "bytes": 33056,
+      "sha256": "3005613b41c7c3db123e2cc9bc0632ab41e9f6c990af1db4e7b77ba65ad0e2af",
+      "trim": null
+    }
+  ]
+}

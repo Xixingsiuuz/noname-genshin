@@ -1,0 +1,39 @@
+{
+  "source_page": "https://wiki.biligame.com/ys/神里绫华语音",
+  "verified": "2026-11-01",
+  "clips": [
+    {
+      "role": "ayaka",
+      "path": "audio/ayaka/die/fan_ayaka_extra1.mp3",
+      "original": "audio/ayaka/originals/fan_ayaka_extra1.mp3",
+      "entry": "倒下·其二",
+      "text": "我还有…未尽之事…",
+      "url": "https://patchwiki.biligame.com/images/ys/7/79/9xc364amcn2a9xcnnlldqt593pqel20.mp3",
+      "bytes": 56480,
+      "sha256": "0d24dbdaedd9a9480604b03b242eabc15644f733a69d2bb2f8db972281ea8ce2",
+      "trim": null
+    },
+    {
+      "role": "ayaka",
+      "path": "audio/ayaka/die/fan_ayaka_extra2.mp3",
+      "original": "audio/ayaka/originals/fan_ayaka_extra2.mp3",
+      "entry": "倒下·其三",
+      "text": "让家族…蒙羞了…",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4f/9gb6dmk33gavl1hgf1irakp9xymdbkc.mp3",
+      "bytes": 47264,
+      "sha256": "584682f30c096f42da9dfccc4a86bffbfe4e94588dad25f9b619e74ccf197c59",
+      "trim": null
+    },
+    {
+      "role": "ayaka",
+      "path": "audio/ayaka/skill/fan_bailu_extra.mp3",
+      "original": "audio/ayaka/originals/fan_bailu_extra.mp3",
+      "entry": "重受击·其一",
+      "text": "无礼的家伙…",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a5/i4fkego6ji6sf96j1v9oo7lxb50hj6c.mp3",
+      "bytes": 19616,
+      "sha256": "2fe61c44eb62b700d3d2250da4d879e3dbea2f610d51c00ef7d00a50cb91631d",
+      "trim": null
+    }
+  ]
+}

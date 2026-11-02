@@ -1,0 +1,77 @@
+{
+  "page": "https://wiki.biligame.com/ys/%E6%A2%A6%E8%A7%81%E6%9C%88%E7%91%9E%E5%B8%8C%E8%AF%AD%E9%9F%B3",
+  "entries": {
+    "加入队伍·其一": {
+      "url": "https://patchwiki.biligame.com/images/ys/1/19/tp6asr8g2piohatwty5wlvsgrb9pzmb.mp3",
+      "text": "有烦恼要倾诉吗？",
+      "original": "audio/mizuki/originals/source-01.mp3",
+      "bytes": 17400
+    },
+    "加入队伍·其二": {
+      "url": "https://patchwiki.biligame.com/images/ys/3/3a/lo6dljsb54k22l9gh3gt7ofk6kh9blx.mp3",
+      "text": "诊疗时间到了。",
+      "original": "audio/mizuki/originals/source-02.mp3",
+      "bytes": 15731
+    },
+    "元素战技·其一": {
+      "url": "https://patchwiki.biligame.com/images/ys/5/50/e2xbfdf6esj0eelztlcu6ju1duc6w0u.mp3",
+      "text": "别皱眉呀。",
+      "original": "audio/mizuki/originals/source-03.mp3",
+      "bytes": 12166
+    },
+    "元素战技·其二": {
+      "url": "https://patchwiki.biligame.com/images/ys/a/a2/of2bqoxylt3u935f19o81io4bemjhrf.mp3",
+      "text": "美梦疗法。",
+      "original": "audio/mizuki/originals/source-04.mp3",
+      "bytes": 12995
+    },
+    "元素爆发·其一": {
+      "url": "https://patchwiki.biligame.com/images/ys/9/97/ahbgwkewhnbsf4tog3687fl2406pucf.mp3",
+      "text": "噩梦噩梦快离开…",
+      "original": "audio/mizuki/originals/source-05.mp3",
+      "bytes": 22664
+    },
+    "元素爆发·其二": {
+      "url": "https://patchwiki.biligame.com/images/ys/a/a8/i7j1jkt7ipj1qrm0tyk3fdle2glxy09.mp3",
+      "text": "来吧，小安，小彻。",
+      "original": "audio/mizuki/originals/source-06.mp3",
+      "bytes": 20959
+    },
+    "元素爆发·其三": {
+      "url": "https://patchwiki.biligame.com/images/ys/c/cb/4m9l9rc2z20qrn4og0it7epj354qus0.mp3",
+      "text": "「…晓时枕貘醒春风。」",
+      "original": "audio/mizuki/originals/source-07.mp3",
+      "bytes": 23031
+    },
+    "打开宝箱·其一": {
+      "url": "https://patchwiki.biligame.com/images/ys/9/9f/gu4mo13q3eofxz0skeprfubn5cyprjn.mp3",
+      "text": "令人愉悦的收获。",
+      "original": "audio/mizuki/originals/source-08.mp3",
+      "bytes": 16864
+    },
+    "打开宝箱·其二": {
+      "url": "https://patchwiki.biligame.com/images/ys/4/40/ju3mf50ve63i55xvrbmtoqibaxzikzu.mp3",
+      "text": "心情很不错，更有干劲了。",
+      "original": "audio/mizuki/originals/source-09.mp3",
+      "bytes": 25364
+    },
+    "倒下·其一": {
+      "url": "https://patchwiki.biligame.com/images/ys/a/a9/nw4lqrfql3wrb2tvxsnxbf0t47pbzcp.mp3",
+      "text": "噩梦…蔓延了。",
+      "original": "audio/mizuki/originals/source-10.mp3",
+      "bytes": 27443
+    },
+    "倒下·其二": {
+      "url": "https://patchwiki.biligame.com/images/ys/7/78/nm5o2o090btxvgbzuldrth3m5tl26ip.mp3",
+      "text": "无边的漆黑…",
+      "original": "audio/mizuki/originals/source-11.mp3",
+      "bytes": 22778
+    },
+    "倒下·其三": {
+      "url": "https://patchwiki.biligame.com/images/ys/7/79/rcx8fsryovdgerxz70y4pcuap6h71he.mp3",
+      "text": "痛苦…没有散去。",
+      "original": "audio/mizuki/originals/source-12.mp3",
+      "bytes": 40375
+    }
+  }
+}

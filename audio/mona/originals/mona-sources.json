@@ -1,0 +1,257 @@
+{
+  "page": "https://wiki.biligame.com/ys/%E8%8E%AB%E5%A8%9C%E8%AF%AD%E9%9F%B3",
+  "clips": {
+    "fan_jiliu1": {
+      "label": "元素战技·其一",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/60/VO_ZH_Mona_Elemental_Skill_1_01.ogg",
+      "text": "水中幻愿。",
+      "bytes": 43559,
+      "original": "audio/mona/originals/fan_jiliu1.ogg",
+      "original_sha256": "bad8121752be01f2433df815f21eac89d2c0700ee7093502def5447e6d479929",
+      "output": "audio/mona/skill/fan_jiliu1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_jiliu1",
+        "gain_db": -1.15,
+        "before": {
+          "lufs": -13.1,
+          "true_peak_dbtp": -2.81,
+          "mean_dbfs": -13.6,
+          "peak_dbfs": -2.8
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -3.86,
+          "mean_dbfs": -14.7,
+          "peak_dbfs": -3.9
+        }
+      },
+      "sha256": "0cf201f197a91b6da0bb1ee154b906d61ac08f8bd52ebc57f0f8ac7743929c8d",
+      "output_bytes": 16652
+    },
+    "fan_jiliu2": {
+      "label": "元素战技·其二",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ef/VO_ZH_Mona_Elemental_Skill_1_02.ogg",
+      "text": "…命运的虚影。",
+      "bytes": 46260,
+      "original": "audio/mona/originals/fan_jiliu2.ogg",
+      "original_sha256": "1a7b7bbbaf28f1ae2b60c72071754e58461d986deb5f5271488bcb066e47f827",
+      "output": "audio/mona/skill/fan_jiliu2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_jiliu2",
+        "gain_db": -2.19,
+        "before": {
+          "lufs": -12.06,
+          "true_peak_dbtp": -3.62,
+          "mean_dbfs": -12.4,
+          "peak_dbfs": -3.7
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -5.67,
+          "mean_dbfs": -14.5,
+          "peak_dbfs": -5.7
+        }
+      },
+      "sha256": "a9a75434aec582e7d7d9afa7e21c0ae09e6546fc9b05f1ceb557b4bee0bfbff3",
+      "output_bytes": 18068
+    },
+    "fan_jiliu3": {
+      "label": "重受击·其一",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/VO_ZH_Mona_Heavy_Hit_Taken_02.ogg",
+      "text": "离我…远点！",
+      "bytes": 49765,
+      "original": "audio/mona/originals/fan_jiliu3_spoken.ogg",
+      "original_sha256": "3934d115bb7c0c09bff63153ccde23ce27ed575a69193b0a39036f2198c33b20",
+      "output": "audio/mona/skill/fan_jiliu3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_jiliu3",
+        "gain_db": -1.72,
+        "before": {
+          "lufs": -12.53,
+          "true_peak_dbtp": -2.35,
+          "mean_dbfs": -14.9,
+          "peak_dbfs": -2.3
+        },
+        "after": {
+          "lufs": -14.28,
+          "true_peak_dbtp": -4.02,
+          "mean_dbfs": -16.6,
+          "peak_dbfs": -4.0
+        }
+      },
+      "sha256": "979f763556524d5e6d2ca2f99efe73caf2211e0daf11bfcd280410189bee05f7",
+      "output_bytes": 19340
+    },
+    "fan_shuijing1": {
+      "label": "元素战技·其三",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/VO_ZH_Mona_Elemental_Skill_1_03.ogg",
+      "text": "命运，倒映水中。",
+      "bytes": 65312,
+      "original": "audio/mona/originals/fan_shuijing1.ogg",
+      "original_sha256": "7928664e1f2331d162f372301724b70e2fe42c9ad32af068d8a6cde135dbd02b",
+      "output": "audio/mona/skill/fan_shuijing1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_shuijing1",
+        "gain_db": -1.41,
+        "before": {
+          "lufs": -12.84,
+          "true_peak_dbtp": -2.66,
+          "mean_dbfs": -12.4,
+          "peak_dbfs": -2.7
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -3.8,
+          "mean_dbfs": -13.8,
+          "peak_dbfs": -3.8
+        }
+      },
+      "sha256": "3fcb27d5b0312b4977e3cec71d6818acc8c9ee4cddb73c5677f76952a5a42a1f",
+      "output_bytes": 24908
+    },
+    "fan_shuijing2": {
+      "label": "加入队伍·其一",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/VO_ZH_Mona_Joining_Party_01.ogg",
+      "text": "此乃，命运。",
+      "bytes": 61348,
+      "original": "audio/mona/originals/fan_shuijing2.ogg",
+      "original_sha256": "19582b65faa9c502daba54a5e6b8c80a87f37cf5078edb1aa2e5cc92682e8f43",
+      "output": "audio/mona/skill/fan_shuijing2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_shuijing2",
+        "gain_db": -0.59,
+        "before": {
+          "lufs": -15.92,
+          "true_peak_dbtp": -0.91,
+          "mean_dbfs": -16.8,
+          "peak_dbfs": -0.9
+        },
+        "after": {
+          "lufs": -16.52,
+          "true_peak_dbtp": -1.29,
+          "mean_dbfs": -17.4,
+          "peak_dbfs": -1.3
+        }
+      },
+      "sha256": "8c11f3405c6e2d9dc87d69665d89d93555f9c6c592cc068c3896835e4ce54eb4",
+      "output_bytes": 23540
+    },
+    "fan_shuijing3": {
+      "label": "加入队伍·其三",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/VO_ZH_Mona_Joining_Party_03.ogg",
+      "text": "繁星，尽在掌握。",
+      "bytes": 82951,
+      "original": "audio/mona/originals/fan_shuijing3.ogg",
+      "original_sha256": "ec25dc7a14f21d6df641f20e53e19df18504fb5d75aeb0966fce11b475984703",
+      "output": "audio/mona/skill/fan_shuijing3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_shuijing3",
+        "gain_db": 1.03,
+        "before": {
+          "lufs": -15.95,
+          "true_peak_dbtp": -2.53,
+          "mean_dbfs": -16.9,
+          "peak_dbfs": -2.7
+        },
+        "after": {
+          "lufs": -14.9,
+          "true_peak_dbtp": -1.42,
+          "mean_dbfs": -15.8,
+          "peak_dbfs": -1.6
+        }
+      },
+      "sha256": "e7d9ca5ef9a258c74ff3d6016b6dc84a7a24f14308b0e4f3e1995799fb6c32a2",
+      "output_bytes": 33044
+    },
+    "fan_mona1": {
+      "label": "倒下·其一",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ac/VO_ZH_Mona_Fallen_01.ogg",
+      "text": "星空…黯淡…",
+      "bytes": 98302,
+      "original": "audio/mona/originals/fan_mona1.ogg",
+      "original_sha256": "6160ef9c5ada8c6a5d20e5c133126159f133c464dbb91c7e5af86fbf854d8cba",
+      "output": "audio/mona/die/fan_mona1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_mona1",
+        "gain_db": 1.43,
+        "before": {
+          "lufs": -15.68,
+          "true_peak_dbtp": -4.45,
+          "mean_dbfs": -18.0,
+          "peak_dbfs": -4.6
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -2.72,
+          "mean_dbfs": -16.6,
+          "peak_dbfs": -2.7
+        }
+      },
+      "sha256": "02991000e4707d7fed80c65c2688b5f3563025043513f64a9fd3bf40c9f1953a",
+      "output_bytes": 39020
+    },
+    "fan_mona2": {
+      "label": "倒下·其二",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/66/VO_ZH_Mona_Fallen_02.ogg",
+      "text": "无法违抗的…命运…",
+      "bytes": 86136,
+      "original": "audio/mona/originals/fan_mona2.ogg",
+      "original_sha256": "b6ab6b37c1554b27c9070c002f88f1561b52a7c44ff1092f09a6f1e993d8c1ad",
+      "output": "audio/mona/die/fan_mona2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_mona2",
+        "gain_db": 0.78,
+        "before": {
+          "lufs": -15.03,
+          "true_peak_dbtp": -4.83,
+          "mean_dbfs": -16.7,
+          "peak_dbfs": -4.9
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -3.87,
+          "mean_dbfs": -15.9,
+          "peak_dbfs": -3.9
+        }
+      },
+      "sha256": "2a7f1df95d0986e1e30a382fc4a307b6dc17923e9c5b947d54097428f8db7a89",
+      "output_bytes": 32924
+    },
+    "fan_mona3": {
+      "label": "倒下·其三",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fc/VO_ZH_Mona_Fallen_03.ogg",
+      "text": "推算结束了…",
+      "bytes": 95856,
+      "original": "audio/mona/originals/fan_mona3.ogg",
+      "original_sha256": "79888f74e51bcf61db6161745d8cb5a94f02d77bd8b3fd574d0c390dfc89224c",
+      "output": "audio/mona/die/fan_mona3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_mona3",
+        "gain_db": 1.3,
+        "before": {
+          "lufs": -15.55,
+          "true_peak_dbtp": -3.52,
+          "mean_dbfs": -19.0,
+          "peak_dbfs": -3.9
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -2.35,
+          "mean_dbfs": -17.7,
+          "peak_dbfs": -2.6
+        }
+      },
+      "sha256": "a108c584e9eaaf7395efdd876d929b28bfdeb3589be943173b6e3deb1ebced34",
+      "output_bytes": 36188
+    }
+  }
+}

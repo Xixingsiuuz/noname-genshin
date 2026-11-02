@@ -1,0 +1,123 @@
+{
+  "target_lufs": -14.25,
+  "reference": "Existing Eula playback median",
+  "method": "static gain, no trim, no speed change; encoded true peak <= -1 dBTP",
+  "clips": [
+    {
+      "id": "fan_huohua_blast1",
+      "gain_db": -0.62,
+      "before": {
+        "lufs": -13.63,
+        "true_peak_dbtp": -4.81,
+        "mean_dbfs": -18.9,
+        "peak_dbfs": -4.8
+      },
+      "after": {
+        "lufs": -14.26,
+        "true_peak_dbtp": -5.49,
+        "mean_dbfs": -19.6,
+        "peak_dbfs": -5.5
+      }
+    },
+    {
+      "id": "fan_huohua_blast2",
+      "gain_db": -3.18,
+      "before": {
+        "lufs": -11.07,
+        "true_peak_dbtp": -3.77,
+        "mean_dbfs": -15.9,
+        "peak_dbfs": -3.8
+      },
+      "after": {
+        "lufs": -14.24,
+        "true_peak_dbtp": -6.88,
+        "mean_dbfs": -19.0,
+        "peak_dbfs": -6.9
+      }
+    },
+    {
+      "id": "fan_taopao1",
+      "gain_db": -1.58,
+      "before": {
+        "lufs": -12.67,
+        "true_peak_dbtp": -4.28,
+        "mean_dbfs": -17.7,
+        "peak_dbfs": -4.3
+      },
+      "after": {
+        "lufs": -14.27,
+        "true_peak_dbtp": -5.82,
+        "mean_dbfs": -19.3,
+        "peak_dbfs": -5.9
+      }
+    },
+    {
+      "id": "fan_taopao2",
+      "gain_db": 4.5,
+      "before": {
+        "lufs": -18.75,
+        "true_peak_dbtp": -6.29,
+        "mean_dbfs": -24.1,
+        "peak_dbfs": -6.4
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -1.76,
+        "mean_dbfs": -19.6,
+        "peak_dbfs": -1.9
+      }
+    },
+    {
+      "id": "fan_taopao3",
+      "gain_db": -1.38,
+      "before": {
+        "lufs": -12.87,
+        "true_peak_dbtp": -3.59,
+        "mean_dbfs": -17.3,
+        "peak_dbfs": -3.6
+      },
+      "after": {
+        "lufs": -14.26,
+        "true_peak_dbtp": -4.95,
+        "mean_dbfs": -18.7,
+        "peak_dbfs": -5.0
+      }
+    },
+    {
+      "id": "fan_klee",
+      "gain_db": -0.34,
+      "before": {
+        "lufs": -13.91,
+        "true_peak_dbtp": -4.69,
+        "mean_dbfs": -18.2,
+        "peak_dbfs": -4.7
+      },
+      "after": {
+        "lufs": -14.26,
+        "true_peak_dbtp": -5.06,
+        "mean_dbfs": -18.6,
+        "peak_dbfs": -5.1
+      }
+    },
+    {
+      "id": "fan_huohua_blast3",
+      "gain_db": 11.36,
+      "before": {
+        "lufs": -25.93,
+        "true_peak_dbtp": -12.86,
+        "mean_dbfs": -31.6,
+        "peak_dbfs": -12.9
+      },
+      "after": {
+        "lufs": -14.56,
+        "true_peak_dbtp": -1.58,
+        "mean_dbfs": -20.3,
+        "peak_dbfs": -1.6
+      }
+    }
+  ],
+  "not_verified": [
+    "人工试听",
+    "真实对局播放"
+  ]
+}

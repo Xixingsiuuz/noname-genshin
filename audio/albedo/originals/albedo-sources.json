@@ -1,0 +1,212 @@
+{
+  "page": "https://wiki.biligame.com/ys/阿贝多语音",
+  "loudness_reference": {
+    "target_lufs": -14.25,
+    "references": [
+      {
+        "path": "audio/eula/skill/fan_langhua_high1.mp3",
+        "lufs": -12.1,
+        "true_peak_dbtp": -1.02,
+        "mean_dbfs": -12.5,
+        "peak_dbfs": -1.1
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_high2.mp3",
+        "lufs": -14.37,
+        "true_peak_dbtp": -1.53,
+        "mean_dbfs": -15.9,
+        "peak_dbfs": -1.6
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_low1.mp3",
+        "lufs": -12.6,
+        "true_peak_dbtp": -1.22,
+        "mean_dbfs": -15.1,
+        "peak_dbfs": -1.6
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_low2.mp3",
+        "lufs": -14.95,
+        "true_peak_dbtp": -1.98,
+        "mean_dbfs": -16.3,
+        "peak_dbfs": -2.0
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_mid1.mp3",
+        "lufs": -13.4,
+        "true_peak_dbtp": -1.64,
+        "mean_dbfs": -14.6,
+        "peak_dbfs": -1.7
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_mid2.mp3",
+        "lufs": -14.14,
+        "true_peak_dbtp": -0.38,
+        "mean_dbfs": -14.8,
+        "peak_dbfs": -0.4
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_start.mp3",
+        "lufs": -18.17,
+        "true_peak_dbtp": -3.32,
+        "mean_dbfs": -19.2,
+        "peak_dbfs": -3.4
+      },
+      {
+        "path": "audio/eula/die/fan_eula.mp3",
+        "lufs": -15.72,
+        "true_peak_dbtp": -0.95,
+        "mean_dbfs": -18.1,
+        "peak_dbfs": -1.1
+      }
+    ],
+    "method": "static gain only; no speed change or compression; originals retained; per-clip trim_seconds"
+  },
+  "clips": {
+    "fan_xiansheng": {
+      "label": "元素战技·其三",
+      "text": "创生之法。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0e/VO_ZH_Albedo_Elemental_Skill_1_03.ogg/revision/latest?cb=20221113203342",
+      "bytes": 34316,
+      "original": "audio/albedo/originals/fan_xiansheng.ogg",
+      "output": "audio/albedo/skill/fan_xiansheng.mp3",
+      "trim_seconds": null,
+      "output_bytes": 12956,
+      "sha256": "1b6632e661070c098fc0e9473b17c9cd0d88dfce95ffe7f002f5721b52bf1588",
+      "volume": {
+        "gain_db": -1.36,
+        "before": {
+          "lufs": -16.36,
+          "true_peak_dbtp": -0.14,
+          "mean_dbfs": -17.4,
+          "peak_dbfs": -0.2
+        },
+        "after": {
+          "lufs": -17.71,
+          "true_peak_dbtp": -1.51,
+          "mean_dbfs": -18.7,
+          "peak_dbfs": -1.5
+        }
+      },
+      "original_sha256": "57f385726fbf11bde5cd135c98673c4493dcfe2774957273086b00af35b149a7",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Albedo/Voice-Overs/Chinese"
+    },
+    "fan_baie": {
+      "label": "元素战技·其一",
+      "text": "绽放吧。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/29/VO_ZH_Albedo_Elemental_Skill_1_01.ogg/revision/latest?cb=20221113203338",
+      "bytes": 23950,
+      "original": "audio/albedo/originals/fan_baie.ogg",
+      "output": "audio/albedo/skill/fan_baie.mp3",
+      "trim_seconds": null,
+      "output_bytes": 8588,
+      "sha256": "080d40ce29b97a3726516721fa5d14de93a705d4705eb0acfb524a2fe68febfe",
+      "volume": {
+        "gain_db": -0.31,
+        "before": {
+          "lufs": -16.58,
+          "true_peak_dbtp": -1.19,
+          "mean_dbfs": -17.4,
+          "peak_dbfs": -1.2
+        },
+        "after": {
+          "lufs": -16.88,
+          "true_peak_dbtp": -1.6,
+          "mean_dbfs": -17.7,
+          "peak_dbfs": -1.7
+        }
+      },
+      "original_sha256": "d362860c5aa9a80e632a40748f3456aa6a2e3dc93f1e88138ef1240e21ad3085",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Albedo/Voice-Overs/Chinese"
+    },
+    "fan_albedo": {
+      "label": "倒下·其一",
+      "text": "尘归尘，土归土…",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/VO_ZH_Albedo_Fallen_01.ogg/revision/latest?cb=20221113203345",
+      "bytes": 96060,
+      "original": "audio/albedo/originals/fan_albedo.ogg",
+      "output": "audio/albedo/die/fan_albedo.mp3",
+      "trim_seconds": null,
+      "output_bytes": 38900,
+      "sha256": "1564f93bdf0b3263e81977cfd8465e882f009690d9d499f18cdb86a29dde6d42",
+      "volume": {
+        "gain_db": 2.05,
+        "before": {
+          "lufs": -19.36,
+          "true_peak_dbtp": -3.55,
+          "mean_dbfs": -20.5,
+          "peak_dbfs": -3.6
+        },
+        "after": {
+          "lufs": -17.31,
+          "true_peak_dbtp": -1.43,
+          "mean_dbfs": -18.5,
+          "peak_dbfs": -1.5
+        }
+      },
+      "original_sha256": "db5c734326d37b22b4234f3d54bcc860b5b165d70cd62f39c7fd6137704997d0",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Albedo/Voice-Overs/Chinese"
+    },
+    "fan_xiansheng_burst": {
+      "label": "元素爆发·其二",
+      "text": "冥古，于此显生。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8b/VO_ZH_Albedo_Elemental_Burst_02.ogg/revision/latest?cb=20221113203333",
+      "bytes": 67938,
+      "original": "audio/albedo/originals/fan_xiansheng_burst.ogg",
+      "output": "audio/albedo/skill/fan_xiansheng_burst.mp3",
+      "trim_seconds": null,
+      "original_sha256": "f7350d8153f6a9174b6a8f109358b68244994853cb41a44c5400397930a6b752",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Albedo/Voice-Overs/Chinese",
+      "output_bytes": 25820,
+      "sha256": "9c663d7645e273450298ede259721367290a786c3733f5818f44ab06cc8e8fa5",
+      "volume": {
+        "gain_db": 0.17,
+        "before": {
+          "lufs": -16.87,
+          "true_peak_dbtp": -1.67,
+          "mean_dbfs": -17.6,
+          "peak_dbfs": -1.7
+        },
+        "after": {
+          "lufs": -16.7,
+          "true_peak_dbtp": -1.73,
+          "mean_dbfs": -17.5,
+          "peak_dbfs": -1.7
+        }
+      }
+    },
+    "fan_baie_ascension": {
+      "label": "突破的感受·承",
+      "text": "「白垩」，即是变化的开始。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/de/VO_ZH_Albedo_Feelings_About_Ascension_-_02.ogg/revision/latest?cb=20210221171112",
+      "bytes": 109933,
+      "original": "audio/albedo/originals/fan_baie_ascension.ogg",
+      "output": "audio/albedo/skill/fan_baie_ascension.mp3",
+      "trim_seconds": [
+        0,
+        2.8
+      ],
+      "original_sha256": "99f6d26f32237dad6d3f82a9155b7525f0c3fc11241af4679dae24bb0524f52c",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Albedo/Voice-Overs/Chinese",
+      "output_bytes": 32444,
+      "sha256": "d5d3e837bfdef71629401bb5ce579e48ae8dbbabd99e37cf2eec7fd6e093d2c2",
+      "volume": {
+        "gain_db": -1.29,
+        "before": {
+          "lufs": -17.49,
+          "true_peak_dbtp": -0.21,
+          "mean_dbfs": -18.8,
+          "peak_dbfs": -0.2
+        },
+        "after": {
+          "lufs": -18.76,
+          "true_peak_dbtp": -1.5,
+          "mean_dbfs": -20.1,
+          "peak_dbfs": -1.5
+        }
+      },
+      "source_text": "「白垩」，即是变化的开始。抽离了杂质，准备好接受一切知识。要和我一起去探索世界吗？",
+      "trim_verification": "Text and silence detection only; first sentence ends near 2.3495 s, pause ends near 3.29662 s; cut at 2.8 s; no manual listening"
+    }
+  }
+}

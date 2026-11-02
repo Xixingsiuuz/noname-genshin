@@ -1,0 +1,82 @@
+{
+  "page": "https://wiki.biligame.com/ys/%E4%BC%98%E8%8F%88%E8%AF%AD%E9%9F%B3",
+  "language": "zh-CN",
+  "verified_date": "2026-10-26",
+  "clips": {
+    "fan_langhua_start": {
+      "label": "阳光很好…",
+      "url": "https://patchwiki.biligame.com/images/ys/5/59/s3oxvgd2q2c8awsgg4tsbfrjof34b21.mp3",
+      "bytes": 42077,
+      "original": "audio/eula/originals/fan_langhua_start.mp3",
+      "output": "audio/eula/skill/fan_langhua_start.mp3",
+      "output_bytes": 12548,
+      "trim_seconds": [
+        0.0,
+        1.05
+      ]
+    },
+    "fan_langhua_low1": {
+      "label": "元素战技·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/e/eb/j3v9yrdmw21tfb1ekes8b5i7fz8kldi.mp3",
+      "bytes": 9630,
+      "original": "audio/eula/originals/fan_langhua_low1.mp3",
+      "output": "audio/eula/skill/fan_langhua_low1.mp3",
+      "output_bytes": 9630,
+      "trim_seconds": null
+    },
+    "fan_langhua_low2": {
+      "label": "元素战技·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c7/6rapykdxic7emngm8o1ns56masz14b6.mp3",
+      "bytes": 8850,
+      "original": "audio/eula/originals/fan_langhua_low2.mp3",
+      "output": "audio/eula/skill/fan_langhua_low2.mp3",
+      "output_bytes": 8850,
+      "trim_seconds": null
+    },
+    "fan_langhua_mid1": {
+      "label": "元素战技·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/4/48/ajyg1fxmixnft9tjp4hguy05mxg6w6a.mp3",
+      "bytes": 9351,
+      "original": "audio/eula/originals/fan_langhua_mid1.mp3",
+      "output": "audio/eula/skill/fan_langhua_mid1.mp3",
+      "output_bytes": 9351,
+      "trim_seconds": null
+    },
+    "fan_langhua_mid2": {
+      "label": "元素战技·其六",
+      "url": "https://patchwiki.biligame.com/images/ys/9/96/529fdgqebnekznki14l87nf8b5sftd9.mp3",
+      "bytes": 12089,
+      "original": "audio/eula/originals/fan_langhua_mid2.mp3",
+      "output": "audio/eula/skill/fan_langhua_mid2.mp3",
+      "output_bytes": 12089,
+      "trim_seconds": null
+    },
+    "fan_langhua_high1": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/b/bc/9f6vemljp7zdtp2dn92kix4jtl6gltb.mp3",
+      "bytes": 14206,
+      "original": "audio/eula/originals/fan_langhua_high1.mp3",
+      "output": "audio/eula/skill/fan_langhua_high1.mp3",
+      "output_bytes": 14206,
+      "trim_seconds": null
+    },
+    "fan_langhua_high2": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/e/e0/m5wateif0rpm5n0kdjsg5whffgcz23f.mp3",
+      "bytes": 22699,
+      "original": "audio/eula/originals/fan_langhua_high2.mp3",
+      "output": "audio/eula/skill/fan_langhua_high2.mp3",
+      "output_bytes": 22699,
+      "trim_seconds": null
+    },
+    "fan_eula": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/a/af/pn25uc07wmgz3aewsnlt7uqw2wbogd6.mp3",
+      "bytes": 18550,
+      "original": "audio/eula/originals/fan_eula.mp3",
+      "output": "audio/eula/die/fan_eula.mp3",
+      "output_bytes": 18550,
+      "trim_seconds": null
+    }
+  }
+}

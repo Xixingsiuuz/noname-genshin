@@ -1,0 +1,581 @@
+{
+  "page": "https://wiki.biligame.com/ys/荒泷一斗语音",
+  "clips": {
+    "fan_guiwang1": {
+      "label": "元素爆发·其一",
+      "text": "鬼王游巡，通通闪开！",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a5/3t26qacvovr8tcyq18vjdpkj26fx7k7.mp3",
+      "bytes": 116235,
+      "original": "audio/itto/originals/fan_guiwang1.mp3",
+      "output": "audio/itto/skill/fan_guiwang1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_guiwang1",
+        "text": "鬼王游巡，通通闪开！",
+        "gain_db": 8.9,
+        "previous": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -2.46,
+          "mean_dbfs": -20.6,
+          "peak_dbfs": -2.5
+        },
+        "before": {
+          "lufs": -23.15,
+          "true_peak_dbtp": -11.34,
+          "mean_dbfs": -29.5,
+          "peak_dbfs": -11.3
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -2.46,
+          "mean_dbfs": -20.6,
+          "peak_dbfs": -2.5
+        }
+      },
+      "output_bytes": 43001,
+      "sha256": "d8292b76001731d3011adfde03eb275dedb4b5a1da7fc6b1ff351384a8b17f8c"
+    },
+    "fan_guiwang2": {
+      "label": "元素爆发·其二",
+      "text": "鬼蜮狂欢！",
+      "url": "https://patchwiki.biligame.com/images/ys/e/e1/g9fc1n26brb5nmeyovbdah7assxcopj.mp3",
+      "bytes": 75275,
+      "original": "audio/itto/originals/fan_guiwang2.mp3",
+      "output": "audio/itto/skill/fan_guiwang2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_guiwang2",
+        "text": "鬼蜮狂欢！",
+        "gain_db": 8.72,
+        "previous": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -4.51,
+          "mean_dbfs": -20.9,
+          "peak_dbfs": -4.5
+        },
+        "before": {
+          "lufs": -22.97,
+          "true_peak_dbtp": -13.16,
+          "mean_dbfs": -29.6,
+          "peak_dbfs": -13.2
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -4.51,
+          "mean_dbfs": -20.9,
+          "peak_dbfs": -4.5
+        }
+      },
+      "output_bytes": 22790,
+      "sha256": "52679bc2fd8b0f59339eb72908587d1956afbb4cef0b40353a65062e8326a126"
+    },
+    "fan_guiwang_hurt1": {
+      "label": "普通受击·其一",
+      "text": "胆子不小！",
+      "url": "https://patchwiki.biligame.com/images/ys/0/08/dhgcopagwacf07hyebsvsp0fq9lw8xt.mp3",
+      "bytes": 69424,
+      "original": "audio/itto/originals/fan_guiwang_hurt1.mp3",
+      "output": "audio/itto/skill/fan_guiwang_hurt1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_guiwang_hurt1",
+        "text": "胆子不小！",
+        "gain_db": 9.86,
+        "previous": {
+          "lufs": -16.39,
+          "true_peak_dbtp": -1.52,
+          "mean_dbfs": -23.2,
+          "peak_dbfs": -1.5
+        },
+        "before": {
+          "lufs": -26.3,
+          "true_peak_dbtp": -11.36,
+          "mean_dbfs": -33.1,
+          "peak_dbfs": -11.4
+        },
+        "after": {
+          "lufs": -16.39,
+          "true_peak_dbtp": -1.52,
+          "mean_dbfs": -23.2,
+          "peak_dbfs": -1.5
+        }
+      },
+      "output_bytes": 18934,
+      "sha256": "423cba8a11cfb810185f7071d84da3f32da3462d289194688267ad088530aa4e"
+    },
+    "fan_guiwang_hurt2": {
+      "label": "普通受击·其二",
+      "text": "用点力！",
+      "url": "https://patchwiki.biligame.com/images/ys/e/e4/es6a1yzim8tia58low34zdwjmjbi6tw.mp3",
+      "bytes": 71932,
+      "original": "audio/itto/originals/fan_guiwang_hurt2.mp3",
+      "output": "audio/itto/skill/fan_guiwang_hurt2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_guiwang_hurt2",
+        "text": "用点力！",
+        "gain_db": 9.42,
+        "previous": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -2.31,
+          "mean_dbfs": -22.1,
+          "peak_dbfs": -2.5
+        },
+        "before": {
+          "lufs": -23.67,
+          "true_peak_dbtp": -11.81,
+          "mean_dbfs": -31.5,
+          "peak_dbfs": -12.0
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -2.31,
+          "mean_dbfs": -22.1,
+          "peak_dbfs": -2.5
+        }
+      },
+      "output_bytes": 18906,
+      "sha256": "afd8cf2d01668464b1b98841ed92738dfd3551e54a4c88aee9cd1266afab1b40"
+    },
+    "fan_yongyi1": {
+      "label": "加入队伍·其一",
+      "text": "都给本大爷让道！",
+      "url": "https://patchwiki.biligame.com/images/ys/b/b5/dfpp4phg2kyob63fi3rm70rot29zq3d.mp3",
+      "bytes": 88650,
+      "original": "audio/itto/originals/fan_yongyi1.mp3",
+      "output": "audio/itto/skill/fan_yongyi1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_yongyi1",
+        "text": "都给本大爷让道！",
+        "gain_db": 9.41,
+        "previous": {
+          "lufs": -14.21,
+          "true_peak_dbtp": -1.94,
+          "mean_dbfs": -20.7,
+          "peak_dbfs": -1.9
+        },
+        "before": {
+          "lufs": -23.66,
+          "true_peak_dbtp": -11.35,
+          "mean_dbfs": -30.1,
+          "peak_dbfs": -11.4
+        },
+        "after": {
+          "lufs": -14.21,
+          "true_peak_dbtp": -1.94,
+          "mean_dbfs": -20.7,
+          "peak_dbfs": -1.9
+        }
+      },
+      "output_bytes": 25318,
+      "sha256": "4496887af7053a945cf093a0ae465a4b34801406f465c978c0a91b1020cd33c9"
+    },
+    "fan_yongyi2": {
+      "label": "加入队伍·其二",
+      "text": "救世主来喽！",
+      "url": "https://patchwiki.biligame.com/images/ys/4/45/aw4rwt23aaeuqyydqb79h9qup0iv4rp.mp3",
+      "bytes": 82799,
+      "original": "audio/itto/originals/fan_yongyi2.mp3",
+      "output": "audio/itto/skill/fan_yongyi2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_yongyi2",
+        "text": "救世主来喽！",
+        "gain_db": 10.78,
+        "previous": {
+          "lufs": -14.26,
+          "true_peak_dbtp": -3.4,
+          "mean_dbfs": -20.8,
+          "peak_dbfs": -3.4
+        },
+        "before": {
+          "lufs": -25.03,
+          "true_peak_dbtp": -14.21,
+          "mean_dbfs": -31.5,
+          "peak_dbfs": -14.2
+        },
+        "after": {
+          "lufs": -14.26,
+          "true_peak_dbtp": -3.4,
+          "mean_dbfs": -20.8,
+          "peak_dbfs": -3.4
+        }
+      },
+      "output_bytes": 25633,
+      "sha256": "837582fb2ae78eea6feef66d5ac4bfb18c1307d56ccd5bf22d0bf3f57ab4a638"
+    },
+    "fan_yongyi3": {
+      "label": "元素战技·其三",
+      "text": "就是你了！",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a5/fnrkvjbvwbtwit8vdp2nq2xv6ygdzcl.mp3",
+      "bytes": 68588,
+      "original": "audio/itto/originals/fan_yongyi3.mp3",
+      "output": "audio/itto/skill/fan_yongyi3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_yongyi3",
+        "text": "就是你了！",
+        "gain_db": 8.77,
+        "previous": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -2.62,
+          "mean_dbfs": -21.8,
+          "peak_dbfs": -2.7
+        },
+        "before": {
+          "lufs": -23.02,
+          "true_peak_dbtp": -11.37,
+          "mean_dbfs": -30.6,
+          "peak_dbfs": -11.4
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -2.62,
+          "mean_dbfs": -21.8,
+          "peak_dbfs": -2.7
+        }
+      },
+      "output_bytes": 18409,
+      "sha256": "bf7cf22d13384ccb330d11c529c9b276250a66f7066bb8e8de0cc9ce6a22de8c"
+    },
+    "fan_yongyi4": {
+      "label": "元素战技·其一",
+      "text": "斗战岩牛！",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a8/nmt56i38gows0f9okl29bun6n9r08xf.mp3",
+      "bytes": 83635,
+      "original": "audio/itto/originals/fan_yongyi4.mp3",
+      "output": "audio/itto/skill/fan_yongyi4.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_yongyi4",
+        "text": "斗战岩牛！",
+        "gain_db": 8.62,
+        "previous": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -3.24,
+          "mean_dbfs": -21.9,
+          "peak_dbfs": -3.2
+        },
+        "before": {
+          "lufs": -22.87,
+          "true_peak_dbtp": -11.85,
+          "mean_dbfs": -30.5,
+          "peak_dbfs": -11.9
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -3.24,
+          "mean_dbfs": -21.9,
+          "peak_dbfs": -3.2
+        }
+      },
+      "output_bytes": 22552,
+      "sha256": "3c66873a5c519f3735a306550b725b1f81e81dbe6220b1bfd2f6b25b59609a70"
+    },
+    "fan_yongyi_lose1": {
+      "label": "打雷的时候…",
+      "text": "听着，本大爷就是不服！",
+      "url": "https://patchwiki.biligame.com/images/ys/8/84/4serdyszwbghifftk5bdknp9g405ojr.mp3",
+      "bytes": 260849,
+      "original": "audio/itto/originals/fan_yongyi_lose1.mp3",
+      "output": "audio/itto/skill/fan_yongyi_lose1.mp3",
+      "trim_seconds": [
+        3.1,
+        5.5
+      ],
+      "volume": {
+        "id": "fan_yongyi_lose1",
+        "text": "听着，本大爷就是不服！",
+        "gain_db": 9.99,
+        "previous": {
+          "lufs": -14.63,
+          "true_peak_dbtp": -1.5,
+          "mean_dbfs": -19.5,
+          "peak_dbfs": -1.5
+        },
+        "before": {
+          "lufs": -24.6,
+          "true_peak_dbtp": -11.49,
+          "mean_dbfs": -29.5,
+          "peak_dbfs": -11.5
+        },
+        "after": {
+          "lufs": -14.63,
+          "true_peak_dbtp": -1.5,
+          "mean_dbfs": -19.5,
+          "peak_dbfs": -1.5
+        }
+      },
+      "output_bytes": 37536,
+      "sha256": "42c9d6cb6d76ebe86cbe065e7e175a6967ce08d5fa2cc3e7d2d12d061803674b"
+    },
+    "fan_yongyi_lose2": {
+      "label": "生命值低·其二",
+      "text": "你以为我这就会认输吗？",
+      "url": "https://patchwiki.biligame.com/images/ys/5/56/s4n1tee0743m4p23zg2fu24j1eun6vz.mp3",
+      "bytes": 120415,
+      "original": "audio/itto/originals/fan_yongyi_lose2.mp3",
+      "output": "audio/itto/skill/fan_yongyi_lose2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_yongyi_lose2",
+        "text": "你以为我这就会认输吗？",
+        "gain_db": 9.97,
+        "previous": {
+          "lufs": -14.84,
+          "true_peak_dbtp": -1.46,
+          "mean_dbfs": -21.4,
+          "peak_dbfs": -1.5
+        },
+        "before": {
+          "lufs": -24.8,
+          "true_peak_dbtp": -11.47,
+          "mean_dbfs": -31.3,
+          "peak_dbfs": -11.5
+        },
+        "after": {
+          "lufs": -14.84,
+          "true_peak_dbtp": -1.46,
+          "mean_dbfs": -21.4,
+          "peak_dbfs": -1.5
+        }
+      },
+      "output_bytes": 42111,
+      "sha256": "f2335dd40055509b8c05d5ef52faf955c34d3a179f36b948c47bd3e0d61416a7"
+    },
+    "fan_yongyi_lose3": {
+      "label": "加入队伍·其三",
+      "text": "多大点事，看我来摆平！",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6a/qkfl4d2ni6u6pz3i6ujdbc1fa1wa9gb.mp3",
+      "bytes": 116235,
+      "original": "audio/itto/originals/fan_yongyi_lose3.mp3",
+      "output": "audio/itto/skill/fan_yongyi_lose3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_yongyi_lose3",
+        "text": "多大点事，看我来摆平！",
+        "gain_db": 9.79,
+        "previous": {
+          "lufs": -14.61,
+          "true_peak_dbtp": -1.5,
+          "mean_dbfs": -20.2,
+          "peak_dbfs": -1.6
+        },
+        "before": {
+          "lufs": -24.41,
+          "true_peak_dbtp": -11.29,
+          "mean_dbfs": -30.0,
+          "peak_dbfs": -11.3
+        },
+        "after": {
+          "lufs": -14.61,
+          "true_peak_dbtp": -1.5,
+          "mean_dbfs": -20.2,
+          "peak_dbfs": -1.6
+        }
+      },
+      "output_bytes": 41697,
+      "sha256": "45394bcd03776259631d29ff17f15f938154740c918b9779c1752be497c43a42"
+    },
+    "fan_itto": {
+      "label": "倒下·其一",
+      "text": "复仇之战，未完待续…",
+      "url": "https://patchwiki.biligame.com/images/ys/0/03/dlgeqhowu4ocu354d5vyh6ulxso5sug.mp3",
+      "bytes": 141313,
+      "original": "audio/itto/originals/fan_itto.mp3",
+      "output": "audio/itto/die/fan_itto.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_itto",
+        "text": "复仇之战，未完待续…",
+        "gain_db": 10.35,
+        "previous": {
+          "lufs": -14.22,
+          "true_peak_dbtp": -1.86,
+          "mean_dbfs": -20.7,
+          "peak_dbfs": -2.3
+        },
+        "before": {
+          "lufs": -24.6,
+          "true_peak_dbtp": -12.46,
+          "mean_dbfs": -31.0,
+          "peak_dbfs": -12.8
+        },
+        "after": {
+          "lufs": -14.22,
+          "true_peak_dbtp": -1.86,
+          "mean_dbfs": -20.7,
+          "peak_dbfs": -2.3
+        }
+      },
+      "output_bytes": 56093,
+      "sha256": "80002839b43355173f1731fee6018802087bc92b8f7ce3117e169daec0739574"
+    },
+    "fan_guiwang_move1": {
+      "label": "同伴生命值低·其1",
+      "text": "站在本大爷身后！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/18/VO_ZH_Arataki_Itto_Ally_at_Low_HP_01.ogg/revision/latest",
+      "bytes": 37558,
+      "original": "audio/itto/originals/fan_guiwang_move1.ogg",
+      "output": "audio/itto/skill/fan_guiwang_move1.ogg",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_guiwang_move1",
+        "text": "站在本大爷身后！",
+        "gain_db": -0.11,
+        "previous": {
+          "lufs": -15.33,
+          "true_peak_dbtp": -2.2,
+          "mean_dbfs": -17.3,
+          "peak_dbfs": -2.2
+        },
+        "before": {
+          "lufs": -14.97,
+          "true_peak_dbtp": -1.39,
+          "mean_dbfs": -17.0,
+          "peak_dbfs": -1.4
+        },
+        "after": {
+          "lufs": -15.33,
+          "true_peak_dbtp": -2.2,
+          "mean_dbfs": -17.3,
+          "peak_dbfs": -2.2
+        }
+      },
+      "output_bytes": 14433,
+      "sha256": "c07dffb9bc448dd22808010be9f9ccdfa145fad9d982d25ca9bd481fd67fed5c"
+    },
+    "fan_guiwang_move2": {
+      "label": "同伴生命值低·其2",
+      "text": "我不会让你倒下！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0a/VO_ZH_Arataki_Itto_Ally_at_Low_HP_02.ogg/revision/latest",
+      "bytes": 38772,
+      "original": "audio/itto/originals/fan_guiwang_move2.ogg",
+      "output": "audio/itto/skill/fan_guiwang_move2.ogg",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_guiwang_move2",
+        "text": "我不会让你倒下！",
+        "gain_db": -0.33,
+        "previous": {
+          "lufs": -14.89,
+          "true_peak_dbtp": -1.86,
+          "mean_dbfs": -16.2,
+          "peak_dbfs": -1.9
+        },
+        "before": {
+          "lufs": -14.38,
+          "true_peak_dbtp": -1.17,
+          "mean_dbfs": -15.8,
+          "peak_dbfs": -1.2
+        },
+        "after": {
+          "lufs": -14.89,
+          "true_peak_dbtp": -1.86,
+          "mean_dbfs": -16.2,
+          "peak_dbfs": -1.9
+        }
+      },
+      "output_bytes": 15404,
+      "sha256": "b9781e24889216c19745847d5adc2d1f2c3de26fe1321f998e21ca4b7ea3a74e"
+    },
+    "fan_guiwang_damage": {
+      "url": "https://patchwiki.biligame.com/images/ys/e/e2/juhmq0c444o0byzn1q5e78k2izee4km.mp3",
+      "label": "元素战技·其二",
+      "text": "给我砸！",
+      "bytes": 78619,
+      "original": "audio/itto/originals/fan_guiwang_damage.mp3",
+      "output": "audio/itto/skill/fan_guiwang_damage.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_guiwang_damage",
+        "text": "给我砸！",
+        "gain_db": 8.97,
+        "previous": {
+          "lufs": -23.22,
+          "true_peak_dbtp": -11.4,
+          "mean_dbfs": -30.4,
+          "peak_dbfs": -11.4
+        },
+        "before": {
+          "lufs": -23.22,
+          "true_peak_dbtp": -11.4,
+          "mean_dbfs": -30.4,
+          "peak_dbfs": -11.4
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -2.41,
+          "mean_dbfs": -21.4,
+          "peak_dbfs": -2.4
+        }
+      },
+      "output_bytes": 21121,
+      "sha256": "809e010b3d21b0ba9937c1b8732694590bb14873defb1369de4248b92f82017c"
+    }
+  },
+  "loudness_reference": {
+    "reference": "Eula current skill and death playback files",
+    "target_lufs": -14.25,
+    "method": "per-clip static gain; target Eula median integrated LUFS; true peak headroom -1.5 dBTP before encoding; verified encoded true peaks <= -1 dBTP; no compression or speed changes",
+    "references": [
+      {
+        "path": "audio/eula/skill/fan_langhua_high1.mp3",
+        "lufs": -12.1,
+        "true_peak_dbtp": -1.02,
+        "mean_dbfs": -12.5,
+        "peak_dbfs": -1.1
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_high2.mp3",
+        "lufs": -14.37,
+        "true_peak_dbtp": -1.53,
+        "mean_dbfs": -15.9,
+        "peak_dbfs": -1.6
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_low1.mp3",
+        "lufs": -12.6,
+        "true_peak_dbtp": -1.22,
+        "mean_dbfs": -15.1,
+        "peak_dbfs": -1.6
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_low2.mp3",
+        "lufs": -14.95,
+        "true_peak_dbtp": -1.98,
+        "mean_dbfs": -16.3,
+        "peak_dbfs": -2.0
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_mid1.mp3",
+        "lufs": -13.4,
+        "true_peak_dbtp": -1.64,
+        "mean_dbfs": -14.6,
+        "peak_dbfs": -1.7
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_mid2.mp3",
+        "lufs": -14.14,
+        "true_peak_dbtp": -0.38,
+        "mean_dbfs": -14.8,
+        "peak_dbfs": -0.4
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_start.mp3",
+        "lufs": -18.17,
+        "true_peak_dbtp": -3.32,
+        "mean_dbfs": -19.2,
+        "peak_dbfs": -3.4
+      },
+      {
+        "path": "audio/eula/die/fan_eula.mp3",
+        "lufs": -15.72,
+        "true_peak_dbtp": -0.95,
+        "mean_dbfs": -18.1,
+        "peak_dbfs": -1.1
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "fan_xiaji": {
+    "label": "元素战技·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/6/61/93tg0otvnewuvj5vghyork1iinrh31q.mp3",
+    "bytes": 61901
+  },
+  "fan_huahuo1": {
+    "label": "元素战技·其二",
+    "url": "https://patchwiki.biligame.com/images/ys/f/fb/3xkkfaghe7fkjsg2ajkgczoe9oqj0tx.mp3",
+    "bytes": 51034
+  },
+  "fan_huahuo2": {
+    "label": "元素战技·其三",
+    "url": "https://patchwiki.biligame.com/images/ys/1/1f/hby13c86vvwyrf2ek6t8vc2tmdk45nm.mp3",
+    "bytes": 58557
+  },
+  "fan_xiaji_burst1": {
+    "label": "元素爆发·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/6/63/1vct9ow51y3sqiko8tjmebkf5wg7iu1.mp3",
+    "bytes": 71096
+  },
+  "fan_xiaji_burst2": {
+    "label": "元素爆发·其二",
+    "url": "https://patchwiki.biligame.com/images/ys/6/62/6m732w5n9onsw93bz2ozno4o8wc5n6v.mp3",
+    "bytes": 86978
+  },
+  "fan_xiaji_burst3": {
+    "label": "元素爆发·其三",
+    "url": "https://patchwiki.biligame.com/images/ys/a/a1/otqpwue057kudjcevmho3e1cyzr25lz.mp3",
+    "bytes": 73604
+  },
+  "fan_yoimiya": {
+    "label": "倒下·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/3/35/0j5at0bw10bcf0irobidkq2xed0g2lo.mp3",
+    "bytes": 94502
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "original_size": [
+    3000,
+    3000
+  ],
+  "crops": {
+    "citlali-select": {
+      "box": [
+        0.3,
+        0.09,
+        0.72,
+        0.678
+      ],
+      "size": [
+        180,
+        252
+      ],
+      "blur": 0.7
+    },
+    "citlali": {
+      "box": [
+        0.23,
+        0.045,
+        0.79,
+        0.829
+      ],
+      "size": [
+        300,
+        420
+      ],
+      "blur": 0.45
+    },
+    "citlali-detail": {
+      "box": [
+        0.1,
+        0,
+        0.9,
+        1
+      ],
+      "size": [
+        960,
+        1200
+      ],
+      "blur": 0
+    }
+  },
+  "method": "Gaussian prefilter in original pixels scaled from 1600 reference; Lanczos resize; separate selection/arena/detail"
+}

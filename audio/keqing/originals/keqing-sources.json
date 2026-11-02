@@ -1,0 +1,77 @@
+{
+  "page": "https://wiki.biligame.com/ys/刻晴语音",
+  "language": "zh-CN",
+  "verified_date": "2026-10-25",
+  "clips": {
+    "fan_kejuan1": {
+      "label": "闲聊·机会",
+      "url": "https://patchwiki.biligame.com/images/ys/7/73/0cfto7qpp3udooyqain0bcwp42in0xy.ogg",
+      "bytes": 23737,
+      "original": "audio/keqing/originals/fan_kejuan1.ogg",
+      "output": "audio/keqing/skill/fan_kejuan1.mp3",
+      "output_bytes": 23737,
+      "trim_seconds": null,
+      "container": "ogg"
+    },
+    "fan_kejuan2": {
+      "label": "突破的感受·起",
+      "url": "https://patchwiki.biligame.com/images/ys/1/16/k96m1mywyutcsts5349cnbfynihhtv3.ogg",
+      "bytes": 24205,
+      "original": "audio/keqing/originals/fan_kejuan2.ogg",
+      "output": "audio/keqing/skill/fan_kejuan2.mp3",
+      "output_bytes": 24205,
+      "trim_seconds": null,
+      "container": "ogg"
+    },
+    "fan_leili1": {
+      "label": "元素战技·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/7/78/87pnusz6fpkoxzarbp1rkazk2rglhib.mp3",
+      "bytes": 11253,
+      "original": "audio/keqing/originals/fan_leili1.mp3",
+      "output": "audio/keqing/skill/fan_leili1.mp3",
+      "output_bytes": 11253,
+      "trim_seconds": null,
+      "container": "ogg"
+    },
+    "fan_leili2": {
+      "label": "元素战技·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d6/s86jc60me4v90i5k75robyj7byam4qq.mp3",
+      "bytes": 11299,
+      "original": "audio/keqing/originals/fan_leili2.mp3",
+      "output": "audio/keqing/skill/fan_leili2.mp3",
+      "output_bytes": 11299,
+      "trim_seconds": null,
+      "container": "ogg"
+    },
+    "fan_yuheng1": {
+      "label": "闲聊·放松",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d6/hjsc5kenf9bn4u5wzxvnllq83bgohbg.ogg",
+      "bytes": 20222,
+      "original": "audio/keqing/originals/fan_yuheng1.ogg",
+      "output": "audio/keqing/skill/fan_yuheng1.mp3",
+      "output_bytes": 20222,
+      "trim_seconds": null,
+      "container": "ogg"
+    },
+    "fan_yuheng2": {
+      "label": "闲聊·耽误",
+      "url": "https://patchwiki.biligame.com/images/ys/9/96/mn3ctk67mp0ibxteiemxqaei3dnxk77.ogg",
+      "bytes": 20210,
+      "original": "audio/keqing/originals/fan_yuheng2.ogg",
+      "output": "audio/keqing/skill/fan_yuheng2.mp3",
+      "output_bytes": 20210,
+      "trim_seconds": null,
+      "container": "ogg"
+    },
+    "fan_keqing": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a4/13t1dxvrpzuypwzzj7nqlcl9asjy2mz.mp3",
+      "bytes": 25124,
+      "original": "audio/keqing/originals/fan_keqing.mp3",
+      "output": "audio/keqing/die/fan_keqing.mp3",
+      "output_bytes": 25124,
+      "trim_seconds": null,
+      "container": "ogg"
+    }
+  }
+}

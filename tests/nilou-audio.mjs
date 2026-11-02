@@ -1,0 +1,42 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const source=readFileSync(new URL('../character/skills/nilou.js',import.meta.url),'utf8');
+const heard=[];
+const game={trySkillAudio(id,player,direct){assert.equal(direct,true);heard.push(id);}};
+const skills=new Function('game','get',source.replace(/^import .*;\r?\n/gm,'').replace('export default','return'))(game,{type:card=>card?.type});
+const p={storage:{},alive:true,isIn(){return this.alive;},removeSkill(){},addSkill(){},draw:async()=>{},
+ changeZhuanhuanji(){this.storage.fan_pianzhuan=!this.storage.fan_pianzhuan;}};
+await skills.fan_pianzhuan.content({}, {},p);
+await skills.fan_pianzhuan.content({}, {},p);
+assert.deepEqual(heard,['fan_pianzhuan_convert_voice','fan_pianzhuan_convert_voice']);
+assert.equal(skills.fan_pianzhuan.audio,false,'no generic automatic conversion audio');
+heard.length=0;
+await skills.fan_pianzhuan.subSkill.record.content({}, {targets:[p]},p);assert.deepEqual(heard,[]);
+const use={targets:[p],effectCount:1};
+p.getHistory=()=>[use];
+const yang=skills.fan_pianzhuan.subSkill.yang;
+if(yang.filter(use,p))await yang.content({},use,p);
+if(yang.filter(use,p))await yang.content({},use,p);
+assert.equal(use.effectCount,2);assert.deepEqual(heard,['fan_pianzhuan_repeat_voice']);
+heard.length=0;
+const excluded=new Set();await skills.fan_pianzhuan.subSkill.yin.content({}, {getParent:()=>({excluded})},p);
+assert(excluded.has(p));assert.deepEqual(heard,['fan_pianzhuan_guard_voice']);
+let accepted=false;const steps=[];
+p.chooseToDiscard=()=>({set(){return this;},forResult:async()=>({bool:accepted})});
+p.logSkill=id=>{assert.equal(id,'fan_chuchen');steps.push('voice');};
+p.turnOver=async()=>steps.push('flip');p.phaseUse=async()=>steps.push('phaseUse');
+await skills.fan_chuchen.content({}, {},p);assert.deepEqual(steps,[]);
+accepted=true;await skills.fan_chuchen.content({}, {},p);assert.deepEqual(steps,['voice','flip','phaseUse']);
+steps.length=0;p.alive=false;await skills.fan_chuchen.content({}, {},p);assert.deepEqual(steps,[]);
+heard.length=0;await skills.fan_pianzhuan.content({}, {},p);assert.deepEqual(heard,[]);
+const manifest=JSON.parse(readFileSync(new URL('../audio/nilou/originals/nilou-sources.json',import.meta.url),'utf8'));
+assert.equal(Object.keys(manifest.clips).length,15);
+for(const clip of Object.values(manifest.clips)){assert.equal(clip.trim_seconds,null);assert(clip.volume.after.true_peak_dbtp<=-1);assert(Number.isFinite(clip.volume.after.lufs));}
+console.log('Nilou audio: branch timing, silent recorder, one repeat voice, actual exclusion, cancellation/departure and measured peak headroom passed (simulation).');
+
+heard.length=0;
+await yang.content({}, {card:{type:'equip'},effectCount:1},p);
+assert.deepEqual(heard,[],"equipment still repeats but does not play attack voice");
+assert.equal(skills.fan_pianzhuan_convert_voice.audio.length,4);
+assert.equal(skills.fan_pianzhuan_repeat_voice.audio,"ext:原神/audio/nilou/skill:3:ogg");
+assert.equal(skills.fan_pianzhuan_guard_voice.audio,"ext:原神/audio/nilou/skill:3:ogg");

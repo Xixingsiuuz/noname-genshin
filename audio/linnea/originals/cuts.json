@@ -1,0 +1,137 @@
+[
+  {
+    "name": "fan_bowen_reveal1",
+    "source": 1,
+    "start": 0,
+    "end": 4.65,
+    "manual_listen": false,
+    "text": "哇，你的脑袋里到底是装了多少奇妙的见闻呀！",
+    "output": "audio/linnea/skill/fan_bowen_reveal_voice1.mp3"
+  },
+  {
+    "name": "fan_bowen_reveal2",
+    "source": 1,
+    "start": 8.05,
+    "end": null,
+    "manual_listen": false,
+    "text": "要不干脆让我推荐你当冒险家协会的顾问吧？",
+    "output": "audio/linnea/skill/fan_bowen_reveal_voice2.mp3"
+  },
+  {
+    "name": "fan_bowen_convert1",
+    "source": 2,
+    "start": 0,
+    "end": 1.95,
+    "manual_listen": false,
+    "text": "感受得到力量的流动…",
+    "output": "audio/linnea/skill/fan_bowen_convert_voice1.mp3"
+  },
+  {
+    "name": "fan_bowen_convert2",
+    "source": 3,
+    "start": 0,
+    "end": 2.3,
+    "manual_listen": false,
+    "text": "知识正在转化为直觉…",
+    "output": "audio/linnea/skill/fan_bowen_convert_voice2.mp3"
+  },
+  {
+    "name": "fan_bowen_convert3",
+    "source": 4,
+    "start": 0,
+    "end": null,
+    "manual_listen": false,
+    "text": "青春之地的馈赠。",
+    "output": "audio/linnea/skill/fan_bowen_convert_voice3.mp3"
+  },
+  {
+    "name": "fan_bowen_convert4",
+    "source": 5,
+    "start": 0,
+    "end": null,
+    "manual_listen": false,
+    "text": "如结晶般闪耀吧。",
+    "output": "audio/linnea/skill/fan_bowen_convert_voice4.mp3"
+  },
+  {
+    "name": "fan_bowen_convert5",
+    "source": 6,
+    "start": 0,
+    "end": null,
+    "manual_listen": false,
+    "text": "皆大欢喜！",
+    "output": "audio/linnea/skill/fan_bowen_convert_voice5.mp3"
+  },
+  {
+    "name": "fan_shizhi_draw1",
+    "source": 7,
+    "start": 0,
+    "end": null,
+    "manual_listen": false,
+    "text": "怎么样？有什么好东西吗？",
+    "output": "audio/linnea/skill/fan_shizhi_draw_voice1.mp3"
+  },
+  {
+    "name": "fan_shizhi_draw2",
+    "source": 8,
+    "start": 0,
+    "end": null,
+    "manual_listen": false,
+    "text": "看起来不错，你运气真好！",
+    "output": "audio/linnea/skill/fan_shizhi_draw_voice2.mp3"
+  },
+  {
+    "name": "fan_shizhi_cancel1",
+    "source": 9,
+    "start": 4.05,
+    "end": 8.35,
+    "manual_listen": false,
+    "text": "黄金的梦乡在召唤流浪的沙子，",
+    "output": "audio/linnea/skill/fan_shizhi_cancel_voice1.mp3"
+  },
+  {
+    "name": "fan_shizhi_cancel2",
+    "source": 9,
+    "start": 9.1,
+    "end": 13.3,
+    "manual_listen": false,
+    "text": "在这里不必将那苦涩的盐水掬饮，",
+    "output": "audio/linnea/skill/fan_shizhi_cancel_voice2.mp3"
+  },
+  {
+    "name": "fan_shizhi_cancel3",
+    "source": 9,
+    "start": 13.9,
+    "end": null,
+    "manual_listen": false,
+    "text": "在这里不会再有明日的愁肠…",
+    "output": "audio/linnea/skill/fan_shizhi_cancel_voice3.mp3"
+  },
+  {
+    "name": "fan_linnea1",
+    "source": 10,
+    "start": 0,
+    "end": null,
+    "manual_listen": false,
+    "text": "是我选错了…",
+    "output": "audio/linnea/die/fan_linnea1.mp3"
+  },
+  {
+    "name": "fan_linnea2",
+    "source": 11,
+    "start": 0,
+    "end": null,
+    "manual_listen": false,
+    "text": "是噩梦吗…",
+    "output": "audio/linnea/die/fan_linnea2.mp3"
+  },
+  {
+    "name": "fan_linnea3",
+    "source": 12,
+    "start": 0,
+    "end": null,
+    "manual_listen": false,
+    "text": "这不是…属于我的未来…",
+    "output": "audio/linnea/die/fan_linnea3.mp3"
+  }
+]

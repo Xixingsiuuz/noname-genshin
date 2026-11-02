@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const text=readFileSync(new URL('../extension.js',import.meta.url),'utf8');
+const body=text.slice(text.indexOf('        const submit ='),text.indexOf('        submit.fanTianlinAuto'));
+const lib={skill:{backup:{fan_tianlin_auto:true}}},status={};let paused=false,clicks=0;
+const ui={click:{ok(){clicks++;paused=false;delete status.event.skill}}};
+const game={check:()=>status.event.filterOk()};
+const submit=new Function('lib','ui','_status','game',body+'\nreturn submit;')(lib,ui,status,game);
+const make=()=>({skill:'backup',isMine:()=>true,filterOk:()=>true});
+status.event=make();submit(status.event,{ok:true});assert.equal(clicks,0,'must not resume before chooseToUse initializes pause');paused=true;await Promise.resolve();assert.equal(clicks,1);assert.equal(paused,false);
+status.event=make();submit(status.event,{ok:false});paused=true;await Promise.resolve();assert.equal(clicks,1,'invalid choices cannot submit');
+status.event=make();submit(status.event,{ok:true});const stale=status.event;status.event=make();await Promise.resolve();assert.equal(clicks,1,'stale events cannot submit');
+status.event=make();submit(status.event,{ok:true});submit(status.event,{ok:true});paused=true;await Promise.resolve();assert.equal(clicks,2,'duplicate checks produce one confirmation');assert.equal(paused,false);
+console.log('Fixed-target confirmation: check -> pause -> deferred ok/resume, invalid/stale checks and deduplication passed.');

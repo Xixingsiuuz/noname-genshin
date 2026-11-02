@@ -1,0 +1,124 @@
+{
+  "page": "https://wiki.biligame.com/ys/%E8%8A%99%E5%AE%81%E5%A8%9C%E8%AF%AD%E9%9F%B3",
+  "language": "zh-CN",
+  "verified_date": "2026-11-02",
+  "clips": {
+    "fan_shanyao1": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2f/k743i1xsasu59mh4ndri4prm76ec4fo.mp3",
+      "bytes": 42254,
+      "original": "audio/furina/originals/fan_shanyao1.mp3",
+      "output": "audio/furina/skill/fan_shanyao1.mp3",
+      "output_bytes": 42254,
+      "trim_seconds": null
+    },
+    "fan_shanyao2": {
+      "label": "元素战技·其五",
+      "url": "https://patchwiki.biligame.com/images/ys/1/19/2mqfp4q85dabeuysu0b391z3ptg3ni4.mp3",
+      "bytes": 30988,
+      "original": "audio/furina/originals/fan_shanyao2.mp3",
+      "output": "audio/furina/skill/fan_shanyao2.mp3",
+      "output_bytes": 30988,
+      "trim_seconds": null
+    },
+    "fan_huanyan1": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3c/461589p0cawck6k7kqeprpy27w767qa.mp3",
+      "bytes": 57371,
+      "original": "audio/furina/originals/fan_huanyan1.mp3",
+      "output": "audio/furina/skill/fan_huanyan1.mp3",
+      "output_bytes": 57371,
+      "trim_seconds": null
+    },
+    "fan_huanyan2": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3c/8fnna6t0cssx1xe9a0xvzn24u3cz8ur.mp3",
+      "bytes": 67134,
+      "original": "audio/furina/originals/fan_huanyan2.mp3",
+      "output": "audio/furina/skill/fan_huanyan2.mp3",
+      "output_bytes": 67134,
+      "trim_seconds": null
+    },
+    "fan_zhongyu_success1": {
+      "label": "同伴生命值低·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/4/42/qgkk6gdeujo3h96tps2aulmvfciq6kr.mp3",
+      "bytes": 48122,
+      "original": "audio/furina/originals/fan_zhongyu_success1.mp3",
+      "output": "audio/furina/skill/fan_zhongyu_success1.mp3",
+      "output_bytes": 48122,
+      "trim_seconds": null
+    },
+    "fan_zhongyu_success2": {
+      "label": "加入队伍·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/5/52/cpoaifj03dxm9mmzyp9jt15hash91fa.mp3",
+      "bytes": 51472,
+      "original": "audio/furina/originals/fan_zhongyu_success2.mp3",
+      "output": "audio/furina/skill/fan_zhongyu_success2.mp3",
+      "output_bytes": 51472,
+      "trim_seconds": null
+    },
+    "fan_zhongyu_failure1": {
+      "label": "生命值低·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6d/8r00w8o8tr9asn92b53yailb5kue2ai.mp3",
+      "bytes": 58800,
+      "original": "audio/furina/originals/fan_zhongyu_failure1.mp3",
+      "output": "audio/furina/skill/fan_zhongyu_failure1.mp3",
+      "output_bytes": 58800,
+      "trim_seconds": null
+    },
+    "fan_zhongyu_failure2": {
+      "label": "生命值低·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/3/39/sot9o26orxvnemylq7dxlzifiddltz2.mp3",
+      "bytes": 60297,
+      "original": "audio/furina/originals/fan_zhongyu_failure2.mp3",
+      "output": "audio/furina/skill/fan_zhongyu_failure2.mp3",
+      "output_bytes": 60297,
+      "trim_seconds": null
+    },
+    "fan_duqi1": {
+      "label": "重受击·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/4/43/s0cy8z1ycrp2yl0xtl15d1po9bqajfz.mp3",
+      "bytes": 41635,
+      "original": "audio/furina/originals/fan_duqi1.mp3",
+      "output": "audio/furina/skill/fan_duqi1.mp3",
+      "output_bytes": 41635,
+      "trim_seconds": null
+    },
+    "fan_duqi2": {
+      "label": "重受击·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/4/45/shxnmf28osbg5hzsbj8cejhylkytesz.mp3",
+      "bytes": 31621,
+      "original": "audio/furina/originals/fan_duqi2.mp3",
+      "output": "audio/furina/skill/fan_duqi2.mp3",
+      "output_bytes": 31621,
+      "trim_seconds": null
+    },
+    "fan_furina": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/4/43/lhv5lfhdrdo4x27d9htl2v8jumi13gj.mp3",
+      "bytes": 94250,
+      "original": "audio/furina/originals/fan_furina.mp3",
+      "output": "audio/furina/die/fan_furina.mp3",
+      "output_bytes": 94250,
+      "trim_seconds": null
+    },
+    "fan_furina_extra1": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/3/36/bknuhkqd9i0j9g2pdm34ajq2go0pjye.mp3",
+      "bytes": 86513,
+      "original": "audio/furina/originals/fan_furina_extra1.mp3",
+      "output": "audio/furina/die/fan_furina_extra1.mp3",
+      "output_bytes": 86513,
+      "trim_seconds": null
+    },
+    "fan_furina_extra2": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/5/5e/bwullzk68ax7z5zapu25hn4axwqvnnp.mp3",
+      "bytes": 98328,
+      "original": "audio/furina/originals/fan_furina_extra2.mp3",
+      "output": "audio/furina/die/fan_furina_extra2.mp3",
+      "output_bytes": 98328,
+      "trim_seconds": null
+    }
+  }
+}
