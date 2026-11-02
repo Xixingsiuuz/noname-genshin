@@ -3884,6 +3884,18 @@
   },
   {
     "role": "furina",
+    "path": "audio/furina/originals/加入队伍·其一.mp3",
+    "bytes": 51472,
+    "sha256": "880c7e5a40b478c75d445a6014492bdfd3d330e46e0bf30db2bc1ec337d4e7f0"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/originals/加入队伍·其三.mp3",
+    "bytes": 30009,
+    "sha256": "da34334505d00dbb6ff8445393c252d0265da9acd3492caaae2fcc94f2228223"
+  },
+  {
+    "role": "furina",
     "path": "audio/furina/originals/同伴生命值低·其一.mp3",
     "bytes": 48122,
     "sha256": "4d1b955c2b98768c6c751ff3d925b37ef6300730609fba0c638c172beaf4e77e"
@@ -3977,6 +3989,18 @@
     "path": "audio/furina/skill/fan_zhongyu_failure.mp3",
     "bytes": 151904,
     "sha256": "426772dc83c47173240395dbe088a0eeba2b3343f2e91dc9853c775b5f5e487d"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/skill/fan_zhongyu_guard1.mp3",
+    "bytes": 30009,
+    "sha256": "da34334505d00dbb6ff8445393c252d0265da9acd3492caaae2fcc94f2228223"
+  },
+  {
+    "role": "furina",
+    "path": "audio/furina/skill/fan_zhongyu_guard2.mp3",
+    "bytes": 51472,
+    "sha256": "880c7e5a40b478c75d445a6014492bdfd3d330e46e0bf30db2bc1ec337d4e7f0"
   },
   {
     "role": "furina",

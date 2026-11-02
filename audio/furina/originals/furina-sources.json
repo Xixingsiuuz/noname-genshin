@@ -10,8 +10,7 @@
       "original": "audio/furina/originals/元素战技·其一.mp3",
       "output": "audio/furina/skill/fan_shanyao_loss1.mp3",
       "output_bytes": 43162,
-      "trim_seconds": null,
-      "text": "为我歌颂！"
+      "trim_seconds": null
     },
     "fan_shanyao_loss2": {
       "label": "元素战技·其二",
@@ -20,8 +19,7 @@
       "original": "audio/furina/originals/元素战技·其二.mp3",
       "output": "audio/furina/skill/fan_shanyao_loss2.mp3",
       "output_bytes": 35424,
-      "trim_seconds": null,
-      "text": "亮相啦！"
+      "trim_seconds": null
     },
     "fan_shanyao_loss3": {
       "label": "元素战技·其三",
@@ -30,8 +28,7 @@
       "original": "audio/furina/originals/元素战技·其三.mp3",
       "output": "audio/furina/skill/fan_shanyao_loss3.mp3",
       "output_bytes": 34963,
-      "trim_seconds": null,
-      "text": "噔噔！"
+      "trim_seconds": null
     },
     "fan_shanyao_heal1": {
       "label": "元素战技·其四",
@@ -40,8 +37,7 @@
       "original": "audio/furina/originals/元素战技·其四.mp3",
       "output": "audio/furina/skill/fan_shanyao_heal1.mp3",
       "output_bytes": 22071,
-      "trim_seconds": null,
-      "text": "开幕。"
+      "trim_seconds": null
     },
     "fan_shanyao_heal2": {
       "label": "元素战技·其五",
@@ -50,8 +46,7 @@
       "original": "audio/furina/originals/元素战技·其五.mp3",
       "output": "audio/furina/skill/fan_shanyao_heal2.mp3",
       "output_bytes": 30988,
-      "trim_seconds": null,
-      "text": "光芒啊。"
+      "trim_seconds": null
     },
     "fan_shanyao_heal3": {
       "label": "元素战技·其六",
@@ -60,8 +55,7 @@
       "original": "audio/furina/originals/元素战技·其六.mp3",
       "output": "audio/furina/skill/fan_shanyao_heal3.mp3",
       "output_bytes": 34687,
-      "trim_seconds": null,
-      "text": "为你献上。"
+      "trim_seconds": null
     },
     "fan_huanyan1": {
       "label": "元素爆发·其一",
@@ -70,8 +64,7 @@
       "original": "audio/furina/originals/元素爆发·其一.mp3",
       "output": "audio/furina/skill/fan_huanyan1.mp3",
       "output_bytes": 57371,
-      "trim_seconds": null,
-      "text": "让世界热闹起来吧。"
+      "trim_seconds": null
     },
     "fan_huanyan2": {
       "label": "元素爆发·其二",
@@ -80,8 +73,7 @@
       "original": "audio/furina/originals/元素爆发·其二.mp3",
       "output": "audio/furina/skill/fan_huanyan2.mp3",
       "output_bytes": 42254,
-      "trim_seconds": null,
-      "text": "闪耀时刻！"
+      "trim_seconds": null
     },
     "fan_huanyan3": {
       "label": "元素爆发·其三",
@@ -90,8 +82,7 @@
       "original": "audio/furina/originals/元素爆发·其三.mp3",
       "output": "audio/furina/skill/fan_huanyan3.mp3",
       "output_bytes": 67134,
-      "trim_seconds": null,
-      "text": "欢唱，以我之名！"
+      "trim_seconds": null
     },
     "fan_shanyao_ally1": {
       "label": "同伴生命值低·其一",
@@ -100,8 +91,7 @@
       "original": "audio/furina/originals/同伴生命值低·其一.mp3",
       "output": "audio/furina/skill/fan_shanyao_ally1.mp3",
       "output_bytes": 48122,
-      "trim_seconds": null,
-      "text": "见识下我的实力！"
+      "trim_seconds": null
     },
     "fan_shanyao_ally2": {
       "label": "同伴生命值低·其二",
@@ -110,8 +100,7 @@
       "original": "audio/furina/originals/同伴生命值低·其二.mp3",
       "output": "audio/furina/skill/fan_shanyao_ally2.mp3",
       "output_bytes": 36946,
-      "trim_seconds": null,
-      "text": "换我登场了！"
+      "trim_seconds": null
     },
     "fan_zhongyu_success": {
       "label": "初次见面…",
@@ -123,8 +112,7 @@
       "trim_seconds": [
         0.0,
         14.25
-      ],
-      "text": "呆站在那里做什么？该不会是因为过于激动，说不出话了吧？没错，站在你面前的就是枫丹人人皆知的大明星——芙宁娜哦。"
+      ]
     },
     "fan_zhongyu_failure": {
       "label": "下雨的时候…",
@@ -133,8 +121,27 @@
       "original": "audio/furina/originals/下雨的时候….mp3",
       "output": "audio/furina/skill/fan_zhongyu_failure.mp3",
       "output_bytes": 151904,
+      "trim_seconds": null
+    },
+    "fan_zhongyu_guard1": {
+      "label": "加入队伍·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c5/2h3wv3zrxm24hama84y9rrhy3yg5uhs.mp3",
+      "bytes": 30009,
+      "original": "audio/furina/originals/加入队伍·其三.mp3",
+      "output": "audio/furina/skill/fan_zhongyu_guard1.mp3",
+      "output_bytes": 30009,
       "trim_seconds": null,
-      "text": "好大的雨！等等，水应该不会淹上来吧？"
+      "text": "瞧好了。"
+    },
+    "fan_zhongyu_guard2": {
+      "label": "加入队伍·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/5/52/cpoaifj03dxm9mmzyp9jt15hash91fa.mp3",
+      "bytes": 51472,
+      "original": "audio/furina/originals/加入队伍·其一.mp3",
+      "output": "audio/furina/skill/fan_zhongyu_guard2.mp3",
+      "output_bytes": 51472,
+      "trim_seconds": null,
+      "text": "果然还是离不开我啊。"
     },
     "fan_duqi1": {
       "label": "倒下·其一",
@@ -143,8 +150,7 @@
       "original": "audio/furina/originals/倒下·其一.mp3",
       "output": "audio/furina/skill/fan_duqi1.mp3",
       "output_bytes": 94250,
-      "trim_seconds": null,
-      "text": "算是…一种解脱吗？"
+      "trim_seconds": null
     },
     "fan_duqi2": {
       "label": "倒下·其二",
@@ -153,8 +159,7 @@
       "original": "audio/furina/originals/倒下·其二.mp3",
       "output": "audio/furina/skill/fan_duqi2.mp3",
       "output_bytes": 86513,
-      "trim_seconds": null,
-      "text": "我还是没能做到…"
+      "trim_seconds": null
     },
     "fan_furina": {
       "label": "倒下·其三",
@@ -163,8 +168,7 @@
       "original": "audio/furina/originals/倒下·其三.mp3",
       "output": "audio/furina/die/fan_furina.mp3",
       "output_bytes": 98328,
-      "trim_seconds": null,
-      "text": "别看我…丢人的样子…"
+      "trim_seconds": null
     }
   }
 }

@@ -113,6 +113,9 @@ export default function () {
       card: ["image/card/fan_pengrenshenji-mechanism.png", "image/card/fan_zhuxing-mechanism.png",
         "image/card/fan_guizhongji-mechanism.png", "image/card/fan_chengehu-mechanism.png"],
       skill: [], audio: [
+      "audio/furina/skill/fan_zhongyu_guard1.mp3",
+      "audio/furina/skill/fan_zhongyu_guard2.mp3",
+
       "audio/furina/die/fan_furina.mp3",
       "audio/furina/skill/fan_duqi1.mp3",
       "audio/furina/skill/fan_duqi2.mp3",

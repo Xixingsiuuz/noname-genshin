@@ -134,6 +134,13 @@ export default {
     },
   },
   fan_zhongyu: {
+    locked: false,
+    ai: { effect: { target(card, source, target) {
+      if (target.storage.fan_zhongyu_state || !get.tag(card, "damage")) return;
+      const current = get.event();
+      const damage = current?.card === card ? (current.num ?? current.baseDamage ?? get.tag(card, "damage")) : get.tag(card, "damage");
+      if (damage > 1) return "zeroplayertarget";
+    } } },
     dutySkill: true,
     derivation: ["fan_duqi"],
     mark: true,
@@ -144,9 +151,22 @@ export default {
         return missionState === "success" ? "使命成功" : missionState === "failure" ? "使命失败" : "使命进行中";
       },
     },
-    group: ["fan_zhongyu_success", "fan_zhongyu_failure"],
+    group: ["fan_zhongyu_guard", "fan_zhongyu_success", "fan_zhongyu_failure"],
     subSkill: {
+      guard: {
+        audio: "ext:原神/audio/furina/skill:2",
+        trigger: { player: "damageBegin4" },
+        forced: true,
+        locked: false,
+        filter(event, player) {
+          return !player.storage.fan_zhongyu_state && event.num > 1;
+        },
+        async content(event, trigger, player) {
+          if (!player.storage.fan_zhongyu_state && trigger.num > 1) trigger.cancel();
+        },
+      },
       success: {
+        locked: false,
         audio: "ext:原神/audio/furina/skill:true",
         trigger: { player: "phaseZhunbeiBegin" },
         forced: true,
@@ -161,6 +181,7 @@ export default {
         },
       },
       failure: {
+        locked: false,
         audio: "ext:原神/audio/furina/skill:true",
         trigger: { player: "dying" },
         forced: true,

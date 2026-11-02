@@ -12,6 +12,7 @@ const exchangeValue = (player, x) => {
 // 对方拥有选项决定权，按两种分支中较差的收益决定是否发动。
 function binghuaValue(player, target) {
   const attitude = get.attitude(player, target);
+  // 已有联系持续至目标下个回合结束，期间不重复投入本阶段发动机会。
   if (links(player).some(link => link.target === target)) return 0;
   const hand = player.getCards("h");
   const attacks = hand.filter(card => get.tag(card, "damage") && get.effect(target, card, player, player) > 0).length;
@@ -68,7 +69,7 @@ export default {
       effect: {
         locked: true, mark: true, marktext: "染",
         onremove(player) { player.removeGaintag("fan_moran_sha"); },
-        intro: { content: "手牌中的杀不计入手牌上限和次数限制，直到下个使用过杀的出牌阶段结束" },
+        intro: { content: "仅带有墨染标记的手牌杀不计入手牌上限和次数限制，直到你使用过杀的出牌阶段结束" },
         trigger: { player: "phaseUseEnd" }, forced: true, popup: false,
         filter: (event, player) => usedSha(player, event),
         async content(event, trigger, player) { player.removeSkill("fan_moran_effect"); },
@@ -170,7 +171,8 @@ export default {
   },
   fan_binghua_links: {
     charlotte: true, onremove: true,
-    trigger: { global: "phaseJieshuBegin" }, forced: true, popup: false,
+    // 回合结束后才清除，结束阶段及回合结束时的用牌仍享有联系效果。
+    trigger: { global: "phaseAfter" }, forced: true, popup: false,
     filter: (event, player) => links(player).some(link => link.target === event.player),
     async content(event, trigger, player) {
       player.storage.fan_binghua_links = links(player).filter(link => link.target !== trigger.player);

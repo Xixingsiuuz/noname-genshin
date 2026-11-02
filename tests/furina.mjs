@@ -34,3 +34,22 @@ for(const name of ['loseHp','damage','recover']) await skills.fan_shanyao.conten
 assert.deepEqual(voices,['fan_shanyao_loss','fan_shanyao_loss','fan_shanyao_heal','fan_shanyao_loss_success','fan_shanyao_loss_success','fan_shanyao_heal_success']);
 assert.equal(skills.fan_shanyao.audio,false);
 console.log('PASS: Furina loss/damage/heal audio routing before and after success');
+
+assert(skills.fan_zhongyu.group.includes('fan_zhongyu_guard'));
+const guard=skills.fan_zhongyu.subSkill.guard;
+assert.equal(guard.trigger.player,'damageBegin4');assert.equal(guard.locked,false);
+for(const state of [undefined,'success','failure']) {
+ owner.storage.fan_zhongyu_state=state;
+ for(const num of [0,1,2,3]) {
+  let prevented=false;const damage={num,cancel(){prevented=true;}};
+  assert.equal(guard.filter(damage,owner),!state&&num>1);
+  await guard.content({},damage,owner);
+  assert.equal(prevented,!state&&num>1);
+ }
+}
+get.tag=card=>card.damage;get.event=()=>({});
+owner.storage.fan_zhongyu_state=undefined;
+assert.equal(skills.fan_zhongyu.ai.effect.target({damage:2},{},owner),'zeroplayertarget');
+assert.equal(skills.fan_zhongyu.ai.effect.target({damage:1},{},owner),undefined);
+owner.storage.fan_zhongyu_state='success';assert.equal(skills.fan_zhongyu.ai.effect.target({damage:2},{},owner),undefined);
+console.log('PASS: grouped guard, damage thresholds, both resolved states and AI');

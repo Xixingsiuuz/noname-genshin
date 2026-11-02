@@ -10,6 +10,7 @@ ENTRIES = {
  **{'fan_huanyan'+str(i):'元素爆发·其'+n for i,n in enumerate(['一','二','三'],1)},
  'fan_shanyao_ally1':'同伴生命值低·其一','fan_shanyao_ally2':'同伴生命值低·其二',
  'fan_zhongyu_success':'初次见面…','fan_zhongyu_failure':'下雨的时候…',
+ 'fan_zhongyu_guard1':'加入队伍·其三','fan_zhongyu_guard2':'加入队伍·其一',
  'fan_duqi1':'倒下·其一','fan_duqi2':'倒下·其二','fan_furina':'倒下·其三',
 }
 

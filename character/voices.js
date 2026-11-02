@@ -1,5 +1,7 @@
 // 原生 Audio 按完整扩展路径读取台词；由 tools/build_voice_texts.py 生成。
 export default {
+  "#ext:原神/audio/furina/skill/fan_zhongyu_guard2": "果然还是离不开我啊。",
+  "#ext:原神/audio/furina/skill/fan_zhongyu_guard1": "瞧好了。",
   "#ext:原神/audio/furina/skill/fan_shanyao_loss1": "为我歌颂！",
   "#ext:原神/audio/furina/skill/fan_shanyao_loss2": "亮相啦！",
   "#ext:原神/audio/furina/skill/fan_shanyao_loss3": "噔噔！",

@@ -1,7 +1,7 @@
 // 详情页汇总台词及顺序试听；对局 trySkillAudio 显式传入 args，保留分支播放池。
 export const skillVoiceGroups = {
   fan_shanyao: ["fan_shanyao_loss_success", "fan_shanyao_heal_success"], fan_huanyan: ["fan_huanyan"], fan_duqi: ["fan_duqi"],
-  fan_zhongyu: ["fan_zhongyu_success", "fan_zhongyu_failure"],
+  fan_zhongyu: ["fan_zhongyu_guard", "fan_zhongyu_success", "fan_zhongyu_failure"],
   fan_huaqiu: ["fan_huaqiu_start_voice", "fan_huaqiu_guard_voice", "fan_huaqiu_end_voice"],
   fan_wenshou: ["fan_wenshou_select_voice", "fan_wenshou_bless_voice", "fan_wenshou_punish_voice", "fan_wenshou_gain_voice"],
   fan_huanjing: ["fan_huanjing_voice"],

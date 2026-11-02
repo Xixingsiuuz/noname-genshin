@@ -74,6 +74,17 @@ p.storage.counttrigger={};
 assert.equal(skills.fan_bailu.filter({...black,getParent:()=>({targets:[p]})},p),true);
 assert.deepEqual(bailuAI({color:'black'},other,p,-2),[0,1]);
 p.storage.fan_binghua_links=[{target:other,mode:0}];
+assert.equal(skills.fan_binghua_links.trigger.global,'phaseAfter');
+const dispatchLinkEnd=async(name,turnPlayer)=>{
+  if(skills.fan_binghua_links.trigger.global===name && skills.fan_binghua_links.filter({player:turnPlayer},p))
+    await skills.fan_binghua_links.content({}, {player:turnPlayer},p);
+};
+await dispatchLinkEnd('phaseJieshuBegin',other);
+assert.equal(p.storage.fan_binghua_links.length,1,'link survives target end-phase entry');
+await dispatchLinkEnd('phaseEnd',other);
+assert.equal(p.storage.fan_binghua_links.length,1,'link survives end-of-turn effects');
+await dispatchLinkEnd('phaseAfter',p);
+assert.equal(p.storage.fan_binghua_links.length,1,'another player ending a turn cannot expire the link');
 assert.equal(skills.fan_binghua_links.filter({player:other},p),true);
 await skills.fan_binghua_links.content({}, {player:other},p);
 assert.equal(p.storage.fan_binghua_links.length,0);
