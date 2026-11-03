@@ -50,7 +50,7 @@ function actor(seat,skills=[]){return {seat,playerid:'p'+seat,storage:{},mounted
  addAdditionalSkill(key,id){this.extra[key]=id;this.mounted.add(id);lib.skill[id]?.init?.(this,id);},
  removeAdditionalSkill(key){const id=this.extra[key];delete this.extra[key];if(id&&!Object.values(this.extra).includes(id)){this.mounted.delete(id);lib.skill[id]?.onremove?.(this,id);}},
  addTempSkill(id,until){this.mounted.add(id);this.temp[id]=until;},
- markSkill(){},line(){},logSkill(id,t,a,b,args){assert.deepEqual(args,[]);assert.equal(lib.skill[id].audio,false);nativePlay(id,this,true,true,null,args);assert.deepEqual(played.at(-1),[]);trace.push('log:'+id);},
+ markSkill(){},markSkillCharacter(id,target,name,content){assert.equal(id,'fan_yingxin');assert.equal(name,'映心');assert(content.includes(target.playerid));},line(){},logSkill(id,t,a,b,args){assert.deepEqual(args,[]);assert.equal(lib.skill[id].audio,false);nativePlay(id,this,true,true,null,args);assert.deepEqual(played.at(-1),[]);trace.push('log:'+id);},
  chooseTarget(){return choice(()=>({bool:true,targets:[chosenTarget]}));},chooseBool(){return choice(()=>({bool:accept}));},
  chooseButton(arg){return choice(()=>({bool:accept,links:[buttonChoice||arg[1][0][0]]}));},
  chooseButtonTarget(){return choice(()=>({bool:true,targets:[chosenTarget],links:deckResult.splice(0,2)}));},

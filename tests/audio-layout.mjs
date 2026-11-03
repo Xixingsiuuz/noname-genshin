@@ -58,7 +58,7 @@ game.trySkillAudio('fan_linji','fan_ganyu',true,true,null,[]);
 game.trySkillAudio('fan_linji_charge','fan_ganyu',true,true);
 assert.deepEqual(played.at(-2),[]);
 assert.deepEqual(played.at(-1),['ext:原神/audio/ganyu/skill/fan_linji_charge.mp3']);
-for(const [id,count] of Object.entries({fan_nichi:3,fan_yunjian_full:4,fan_yunjian_form:2,fan_sanxiang_leave_ren:2,fan_yanjian_damage:2,fan_yanjian_full_damage:2,fan_yanjian_control_voice:2,fan_yanjian_full_control_voice:1,fan_renjian_reveal:2,fan_renjian_full_reveal:2,fan_renjian_gift:1,fan_renjian_full_gift:1})){
+for(const [id,count] of Object.entries({fan_nichi:3,fan_yunjian_full:4,fan_yunjian_form:2,fan_sanxiang_leave_ren:2,fan_yanjian_damage:2,fan_yanjian_full_damage:3,fan_yanjian_control_voice:2,fan_yanjian_full_control_voice:1,fan_renjian_reveal:2,fan_renjian_full_reveal:2,fan_renjian_gift:1,fan_renjian_full_gift:1})){
  game.trySkillAudio(id,'fan_zibai',true,true);assert.equal(played.at(-1).length,count,id);
 }
 for(const [id,count] of Object.entries({fan_langhua_start:1,fan_langhua_low:2,fan_langhua_mid:2,fan_langhua_high:2})){

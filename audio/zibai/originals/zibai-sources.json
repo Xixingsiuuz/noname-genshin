@@ -499,6 +499,25 @@
         "after_peak_dbfs": -5.4,
         "method": "static gain; no compression, normalization of dynamics, or speed change"
       }
+    },
+    "fan_yanjian_full_damage3": {
+      "label": "兹踬，黄毛小儿！",
+      "source": "C:\\Users\\22697\\Downloads\\兹白各形象语音\\兹踬，黄毛小儿！.mp3",
+      "url": null,
+      "bytes": 66801,
+      "original": "audio/zibai/originals/兹踬，黄毛小儿！.mp3",
+      "output": "audio/zibai/skill/fan_yanjian_full_damage3.mp3",
+      "output_bytes": 54847,
+      "trim_seconds": null,
+      "sha256": "d5626f23e8d7839e4ffaaf2a6791a73f97497b8ba28d76ce2b56b3f2faff30d2",
+      "volume": {
+        "gain_db": 7.2,
+        "before_mean_dbfs": -26.7,
+        "before_peak_dbfs": -9.3,
+        "after_mean_dbfs": -19.5,
+        "after_peak_dbfs": -2.0,
+        "method": "static gain; no compression, normalization of dynamics, or speed change"
+      }
     }
   }
 }

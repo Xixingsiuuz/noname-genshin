@@ -117,12 +117,20 @@ export default {
     marktext: "敕",
     intro: { content: (storage, player) => `当前等级：${level(player)}` },
     filter(event, player) {
-      return event.num > 0 && (level(player) < 3 || player.hasCard(card => lib.filter.cardDiscardable(card, player, "fan_nichi"), "he"));
+      return event.num > 0;
     },
     direct: true,
     async content(event, trigger, player) {
       const current = level(player);
-      if (current < 3) {
+      let payHp = current < 3 || !player.hasCard(card => lib.filter.cardDiscardable(card, player, "fan_nichi"), "he");
+      if (!payHp) {
+        const cost = await player.chooseControl("失去体力", "弃置牌", "取消")
+          .set("prompt", "逆敕：选择代价").set("prompt2", false)
+          .set("ai", () => get.attitude(player, trigger.player) > 0 ? 1 : 2).forResult();
+        if (cost.index === 2) { player.getStat("triggerSkill").fan_nichi--; return; }
+        payHp = cost.index === 0;
+      }
+      if (payHp) {
         const result = await player.chooseBool(`是否发动【逆敕】，失去1点体力保护${get.translation(trigger.player)}？`)
           .set("prompt2", false).set("ai", () => get.attitude(player, trigger.player) > 0 && (player.hp > 1 || trigger.player === player)).forResult();
         if (!result.bool) { player.getStat("triggerSkill").fan_nichi--; return; }
@@ -279,7 +287,7 @@ export default {
     ai: { order: 8, result: { target: -1 }, tag: { damage: 1, fireDamage: 1, natureDamage: 1 } },
     subSkill: {
       damage: { audio: voicePath + "2", charlotte: true },
-      full_damage: { audio: voicePath + "2", charlotte: true },
+      full_damage: { audio: voicePath + "3", charlotte: true },
       control_voice: { audio: voicePath + "2", charlotte: true },
       full_control_voice: { audio: voicePath + "true", charlotte: true },
       control: {
@@ -412,6 +420,9 @@ export default {
           && !player.storage.fan_zibai_complete && (level(player) === 3 || availableForms(player).length > 0),
         async content(event, trigger, player) {
           if (level(player) === 3) {
+            const result = await player.chooseBool("人间：是否令兹蹻消失，成为兹白？")
+              .set("prompt2", false).set("ai", () => true).forResult();
+            if (!result.bool) return;
             player.logSkill("fan_renjian");
             // 完全体不是第四种形态：清除形态记录，独立获得全部三个技能。
             // 先保留人间来源，避免增删同名技能造成错误重置。

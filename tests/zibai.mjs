@@ -383,7 +383,7 @@ assert(cancelled); assert.equal(dying.hp, 0);
 const cancel = holder(); cancel.choices.push(false);
 await skills.fan_nichi.content({}, { player: other, cancel() { assert.fail(); } }, cancel);
 assert.equal(cancel.stat.triggerSkill.fan_nichi, 0);
-const self = holder([card(4, false, "e")]); self.storage.fan_nichi_level = 3;
+const self = holder([card(4, false, "e")]); self.storage.fan_nichi_level = 3; self.choices.push(1);
 await skills.fan_nichi.content({}, { player: self, cancel() {} }, self);
 assert.equal(self.hp, 4); assert.equal(self.discarded.length, 1);
 assert.equal(self.draws, 2); assert.equal(self.getCards("h", c => c.shown).length, 2);
@@ -528,6 +528,17 @@ assert.equal(aiComplete.storage.fan_zibai_complete, true);
 const stuck = holder(); stuck.aiControls = true; changeForm(stuck, "ren");
 stuck.storage.fan_zibai_lost_forms = ["yun", "yan"];
 assert.equal(skills.fan_renjian.subSkill.prepare.filter({}, stuck), false);
+
+const optionalFull = holder(); changeForm(optionalFull, "ren"); optionalFull.storage.fan_nichi_level = 3;
+optionalFull.choices.push(false);
+const silentBefore = voiceCalls.length;
+await skills.fan_renjian.subSkill.prepare.content({}, {}, optionalFull);
+assert.equal(optionalFull.storage.fan_zibai_form, "ren");
+assert(!optionalFull.storage.fan_zibai_complete); assert.equal(voiceCalls.length, silentBefore);
+const hpCost = holder(); hpCost.storage.fan_nichi_level = 3;
+assert(skills.fan_nichi.filter({num:1}, hpCost));
+await skills.fan_nichi.content({}, {player:hpCost, cancel() {}}, hpCost);
+assert.equal(hpCost.hp, 3);
 
 delete Array.prototype.randomGet;
 delete Array.prototype.randomGets;

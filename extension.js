@@ -361,6 +361,7 @@ export default function () {
       "audio/zibai/skill/fan_yanjian_full_control_voice.mp3",
       "audio/zibai/skill/fan_yanjian_full_damage1.mp3",
       "audio/zibai/skill/fan_yanjian_full_damage2.mp3",
+      "audio/zibai/skill/fan_yanjian_full_damage3.mp3",
       "audio/zibai/skill/fan_yunjian_form1.mp3",
       "audio/zibai/skill/fan_yunjian_form2.mp3",
       "audio/zibai/skill/fan_yunjian_full1.mp3",

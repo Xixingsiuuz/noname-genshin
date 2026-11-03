@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const source=readFileSync(new URL('../../../noname/library/element/player.js',import.meta.url),'utf8');
+const body=source.match(/  markSkillCharacter\(id, target, name2, content, nobroadcast\) \{([\s\S]*?)\n  \}/)[1];
+const records=[],game={addVideo(type,p,data){records.push(JSON.parse(JSON.stringify({type,data})));},broadcast(){}};
+const mark=new Function('game','return function(id,target,name2,content,nobroadcast){'+body+'}')(game);
+const player={marks:{},markCharacter(target,info){return {info,setBackground(){}};}};
+mark.call(player,'fan_yingxin',{name:'fan_furina'},'映心','映心角色：芙宁娜');
+assert.equal(records[0].type,'markCharacter');
+const replay={storage:{},marks:{}};
+for(const {data} of records)replay.marks[data.id]={info:{name:data.name,content:data.content}};
+assert.equal(replay.marks.fan_yingxin.info.content,'映心角色：芙宁娜');
+mark.call(player,'fan_yingxin',{name:'fan_jean'},'映心','映心角色：琴');assert.equal(records.at(-1).type,'changeMarkCharacter');
+console.log('PASS native markSkillCharacter replay payload: creation/change captions survive JSON with empty replay storage. Replay-node simulation only.');

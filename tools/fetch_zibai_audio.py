@@ -16,6 +16,7 @@ import urllib.request
 ROOT = Path(__file__).resolve().parents[1]
 PAGE = 'https://wiki.biligame.com/ys/兹白语音'
 LOCAL = {
+    'fan_yanjian_full_damage3': '兹踬，黄毛小儿！',
     'fan_sanxiang_leave_yun': '兹踞，再见...愿月光永远照耀你',
     'fan_sanxiang_leave_yan': '兹踬，是时候了，拿走你要的东西吧',
     'fan_sanxiang_leave_ren1': '兹蹻，水无定，花有尽，会相逢',

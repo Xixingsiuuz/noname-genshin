@@ -4007,5 +4007,11 @@
     "path": "audio/furina/skill/fan_zhongyu_success.mp3",
     "bytes": 164468,
     "sha256": "46217e6122ed48e81ed3b86dd15cb9a13d944a05d83a71bedd2b5fc71b90f77c"
+  },
+  {
+    "role": "zibai",
+    "path": "audio/zibai/skill/fan_yanjian_full_damage3.mp3",
+    "bytes": 54847,
+    "sha256": "d5626f23e8d7839e4ffaaf2a6791a73f97497b8ba28d76ce2b56b3f2faff30d2"
   }
 ]

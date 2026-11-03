@@ -82,7 +82,9 @@ export default {
       const target = result.targets?.[0];
       if (!target?.isIn() || !player.isIn()) return;
       player.storage.fan_yingxin_target = target;
-      player.markSkill("fan_yingxin");
+      // Serialize the chosen character and resolved caption into the replay;
+      // ordinary markSkill only records the skill ID, not this target storage.
+      player.markSkillCharacter("fan_yingxin", target, "映心", "映心角色：" + get.translation(target));
       target.addAdditionalSkill("fan_yingxin_" + player.playerid, "fan_yingxin_share");
       syncHand(player); syncHand(target);
       speak("fan_yingxin_start", player);
