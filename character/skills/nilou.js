@@ -59,7 +59,7 @@ export default {
     },
     subSkill: {
       record: {
-        trigger: { player: "useCard" },
+        trigger: { global: "useCard" },
         firstDo: true,
         forced: true,
         silent: true,
@@ -115,18 +115,28 @@ export default {
         locked: true,
         mark: true,
         marktext: "阴",
-        intro: { content: "其他角色与你的距离+1；每回合使用以你为目标的第一张牌对你无效，直到你下次发动【翩转】。" },
+        intro: { content: "其他角色与你的距离+1；其他角色每回合使用有目标的第一张牌对你无效，直到你下次发动【翩转】。" },
         mod: { globalTo(from, to, distance) { if (from !== to) return distance + 1; } },
+        ai: {
+          effect: {
+            target(card, source, target) {
+              if (source === target || !source) return;
+              if (!source.getHistory("useCard", targetedUse).length) return "zerotarget";
+            },
+          },
+        },
         trigger: { target: "useCardToTargeted" },
         forced: true,
         popup: false,
         filter(event, player) {
           return event.player !== player
-            && firstUse(event.player, event.getParent(), evt => evt.targets?.includes(player));
+            && firstUse(event.player, event.getParent(), targetedUse);
         },
         async content(event, trigger, player) {
           // excluded 属于 useCard，共享给每一次效果结算，不取消其他目标。
-          trigger.getParent().excluded.add(player);
+          const use = trigger.getParent();
+          if (!use.targets?.includes(player) || use.excluded.includes(player)) return;
+          use.excluded.add(player);
           game.trySkillAudio("fan_pianzhuan_guard_voice", player, true);
         },
       },

@@ -1,9 +1,10 @@
-import { get } from "../../../../noname.js";
+import { get, game } from "../../../../noname.js";
 
 export default {
   fan_polang: {
     trigger: { player: "useCardToPlayered" },
     forced: true,
+    audio: false,
     // 直接询问选项，取消即跳过本次，不再询问是否发动。
     popup: false,
     filter(event) { return get.tag(event.card, "damage") > 0; },
@@ -33,6 +34,7 @@ export default {
       player.logSkill("fan_polang", trigger.target);
       const both = choice === 2;
       if (choice === 0 || both) {
+        game.trySkillAudio("fan_polang_gain_voice", player, true, true);
         if (player.countMark("fan_polang") < 3) player.addMark("fan_polang", 1);
       }
       let removed = 0;
@@ -40,6 +42,8 @@ export default {
         removed = player.countMark("fan_polang");
         if (removed > 0) {
           player.removeMark("fan_polang", removed);
+          if (removed === 3) game.trySkillAudio("fan_polang_release_voice", player, true, true);
+          else if (removed === 1 || removed === 2) game.trySkillAudio("fan_polang_heavy_voice", player, true, true);
           await player.draw(removed);
           // 本次整张牌共用基础伤害，逐目标发动时可以累加。
           trigger.getParent("useCard").baseDamage += removed;
@@ -49,4 +53,7 @@ export default {
       if (both && removed < 3) await player.loseHp(3 - removed);
     },
   },
+  fan_polang_gain_voice: { audio: "ext:原神/audio/mualani/skill:6", charlotte: true },
+  fan_polang_release_voice: { audio: "ext:原神/audio/mualani/skill:3", charlotte: true },
+  fan_polang_heavy_voice: { audio: "ext:原神/audio/mualani/skill:3", charlotte: true },
 };

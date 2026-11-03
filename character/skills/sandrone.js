@@ -81,13 +81,17 @@ export default {
  }},
  fan_yaoyue:{audio:false,locked:false,trigger:{player:"phaseUseBegin"},direct:true,
  filter:(e,p)=>game.hasPlayer(c=>c!==p&&(c.hasSex("female")||c.hasSex("male"))&&c.countCards("h")>0),
- filterTarget(c,p,t){return t!==p&&t.countCards("h")>0&&(t.hasSex("female")||(t.hasSex("male")&&ui.selected.targets.filter(x=>x.hasSex("male")&&!x.hasSex("female")).length<2));},
+ filterTarget(c,p,t){return t!==p&&t.countCards("h")>0&&(t.hasSex("female")||(t.hasSex("male")&&ui.selected.targets.filter(x=>x!==t&&x.hasSex("male")&&!x.hasSex("female")).length<2));},
  multitarget:true,multiline:true,
  async content(e,t,p){
  const selected=await p.chooseTarget([1,Infinity],"你可以发动【邀月】",(card,player,target)=>lib.skill.fan_yaoyue.filterTarget(card,player,target))
- .set("prompt2",false).set("fanPairedConfirm",true).set("manualConfirm",true)
+ .set("complexTarget",true).set("prompt2",false).set("fanPairedConfirm",true).set("manualConfirm",true)
  .set("ai",target=>get.attitude(p,target)>0?0.3:1).forResult();
  if(!selected.bool||!selected.targets?.length)return;
+ // Validate the complete result as well; never silently trim an illegal selection.
+ if(new Set(selected.targets).size!==selected.targets.length
+   ||selected.targets.some(t=>t===p||!t.isIn()||!t.countCards("h")||!t.hasSex("female")&&!t.hasSex("male"))
+   ||selected.targets.filter(t=>t.hasSex("male")&&!t.hasSex("female")).length>2)return;
  p.logSkill("fan_yaoyue",selected.targets);
  game.trySkillAudio("fan_yaoyue_voice",p);
  const targets=selected.targets.slice().sortBySeat(_status.currentPhase||p);

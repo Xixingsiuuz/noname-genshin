@@ -4,6 +4,7 @@ const care = "fan_jingyang_hehu";
 
 export default {
   fan_jingyang: {
+    audio: "ext:原神/audio/sigewinne/skill:3",
     enable: "phaseUse",
     usable: 1,
     position: "h",
@@ -26,6 +27,7 @@ export default {
   },
   // 标记效果归持有者所有，不依赖施加标记的希格雯仍在场或仍有静养。
   fan_jingyang_hehu: {
+    audio: "ext:原神/audio/sigewinne/skill:3",
     charlotte: true,
     marktext: "护",
     intro: { content: "准备阶段回复1点体力；此标记不可叠加。" },
@@ -38,6 +40,7 @@ export default {
     },
   },
   fan_jiyu: {
+    audio: "ext:原神/audio/sigewinne/skill:3",
     trigger: { global: "damageEnd" },
     direct: true,
     filter(event, player) {

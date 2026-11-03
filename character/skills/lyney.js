@@ -13,6 +13,7 @@ function blocked(player, event = _status.event) {
 
 export default {
   fan_huanxi: {
+    audio: "ext:原神/audio/lyney/skill:2",
     enable: ["chooseToUse", "chooseToRespond"],
     direct: true,
     filter: (event, player) => available(player) && options(event, player).length > 0,
@@ -22,6 +23,7 @@ export default {
       check: button => get.player().getUseValue({ name: button.link[2], nature: button.link[3] }) || 1,
       backup(links) {
         return {
+          audio: false,
           filterCard: () => false,
           selectCard: -1,
           filterTarget: (card, player, target) => target !== player,
@@ -41,6 +43,7 @@ export default {
               .set("prompt", `幻戏：猜测${get.translation(player)}手牌中是否有【${get.translation(card.name)}】`)
               .set("ai", () => Math.random() < 0.5 ? 0 : 1).forResult();
             const correct = (guess.control === "有") === hasCard;
+            game.trySkillAudio(correct ? "fan_huanxi_right" : "fan_huanxi_wrong", player, true);
             game.log(target, "猜测", guess.control, "同名牌，", correct ? "猜对了" : "猜错了");
             // 原生无懈询问设有 nouse，precontent 延后在 _wuxie 中执行；
             // 该父事件没有 chooseToUse 的过滤器，也不能对它 backup 后重新选牌。
@@ -87,6 +90,7 @@ export default {
       skillTagFilter: available, result: { player: 1 } },
   },
   fan_huanxi_use: {
+    audio: false,
     sourceSkill: "fan_huanxi",
     filterCard: () => false,
     selectCard: -1,
@@ -94,6 +98,8 @@ export default {
     popname: true,
   },
   fan_huanxi_used: { charlotte: true },
+  fan_huanxi_wrong: { audio: "ext:原神/audio/lyney/skill:3" },
+  fan_huanxi_right: { audio: "ext:原神/audio/lyney/skill:2" },
   fan_huanxi_blocked: {
     charlotte: true,
     mark: true,
@@ -122,6 +128,7 @@ export default {
     },
   },
   fan_moshu: {
+    audio: "ext:原神/audio/lyney/skill:3",
     enable: "chooseToUse",
     position: "he",
     filterCard: (card, player) => get.suit(card, player) === "heart",

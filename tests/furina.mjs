@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-const status={},lib={},get={distance:(a,b)=>(b.seat-a.seat+8)%8},game={trySkillAudio(){}};
+const status={},lib={},get={distance:(a,b)=>(b.seat-a.seat+8)%8},game={addVideo(){},trySkillAudio(){}};
 const engine=readFileSync(new URL('../../../noname/library/index.js',import.meta.url),'utf8');
 const comparator=engine.match(/seat: (function\(a, b\) \{[\s\S]*?\n    \}),\r?\n    position:/)[1];
 lib.sort={seat:new Function('lib','_status','game','get',`return (${comparator})`)(lib,status,game,get)};

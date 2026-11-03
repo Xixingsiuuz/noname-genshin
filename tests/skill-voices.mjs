@@ -98,3 +98,7 @@ for (const [skill, count] of Object.entries({fan_shanyao_loss:3,fan_shanyao_heal
  assert.equal(Audio.skill({skill,args:[]}).fileList.length,count,skill+' actual pool');
 }
 console.log('PASS: Furina native audio pool sizes');
+
+assert.deepEqual(Audio.skill({skill:"fan_pianzhuan"}).textList.slice(4),["嘿！","呀！","哈！"]);
+assert.equal(Audio.skill({skill:"fan_pianzhuan"}).textList.length,7);
+assert.equal(original.call(Audio,{skill:"fan_pianzhuan_guard_voice"}).fileList.length,3,"hidden detail voices remain playable");

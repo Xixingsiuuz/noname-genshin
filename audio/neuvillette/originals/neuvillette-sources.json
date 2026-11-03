@@ -1,0 +1,133 @@
+{
+  "page": "https://wiki.biligame.com/ys/那维莱特语音",
+  "language": "zh-CN",
+  "verified_date": "2026-11-03",
+  "clips": {
+    "fan_yilong_voice1": {
+      "label": "元素战技·其一",
+      "text": "肃静！",
+      "url": "https://patchwiki.biligame.com/images/ys/8/89/e9jwu7xilj13umc9jq3wx35ptgcxgvi.mp3",
+      "bytes": 9456,
+      "original": "audio/neuvillette/originals/fan_yilong_voice1.mp3",
+      "output": "audio/neuvillette/skill/fan_yilong_voice1.mp3",
+      "output_bytes": 9456,
+      "trim_seconds": null
+    },
+    "fan_yilong_voice2": {
+      "label": "元素战技·其二",
+      "text": "低头。",
+      "url": "https://patchwiki.biligame.com/images/ys/e/e4/kuz1oa6k8gy2hf59mswde8we3u6lmiu.mp3",
+      "bytes": 9409,
+      "original": "audio/neuvillette/originals/fan_yilong_voice2.mp3",
+      "output": "audio/neuvillette/skill/fan_yilong_voice2.mp3",
+      "output_bytes": 9409,
+      "trim_seconds": null
+    },
+    "fan_yilong_voice3": {
+      "label": "元素战技·其三",
+      "text": "不得喧哗。",
+      "url": "https://patchwiki.biligame.com/images/ys/0/04/1ocnlvf08lqnjdvfj1uqrocpizl0hul.mp3",
+      "bytes": 11917,
+      "original": "audio/neuvillette/originals/fan_yilong_voice3.mp3",
+      "output": "audio/neuvillette/skill/fan_yilong_voice3.mp3",
+      "output_bytes": 11917,
+      "trim_seconds": null
+    },
+    "fan_shenpan_voice1": {
+      "label": "元素爆发·其一",
+      "text": "潮水啊，我已归来。",
+      "url": "https://patchwiki.biligame.com/images/ys/7/7b/r4wjszw3gvt1ebum0dthl3bi954jnik.mp3",
+      "bytes": 26378,
+      "original": "audio/neuvillette/originals/fan_shenpan_voice1.mp3",
+      "output": "audio/neuvillette/skill/fan_shenpan_voice1.mp3",
+      "output_bytes": 26378,
+      "trim_seconds": null
+    },
+    "fan_shenpan_voice2": {
+      "label": "元素爆发·其二",
+      "text": "化作，浮沫吧。",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3f/97t0psamlwhtywpf7z8qtxjmvu00ufs.mp3",
+      "bytes": 21425,
+      "original": "audio/neuvillette/originals/fan_shenpan_voice2.mp3",
+      "output": "audio/neuvillette/skill/fan_shenpan_voice2.mp3",
+      "output_bytes": 21425,
+      "trim_seconds": null
+    },
+    "fan_shenpan_voice3": {
+      "label": "元素爆发·其三",
+      "text": "凡高大者，我无不蔑视。",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f0/88mfu7vrxk8i5ghgfhxumrlvhqiumnk.mp3",
+      "bytes": 33406,
+      "original": "audio/neuvillette/originals/fan_shenpan_voice3.mp3",
+      "output": "audio/neuvillette/skill/fan_shenpan_voice3.mp3",
+      "output_bytes": 33406,
+      "trim_seconds": null
+    },
+    "fan_leiyu_source": {
+      "label": "关于我们·见证者",
+      "text": "既然你是天地外之人，那就由你见证吧，我对于这个倒错世界的审判。「本应由天父统治的雄邦，如今王位上坐的却是雉鸡。时代已然错乱脱节，而我就是为了扭整乾坤而生」。",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3d/m9pc6ye5tbfxs8p94mzosfk9g5h80we.mp3",
+      "bytes": 224414,
+      "original": "audio/neuvillette/originals/fan_leiyu_source.mp3",
+      "output": "audio/neuvillette/skill/fan_leiyu_source.mp3",
+      "output_bytes": 224414,
+      "trim_seconds": null
+    },
+    "fan_neuvillette1": {
+      "label": "倒下·其一",
+      "text": "潮汐再起时，我必将归来…",
+      "url": "https://patchwiki.biligame.com/images/ys/2/21/8qfdd8iwr06bnou9vk8r3yg5bnh3i1e.mp3",
+      "bytes": 39695,
+      "original": "audio/neuvillette/originals/fan_neuvillette1.mp3",
+      "output": "audio/neuvillette/die/fan_neuvillette1.mp3",
+      "output_bytes": 39695,
+      "trim_seconds": null
+    },
+    "fan_neuvillette2": {
+      "label": "倒下·其二",
+      "text": "看到了…我诞生前的温暖之海…",
+      "url": "https://patchwiki.biligame.com/images/ys/2/20/dw5hhbrey8n87v21lh2y80o01b8u6gl.mp3",
+      "bytes": 45390,
+      "original": "audio/neuvillette/originals/fan_neuvillette2.mp3",
+      "output": "audio/neuvillette/die/fan_neuvillette2.mp3",
+      "output_bytes": 45390,
+      "trim_seconds": null
+    },
+    "fan_neuvillette3": {
+      "label": "倒下·其三",
+      "text": "万籁…俱静…",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8e/gn38ebqj09qvdzc854cqmyjml6l69kp.mp3",
+      "bytes": 31102,
+      "original": "audio/neuvillette/originals/fan_neuvillette3.mp3",
+      "output": "audio/neuvillette/die/fan_neuvillette3.mp3",
+      "output_bytes": 31102,
+      "trim_seconds": null
+    },
+    "fan_leiyu1": {
+      "label": "关于我们·见证者",
+      "text": "本应由天父统治的雄邦，如今王位上坐的却是雉鸡。",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3d/m9pc6ye5tbfxs8p94mzosfk9g5h80we.mp3",
+      "bytes": 224414,
+      "original": "audio/neuvillette/originals/fan_leiyu_source.mp3",
+      "output": "audio/neuvillette/skill/fan_leiyu1.mp3",
+      "output_bytes": 74516,
+      "trim_seconds": [
+        10.1,
+        16.4
+      ]
+    },
+    "fan_leiyu2": {
+      "label": "关于我们·见证者",
+      "text": "时代已然错乱脱节，而我就是为了扭整乾坤而生。",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3d/m9pc6ye5tbfxs8p94mzosfk9g5h80we.mp3",
+      "bytes": 224414,
+      "original": "audio/neuvillette/originals/fan_leiyu_source.mp3",
+      "output": "audio/neuvillette/skill/fan_leiyu2.mp3",
+      "output_bytes": 96140,
+      "trim_seconds": [
+        17.6,
+        26.12
+      ]
+    }
+  }
+}

@@ -9,11 +9,18 @@ import urllib.parse
 ROOT = Path(__file__).resolve().parents[1]
 PAGE = "https://wiki.biligame.com/ys/夜兰语音"
 ENTRIES = {
-    "fan_kuanghuo1": "元素爆发·其二",
-    "fan_kuanghuo2": "元素爆发·其三",
-    "fan_yuantu1": "元素战技·其二",
-    "fan_yuantu2": "元素爆发·其一",
-    "fan_yelan": "倒下·其一",
+    "fan_kuanghuo1": "闲聊·线报",
+    "fan_kuanghuo2": "闲聊·翘班",
+    "fan_kuanghuo3": "闲聊·身份",
+    "fan_kuanghuo_tax_audio1": "元素战技·其一",
+    "fan_kuanghuo_tax_audio2": "元素战技·其二",
+    "fan_kuanghuo_number_audio1": "元素战技·其三",
+    "fan_kuanghuo_number_audio2": "元素爆发·其三",
+    "fan_yuantu1": "元素爆发·其一",
+    "fan_yuantu2": "元素爆发·其二",
+    "fan_yelan1": "倒下·其一",
+    "fan_yelan2": "倒下·其二",
+    "fan_yelan3": "倒下·其三",
 }
 
 def fetch(url):
@@ -24,7 +31,7 @@ def fetch(url):
 def main():
     source = fetch("https://wiki.biligame.com/ys/" + urllib.parse.quote("夜兰语音")).decode("utf8")
     (ROOT / "audio/yelan/originals/yelan-voice-page.html").write_text(source, encoding="utf8")
-    manifest = {"page": PAGE, "language": "zh-CN", "verified_date": "2026-10-25", "clips": {}}
+    manifest = {"page": PAGE, "language": "zh-CN", "verified_date": "2026-11-03", "clips": {}}
     for name, label in ENTRIES.items():
         start = source.index(">" + label + "<")
         section = html.unescape(source[start:start + 2300])
@@ -32,7 +39,7 @@ def main():
         data = fetch(url)
         assert len(data) > 1000 and not data.lstrip().startswith(b"<"), name
         original = "audio/yelan/originals/" + name + ".mp3"
-        output = "audio/yelan/" + ("die" if name == "fan_yelan" else "skill") + "/" + name + ".mp3"
+        output = "audio/yelan/" + ("die" if name.startswith("fan_yelan") else "skill") + "/" + name + ".mp3"
         (ROOT / original).write_bytes(data)
         (ROOT / output).write_bytes(data)
         manifest["clips"][name] = {"label": label, "url": url, "bytes": len(data),

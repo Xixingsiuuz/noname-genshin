@@ -1,0 +1,138 @@
+{
+  "page": "https://wiki.biligame.com/ys/林尼语音",
+  "language": "zh-CN",
+  "verified_date": "2026-11-03",
+  "clips": {
+    "fan_huanxi1": {
+      "label": "元素战技·其一",
+      "text": "一点小把戏。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/78/VO_ZH_Lyney_Elemental_Skill_1_01.ogg",
+      "bytes": 40642,
+      "original": "audio/lyney/originals/fan_huanxi1.ogg",
+      "output": "audio/lyney/skill/fan_huanxi1.mp3",
+      "output_bytes": 14972,
+      "trim_seconds": null
+    },
+    "fan_huanxi2": {
+      "label": "元素战技·其二",
+      "text": "看看这个吧！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/VO_ZH_Lyney_Elemental_Skill_1_02.ogg",
+      "bytes": 34961,
+      "original": "audio/lyney/originals/fan_huanxi2.ogg",
+      "output": "audio/lyney/skill/fan_huanxi2.mp3",
+      "output_bytes": 12644,
+      "trim_seconds": null
+    },
+    "fan_huanxi_wrong1": {
+      "label": "元素爆发·其一",
+      "text": "压轴表演！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/VO_ZH_Lyney_Elemental_Burst_01.ogg",
+      "bytes": 74364,
+      "original": "audio/lyney/originals/fan_huanxi_wrong1.ogg",
+      "output": "audio/lyney/skill/fan_huanxi_wrong1.mp3",
+      "output_bytes": 28484,
+      "trim_seconds": null
+    },
+    "fan_huanxi_wrong2": {
+      "label": "元素爆发·其二",
+      "text": "好戏开演！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/23/VO_ZH_Lyney_Elemental_Burst_02.ogg",
+      "bytes": 50830,
+      "original": "audio/lyney/originals/fan_huanxi_wrong2.ogg",
+      "output": "audio/lyney/skill/fan_huanxi_wrong2.mp3",
+      "output_bytes": 19580,
+      "trim_seconds": null
+    },
+    "fan_huanxi_wrong3": {
+      "label": "元素爆发·其三",
+      "text": "响起你的掌声！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e1/VO_ZH_Lyney_Elemental_Burst_03.ogg",
+      "bytes": 52710,
+      "original": "audio/lyney/originals/fan_huanxi_wrong3.ogg",
+      "output": "audio/lyney/skill/fan_huanxi_wrong3.mp3",
+      "output_bytes": 20564,
+      "trim_seconds": null
+    },
+    "fan_huanxi_right1": {
+      "label": "生命值低·其一",
+      "text": "这是要我表演诈死魔术吗？",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f0/VO_ZH_Lyney_Low_HP_01.ogg",
+      "bytes": 67999,
+      "original": "audio/lyney/originals/fan_huanxi_right1.ogg",
+      "output": "audio/lyney/skill/fan_huanxi_right1.mp3",
+      "output_bytes": 26156,
+      "trim_seconds": null
+    },
+    "fan_huanxi_right2": {
+      "label": "生命值低·其二",
+      "text": "不错的戏法…",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/46/VO_ZH_Lyney_Low_HP_02.ogg",
+      "bytes": 43864,
+      "original": "audio/lyney/originals/fan_huanxi_right2.ogg",
+      "output": "audio/lyney/skill/fan_huanxi_right2.mp3",
+      "output_bytes": 15644,
+      "trim_seconds": null
+    },
+    "fan_moshu1": {
+      "label": "元素战技·其三",
+      "text": "惊喜连连。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/34/VO_ZH_Lyney_Elemental_Skill_1_03.ogg",
+      "bytes": 38520,
+      "original": "audio/lyney/originals/fan_moshu1.ogg",
+      "output": "audio/lyney/skill/fan_moshu1.mp3",
+      "output_bytes": 13436,
+      "trim_seconds": null
+    },
+    "fan_moshu2": {
+      "label": "打开宝箱·其二",
+      "text": "装进魔术口袋里吧。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/68/VO_ZH_Lyney_Opening_Treasure_Chest_02.ogg",
+      "bytes": 44781,
+      "original": "audio/lyney/originals/fan_moshu2.ogg",
+      "output": "audio/lyney/skill/fan_moshu2.mp3",
+      "output_bytes": 16580,
+      "trim_seconds": null
+    },
+    "fan_moshu3": {
+      "label": "打开宝箱·其三",
+      "text": "这也算是一种宝箱魔术吗？",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7d/VO_ZH_Lyney_Opening_Treasure_Chest_03.ogg",
+      "bytes": 58702,
+      "original": "audio/lyney/originals/fan_moshu3.ogg",
+      "output": "audio/lyney/skill/fan_moshu3.mp3",
+      "output_bytes": 22316,
+      "trim_seconds": null
+    },
+    "fan_lyney1": {
+      "label": "倒下·其一",
+      "text": "琳妮特…",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/VO_ZH_Lyney_Fallen_01.ogg",
+      "bytes": 58674,
+      "original": "audio/lyney/originals/fan_lyney1.ogg",
+      "output": "audio/lyney/die/fan_lyney1.mp3",
+      "output_bytes": 21500,
+      "trim_seconds": null
+    },
+    "fan_lyney2": {
+      "label": "倒下·其二",
+      "text": "我的表演，不会失败！…",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d7/VO_ZH_Lyney_Fallen_02.ogg",
+      "bytes": 116172,
+      "original": "audio/lyney/originals/fan_lyney2.ogg",
+      "output": "audio/lyney/die/fan_lyney2.mp3",
+      "output_bytes": 44060,
+      "trim_seconds": null
+    },
+    "fan_lyney3": {
+      "label": "倒下·其三",
+      "text": "幕布…快点拉上…",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/69/VO_ZH_Lyney_Fallen_03.ogg",
+      "bytes": 115484,
+      "original": "audio/lyney/originals/fan_lyney3.ogg",
+      "output": "audio/lyney/die/fan_lyney3.mp3",
+      "output_bytes": 43748,
+      "trim_seconds": null
+    }
+  },
+  "media_source_page": "https://genshin-impact.fandom.com/wiki/Lyney/Voice-Overs/Chinese"
+}

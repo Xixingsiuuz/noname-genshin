@@ -11,7 +11,7 @@ const get = {
   attitude: (a,b) => a === b ? 10 : a.team === b.team ? 5 : -5, effect: (t,c,a) => a.team === t.team ? -5 : 8,
 };
 const lib = { filter: { canBeGained: c => !c.blocked } };
-const game = { broadcastAll: (f,...args) => f(...args), log: (...args) => log.push('log'),
+const game = { trySkillAudio: (...args) => log.push(args[0]), broadcastAll: (f,...args) => f(...args), log: (...args) => log.push('log'),
   filterPlayer: f => actors.filter(p=>p.isIn()&&f(p)), hasPlayer: f => actors.some(p=>p.isIn()&&f(p)) };
 const skills = new Function('game','get','lib','ui','_status', source.replace(/^import .*;\r?\n/gm,'').replace('export default','return'))(game,get,lib,ui,status);
 const chain = (result, actor) => ({ set(k,v) { (actor.options??={})[k]=v; return this; }, async forResult() { actor.onSelect?.(); return result; } });
@@ -69,7 +69,7 @@ owner.judge=[];
 victim.expansions=[huo('h1'),huo('h2')];victim.hand=[];victim.selection={bool:false};victim.hp=4;
 const used=card('sha'),evt=use(used);evt.usedCount=1;
 await dispatch(evt,'useCard');assert.equal(evt.all_excluded,true);assert.equal(evt.usedCount,1);assert.equal(victim.hp,4);
-log.length=0;await dispatch(evt,'useCardAfter');assert.equal(victim.hp,2);assert.deepEqual(log,['discardh1','loseHp','discardh2','loseHp']);
+log.length=0;await dispatch(evt,'useCardAfter');assert.equal(victim.hp,2);assert.deepEqual(log,['fan_kuanghuo_number_audio','discardh1','loseHp','discardh2','loseHp']);
 await dispatch(evt,'useCardAfter');assert.equal(victim.hp,2,'no duplicate loss');
 // 同类别多个惑只索取一张；交牌完成才有效。
 victim.expansions=[huo('a','trick',4),huo('b','delay',5)];const gift=card('gift');victim.hand=[gift];victim.selection={bool:true,cards:[gift]};
@@ -180,3 +180,12 @@ const manifest=JSON.parse(readFileSync(new URL('../audio/yelan/originals/yelan-s
 for(const clip of Object.values(manifest.clips)){const original=readFileSync(new URL('../'+clip.original,import.meta.url));assert.equal(original.length,clip.bytes);assert.deepEqual(original,readFileSync(new URL('../'+clip.output,import.meta.url)));}
 assert.ok(existsSync(new URL('../image/character/portraits/yelan.png',import.meta.url)));
 console.log('Yelan: attached groups, real movement order, payment/cancellation, respond result, snapshots/nesting, dying, sealing, Yuantu, AI and original audio passed (simulation).');
+
+const voices = (await import('../character/voices.js')).default;
+assert.equal(skills.fan_kuanghuo.audio.length,7);
+assert.equal(skills.fan_kuanghuo.logAudio().length,3);
+for(const clip of Object.values(manifest.clips)) {
+ const key='#ext:原神/'+clip.output.slice(0,-4)+(clip.output.includes('/die/')?':die':'');
+ assert.equal(voices[key],clip.text,'display matches verified Chinese source');
+}
+assert.equal(Object.values(manifest.clips).filter(c=>c.output.includes('/die/')).length,3);

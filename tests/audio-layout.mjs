@@ -9,7 +9,7 @@ const lib={skill:{},translate:{},characterSubstitute:{}};
 const get={info:id=>lib.skill[id],character:()=>({tempname:[]})};
 const audioSource=readFileSync(new URL('../../noname/get/audio.js',root),'utf8');
 const Audio=new Function('get','lib',audioSource.replace(/^import .*;\r?\n/gm,'').replace(/export\s*\{[\s\S]*?\};?\s*$/,'')+'\nreturn Audio;')(get,lib);
-const roles=['kinich','citlali','mona','qiqi','jean','navia','hutao','ganyu','nilou','albedo','raiden','ajax','mavuika','klee','itto','zhongli','eula','ayaka','ayato','yoimiya','columbina','yelan','diluc','keqing','zibai','xianyun'],referenced=new Set();
+const roles=['chiori','kokomi','kinich','citlali','mona','qiqi','jean','navia','hutao','ganyu','nilou','albedo','raiden','ajax','mavuika','klee','itto','zhongli','eula','ayaka','ayato','yoimiya','columbina','yelan','diluc','keqing','zibai','xianyun'],referenced=new Set();
 const mechanisms = new Function('return ' + read('card/xianyun.js').match(/export const mechanisms = (\[[\s\S]*?\n\]);/)[1])();
 function checkAudioFile(file,role){
  assert.ok(file.startsWith('ext:原神/audio/'+role+'/'),file);

@@ -52,3 +52,11 @@ export function setHuanyanEffect(target, source, active) {
   make("path",{d:"M0 280V268Q8 251 16 268Q23 255 31 270Q40 247 49 269Q58 257 66 271Q76 252 85 271Q100 245 115 271Q124 252 134 271Q142 257 151 269Q160 247 169 270Q177 255 184 268Q192 251 200 268V280Z",fill:"#153c8e",opacity:.75},svg);
   host.appendChild(svg);
 }
+
+// 回放只恢复展示，不重新执行技能或播放技能语音。
+export function installHuanyanReplay(game) {
+  game.videoContent.fanHuanyanEffect = (target, content) => {
+    const source = game.playerMap[content[0]];
+    if (target && source) setHuanyanEffect(target, source, content[1]);
+  };
+}

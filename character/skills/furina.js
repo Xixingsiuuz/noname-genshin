@@ -1,9 +1,18 @@
 import { game, get, _status } from "../../../../noname.js";
 import { setHuanyanEffect } from "../../ui/huanyan-effect.js";
 
+function showHuanyanEffect(target, source, active) {
+  game.broadcastAll(setHuanyanEffect, target, source, active);
+  game.addVideo("fanHuanyanEffect", target, [source.dataset.position, active]);
+}
+function recordHuanyanCaption(player) {
+  const caption = get.translation(player.storage.fan_huanyan_targets || []);
+  game.addVideo("storage", player, ["fan_huanyan_caption", caption]);
+}
 function clearHuanyanEffects(player) {
+  game.addVideo("storage", player, ["fan_huanyan_caption", ""]);
   for (const target of player.storage.fan_huanyan_targets || []) {
-    game.broadcastAll(setHuanyanEffect, target, player, false);
+    showHuanyanEffect(target, player, false);
   }
 }
 
@@ -18,10 +27,10 @@ export default {
     locked: true,
     forced: true,
     init(player) {
-      game.broadcastAll(setHuanyanEffect, player, player, true);
+      showHuanyanEffect(player, player, true);
     },
     onremove(player) {
-      game.broadcastAll(setHuanyanEffect, player, player, false);
+      showHuanyanEffect(player, player, false);
     },
     group: ["fan_shanyao_effect"],
     subSkill: {
@@ -34,7 +43,7 @@ export default {
           return event.name !== "phase" || game.phaseNumber === 0;
         },
         async content(event, trigger, player) {
-          game.broadcastAll(setHuanyanEffect, player, player, true);
+          showHuanyanEffect(player, player, true);
         },
       },
     },
@@ -57,6 +66,7 @@ export default {
     },
   },
   fan_huanyan: {
+    marktext: "宴",
     audio: "ext:原神/audio/furina/skill:3",
     trigger: { player: "phaseUseBegin" },
     direct: true,
@@ -80,8 +90,9 @@ export default {
         if (!player.storage.fan_huanyan_targets.includes(target)) {
           player.storage.fan_huanyan_targets.push(target);
         }
-        game.broadcastAll(setHuanyanEffect, target, player, true);
+        showHuanyanEffect(target, player, true);
       }
+      recordHuanyanCaption(player);
       player.markSkill("fan_huanyan");
       await player.gainMaxHp(selected.length);
       if (player.storage.fan_zhongyu_state === "success") {
@@ -91,7 +102,7 @@ export default {
     intro: {
       content(storage, player) {
         const targets = player.storage.fan_huanyan_targets || [];
-        return "共享【闪耀】的角色：" + (targets.length ? get.translation(targets) : "无");
+        return "共享【闪耀】的角色：" + (targets.length ? get.translation(targets) : player.storage.fan_huanyan_caption || "无");
       },
     },
     group: ["fan_huanyan_cost", "fan_huanyan_expire"],
@@ -176,6 +187,7 @@ export default {
         },
         async content(event, trigger, player) {
           player.storage.fan_zhongyu_state = "success";
+          game.addVideo("storage", player, ["fan_zhongyu_state", "success"]);
           player.popup("使命成功");
           player.markSkill("fan_zhongyu");
         },
@@ -190,6 +202,7 @@ export default {
         },
         async content(event, trigger, player) {
           player.storage.fan_zhongyu_state = "failure";
+          game.addVideo("storage", player, ["fan_zhongyu_state", "failure"]);
           player.popup("使命失败");
           player.markSkill("fan_zhongyu");
           player.removeSkill("fan_shanyao");

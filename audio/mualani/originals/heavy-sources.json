@@ -1,0 +1,29 @@
+[
+  {
+    "source": "C:\\Users\\22697\\Downloads\\玛拉妮重击语音\\VO_ZH_Mualani_Heavy_Attack_01.ogg",
+    "original": "audio/mualani/originals/VO_ZH_Mualani_Heavy_Attack_01.ogg",
+    "output": "audio/mualani/skill/fan_polang_heavy_voice1.mp3",
+    "bytes": 47955,
+    "sha256": "36cb3412988a6b520823e9a572a5fb7682c10c3534af6e49df8d5d3245e5e3f1",
+    "container": "ogg",
+    "trim_seconds": null
+  },
+  {
+    "source": "C:\\Users\\22697\\Downloads\\玛拉妮重击语音\\VO_ZH_Mualani_Heavy_Attack_02.ogg",
+    "original": "audio/mualani/originals/VO_ZH_Mualani_Heavy_Attack_02.ogg",
+    "output": "audio/mualani/skill/fan_polang_heavy_voice2.mp3",
+    "bytes": 35692,
+    "sha256": "292f14953d9adad080756c8179d467840e686fc4895e47b9a3b399e79eb634e6",
+    "container": "ogg",
+    "trim_seconds": null
+  },
+  {
+    "source": "C:\\Users\\22697\\Downloads\\玛拉妮重击语音\\VO_ZH_Mualani_Heavy_Attack_03.ogg",
+    "original": "audio/mualani/originals/VO_ZH_Mualani_Heavy_Attack_03.ogg",
+    "output": "audio/mualani/skill/fan_polang_heavy_voice3.mp3",
+    "bytes": 41092,
+    "sha256": "33edf519f46475ffe83bd746412e2e8cfa6e74e36941ab5031b2ba34f4885b12",
+    "container": "ogg",
+    "trim_seconds": null
+  }
+]

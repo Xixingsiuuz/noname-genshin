@@ -65,3 +65,19 @@ const replayBody=gameSource.slice(gameSource.indexOf("    storage: function(play
 const replay=new Function("get","player","content",replayBody);const computer={storage:{}};
 replay({},computer,videos[0].data);assert.deepEqual(computer.storage.fan_xigou,[11,"heart"]);
 console.log("Replay: native storage serialization preserves snapshots and restores computer records");
+
+ui.selected={targets:[]};
+const male=()=>({hasSex:s=>s==="male",countCards:()=>1,isIn:()=>true});
+const female={hasSex:s=>s==="female",countCards:()=>1,isIn:()=>true};
+const men=[male(),male(),male()];
+assert.equal(skills.fan_yaoyue.filterTarget(null,p,men[0]),true);
+ui.selected.targets.push(men[0],men[1]);
+assert.equal(skills.fan_yaoyue.filterTarget(null,p,men[2]),false);
+assert.equal(skills.fan_yaoyue.filterTarget(null,p,female),true);
+assert.equal(skills.fan_yaoyue.filterTarget(null,p,men[0]),true);
+ui.selected.targets.pop();assert.equal(skills.fan_yaoyue.filterTarget(null,p,men[2]),true);
+let complex=false;
+p.chooseTarget=()=>({set(key,value){if(key==="complexTarget")complex=value;return this;},async forResult(){return {bool:true,targets:men};}});
+const oldVoices=voices.length;await skills.fan_yaoyue.content({}, {},p);
+assert.equal(complex,true);assert.equal(voices.length,oldVoices);
+console.log("Yaoyue: dynamic male quota, female exemption, deselection and invalid result rejection passed");

@@ -18,7 +18,8 @@ const get = {
   inpileVCardList: filter => [["basic", "", "sha"], ["basic", "", "sha", "fire"],
     ["trick", "", "wuzhong"], ["delay", "", "lebu"]].filter(filter),
 };
-const game = { hasPlayer: () => true, log() {} };
+const voiceCalls = [];
+const game = { hasPlayer: () => true, log() {}, trySkillAudio: (...args) => voiceCalls.push(args) };
 const skills = new Function("lib", "game", "get", "ui", "_status",
   source.replace(/^import .*;\r?\n/, "").replace("export default", "return"))(lib, game, get, {}, status);
 lib.skill = skills;
@@ -41,6 +42,8 @@ for (const name of ["chooseToUse", "chooseToRespond"]) {
       await skills.fan_huanxi.chooseButton.backup([["basic", "", "sha", "fire"]])
         .precontent({ result, getParent: () => parent }, null, player);
       const correct = hasCard === (answer === "有");
+      assert.equal(voiceCalls.at(-1)[0], correct ? "fan_huanxi_right" : "fan_huanxi_wrong");
+      assert.equal(voiceCalls.at(-1)[1], player);
       assert.ok(parent.restored);
       assert.ok(added.includes("fan_huanxi_used"));
       assert.equal(added.includes("fan_huanxi_blocked"), correct);

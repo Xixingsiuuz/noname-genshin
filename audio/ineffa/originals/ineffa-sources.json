@@ -1,0 +1,79 @@
+{
+  "fan_wentai1": {
+    "label": "元素战技·其三",
+    "url": "https://patchwiki.biligame.com/images/ys/8/87/thypre3h67bd4kkn01pvffy62j9bife.mp3",
+    "bytes": 16690,
+    "text": "防御模式，启动。",
+    "trim": "完整原声，未裁剪"
+  },
+  "fan_wentai2": {
+    "label": "元素战技·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/b/b8/g1nw63eshp5igl8cde4bh6iwg8q6ds8.mp3",
+    "bytes": 16255,
+    "text": "绝缘屏障，展开。",
+    "trim": "完整原声，未裁剪"
+  },
+  "fan_miyuan_charge1": {
+    "label": "闲聊·更新",
+    "url": "https://patchwiki.biligame.com/images/ys/4/4f/bzephgjae1fbtnl5cvslpegwaq3lf2j.mp3",
+    "bytes": 42820,
+    "text": "战斗数据已更新。请放心，这次不会把天花板轰飞了。",
+    "trim": "完整原声，未裁剪"
+  },
+  "fan_miyuan_charge2": {
+    "label": "加入队伍·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/e/e5/teyl7lcu9bto74m2992mlln2jh7hggc.mp3",
+    "bytes": 14109,
+    "text": "机体预热完毕。",
+    "trim": "完整原声，未裁剪"
+  },
+  "fan_miyuan_charge3": {
+    "label": "加入队伍·其二",
+    "url": "https://patchwiki.biligame.com/images/ys/4/4a/sunpayt3gzv0b3py90b8azn59n68a8i.mp3",
+    "bytes": 19706,
+    "text": "请指定，清扫目标。",
+    "trim": "完整原声，未裁剪"
+  },
+  "fan_miyuan_use1": {
+    "label": "元素爆发·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/c/cb/ppfexicng0cvd79uw4f39114uhgc09s.mp3",
+    "bytes": 11489,
+    "text": "最终协议。",
+    "trim": "完整原声，未裁剪"
+  },
+  "fan_miyuan_use2": {
+    "label": "元素爆发·其三",
+    "url": "https://patchwiki.biligame.com/images/ys/8/8d/oubty0vrhk4imbzlhtkae605ux3sbtv.mp3",
+    "bytes": 11760,
+    "text": "化为灰尘。",
+    "trim": "完整原声，未裁剪"
+  },
+  "fan_miyuan_guohe": {
+    "label": "元素爆发·其二",
+    "url": "https://patchwiki.biligame.com/images/ys/c/c3/jif9bqxezfo37jvjp5okcj5pgyagc14.mp3",
+    "bytes": 11422,
+    "text": "歼灭模式。",
+    "trim": "完整原声，未裁剪"
+  },
+  "fan_ineffa1": {
+    "label": "倒下·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/1/1e/08vugx8i58cia5aoga3z209pu3sum5l.mp3",
+    "bytes": 26668,
+    "text": "思维模块…中断…",
+    "trim": "完整原声，未裁剪"
+  },
+  "fan_ineffa2": {
+    "label": "倒下·其二",
+    "url": "https://patchwiki.biligame.com/images/ys/5/58/jneqrqubw1k2xr9b4x03bmpdzhl5gji.mp3",
+    "bytes": 22688,
+    "text": "归宿…不在这里…",
+    "trim": "完整原声，未裁剪"
+  },
+  "fan_ineffa3": {
+    "label": "倒下·其三",
+    "url": "https://patchwiki.biligame.com/images/ys/6/6f/1fdl7t4m2nqy6uy7pvku0cnrt8mmogd.mp3",
+    "bytes": 31411,
+    "text": "等待…下次重启…",
+    "trim": "完整原声，未裁剪"
+  }
+}

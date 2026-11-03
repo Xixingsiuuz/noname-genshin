@@ -308,7 +308,7 @@
     },
     "fan_pianzhuan_repeat_voice1": {
       "label": "中攻击·其1",
-      "text": "（中攻击语气声·其1，无文字台词）",
+      "text": "嘿！",
       "original": "audio/nilou/originals/VO_ZH_Nilou_Mid_Attack_01.ogg",
       "output": "audio/nilou/skill/fan_pianzhuan_repeat_voice1.ogg",
       "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/65/VO_ZH_Nilou_Mid_Attack_01.ogg/revision/latest?cb=20221113215446",
@@ -332,11 +332,12 @@
           "mean_dbfs": -14.6,
           "peak_dbfs": -2.1
         }
-      }
+      },
+      "text_confirmation": "user confirmed 2026-11-03"
     },
     "fan_pianzhuan_repeat_voice2": {
       "label": "中攻击·其2",
-      "text": "（中攻击语气声·其2，无文字台词）",
+      "text": "呀！",
       "original": "audio/nilou/originals/VO_ZH_Nilou_Mid_Attack_02.ogg",
       "output": "audio/nilou/skill/fan_pianzhuan_repeat_voice2.ogg",
       "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4e/VO_ZH_Nilou_Mid_Attack_02.ogg/revision/latest?cb=20221113215448",
@@ -360,11 +361,12 @@
           "mean_dbfs": -15.2,
           "peak_dbfs": -1.3
         }
-      }
+      },
+      "text_confirmation": "user confirmed 2026-11-03"
     },
     "fan_pianzhuan_repeat_voice3": {
       "label": "中攻击·其3",
-      "text": "（中攻击语气声·其3，无文字台词）",
+      "text": "哈！",
       "original": "audio/nilou/originals/VO_ZH_Nilou_Mid_Attack_03.ogg",
       "output": "audio/nilou/skill/fan_pianzhuan_repeat_voice3.ogg",
       "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d1/VO_ZH_Nilou_Mid_Attack_03.ogg/revision/latest?cb=20221113215450",
@@ -388,7 +390,8 @@
           "mean_dbfs": -15.6,
           "peak_dbfs": -1.8
         }
-      }
+      },
+      "text_confirmation": "user confirmed 2026-11-03"
     },
     "fan_pianzhuan_guard_voice1": {
       "label": "打开风之翼·其1",

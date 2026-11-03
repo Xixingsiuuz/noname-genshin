@@ -1,0 +1,127 @@
+{
+  "page": "https://wiki.biligame.com/ys/千织语音",
+  "language": "zh-CN",
+  "verified_date": "2026-11-03",
+  "clips": {
+    "fan_yuxiu1": {
+      "label": "闲聊·评价",
+      "text": "我来决定自己该怎么走，要成为谁。没人能对我指手画脚。",
+      "url": "https://patchwiki.biligame.com/images/ys/e/ee/pho0gxx93go2jtpmgmdcs607tulaonf.mp3",
+      "bytes": 164544,
+      "original": "audio/chiori/originals/fan_yuxiu1.mp3",
+      "output": "audio/chiori/skill/fan_yuxiu1.mp3",
+      "output_bytes": 164544,
+      "trim_seconds": null
+    },
+    "fan_yuxiu2": {
+      "label": "闲聊·裁缝刀",
+      "text": "谁说裁衣服一定要用剪刀？那些死板的规矩由它去吧，我喜欢自己用着顺手的刀具。",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8a/k280oa88d8idt3m7k86cjkrb88o9w96.mp3",
+      "bytes": 215318,
+      "original": "audio/chiori/originals/fan_yuxiu2.mp3",
+      "output": "audio/chiori/skill/fan_yuxiu2.mp3",
+      "output_bytes": 215318,
+      "trim_seconds": null
+    },
+    "fan_yuxiu3": {
+      "label": "闲聊·模特",
+      "text": "真要站着不动的话，干脆来当我的模特吧。给你设计款好看的衣服。",
+      "url": "https://patchwiki.biligame.com/images/ys/8/82/3s7xgo4y3j7irx64pcv5fplabrqg9ly.mp3",
+      "bytes": 166356,
+      "original": "audio/chiori/originals/fan_yuxiu3.mp3",
+      "output": "audio/chiori/skill/fan_yuxiu3.mp3",
+      "output_bytes": 166356,
+      "trim_seconds": null
+    },
+    "fan_yuxiu_use1": {
+      "label": "元素战技·其一",
+      "text": "袖。",
+      "url": "https://patchwiki.biligame.com/images/ys/b/be/pcmkabf1olh52zfmg5gl0zg1pn8spm8.mp3",
+      "bytes": 16690,
+      "original": "audio/chiori/originals/fan_yuxiu_use1.mp3",
+      "output": "audio/chiori/skill/fan_yuxiu_use1.mp3",
+      "output_bytes": 16690,
+      "trim_seconds": null
+    },
+    "fan_yuxiu_use2": {
+      "label": "元素战技·其二",
+      "text": "下一位？",
+      "url": "https://patchwiki.biligame.com/images/ys/0/0c/g7hauuzevtrjjxwct4r9ovprf3j3u57.mp3",
+      "bytes": 21903,
+      "original": "audio/chiori/originals/fan_yuxiu_use2.mp3",
+      "output": "audio/chiori/skill/fan_yuxiu_use2.mp3",
+      "output_bytes": 21903,
+      "trim_seconds": null
+    },
+    "fan_yuxiu_use3": {
+      "label": "元素战技·其三",
+      "text": "搭把手。",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4c/fvo1cfina3uhk944dt0igpjfjq52gvz.mp3",
+      "bytes": 23997,
+      "original": "audio/chiori/originals/fan_yuxiu_use3.mp3",
+      "output": "audio/chiori/skill/fan_yuxiu_use3.mp3",
+      "output_bytes": 23997,
+      "trim_seconds": null
+    },
+    "fan_feiren1": {
+      "label": "元素爆发·其一",
+      "text": "风尚，由我裁定。",
+      "url": "https://patchwiki.biligame.com/images/ys/9/90/guqdrp27k65khrvazzj6am46gswbikq.mp3",
+      "bytes": 68635,
+      "original": "audio/chiori/originals/fan_feiren1.mp3",
+      "output": "audio/chiori/skill/fan_feiren1.mp3",
+      "output_bytes": 68635,
+      "trim_seconds": null
+    },
+    "fan_feiren2": {
+      "label": "元素爆发·其二",
+      "text": "脆如绸锦。",
+      "url": "https://patchwiki.biligame.com/images/ys/e/e0/dds7wota1l6bsxpl7t64p6jhrjlsj8p.mp3",
+      "bytes": 43299,
+      "original": "audio/chiori/originals/fan_feiren2.mp3",
+      "output": "audio/chiori/skill/fan_feiren2.mp3",
+      "output_bytes": 43299,
+      "trim_seconds": null
+    },
+    "fan_feiren3": {
+      "label": "元素爆发·其三",
+      "text": "千红零落。",
+      "url": "https://patchwiki.biligame.com/images/ys/2/23/pomgmnk9z2p6g4klux5h6ksoacgjnx1.mp3",
+      "bytes": 38314,
+      "original": "audio/chiori/originals/fan_feiren3.mp3",
+      "output": "audio/chiori/skill/fan_feiren3.mp3",
+      "output_bytes": 38314,
+      "trim_seconds": null
+    },
+    "fan_chiori1": {
+      "label": "倒下·其一",
+      "text": "裁剪不当…",
+      "url": "https://patchwiki.biligame.com/images/ys/8/82/ptersf8a8x5o7s0ovpm3n0qinjxb0tk.mp3",
+      "bytes": 61784,
+      "original": "audio/chiori/originals/fan_chiori1.mp3",
+      "output": "audio/chiori/die/fan_chiori1.mp3",
+      "output_bytes": 61784,
+      "trim_seconds": null
+    },
+    "fan_chiori2": {
+      "label": "倒下·其二",
+      "text": "我不认输…",
+      "url": "https://patchwiki.biligame.com/images/ys/f/fa/1mnd4it9m514pn8wtnpp2sln4f1bj35.mp3",
+      "bytes": 60878,
+      "original": "audio/chiori/originals/fan_chiori2.mp3",
+      "output": "audio/chiori/die/fan_chiori2.mp3",
+      "output_bytes": 60878,
+      "trim_seconds": null
+    },
+    "fan_chiori3": {
+      "label": "倒下·其三",
+      "text": "我的品牌…还没有…",
+      "url": "https://patchwiki.biligame.com/images/ys/d/de/2rff2cbpannziftuzqjkglbbx8xa96h.mp3",
+      "bytes": 99852,
+      "original": "audio/chiori/originals/fan_chiori3.mp3",
+      "output": "audio/chiori/die/fan_chiori3.mp3",
+      "output_bytes": 99852,
+      "trim_seconds": null
+    }
+  }
+}

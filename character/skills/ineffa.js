@@ -19,6 +19,7 @@ function confirmAutomatic() {
 
 export default {
   fan_wentai: {
+    audio: "ext:原神/audio/ineffa/skill:2",
     trigger: { player: "phaseJieshuBegin" },
     direct: true,
     async content(event, trigger, player) {
@@ -122,6 +123,7 @@ export default {
           onuse(result, player) {
             player.removeCharge(1);
             player.addTempSkill("fan_miyuan_used", { global: "phaseAfter" });
+            game.trySkillAudio(result.card.name === "guohe" ? "fan_miyuan_guohe_audio" : "fan_miyuan_use_audio", player, true, true);
           },
         };
       },
@@ -130,6 +132,7 @@ export default {
     group: "fan_miyuan_charge",
     subSkill: {
       charge: {
+        audio: "ext:原神/audio/ineffa/skill:3",
         trigger: { player: "phaseZhunbeiBegin" },
         forced: true,
         locked: false,
@@ -140,4 +143,10 @@ export default {
     ai: { order: 8, result: { player: 1 } },
   },
   fan_miyuan_used: { charlotte: true },
+  fan_miyuan_use_audio: {
+    audio: ["ext:原神/audio/ineffa/skill/fan_miyuan_use1.mp3", "ext:原神/audio/ineffa/skill/fan_miyuan_use2.mp3"],
+  },
+  fan_miyuan_guohe_audio: {
+    audio: ["ext:原神/audio/ineffa/skill/fan_miyuan_use1.mp3", "ext:原神/audio/ineffa/skill/fan_miyuan_use2.mp3", "ext:原神/audio/ineffa/skill/fan_miyuan_guohe.mp3"],
+  },
 };

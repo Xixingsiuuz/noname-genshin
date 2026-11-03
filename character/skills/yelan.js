@@ -44,8 +44,11 @@ function useBenefit(event, actor) {
 }
 
 export default {
+  fan_kuanghuo_tax_audio: { audio: "ext:原神/audio/yelan/skill:2" },
+  fan_kuanghuo_number_audio: { audio: "ext:原神/audio/yelan/skill:2" },
   fan_kuanghuo: {
-    audio: "ext:原神/audio/yelan/skill:2",
+    audio: ["ext:原神/audio/yelan/skill/fan_kuanghuo1.mp3", "ext:原神/audio/yelan/skill/fan_kuanghuo2.mp3", "ext:原神/audio/yelan/skill/fan_kuanghuo3.mp3", "ext:原神/audio/yelan/skill/fan_kuanghuo_tax_audio1.mp3", "ext:原神/audio/yelan/skill/fan_kuanghuo_tax_audio2.mp3", "ext:原神/audio/yelan/skill/fan_kuanghuo_number_audio1.mp3", "ext:原神/audio/yelan/skill/fan_kuanghuo_number_audio2.mp3"],
+    logAudio() { return ["ext:原神/audio/yelan/skill/fan_kuanghuo1.mp3", "ext:原神/audio/yelan/skill/fan_kuanghuo2.mp3", "ext:原神/audio/yelan/skill/fan_kuanghuo3.mp3"]; },
     enable: "phaseUse", usable: 1, locked: false,
     position: "he", selectCard: [0, 1], discard: false, lose: false, delay: false,
     filter(event, player) { return player.countCards("he") > 0; },
@@ -89,6 +92,7 @@ export default {
     async content(event, trigger, player) {
       const actor = trigger.player;
       if (!player.isIn() || !actor.isIn() || !matches(trigger, player)) return;
+      if (trigger.name === "useCard") game.trySkillAudio("fan_kuanghuo_tax_audio", player, true, true);
       let paid = false;
       if (actor.countCards("h", card => legalGift(card, actor, player))) {
         const result = await actor.chooseCard("h", "诓惑：交给" + get.translation(player) + "一张手牌，否则此牌无效",
@@ -143,6 +147,7 @@ export default {
       const actor = trigger.player;
       // 固定本次命中的实体“惑”，嵌套用牌若已移走某张则跳过，不误弃后来放置的牌。
       const cards = trigger.fan_kuanghuo_numbers?.[player.playerid] || [];
+      if (cards.some(card => ownHuos(actor, player).includes(card))) game.trySkillAudio("fan_kuanghuo_number_audio", player, true, true);
       for (const card of cards) {
         if (!actor.isIn()) break;
         if (!ownHuos(actor, player).includes(card)) continue;

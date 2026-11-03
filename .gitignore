@@ -1,5 +1,6 @@
 # Local backups and generated review images
 /backups/
+**/backup_files/
 /*-review*.jpg
 /*-review*.png
 /*-check.png

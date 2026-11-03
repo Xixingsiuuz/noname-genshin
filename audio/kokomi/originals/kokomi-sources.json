@@ -1,0 +1,142 @@
+{
+  "page": "https://wiki.biligame.com/ys/珊瑚宫心海语音",
+  "language": "zh-CN",
+  "verified_date": "2026-11-01",
+  "clips": {
+    "fan_miaosuan_select_voice1": {
+      "label": "加入队伍·其一",
+      "text": "这次的作战…让我想想。",
+      "url": "https://patchwiki.biligame.com/images/ys/c/ca/7v3luncbu9w3o5mn44qyh4n6sx2tn77.mp3",
+      "bytes": 44192,
+      "original": "audio/kokomi/originals/fan_miaosuan_select_voice1.mp3",
+      "output": "audio/kokomi/skill/fan_miaosuan_select_voice1.mp3",
+      "output_bytes": 44192,
+      "trim_seconds": null
+    },
+    "fan_miaosuan_select_voice2": {
+      "label": "加入队伍·其二",
+      "text": "别紧张，我们一定会赢。",
+      "url": "https://patchwiki.biligame.com/images/ys/9/99/4ay0dtyafvgc989r2v7eq4fwjuhkp9s.mp3",
+      "bytes": 41120,
+      "original": "audio/kokomi/originals/fan_miaosuan_select_voice2.mp3",
+      "output": "audio/kokomi/skill/fan_miaosuan_select_voice2.mp3",
+      "output_bytes": 41120,
+      "trim_seconds": null
+    },
+    "fan_miaosuan_select_voice3": {
+      "label": "加入队伍·其三",
+      "text": "万事俱备，出发吧。",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a5/mjqqlbthf656yuiseeygt2uup886xop.mp3",
+      "bytes": 33824,
+      "original": "audio/kokomi/originals/fan_miaosuan_select_voice3.mp3",
+      "output": "audio/kokomi/skill/fan_miaosuan_select_voice3.mp3",
+      "output_bytes": 33824,
+      "trim_seconds": null
+    },
+    "fan_miaosuan_gain_voice1": {
+      "label": "闲聊·准备",
+      "text": "未雨绸缪，才能临危不乱。",
+      "url": "https://patchwiki.biligame.com/images/ys/9/96/61o2l43azgazdezpa860m6s959lnmvb.mp3",
+      "bytes": 48416,
+      "original": "audio/kokomi/originals/fan_miaosuan_gain_voice1.mp3",
+      "output": "audio/kokomi/skill/fan_miaosuan_gain_voice1.mp3",
+      "output_bytes": 48416,
+      "trim_seconds": null
+    },
+    "fan_miaosuan_gain_voice2": {
+      "label": "初次见面…",
+      "text": "不用担心，临行前我留下了不少锦囊。",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4d/0k65v3e7bjw1ka7oqzhthk4lg3t6spn.mp3",
+      "bytes": 365984,
+      "original": "audio/kokomi/originals/fan_miaosuan_gain_voice2.mp3",
+      "output": "audio/kokomi/skill/fan_miaosuan_gain_voice2.mp3",
+      "output_bytes": 61100,
+      "trim_seconds": [
+        12.5,
+        16.65
+      ],
+      "original_text": "我是珊瑚宫心海，海祇岛的「现人神巫女」。此次与你一起出行，就当做是放松一下…咳，就当做是对外考察吧。不用担心，临行前我留下了不少锦囊，将海祇岛近期的发展计划布置完毕了。稍微离开一会儿，也没有关系。",
+      "trim_verification": "用户试听确认，2026-11-03"
+    },
+    "fan_miaosuan_chengshi_voice1": {
+      "label": "突破的感受·承",
+      "text": "力量在不断地涌出…想必下次作战，我们可以配合得更好。",
+      "url": "https://patchwiki.biligame.com/images/ys/8/86/esq7vo0z2b6uli27ecom0fxts3ij3wh.mp3",
+      "bytes": 92192,
+      "original": "audio/kokomi/originals/fan_miaosuan_chengshi_voice1.mp3",
+      "output": "audio/kokomi/skill/fan_miaosuan_chengshi_voice1.mp3",
+      "output_bytes": 92192,
+      "trim_seconds": null
+    },
+    "fan_miaosuan_chengshi_voice2": {
+      "label": "突破的感受·转",
+      "text": "沧海月明，潮起潮落。力量更进一步，心境也会有所不同。",
+      "url": "https://patchwiki.biligame.com/images/ys/6/68/gizmln4gxcjprtvp8nthctfpfg4olmm.mp3",
+      "bytes": 104864,
+      "original": "audio/kokomi/originals/fan_miaosuan_chengshi_voice2.mp3",
+      "output": "audio/kokomi/skill/fan_miaosuan_chengshi_voice2.mp3",
+      "output_bytes": 104864,
+      "trim_seconds": null
+    },
+    "fan_haiji1": {
+      "label": "元素爆发·其一",
+      "text": "沧海之约。",
+      "url": "https://patchwiki.biligame.com/images/ys/b/b8/ta74g4dhmnffgee2hgpgt3qb1awr47u.mp3",
+      "bytes": 20768,
+      "original": "audio/kokomi/originals/fan_haiji1.mp3",
+      "output": "audio/kokomi/skill/fan_haiji1.mp3",
+      "output_bytes": 20768,
+      "trim_seconds": null
+    },
+    "fan_haiji2": {
+      "label": "元素爆发·其二",
+      "text": "翻涌吧！",
+      "url": "https://patchwiki.biligame.com/images/ys/d/df/kjfkb78g4rphzg7lveq6rwea5y0qcnq.mp3",
+      "bytes": 18080,
+      "original": "audio/kokomi/originals/fan_haiji2.mp3",
+      "output": "audio/kokomi/skill/fan_haiji2.mp3",
+      "output_bytes": 18080,
+      "trim_seconds": null
+    },
+    "fan_haiji3": {
+      "label": "元素爆发·其三",
+      "text": "深海的加护！",
+      "url": "https://patchwiki.biligame.com/images/ys/f/ff/6hq8rqx9ajrm9ec7p1xbxyxl1dcmyno.mp3",
+      "bytes": 25376,
+      "original": "audio/kokomi/originals/fan_haiji3.mp3",
+      "output": "audio/kokomi/skill/fan_haiji3.mp3",
+      "output_bytes": 25376,
+      "trim_seconds": null
+    },
+    "fan_kokomi1": {
+      "label": "倒下·其一",
+      "text": "计策…出问题了吗？",
+      "url": "https://patchwiki.biligame.com/images/ys/d/dd/fe0lv031j31lpaaax3sm8c9qen1rxv6.mp3",
+      "bytes": 48800,
+      "original": "audio/kokomi/originals/fan_kokomi1.mp3",
+      "output": "audio/kokomi/die/fan_kokomi1.mp3",
+      "output_bytes": 48800,
+      "trim_seconds": null
+    },
+    "fan_kokomi2": {
+      "label": "倒下·其二",
+      "text": "失误了…",
+      "url": "https://patchwiki.biligame.com/images/ys/a/ae/bzxsr3xwrd1957czqvesbtwyym13bnd.mp3",
+      "bytes": 24992,
+      "original": "audio/kokomi/originals/fan_kokomi2.mp3",
+      "output": "audio/kokomi/die/fan_kokomi2.mp3",
+      "output_bytes": 24992,
+      "trim_seconds": null
+    },
+    "fan_kokomi3": {
+      "label": "倒下·其三",
+      "text": "不会再犯同样的错误。",
+      "url": "https://patchwiki.biligame.com/images/ys/6/60/7t6oa23d25rlw5m0hzskqugsakwisnw.mp3",
+      "bytes": 45728,
+      "original": "audio/kokomi/originals/fan_kokomi3.mp3",
+      "output": "audio/kokomi/die/fan_kokomi3.mp3",
+      "output_bytes": 45728,
+      "trim_seconds": null
+    }
+  }
+}

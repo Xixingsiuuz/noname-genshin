@@ -18,6 +18,7 @@ const lostSleeves = (event, player) => {
 
 export default {
   fan_yuxiu: {
+    audio: "ext:原神/audio/chiori/skill:3",
     trigger: { player: "phaseDiscardBegin" },
     popup: false,
     locked: false,
@@ -50,9 +51,26 @@ export default {
       if (cards.length) player.loseToDiscardpile(cards);
     },
     // 袖位于特殊牌区（s），原版丈八蛇矛的 hs 选牌范围已包含袖。
-    group: "fan_yuxiu_gain",
+    group: ["fan_yuxiu_gain", "fan_yuxiu_use"],
     subSkill: {
+      use: {
+        audio: "ext:原神/audio/chiori/skill:3",
+        trigger: { player: ["useCard", "respond"] },
+        forced: true,
+        locked: false,
+        popup: false,
+        filter(event, player) {
+          if (event.card?.storage?.fan_feiren) return false;
+          return player.getHistory("lose", loss => (loss.getParent() === event || loss.relatedEvent === event)
+            && loss.ss?.some(card => event.cards?.includes(card)
+              && loss.gaintag_map?.[card.cardid]?.includes(tag))).length > 0;
+        },
+        async content(event, trigger, player) {
+          game.trySkillAudio("fan_yuxiu_use", player, true);
+        },
+      },
       gain: {
+        audio: false,
         trigger: {
           player: "loseAfter",
           global: ["equipAfter", "addJudgeAfter", "gainAfter", "loseAsyncAfter", "addToExpansionAfter"],
@@ -82,6 +100,7 @@ export default {
     },
   },
   fan_feiren: {
+    audio: "ext:原神/audio/chiori/skill:3",
     trigger: { global: "phaseZhunbeiBegin" },
     round: 1,
     popup: false,

@@ -1,3 +1,5 @@
+import { installHuanyanReplay } from "./ui/huanyan-effect.js";
+import { installSharedZhinang } from "./character/zhinang.js";
 import { installDetailPortraits } from "./ui/detail-portraits.js";
 import smoothPortraits from "./ui/smooth-portrait-map.js";
 import { installMoranFrost } from "./ui/moran-frost.js";
@@ -6,16 +8,17 @@ import { createCardPackage } from "./card/index.js";
 import { lib, game, ui, _status } from "../../noname.js";
 import { installSelectionConfirm } from "./ui/confirm.js";
 import characterTitles from "./character/title.js";
+import characterIntros from "./character/intro.js";
 import { installZibaiEyes } from "./ui/zibai-eyes.js";
 import { installZibaiControlPrivacy } from "./ui/zibai-control-privacy.js";
 import { installSkillVoices } from "./ui/skill-voices.js";
 import { get } from "../../noname.js";
 import { installMechanismCardStyle } from "./ui/mechanism-cards.js";
+import { sortExtensionHandcards } from "./ui/auto-sort-handcards.js";
 
 function sortLocalHandcards() {
   if (game.me && game.me.countCards("h") > 1) {
-    // 与原生“整理手牌”按钮保持一致，包括临时排序规则及联机同步。
-    game.me.sortHandcardOL(_status.tempHandcardSort);
+    sortExtensionHandcards(game, ui, get, _status);
   }
 }
 
@@ -25,6 +28,7 @@ export default function () {
   return {
     name: "原神",
     content() {
+      installSharedZhinang(get, () => _status);
       (lib.dynamicTranslate ||= {}).fan_tianlin = player => player.storage.fan_duanyu_failed
         ? "锁定技，每轮开始时，你选择一个本局游戏未选择过的基本牌或普通锦囊牌的牌名，那之后，当其他角色使用牌名被【天霖】选择过，且非转化的手牌指定目标时，你于此牌结算后将其置于你的武将牌上，称为“忆”，然后你摸一张牌。"
         : lib.translate.fan_tianlin_info;
@@ -54,6 +58,7 @@ export default function () {
         submit.fanTianlinAuto = true;
         lib.hooks.checkEnd.push(submit);
       }
+      installHuanyanReplay(game);
       installMechanismCardStyle();
       installSkillVoices(get);
       installMoranFrost(lib);
@@ -69,9 +74,11 @@ export default function () {
         forced: true,
         silent: true,
         popup: false,
-        filter() {
+        filter(event) {
           return !!game.getExtensionConfig("原神", "auto_sort_handcards") &&
-            !!game.me && game.me.countCards("h") > 1;
+            !!game.me && game.me.countCards("h") > 1 &&
+            (event.name === "gameDraw" || (event.name === "phase" && event.player === game.me)
+              || event.player === game.me || !!event.getg?.(game.me)?.length);
         },
         async content() {
           sortLocalHandcards();
@@ -82,11 +89,12 @@ export default function () {
     precontent() {
       // 扩展加载时注册，武将详情页直接从此表读取称号。
       Object.assign(lib.characterTitle, characterTitles);
+      Object.assign(lib.characterIntro, characterIntros);
     },
     config: {
       auto_sort_handcards: {
         name: "手牌自动排序",
-        intro: "自动按原生“整理手牌”按钮的规则整理自己的手牌，适用于所有武将。开启后立即整理，获得牌及回合开始时自动整理。",
+        intro: "使用扩展独立牌序：类别、牌名、属性、花色、点数。开启后、自己获得牌及自己回合开始时整理；不改变原生整理按钮。",
         init: false,
         onclick(value) {
           game.saveExtensionConfig("原神", "auto_sort_handcards", value);
@@ -113,6 +121,33 @@ export default function () {
       card: ["image/card/fan_pengrenshenji-mechanism.png", "image/card/fan_zhuxing-mechanism.png",
         "image/card/fan_guizhongji-mechanism.png", "image/card/fan_chengehu-mechanism.png"],
       skill: [], audio: [
+      "audio/lyney/skill/fan_huanxi1.mp3",
+      "audio/lyney/skill/fan_huanxi2.mp3",
+      "audio/lyney/skill/fan_huanxi_wrong1.mp3",
+      "audio/lyney/skill/fan_huanxi_wrong2.mp3",
+      "audio/lyney/skill/fan_huanxi_wrong3.mp3",
+      "audio/lyney/skill/fan_huanxi_right1.mp3",
+      "audio/lyney/skill/fan_huanxi_right2.mp3",
+      "audio/lyney/skill/fan_moshu1.mp3",
+      "audio/lyney/skill/fan_moshu2.mp3",
+      "audio/lyney/skill/fan_moshu3.mp3",
+      "audio/lyney/die/fan_lyney1.mp3",
+      "audio/lyney/die/fan_lyney2.mp3",
+      "audio/lyney/die/fan_lyney3.mp3",
+
+      "audio/sigewinne/skill/fan_jingyang1.mp3",
+      "audio/sigewinne/skill/fan_jingyang2.mp3",
+      "audio/sigewinne/skill/fan_jingyang3.mp3",
+      "audio/sigewinne/skill/fan_jingyang_hehu1.mp3",
+      "audio/sigewinne/skill/fan_jingyang_hehu2.mp3",
+      "audio/sigewinne/skill/fan_jingyang_hehu3.mp3",
+      "audio/sigewinne/skill/fan_jiyu1.mp3",
+      "audio/sigewinne/skill/fan_jiyu2.mp3",
+      "audio/sigewinne/skill/fan_jiyu3.mp3",
+      "audio/sigewinne/die/fan_sigewinne1.mp3",
+      "audio/sigewinne/die/fan_sigewinne2.mp3",
+      "audio/sigewinne/die/fan_sigewinne3.mp3",
+
       "audio/furina/skill/fan_zhongyu_guard1.mp3",
       "audio/furina/skill/fan_zhongyu_guard2.mp3",
 
@@ -461,9 +496,67 @@ export default function () {
       "audio/kinich/skill/fan_shouxing_yin_voice2.mp3",
       "audio/kinich/die/fan_kinich1.mp3",
       "audio/kinich/die/fan_kinich2.mp3",
-      "audio/yelan/die/fan_yelan.mp3",
+      "audio/kokomi/skill/fan_miaosuan_select_voice1.mp3",
+      "audio/kokomi/skill/fan_miaosuan_select_voice2.mp3",
+      "audio/kokomi/skill/fan_miaosuan_select_voice3.mp3",
+      "audio/kokomi/skill/fan_miaosuan_gain_voice1.mp3",
+      "audio/kokomi/skill/fan_miaosuan_gain_voice2.mp3",
+      "audio/kokomi/skill/fan_miaosuan_chengshi_voice1.mp3",
+      "audio/kokomi/skill/fan_miaosuan_chengshi_voice2.mp3",
+      "audio/kokomi/skill/fan_haiji1.mp3",
+      "audio/kokomi/skill/fan_haiji2.mp3",
+      "audio/kokomi/skill/fan_haiji3.mp3",
+      "audio/kokomi/die/fan_kokomi1.mp3",
+      "audio/kokomi/die/fan_kokomi2.mp3",
+      "audio/kokomi/die/fan_kokomi3.mp3",
+      "audio/mualani/skill/fan_polang_gain_voice1.mp3",
+      "audio/mualani/skill/fan_polang_gain_voice2.mp3",
+      "audio/mualani/skill/fan_polang_gain_voice3.mp3",
+      "audio/mualani/skill/fan_polang_gain_voice4.mp3",
+      "audio/mualani/skill/fan_polang_gain_voice5.mp3",
+      "audio/mualani/skill/fan_polang_gain_voice6.mp3",
+      "audio/mualani/skill/fan_polang_release_voice1.mp3",
+      "audio/mualani/skill/fan_polang_release_voice2.mp3",
+      "audio/mualani/skill/fan_polang_release_voice3.mp3",
+      "audio/mualani/skill/fan_polang_heavy_voice1.mp3",
+      "audio/mualani/skill/fan_polang_heavy_voice2.mp3",
+      "audio/mualani/skill/fan_polang_heavy_voice3.mp3",
+      "audio/mualani/die/fan_mualani1.mp3",
+      "audio/mualani/die/fan_mualani2.mp3",
+      "audio/mualani/die/fan_mualani3.mp3",
+      "audio/neuvillette/skill/fan_yilong_voice1.mp3",
+      "audio/neuvillette/skill/fan_yilong_voice2.mp3",
+      "audio/neuvillette/skill/fan_yilong_voice3.mp3",
+      "audio/neuvillette/skill/fan_shenpan_voice1.mp3",
+      "audio/neuvillette/skill/fan_shenpan_voice2.mp3",
+      "audio/neuvillette/skill/fan_shenpan_voice3.mp3",
+      "audio/neuvillette/die/fan_neuvillette1.mp3",
+      "audio/neuvillette/die/fan_neuvillette2.mp3",
+      "audio/neuvillette/die/fan_neuvillette3.mp3",
+      "audio/neuvillette/skill/fan_leiyu1.mp3",
+      "audio/neuvillette/skill/fan_leiyu2.mp3",
+      "audio/chiori/skill/fan_yuxiu1.mp3",
+      "audio/chiori/skill/fan_yuxiu2.mp3",
+      "audio/chiori/skill/fan_yuxiu3.mp3",
+      "audio/chiori/skill/fan_yuxiu_use1.mp3",
+      "audio/chiori/skill/fan_yuxiu_use2.mp3",
+      "audio/chiori/skill/fan_yuxiu_use3.mp3",
+      "audio/chiori/skill/fan_feiren1.mp3",
+      "audio/chiori/skill/fan_feiren2.mp3",
+      "audio/chiori/skill/fan_feiren3.mp3",
+      "audio/chiori/die/fan_chiori1.mp3",
+      "audio/chiori/die/fan_chiori2.mp3",
+      "audio/chiori/die/fan_chiori3.mp3",
+      "audio/yelan/die/fan_yelan1.mp3",
+      "audio/yelan/die/fan_yelan2.mp3",
+      "audio/yelan/die/fan_yelan3.mp3",
       "audio/yelan/skill/fan_kuanghuo1.mp3",
       "audio/yelan/skill/fan_kuanghuo2.mp3",
+      "audio/yelan/skill/fan_kuanghuo3.mp3",
+      "audio/yelan/skill/fan_kuanghuo_tax_audio1.mp3",
+      "audio/yelan/skill/fan_kuanghuo_tax_audio2.mp3",
+      "audio/yelan/skill/fan_kuanghuo_number_audio1.mp3",
+      "audio/yelan/skill/fan_kuanghuo_number_audio2.mp3",
       "audio/yelan/skill/fan_yuantu1.mp3",
       "audio/yelan/skill/fan_yuantu2.mp3",
       "audio/yoimiya/die/fan_yoimiya.mp3",

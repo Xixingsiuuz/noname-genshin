@@ -1,0 +1,127 @@
+{
+  "page": "https://wiki.biligame.com/ys/玛拉妮语音",
+  "language": "zh-CN",
+  "verified_date": "2026-11-03",
+  "clips": {
+    "fan_polang_gain_voice1": {
+      "label": "元素战技·其一",
+      "text": "起乘！",
+      "url": "https://patchwiki.biligame.com/images/ys/8/88/7wd14yifiwt6m2pxrs3sk0f1mygxo72.mp3",
+      "bytes": 9464,
+      "original": "audio/mualani/originals/fan_polang_gain_voice1.mp3",
+      "output": "audio/mualani/skill/fan_polang_gain_voice1.mp3",
+      "output_bytes": 9464,
+      "trim_seconds": null
+    },
+    "fan_polang_gain_voice2": {
+      "label": "元素战技·其二",
+      "text": "甩尾。",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8b/i4otiromhdpdqu6n3dv6jzctyl4ggl8.mp3",
+      "bytes": 11206,
+      "original": "audio/mualani/originals/fan_polang_gain_voice2.mp3",
+      "output": "audio/mualani/skill/fan_polang_gain_voice2.mp3",
+      "output_bytes": 11206,
+      "trim_seconds": null
+    },
+    "fan_polang_gain_voice3": {
+      "label": "元素战技·其三",
+      "text": "加速咯！",
+      "url": "https://patchwiki.biligame.com/images/ys/c/cd/ks10qarik2qz12miiy37updvkwfandk.mp3",
+      "bytes": 16367,
+      "original": "audio/mualani/originals/fan_polang_gain_voice3.mp3",
+      "output": "audio/mualani/skill/fan_polang_gain_voice3.mp3",
+      "output_bytes": 16367,
+      "trim_seconds": null
+    },
+    "fan_polang_gain_voice4": {
+      "label": "元素战技·其四",
+      "text": "哟呼！",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c3/ktso6l8sv6qbbkgxgqb04sksjqf0057.mp3",
+      "bytes": 12936,
+      "original": "audio/mualani/originals/fan_polang_gain_voice4.mp3",
+      "output": "audio/mualani/skill/fan_polang_gain_voice4.mp3",
+      "output_bytes": 12936,
+      "trim_seconds": null
+    },
+    "fan_polang_gain_voice5": {
+      "label": "元素战技·其五",
+      "text": "超棒！",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2c/idhowfefldvx8b6kfi1v634hqw71b5i.mp3",
+      "bytes": 11434,
+      "original": "audio/mualani/originals/fan_polang_gain_voice5.mp3",
+      "output": "audio/mualani/skill/fan_polang_gain_voice5.mp3",
+      "output_bytes": 11434,
+      "trim_seconds": null
+    },
+    "fan_polang_gain_voice6": {
+      "label": "元素战技·其六",
+      "text": "浪来咯！",
+      "url": "https://patchwiki.biligame.com/images/ys/1/17/5vjuh333m0hx7eonukpv3oliqja77r3.mp3",
+      "bytes": 13824,
+      "original": "audio/mualani/originals/fan_polang_gain_voice6.mp3",
+      "output": "audio/mualani/skill/fan_polang_gain_voice6.mp3",
+      "output_bytes": 13824,
+      "trim_seconds": null
+    },
+    "fan_polang_release_voice1": {
+      "label": "元素爆发·其一",
+      "text": "巨浪——哗啦哗啦。",
+      "url": "https://patchwiki.biligame.com/images/ys/c/cb/mlb91r3ulrpt23w9oqeza2zhwmq8sm6.mp3",
+      "bytes": 25060,
+      "original": "audio/mualani/originals/fan_polang_release_voice1.mp3",
+      "output": "audio/mualani/skill/fan_polang_release_voice1.mp3",
+      "output_bytes": 25060,
+      "trim_seconds": null
+    },
+    "fan_polang_release_voice2": {
+      "label": "元素爆发·其二",
+      "text": "飞澜鲨鲨！",
+      "url": "https://patchwiki.biligame.com/images/ys/7/76/t5m40jalo2i6sdm7mrl4kaqwy9nw5k1.mp3",
+      "bytes": 19111,
+      "original": "audio/mualani/originals/fan_polang_release_voice2.mp3",
+      "output": "audio/mualani/skill/fan_polang_release_voice2.mp3",
+      "output_bytes": 19111,
+      "trim_seconds": null
+    },
+    "fan_polang_release_voice3": {
+      "label": "元素爆发·其三",
+      "text": "看我看我！祝你好运！",
+      "url": "https://patchwiki.biligame.com/images/ys/7/73/p4ariuzm97a5jd361ovq1a55y54i5q2.mp3",
+      "bytes": 29302,
+      "original": "audio/mualani/originals/fan_polang_release_voice3.mp3",
+      "output": "audio/mualani/skill/fan_polang_release_voice3.mp3",
+      "output_bytes": 29302,
+      "trim_seconds": null
+    },
+    "fan_mualani1": {
+      "label": "倒下·其一",
+      "text": "向导怎么能掉队…",
+      "url": "https://patchwiki.biligame.com/images/ys/6/69/o6ywfhbgvxdiq8bsbdojaaovvce7dez.mp3",
+      "bytes": 37238,
+      "original": "audio/mualani/originals/fan_mualani1.mp3",
+      "output": "audio/mualani/die/fan_mualani1.mp3",
+      "output_bytes": 37238,
+      "trim_seconds": null
+    },
+    "fan_mualani2": {
+      "label": "倒下·其二",
+      "text": "「我们不会孤军奋战」…",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2b/ehe1arj0gs494du2o28i8fnzaeioalo.mp3",
+      "bytes": 37621,
+      "original": "audio/mualani/originals/fan_mualani2.mp3",
+      "output": "audio/mualani/die/fan_mualani2.mp3",
+      "output_bytes": 37621,
+      "trim_seconds": null
+    },
+    "fan_mualani3": {
+      "label": "倒下·其三",
+      "text": "终点是…回家…",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f0/qkvwi4nnyd21u6ayxrp6w2t22jvmwzu.mp3",
+      "bytes": 34583,
+      "original": "audio/mualani/originals/fan_mualani3.mp3",
+      "output": "audio/mualani/die/fan_mualani3.mp3",
+      "output_bytes": 34583,
+      "trim_seconds": null
+    }
+  }
+}

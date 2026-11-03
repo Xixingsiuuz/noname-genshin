@@ -2,7 +2,10 @@ import { game, get, ui } from "../../../../noname.js";
 
 const mark = "fan_yilong";
 export default {
+  fan_yilong_voice: { audio: "ext:原神/audio/neuvillette/skill:3" },
+  fan_shenpan_voice: { audio: "ext:原神/audio/neuvillette/skill:3" },
   fan_yilong: {
+    audio: false,
     locked: true,
     marktext: "龙",
     intro: { name: "龙权", content: "mark", max: 9 },
@@ -23,6 +26,7 @@ export default {
             trigger.getParent("phaseDraw", true)?.player !== target)
             .reduce((sum, target) => sum + (trigger.getg?.(target)?.length || 0), 0),
             9 - player.countMark(mark)));
+          game.trySkillAudio("fan_yilong_voice", player, true, true);
         },
       },
       damage: {
@@ -35,11 +39,13 @@ export default {
         },
         async content(event, trigger, player) {
           player.addMark(mark, Math.min(trigger.num, 9 - player.countMark(mark)));
+          game.trySkillAudio("fan_yilong_voice", player, true, true);
         },
       },
     },
   },
   fan_shenpan: {
+    audio: false,
     enable: "phaseUse",
     usable: 2,
     direct: true,
@@ -73,6 +79,7 @@ export default {
       }
       player.line(target, "green");
       player.removeMark(mark, num);
+      game.trySkillAudio("fan_shenpan_voice", player, true, true);
       // custom 历史由引擎按回合分组，额外出牌阶段也计入本回合。
       player.getHistory("custom").push({ skill: "fan_shenpan", removed: num });
       const discarded = await target.chooseToDiscard("审判：弃置" + num + "张牌，或受到1点无来源伤害", num, "he")
@@ -83,6 +90,7 @@ export default {
     ai: { order: 8, result: { player: 1 } },
   },
   fan_leiyu: {
+    audio: "ext:原神/audio/neuvillette/skill:2",
     trigger: { player: "phaseJieshuBegin" },
     direct: true,
     filter(event, player) {

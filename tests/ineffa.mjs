@@ -6,7 +6,7 @@ const ui = { selected: { cards: [], buttons: [] }, discardPile: { childNodes: []
   create: { dialog: (title, list) => ({ names: list[0], add(cards) { this.materials = cards; } }) } };
 const get = { type: card => card.type, subtypes: card => [card.subtype],
   zhinangs: () => ["wuzhong", "guohe", "wuxie"], info: () => ({}) };
-const game = { checkMod: () => "unchanged", check: () => true };
+const game = { trySkillAudio() {}, checkMod: () => "unchanged", check: () => true };
 const lib = { filter: { selectTarget: card => card.name === "wuzhong" ? [-1, -1] : [1, 1] } };
 const status = {};
 const skills = new Function("lib", "game", "get", "ui", "_status", source.replace(/^import .*;\r?\n/, "").replace("export default", "return"))(lib, game, get, ui, status);
@@ -55,7 +55,7 @@ await Promise.resolve();
 assert.equal(confirmations, 1);
 delete status.event;
 assert.equal(charge, 1); // 所有选择均不扣蓄力，使用才消耗。
-backup.onuse({}, player);
+backup.onuse({ card: { name: "wuzhong" } }, player);
 assert.equal(charge, 0);
 assert.equal(miyuan.filter(context, player), false);
 assert.equal(backup.filterOk(), false);
