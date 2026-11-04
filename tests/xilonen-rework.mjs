@@ -1,0 +1,22 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const log=[],ui={selected:{cards:[],targets:[]}},lib={skill:{normal:{},limited:{limited:true},lord:{zhuSkill:true},internal:{charlotte:true}},translate:{}},players=[];
+const get={player:()=>owner,type:c=>c.type,info:k=>lib.skill[k],character:()=>['normal','limited','lord','internal'],translation:k=>k,skillRank:()=>3,value:()=>2,attitude:(a,b)=>b.enemy?-4:4};
+const names=['a','b','c'];names.randomGets=n=>names.slice(0,n);
+const game={filterPlayer:fn=>players.filter(fn),initCharacterList:()=>names,trySkillAudio:id=>log.push(id)};
+const skills=new Function('lib','game','get','ui',readFileSync(new URL('../character/skills/xilonen.js',import.meta.url),'utf8').replace(/^import .*;\r?\n/,'').replace('export default','return'))(lib,game,get,ui);
+const answer=result=>({set(){return this},async forResult(){return result}});
+function player(){return {storage:{},marks:{},hp:1,isZhu:false,awakenedSkills:[],cards:[],hasSkill:k=>false,isIn:()=>true,isDamaged:()=>true,getHandcardLimit:()=>4,hasCard(fn){return this.cards.some(fn)},getCards(){return this.cards},countCards(){return this.cards.length},countMark(k){return this.marks[k]||0},addMark(k,n){this.marks[k]=this.countMark(k)+n},addSkill(){},canRecast:()=>true,changeZhuanhuanji(k){this.storage[k]=!this.storage[k];log.push('flip')},async recast(c){this.cards.splice(this.cards.indexOf(c),1);log.push('recast')},async draw(){log.push('draw')},async recover(n=1){log.push(['recover',n])},chooseControl:()=>answer({index:1}),chooseTarget:()=>answer({bool:true,targets:[target]}),chooseButton(dialog){const rows=dialog.at(-1)[0];assert.deepEqual(rows.map(x=>x[0]),['normal','limited']);return answer({bool:true,links:['limited']})},awakenSkill(k){this.storage[k]=true;log.push('awaken')},logSkill(){log.push('log')},getStat:()=>({}),removeSkill(){},restoreSkill(){},async addSkills(k){log.push(['skill',k])}}}
+const owner=player(),target=player();players.push(owner,target);
+const card={type:'equip'};owner.cards=[card];ui.selected.cards=[card];ui.selected.targets=[target];assert.equal(skills.fan_duanyin.filterOk(),true);
+ui.selected.cards=[];assert.equal(skills.fan_duanyin.filterOk(),false);
+ui.selected.cards=[card];ui.selected.targets=[];assert.equal(skills.fan_duanyin.filterOk(),false);
+await skills.fan_duanyin.content({cards:[card],targets:[target]},null,owner);
+assert.equal(owner.storage.fan_duanyin,true);assert.equal(target.countMark('fan_duanyin_hand'),1);assert.equal(skills.fan_duanyin_hand.mod.maxHandcard(target,4),6);assert.deepEqual(log.slice(0,3),['flip','fan_duanyin','recast']);
+log.length=0;await skills.fan_duanyin.content({cards:[],targets:[]},null,owner);assert.equal(owner.storage.fan_duanyin,false);assert.deepEqual(log,['flip','fan_duanyin_yin_voice','draw',['recover',1]]);
+owner.storage.fan_duanyin=true;owner.hasSkill=k=>k==='fan_duanyin';target.cards=[card];target.give=async(c,to)=>{target.cards=[];to.cards=[c];log.push('give')};log.length=0;
+assert.equal(skills.fan_duanyin_gift.filter({},target),true);await skills.fan_duanyin_gift.content({cards:[card],targets:[owner]},null,target);assert.equal(owner.storage.fan_duanyin,false);assert.deepEqual(log,['give','flip','fan_duanyin_change_voice']);assert.equal(skills.fan_duanyin_gift.filter({},target),false);
+target.marks.fan_duanyin_rescue=2;target.hp=0;assert.equal(skills.fan_duanyin_rescue.filter({},target),false);target.hp=1;assert.equal(skills.fan_duanyin_rescue.filter({},target),true);log.length=0;await skills.fan_duanyin_rescue.content({},null,target);assert.deepEqual(log,[['recover',2]]);
+owner.chooseTarget=()=>answer({bool:false});log.length=0;await skills.fan_zhuhun.content({},null,owner);assert.deepEqual(log,[]);assert.equal(owner.storage.fan_zhuhun,undefined);
+owner.chooseTarget=()=>answer({bool:true,targets:[target]});await skills.fan_zhuhun.content({},null,owner);assert.equal(owner.storage.fan_zhuhun,true);assert.ok(log.some(x=>Array.isArray(x)&&x[0]==='skill'&&x[1]==='limited'));assert.equal(skills.fan_zhuhun.filter({},owner),false);const count=log.length;await skills.fan_zhuhun.content({},null,owner);assert.equal(log.length,count);
+console.log('PASS Xilonen: joint selection completeness, yang/yin conversion and order, gift flipping, cumulative hand/rescue bonuses, surviving dying only, limited cancel/repeat, skill exclusions and limited-skill grant. Simulation only.');

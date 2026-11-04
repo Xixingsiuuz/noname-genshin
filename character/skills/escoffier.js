@@ -2,6 +2,7 @@ import { game, get, lib, ui } from "../../../../noname.js";
 
 export default {
   fan_tiaoshuang: {
+    audio: "ext:原神/audio/escoffier/skill:3",
     trigger: { player: "phaseUseBegin" },
     direct: true,
     filter(event, player) {
@@ -44,12 +45,14 @@ export default {
       if (recover) await receiver.recover(1, player);
       if (receiver !== player && player.isIn() && (draw || recover)) {
         player.popup("乘势");
+        game.trySkillAudio("fan_tiaoshuang_chengshi", player, true, true);
         if (draw) await player.draw();
         if (recover && player.isIn()) await player.recover(1, player);
       }
     },
   },
   fan_xianggao: {
+    audio: "ext:原神/audio/escoffier/skill:3",
     trigger: { global: "phaseJieshuBegin" },
     forced: true,
     filter(event, player) {
@@ -65,5 +68,8 @@ export default {
     async content(event, trigger, player) {
       await trigger.player.draw();
     },
+  },
+  fan_tiaoshuang_chengshi: {
+    audio: "ext:原神/audio/escoffier/skill:4",
   },
 };

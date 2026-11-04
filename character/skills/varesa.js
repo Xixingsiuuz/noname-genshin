@@ -15,7 +15,10 @@ export function getShanlieCounts() {
 }
 
 export default {
+  fan_shanlie_damage_voice: { audio: "ext:原神/audio/varesa/skill:3" },
+  fan_shanlie_recover_voice: { audio: "ext:原神/audio/varesa/skill:2" },
   fan_shanlie: {
+    audio: false,
     trigger: { player: "phaseJieshuBegin" },
     direct: true,
     filter() {
@@ -57,7 +60,17 @@ export default {
         pending.push({ mode, targets: selection.targets.slice().sortBySeat() });
       }
       // 伤害及其濒死救援完整结算后再回复，离场目标不再结算。
+      let previousVoice = Promise.resolve();
       for (const { mode, targets } of pending) {
+        if (!targets.some(target => target.isIn())) continue;
+        await previousVoice;
+        const audio = game.trySkillAudio(mode === "造成伤害" ? "fan_shanlie_damage_voice" : "fan_shanlie_recover_voice", player, true);
+        previousVoice = audio && !audio.ended ? new Promise(resolve => {
+          const finish = () => { clearTimeout(timer); resolve(); };
+          const timer = setTimeout(finish, 10000);
+          audio.addEventListener("ended", finish, { once: true });
+          audio.addEventListener("error", finish, { once: true });
+        }) : Promise.resolve();
         player.line(targets, mode === "造成伤害" ? "thunder" : "green");
         for (const target of targets) {
           if (!target.isIn()) continue;
@@ -68,6 +81,7 @@ export default {
     },
   },
   fan_haoyan: {
+    audio: "ext:原神/audio/varesa/skill:2",
     trigger: { player: "phaseDrawBegin2" },
     forced: true,
     filter: (event, player) => !event.numFixed && player.hp > 0,

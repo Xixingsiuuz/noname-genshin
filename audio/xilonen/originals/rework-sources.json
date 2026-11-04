@@ -1,0 +1,20 @@
+{
+  "rest": {
+    "label": "闲聊·休息时间",
+    "url": "https://patchwiki.biligame.com/images/ys/4/46/34xv9261kqaiu1soplnf12n4v3cyqcb.mp3",
+    "text": "奔波这么久，也该歇一歇了…就在这坐一会吧。",
+    "bytes": 60325
+  },
+  "sun": {
+    "label": "阳光很好…",
+    "url": "https://patchwiki.biligame.com/images/ys/a/ac/9r3yw53w4hj6qwqu3tk6s4pcs0hjbhf.mp3",
+    "text": "呼啊…睡个午觉吧。欸？我的墨镜去哪了。",
+    "bytes": 63983
+  },
+  "worry": {
+    "label": "希诺宁的烦恼…",
+    "url": "https://patchwiki.biligame.com/images/ys/6/6a/1a5uxsfiaf6c4iyqank0ow8a0o81xaa.mp3",
+    "text": "在和人谈锻造委托的时候，我最怕听见一句话：「这件事既不紧急，也不重要，听你安排，尽快就好。」在我的工作经验中，这句话一般就等于说：「我随时都可能来催你。」唉，想想就头痛，我还是再睡会吧。",
+    "bytes": 195570
+  }
+}

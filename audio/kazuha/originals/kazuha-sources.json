@@ -1,0 +1,174 @@
+{
+  "page": "https://wiki.biligame.com/ys/枫原万叶语音",
+  "clips": {
+    "fan_jilv1": {
+      "label": "闲聊·剑技",
+      "url": "https://patchwiki.biligame.com/images/ys/d/da/3ysor0b5fq40jtyqscs9lgkpiib8t1o.mp3",
+      "text": "飘摇风雨中，睹物思故乡。",
+      "bytes": 398990,
+      "original": "audio/kazuha/originals/fan_jilv1.mp3",
+      "output": "audio/kazuha/skill/fan_jilv1.mp3",
+      "trim_seconds": [
+        0.25,
+        4.0
+      ],
+      "output_bytes": 55681,
+      "sha256": "e4fa5c97e1b1c6274eece2fd678ab04e5deee3ca26f4b4977456dbfe749c1794"
+    },
+    "fan_jilv2": {
+      "label": "有什么想要分享·枫叶",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8b/s4goev4tdqxj3aqghmxfu8wl1mqgq2n.mp3",
+      "text": "深山踏红叶，耳畔闻鹿鸣。",
+      "bytes": 463877,
+      "original": "audio/kazuha/originals/fan_jilv2.mp3",
+      "output": "audio/kazuha/skill/fan_jilv2.mp3",
+      "trim_seconds": [
+        0,
+        4.1
+      ],
+      "output_bytes": 59993,
+      "sha256": "40995731abf632325489b377c1863edeb821f87962446ccb3e8acad36dc67c15"
+    },
+    "fan_zhenxiu1": {
+      "label": "关于雷电将军…",
+      "url": "https://patchwiki.biligame.com/images/ys/9/9a/lmu07sstxa9mx09u35qnafqxewlh7u7.mp3",
+      "text": "没有任何人有资格剥夺他人的愿望，即便是「神」也不行。",
+      "bytes": 1438767,
+      "original": "audio/kazuha/originals/fan_zhenxiu1.mp3",
+      "output": "audio/kazuha/skill/fan_zhenxiu1.mp3",
+      "trim_seconds": [
+        29.85,
+        36.2
+      ],
+      "output_bytes": 88756,
+      "sha256": "53585792ff597672a15501868ddb1338f8ed5f882cbd796cc68aa359a65e2bdb"
+    },
+    "fan_zhenxiu2": {
+      "label": "关于「神之眼」…",
+      "url": "https://patchwiki.biligame.com/images/ys/e/e1/mvby29b129ok7d8wqvdbra7jh3ua7da.mp3",
+      "text": "神之眼象征的是凡人继续向前的愿望，而我们武士的底气，一直都是手里的刀。",
+      "bytes": 590309,
+      "original": "audio/kazuha/originals/fan_zhenxiu2.mp3",
+      "output": "audio/kazuha/skill/fan_zhenxiu2.mp3",
+      "trim_seconds": [
+        6.1,
+        14.8
+      ],
+      "output_bytes": 125033,
+      "sha256": "beea127f3a24f69fd83da86b361f114cd641828ebe5fbd24d2deed8296d4b9cd"
+    },
+    "fan_jilv_give1": {
+      "label": "打开宝箱",
+      "url": "https://patchwiki.biligame.com/images/ys/d/df/gqbx0tn6itcedqyr7mv4oetek8kjh0h.mp3",
+      "text": "令人快慰。",
+      "bytes": 88758,
+      "original": "audio/kazuha/originals/fan_jilv_give1.mp3",
+      "output": "audio/kazuha/skill/fan_jilv_give1.mp3",
+      "trim_seconds": null,
+      "output_bytes": 88758,
+      "sha256": "2ac0a5aff2b0b54b064e3326b249c21dbad6c8048382016cd88305b44ba75175"
+    },
+    "fan_jilv_give2": {
+      "label": "打开宝箱·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/d/df/gqbx0tn6itcedqyr7mv4oetek8kjh0h.mp3",
+      "text": "天地的馈赠。",
+      "bytes": 88758,
+      "original": "audio/kazuha/originals/fan_jilv_give2.mp3",
+      "output": "audio/kazuha/skill/fan_jilv_give2.mp3",
+      "trim_seconds": null,
+      "output_bytes": 88758,
+      "sha256": "2ac0a5aff2b0b54b064e3326b249c21dbad6c8048382016cd88305b44ba75175"
+    },
+    "fan_jilv_give3": {
+      "label": "打开宝箱·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/d/df/gqbx0tn6itcedqyr7mv4oetek8kjh0h.mp3",
+      "text": "偶遇珍宝，是云游四方的妙趣之一。",
+      "bytes": 88758,
+      "original": "audio/kazuha/originals/fan_jilv_give3.mp3",
+      "output": "audio/kazuha/skill/fan_jilv_give3.mp3",
+      "trim_seconds": null,
+      "output_bytes": 88758,
+      "sha256": "2ac0a5aff2b0b54b064e3326b249c21dbad6c8048382016cd88305b44ba75175"
+    },
+    "fan_huanlei1": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/b/b6/48hsztd2vj34dpmqvda6oasmpy11a0r.mp3",
+      "text": "云隐…雁鸣！",
+      "bytes": 95028,
+      "original": "audio/kazuha/originals/fan_huanlei1.mp3",
+      "output": "audio/kazuha/skill/fan_huanlei1.mp3",
+      "trim_seconds": null,
+      "output_bytes": 95028,
+      "sha256": "49351f2521d9f03e9955465879d6668cc7e57a7a36e62d13c0d3f5ef2184ba7e"
+    },
+    "fan_huanlei2": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/6/64/pzy6yunng8cskb5vlpi2tr8tkvgllaq.mp3",
+      "text": "风共云行。",
+      "bytes": 66816,
+      "original": "audio/kazuha/originals/fan_huanlei2.mp3",
+      "output": "audio/kazuha/skill/fan_huanlei2.mp3",
+      "trim_seconds": null,
+      "output_bytes": 66816,
+      "sha256": "2c844e0c8f952f0796047f3a2ae5af9a0a212e0f54057692a5578446d202cec3"
+    },
+    "fan_huanlei3": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3e/fulf74ajo4vvs5urgn3v78kcdgagujr.mp3",
+      "text": "可叹，落叶飘零。",
+      "bytes": 106522,
+      "original": "audio/kazuha/originals/fan_huanlei3.mp3",
+      "output": "audio/kazuha/skill/fan_huanlei3.mp3",
+      "trim_seconds": null,
+      "output_bytes": 106522,
+      "sha256": "f720c3f139fc7ba4a64070b824d643f002b783e38720dfccd1dbaba003373228"
+    },
+    "fan_kazuha1": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/4/41/823a8rgjo7jr432rlifyrwbiufchuqe.mp3",
+      "text": "深感遗憾…",
+      "bytes": 138914,
+      "original": "audio/kazuha/originals/fan_kazuha1.mp3",
+      "output": "audio/kazuha/die/fan_kazuha1.mp3",
+      "trim_seconds": null,
+      "output_bytes": 138914,
+      "sha256": "034de9050b6f842a4cf2bbb8cf1eaedecff90762259eb20364a9a10345569747"
+    },
+    "fan_kazuha2": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/d/db/gxtfg2yr9kbhbd2knf12jje7gp2cggi.mp3",
+      "text": "下次…绝不会再…",
+      "bytes": 127420,
+      "original": "audio/kazuha/originals/fan_kazuha2.mp3",
+      "output": "audio/kazuha/die/fan_kazuha2.mp3",
+      "trim_seconds": null,
+      "output_bytes": 127420,
+      "sha256": "a4b3f16e7241db93ff99ce967e4388426ed36e6a1022a2ef31f53a228afc2b6d"
+    },
+    "fan_kazuha3": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a8/5yxmkw6yqjp223efw61bv0ifoyj81z1.mp3",
+      "text": "结束了吗…",
+      "bytes": 120105,
+      "original": "audio/kazuha/originals/fan_kazuha3.mp3",
+      "output": "audio/kazuha/die/fan_kazuha3.mp3",
+      "trim_seconds": null,
+      "output_bytes": 120105,
+      "sha256": "940f00731769f1453720ead55333bd639497045860edf61d5df4abfcf2a5f14a"
+    },
+    "fan_jilv3": {
+      "label": "有什么想要分享·枫叶",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8b/s4goev4tdqxj3aqghmxfu8wl1mqgq2n.mp3",
+      "text": "我很喜欢枫叶，可惜枫叶红时总多离别。",
+      "bytes": 463877,
+      "original": "audio/kazuha/originals/fan_jilv2.mp3",
+      "output": "audio/kazuha/skill/fan_jilv3.mp3",
+      "trim_seconds": [
+        5.25,
+        10.8
+      ],
+      "output_bytes": 79338,
+      "sha256": "c56c0b1ce6ed9d9e86147c7724b9862f5e3027ec88060ea6f5a6871b858fab03"
+    }
+  }
+}

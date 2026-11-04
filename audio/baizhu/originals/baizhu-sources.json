@@ -1,0 +1,194 @@
+{
+  "page": "https://wiki.biligame.com/ys/白术语音",
+  "clips": {
+    "fan_wenbu1": {
+      "label": "元素战技·其一",
+      "text": "长生：得治治。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/VO_ZH_Baizhu_Elemental_Skill_1_01.ogg",
+      "bytes": 27207,
+      "original": "audio/baizhu/originals/fan_wenbu1.ogg",
+      "output": "audio/baizhu/skill/fan_wenbu1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "05a582cb6783ca7a455a7ce59cd204ccad3b33ae13b646dbb44330c3eeacf756",
+      "media_file": "VO_ZH_Baizhu_Elemental_Skill_1_01.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Baizhu/Voice-Overs/Chinese",
+      "output_bytes": 10244
+    },
+    "fan_wenbu2": {
+      "label": "元素战技·其二",
+      "text": "良药苦口啊。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/VO_ZH_Baizhu_Elemental_Skill_1_02.ogg",
+      "bytes": 42603,
+      "original": "audio/baizhu/originals/fan_wenbu2.ogg",
+      "output": "audio/baizhu/skill/fan_wenbu2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "1ac19722e695f1fae5101f1a269d5ae434d7615a35ef004e5e6bf06619641362",
+      "media_file": "VO_ZH_Baizhu_Elemental_Skill_1_02.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Baizhu/Voice-Overs/Chinese",
+      "output_bytes": 16652
+    },
+    "fan_wenbu3": {
+      "label": "元素战技·其三",
+      "text": "是药三分毒。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/57/VO_ZH_Baizhu_Elemental_Skill_1_03.ogg",
+      "bytes": 47818,
+      "original": "audio/baizhu/originals/fan_wenbu3.ogg",
+      "output": "audio/baizhu/skill/fan_wenbu3.mp3",
+      "trim_seconds": null,
+      "original_sha256": "ab072153bb02d54ccb52afe221e593bbc67f84b74d95c38acbcdf44471594913",
+      "media_file": "VO_ZH_Baizhu_Elemental_Skill_1_03.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Baizhu/Voice-Overs/Chinese",
+      "output_bytes": 19724
+    },
+    "fan_shiqi1": {
+      "label": "元素爆发·其一",
+      "text": "病宜速救。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/VO_ZH_Baizhu_Elemental_Burst_01.ogg",
+      "bytes": 42993,
+      "original": "audio/baizhu/originals/fan_shiqi1.ogg",
+      "output": "audio/baizhu/skill/fan_shiqi1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "cf8453a626056d40e6abd4a20e0f6caa7a13f9b1d2d743adc7bbba66bb301f97",
+      "media_file": "VO_ZH_Baizhu_Elemental_Burst_01.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Baizhu/Voice-Overs/Chinese",
+      "output_bytes": 15500
+    },
+    "fan_shiqi2": {
+      "label": "元素爆发·其二",
+      "text": "须知惜命。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2d/VO_ZH_Baizhu_Elemental_Burst_02.ogg",
+      "bytes": 49742,
+      "original": "audio/baizhu/originals/fan_shiqi2.ogg",
+      "output": "audio/baizhu/skill/fan_shiqi2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "89923b449244192d7108a851957bd8ceaa2db72c4e690d7b23956afb4cd85c28",
+      "media_file": "VO_ZH_Baizhu_Elemental_Burst_02.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Baizhu/Voice-Overs/Chinese",
+      "output_bytes": 20636
+    },
+    "fan_shiqi3": {
+      "label": "元素爆发·其三",
+      "text": "且尝，苦尽甘来。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a3/VO_ZH_Baizhu_Elemental_Burst_03.ogg",
+      "bytes": 81794,
+      "original": "audio/baizhu/originals/fan_shiqi3.ogg",
+      "output": "audio/baizhu/skill/fan_shiqi3.mp3",
+      "trim_seconds": null,
+      "original_sha256": "baa91096ec843397caabef059a5ec450057b2e8e729b0ddf5d8f93547f663258",
+      "media_file": "VO_ZH_Baizhu_Elemental_Burst_03.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Baizhu/Voice-Overs/Chinese",
+      "output_bytes": 34460
+    },
+    "fan_baizhu1": {
+      "label": "倒下·其一",
+      "text": "人死灯灭…",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/VO_ZH_Baizhu_Fallen_01.ogg",
+      "bytes": 73496,
+      "original": "audio/baizhu/originals/fan_baizhu1.ogg",
+      "output": "audio/baizhu/die/fan_baizhu1.mp3",
+      "trim_seconds": null,
+      "original_sha256": "cf5d3b2eb2537f1be7d5b91211e51a186eff353c62f9ff77a9d0e50ac1faa32d",
+      "media_file": "VO_ZH_Baizhu_Fallen_01.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Baizhu/Voice-Overs/Chinese",
+      "output_bytes": 27188
+    },
+    "fan_baizhu2": {
+      "label": "倒下·其二",
+      "text": "长生，抱歉…",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e0/VO_ZH_Baizhu_Fallen_02.ogg",
+      "bytes": 75844,
+      "original": "audio/baizhu/originals/fan_baizhu2.ogg",
+      "output": "audio/baizhu/die/fan_baizhu2.mp3",
+      "trim_seconds": null,
+      "original_sha256": "8ff69fc13a09ab5f005f90f2026020f615104a3e76facb0bd752afc1067c231c",
+      "media_file": "VO_ZH_Baizhu_Fallen_02.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Baizhu/Voice-Overs/Chinese",
+      "output_bytes": 26276
+    },
+    "fan_baizhu3": {
+      "label": "倒下·其三",
+      "text": "愧为医者啊…",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/VO_ZH_Baizhu_Fallen_03.ogg",
+      "bytes": 56122,
+      "original": "audio/baizhu/originals/fan_baizhu3.ogg",
+      "output": "audio/baizhu/die/fan_baizhu3.mp3",
+      "trim_seconds": null,
+      "original_sha256": "6392d56705cd9b08a15cf76a2c75b6cc926becb6fd6fb2127a37191a17d684cc",
+      "media_file": "VO_ZH_Baizhu_Fallen_03.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Baizhu/Voice-Overs/Chinese",
+      "output_bytes": 20756
+    },
+    "vision": {
+      "label": "关于「神之眼」…",
+      "text": "呵呵，神也允许我这狂妄之人探索生死之道呢。这神之眼来得正好，多谢了。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/df/VO_ZH_Baizhu_About_the_Vision.ogg",
+      "bytes": 300865,
+      "original": "audio/baizhu/originals/vision.ogg",
+      "output": null,
+      "trim_seconds": null,
+      "original_sha256": "181783a60d3bbab6ff513e2f9c68d0d0e2a42c2ceab34f67ae7fdd641ef78b76",
+      "media_file": "VO_ZH_Baizhu_About_the_Vision.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Baizhu/Voice-Overs/Chinese"
+    },
+    "tao": {
+      "label": "闲聊·天道",
+      "text": "生死有道，天行有常…呵呵，不试一试，谁能知道这天道的边界在哪里呢？",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/VO_ZH_Baizhu_Chat_-_Natural_Laws.ogg",
+      "bytes": 308828,
+      "original": "audio/baizhu/originals/tao.ogg",
+      "output": null,
+      "trim_seconds": null,
+      "original_sha256": "a5827d792db2ec441dc196662f5635b75aabfdb4983d2df646af1a63060703b5",
+      "media_file": "VO_ZH_Baizhu_Chat_-_Natural_Laws.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Baizhu/Voice-Overs/Chinese"
+    },
+    "fan_tongxuan1": {
+      "label": "关于「神之眼」…",
+      "text": "神也允许我这狂妄之人探索生死之道呢。",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/df/VO_ZH_Baizhu_About_the_Vision.ogg",
+      "bytes": 300865,
+      "original": "audio/baizhu/originals/vision.ogg",
+      "output": "audio/baizhu/skill/fan_tongxuan1.mp3",
+      "trim_seconds": [
+        1.8,
+        6.05
+      ],
+      "original_sha256": "181783a60d3bbab6ff513e2f9c68d0d0e2a42c2ceab34f67ae7fdd641ef78b76",
+      "media_file": "VO_ZH_Baizhu_About_the_Vision.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Baizhu/Voice-Overs/Chinese",
+      "output_bytes": 59228
+    },
+    "fan_tongxuan2": {
+      "label": "闲聊·天道",
+      "text": "生死有道，天行有常…",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/VO_ZH_Baizhu_Chat_-_Natural_Laws.ogg",
+      "bytes": 308828,
+      "original": "audio/baizhu/originals/tao.ogg",
+      "output": "audio/baizhu/skill/fan_tongxuan2.mp3",
+      "trim_seconds": [
+        0,
+        3.6
+      ],
+      "original_sha256": "a5827d792db2ec441dc196662f5635b75aabfdb4983d2df646af1a63060703b5",
+      "media_file": "VO_ZH_Baizhu_Chat_-_Natural_Laws.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Baizhu/Voice-Overs/Chinese",
+      "output_bytes": 43700
+    },
+    "fan_tongxuan3": {
+      "label": "闲聊·天道",
+      "text": "呵呵，不试一试，谁能知道这天道的边界在哪里呢？",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/VO_ZH_Baizhu_Chat_-_Natural_Laws.ogg",
+      "bytes": 308828,
+      "original": "audio/baizhu/originals/tao.ogg",
+      "output": "audio/baizhu/skill/fan_tongxuan3.mp3",
+      "trim_seconds": [
+        4.1,
+        10.12
+      ],
+      "original_sha256": "a5827d792db2ec441dc196662f5635b75aabfdb4983d2df646af1a63060703b5",
+      "media_file": "VO_ZH_Baizhu_Chat_-_Natural_Laws.ogg",
+      "media_source_page": "https://genshin-impact.fandom.com/wiki/Baizhu/Voice-Overs/Chinese",
+      "output_bytes": 78932
+    }
+  }
+}

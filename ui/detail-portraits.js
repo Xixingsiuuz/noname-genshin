@@ -17,6 +17,7 @@ export function installDetailPortraits(ui, lib) {
     const character = function (...args) {
       const node = preset.apply(this, args);
       if (["fan_sandrone", "fan_sp_sandrone"].includes(node?.link)) node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/sandrone-select.png")`;
+      if (node?.link === "fan_re_zhongli") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/zhongli-rework-select.png")`;
       if (node?.link === "fan_linnea") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/linnea-select.png")`;
       if (node?.link === "fan_nicole") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/nicole-select.png")`;
       if (node?.link === "fan_citlali") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/citlali-select.png")`;
@@ -34,6 +35,7 @@ export function installDetailPortraits(ui, lib) {
   }
   const detailImages = {
     ...Object.fromEntries(Object.entries(originalPortraits).map(([id, path]) => [id, `../${path.slice("image/character/".length)}`])),
+    fan_re_zhongli: "zhongli-rework-detail.png",
     fan_sp_sandrone: "sandrone-detail.png",
     fan_sandrone: "sandrone-detail.png",
     fan_linnea: "linnea-detail.png",
@@ -84,6 +86,8 @@ export function installDetailPortraits(ui, lib) {
         portrait.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/${detailImages[args[0]]}")`;
         portrait.style.backgroundSize = "cover";
         portrait.style.backgroundPosition = "center top";
+        // 镜头右移5个显示像素，即画面向左移动5px，不改变大图比例。
+        if (args[0] === "fan_re_zhongli") portrait.style.backgroundPosition = "calc(50% - 5px) top";
         if (args[0] === "fan_linnea") {
           portrait.style.backgroundSize = "auto 135%";
           portrait.style.backgroundPosition = "0% 32%";

@@ -1,0 +1,100 @@
+{
+  "clips": {
+    "fan_shengyong1": {
+      "url": "https://patchwiki.biligame.com/images/ys/4/41/3bsr73vxegtng27ng9dbop37ru7lj4z.mp3",
+      "text": "如月辉绽放。",
+      "original": "audio/lauma/originals/source-04.mp3",
+      "bytes": 17179,
+      "label": "元素战技·其四",
+      "output": "audio/lauma/skill/fan_shengyong1.mp3"
+    },
+    "fan_shengyong2": {
+      "url": "https://patchwiki.biligame.com/images/ys/f/f9/kgfkwj99b8emij6n3csnlgl9hugicp8.mp3",
+      "text": "林风之颂。",
+      "original": "audio/lauma/originals/source-05.mp3",
+      "bytes": 15131,
+      "label": "元素战技·其五",
+      "output": "audio/lauma/skill/fan_shengyong2.mp3"
+    },
+    "fan_shengyong3": {
+      "url": "https://patchwiki.biligame.com/images/ys/d/de/sfgyvbw40wr96bfmcmal7gmutp98mxe.mp3",
+      "text": "带去我的祝福。",
+      "original": "audio/lauma/originals/source-06.mp3",
+      "bytes": 17610,
+      "label": "元素战技·其六",
+      "output": "audio/lauma/skill/fan_shengyong3.mp3"
+    },
+    "fan_shengyong_draw1": {
+      "url": "https://patchwiki.biligame.com/images/ys/1/1b/ldvxcogjthktq9rs8u7unxa3w1futhz.mp3",
+      "text": "苍林的守护。",
+      "original": "audio/lauma/originals/source-01.mp3",
+      "bytes": 15930,
+      "label": "元素战技·其一",
+      "output": "audio/lauma/skill/fan_shengyong_draw1.mp3"
+    },
+    "fan_shengyong_draw2": {
+      "url": "https://patchwiki.biligame.com/images/ys/b/b8/h7y301uhfaf3uusf3qxt8qe7sairxzj.mp3",
+      "text": "迷途之子啊…",
+      "original": "audio/lauma/originals/source-02.mp3",
+      "bytes": 16462,
+      "label": "元素战技·其二",
+      "output": "audio/lauma/skill/fan_shengyong_draw2.mp3"
+    },
+    "fan_shengyong_draw3": {
+      "url": "https://patchwiki.biligame.com/images/ys/5/5e/ou4syvdpn91cnpo1u5t8tbubniwk38h.mp3",
+      "text": "去吧。",
+      "original": "audio/lauma/originals/source-03.mp3",
+      "bytes": 10215,
+      "label": "元素战技·其三",
+      "output": "audio/lauma/skill/fan_shengyong_draw3.mp3"
+    },
+    "fan_daoge1": {
+      "url": "https://patchwiki.biligame.com/images/ys/6/69/p9kfd7zn1uhepo0plo6jk4epmnc53m7.mp3",
+      "text": "愿霜月如故。",
+      "original": "audio/lauma/originals/source-07.mp3",
+      "bytes": 18909,
+      "label": "元素爆发·其一",
+      "output": "audio/lauma/skill/fan_daoge1.mp3"
+    },
+    "fan_daoge2": {
+      "url": "https://patchwiki.biligame.com/images/ys/4/4c/m6c6hyhmhbxqepuw8liiom1hb6b7bug.mp3",
+      "text": "愿林野如初。",
+      "original": "audio/lauma/originals/source-08.mp3",
+      "bytes": 19582,
+      "label": "元素爆发·其二",
+      "output": "audio/lauma/skill/fan_daoge2.mp3"
+    },
+    "fan_daoge3": {
+      "url": "https://patchwiki.biligame.com/images/ys/1/11/skj2x7ecjw7laagdpc7wwc1fakqqqza.mp3",
+      "text": "祈祷，为众心之所向。",
+      "original": "audio/lauma/originals/source-09.mp3",
+      "bytes": 29804,
+      "label": "元素爆发·其三",
+      "output": "audio/lauma/skill/fan_daoge3.mp3"
+    },
+    "fan_lauma1": {
+      "url": "https://patchwiki.biligame.com/images/ys/a/aa/jc0mn6kg8b4uc9e33bkyu48lv0ontrh.mp3",
+      "text": "深林啊，请收下，这折断的角冠…",
+      "original": "audio/lauma/originals/source-10.mp3",
+      "bytes": 49332,
+      "label": "倒下·其一",
+      "output": "audio/lauma/die/fan_lauma1.mp3"
+    },
+    "fan_lauma2": {
+      "url": "https://patchwiki.biligame.com/images/ys/e/e7/n48eqyyc0qhfvzhhmyasnq7btfbwn4c.mp3",
+      "text": "月汐的扰动，终于结束了…",
+      "original": "audio/lauma/originals/source-11.mp3",
+      "bytes": 35649,
+      "label": "倒下·其二",
+      "output": "audio/lauma/die/fan_lauma2.mp3"
+    },
+    "fan_lauma3": {
+      "url": "https://patchwiki.biligame.com/images/ys/4/4a/47d6evbgouk972iexdypud5uzb18fmn.mp3",
+      "text": "无月的夜幕…降临。",
+      "original": "audio/lauma/originals/source-12.mp3",
+      "bytes": 35376,
+      "label": "倒下·其三",
+      "output": "audio/lauma/die/fan_lauma3.mp3"
+    }
+  }
+}

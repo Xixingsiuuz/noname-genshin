@@ -36,6 +36,7 @@ export async function revealShengyong(player, onChoose) {
 
 export default {
   fan_shengyong: {
+    audio: "ext:原神/audio/lauma/skill:3",
     trigger: { player: "phaseUseBegin" },
     direct: true,
     filter: (event, player) => player.hasCard(card => !shown(card), "h"),
@@ -68,6 +69,7 @@ export default {
         },
       },
       draw: {
+        audio: "ext:原神/audio/lauma/skill:3",
         trigger: { global: "useCard" },
         forced: true,
         filter(event, player) {
@@ -92,6 +94,7 @@ export default {
     },
   },
   fan_daoge: {
+    audio: "ext:原神/audio/lauma/skill:3",
     trigger: {
       player: "loseAfter",
       global: ["gainAfter", "equipAfter", "addJudgeAfter", "loseAsyncAfter", "addToExpansionAfter"],

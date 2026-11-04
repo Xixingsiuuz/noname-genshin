@@ -34,6 +34,11 @@ lib.skill.rejiushi = { audio: 2 };
 const original = Audio.skill;
 const before = Object.fromEntries(Object.keys(lib.skill).map(id => [id, original.call(Audio, { skill: id }).fileList]));
 installSkillVoices(get);
+assert.deepEqual(skillVoiceGroups.fan_huanwu, ["fan_huanwu", "fan_huanwu_use_voice"]);
+for (const [skill, count] of [["fan_huanwu", 6], ["fan_miwen", 3], ["fan_wenbu", 3], ["fan_tongxuan", 3], ["fan_shiqi", 3]]) {
+  assert.equal(Audio.skill({ skill }).fileList.length, count, skill + " detail pool count");
+  assert.equal(Audio.skill({ skill }).textList.length, count, skill + " detail subtitle count");
+}
 for (const [id, count] of [["fan_huaqiu", 5], ["fan_wenshou", 8], ["fan_huanjing", 3]]) {
   assert.equal(Audio.skill({ skill: id }).fileList.length, count, id + " preview count");
   assert.ok(!Audio.skill({ skill: id }).textList.includes("此技能暂无语音。"));
@@ -70,10 +75,11 @@ for (const [id, files] of Object.entries(before)) {
 }
 const characters = loadedCharacters;
 for (const role of [...roles, "venti", "linnea"]) {
-  for (const id of characters["fan_" + role][3]) assert(id in skillVoiceGroups, role + ":" + id);
-  const die = characters["fan_" + role][4].find(tag => tag.startsWith("die:"));
+  const characterId = role === "zhongli_rework" ? "fan_re_zhongli" : "fan_" + role;
+  for (const id of characters[characterId][3]) assert(id in skillVoiceGroups, role + ":" + id);
+  const die = characters[characterId][4].find(tag => tag.startsWith("die:"));
   if (die) {
-    const audio = Audio.die({ player: "fan_" + role, info: die.slice(4) });
+    const audio = Audio.die({ player: characterId, info: die.slice(4) });
     assert.equal(audio.textList.length, audio.fileList.length, role + " death subtitles");
   }
 }

@@ -1,0 +1,646 @@
+{
+  "page": "https://wiki.biligame.com/ys/钟离语音",
+  "language": "zh-CN",
+  "verified_date": "2026-11-04",
+  "clips": {
+    "fan_re_dixin_give1": {
+      "label": "元素战技·其四",
+      "text": "俱收并蓄。",
+      "url": "https://patchwiki.biligame.com/images/ys/b/bb/e11pp449z14z20ylhl9zsu40mkjh2u8.mp3",
+      "bytes": 14686,
+      "original": "audio/zhongli_rework/originals/fan_re_dixin_give1.mp3",
+      "output": "audio/zhongli_rework/skill/fan_re_dixin_give1.mp3",
+      "output_bytes": 16508,
+      "trim_seconds": null,
+      "container": "ogg",
+      "volume": {
+        "id": "fan_re_dixin_give1",
+        "text": "俱收并蓄。",
+        "gain_db": -1.46,
+        "before": {
+          "lufs": -12.79,
+          "true_peak_dbtp": -2.99,
+          "mean_dbfs": -13.4,
+          "peak_dbfs": -3.0
+        },
+        "after": {
+          "lufs": -14.29,
+          "true_peak_dbtp": -4.46,
+          "mean_dbfs": -14.9,
+          "peak_dbfs": -4.5
+        }
+      },
+      "sha256": "3c4bbd79f97a448e59087031990c3fab5ed48bb009c3c1e2a2cfb3467d5a684b"
+    },
+    "fan_re_dixin_give2": {
+      "label": "元素战技·其五",
+      "text": "安如磐石。",
+      "url": "https://patchwiki.biligame.com/images/ys/7/7a/tm8o2vri1vzhqevyzc2k0wvu2mnz6aa.mp3",
+      "bytes": 17222,
+      "original": "audio/zhongli_rework/originals/fan_re_dixin_give2.mp3",
+      "output": "audio/zhongli_rework/skill/fan_re_dixin_give2.mp3",
+      "output_bytes": 20828,
+      "trim_seconds": null,
+      "container": "ogg",
+      "volume": {
+        "id": "fan_re_dixin_give2",
+        "text": "安如磐石。",
+        "gain_db": -1.03,
+        "before": {
+          "lufs": -13.22,
+          "true_peak_dbtp": -2.68,
+          "mean_dbfs": -13.5,
+          "peak_dbfs": -3.1
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -3.53,
+          "mean_dbfs": -14.5,
+          "peak_dbfs": -4.0
+        }
+      },
+      "sha256": "4c78d4f8599778b0a9285cf5fc35e95b17f4ff053bd3958c57267c5fdab04d72"
+    },
+    "fan_re_dixin_give3": {
+      "label": "元素战技·其六",
+      "text": "固若金汤。",
+      "url": "https://patchwiki.biligame.com/images/ys/e/ed/0j9q2hqo1d31p3onv4ugy5yv0ipk4v3.mp3",
+      "bytes": 15593,
+      "original": "audio/zhongli_rework/originals/fan_re_dixin_give3.mp3",
+      "output": "audio/zhongli_rework/skill/fan_re_dixin_give3.mp3",
+      "output_bytes": 17420,
+      "trim_seconds": null,
+      "container": "ogg",
+      "volume": {
+        "id": "fan_re_dixin_give3",
+        "text": "固若金汤。",
+        "gain_db": -0.94,
+        "before": {
+          "lufs": -13.31,
+          "true_peak_dbtp": -2.58,
+          "mean_dbfs": -12.5,
+          "peak_dbfs": -2.6
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -3.42,
+          "mean_dbfs": -13.4,
+          "peak_dbfs": -3.4
+        }
+      },
+      "sha256": "9e07c7c23666f746bf43c56134a012ef72ec9ebe35a606e0164d79883ad2137d"
+    },
+    "fan_re_dixin_remove1": {
+      "label": "元素爆发·其一",
+      "text": "天理长驱。",
+      "url": "https://patchwiki.biligame.com/images/ys/2/20/0fwho60u2plawwnva3kjst31nv3s9b3.mp3",
+      "bytes": 19171,
+      "original": "audio/zhongli_rework/originals/fan_re_dixin_remove1.mp3",
+      "output": "audio/zhongli_rework/skill/fan_re_dixin_remove1.mp3",
+      "output_bytes": 23468,
+      "trim_seconds": null,
+      "container": "ogg",
+      "volume": {
+        "id": "fan_re_dixin_remove1",
+        "text": "天理长驱。",
+        "gain_db": -0.65,
+        "before": {
+          "lufs": -13.6,
+          "true_peak_dbtp": -2.62,
+          "mean_dbfs": -13.3,
+          "peak_dbfs": -2.7
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -3.28,
+          "mean_dbfs": -13.9,
+          "peak_dbfs": -3.3
+        }
+      },
+      "sha256": "7474debb0bd92ba351f547d9977e02b874ab8011a48fc690460fa28074602b3c"
+    },
+    "fan_re_dixin_remove2": {
+      "label": "元素爆发·其二",
+      "text": "此乃天道。",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f0/dok1rthzjzz32zy67953ybv821jdnlf.mp3",
+      "bytes": 17545,
+      "original": "audio/zhongli_rework/originals/fan_re_dixin_remove2.mp3",
+      "output": "audio/zhongli_rework/skill/fan_re_dixin_remove2.mp3",
+      "output_bytes": 20684,
+      "trim_seconds": null,
+      "container": "ogg",
+      "volume": {
+        "id": "fan_re_dixin_remove2",
+        "text": "此乃天道。",
+        "gain_db": -0.75,
+        "before": {
+          "lufs": -13.5,
+          "true_peak_dbtp": -2.61,
+          "mean_dbfs": -13.4,
+          "peak_dbfs": -2.6
+        },
+        "after": {
+          "lufs": -14.22,
+          "true_peak_dbtp": -3.24,
+          "mean_dbfs": -14.1,
+          "peak_dbfs": -3.2
+        }
+      },
+      "sha256": "8e1ce40b7a3e8981a3359c0933e086080c615be5e862dc87a22d232cc3efeb02"
+    },
+    "fan_re_dixin_remove3": {
+      "label": "元素爆发·其三",
+      "text": "天动万象。",
+      "url": "https://patchwiki.biligame.com/images/ys/5/56/laajxu0h67asmm2hj4iqh9jfnesiz66.mp3",
+      "bytes": 18575,
+      "original": "audio/zhongli_rework/originals/fan_re_dixin_remove3.mp3",
+      "output": "audio/zhongli_rework/skill/fan_re_dixin_remove3.mp3",
+      "output_bytes": 20588,
+      "trim_seconds": null,
+      "container": "ogg",
+      "volume": {
+        "id": "fan_re_dixin_remove3",
+        "text": "天动万象。",
+        "gain_db": -0.56,
+        "before": {
+          "lufs": -13.69,
+          "true_peak_dbtp": -2.45,
+          "mean_dbfs": -13.6,
+          "peak_dbfs": -2.5
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -2.97,
+          "mean_dbfs": -14.1,
+          "peak_dbfs": -3.0
+        }
+      },
+      "sha256": "ed7260cbed4be784ffef473470f63f44417fd8fa710a3a74ceea3e1e2863ef1e"
+    },
+    "fan_re_xianyou1": {
+      "label": "闲聊·游览",
+      "text": "接下来想去哪里？如果想游历璃月名胜的话，我有一些不错的参考方案。",
+      "url": "https://patchwiki.biligame.com/images/ys/0/07/3l8b8qrhtsnn777ia3f650umf2rv1j5.ogg",
+      "bytes": 47629,
+      "original": "audio/zhongli_rework/originals/fan_re_xianyou1.ogg",
+      "output": "audio/zhongli_rework/skill/fan_re_xianyou1.mp3",
+      "output_bytes": 115748,
+      "trim_seconds": null,
+      "container": "ogg",
+      "volume": {
+        "id": "fan_re_xianyou1",
+        "text": "接下来想去哪里？如果想游历璃月名胜的话，我有一些不错的参考方案。",
+        "gain_db": 2.43,
+        "before": {
+          "lufs": -17.76,
+          "true_peak_dbtp": -3.93,
+          "mean_dbfs": -21.5,
+          "peak_dbfs": -4.0
+        },
+        "after": {
+          "lufs": -15.34,
+          "true_peak_dbtp": -1.67,
+          "mean_dbfs": -19.1,
+          "peak_dbfs": -1.7
+        }
+      },
+      "sha256": "2e71153f464ba0dae466cf81db6d71ee99e612f4abbf5c85ad332dd0f695fb3e"
+    },
+    "fan_re_xianyou2": {
+      "label": "闲聊·旅程",
+      "text": "旅程总有一天会迎来终点，不必匆忙。",
+      "url": "https://patchwiki.biligame.com/images/ys/2/27/t6so5b76ffd1o2gyc97ekiygua90inm.ogg",
+      "bytes": 29554,
+      "original": "audio/zhongli_rework/originals/fan_re_xianyou2.ogg",
+      "output": "audio/zhongli_rework/skill/fan_re_xianyou2.mp3",
+      "output_bytes": 70784,
+      "trim_seconds": null,
+      "container": "ogg",
+      "volume": {
+        "id": "fan_re_xianyou2",
+        "text": "旅程总有一天会迎来终点，不必匆忙。",
+        "gain_db": 2.8,
+        "before": {
+          "lufs": -17.05,
+          "true_peak_dbtp": -4.36,
+          "mean_dbfs": -19.9,
+          "peak_dbfs": -4.4
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -1.56,
+          "mean_dbfs": -17.1,
+          "peak_dbfs": -1.6
+        }
+      },
+      "sha256": "1bb6e45027c2dc472fde9f9b0e283baaa291213862ef6bf73d2ea74b9c2d2030"
+    },
+    "fan_re_zhongli1": {
+      "label": "倒下·其一",
+      "text": "啊，略感疲惫…",
+      "url": "https://patchwiki.biligame.com/images/ys/1/1c/ntm37n5x7w0dzzpxshbs451aqpcnffo.mp3",
+      "bytes": 24400,
+      "original": "audio/zhongli_rework/originals/fan_re_zhongli1.mp3",
+      "output": "audio/zhongli_rework/die/fan_re_zhongli1.mp3",
+      "output_bytes": 28844,
+      "trim_seconds": null,
+      "container": "ogg",
+      "volume": {
+        "id": "fan_re_zhongli1",
+        "text": "啊，略感疲惫…",
+        "gain_db": 2.88,
+        "before": {
+          "lufs": -20.47,
+          "true_peak_dbtp": -4.38,
+          "mean_dbfs": -20.3,
+          "peak_dbfs": -4.4
+        },
+        "after": {
+          "lufs": -17.58,
+          "true_peak_dbtp": -1.49,
+          "mean_dbfs": -17.5,
+          "peak_dbfs": -1.5
+        }
+      },
+      "sha256": "76e7530a65360cc82965177006defcfc1b69ad3351ac4b4320eac3d17d776d85"
+    },
+    "fan_re_zhongli2": {
+      "label": "倒下·其二",
+      "text": "让你看到，难堪的一面了啊。",
+      "url": "https://patchwiki.biligame.com/images/ys/0/05/botytxrmcxmcnpdq6qv29buurby13yk.mp3",
+      "bytes": 25373,
+      "original": "audio/zhongli_rework/originals/fan_re_zhongli2.mp3",
+      "output": "audio/zhongli_rework/die/fan_re_zhongli2.mp3",
+      "output_bytes": 30980,
+      "trim_seconds": null,
+      "container": "ogg",
+      "volume": {
+        "id": "fan_re_zhongli2",
+        "text": "让你看到，难堪的一面了啊。",
+        "gain_db": 3.36,
+        "before": {
+          "lufs": -17.93,
+          "true_peak_dbtp": -4.86,
+          "mean_dbfs": -17.0,
+          "peak_dbfs": -4.9
+        },
+        "after": {
+          "lufs": -14.57,
+          "true_peak_dbtp": -1.38,
+          "mean_dbfs": -13.6,
+          "peak_dbfs": -1.4
+        }
+      },
+      "sha256": "1c056e5e304c4c31ac350eae4b053b63eb6e1a0e24a33fda6d79a0e4db47545a"
+    },
+    "fan_re_zhongli3": {
+      "label": "倒下·其三",
+      "text": "磐石…也会归于尘土…",
+      "url": "https://patchwiki.biligame.com/images/ys/c/cb/nhjkuxxez8sgu7ds0uw7v6o4ucw62q9.mp3",
+      "bytes": 31558,
+      "original": "audio/zhongli_rework/originals/fan_re_zhongli3.mp3",
+      "output": "audio/zhongli_rework/die/fan_re_zhongli3.mp3",
+      "output_bytes": 39836,
+      "trim_seconds": null,
+      "container": "ogg",
+      "volume": {
+        "id": "fan_re_zhongli3",
+        "text": "磐石…也会归于尘土…",
+        "gain_db": 2.73,
+        "before": {
+          "lufs": -17.71,
+          "true_peak_dbtp": -4.23,
+          "mean_dbfs": -18.4,
+          "peak_dbfs": -4.6
+        },
+        "after": {
+          "lufs": -14.98,
+          "true_peak_dbtp": -1.76,
+          "mean_dbfs": -15.7,
+          "peak_dbfs": -1.8
+        }
+      },
+      "sha256": "6845a9468cdf97446b9f5e14a67d15f7d51e2f6fb1273bd0ec26ee6d8f0f9f0a"
+    },
+    "fan_dingqi_start1": {
+      "label": "突破的感受·合",
+      "text": "我这里有一份新的「契约」，不一起来看看么？",
+      "url": "https://patchwiki.biligame.com/images/ys/a/ad/svzpbta2jimqq8yvjjq7vqzzkfn9uyn.ogg",
+      "original": "audio/zhongli_rework/originals/fan_dingqi_start1.ogg",
+      "output": "audio/zhongli_rework/skill/fan_dingqi_start1.mp3",
+      "bytes": 89217,
+      "trim_seconds": [
+        9.1,
+        12.408
+      ],
+      "full_text": "不曾料想，放下「神之心」后，还能看到这种景色——感谢你，「朋友」...对了，我这里有一份新的「契约」，不一起来看看么？",
+      "volume": {
+        "id": "fan_dingqi_start1",
+        "text": "我这里有一份新的「契约」，不一起来看看么？",
+        "gain_db": 2.85,
+        "before": {
+          "lufs": -17.1,
+          "true_peak_dbtp": -5.4,
+          "mean_dbfs": -21.1,
+          "peak_dbfs": -6.0
+        },
+        "after": {
+          "lufs": -14.26,
+          "true_peak_dbtp": -2.71,
+          "mean_dbfs": -18.2,
+          "peak_dbfs": -3.1
+        }
+      },
+      "output_bytes": 61892,
+      "sha256": "ca35bf82b71de1dfb585acf0cddf26d2a7a609bc079b7cd7af24faec25ebf2d4"
+    },
+    "fan_dingqi_start2": {
+      "label": "关于我们·契约",
+      "text": "你我既有「契约」之交——那么凡在契约范围内的事，都可同我商量。",
+      "url": "https://patchwiki.biligame.com/images/ys/b/bd/imhvf935ulyhy80sv7n1jlahe69f7ge.ogg",
+      "original": "audio/zhongli_rework/originals/fan_dingqi_start2.ogg",
+      "output": "audio/zhongli_rework/skill/fan_dingqi_start2.mp3",
+      "bytes": 43212,
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_dingqi_start2",
+        "text": "你我既有「契约」之交——那么凡在契约范围内的事，都可同我商量。",
+        "gain_db": 2.97,
+        "before": {
+          "lufs": -17.22,
+          "true_peak_dbtp": -4.58,
+          "mean_dbfs": -20.8,
+          "peak_dbfs": -4.8
+        },
+        "after": {
+          "lufs": -14.34,
+          "true_peak_dbtp": -1.78,
+          "mean_dbfs": -17.9,
+          "peak_dbfs": -1.8
+        }
+      },
+      "output_bytes": 107972,
+      "sha256": "e9fcae0787f71afd76746bffd6fb642d154a851ddcb96ef8bfe484aba42ec74e"
+    },
+    "fan_dingqi_draw1": {
+      "label": "打开宝箱·其一",
+      "text": "遗珠弃璧，吉光片裘…",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6c/o9jbf9qdkym5lx2mzbobjbtetpjs4vy.mp3",
+      "original": "audio/zhongli_rework/originals/fan_dingqi_draw1.mp3",
+      "output": "audio/zhongli_rework/skill/fan_dingqi_draw1.mp3",
+      "bytes": 36331,
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_dingqi_draw1",
+        "text": "遗珠弃璧，吉光片裘…",
+        "gain_db": 2.38,
+        "before": {
+          "lufs": -19.14,
+          "true_peak_dbtp": -3.88,
+          "mean_dbfs": -19.3,
+          "peak_dbfs": -3.9
+        },
+        "after": {
+          "lufs": -16.75,
+          "true_peak_dbtp": -1.42,
+          "mean_dbfs": -16.9,
+          "peak_dbfs": -1.5
+        }
+      },
+      "output_bytes": 48188,
+      "sha256": "80f07fe63fae56af54d1297725323889fe5da632bfcce6815ae908f9b0eb2020"
+    },
+    "fan_dingqi_draw2": {
+      "label": "打开宝箱·其二",
+      "text": "偶遇之物，亦有风雅。",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2f/72xembx7n5hx2h5dh740zvyj4gvxq0q.mp3",
+      "original": "audio/zhongli_rework/originals/fan_dingqi_draw2.mp3",
+      "output": "audio/zhongli_rework/skill/fan_dingqi_draw2.mp3",
+      "bytes": 27232,
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_dingqi_draw2",
+        "text": "偶遇之物，亦有风雅。",
+        "gain_db": 2.24,
+        "before": {
+          "lufs": -18.43,
+          "true_peak_dbtp": -3.74,
+          "mean_dbfs": -18.3,
+          "peak_dbfs": -3.7
+        },
+        "after": {
+          "lufs": -16.22,
+          "true_peak_dbtp": -1.42,
+          "mean_dbfs": -16.1,
+          "peak_dbfs": -1.4
+        }
+      },
+      "output_bytes": 34700,
+      "sha256": "d994810d2fe8bfcdb0efe9c2c94a69ae5cb9940c57627c7aa190e38b3170fbc5"
+    },
+    "fan_dingqi_draw3": {
+      "label": "打开宝箱·其三",
+      "text": "不虚此行。",
+      "url": "https://patchwiki.biligame.com/images/ys/b/bd/kmeqf376yqho4ioluo4owcnfdy0s3z6.mp3",
+      "original": "audio/zhongli_rework/originals/fan_dingqi_draw3.mp3",
+      "output": "audio/zhongli_rework/skill/fan_dingqi_draw3.mp3",
+      "bytes": 14147,
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_dingqi_draw3",
+        "text": "不虚此行。",
+        "gain_db": 1.62,
+        "before": {
+          "lufs": -20.08,
+          "true_peak_dbtp": -3.12,
+          "mean_dbfs": -19.5,
+          "peak_dbfs": -3.1
+        },
+        "after": {
+          "lufs": -18.44,
+          "true_peak_dbtp": -1.49,
+          "mean_dbfs": -17.9,
+          "peak_dbfs": -1.5
+        }
+      },
+      "output_bytes": 16412,
+      "sha256": "1f9a00cb9ded84daf7ac073bba32a211c9de155ff0d66a28ef8fce1f1bac3268"
+    },
+    "fan_dingqi_prevent1": {
+      "label": "生命值低·其一",
+      "text": "你的实力我姑且认可。",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c4/jdedpojv2vb2jh9jfmbp0nmhlye5bad.mp3",
+      "original": "audio/zhongli_rework/originals/fan_dingqi_prevent1.mp3",
+      "output": "audio/zhongli_rework/skill/fan_dingqi_prevent1.mp3",
+      "bytes": 21831,
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_dingqi_prevent1",
+        "text": "你的实力我姑且认可。",
+        "gain_db": 0.54,
+        "before": {
+          "lufs": -14.79,
+          "true_peak_dbtp": -2.38,
+          "mean_dbfs": -14.6,
+          "peak_dbfs": -2.7
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -2.03,
+          "mean_dbfs": -14.1,
+          "peak_dbfs": -2.0
+        }
+      },
+      "output_bytes": 24716,
+      "sha256": "27b1cd8e8304e5b550398421f66deeb3e43f65ff81cabbef4d3e8d318e0ac9b1"
+    },
+    "fan_dingqi_prevent2": {
+      "label": "生命值低·其二",
+      "text": "哈，有点意思。",
+      "url": "https://patchwiki.biligame.com/images/ys/1/12/bzo4rc3pjgon8zrkxz38bqzdd16npsf.mp3",
+      "original": "audio/zhongli_rework/originals/fan_dingqi_prevent2.mp3",
+      "output": "audio/zhongli_rework/skill/fan_dingqi_prevent2.mp3",
+      "bytes": 23468,
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_dingqi_prevent2",
+        "text": "哈，有点意思。",
+        "gain_db": 1.46,
+        "before": {
+          "lufs": -16.52,
+          "true_peak_dbtp": -2.96,
+          "mean_dbfs": -17.0,
+          "peak_dbfs": -3.0
+        },
+        "after": {
+          "lufs": -15.05,
+          "true_peak_dbtp": -1.53,
+          "mean_dbfs": -15.5,
+          "peak_dbfs": -1.6
+        }
+      },
+      "output_bytes": 28988,
+      "sha256": "a4c581420c6f1cccc3c7916a2b4229ca1b9fdc31b04bbe64e02e14e9f4fc8017"
+    },
+    "fan_dingqi_prevent3": {
+      "label": "生命值低·其三",
+      "text": "不太擅长危机应对啊。",
+      "url": "https://patchwiki.biligame.com/images/ys/1/15/c9etv64037bdr3rieytaoduho2gapc5.mp3",
+      "original": "audio/zhongli_rework/originals/fan_dingqi_prevent3.mp3",
+      "output": "audio/zhongli_rework/skill/fan_dingqi_prevent3.mp3",
+      "bytes": 21912,
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_dingqi_prevent3",
+        "text": "不太擅长危机应对啊。",
+        "gain_db": -0.16,
+        "before": {
+          "lufs": -14.41,
+          "true_peak_dbtp": -1.34,
+          "mean_dbfs": -14.1,
+          "peak_dbfs": -1.3
+        },
+        "after": {
+          "lufs": -14.54,
+          "true_peak_dbtp": -1.52,
+          "mean_dbfs": -14.2,
+          "peak_dbfs": -1.5
+        }
+      },
+      "output_bytes": 27380,
+      "sha256": "b7efacdd8927b15837b1bee8e720a84f72712a116ffa7689f52172d555091b78"
+    },
+    "fan_dingqi_start3": {
+      "label": "用户指定录音",
+      "text": "契约既成，食言者当受食言之罚。",
+      "url": null,
+      "local_source": "C:\\Users\\22697\\Downloads\\钟离语音\\钟离，契约既成，食言者当受食言之罚.mp3",
+      "original": "audio/zhongli_rework/originals/钟离，契约既成，食言者当受食言之罚.mp3",
+      "output": "audio/zhongli_rework/skill/fan_dingqi_start3.mp3",
+      "bytes": 138385,
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_dingqi_start3",
+        "text": "契约既成，食言者当受食言之罚。",
+        "gain_db": -5.48,
+        "before": {
+          "lufs": -8.77,
+          "true_peak_dbtp": 0.05,
+          "mean_dbfs": -12.8,
+          "peak_dbfs": -0.2
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -5.47,
+          "mean_dbfs": -18.3,
+          "peak_dbfs": -5.6
+        }
+      },
+      "output_bytes": 108695,
+      "sha256": "6d9fc413fb37b04c3281cd62b727f655a93dcafe696c22b6661690f0ca60ad42"
+    }
+  },
+  "loudness_reference": {
+    "target_lufs": -14.25,
+    "references": [
+      {
+        "path": "audio/eula/skill/fan_langhua_high1.mp3",
+        "lufs": -12.1,
+        "true_peak_dbtp": -1.02,
+        "mean_dbfs": -12.5,
+        "peak_dbfs": -1.1
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_high2.mp3",
+        "lufs": -14.37,
+        "true_peak_dbtp": -1.53,
+        "mean_dbfs": -15.9,
+        "peak_dbfs": -1.6
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_low1.mp3",
+        "lufs": -12.6,
+        "true_peak_dbtp": -1.22,
+        "mean_dbfs": -15.1,
+        "peak_dbfs": -1.6
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_low2.mp3",
+        "lufs": -14.95,
+        "true_peak_dbtp": -1.98,
+        "mean_dbfs": -16.3,
+        "peak_dbfs": -2.0
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_mid1.mp3",
+        "lufs": -13.4,
+        "true_peak_dbtp": -1.64,
+        "mean_dbfs": -14.6,
+        "peak_dbfs": -1.7
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_mid2.mp3",
+        "lufs": -14.14,
+        "true_peak_dbtp": -0.38,
+        "mean_dbfs": -14.8,
+        "peak_dbfs": -0.4
+      },
+      {
+        "path": "audio/eula/skill/fan_langhua_start.mp3",
+        "lufs": -18.17,
+        "true_peak_dbtp": -3.32,
+        "mean_dbfs": -19.2,
+        "peak_dbfs": -3.4
+      },
+      {
+        "path": "audio/eula/die/fan_eula.mp3",
+        "lufs": -15.72,
+        "true_peak_dbtp": -0.95,
+        "mean_dbfs": -18.1,
+        "peak_dbfs": -1.1
+      }
+    ],
+    "method": "Per-source static gain only; no trim, speed change or synthesis; encoded true peak <= -1 dBTP.",
+    "limitations": "No manual listening, native UI or live match validation."
+  }
+}

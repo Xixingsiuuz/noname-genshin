@@ -58,6 +58,23 @@ characterTranslate.fan_eula = "优菈";
 
 export function createSkillTranslate() {
   return {
+    fan_re_dixin: "地心", fan_re_dixin_give: "地心·获得护甲", fan_re_dixin_remove: "地心·移除护甲",
+    fan_re_dixin_info: "出牌阶段限两次，你可以选择一项：1.失去1点体力，令你与一名角色各获得1点护甲；2.移除一名其他角色的护甲。",
+    fan_dingqi: "定契", fan_dingqi_contract: "契",
+    fan_dingqi_info: "准备阶段，你可以将一张牌置于一名角色的武将牌上，称为“契”。在该角色的以下时机，将这些“契”置入弃堆并执行对应效果：受到伤害时，防止此伤害；回合结束时，摸X张牌（X为其体力值且至多为5）。",
+    fan_re_xianyou: "闲游", fan_re_xianyou_info: "主公技，出牌阶段限一次，你可以弃置一名其他蜀势力角色区域内的一张牌。然后摸两张牌。",
+    "#fan_huanwu1": "我看懂了。",
+    "#fan_huanwu2": "别说谎。",
+    "#fan_huanwu3": "真言如影。",
+    "#fan_miwen1": "欺谎的唤声。",
+    "#fan_miwen2": "索见诸心。",
+    "#fan_miwen3": "如是观想，真谜具解。",
+    "#fan_nefer1:die": "黄沙…追上我了…",
+    "#fan_nefer2:die": "无解的…谜题…",
+    "#fan_nefer3:die": "能预见的…结局…",
+    "#fan_huanwu_use_voice1": "剖析时间。",
+    "#fan_huanwu_use_voice2": "原来如此。",
+    "#fan_huanwu_use_voice3": "说点真话。",
     fan_sp_xigou: "析构",
     fan_sp_xigou_info: "锁定技，你使用或打出非虚拟且非转化的牌结算后，记录此牌的点数，花色，类别。每名角色回合结束后，若你的记录包含全部：<br>点数，你随机获得所有点数的牌各一张；<br>花色，你随机获得所有花色的牌各一张；<br>类别，你随机获得所有类别的牌各一张；<br>那之后，清除对应的记录。",
     fan_sp_wanli: "万理",
@@ -259,10 +276,11 @@ export function createSkillTranslate() {
     visible_fan_huanwu: "幻舞明置",
     // 原生 gaintag 通过 innerHTML 渲染；将加伤提示固定在基础标签上方。
     fan_huanwu_bonus: '<span style="position:absolute;left:0;bottom:100%;white-space:nowrap">幻舞加伤</span>',
-    fan_huanwu_info: "出牌阶段开始时，你可以明置所有手牌，原本就明置的牌造成的伤害+1。那之后：本阶段你使用的前3张牌若为明置牌则无次数限制，并于结算后摸1张牌；此阶段结束时，若你于此阶段内使用的牌数为3且未造成过伤害，则你在本回合结束时仅一次，执行一个额外的出牌阶段。",
+    fan_huanwu_damage_eligible: "invisible",
+    fan_huanwu_info: "出牌阶段开始时，你可以明置所有手牌，原本就明置的牌造成的伤害+1。那之后：本阶段你使用的前三张牌无次数限制，在使用时摸一张牌；每回合限一次，本阶段结束时，若你于本阶段内使用的牌数为三且未造成过伤害，你执行一个额外的出牌阶段。",
     fan_miwen: "秘闻",
     visible_fan_miwen: "秘闻明置",
-    fan_miwen_info: "每回合限一次，当你对其他角色造成伤害时，你可以防止此伤害，改为明置目标两张手牌并获得其中一张。",
+    fan_miwen_info: "每回合限一次，当你对其他角色造成伤害时，你可以防止此伤害，改为明置目标两张手牌，然后获得其中一张。",
     fan_zhangdeng: "掌灯",
     fan_zhangdeng_backup: "掌灯",
     visible_fan_zhangdeng: "掌灯明置",
@@ -411,13 +429,15 @@ export function createSkillTranslate() {
     fan_xixin_info: "当你对一名其他角色造成伤害时，你可以防止此伤害。若如此做，该角色摸2张牌，然后你的【调停】失效，直到本轮结束或者你下次受到伤害后。",
     fan_tiaoting_blocked: "调停·失效",
     fan_duanyin: "锻音",
-    fan_duanyin_info: "结束阶段，你可以弃置一张牌，令一名角色回复1点体力并获得一项效果：摸牌阶段摸牌数+1；手牌上限+1；出牌阶段【杀】的使用次数+1。",
+    fan_duanyin_info: "转换技，出牌阶段限一次，<br>阳：你可以重铸一张装备牌，令一名角色获得一项效果：摸牌阶段摸牌数+1；手牌上限+2；脱离濒死状态后回复1点体力。<br>阴：你可以摸一张牌，并回复1点体力。<br>其他角色的出牌阶段，若此技能状态为阴，其可以交给你一张装备牌，然后此技能状态变为阳。",
     fan_duanyin_draw: "锻音·摸牌",
     fan_duanyin_hand: "锻音·手牌",
-    fan_duanyin_sha: "锻音·出杀",
+    fan_duanyin_rescue: "锻音·脱离濒死",
+    fan_duanyin_gift: "锻音·交牌",
+    fan_duanyin_yin_voice: "锻音·阴",
+    fan_duanyin_change_voice: "锻音·转阳",
     fan_zhuhun: "铸魂",
-    fan_zhuhun_dying: "铸魂",
-    fan_zhuhun_info: "限定技，出牌阶段，或当你进入濒死状态时，你可以失去【锻音】，令一名角色获得另一名角色相同的【锻音】效果。",
+    fan_zhuhun_info: "限定技，当你进入濒死状态时，你可以选择一名角色，从武将牌堆随机观看三张武将牌，选择其中一张武将牌上的一个技能令该角色获得。",
     fan_xuanlie: "悬猎",
     fan_xuanlie_info: "当你使用非伤害牌指定其他角色为目标后，你可以对其使用一张【杀】；当你使用伤害牌指定其他角色目标后，你可以获得其区域内一张牌。",
     fan_shouxing: "兽行",
@@ -530,3 +550,5 @@ characterTranslate.fan_kokomi = "珊瑚宫心海";
 characterTranslate.fan_klee = "可莉";
 
 characterTranslate.fan_nicole = "尼可";
+
+characterTranslate.fan_re_zhongli = "钟离";

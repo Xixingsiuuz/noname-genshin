@@ -1,0 +1,137 @@
+{
+  "page": "https://wiki.biligame.com/ys/爱可菲语音",
+  "language": "zh-CN",
+  "verified_date": "2026-11-04",
+  "clips": {
+    "fan_xianggao1": {
+      "label": "元素战技·其四",
+      "text": "即兴烹饪。",
+      "url": "https://patchwiki.biligame.com/images/ys/0/00/7nbynofsk0ztd4anikhl9np6e3t5hg0.mp3",
+      "bytes": 12005,
+      "original": "audio/escoffier/originals/fan_xianggao1.mp3",
+      "output": "audio/escoffier/skill/fan_xianggao1.mp3",
+      "output_bytes": 12005,
+      "trim_seconds": null
+    },
+    "fan_xianggao2": {
+      "label": "元素战技·其五",
+      "text": "顺从灵感的搭配…",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d6/o8g860460dvrivn7x01tnqd4kmxsq80.mp3",
+      "bytes": 17377,
+      "original": "audio/escoffier/originals/fan_xianggao2.mp3",
+      "output": "audio/escoffier/skill/fan_xianggao2.mp3",
+      "output_bytes": 17377,
+      "trim_seconds": null
+    },
+    "fan_xianggao3": {
+      "label": "元素战技·其六",
+      "text": "希望会有惊喜。",
+      "url": "https://patchwiki.biligame.com/images/ys/1/19/7oglp5x8vz2f0w4tu7015i7mbfed8wk.mp3",
+      "bytes": 15007,
+      "original": "audio/escoffier/originals/fan_xianggao3.mp3",
+      "output": "audio/escoffier/skill/fan_xianggao3.mp3",
+      "output_bytes": 15007,
+      "trim_seconds": null
+    },
+    "fan_tiaoshuang1": {
+      "label": "元素战技·其一",
+      "text": "冷冻时间。",
+      "url": "https://patchwiki.biligame.com/images/ys/f/fd/dokag3p920v3aor4ibmlhjlv6qkgn1i.mp3",
+      "bytes": 11149,
+      "original": "audio/escoffier/originals/fan_tiaoshuang1.mp3",
+      "output": "audio/escoffier/skill/fan_tiaoshuang1.mp3",
+      "output_bytes": 11149,
+      "trim_seconds": null
+    },
+    "fan_tiaoshuang2": {
+      "label": "元素战技·其二",
+      "text": "餐前甜点。",
+      "url": "https://patchwiki.biligame.com/images/ys/6/67/0f9clh7hf7wofyw6sofw5nlvrvylgce.mp3",
+      "bytes": 12706,
+      "original": "audio/escoffier/originals/fan_tiaoshuang2.mp3",
+      "output": "audio/escoffier/skill/fan_tiaoshuang2.mp3",
+      "output_bytes": 12706,
+      "trim_seconds": null
+    },
+    "fan_tiaoshuang3": {
+      "label": "元素战技·其三",
+      "text": "低温处理。",
+      "url": "https://patchwiki.biligame.com/images/ys/2/23/o1bapybm1qlqd32qxrgdjgu2voexows.mp3",
+      "bytes": 10570,
+      "original": "audio/escoffier/originals/fan_tiaoshuang3.mp3",
+      "output": "audio/escoffier/skill/fan_tiaoshuang3.mp3",
+      "output_bytes": 10570,
+      "trim_seconds": null
+    },
+    "fan_tiaoshuang_chengshi1": {
+      "label": "元素爆发·其一",
+      "text": "如雪雁般…振翅！",
+      "url": "https://patchwiki.biligame.com/images/ys/e/ed/5fvqt6cdztentvg7hm6xwwfbjr17yau.mp3",
+      "bytes": 17889,
+      "original": "audio/escoffier/originals/fan_tiaoshuang_chengshi1.mp3",
+      "output": "audio/escoffier/skill/fan_tiaoshuang_chengshi1.mp3",
+      "output_bytes": 17889,
+      "trim_seconds": null
+    },
+    "fan_tiaoshuang_chengshi2": {
+      "label": "元素爆发·其二",
+      "text": "臻品呈现！",
+      "url": "https://patchwiki.biligame.com/images/ys/1/1e/lkzzd6xnbel607s9h1i52yal85w3fcy.mp3",
+      "bytes": 13301,
+      "original": "audio/escoffier/originals/fan_tiaoshuang_chengshi2.mp3",
+      "output": "audio/escoffier/skill/fan_tiaoshuang_chengshi2.mp3",
+      "output_bytes": 13301,
+      "trim_seconds": null
+    },
+    "fan_tiaoshuang_chengshi3": {
+      "label": "元素爆发·其三",
+      "text": "形与味，迸发！",
+      "url": "https://patchwiki.biligame.com/images/ys/0/0c/bwn8ccj91glewv86jfgavbl7c50fomf.mp3",
+      "bytes": 15819,
+      "original": "audio/escoffier/originals/fan_tiaoshuang_chengshi3.mp3",
+      "output": "audio/escoffier/skill/fan_tiaoshuang_chengshi3.mp3",
+      "output_bytes": 15819,
+      "trim_seconds": null
+    },
+    "fan_escoffier1": {
+      "label": "倒下·其一",
+      "text": "讨厌的味道…",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c5/tmfa9qm74nmu221949bgtnlbnmo4m50.mp3",
+      "bytes": 18886,
+      "original": "audio/escoffier/originals/fan_escoffier1.mp3",
+      "output": "audio/escoffier/die/fan_escoffier1.mp3",
+      "output_bytes": 18886,
+      "trim_seconds": null
+    },
+    "fan_escoffier2": {
+      "label": "倒下·其二",
+      "text": "失控了…",
+      "url": "https://patchwiki.biligame.com/images/ys/6/67/72movwfam1q1gi6tt6rrcy2eliovdc4.mp3",
+      "bytes": 17061,
+      "original": "audio/escoffier/originals/fan_escoffier2.mp3",
+      "output": "audio/escoffier/die/fan_escoffier2.mp3",
+      "output_bytes": 17061,
+      "trim_seconds": null
+    },
+    "fan_escoffier3": {
+      "label": "倒下·其三",
+      "text": "是我的问题吗…",
+      "url": "https://patchwiki.biligame.com/images/ys/4/44/8jhtin45j21v9vi8ndck1ib5913tm06.mp3",
+      "bytes": 20773,
+      "original": "audio/escoffier/originals/fan_escoffier3.mp3",
+      "output": "audio/escoffier/die/fan_escoffier3.mp3",
+      "output_bytes": 20773,
+      "trim_seconds": null
+    },
+    "fan_tiaoshuang_chengshi4": {
+      "label": "用户指定彩蛋语音",
+      "text": "哼，还不错嘛。",
+      "url": "C:\\Users\\22697\\Downloads\\爱可菲彩蛋语音\\爱可菲，哼，还不错嘛.ogg",
+      "bytes": 56368,
+      "original": "audio/escoffier/originals/fan_tiaoshuang_chengshi4.ogg",
+      "output": "audio/escoffier/skill/fan_tiaoshuang_chengshi4.mp3",
+      "output_bytes": 22028,
+      "trim_seconds": null
+    }
+  }
+}

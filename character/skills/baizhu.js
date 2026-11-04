@@ -7,7 +7,7 @@ const canVisit = (player, target) => target !== player && target.isIn() && targe
   && !(phaseOf()?.fan_wenbu_visits || []).includes(target);
 
 export default {
-  fan_wenbu: { global: "fan_wenbu_give" },
+  fan_wenbu: { audio: "ext:原神/audio/baizhu/skill:3", global: "fan_wenbu_give" },
   fan_wenbu_give: {
     enable: "phaseUse",
     filter: (event, player) => player.countCards("h") > 0 && game.hasPlayer(target => canVisit(player, target)),
@@ -33,6 +33,7 @@ export default {
       phase.fan_wenbu_visits ||= [];
       if (phase.fan_wenbu_visits.includes(target)) return;
       phase.fan_wenbu_visits.push(target);
+      game.trySkillAudio("fan_wenbu", target, true, true);
       const gain = target.gain(event.cards, player, "giveAuto");
       gain.gaintag.add(giftTag);
       await gain;
@@ -41,6 +42,7 @@ export default {
     ai: { order: 5, result: { player: player => player.isDamaged() ? 2 : 0, target: 1 } },
   },
   fan_tongxuan: {
+    audio: "ext:原神/audio/baizhu/skill:3",
     enable: "phaseUse", usable: 1, locked: false,
     async content(event, trigger, player) {
       const top = get.cards(5);
@@ -106,6 +108,7 @@ export default {
     ai: { order: 7, result: { player: 1 } },
   },
   fan_shiqi: {
+    audio: "ext:原神/audio/baizhu/skill:3",
     trigger: { global: "dying" }, limited: true, skillAnimation: true, animationColor: "wood", locked: false,
     filter: (event, player) => !player.storage.fan_shiqi_used && event.player !== player && event.player.isIn() && event.player.hp <= 0,
     prompt: "你可以发动【拾柒】救援该角色", prompt2: false,

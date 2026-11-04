@@ -9,7 +9,7 @@ const lib={skill:{},translate:{},characterSubstitute:{}};
 const get={info:id=>lib.skill[id],character:()=>({tempname:[]})};
 const audioSource=readFileSync(new URL('../../noname/get/audio.js',root),'utf8');
 const Audio=new Function('get','lib',audioSource.replace(/^import .*;\r?\n/gm,'').replace(/export\s*\{[\s\S]*?\};?\s*$/,'')+'\nreturn Audio;')(get,lib);
-const roles=['chiori','kokomi','kinich','citlali','mona','qiqi','jean','navia','hutao','ganyu','nilou','albedo','raiden','ajax','mavuika','klee','itto','zhongli','eula','ayaka','ayato','yoimiya','columbina','yelan','diluc','keqing','zibai','xianyun'],referenced=new Set();
+const roles=['zhongli_rework','xilonen','varesa','chiori','kokomi','kinich','citlali','mona','qiqi','jean','navia','hutao','ganyu','nilou','albedo','raiden','ajax','mavuika','klee','itto','zhongli','eula','ayaka','ayato','yoimiya','columbina','yelan','diluc','keqing','zibai','xianyun'],referenced=new Set();
 const mechanisms = new Function('return ' + read('card/xianyun.js').match(/export const mechanisms = (\[[\s\S]*?\n\]);/)[1])();
 function checkAudioFile(file,role){
  assert.ok(file.startsWith('ext:原神/audio/'+role+'/'),file);
@@ -27,7 +27,7 @@ for(const role of roles){
  const source=read('character/skills/'+role+'.js');
  const skills=new Function('lib','get','game','ui','_status','mechanisms',source.replace(/^import .*;\r?\n/gm,'').replace(/export function/g,'function').replace(/export const/g,'const').replace('export default','return'))(lib,get,{}, {},{},mechanisms);
  collect(skills,'',role);
- const character='fan_'+role,die=characters[character][4].find(tag=>tag.startsWith('die:'));
+ const character=role==='zhongli_rework'?'fan_re_zhongli':'fan_'+role,die=characters[character][4].find(tag=>tag.startsWith('die:'));
  if(!['zibai','hutao'].includes(role))assert.ok(die,character);
  if(die)Audio.die({player:character,info:die.slice(4)}).fileList.forEach(file=>checkAudioFile(file,role));
 }
@@ -106,6 +106,12 @@ for(const [id,count] of Object.entries(mavuikaPools)){
 for(const id of ['fan_chihun','fan_chihun_use','fan_fentian','fan_fentian_end','fan_zailin']){
  game.trySkillAudio(id,'fan_mavuika',true,true,null,[{},{}]);
  assert.deepEqual(played.at(-1),[],id+' logs do not repeat explicit branch audio');
+}
+for(const [id,count] of Object.entries({fan_re_dixin_give:3,fan_re_dixin_remove:3,fan_re_xianyou:2})){
+ game.trySkillAudio(id,'fan_re_zhongli',true,true,undefined,[]);
+ assert.equal(played.at(-1).length,count,id);
+ game.trySkillAudio(id,'fan_re_zhongli',true,true,undefined,[{},{}]);
+ assert.deepEqual(played.at(-1),[],id+' stays silent at automatic logging');
 }
 const beforeMuted=played.length;lib.config.background_speak=false;
 for(const id of ajaxVoices){game.trySkillAudio(id,'fan_ajax',true,true);assert.equal(played.length,beforeMuted);}

@@ -4937,5 +4937,995 @@
     "path": "audio/lyney/die/fan_lyney3.mp3",
     "bytes": 43748,
     "sha256": "f021c470abf52664e6c5980de51a74efa9be9dc2618a17a1cb72bc7f6fd35584"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/originals/fan_shanlie_damage_voice1.mp3",
+    "bytes": 11681,
+    "sha256": "73652e68cc87dd986c9dd715990fac82c871c37a927ae365589caecb0859824d"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/skill/fan_shanlie_damage_voice1.mp3",
+    "bytes": 11681,
+    "sha256": "73652e68cc87dd986c9dd715990fac82c871c37a927ae365589caecb0859824d"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/originals/fan_shanlie_damage_voice2.mp3",
+    "bytes": 9661,
+    "sha256": "0cb430017e68d2279b1675f525206750a710229c15f4e5986a7419dc7999683e"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/skill/fan_shanlie_damage_voice2.mp3",
+    "bytes": 9661,
+    "sha256": "0cb430017e68d2279b1675f525206750a710229c15f4e5986a7419dc7999683e"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/originals/fan_shanlie_damage_voice3.mp3",
+    "bytes": 9199,
+    "sha256": "61ce1db316c9aa7595f5205d5212ef71eb88025220edcbfe3a3ccb50dbbcc854"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/skill/fan_shanlie_damage_voice3.mp3",
+    "bytes": 9199,
+    "sha256": "61ce1db316c9aa7595f5205d5212ef71eb88025220edcbfe3a3ccb50dbbcc854"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/originals/fan_shanlie_recover_voice1.mp3",
+    "bytes": 13173,
+    "sha256": "0e97bbfa09e53f7571da1cf124f6498194ec642a53992bde0565c75024952cf9"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/skill/fan_shanlie_recover_voice1.mp3",
+    "bytes": 13173,
+    "sha256": "0e97bbfa09e53f7571da1cf124f6498194ec642a53992bde0565c75024952cf9"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/originals/fan_shanlie_recover_voice2.mp3",
+    "bytes": 12347,
+    "sha256": "1b6cd8cb2e5e20e900653e038cdde432be30fdf1512a02e4c5c5e6b83807cd3b"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/skill/fan_shanlie_recover_voice2.mp3",
+    "bytes": 12347,
+    "sha256": "1b6cd8cb2e5e20e900653e038cdde432be30fdf1512a02e4c5c5e6b83807cd3b"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/originals/fan_varesa1.mp3",
+    "bytes": 36781,
+    "sha256": "7b1cb839401143afd6044f835008c7c57819eb0a05fbbbf28ec4de09d423235d"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/die/fan_varesa1.mp3",
+    "bytes": 36781,
+    "sha256": "7b1cb839401143afd6044f835008c7c57819eb0a05fbbbf28ec4de09d423235d"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/originals/fan_varesa2.mp3",
+    "bytes": 25459,
+    "sha256": "1444ad87665f1da7e6c594131fe85773ddf8d15efea9c25c4c66547ee6b8f5b4"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/die/fan_varesa2.mp3",
+    "bytes": 25459,
+    "sha256": "1444ad87665f1da7e6c594131fe85773ddf8d15efea9c25c4c66547ee6b8f5b4"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/originals/fan_varesa3.mp3",
+    "bytes": 26365,
+    "sha256": "b9231f85aff4b32b7f96e8792faefe3adb2faeeb9fe9280acb892f2aa940b07b"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/die/fan_varesa3.mp3",
+    "bytes": 26365,
+    "sha256": "b9231f85aff4b32b7f96e8792faefe3adb2faeeb9fe9280acb892f2aa940b07b"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/originals/fan_haoyan_full.mp3",
+    "bytes": 85749,
+    "sha256": "3465475c035073b597df5658eac5827433841e43674c3fdbe68ff91dec953a80"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/skill/fan_haoyan1.mp3",
+    "bytes": 55076,
+    "sha256": "f7865a495513644163135cdf6e509d19c27f3dc545021ee2eea9613daafd4e2c"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/originals/fan_haoyan_full.mp3",
+    "bytes": 85749,
+    "sha256": "3465475c035073b597df5658eac5827433841e43674c3fdbe68ff91dec953a80"
+  },
+  {
+    "role": "varesa",
+    "path": "audio/varesa/skill/fan_haoyan2.mp3",
+    "bytes": 59756,
+    "sha256": "454a5086440c7109381b43f3af6ece40a4faf4dc440a3fb2249771347cb533e2"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/originals/fan_xianggao1.mp3",
+    "bytes": 12005,
+    "sha256": "2aad94a9f8dde4e7f45bc3611a1015a00c63982059e26ae682e99483ab9c2611"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/skill/fan_xianggao1.mp3",
+    "bytes": 12005,
+    "sha256": "2aad94a9f8dde4e7f45bc3611a1015a00c63982059e26ae682e99483ab9c2611"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/originals/fan_xianggao2.mp3",
+    "bytes": 17377,
+    "sha256": "b7d338c2256f463ca553fdaa04ac028ebb26b51fb7b74e3c278c4cf97e2b73b2"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/skill/fan_xianggao2.mp3",
+    "bytes": 17377,
+    "sha256": "b7d338c2256f463ca553fdaa04ac028ebb26b51fb7b74e3c278c4cf97e2b73b2"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/originals/fan_xianggao3.mp3",
+    "bytes": 15007,
+    "sha256": "66f7f485b5e33924f319c717f95f0b95f0374ae46520a590788ee76396b68979"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/skill/fan_xianggao3.mp3",
+    "bytes": 15007,
+    "sha256": "66f7f485b5e33924f319c717f95f0b95f0374ae46520a590788ee76396b68979"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/originals/fan_tiaoshuang1.mp3",
+    "bytes": 11149,
+    "sha256": "e45f0c28832eecd61a659606124228c18696783149a956b1ba090cf477efb323"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/skill/fan_tiaoshuang1.mp3",
+    "bytes": 11149,
+    "sha256": "e45f0c28832eecd61a659606124228c18696783149a956b1ba090cf477efb323"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/originals/fan_tiaoshuang2.mp3",
+    "bytes": 12706,
+    "sha256": "52a77df65ed8244ec1379ba61b582f4ae5125a5a880bdda5447acaefcc63b988"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/skill/fan_tiaoshuang2.mp3",
+    "bytes": 12706,
+    "sha256": "52a77df65ed8244ec1379ba61b582f4ae5125a5a880bdda5447acaefcc63b988"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/originals/fan_tiaoshuang3.mp3",
+    "bytes": 10570,
+    "sha256": "2444fdef169da9606daf4a34eb46455ca144f55261ebcb7b64bdba29743584df"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/skill/fan_tiaoshuang3.mp3",
+    "bytes": 10570,
+    "sha256": "2444fdef169da9606daf4a34eb46455ca144f55261ebcb7b64bdba29743584df"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/originals/fan_tiaoshuang_chengshi1.mp3",
+    "bytes": 17889,
+    "sha256": "8b4301b31b00982a0ad22937fbd34940fb0a29b09e32d85bf2059920da33c3ba"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/skill/fan_tiaoshuang_chengshi1.mp3",
+    "bytes": 17889,
+    "sha256": "8b4301b31b00982a0ad22937fbd34940fb0a29b09e32d85bf2059920da33c3ba"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/originals/fan_tiaoshuang_chengshi2.mp3",
+    "bytes": 13301,
+    "sha256": "5eb2decdb2b5d2627ba95bf2f74ce7dfa02ebe7b7cbda7d1d0769cf871ad80ee"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/skill/fan_tiaoshuang_chengshi2.mp3",
+    "bytes": 13301,
+    "sha256": "5eb2decdb2b5d2627ba95bf2f74ce7dfa02ebe7b7cbda7d1d0769cf871ad80ee"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/originals/fan_tiaoshuang_chengshi3.mp3",
+    "bytes": 15819,
+    "sha256": "03eef1cd40255afc89c8ea9175a77ed4199f9d8086b9f84ee2a767d6e60d63b3"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/skill/fan_tiaoshuang_chengshi3.mp3",
+    "bytes": 15819,
+    "sha256": "03eef1cd40255afc89c8ea9175a77ed4199f9d8086b9f84ee2a767d6e60d63b3"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/originals/fan_escoffier1.mp3",
+    "bytes": 18886,
+    "sha256": "fefa322ed4a02d2a0b62ab91cccbe2637e7ee29b631686426ede4dc4606cfe4d"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/die/fan_escoffier1.mp3",
+    "bytes": 18886,
+    "sha256": "fefa322ed4a02d2a0b62ab91cccbe2637e7ee29b631686426ede4dc4606cfe4d"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/originals/fan_escoffier2.mp3",
+    "bytes": 17061,
+    "sha256": "4e6bdea9f6accabf3fa3c44b7c024eef1d40aaeb9c240141e39cfcbd2834b571"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/die/fan_escoffier2.mp3",
+    "bytes": 17061,
+    "sha256": "4e6bdea9f6accabf3fa3c44b7c024eef1d40aaeb9c240141e39cfcbd2834b571"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/originals/fan_escoffier3.mp3",
+    "bytes": 20773,
+    "sha256": "bb132124e15ceb3cbaa4a22a18a44f60bc952db2349b7e6c00041437b26bcc4f"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/die/fan_escoffier3.mp3",
+    "bytes": 20773,
+    "sha256": "bb132124e15ceb3cbaa4a22a18a44f60bc952db2349b7e6c00041437b26bcc4f"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/originals/fan_tiaoshuang_chengshi4.ogg",
+    "bytes": 56368,
+    "sha256": "db635259b20a37d898d951888841298b0dc9e8295975de7f82b8ae98fba28ed9"
+  },
+  {
+    "role": "escoffier",
+    "path": "audio/escoffier/skill/fan_tiaoshuang_chengshi4.mp3",
+    "bytes": 22028,
+    "sha256": "c55c205e4eb3263623a7809df6adf569232210ae1ca53e17d3f1b6c9e821649d"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/originals/fan_duanyin1.mp3",
+    "bytes": 10072,
+    "sha256": "eebda5c9852d32e3a6c48de2cdfbb449ae5f19d01b8b9daef0db45f579f6bc30"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/skill/fan_duanyin1.mp3",
+    "bytes": 10072,
+    "sha256": "eebda5c9852d32e3a6c48de2cdfbb449ae5f19d01b8b9daef0db45f579f6bc30"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/originals/fan_duanyin2.mp3",
+    "bytes": 8006,
+    "sha256": "01e618fa74a3634468c2f621e88296206f56856b0b3e4143cf55feab37d1151b"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/skill/fan_duanyin2.mp3",
+    "bytes": 8006,
+    "sha256": "01e618fa74a3634468c2f621e88296206f56856b0b3e4143cf55feab37d1151b"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/originals/fan_duanyin3.mp3",
+    "bytes": 9402,
+    "sha256": "e3310af4a1cddc2ffe6afc0ab293393a85431fb412f3938215bc19348d517ff3"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/skill/fan_duanyin3.mp3",
+    "bytes": 9402,
+    "sha256": "e3310af4a1cddc2ffe6afc0ab293393a85431fb412f3938215bc19348d517ff3"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/originals/fan_zhuhun1.mp3",
+    "bytes": 21593,
+    "sha256": "e80bdc505f44e50d45cd2e7db6d98af11efa6f63048e0fcccf5b7b1c737efc13"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/skill/fan_zhuhun1.mp3",
+    "bytes": 21593,
+    "sha256": "e80bdc505f44e50d45cd2e7db6d98af11efa6f63048e0fcccf5b7b1c737efc13"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/originals/fan_zhuhun2.mp3",
+    "bytes": 21881,
+    "sha256": "2ef0944647abaf892dba88cdc975b0230215013b2f474fe9830ba20b4f9d9e74"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/skill/fan_zhuhun2.mp3",
+    "bytes": 21881,
+    "sha256": "2ef0944647abaf892dba88cdc975b0230215013b2f474fe9830ba20b4f9d9e74"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/originals/fan_zhuhun3.mp3",
+    "bytes": 27481,
+    "sha256": "80e93a3ed138e5519f0d491e0c197b1a221b5875144228f5eec5da7ac644c03a"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/skill/fan_zhuhun3.mp3",
+    "bytes": 27481,
+    "sha256": "80e93a3ed138e5519f0d491e0c197b1a221b5875144228f5eec5da7ac644c03a"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/originals/fan_xilonen1.mp3",
+    "bytes": 24720,
+    "sha256": "746c95b26c7c1202173ff27fc8deb2b9713597c4528e717092b6825a0e8c0dcb"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/die/fan_xilonen1.mp3",
+    "bytes": 24720,
+    "sha256": "746c95b26c7c1202173ff27fc8deb2b9713597c4528e717092b6825a0e8c0dcb"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/originals/fan_xilonen2.mp3",
+    "bytes": 15192,
+    "sha256": "7e1101b64ee03771fd5f02d570f7aa575484d29efb9d1b68e18db3fdedca5ae3"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/die/fan_xilonen2.mp3",
+    "bytes": 15192,
+    "sha256": "7e1101b64ee03771fd5f02d570f7aa575484d29efb9d1b68e18db3fdedca5ae3"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/originals/fan_xilonen3.mp3",
+    "bytes": 32782,
+    "sha256": "cf19eabb3e5d6e669082d05dfabda392a6a7ce8ec9777aa81288b15527a9a9db"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/die/fan_xilonen3.mp3",
+    "bytes": 32782,
+    "sha256": "cf19eabb3e5d6e669082d05dfabda392a6a7ce8ec9777aa81288b15527a9a9db"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/originals/rest.mp3",
+    "bytes": 60325,
+    "sha256": "6c6a1161d61c65b0609cee243cc702315176aa50f3f339f6dfd513c4f3e25f07"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/skill/fan_duanyin_yin_voice1.mp3",
+    "bytes": 60325,
+    "sha256": "6c6a1161d61c65b0609cee243cc702315176aa50f3f339f6dfd513c4f3e25f07"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/originals/sun.mp3",
+    "bytes": 63983,
+    "sha256": "b04680520c8e61b3c352401a2a228f8e1e970b743fee9393fa5027ccd60b2ef1"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/skill/fan_duanyin_yin_voice2.mp3",
+    "bytes": 55100,
+    "sha256": "ac317e974e9793249a9cb8eb0bc9d5efd0fb0e7a7dc762811c64e2f3cd98e475"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/originals/worry.mp3",
+    "bytes": 195570,
+    "sha256": "8d62c035681f8f774dbed5db860b84348769d56e8e9b3f4e6d25d366d62b67dd"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/skill/fan_duanyin_change_voice1.mp3",
+    "bytes": 84836,
+    "sha256": "d16dd98123ea760b245769ab3fad6ac17dd30f6f469b72fc67ad777e3821d252"
+  },
+  {
+    "role": "xilonen",
+    "path": "audio/xilonen/skill/fan_duanyin_change_voice2.mp3",
+    "bytes": 88124,
+    "sha256": "5cd2b5f7f18263682224aad34b5fb7dddc0b7d738f2a2b7d6b6293ad37053643"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/originals/fan_wenbu1.ogg",
+    "bytes": 27207,
+    "sha256": "05a582cb6783ca7a455a7ce59cd204ccad3b33ae13b646dbb44330c3eeacf756"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/skill/fan_wenbu1.mp3",
+    "bytes": 10244,
+    "sha256": "be948e88d05c07c21a4e8ceac50d058f7f1fee7fa7a963402051f79316827688"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/originals/fan_wenbu2.ogg",
+    "bytes": 42603,
+    "sha256": "1ac19722e695f1fae5101f1a269d5ae434d7615a35ef004e5e6bf06619641362"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/skill/fan_wenbu2.mp3",
+    "bytes": 16652,
+    "sha256": "6228c83826671994cb717fd7d8df36f4e3a11a81675fd25237ac6886a8b9f705"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/originals/fan_wenbu3.ogg",
+    "bytes": 47818,
+    "sha256": "ab072153bb02d54ccb52afe221e593bbc67f84b74d95c38acbcdf44471594913"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/skill/fan_wenbu3.mp3",
+    "bytes": 19724,
+    "sha256": "0eb6e3b7acf7a3085f5347b27e0ff5b45cfe3f938155a4f2dfe4a5082793faea"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/originals/fan_shiqi1.ogg",
+    "bytes": 42993,
+    "sha256": "cf8453a626056d40e6abd4a20e0f6caa7a13f9b1d2d743adc7bbba66bb301f97"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/skill/fan_shiqi1.mp3",
+    "bytes": 15500,
+    "sha256": "d2e276a73f5e61a5858fe7d7799aa49ae342864c90a6b1c67a171572951afa2d"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/originals/fan_shiqi2.ogg",
+    "bytes": 49742,
+    "sha256": "89923b449244192d7108a851957bd8ceaa2db72c4e690d7b23956afb4cd85c28"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/skill/fan_shiqi2.mp3",
+    "bytes": 20636,
+    "sha256": "8cdb34d32f890f379fd5f05374411894c436eb56ea7c74120b22dc25e9fbce43"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/originals/fan_shiqi3.ogg",
+    "bytes": 81794,
+    "sha256": "baa91096ec843397caabef059a5ec450057b2e8e729b0ddf5d8f93547f663258"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/skill/fan_shiqi3.mp3",
+    "bytes": 34460,
+    "sha256": "85aee6e03eff9fa585ad0c60040675df128104087f24ac0706193dcfb3ecdb35"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/originals/fan_baizhu1.ogg",
+    "bytes": 73496,
+    "sha256": "cf5d3b2eb2537f1be7d5b91211e51a186eff353c62f9ff77a9d0e50ac1faa32d"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/die/fan_baizhu1.mp3",
+    "bytes": 27188,
+    "sha256": "f53265e36c30c8523d3c791fd67ef25a71c5e9eac662281dcf02fd903f896b8f"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/originals/fan_baizhu2.ogg",
+    "bytes": 75844,
+    "sha256": "8ff69fc13a09ab5f005f90f2026020f615104a3e76facb0bd752afc1067c231c"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/die/fan_baizhu2.mp3",
+    "bytes": 26276,
+    "sha256": "c8ecb4d556787474c313398f5c990cfef2eca4458b98fdab8ad1a8d7b3a42740"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/originals/fan_baizhu3.ogg",
+    "bytes": 56122,
+    "sha256": "6392d56705cd9b08a15cf76a2c75b6cc926becb6fd6fb2127a37191a17d684cc"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/die/fan_baizhu3.mp3",
+    "bytes": 20756,
+    "sha256": "3950e27e3c3cf92367f7eb537f62bb692b6371a807718375a3347d0425262e99"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/originals/vision.ogg",
+    "bytes": 300865,
+    "sha256": "181783a60d3bbab6ff513e2f9c68d0d0e2a42c2ceab34f67ae7fdd641ef78b76"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/skill/fan_tongxuan1.mp3",
+    "bytes": 59228,
+    "sha256": "7e1c7bae1f7a1d33af5ba289b4fc23461e35f709f0144898b8f9e1cdf38cb15b"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/originals/tao.ogg",
+    "bytes": 308828,
+    "sha256": "a5827d792db2ec441dc196662f5635b75aabfdb4983d2df646af1a63060703b5"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/skill/fan_tongxuan2.mp3",
+    "bytes": 43700,
+    "sha256": "d78a29413cbe6178ff4d6761a3d6a8e614a33cdc05606d0c0f09efdd71ebc7ee"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/originals/tao.ogg",
+    "bytes": 308828,
+    "sha256": "a5827d792db2ec441dc196662f5635b75aabfdb4983d2df646af1a63060703b5"
+  },
+  {
+    "role": "baizhu",
+    "path": "audio/baizhu/skill/fan_tongxuan3.mp3",
+    "bytes": 78932,
+    "sha256": "529138fe2c33b7ec00bd586a4ad06f4a6dc0e21aa565a7ea86a383f191d3e370"
+  },
+  {
+    "role": "kazuha",
+    "path": "audio/kazuha/skill/fan_jilv1.mp3",
+    "bytes": 55681,
+    "sha256": "e4fa5c97e1b1c6274eece2fd678ab04e5deee3ca26f4b4977456dbfe749c1794"
+  },
+  {
+    "role": "kazuha",
+    "path": "audio/kazuha/skill/fan_jilv2.mp3",
+    "bytes": 59993,
+    "sha256": "40995731abf632325489b377c1863edeb821f87962446ccb3e8acad36dc67c15"
+  },
+  {
+    "role": "kazuha",
+    "path": "audio/kazuha/skill/fan_zhenxiu1.mp3",
+    "bytes": 88756,
+    "sha256": "53585792ff597672a15501868ddb1338f8ed5f882cbd796cc68aa359a65e2bdb"
+  },
+  {
+    "role": "kazuha",
+    "path": "audio/kazuha/skill/fan_zhenxiu2.mp3",
+    "bytes": 125033,
+    "sha256": "beea127f3a24f69fd83da86b361f114cd641828ebe5fbd24d2deed8296d4b9cd"
+  },
+  {
+    "role": "kazuha",
+    "path": "audio/kazuha/skill/fan_jilv_give1.mp3",
+    "bytes": 88758,
+    "sha256": "2ac0a5aff2b0b54b064e3326b249c21dbad6c8048382016cd88305b44ba75175"
+  },
+  {
+    "role": "kazuha",
+    "path": "audio/kazuha/skill/fan_jilv_give2.mp3",
+    "bytes": 88758,
+    "sha256": "2ac0a5aff2b0b54b064e3326b249c21dbad6c8048382016cd88305b44ba75175"
+  },
+  {
+    "role": "kazuha",
+    "path": "audio/kazuha/skill/fan_jilv_give3.mp3",
+    "bytes": 88758,
+    "sha256": "2ac0a5aff2b0b54b064e3326b249c21dbad6c8048382016cd88305b44ba75175"
+  },
+  {
+    "role": "kazuha",
+    "path": "audio/kazuha/skill/fan_huanlei1.mp3",
+    "bytes": 95028,
+    "sha256": "49351f2521d9f03e9955465879d6668cc7e57a7a36e62d13c0d3f5ef2184ba7e"
+  },
+  {
+    "role": "kazuha",
+    "path": "audio/kazuha/skill/fan_huanlei2.mp3",
+    "bytes": 66816,
+    "sha256": "2c844e0c8f952f0796047f3a2ae5af9a0a212e0f54057692a5578446d202cec3"
+  },
+  {
+    "role": "kazuha",
+    "path": "audio/kazuha/skill/fan_huanlei3.mp3",
+    "bytes": 106522,
+    "sha256": "f720c3f139fc7ba4a64070b824d643f002b783e38720dfccd1dbaba003373228"
+  },
+  {
+    "role": "kazuha",
+    "path": "audio/kazuha/die/fan_kazuha1.mp3",
+    "bytes": 138914,
+    "sha256": "034de9050b6f842a4cf2bbb8cf1eaedecff90762259eb20364a9a10345569747"
+  },
+  {
+    "role": "kazuha",
+    "path": "audio/kazuha/die/fan_kazuha2.mp3",
+    "bytes": 127420,
+    "sha256": "a4b3f16e7241db93ff99ce967e4388426ed36e6a1022a2ef31f53a228afc2b6d"
+  },
+  {
+    "role": "kazuha",
+    "path": "audio/kazuha/die/fan_kazuha3.mp3",
+    "bytes": 120105,
+    "sha256": "940f00731769f1453720ead55333bd639497045860edf61d5df4abfcf2a5f14a"
+  },
+  {
+    "role": "kazuha",
+    "path": "audio/kazuha/skill/fan_jilv3.mp3",
+    "bytes": 79338,
+    "sha256": "c56c0b1ce6ed9d9e86147c7724b9862f5e3027ec88060ea6f5a6871b858fab03"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/originals/source-04.mp3",
+    "bytes": 17179,
+    "sha256": "a2725db2bb8adc8658fdbc824801971b0a9d47305ed7e3638867ed57e46e00a6"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/skill/fan_shengyong1.mp3",
+    "bytes": 17179,
+    "sha256": "a2725db2bb8adc8658fdbc824801971b0a9d47305ed7e3638867ed57e46e00a6"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/originals/source-05.mp3",
+    "bytes": 15131,
+    "sha256": "4ba3707c559790677c1ab21f30d9dd8b754524cd05a238683c6323007a277f43"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/skill/fan_shengyong2.mp3",
+    "bytes": 15131,
+    "sha256": "4ba3707c559790677c1ab21f30d9dd8b754524cd05a238683c6323007a277f43"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/originals/source-06.mp3",
+    "bytes": 17610,
+    "sha256": "845c0cc07514db3392e1a3bbdd53d001df07fd0df69c0552487a603de356f67e"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/skill/fan_shengyong3.mp3",
+    "bytes": 17610,
+    "sha256": "845c0cc07514db3392e1a3bbdd53d001df07fd0df69c0552487a603de356f67e"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/originals/source-01.mp3",
+    "bytes": 15930,
+    "sha256": "270ef993e2023a819990951b3a16438ac118d582b48707363010a498f82de325"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/skill/fan_shengyong_draw1.mp3",
+    "bytes": 15930,
+    "sha256": "270ef993e2023a819990951b3a16438ac118d582b48707363010a498f82de325"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/originals/source-02.mp3",
+    "bytes": 16462,
+    "sha256": "44193135c7221765af1f82b44241a72fe2a6ca0482d681413876d554827eb952"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/skill/fan_shengyong_draw2.mp3",
+    "bytes": 16462,
+    "sha256": "44193135c7221765af1f82b44241a72fe2a6ca0482d681413876d554827eb952"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/originals/source-03.mp3",
+    "bytes": 10215,
+    "sha256": "f61f73a0e678d16387b5a256c4cba3a95d8b060d978bd949b4940ff84a2e73a7"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/skill/fan_shengyong_draw3.mp3",
+    "bytes": 10215,
+    "sha256": "f61f73a0e678d16387b5a256c4cba3a95d8b060d978bd949b4940ff84a2e73a7"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/originals/source-07.mp3",
+    "bytes": 18909,
+    "sha256": "69af43d0e19c92d7e15ec07f399c2bc7d073b80ddc2628dc0818494768bf27a7"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/skill/fan_daoge1.mp3",
+    "bytes": 18909,
+    "sha256": "69af43d0e19c92d7e15ec07f399c2bc7d073b80ddc2628dc0818494768bf27a7"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/originals/source-08.mp3",
+    "bytes": 19582,
+    "sha256": "99935d4aad108915efb0bdfad4f826fa6749c3bc7644f4fd89dc5e6205580550"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/skill/fan_daoge2.mp3",
+    "bytes": 19582,
+    "sha256": "99935d4aad108915efb0bdfad4f826fa6749c3bc7644f4fd89dc5e6205580550"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/originals/source-09.mp3",
+    "bytes": 29804,
+    "sha256": "d4c4f8b9aa126203ccd2fba7d52101f6ff1a8350ed164eaaaaf3868351146b1c"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/skill/fan_daoge3.mp3",
+    "bytes": 29804,
+    "sha256": "d4c4f8b9aa126203ccd2fba7d52101f6ff1a8350ed164eaaaaf3868351146b1c"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/originals/source-10.mp3",
+    "bytes": 49332,
+    "sha256": "6bc5603495297ada9d4710f0855ed38f03e3f00e1a17347664766f2193093d1c"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/die/fan_lauma1.mp3",
+    "bytes": 49332,
+    "sha256": "6bc5603495297ada9d4710f0855ed38f03e3f00e1a17347664766f2193093d1c"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/originals/source-11.mp3",
+    "bytes": 35649,
+    "sha256": "cd18a625f248454047317e96f2915e0daccc14f4427f61f0d819ae5dc8095f56"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/die/fan_lauma2.mp3",
+    "bytes": 35649,
+    "sha256": "cd18a625f248454047317e96f2915e0daccc14f4427f61f0d819ae5dc8095f56"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/originals/source-12.mp3",
+    "bytes": 35376,
+    "sha256": "31a2d655bc2d0975ca83b52d62828c464abdeb2c876b7f9d6c6a0f0115fa8265"
+  },
+  {
+    "role": "lauma",
+    "path": "audio/lauma/die/fan_lauma3.mp3",
+    "bytes": 35376,
+    "sha256": "31a2d655bc2d0975ca83b52d62828c464abdeb2c876b7f9d6c6a0f0115fa8265"
+  },
+  {
+    "role": "nefer",
+    "path": "audio/nefer/skill/fan_huanwu1.mp3",
+    "bytes": 13631,
+    "sha256": "920d88cb0a0b0c1f42dc20a608073283e4682dc9eb7dd0fa0c3f0269aa890f51"
+  },
+  {
+    "role": "nefer",
+    "path": "audio/nefer/skill/fan_huanwu2.mp3",
+    "bytes": 11789,
+    "sha256": "7878ba4a637bae6974b52ecc722ee964a9cf7c5ead9f7f7653afb9cb8a072940"
+  },
+  {
+    "role": "nefer",
+    "path": "audio/nefer/skill/fan_huanwu3.mp3",
+    "bytes": 14031,
+    "sha256": "e48de571965717ec7be0decce1c06ff4cc0498b515e6a5d7da3bda3e2b82a700"
+  },
+  {
+    "role": "nefer",
+    "path": "audio/nefer/skill/fan_miwen1.mp3",
+    "bytes": 17595,
+    "sha256": "497da5dcba33ca5eaed7e84aa33c3fb48aaa2486ef4d93c386b8cc627fae754e"
+  },
+  {
+    "role": "nefer",
+    "path": "audio/nefer/skill/fan_miwen2.mp3",
+    "bytes": 17530,
+    "sha256": "3549e0910bfba5f1d9b1e10704317a3495a683e196f4345c2901acaeaebfe45d"
+  },
+  {
+    "role": "nefer",
+    "path": "audio/nefer/skill/fan_miwen3.mp3",
+    "bytes": 34547,
+    "sha256": "aa949fb69239b761f5b56c4b358e55a8e9bcac9de37a6e7c4ab9033ef29bd5c8"
+  },
+  {
+    "role": "nefer",
+    "path": "audio/nefer/die/fan_nefer1.mp3",
+    "bytes": 37953,
+    "sha256": "c2cea432eea868ff56f76083a745029d6a814e48ed446b06312c3c67b68aee34"
+  },
+  {
+    "role": "nefer",
+    "path": "audio/nefer/die/fan_nefer2.mp3",
+    "bytes": 33151,
+    "sha256": "ea396973f32a95a5fa3310736e0442cc4925fc9350c34a8a1a0baced618adb0a"
+  },
+  {
+    "role": "nefer",
+    "path": "audio/nefer/die/fan_nefer3.mp3",
+    "bytes": 39955,
+    "sha256": "002a86c32c3ce19f9abc8e48da0b6e65e5fe11395a9b366cb05481e7ad3c7d30"
+  },
+  {
+    "role": "nefer",
+    "path": "audio/nefer/skill/fan_huanwu_use_voice1.mp3",
+    "bytes": 39356,
+    "sha256": "499d4f511c4bb0ebece4ca5a7ae31351dd58b2a8ca1939f8784691a255ad0411"
+  },
+  {
+    "role": "nefer",
+    "path": "audio/nefer/skill/fan_huanwu_use_voice2.mp3",
+    "bytes": 35036,
+    "sha256": "be665e3d7ed91fb3a731fb3dcf1e2f75ae2f7ad2d48f4f5e03e7960b203b7f6f"
+  },
+  {
+    "role": "nefer",
+    "path": "audio/nefer/skill/fan_huanwu_use_voice3.mp3",
+    "bytes": 40100,
+    "sha256": "65758b43d60adb943ef80cfb5961c28623d733b238579fa9b3fee85aece88b84"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_re_dixin_give1.mp3",
+    "bytes": 16508,
+    "sha256": "3c4bbd79f97a448e59087031990c3fab5ed48bb009c3c1e2a2cfb3467d5a684b"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_re_dixin_give2.mp3",
+    "bytes": 20828,
+    "sha256": "4c78d4f8599778b0a9285cf5fc35e95b17f4ff053bd3958c57267c5fdab04d72"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_re_dixin_give3.mp3",
+    "bytes": 17420,
+    "sha256": "9e07c7c23666f746bf43c56134a012ef72ec9ebe35a606e0164d79883ad2137d"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_re_dixin_remove1.mp3",
+    "bytes": 23468,
+    "sha256": "7474debb0bd92ba351f547d9977e02b874ab8011a48fc690460fa28074602b3c"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_re_dixin_remove2.mp3",
+    "bytes": 20684,
+    "sha256": "8e1ce40b7a3e8981a3359c0933e086080c615be5e862dc87a22d232cc3efeb02"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_re_dixin_remove3.mp3",
+    "bytes": 20588,
+    "sha256": "ed7260cbed4be784ffef473470f63f44417fd8fa710a3a74ceea3e1e2863ef1e"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_re_xianyou1.mp3",
+    "bytes": 115748,
+    "sha256": "2e71153f464ba0dae466cf81db6d71ee99e612f4abbf5c85ad332dd0f695fb3e"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_re_xianyou2.mp3",
+    "bytes": 70784,
+    "sha256": "1bb6e45027c2dc472fde9f9b0e283baaa291213862ef6bf73d2ea74b9c2d2030"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/die/fan_re_zhongli1.mp3",
+    "bytes": 28844,
+    "sha256": "76e7530a65360cc82965177006defcfc1b69ad3351ac4b4320eac3d17d776d85"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/die/fan_re_zhongli2.mp3",
+    "bytes": 30980,
+    "sha256": "1c056e5e304c4c31ac350eae4b053b63eb6e1a0e24a33fda6d79a0e4db47545a"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/die/fan_re_zhongli3.mp3",
+    "bytes": 39836,
+    "sha256": "6845a9468cdf97446b9f5e14a67d15f7d51e2f6fb1273bd0ec26ee6d8f0f9f0a"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_dingqi_start1.mp3",
+    "bytes": 61892,
+    "sha256": "ca35bf82b71de1dfb585acf0cddf26d2a7a609bc079b7cd7af24faec25ebf2d4"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_dingqi_start2.mp3",
+    "bytes": 107972,
+    "sha256": "e9fcae0787f71afd76746bffd6fb642d154a851ddcb96ef8bfe484aba42ec74e"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_dingqi_draw1.mp3",
+    "bytes": 48188,
+    "sha256": "80f07fe63fae56af54d1297725323889fe5da632bfcce6815ae908f9b0eb2020"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_dingqi_draw2.mp3",
+    "bytes": 34700,
+    "sha256": "d994810d2fe8bfcdb0efe9c2c94a69ae5cb9940c57627c7aa190e38b3170fbc5"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_dingqi_draw3.mp3",
+    "bytes": 16412,
+    "sha256": "1f9a00cb9ded84daf7ac073bba32a211c9de155ff0d66a28ef8fce1f1bac3268"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_dingqi_prevent1.mp3",
+    "bytes": 24716,
+    "sha256": "27b1cd8e8304e5b550398421f66deeb3e43f65ff81cabbef4d3e8d318e0ac9b1"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_dingqi_prevent2.mp3",
+    "bytes": 28988,
+    "sha256": "a4c581420c6f1cccc3c7916a2b4229ca1b9fdc31b04bbe64e02e14e9f4fc8017"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_dingqi_prevent3.mp3",
+    "bytes": 27380,
+    "sha256": "b7efacdd8927b15837b1bee8e720a84f72712a116ffa7689f52172d555091b78"
+  },
+  {
+    "role": "zhongli_rework",
+    "path": "audio/zhongli_rework/skill/fan_dingqi_start3.mp3",
+    "bytes": 108695,
+    "sha256": "6d9fc413fb37b04c3281cd62b727f655a93dcafe696c22b6661690f0ca60ad42"
   }
 ]

@@ -1,3 +1,4 @@
+import zhongliReworkSkills from "./skills/zhongli_rework.js";
 import spSandroneSkills from "./skills/sp_sandrone.js";
 import sandroneSkills from "./skills/sandrone.js";
 import nicoleSkills from "./skills/nicole.js";
@@ -63,6 +64,7 @@ import albedoSkills from "./skills/albedo.js";
 import xiaoSkills from "./skills/xiao.js";
 
 export default {
+  ...zhongliReworkSkills,
   ...sandroneSkills,
   ...spSandroneSkills,
   ...nicoleSkills,

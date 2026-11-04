@@ -1,0 +1,146 @@
+{
+  "page": "https://wiki.biligame.com/ys/希诺宁语音",
+  "language": "zh-CN",
+  "verified_date": "2026-11-04",
+  "clips": {
+    "fan_duanyin1": {
+      "label": "元素战技·其一",
+      "text": "来吧。",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c1/9uwjpjacr5epzfgk7zj8z7at1ec1kqu.mp3",
+      "bytes": 10072,
+      "original": "audio/xilonen/originals/fan_duanyin1.mp3",
+      "output": "audio/xilonen/skill/fan_duanyin1.mp3",
+      "output_bytes": 10072,
+      "trim_seconds": null
+    },
+    "fan_duanyin2": {
+      "label": "元素战技·其二",
+      "text": "哼。",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f9/250ot46htc0wysy2cyjkpoja6irihi9.mp3",
+      "bytes": 8006,
+      "original": "audio/xilonen/originals/fan_duanyin2.mp3",
+      "output": "audio/xilonen/skill/fan_duanyin2.mp3",
+      "output_bytes": 8006,
+      "trim_seconds": null
+    },
+    "fan_duanyin3": {
+      "label": "元素战技·其三",
+      "text": "呼…",
+      "url": "https://patchwiki.biligame.com/images/ys/0/09/fq1aaug4lbagc7wzozdwjwmzu7m6h18.mp3",
+      "bytes": 9402,
+      "original": "audio/xilonen/originals/fan_duanyin3.mp3",
+      "output": "audio/xilonen/skill/fan_duanyin3.mp3",
+      "output_bytes": 9402,
+      "trim_seconds": null
+    },
+    "fan_zhuhun1": {
+      "label": "元素爆发·其一",
+      "text": "回荡吧，壑之声！",
+      "url": "https://patchwiki.biligame.com/images/ys/7/72/oj0pa343aylot7192ak4xn568hmp96w.mp3",
+      "bytes": 21593,
+      "original": "audio/xilonen/originals/fan_zhuhun1.mp3",
+      "output": "audio/xilonen/skill/fan_zhuhun1.mp3",
+      "output_bytes": 21593,
+      "trim_seconds": null
+    },
+    "fan_zhuhun2": {
+      "label": "元素爆发·其二",
+      "text": "沸腾吧，山之血！",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8d/89yahaxhxx4srsk60fmqn2im3alr8gn.mp3",
+      "bytes": 21881,
+      "original": "audio/xilonen/originals/fan_zhuhun2.mp3",
+      "output": "audio/xilonen/skill/fan_zhuhun2.mp3",
+      "output_bytes": 21881,
+      "trim_seconds": null
+    },
+    "fan_zhuhun3": {
+      "label": "元素爆发·其三",
+      "text": "深壑荡响，铭集火渊。",
+      "url": "https://patchwiki.biligame.com/images/ys/a/ac/n8jdhe11abn59z6usxutoj6vjcirv1l.mp3",
+      "bytes": 27481,
+      "original": "audio/xilonen/originals/fan_zhuhun3.mp3",
+      "output": "audio/xilonen/skill/fan_zhuhun3.mp3",
+      "output_bytes": 27481,
+      "trim_seconds": null
+    },
+    "fan_xilonen1": {
+      "label": "倒下·其一",
+      "text": "…燃烧…殆尽…",
+      "url": "https://patchwiki.biligame.com/images/ys/3/34/jo0kkmipcz3ffuprva7z1u4xkk8qswm.mp3",
+      "bytes": 24720,
+      "original": "audio/xilonen/originals/fan_xilonen1.mp3",
+      "output": "audio/xilonen/die/fan_xilonen1.mp3",
+      "output_bytes": 24720,
+      "trim_seconds": null
+    },
+    "fan_xilonen2": {
+      "label": "倒下·其二",
+      "text": "冷下去了…",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6d/ker98b06qpxtxtjstil4i8bt2yc859f.mp3",
+      "bytes": 15192,
+      "original": "audio/xilonen/originals/fan_xilonen2.mp3",
+      "output": "audio/xilonen/die/fan_xilonen2.mp3",
+      "output_bytes": 15192,
+      "trim_seconds": null
+    },
+    "fan_xilonen3": {
+      "label": "倒下·其三",
+      "text": "呵…也该…睡了…",
+      "url": "https://patchwiki.biligame.com/images/ys/6/66/14vh66gwqn8vxfb5gj195wir5kve73a.mp3",
+      "bytes": 32782,
+      "original": "audio/xilonen/originals/fan_xilonen3.mp3",
+      "output": "audio/xilonen/die/fan_xilonen3.mp3",
+      "output_bytes": 32782,
+      "trim_seconds": null
+    },
+    "fan_duanyin_yin_voice1": {
+      "label": "闲聊·休息时间",
+      "text": "忙活这么久，也该歇一歇了。你也来坐一会吧。",
+      "url": "https://patchwiki.biligame.com/images/ys/4/46/34xv9261kqaiu1soplnf12n4v3cyqcb.mp3",
+      "bytes": 60325,
+      "original": "audio/xilonen/originals/rest.mp3",
+      "output": "audio/xilonen/skill/fan_duanyin_yin_voice1.mp3",
+      "output_bytes": 60325,
+      "trim_seconds": null
+    },
+    "fan_duanyin_yin_voice2": {
+      "label": "阳光很好…",
+      "text": "呼啊…睡个午觉吧。",
+      "url": "https://patchwiki.biligame.com/images/ys/a/ac/9r3yw53w4hj6qwqu3tk6s4pcs0hjbhf.mp3",
+      "bytes": 63983,
+      "original": "audio/xilonen/originals/sun.mp3",
+      "output": "audio/xilonen/skill/fan_duanyin_yin_voice2.mp3",
+      "output_bytes": 55100,
+      "trim_seconds": [
+        0,
+        4.35
+      ]
+    },
+    "fan_duanyin_change_voice1": {
+      "label": "希诺宁的烦恼…",
+      "text": "我最怕听见一句话：「这件事既不紧急，也不重要，听你安排，尽快就好。」",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6a/1a5uxsfiaf6c4iyqank0ow8a0o81xaa.mp3",
+      "bytes": 195570,
+      "original": "audio/xilonen/originals/worry.mp3",
+      "output": "audio/xilonen/skill/fan_duanyin_change_voice1.mp3",
+      "output_bytes": 84836,
+      "trim_seconds": [
+        1.95,
+        9.1
+      ]
+    },
+    "fan_duanyin_change_voice2": {
+      "label": "希诺宁的烦恼…",
+      "text": "哼，在我的工作经验中，这句话一般就等于说：「我随时都可能来催你。」",
+      "url": "https://patchwiki.biligame.com/images/ys/6/6a/1a5uxsfiaf6c4iyqank0ow8a0o81xaa.mp3",
+      "bytes": 195570,
+      "original": "audio/xilonen/originals/worry.mp3",
+      "output": "audio/xilonen/skill/fan_duanyin_change_voice2.mp3",
+      "output_bytes": 88124,
+      "trim_seconds": [
+        9.25,
+        16.5
+      ]
+    }
+  }
+}

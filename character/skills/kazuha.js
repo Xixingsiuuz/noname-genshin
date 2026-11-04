@@ -6,7 +6,9 @@ function clubs(player, cards) {
   return (cards || []).filter(card => lost.includes(card) && get.suit(card) === "club");
 }
 export default {
+  fan_jilv_give_voice: { audio: [1,2,3].map(i => `ext:原神/audio/kazuha/skill/fan_jilv_give${i}.mp3`) },
   fan_jilv: {
+    audio: "ext:原神/audio/kazuha/skill:3",
     locked: true, forced: true,
     // loseEnd 已有实际失牌快照，且早于交牌所用的 loseAfter。
     trigger: { player: ["damageEnd", "loseEnd"] },
@@ -20,6 +22,7 @@ export default {
     group: "fan_jilv_give",
     subSkill: {
       give: {
+        audio: false,
         locked: true, forced: true, popup: false,
         trigger: { global: ["loseAfter", "cardsDiscardAfter"] },
         filter(event, player) {
@@ -34,12 +37,16 @@ export default {
           const result = await player.chooseTarget("羁旅：将梅花牌交给一名其他角色", (card, source, target) => target !== source)
             .set("prompt2", false).set("fanPairedConfirm", true).set("ai", target => get.attitude(player, target)).forResult();
           const remaining = cards.filter(card => get.position(card, true) === "d");
-          if (result.bool && result.targets[0].isIn() && remaining.length) await result.targets[0].gain(remaining, "gain2");
+          if (result.bool && result.targets[0].isIn() && remaining.length) {
+            game.trySkillAudio("fan_jilv_give_voice", player, true, true);
+            await result.targets[0].gain(remaining, "gain2");
+          }
         },
       },
     },
   },
   fan_zhenxiu: {
+    audio: "ext:原神/audio/kazuha/skill:2",
     trigger: { player: "phaseJieshuBegin" }, forced: true, locked: false,
     juexingji: true, skillAnimation: true, derivation: ["fan_huanlei"],
     filter: (event, player) => !player.storage.fan_zhenxiu && player.countMark("fan_jilv") === 3,
@@ -52,6 +59,7 @@ export default {
     },
   },
   fan_huanlei: {
+    audio: "ext:原神/audio/kazuha/skill:3",
     trigger: { global: "damageBegin4" }, locked: false,
     filter: (event, player) => event.num > 0 && player.countMark("fan_jilv") > 0 && !player.getHistory("useSkill", evt => evt.skill === "fan_huanlei").length,
     prompt: "是否发动【焕雷】移除所有“枫”并防止此伤害？", prompt2: false,

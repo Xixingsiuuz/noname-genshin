@@ -1,0 +1,48 @@
+{
+  "source": "image/character/originals/zhongli-rework.png",
+  "select": {
+    "crop": [
+      800,
+      175,
+      2240,
+      2191
+    ],
+    "size": [
+      240,
+      336
+    ],
+    "gaussian_blur": 0.4
+  },
+  "avatar": {
+    "crop": [
+      780,
+      175,
+      2260,
+      2247
+    ],
+    "size": [
+      400,
+      560
+    ],
+    "gaussian_blur": 0.3
+  },
+  "detail": {
+    "crop": [
+      250,
+      100,
+      2290,
+      2500
+    ],
+    "size": [
+      2040,
+      2400
+    ],
+    "camera_offset_css_px": [
+      5,
+      0
+    ],
+    "background_position": "calc(50% - 5px) top"
+  },
+  "resample": "Pillow LANCZOS",
+  "verified": "Image previews only; no live game UI validation"
+}

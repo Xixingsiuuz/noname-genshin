@@ -1,0 +1,113 @@
+{
+  "page": "https://wiki.biligame.com/ys/瓦雷莎语音",
+  "language": "zh-CN",
+  "verified_date": "2026-11-04",
+  "clips": {
+    "fan_shanlie_damage_voice1": {
+      "label": "元素战技·其一",
+      "text": "撞！",
+      "url": "https://patchwiki.biligame.com/images/ys/9/96/d7z1p3sepe71qo8ezrxx9ifv8gopq4n.mp3",
+      "bytes": 11681,
+      "original": "audio/varesa/originals/fan_shanlie_damage_voice1.mp3",
+      "output": "audio/varesa/skill/fan_shanlie_damage_voice1.mp3",
+      "output_bytes": 11681,
+      "trim_seconds": null
+    },
+    "fan_shanlie_damage_voice2": {
+      "label": "元素战技·其二",
+      "text": "头槌！",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f4/o5krkh635t7qskaz70gd87xaicsv0xi.mp3",
+      "bytes": 9661,
+      "original": "audio/varesa/originals/fan_shanlie_damage_voice2.mp3",
+      "output": "audio/varesa/skill/fan_shanlie_damage_voice2.mp3",
+      "output_bytes": 9661,
+      "trim_seconds": null
+    },
+    "fan_shanlie_damage_voice3": {
+      "label": "元素战技·其三",
+      "text": "嘿——！",
+      "url": "https://patchwiki.biligame.com/images/ys/3/39/r79lgw45hjufe0cxyqvfazqbad14otw.mp3",
+      "bytes": 9199,
+      "original": "audio/varesa/originals/fan_shanlie_damage_voice3.mp3",
+      "output": "audio/varesa/skill/fan_shanlie_damage_voice3.mp3",
+      "output_bytes": 9199,
+      "trim_seconds": null
+    },
+    "fan_shanlie_recover_voice1": {
+      "label": "元素战技·其五",
+      "text": "正义昭告！",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a9/djtbz1r3eoqg1f37pguxzqan2c5vsnv.mp3",
+      "bytes": 13173,
+      "original": "audio/varesa/originals/fan_shanlie_recover_voice1.mp3",
+      "output": "audio/varesa/skill/fan_shanlie_recover_voice1.mp3",
+      "output_bytes": 13173,
+      "trim_seconds": null
+    },
+    "fan_shanlie_recover_voice2": {
+      "label": "元素战技·其六",
+      "text": "英雄登场！",
+      "url": "https://patchwiki.biligame.com/images/ys/5/50/om2pomur2ngrq1eyvdzfihljddgzrjh.mp3",
+      "bytes": 12347,
+      "original": "audio/varesa/originals/fan_shanlie_recover_voice2.mp3",
+      "output": "audio/varesa/skill/fan_shanlie_recover_voice2.mp3",
+      "output_bytes": 12347,
+      "trim_seconds": null
+    },
+    "fan_varesa1": {
+      "label": "倒下·其一",
+      "text": "我不想…认输…",
+      "url": "https://patchwiki.biligame.com/images/ys/e/ed/ak0gg04fekdvpjxcgfukw8cg24dl4lq.mp3",
+      "bytes": 36781,
+      "original": "audio/varesa/originals/fan_varesa1.mp3",
+      "output": "audio/varesa/die/fan_varesa1.mp3",
+      "output_bytes": 36781,
+      "trim_seconds": null
+    },
+    "fan_varesa2": {
+      "label": "倒下·其二",
+      "text": "呜哇…",
+      "url": "https://patchwiki.biligame.com/images/ys/7/78/0jqu43phg9fplp9uiwa2j9ng0xmtsef.mp3",
+      "bytes": 25459,
+      "original": "audio/varesa/originals/fan_varesa2.mp3",
+      "output": "audio/varesa/die/fan_varesa2.mp3",
+      "output_bytes": 25459,
+      "trim_seconds": null
+    },
+    "fan_varesa3": {
+      "label": "倒下·其三",
+      "text": "真的…没力气了…",
+      "url": "https://patchwiki.biligame.com/images/ys/9/90/2hddwwyw5a11cwcna4qg3mt7333sldx.mp3",
+      "bytes": 26365,
+      "original": "audio/varesa/originals/fan_varesa3.mp3",
+      "output": "audio/varesa/die/fan_varesa3.mp3",
+      "output_bytes": 26365,
+      "trim_seconds": null
+    },
+    "fan_haoyan1": {
+      "label": "突破的感受·承",
+      "text": "嗯！能量超强，好像吃了一千份火焰炖肉！",
+      "url": "https://patchwiki.biligame.com/images/ys/6/68/t8du176wn65vczfmnuvznz65iy7ay82.mp3",
+      "bytes": 85749,
+      "original": "audio/varesa/originals/fan_haoyan_full.mp3",
+      "output": "audio/varesa/skill/fan_haoyan1.mp3",
+      "output_bytes": 55076,
+      "trim_seconds": [
+        0,
+        4.95
+      ]
+    },
+    "fan_haoyan2": {
+      "label": "突破的感受·承",
+      "text": "我的冲撞和飞踢也像爆发的火山一样充满力量！",
+      "url": "https://patchwiki.biligame.com/images/ys/6/68/t8du176wn65vczfmnuvznz65iy7ay82.mp3",
+      "bytes": 85749,
+      "original": "audio/varesa/originals/fan_haoyan_full.mp3",
+      "output": "audio/varesa/skill/fan_haoyan2.mp3",
+      "output_bytes": 59756,
+      "trim_seconds": [
+        4.95,
+        9.9
+      ]
+    }
+  }
+}

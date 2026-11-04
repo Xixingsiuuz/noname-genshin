@@ -1,0 +1,137 @@
+{
+  "page": "https://wiki.biligame.com/ys/奈芙尔语音",
+  "entries": [
+    {
+      "entry": "元素战技·其一",
+      "text": "我看懂了。",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8d/553gxwevn65nwhe83fibaa1emezxfbb.mp3",
+      "bytes": 13631,
+      "original": "audio/nefer/originals/fan_huanwu1.mp3",
+      "output": "audio/nefer/skill/fan_huanwu1.mp3",
+      "trim": null,
+      "output_bytes": 13631,
+      "sha256": "920d88cb0a0b0c1f42dc20a608073283e4682dc9eb7dd0fa0c3f0269aa890f51"
+    },
+    {
+      "entry": "元素战技·其二",
+      "text": "别说谎。",
+      "url": "https://patchwiki.biligame.com/images/ys/4/40/c7cawfmypbbw1g3x93scacd8i0ekwn7.mp3",
+      "bytes": 11789,
+      "original": "audio/nefer/originals/fan_huanwu2.mp3",
+      "output": "audio/nefer/skill/fan_huanwu2.mp3",
+      "trim": null,
+      "output_bytes": 11789,
+      "sha256": "7878ba4a637bae6974b52ecc722ee964a9cf7c5ead9f7f7653afb9cb8a072940"
+    },
+    {
+      "entry": "元素战技·其三",
+      "text": "真言如影。",
+      "url": "https://patchwiki.biligame.com/images/ys/a/ab/tmeh1cjimbcvv72bxrg8dxuy4iesbjs.mp3",
+      "bytes": 14031,
+      "original": "audio/nefer/originals/fan_huanwu3.mp3",
+      "output": "audio/nefer/skill/fan_huanwu3.mp3",
+      "trim": null,
+      "output_bytes": 14031,
+      "sha256": "e48de571965717ec7be0decce1c06ff4cc0498b515e6a5d7da3bda3e2b82a700"
+    },
+    {
+      "entry": "元素爆发·其一",
+      "text": "欺谎的唤声。",
+      "url": "https://patchwiki.biligame.com/images/ys/3/37/iwa6marj39gmyqt6vq8e5g9ugc484ct.mp3",
+      "bytes": 17595,
+      "original": "audio/nefer/originals/fan_miwen1.mp3",
+      "output": "audio/nefer/skill/fan_miwen1.mp3",
+      "trim": null,
+      "output_bytes": 17595,
+      "sha256": "497da5dcba33ca5eaed7e84aa33c3fb48aaa2486ef4d93c386b8cc627fae754e"
+    },
+    {
+      "entry": "元素爆发·其二",
+      "text": "索见诸心。",
+      "url": "https://patchwiki.biligame.com/images/ys/e/e6/lbd0jwyv8yzigm3du1r202sjcwd7gie.mp3",
+      "bytes": 17530,
+      "original": "audio/nefer/originals/fan_miwen2.mp3",
+      "output": "audio/nefer/skill/fan_miwen2.mp3",
+      "trim": null,
+      "output_bytes": 17530,
+      "sha256": "3549e0910bfba5f1d9b1e10704317a3495a683e196f4345c2901acaeaebfe45d"
+    },
+    {
+      "entry": "元素爆发·其三",
+      "text": "如是观想，真谜具解。",
+      "url": "https://patchwiki.biligame.com/images/ys/9/9d/70b4gt2wosbv9sceuy0dhk5ds0avrqo.mp3",
+      "bytes": 34547,
+      "original": "audio/nefer/originals/fan_miwen3.mp3",
+      "output": "audio/nefer/skill/fan_miwen3.mp3",
+      "trim": null,
+      "output_bytes": 34547,
+      "sha256": "aa949fb69239b761f5b56c4b358e55a8e9bcac9de37a6e7c4ab9033ef29bd5c8"
+    },
+    {
+      "entry": "倒下·其一",
+      "text": "黄沙…追上我了…",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f2/etc2ztaaues5k9fbtgp19l94dh44mid.mp3",
+      "bytes": 37953,
+      "original": "audio/nefer/originals/fan_nefer1.mp3",
+      "output": "audio/nefer/die/fan_nefer1.mp3",
+      "trim": null,
+      "output_bytes": 37953,
+      "sha256": "c2cea432eea868ff56f76083a745029d6a814e48ed446b06312c3c67b68aee34"
+    },
+    {
+      "entry": "倒下·其二",
+      "text": "无解的…谜题…",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8c/27rnvev1977wiug28r7sh938vg7lizq.mp3",
+      "bytes": 33151,
+      "original": "audio/nefer/originals/fan_nefer2.mp3",
+      "output": "audio/nefer/die/fan_nefer2.mp3",
+      "trim": null,
+      "output_bytes": 33151,
+      "sha256": "ea396973f32a95a5fa3310736e0442cc4925fc9350c34a8a1a0baced618adb0a"
+    },
+    {
+      "entry": "倒下·其三",
+      "text": "能预见的…结局…",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f7/j5v974a6fvrhsqn61jgyvvj1ncsm33y.mp3",
+      "bytes": 39955,
+      "original": "audio/nefer/originals/fan_nefer3.mp3",
+      "output": "audio/nefer/die/fan_nefer3.mp3",
+      "trim": null,
+      "output_bytes": 39955,
+      "sha256": "002a86c32c3ce19f9abc8e48da0b6e65e5fe11395a9b366cb05481e7ad3c7d30"
+    },
+    {
+      "entry": "用户提供开E重击",
+      "source": "C:\\Users\\22697\\Downloads\\奈芙尔开E重击语音\\奈芙尔，剖析时间.ogg",
+      "bytes": 116126,
+      "original": "audio/nefer/originals/奈芙尔，剖析时间.ogg",
+      "output": "audio/nefer/skill/fan_huanwu_use_voice1.mp3",
+      "trim": null,
+      "text": "剖析时间。",
+      "output_bytes": 39356,
+      "sha256": "499d4f511c4bb0ebece4ca5a7ae31351dd58b2a8ca1939f8784691a255ad0411"
+    },
+    {
+      "entry": "用户提供开E重击",
+      "source": "C:\\Users\\22697\\Downloads\\奈芙尔开E重击语音\\奈芙尔，原来如此.ogg",
+      "bytes": 100447,
+      "original": "audio/nefer/originals/奈芙尔，原来如此.ogg",
+      "output": "audio/nefer/skill/fan_huanwu_use_voice2.mp3",
+      "trim": null,
+      "text": "原来如此。",
+      "output_bytes": 35036,
+      "sha256": "be665e3d7ed91fb3a731fb3dcf1e2f75ae2f7ad2d48f4f5e03e7960b203b7f6f"
+    },
+    {
+      "entry": "用户提供开E重击",
+      "source": "C:\\Users\\22697\\Downloads\\奈芙尔开E重击语音\\奈芙尔，说点真话.ogg",
+      "bytes": 111837,
+      "original": "audio/nefer/originals/奈芙尔，说点真话.ogg",
+      "output": "audio/nefer/skill/fan_huanwu_use_voice3.mp3",
+      "trim": null,
+      "text": "说点真话。",
+      "output_bytes": 40100,
+      "sha256": "65758b43d60adb943ef80cfb5961c28623d733b238579fa9b3fee85aece88b84"
+    }
+  ]
+}

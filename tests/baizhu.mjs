@@ -5,6 +5,7 @@ let top = [], movedResult, moveOptions, returned, selectedPhase, judgeNumber = 7
 const lib = { skill: { a: {}, b: {}, extra: {} } };
 const get = { cards: () => top, number: c => c.number, suit: c => c.suit, position: c => c.pos, value: c => c.value || 0, attitude: () => 1 };
 const game = {
+  trySkillAudio(id, player) { assert.equal(id,"fan_wenbu"); assert(player.hasSkill(id)); },
   hasPlayer: filter => [doctor, otherDoctor].some(filter),
   filterPlayer: filter => [doctor, otherDoctor].filter(p => p.isIn() && filter(p)),
   async cardsGotoOrdering(cards) { cards.forEach(c => c.pos = 'o'); },
