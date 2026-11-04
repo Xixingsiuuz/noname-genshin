@@ -265,24 +265,7 @@
       }
     },
     {
-      "id": "fan_zailin",
-      "text": "也该认真起来了。",
-      "gain_db": -0.22,
-      "before": {
-        "lufs": -16.25,
-        "true_peak_dbtp": -1.28,
-        "mean_dbfs": -17.0,
-        "peak_dbfs": -1.3
-      },
-      "after": {
-        "lufs": -16.47,
-        "true_peak_dbtp": -1.33,
-        "mean_dbfs": -17.2,
-        "peak_dbfs": -1.4
-      }
-    },
-    {
-      "id": "fan_mavuika",
+      "id": "fan_mavuika1",
       "text": "火，不会熄灭…",
       "gain_db": -3.11,
       "before": {
@@ -296,6 +279,91 @@
         "true_peak_dbtp": -1.44,
         "mean_dbfs": -23.4,
         "peak_dbfs": -1.6
+      }
+    },
+    {
+      "id": "fan_zailin1",
+      "text": "追寻火焰在时间长河中的足迹，我们将至黑之地以血泪铸成家园。",
+      "gain_db": -0.45,
+      "before": {
+        "lufs": -18.89,
+        "true_peak_dbtp": -1.05,
+        "mean_dbfs": -20.1,
+        "peak_dbfs": -1.1
+      },
+      "after": {
+        "lufs": -19.33,
+        "true_peak_dbtp": -1.53,
+        "mean_dbfs": -20.6,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_zailin2",
+      "text": "而今，长路向前延续，旅途正待新篇。",
+      "gain_db": -1.52,
+      "before": {
+        "lufs": -19.28,
+        "true_peak_dbtp": 0.02,
+        "mean_dbfs": -20.5,
+        "peak_dbfs": 0.0
+      },
+      "after": {
+        "lufs": -20.78,
+        "true_peak_dbtp": -1.04,
+        "mean_dbfs": -22.0,
+        "peak_dbfs": -1.0
+      }
+    },
+    {
+      "id": "fan_zailin3",
+      "text": "现任火神玛薇卡，助你的视野中再无漆黑。",
+      "gain_db": -1.4,
+      "before": {
+        "lufs": -18.16,
+        "true_peak_dbtp": -0.1,
+        "mean_dbfs": -18.8,
+        "peak_dbfs": -0.1
+      },
+      "after": {
+        "lufs": -19.54,
+        "true_peak_dbtp": -1.55,
+        "mean_dbfs": -20.2,
+        "peak_dbfs": -1.6
+      }
+    },
+    {
+      "id": "fan_mavuika2",
+      "text": "传承，终结了吗？",
+      "gain_db": 0.53,
+      "before": {
+        "lufs": -20.58,
+        "true_peak_dbtp": -2.03,
+        "mean_dbfs": -25.1,
+        "peak_dbfs": -2.6
+      },
+      "after": {
+        "lufs": -20.01,
+        "true_peak_dbtp": -1.99,
+        "mean_dbfs": -24.5,
+        "peak_dbfs": -2.6
+      }
+    },
+    {
+      "id": "fan_mavuika3",
+      "text": "命运，如此？",
+      "gain_db": -2.45,
+      "before": {
+        "lufs": -17.25,
+        "true_peak_dbtp": 0.34,
+        "mean_dbfs": -23.1,
+        "peak_dbfs": -0.0
+      },
+      "after": {
+        "lufs": -19.57,
+        "true_peak_dbtp": -1.1,
+        "mean_dbfs": -25.5,
+        "peak_dbfs": -1.3
       }
     }
   ],

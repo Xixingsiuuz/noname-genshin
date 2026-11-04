@@ -3,21 +3,21 @@ import { readFileSync } from "node:fs";
 const read = path => readFileSync(new URL(path, import.meta.url), "utf8");
 const source = read("../character/skills/mavuika.js");
 const manifest = JSON.parse(read("../audio/mavuika/originals/mavuika-sources.json"));
-assert.equal(Object.keys(manifest.clips).length, 14);
+assert.equal(Object.keys(manifest.clips).length, 18);
 const poolLabels = prefix => Object.entries(manifest.clips).filter(([id]) => id.startsWith(prefix)).map(([, clip]) => clip.label);
 assert.deepEqual(poolLabels('fan_chihun_gain'), ['元素战技·其一', '元素战技·其三', '元素战技·其二']);
 assert.deepEqual(poolLabels('fan_chihun_overflow'), ['打开宝箱·其三', '元素战技·其四']);
 assert.deepEqual(poolLabels('fan_fentian_charge'), ['元素战技·其五', '元素战技·其六']);
 assert.equal(Object.values(manifest.clips).filter(clip => clip.label === '元素战技·其四').length, 1);
 for (const clip of Object.values(manifest.clips)) {
-  assert.equal(clip.trim_seconds, null);
+  assert(clip.trim_seconds === null || clip.label === "初次见面…");
   assert(clip.volume.after.true_peak_dbtp <= -1, clip.output);
   assert(clip.url.startsWith("https://patchwiki.biligame.com/"));
   assert(clip.text && clip.bytes > 1000 && clip.original_sha256);
 }
 const report = JSON.parse(read("../audio/mavuika/originals/mavuika-volume-report.json"));
 assert.equal(report.target_lufs, -14.25);
-assert.equal(report.clips.length, 14);
+assert.equal(report.clips.length, 18);
 const nativeGame = read("../../../noname/game/index.js");
 const timeline = [], status = {};
 const game = { roundNumber: 1, players: [], trySkillAudio(id, player, direct) {

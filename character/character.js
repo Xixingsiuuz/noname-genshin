@@ -76,7 +76,7 @@ const characters = {
   fan_varesa: ["female", "shu", 4, ["fan_shanlie", "fan_haoyan"],
     ["ext:原神/image/character/portraits/varesa.png", "die:ext:原神/audio/varesa/die:3"]],
   fan_mavuika: ["female", "shu", 4, ["fan_chihun", "fan_fentian", "fan_zailin"],
-    ["zhu", "ext:原神/image/character/portraits/mavuika.png", "die:ext:原神/audio/mavuika/die:true"]],
+    ["zhu", "ext:原神/image/character/portraits/mavuika.png", "die:ext:原神/audio/mavuika/die:3"]],
   fan_chasca: ["female", "shu", 4, ["fan_tiaoting", "fan_xixin"],
     ["ext:原神/image/character/portraits/chasca.png", "die:ext:原神/audio/chasca/die:2"]],
   fan_xilonen: ["female", "shu", "4/4/1", ["fan_duanyin", "fan_zhuhun"],

@@ -232,7 +232,7 @@ export default {
     },
   },
   fan_zailin: {
-    audio: "ext:原神/audio/mavuika/skill:true",
+    audio: "ext:原神/audio/mavuika/skill:3",
     logAudio: () => false,
     locked: false,
     prompt: "你可以发动【再临】",

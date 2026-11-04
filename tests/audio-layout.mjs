@@ -89,7 +89,7 @@ for (const [id, count] of Object.entries({fan_guiwang_damage:1,fan_guiwang:2,fan
  game.trySkillAudio(id, 'fan_itto', true, true, null, [{}, {}]);
  assert.deepEqual(played.at(-1), [], id + ' automatic logging is silent');
 }
-const mavuikaPools={fan_chihun_gain:3,fan_chihun_overflow:2,fan_chihun_convert:2,fan_fentian_charge:2,fan_fentian_fire:3,fan_zailin:1};
+const mavuikaPools={fan_chihun_gain:3,fan_chihun_overflow:2,fan_chihun_convert:2,fan_fentian_charge:2,fan_fentian_fire:3,fan_zailin:3};
 const ajaxVoices=['fan_jingwu_convert_voice','fan_jingwu_gain_voice','fan_jingwu_damage_voice','fan_jingwu_draw_voice','fan_kuanglan','fan_kuanglan_repay_voice'];
 for(const id of ajaxVoices){
  game.trySkillAudio(id,'fan_ajax',true,true);assert.equal(played.at(-1).length,2,id);

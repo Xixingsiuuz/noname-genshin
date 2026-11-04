@@ -29,11 +29,11 @@
       "trim_seconds": null
     },
     "fan_anshen_give_voice2": {
-      "url": "https://patchwiki.biligame.com/images/ys/a/a2/of2bqoxylt3u935f19o81io4bemjhrf.mp3",
-      "text": "美梦疗法。",
-      "original": "audio/mizuki/originals/source-04.mp3",
-      "bytes": 12995,
-      "label": "元素战技·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/9/97/ahbgwkewhnbsf4tog3687fl2406pucf.mp3",
+      "text": "噩梦噩梦快离开…",
+      "original": "audio/mizuki/originals/source-05.mp3",
+      "bytes": 22664,
+      "label": "元素爆发·其一",
       "path": "audio/mizuki/skill/fan_anshen_give_voice2.mp3",
       "trim_seconds": null
     },
@@ -47,20 +47,20 @@
       "trim_seconds": null
     },
     "fan_anshen_heal_voice2": {
-      "url": "https://patchwiki.biligame.com/images/ys/9/97/ahbgwkewhnbsf4tog3687fl2406pucf.mp3",
-      "text": "噩梦噩梦快离开…",
-      "original": "audio/mizuki/originals/source-05.mp3",
-      "bytes": 22664,
-      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a2/of2bqoxylt3u935f19o81io4bemjhrf.mp3",
+      "text": "美梦疗法。",
+      "original": "audio/mizuki/originals/source-04.mp3",
+      "bytes": 12995,
+      "label": "元素战技·其二",
       "path": "audio/mizuki/skill/fan_anshen_heal_voice2.mp3",
       "trim_seconds": null
     },
     "fan_chanyi_voice1": {
-      "url": "https://patchwiki.biligame.com/images/ys/9/9f/gu4mo13q3eofxz0skeprfubn5cyprjn.mp3",
-      "text": "令人愉悦的收获。",
-      "original": "audio/mizuki/originals/source-08.mp3",
-      "bytes": 16864,
-      "label": "打开宝箱·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d6/8xq9g5l1kzeoacu5uyvutpgk7kki2c4.mp3",
+      "text": "昨晚的梦境…味道很美妙，感谢你与我分享。",
+      "original": "audio/mizuki/originals/source-13.mp3",
+      "bytes": 53213,
+      "label": "闲聊·心理诊疗",
       "path": "audio/mizuki/skill/fan_chanyi_voice1.mp3",
       "trim_seconds": null
     },

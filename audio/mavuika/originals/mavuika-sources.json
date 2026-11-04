@@ -361,48 +361,18 @@
       "output_bytes": 23804,
       "sha256": "2be9c1bcbf4002b19002be803897b8c784382a5df6e896aa62d8056cb332b34b"
     },
-    "fan_zailin": {
-      "label": "生命值低·其三",
-      "text": "也该认真起来了。",
-      "purpose": "确认濒死发动再临",
-      "url": "https://patchwiki.biligame.com/images/ys/c/cf/059i8zvdg7elojal19hz8fnfnd60so8.mp3",
-      "bytes": 14361,
-      "original_sha256": "480ad91ef2287d4226ec8364f201b21f5422357862970267458ce5e45dad1582",
-      "original": "audio/mavuika/originals/fan_zailin.mp3",
-      "output": "audio/mavuika/skill/fan_zailin.mp3",
-      "trim_seconds": null,
-      "volume": {
-        "id": "fan_zailin",
-        "text": "也该认真起来了。",
-        "gain_db": -0.22,
-        "before": {
-          "lufs": -16.25,
-          "true_peak_dbtp": -1.28,
-          "mean_dbfs": -17.0,
-          "peak_dbfs": -1.3
-        },
-        "after": {
-          "lufs": -16.47,
-          "true_peak_dbtp": -1.33,
-          "mean_dbfs": -17.2,
-          "peak_dbfs": -1.4
-        }
-      },
-      "output_bytes": 15404,
-      "sha256": "dacfd6de4a130a2b24f99eeee03468d8f0c4f8d94362b7b62463ea40007b82a9"
-    },
-    "fan_mavuika": {
+    "fan_mavuika1": {
       "label": "倒下·其一",
       "text": "火，不会熄灭…",
       "purpose": "阵亡",
       "url": "https://patchwiki.biligame.com/images/ys/5/59/2rsu9o0n2zittf1hbgymn7kfx39e2yj.mp3",
       "bytes": 26387,
       "original_sha256": "671d72c297bee90630896092923d29dd1b39642753bbc6ed91a480600b88b557",
-      "original": "audio/mavuika/originals/fan_mavuika.mp3",
-      "output": "audio/mavuika/die/fan_mavuika.mp3",
+      "original": "audio/mavuika/originals/fan_mavuika1.mp3",
+      "output": "audio/mavuika/die/fan_mavuika1.mp3",
       "trim_seconds": null,
       "volume": {
-        "id": "fan_mavuika",
+        "id": "fan_mavuika1",
         "text": "火，不会熄灭…",
         "gain_db": -3.11,
         "before": {
@@ -420,6 +390,160 @@
       },
       "output_bytes": 31796,
       "sha256": "d2d8bb43dd63cbc7eacd365f404ee9d0faeaa68375917a01ba866caec1435525"
+    },
+    "fan_zailin1": {
+      "label": "初次见面…",
+      "text": "追寻火焰在时间长河中的足迹，我们将至黑之地以血泪铸成家园。",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4c/gdjllaqj4gpjiek47e0f5veu3qu7png.mp3",
+      "original": "audio/mavuika/originals/introduction.mp3",
+      "output": "audio/mavuika/skill/fan_zailin1.mp3",
+      "bytes": 154817,
+      "original_sha256": "11f9f8cfb6194989092c557e74065fc796538890f2ea4d65fb4f3396ec848eae",
+      "trim_seconds": [
+        0,
+        7.1
+      ],
+      "output_bytes": 84524,
+      "sha256": "78fa5cda9ff2c317d5833db21a4ac368925227e307b792f0202f6866896b34d6",
+      "volume": {
+        "id": "fan_zailin1",
+        "text": "追寻火焰在时间长河中的足迹，我们将至黑之地以血泪铸成家园。",
+        "gain_db": -0.45,
+        "before": {
+          "lufs": -18.89,
+          "true_peak_dbtp": -1.05,
+          "mean_dbfs": -20.1,
+          "peak_dbfs": -1.1
+        },
+        "after": {
+          "lufs": -19.33,
+          "true_peak_dbtp": -1.53,
+          "mean_dbfs": -20.6,
+          "peak_dbfs": -1.5
+        }
+      }
+    },
+    "fan_zailin2": {
+      "label": "初次见面…",
+      "text": "而今，长路向前延续，旅途正待新篇。",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4c/gdjllaqj4gpjiek47e0f5veu3qu7png.mp3",
+      "original": "audio/mavuika/originals/introduction.mp3",
+      "output": "audio/mavuika/skill/fan_zailin2.mp3",
+      "bytes": 154817,
+      "original_sha256": "11f9f8cfb6194989092c557e74065fc796538890f2ea4d65fb4f3396ec848eae",
+      "trim_seconds": [
+        7.1,
+        12.2
+      ],
+      "output_bytes": 57284,
+      "sha256": "d4e0f1c283ffe366a862441c4aced3f81df40af90b9072fb71ca7dc58b42dfeb",
+      "volume": {
+        "id": "fan_zailin2",
+        "text": "而今，长路向前延续，旅途正待新篇。",
+        "gain_db": -1.52,
+        "before": {
+          "lufs": -19.28,
+          "true_peak_dbtp": 0.02,
+          "mean_dbfs": -20.5,
+          "peak_dbfs": 0.0
+        },
+        "after": {
+          "lufs": -20.78,
+          "true_peak_dbtp": -1.04,
+          "mean_dbfs": -22.0,
+          "peak_dbfs": -1.0
+        }
+      }
+    },
+    "fan_zailin3": {
+      "label": "初次见面…",
+      "text": "现任火神玛薇卡，助你的视野中再无漆黑。",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4c/gdjllaqj4gpjiek47e0f5veu3qu7png.mp3",
+      "original": "audio/mavuika/originals/introduction.mp3",
+      "output": "audio/mavuika/skill/fan_zailin3.mp3",
+      "bytes": 154817,
+      "original_sha256": "11f9f8cfb6194989092c557e74065fc796538890f2ea4d65fb4f3396ec848eae",
+      "trim_seconds": [
+        12.2,
+        16.7
+      ],
+      "output_bytes": 50204,
+      "sha256": "39f658efa57c2905f0bcf44132321701773b1d96f0e4cd0915ccb87a8f266bcc",
+      "volume": {
+        "id": "fan_zailin3",
+        "text": "现任火神玛薇卡，助你的视野中再无漆黑。",
+        "gain_db": -1.4,
+        "before": {
+          "lufs": -18.16,
+          "true_peak_dbtp": -0.1,
+          "mean_dbfs": -18.8,
+          "peak_dbfs": -0.1
+        },
+        "after": {
+          "lufs": -19.54,
+          "true_peak_dbtp": -1.55,
+          "mean_dbfs": -20.2,
+          "peak_dbfs": -1.6
+        }
+      }
+    },
+    "fan_mavuika2": {
+      "label": "倒下·其二",
+      "text": "传承，终结了吗？",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4c/ooz8b46u1nihld0xm6gzanjm94f8n4k.mp3",
+      "original": "audio/mavuika/originals/death2.mp3",
+      "output": "audio/mavuika/die/fan_mavuika2.mp3",
+      "bytes": 25436,
+      "original_sha256": "150a956469134cc9580c92a0345b61075e0de14c2a354a6c4cb29bec564f3509",
+      "trim_seconds": null,
+      "output_bytes": 31148,
+      "sha256": "c4bbe4e28f0e622934666f3f448a377dcf2bd435548a55d2c52e02e14ebe4294",
+      "volume": {
+        "id": "fan_mavuika2",
+        "text": "传承，终结了吗？",
+        "gain_db": 0.53,
+        "before": {
+          "lufs": -20.58,
+          "true_peak_dbtp": -2.03,
+          "mean_dbfs": -25.1,
+          "peak_dbfs": -2.6
+        },
+        "after": {
+          "lufs": -20.01,
+          "true_peak_dbtp": -1.99,
+          "mean_dbfs": -24.5,
+          "peak_dbfs": -2.6
+        }
+      }
+    },
+    "fan_mavuika3": {
+      "label": "倒下·其三",
+      "text": "命运，如此？",
+      "url": "https://patchwiki.biligame.com/images/ys/2/29/bpy4mwl65j0fi9l1ofsuconihoz6e8t.mp3",
+      "original": "audio/mavuika/originals/death3.mp3",
+      "output": "audio/mavuika/die/fan_mavuika3.mp3",
+      "bytes": 26201,
+      "original_sha256": "052fa5e0a807e7c809f84750f33ad649545400da4812efdfc7588d622b31b61b",
+      "trim_seconds": null,
+      "output_bytes": 30908,
+      "sha256": "2b568079516ed56378f7721b4846dc0c02939b0233a67140d5391f3be0185565",
+      "volume": {
+        "id": "fan_mavuika3",
+        "text": "命运，如此？",
+        "gain_db": -2.45,
+        "before": {
+          "lufs": -17.25,
+          "true_peak_dbtp": 0.34,
+          "mean_dbfs": -23.1,
+          "peak_dbfs": -0.0
+        },
+        "after": {
+          "lufs": -19.57,
+          "true_peak_dbtp": -1.1,
+          "mean_dbfs": -25.5,
+          "peak_dbfs": -1.3
+        }
+      }
     }
   }
 }

@@ -1,10 +1,10 @@
-"""Preserve Emilie's Chinese originals and source entry metadata."""
+"""Preserve Mizuki's Chinese originals and source entry metadata."""
 from pathlib import Path
 import urllib.request, urllib.parse, re, html, json
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / 'audio/mizuki/originals'
-LABELS = ['加入队伍·其一','加入队伍·其二','元素战技·其一','元素战技·其二','元素爆发·其一','元素爆发·其二','元素爆发·其三','打开宝箱·其一','打开宝箱·其二','倒下·其一','倒下·其二','倒下·其三']
+LABELS = ['加入队伍·其一','加入队伍·其二','元素战技·其一','元素战技·其二','元素爆发·其一','元素爆发·其二','元素爆发·其三','打开宝箱·其一','打开宝箱·其二','倒下·其一','倒下·其二','倒下·其三','闲聊·心理诊疗']
 
 def fetch(url):
     return urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0', 'Referer': 'https://wiki.biligame.com/'}), timeout=45).read()
