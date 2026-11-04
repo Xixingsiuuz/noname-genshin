@@ -1,3 +1,4 @@
+import { createUpdateChecker, EXTENSION_VERSION } from "./ui/update-check.js";
 import { installHuanyanReplay } from "./ui/huanyan-effect.js";
 import { installSharedZhinang } from "./character/zhinang.js";
 import { installDetailPortraits } from "./ui/detail-portraits.js";
@@ -25,9 +26,11 @@ function sortLocalHandcards() {
 export const type = "extension";
 
 export default function () {
+  const updater = createUpdateChecker(game);
   return {
     name: "原神",
     content() {
+      updater.start();
       installSharedZhinang(get, () => _status);
       (lib.dynamicTranslate ||= {}).fan_tianlin = player => player.storage.fan_duanyu_failed
         ? "锁定技，每轮开始时，你选择一个本局游戏未选择过的基本牌或普通锦囊牌的牌名，那之后，当其他角色使用牌名被【天霖】选择过，且非转化的手牌指定目标时，你于此牌结算后将其置于你的武将牌上，称为“忆”，然后你摸一张牌。"
@@ -92,6 +95,17 @@ export default function () {
       Object.assign(lib.characterIntro, characterIntros);
     },
     config: {
+      check_update: {
+        name: "检查更新",
+        clear: true,
+        onclick() { void updater.check(true); },
+      },
+      auto_check_update: {
+        name: "启动时检查更新",
+        intro: "检查 GitHub 正式发布版本；同一新版只自动提醒一次。",
+        init: true,
+        onclick(value) { game.saveExtensionConfig("原神", "auto_check_update", value); },
+      },
       auto_sort_handcards: {
         name: "手牌自动排序",
         intro: "使用扩展独立牌序：类别、牌名、属性、花色、点数。开启后、自己获得牌及自己回合开始时整理；不改变原生整理按钮。",
@@ -680,7 +694,7 @@ export default function () {
     ] },
     intro: "原神原创武将合集。目前收录兹白、芙宁娜、闲云、千织、克洛琳德、希格雯、艾梅莉埃、玛拉妮、基尼奇、希诺宁、恰斯卡、玛薇卡、瓦蕾莎及五种仙家机关。测试版，请先单机验证技能时机。",
     author: "原创武将开发",
-    version: "0.2.0",
+    version: EXTENSION_VERSION,
     editable: false,
     connect: false,
   };
