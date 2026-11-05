@@ -7,6 +7,25 @@ const get={name:c=>c.name,value:()=>1,attitude:(p,t)=>t.enemy?-5:5,tag:(c,t)=>c.
 const skills=new Function('game','get','ui',read('../character/skills/zhongli_rework.js').replace(/^import .*;\r?\n/,'').replaceAll('export const','const').replaceAll('export function','function').replace('export default','return'))(game,get,ui);
 function person(){return {storage:{},hp:2,hujia:1,inGame:true,hand:[{name:'jiu'}],contracts:[],owned:[],stat:{},isIn(){return this.inGame},getCards(){return this.hand},getExpansions(){return this.contracts},getStat(){return this.stat},hasSkill(){return false},canSaveCard(c,t){assert.equal(t,this);return !c.banned},logSkill(){},addSkill(id){this.owned.push(id)},removeSkill(id){this.owned=this.owned.filter(x=>x!==id)},async addToExpansion({cards,gaintag,source}){assert.deepEqual(gaintag,['fan_dingqi']);source.hand=source.hand.filter(c=>!cards.includes(c));this.contracts.push(...cards)},async loseToDiscardpile(cards){this.contracts=this.contracts.filter(c=>!cards.includes(c));},async draw(n){this.drawn=(this.drawn||0)+n},async loseHp(n){this.hp-=n;if(this.hp===0){if(this.hand.length){this.hand.pop();this.hp=1}else this.inGame=false}},async changeHujia(n,type,cap){this.hujia=Math.max(0,Math.min(cap??Infinity,this.hujia+n))},hasZhuSkill(id){assert.equal(id,'fan_re_xianyou');return true},countCards(){return this.hand.length},countDiscardableCards(){return 1},discardPlayerCard(){return {forResult:async()=>({bool:true})}}};}
 const owner=person(),target=person(),people=[owner,target];
+// 原生 nodeintro 仅接受字符串或 false；契牌应添加到对话框而非返回数组。
+const intro=skills.fan_dingqi_contract.intro;
+const contractCards=[{name:'sha'},{name:'shan'}];
+target.contracts=contractCards;
+let shown;
+const introResult=intro.mark({addAuto(cards){shown=cards}},undefined,target);
+assert.equal(introResult,undefined);
+assert.equal(shown,contractCards);
+assert.equal(intro.markcount(undefined,target),2);
+get.translation=cards=>cards.map(c=>c.name).join('、');
+assert.equal(intro.content(undefined,target),'sha、shan');
+// 直接执行本地 storageintro 方法体，第三个回调参数实际为技能 ID。
+const engineSource=read('../../../noname/get/index.js');
+const storageIntroSource=engineSource.slice(engineSource.indexOf('  storageintro(type,'),engineSource.indexOf('  nodeintro(',engineSource.indexOf('  storageintro(type,'))).trim();
+const nativeStorageIntro=new Function('get',`return ({${storageIntroSource}}).storageintro`)(get);
+assert.equal(nativeStorageIntro(intro.content,undefined,target,{},'fan_dingqi_contract'),'sha、shan');
+target.contracts=[];
+assert.equal(nativeStorageIntro(intro.content,undefined,target,{},'fan_dingqi_contract'),'没有卡牌');
+assert.equal(intro.mark({addAuto(){throw Error('empty cards')}},undefined,target),'没有卡牌');
 let picked,options;
 owner.chooseCardTarget=o=>{options=o;return {forResult:async()=>picked}};
 picked={bool:false};await skills.fan_dingqi.content({}, {},owner);assert.equal(target.contracts.length,0);

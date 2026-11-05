@@ -34,6 +34,7 @@ export default {
       const next = player.chooseToUse({
         prompt: "剑流：将一张牌当【杀】使用",
         fan_jianliu_cards: cards,
+        addCount: false,
         norestore: true,
         _backupevent: "fan_jianliu_backup",
         custom: { add: {}, replace: { window() {} } },
@@ -42,6 +43,9 @@ export default {
       await next;
     },
     mod: {
+      cardUsable(card) {
+        if (card.name === "sha" && card.storage?.fan_jianliu) return Infinity;
+      },
       targetInRange(card) {
         if (card.storage?.fan_jianliu) return true;
       },

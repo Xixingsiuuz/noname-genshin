@@ -120,7 +120,17 @@ export default {
   },
   fan_dingqi_contract: {
     charlotte: true, locked: false, forced: true, audio: false,
-    mark: true, marktext: "契", intro: {content: (storage, player) => player.getExpansions(tag), markcount: (storage, player) => player.getExpansions(tag).length},
+    mark: true, marktext: "契", intro: {
+      content(storage, player) {
+        return get.translation(player.getExpansions(tag)) || "没有卡牌";
+      },
+      mark(dialog, storage, player) {
+        const cards = player.getExpansions(tag);
+        if (!cards.length) return "没有卡牌";
+        dialog.addAuto(cards);
+      },
+      markcount: (storage, player) => player.getExpansions(tag).length,
+    },
     // 契随目标保留，不依赖钟离仍在场或仍持有定契。
     trigger: {player: ["damageBegin4", "phaseAfter"]},
     filter: (event, player) => player.getExpansions(tag).length > 0 && (event.name !== "damage" || event.num > 0),

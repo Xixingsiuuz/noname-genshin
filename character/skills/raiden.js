@@ -142,7 +142,15 @@ export default {
               pending = true;
               setTimeout(() => {
                 try {
-                  if (_status.event === source && source.skill === "fan_wuxiang_sha_backup" && valid() && game.check()) ui.click.ok();
+                  if (_status.event === source && source.skill === "fan_wuxiang_sha_backup" && valid() && game.check()
+                    && _status.event === source && source.skill === "fan_wuxiang_sha_backup" && valid()) {
+                    // click.ok() without a button node does not close ui.confirm.
+                    // Close only the current response controls after rechecking;
+                    // never touch controls belonging to a later event.
+                    ui.confirm?.close();
+                    if (source.skillDialog === true) source.skillDialog = false;
+                    ui.click.ok();
+                  }
                 } finally { pending = false; }
               }, 0);
             }

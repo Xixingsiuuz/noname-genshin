@@ -56,7 +56,7 @@ const characters = {
   fan_ineffa: ["female", "wei", 4, ["fan_wentai", "fan_miyuan"],
     ["ext:原神/image/character/portraits/ineffa.png", "die:ext:原神/audio/ineffa/die:3"]],
   fan_navia: ["female", "qun", "4/4/2", ["fan_cijue", "fan_xianjing", "fan_cimei"],
-    ["zhu", "ext:原神/image/character/portraits/navia.png", "die:ext:原神/audio/navia/die:3"]],
+    ["zhu", "ext:原神/image/character/portraits/navia-centered-20261104.png", "die:ext:原神/audio/navia/die:3"]],
   fan_nahida: ["female", "wu", "3/3/1", ["fan_huaqiu", "fan_wenshou", "fan_huanjing", "fan_lanyin"],
     ["zhu", "ext:原神/image/character/portraits/nahida.png", "die:ext:原神/audio/nahida/die:3"]],
   fan_mizuki: ["female", "wu", "3/3/1", ["fan_anshen", "fan_chanyi"],

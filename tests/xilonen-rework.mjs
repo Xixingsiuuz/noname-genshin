@@ -8,6 +8,14 @@ const skills=new Function('lib','game','get','ui',readFileSync(new URL('../chara
 const answer=result=>({set(){return this},async forResult(){return result}});
 function player(){return {storage:{},marks:{},hp:1,isZhu:false,awakenedSkills:[],cards:[],hasSkill:k=>false,isIn:()=>true,isDamaged:()=>true,getHandcardLimit:()=>4,hasCard(fn){return this.cards.some(fn)},getCards(){return this.cards},countCards(){return this.cards.length},countMark(k){return this.marks[k]||0},addMark(k,n){this.marks[k]=this.countMark(k)+n},addSkill(){},canRecast:()=>true,changeZhuanhuanji(k){this.storage[k]=!this.storage[k];log.push('flip')},async recast(c){this.cards.splice(this.cards.indexOf(c),1);log.push('recast')},async draw(){log.push('draw')},async recover(n=1){log.push(['recover',n])},chooseControl:()=>answer({index:1}),chooseTarget:()=>answer({bool:true,targets:[target]}),chooseButton(dialog){const rows=dialog.at(-1)[0];assert.deepEqual(rows.map(x=>x[0]),['normal','limited']);return answer({bool:true,links:['limited']})},awakenSkill(k){this.storage[k]=true;log.push('awaken')},logSkill(){log.push('log')},getStat:()=>({}),removeSkill(){},restoreSkill(){},async addSkills(k){log.push(['skill',k])}}}
 const owner=player(),target=player();players.push(owner,target);
+// Native get.order passes the skill/card first and the player second.
+assert.equal(skills.fan_duanyin.ai.order('fan_duanyin',owner),8);
+owner.storage.fan_duanyin=true;
+assert.equal(skills.fan_duanyin.ai.order('fan_duanyin',owner),9);
+owner.isDamaged=()=>false;
+assert.equal(skills.fan_duanyin.ai.order('fan_duanyin',owner),2);
+owner.isDamaged=()=>true;
+owner.storage.fan_duanyin=false;
 const card={type:'equip'};owner.cards=[card];ui.selected.cards=[card];ui.selected.targets=[target];assert.equal(skills.fan_duanyin.filterOk(),true);
 ui.selected.cards=[];assert.equal(skills.fan_duanyin.filterOk(),false);
 ui.selected.cards=[card];ui.selected.targets=[];assert.equal(skills.fan_duanyin.filterOk(),false);

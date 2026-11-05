@@ -302,3 +302,23 @@ assert.equal(stabBackup.viewAs.nature,"stab");assert(stabBackup.filterOk());asse
 stabBackup.onuse({},shaOwner);assert.equal(shaOwner.charge,2);assert(!stabBackup.filterOk());
 get.inpileVCardList=oldShaList;
 console.log("PASS: Wuxiang sha nature range, current legality, no cost before confirmation, shared cost and limit (simulation)");
+
+// Replay check -> pause -> deferred recheck; neither auto-confirm setting
+// may leave the confirmation created by game.check behind.
+for (const autoConfirm of [false,true]) {
+ const responder=player(["fan_wuxiang"]);responder.charge=3;
+ const responseEvent={name:"chooseToRespond",filterCard:()=>true,isMine:()=>true,skill:"fan_wuxiang_sha_backup",skillDialog:true};
+ status.event=responseEvent;
+ const responseSkill=skills.fan_wuxiang_sha.chooseButton.backup([["basic","","sha"]],responder);
+ let closed=0, submitted=0, paused=false;
+ ui.confirm={close(){closed++;delete ui.confirm;}};
+ game.check=()=>{ responseSkill.filterOk();ui.confirm={close(){closed++;delete ui.confirm;}};
+  if(autoConfirm){ui.confirm.close();delete responseEvent.skill;submitted++;paused=false;}
+  return true;
+ };
+ ui.click={ok(){assert(!ui.confirm);submitted++;delete responseEvent.skill;paused=false;}};
+ responseSkill.filterOk();paused=true;
+ await new Promise(resolve=>setTimeout(resolve,10));
+ assert.equal(submitted,1);assert.equal(paused,false);assert.equal(ui.confirm,undefined);assert.equal(closed,1);
+}
+console.log("PASS: Wuxiang response check/pause deferred completion clears confirmation with auto-confirm on/off (simulation)");

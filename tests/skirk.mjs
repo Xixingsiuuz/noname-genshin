@@ -71,7 +71,7 @@ const attacker = {
     return true;
   },
   chooseToUse(params) {
-    assert.notEqual(params.addCount, false, "不绕过次数检查、不退还出杀次数");
+    assert.equal(params.addCount, false, "剑流不占用正常出杀额度");
     assert.equal(params.fan_jianliu_cards[0], material);
     assert.equal(params.norestore, true, "取消时不退回额外选择界面");
     status.event = params;
@@ -83,6 +83,8 @@ const attacker = {
     assert.equal(backup.filterCard(material, this), true);
     assert.equal(backup.filterCard({}, this), false, "仅本次获牌可转化");
     assert.equal(skills.fan_jianliu.mod.targetInRange(backup.viewAs), true);
+    assert.equal(skills.fan_jianliu.mod.cardUsable(backup.viewAs), Infinity, "正常次数耗尽仍可使用剑流杀");
+    assert.equal(skills.fan_jianliu.mod.cardUsable({ name: "sha" }), undefined, "普通杀仍遵守正常次数");
     calls.push("sword");
     return {
       backup(skill) { assert.equal(skill, "fan_jianliu_backup"); },

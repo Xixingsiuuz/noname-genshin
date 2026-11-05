@@ -70,7 +70,7 @@ export default {
       if (target.isIn() && effects[result.index]) grant(target, effects[result.index]);
     },
     ai: {
-      order(player) { return yin(player) ? (player.isDamaged() ? 9 : 2) : 8; },
+      order(item, player) { return yin(player) ? (player.isDamaged() ? 9 : 2) : 8; },
       check(card) { return 7 - get.value(card); },
       result: {
         player(player) { return yin(player) ? 1 + (player.isDamaged() ? 2 : 0) : 0.5; },

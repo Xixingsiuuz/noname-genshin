@@ -131,7 +131,7 @@ export default function () {
         "image/character/originals/linnea.jpg", "image/character/portraits/linnea.png", "image/character/portraits/linnea-select.png", "image/character/portraits/linnea-detail.png",
         "image/character/originals/ganyu.png", "image/character/portraits/ganyu.png", "image/character/portraits/ganyu-select.png", "image/character/portraits/ganyu-detail.png", "image/character/portraits/xianyun.png", "image/character/portraits/xianyun-avatar-20261027.png",
         "image/character/portraits/skirk-v2.png", "image/character/portraits/skirk-avatar-20261027.png",
-        "image/character/portraits/shenhe.png", "image/character/portraits/shenhe-avatar-20261027.png"],
+        "image/character/portraits/navia-centered-20261104.png", "image/character/smooth/navia-centered-20261104.png", "image/character/portraits/shenhe.png", "image/character/portraits/shenhe-avatar-20261027.png"],
       card: ["image/card/fan_pengrenshenji-mechanism.png", "image/card/fan_zhuxing-mechanism.png",
         "image/card/fan_guizhongji-mechanism.png", "image/card/fan_chengehu-mechanism.png"],
       skill: [], audio: [

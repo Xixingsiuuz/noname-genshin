@@ -65,7 +65,16 @@ for (const [id, group] of Object.entries(skillVoiceGroups)) {
     assert.equal(audio.textList.length, audio.fileList.length, skill + " has every subtitle");
     return audio.textList;
   });
-  assert.deepEqual(Audio.skill({ skill: id }).fileList, [...new Set(group.flatMap(skill => original.call(Audio, { skill }).fileList))], id + " detail preview order");
+  const seenText = new Set(), seenFile = new Set(), expectedFiles = [];
+  for (const skill of group) {
+    const branch = original.call(Audio, { skill });
+    branch.fileList.forEach((file, index) => {
+      const text = branch.textList[index];
+      if (seenFile.has(file) || (text && seenText.has(text))) return;
+      seenFile.add(file); if (text) seenText.add(text); expectedFiles.push(file);
+    });
+  }
+  assert.deepEqual(Audio.skill({ skill: id }).fileList, expectedFiles, id + " detail preview order");
   assert.deepEqual(lines, expected.length ? [...new Set(expected)] : ["此技能暂无语音。"], id);
   assert.deepEqual(Audio.skill({ skill: id, args: [] }).textList,
     original.call(Audio, { skill: id, args: [] }).textList, "playback arguments bypass display aggregation");
@@ -84,6 +93,10 @@ for (const role of [...roles, "venti", "linnea"]) {
   }
 }
 assert.deepEqual(Audio.skill({ skill: "fan_zhenyue" }).fileList, []);
+assert.equal(Audio.skill({skill:'fan_yanjian'}).fileList.length,8);
+assert.equal(Audio.skill({skill:'fan_yanjian'}).textList.filter(line=>line==='黄毛小儿！').length,1);
+assert(!Audio.skill({skill:'fan_yanjian'}).fileList.some(file=>file.includes('fan_yanjian_full_damage3')));
+assert(original.call(Audio,{skill:'fan_yanjian_full_damage',args:[]}).textList.includes('黄毛小儿！'));
 assert.deepEqual(Audio.skill({ skill: "fan_sanxiang" }).textList, ["此技能暂无语音。"]);
 for (const [skill, voice] of [["fan_yunjian", "fan_sanxiang_leave_yun"],
   ["fan_yanjian", "fan_sanxiang_leave_yan"], ["fan_renjian", "fan_sanxiang_leave_ren"]]) {

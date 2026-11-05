@@ -133,7 +133,18 @@ export function installSkillVoices(get) {
       const lines = branches.flatMap(audio => audio.textList);
       // 原生详情调用不带 args/info 键；trySkillAudio 即便参数为空也会带这两个键。
       if (!Object.hasOwn(options, "args") && !Object.hasOwn(options, "info")) {
-        const files = [...new Set(branches.flatMap(audio => audio.fileList))];
+        // 同一句原声可能被复制为不同分支文件；试听按台词去重，与显示列表一致。
+        const seenLines = new Set(), seenFiles = new Set(), files = [];
+        for (const branch of branches) {
+          const texts = branch.textList;
+          branch.fileList.forEach((file, index) => {
+            const line = texts[index];
+            if (seenFiles.has(file) || (line && seenLines.has(line))) return;
+            seenFiles.add(file);
+            if (line) seenLines.add(line);
+            files.push(file);
+          });
+        }
         Object.defineProperty(result, "fileList", { get: () => files.slice() });
       }
       Object.defineProperty(result, "textList", {
