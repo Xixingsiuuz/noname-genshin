@@ -112,11 +112,11 @@ export default {
       if (!result.bool || !result.cards?.length) return;
       game.trySkillAudio("fan_wenshou_select_voice", player);
       const card = result.cards[0];
-      (player.storage.fan_wenshou_cards ||= []).push({ card, target: trigger.player,
+      ((player.storage.fan_wenshou_cards || (player.storage.fan_wenshou_cards = []))).push({ card, target: trigger.player,
         suit: get.suit(card, trigger.player), lossIndex: trigger.player.getAllHistory("lose").length });
       const name = get.name(card, trigger.player);
       if (get.type(name) === "trick") {
-        const names = player.storage.fan_wenshou_names ||= [];
+        const names = (player.storage.fan_wenshou_names || (player.storage.fan_wenshou_names = []));
         if (!names.includes(name)) names.push(name);
       }
     },

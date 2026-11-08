@@ -10,15 +10,15 @@ const escapedSha = (damage, owner) => !!useOf(damage) && (owner.storage.fan_taop
 const neighbors = (target, owner) => [...new Set([target.getPrevious(), target.getNext()])]
   .filter(current => current && current !== owner && current !== target && current.isIn());
 function snapshot(damage, owner) {
-  damage.fan_huohua_neighbors ??= {};
-  damage.fan_huohua_neighbors[owner.playerid] ??= neighbors(damage.player, owner);
+  (damage.fan_huohua_neighbors ?? (damage.fan_huohua_neighbors = {}));
+  (damage.fan_huohua_neighbors[owner.playerid] ?? (damage.fan_huohua_neighbors[owner.playerid] = neighbors(damage.player, owner)));
 }
 async function splash(damage, owner, skill) {
   // damage 节点已在扣血之后、濒死之前固定相邻者，致死伤害仍有完整结算。
   const targets = (damage.fan_huohua_neighbors?.[owner.playerid] || neighbors(damage.player, owner)).slice();
   targets.sortBySeat(_status.currentPhase || owner);
   if (!targets.some(target => target.isIn())) return;
-  owner.logSkill(skill, targets);
+  owner.logSkill(skill, targets, null, null, []);
   game.trySkillAudio("fan_huohua_blast", owner, true);
   for (const target of targets) {
     if (target.isIn()) await target.damage(1, "fire", owner, "nocard");
@@ -114,10 +114,10 @@ export default {
         use.triggeredTargets2.add(player);
         return;
       }
-      player.storage.fan_taopao_uses ??= [];
+      (player.storage.fan_taopao_uses ?? (player.storage.fan_taopao_uses = []));
       if (!player.storage.fan_taopao_uses.includes(use)) player.storage.fan_taopao_uses.push(use);
       player.addSkill("fan_taopao_effect");
-      player.logSkill("fan_taopao", target);
+      player.logSkill("fan_taopao", target, null, null, []);
       game.trySkillAudio("fan_taopao", player, true);
     },
     ai: {

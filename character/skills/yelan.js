@@ -131,7 +131,7 @@ export default {
     filter(event, player) { return ownHuos(event.player, player).length > 0; },
     async content(event, trigger, player) {
       const n = number(trigger.card, trigger.player);
-      trigger.fan_kuanghuo_numbers ??= {};
+      (trigger.fan_kuanghuo_numbers ?? (trigger.fan_kuanghuo_numbers = {}));
       trigger.fan_kuanghuo_numbers[player.playerid] = n ? ownHuos(trigger.player, player)
         .filter(card => number(card, false) === n) : [];
     },

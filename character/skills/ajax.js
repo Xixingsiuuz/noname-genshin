@@ -239,7 +239,7 @@ export default {
       player.syncStorage("fan_kuanglan_count");
       player.markSkill("fan_kuanglan");
       const turn = currentTurn(event);
-      if (turn) (turn.fan_kuanglan_due ||= []).push(player);
+      if (turn) ((turn.fan_kuanglan_due || (turn.fan_kuanglan_due = []))).push(player);
       else player.storage.fan_kuanglan_unbound = (player.storage.fan_kuanglan_unbound || 0) + 1;
       player.storage.fan_kuanglan_pending = (player.storage.fan_kuanglan_pending || 0) + 1;
       player.addSkill("fan_kuanglan_repay");

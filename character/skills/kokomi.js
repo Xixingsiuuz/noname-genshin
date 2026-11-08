@@ -65,7 +65,7 @@ export default {
             .set("ai", button => get.value({ name: button.link[2] }, player)).forResult();
           if (result.bool && options.includes(result.links[0][2]) && !get.zhinangs().includes(result.links[0][2])) {
             game.broadcastAll(function (name) {
-              _status.fan_miaosuan_names ||= [];
+              (_status.fan_miaosuan_names || (_status.fan_miaosuan_names = []));
               if (!_status.fan_miaosuan_names.includes(name)) _status.fan_miaosuan_names.push(name);
             }, result.links[0][2]);
             game.trySkillAudio("fan_miaosuan_chengshi_voice", player, true, true);

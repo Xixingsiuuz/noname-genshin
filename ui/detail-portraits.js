@@ -16,11 +16,12 @@ export function installDetailPortraits(ui, lib) {
   if (preset && !preset.fanGanyuPortrait) {
     const character = function (...args) {
       const node = preset.apply(this, args);
+      if (node?.link === "fan_wanderer") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/wanderer-select.png")`;
       if (["fan_sandrone", "fan_sp_sandrone"].includes(node?.link)) node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/sandrone-select.png")`;
       if (node?.link === "fan_re_zhongli") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/zhongli-rework-select.png")`;
       if (node?.link === "fan_linnea") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/linnea-select.png")`;
       if (node?.link === "fan_nicole") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/nicole-select.png")`;
-      if (node?.link === "fan_citlali") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/citlali-select.png")`;
+      if (["fan_citlali", "fan_sp_citlali"].includes(node?.link)) node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/citlali-select.png")`;
       if (node?.link === "fan_mona") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/mona-select.png")`;
       if (node?.link === "fan_qiqi") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/qiqi-select.png")`;
       if (node?.link === "fan_jean") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/jean-select-centered-20261028.png")`;
@@ -34,6 +35,7 @@ export function installDetailPortraits(ui, lib) {
     ui.create.buttonPresets.character = character;
   }
   const detailImages = {
+    fan_wanderer: "../originals/wanderer.png",
     ...Object.fromEntries(Object.entries(originalPortraits).map(([id, path]) => [id, `../${path.slice("image/character/".length)}`])),
     fan_re_zhongli: "zhongli-rework-detail.png",
     fan_sp_sandrone: "sandrone-detail.png",
@@ -41,6 +43,7 @@ export function installDetailPortraits(ui, lib) {
     fan_linnea: "linnea-detail.png",
     fan_nicole: "nicole-detail.png",
     fan_citlali: "citlali-detail.png",
+    fan_sp_citlali: "citlali-detail.png",
     fan_mona: "mona-detail.png",
     fan_qiqi: "qiqi-detail.png",
     fan_jean: "jean-detail-centered-20261028.png",

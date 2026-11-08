@@ -106,7 +106,7 @@ export default {
     async content(event, trigger) {
       if (event.triggername === "loseBefore") {
         // Save identity and color before hand/zone tags are cleared or later draws occur.
-        trigger.fan_yingxin_before ||= trigger.player.getCards("h").map(card => ({ card, color: get.color(card, trigger.player) }));
+        (trigger.fan_yingxin_before || (trigger.fan_yingxin_before = trigger.player.getCards("h").map(card => ({ card, color: get.color(card, trigger.player) }))));
       } else if (!trigger.fan_yingxin_loss) {
         const before = trigger.fan_yingxin_before || [];
         const hs = trigger.hs || [];

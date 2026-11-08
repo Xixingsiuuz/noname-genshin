@@ -68,7 +68,7 @@ export function setZibaiEyes(player, mode, surface) {
     const [dark, shade, mid, light, core, glow] = palettes[mode];
     node.classList.add("fan-zibai-portrait");
     node.dataset.fanZibaiMode = mode;
-    node.fanZibaiLayout ||= { size: node.style.backgroundSize, position: node.style.backgroundPosition };
+    node.fanZibaiLayout || (node.fanZibaiLayout = { size: node.style.backgroundSize, position: node.style.backgroundPosition });
     node.style.backgroundSize = "cover";
     node.style.backgroundPosition = "center top";
     const ns = "http://www.w3.org/2000/svg";

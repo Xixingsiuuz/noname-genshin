@@ -47,7 +47,7 @@ function changeForm(player, next) {
   const old = player.storage.fan_zibai_form;
   if (old === next || player.storage.fan_zibai_complete) return false;
   if (forms.includes(old)) {
-    player.storage.fan_zibai_lost_forms ||= [];
+    (player.storage.fan_zibai_lost_forms || (player.storage.fan_zibai_lost_forms = []));
     if (!player.storage.fan_zibai_lost_forms.includes(old)) player.storage.fan_zibai_lost_forms.push(old);
   }
   player.storage.fan_zibai_form = next;
@@ -64,7 +64,7 @@ function advance(player, from) {
   if (!["yun", "yan"].includes(from) || player.storage.fan_zibai_form !== from
     || !player.hasSkill("fan_sanxiang") || player.storage.fan_zibai_complete
     || (player.storage.fan_zibai_upgraded_forms || []).includes(from)) return false;
-  player.storage.fan_zibai_upgraded_forms ||= [];
+  (player.storage.fan_zibai_upgraded_forms || (player.storage.fan_zibai_upgraded_forms = []));
   player.storage.fan_zibai_upgraded_forms.push(from);
   player.storage.fan_nichi_level = Math.min(3, level(player) + 1);
   if (player.hasSkill("fan_nichi")) player.markSkill("fan_nichi");

@@ -1,17 +1,19 @@
 import smoothPortraits from "../ui/smooth-portrait-map.js";
 const characters = {
+  fan_wanderer: ["male", "wei", "3/3/1", ["fan_shixin", "fan_xunshen", "fan_genchu"], ["ext:原神/image/character/portraits/wanderer.png", "die:ext:原神/audio/wanderer/die:3"]],
   // SP桑多涅第二版暂存备份，暂不加入武将包；恢复时取消下一行注释。
   // fan_sp_sandrone: ["female", "qun", 4, ["fan_sp_xigou", "fan_sp_wanli", "fan_sp_yaoyue"], ["ext:原神/image/character/portraits/sandrone.png", "die:ext:原神/audio/sandrone/die:3"]],
   fan_sandrone: ["female", "qun", 4, ["fan_xigou", "fan_wanli", "fan_yaoyue"], ["ext:原神/image/character/portraits/sandrone.png", "die:ext:原神/audio/sandrone/die:3"]],
   fan_nicole: ["female", "shu", "3/3/1", ["fan_tianlin", "fan_duanyu"], ["ext:原神/image/character/portraits/nicole.png", "die:ext:原神/audio/nicole/die:3"]],
   fan_linnea: ["female", "shu", "3/3/1", ["fan_bowen", "fan_shizhi"], ["ext:原神/image/character/portraits/linnea.png", "die:ext:原神/audio/linnea/die:3"]],
   fan_citlali: ["female", "qun", "3/3/1", ["fan_yingxin", "fan_zhuyao", "fan_miyan"], ["ext:原神/image/character/portraits/citlali.png", "die:ext:原神/audio/citlali/die:3"]],
+  fan_sp_citlali: ["female", "qun", "3/3/1", ["fan_sp_yingxin", "fan_sp_zhuyao", "fan_sp_miyan"], ["ext:原神/image/character/portraits/citlali.png", "die:fan_citlali"]],
   fan_mona: ["female", "wei", "3/3/1", ["fan_jiliu", "fan_shuijing"], ["ext:原神/image/character/portraits/mona.png", "die:ext:原神/audio/mona/die:3"]],
   fan_qiqi: ["female", "wei", "3/3/3", ["fan_due", "fan_huihai"], ["ext:原神/image/character/portraits/qiqi.png", "die:ext:原神/audio/qiqi/die:3"]],
   fan_jean: ["female", "wu", 4, ["fan_fengya", "fan_shiya"], ["ext:原神/image/character/portraits/jean-centered-20261028.png", "die:ext:原神/audio/jean/die:3"]],
   fan_xiao: ["male", "wu", 4, ["fan_nuowu", "fan_jiangmo"], ["ext:原神/image/character/portraits/xiao-centered-20261027.png", "die:ext:原神/audio/xiao/die:3"]],
   fan_hutao: ["female", "shu", "3/6/1", ["fan_qiyun", "fan_wangsheng", "fan_youdie"], ["ext:原神/image/character/portraits/hutao.png", "skinPath:ext:原神/image/skin/fan_hutao/", "die:ext:原神/audio/hutao/die:3"]],
-  fan_ganyu: ["female", "wei", "3/3/1", ["fan_liutian", "fan_linji", "fan_xingzuo"], ["ext:原神/image/character/portraits/ganyu.png", "die:ext:原神/audio/ganyu/die:true"]],
+  fan_ganyu: ["female", "wei", "3/3/1", ["fan_liutian", "fan_linji", "fan_xingzuo"], ["ext:原神/image/character/portraits/ganyu.png", "die:ext:原神/audio/ganyu/die:3"]],
   fan_albedo: ["male", "qun", 4, ["fan_xiansheng", "fan_baie"], ["ext:原神/image/character/portraits/albedo.png", "die:ext:原神/audio/albedo/die/fan_albedo.mp3"]],
   fan_ajax: ["male", "wei", 4, ["fan_jingwu", "fan_kuanglan"], ["ext:原神/image/character/portraits/ajax.png", "die:ext:原神/audio/ajax/die:2"]],
   fan_klee: ["female", "shu", "3/3/1", ["fan_huohua", "fan_taopao"],

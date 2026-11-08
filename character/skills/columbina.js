@@ -243,7 +243,7 @@ export default {
         firstDo: true,
         filter: recordable,
         async content(event, trigger, player) {
-          (player.storage.fan_sulv_records ||= []).push({ name: trigger.card.name, nature: trigger.card.nature });
+          ((player.storage.fan_sulv_records || (player.storage.fan_sulv_records = []))).push({ name: trigger.card.name, nature: trigger.card.nature });
         },
       },
     },

@@ -21,7 +21,7 @@ function collect(skills, prefix = "") {
 }
 const roles = [...new Set(JSON.parse(read("audio/catalog.json")).map(entry => entry.role || entry.path?.split("/")[1]).filter(Boolean))];
 const mechanisms = new Function('return ' + read('card/xianyun.js').match(/export const mechanisms = (\[[\s\S]*?\n\]);/)[1])();
-for (const role of [...roles, "venti", "linnea", "sp_sandrone"]) {
+for (const role of [...roles, "venti", "linnea", "sp_sandrone", "sp_citlali"]) {
   const source = read("character/skills/" + role + ".js");
   collect(new Function("lib", "get", "game", "ui", "_status", "mechanisms", "standard", source
     .replace(/^import .*;\r?\n/gm, "").replace(/export async function/g, "async function").replace(/export function/g, "function").replace(/export const/g, "const")
@@ -121,3 +121,18 @@ console.log('PASS: Furina native audio pool sizes');
 assert.deepEqual(Audio.skill({skill:"fan_pianzhuan"}).textList.slice(4),["嘿！","呀！","哈！"]);
 assert.equal(Audio.skill({skill:"fan_pianzhuan"}).textList.length,7);
 assert.equal(original.call(Audio,{skill:"fan_pianzhuan_guard_voice"}).fileList.length,3,"hidden detail voices remain playable");
+
+// Native Audio regression: logAudio suppression requires an explicit args array.
+for (const id of ["fan_baie", "fan_huohua", "fan_taopao"]) {
+  assert(original.call(Audio, {skill: id}).fileList.length > 0, id + " manual pool stays playable");
+  assert.deepEqual(original.call(Audio, {skill: id, args: []}).fileList, [], id + " explicit log args suppress duplicate playback");
+}
+for (const [path, call] of [
+  ["albedo", 'player.logSkill("fan_baie", target, null, null, []);'],
+  ["klee", 'owner.logSkill(skill, targets, null, null, []);'],
+  ["klee", 'player.logSkill("fan_taopao", target, null, null, []);'],
+]) assert(read("character/skills/" + path + ".js").includes(call), path + " passes explicit suppression args");
+console.log("PASS: Albedo and Klee native log/manual audio deduplication; manual pools retained.");
+
+assert.deepEqual(original.call(Audio, {skill: "fan_ruyue"}).fileList, [], "Arlecchino main log is already silent");
+

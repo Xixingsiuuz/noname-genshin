@@ -73,7 +73,7 @@ export default {
       if (!["观看牌堆顶", "摸牌"].includes(result.control) || !player.isIn()) return;
       player.logSkill("fan_shuijing", null, null, null, []);
       player.addTempSkill("fan_shuijing_end", { player: "phaseAfter" });
-      (player.storage.fan_shuijing_end ||= []).push(result.control === "摸牌" ? "观看牌堆顶" : "摸牌");
+      ((player.storage.fan_shuijing_end || (player.storage.fan_shuijing_end = []))).push(result.control === "摸牌" ? "观看牌堆顶" : "摸牌");
       await resolveMirror(player, result.control, false);
     },
     logAudio() { return []; },

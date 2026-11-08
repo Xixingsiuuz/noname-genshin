@@ -25,7 +25,7 @@ const owner = {
   countDiscardableCards: () => owner.hand.filter(card => !card.fixed).length,
   hasSkill: id => owner.marks.has(id),
   addTempSkill(id, expiry) { assert.deepEqual(expiry, { global: "phaseBefore" }); owner.marks.add(id); },
-  logSkill() {}, chooseBool() { return choice({ bool: accept }); },
+  logSkill(id, target, nature, logv, args) { assert.deepEqual(args, [], "native log audio must be suppressed"); }, chooseBool() { return choice({ bool: accept }); },
   chooseButton() { throw new Error("显生不得打开选牌窗口"); },
   async gain(cards) { gains.push(cards); for (const item of cards) { item.pos = "h"; owner.hand.push(item); } },
 };

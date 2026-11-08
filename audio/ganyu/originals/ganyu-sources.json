@@ -1,17 +1,17 @@
 {
   "page": "https://wiki.biligame.com/ys/%E7%94%98%E9%9B%A8%E8%AF%AD%E9%9F%B3",
   "clips": {
-    "fan_liutian": {
+    "fan_liutian1": {
       "label": "元素爆发·其一",
       "url": "https://patchwiki.biligame.com/images/ys/3/3a/n0hb1nbhpd0pfj79rpsc1llu9r51qgm.mp3",
       "text": "风雪的缩影。",
       "bytes": 28448,
       "original_sha256": "623f3e9d00dc3c55bf699e576bcb4259c70626a504421f8d5016a396d07a7bee",
-      "original": "audio/ganyu/originals/fan_liutian.mp3",
-      "output": "audio/ganyu/skill/fan_liutian.mp3",
+      "original": "audio/ganyu/originals/fan_liutian1.mp3",
+      "output": "audio/ganyu/skill/fan_liutian1.mp3",
       "trim_seconds": null,
       "volume": {
-        "id": "fan_liutian",
+        "id": "fan_liutian1",
         "gain_db": -0.01,
         "before": {
           "lufs": -14.24,
@@ -29,17 +29,101 @@
       "sha256": "f1f72d1ab1014939cfd1144cd82d448f44550649e21279cedea57af257db2689",
       "output_bytes": 21548
     },
-    "fan_linji": {
+    "fan_liutian2": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/9/94/qxp5a0ny0a4utmu44yvrho3wskvdx3p.mp3",
+      "text": "如琉璃般飘落。",
+      "bytes": 31520,
+      "original_sha256": "6a3563b6810c8036626b34ef5490f7fbaf26953b47132c037db841b7417454ed",
+      "original": "audio/ganyu/originals/fan_liutian2.mp3",
+      "output": "audio/ganyu/skill/fan_liutian2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_liutian2",
+        "gain_db": -2.53,
+        "before": {
+          "lufs": -11.72,
+          "true_peak_dbtp": -2.29,
+          "mean_dbfs": -15.7,
+          "peak_dbfs": -2.3
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -4.71,
+          "mean_dbfs": -18.3,
+          "peak_dbfs": -4.7
+        }
+      },
+      "sha256": "ca590b9f1ee755bb42188381d92ebdebedd3b84240331af39b1ec12626a83801",
+      "output_bytes": 24740
+    },
+    "fan_liutian3": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/4/4f/3swq2zjz5h16s9j8sczh0por4r0861x.mp3",
+      "text": "这项工作，该划掉了。",
+      "bytes": 36512,
+      "original_sha256": "84d94a705581637a7f5fe63e23b58682b321bdae7a719f83b65f02e549a51966",
+      "original": "audio/ganyu/originals/fan_liutian3.mp3",
+      "output": "audio/ganyu/skill/fan_liutian3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_liutian3",
+        "gain_db": 1.06,
+        "before": {
+          "lufs": -15.31,
+          "true_peak_dbtp": -5.45,
+          "mean_dbfs": -19.1,
+          "peak_dbfs": -5.5
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -4.33,
+          "mean_dbfs": -18.1,
+          "peak_dbfs": -4.4
+        }
+      },
+      "sha256": "0b42512748e4d7ac467e48dc78342b277c9167e4ca3cd4d4a4279cdd21daae30",
+      "output_bytes": 29132
+    },
+    "fan_liutian4": {
+      "label": "元素爆发·其四",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a6/c1i3b7jaszqx6y9pfbf8br0ofm2swl7.mp3",
+      "text": "为了岩王帝君！",
+      "bytes": 25376,
+      "original_sha256": "986672fcb1619c6c41dc04154380733d3d572c6a8f54b42a9e9513add971f437",
+      "original": "audio/ganyu/originals/fan_liutian4.mp3",
+      "output": "audio/ganyu/skill/fan_liutian4.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_liutian4",
+        "gain_db": -1.81,
+        "before": {
+          "lufs": -12.44,
+          "true_peak_dbtp": -1.55,
+          "mean_dbfs": -15.9,
+          "peak_dbfs": -1.6
+        },
+        "after": {
+          "lufs": -14.25,
+          "true_peak_dbtp": -3.36,
+          "mean_dbfs": -17.7,
+          "peak_dbfs": -3.4
+        }
+      },
+      "sha256": "52184202cb499e1fa33030b8fa3a728c819474aced32bb16290cdb83277301ee",
+      "output_bytes": 19004
+    },
+    "fan_linji1": {
       "label": "元素战技·其一",
       "url": "https://patchwiki.biligame.com/images/ys/9/9b/80cnt8w105vgmzjplq9gtw6fpjauqsq.mp3",
       "text": "禁止接触。",
       "bytes": 20000,
       "original_sha256": "b2749d3eedab336160e11c760e050ffc2fa1ab8a1a5bf464d1c4b950930eacee",
-      "original": "audio/ganyu/originals/fan_linji.mp3",
-      "output": "audio/ganyu/skill/fan_linji.mp3",
+      "original": "audio/ganyu/originals/fan_linji1.mp3",
+      "output": "audio/ganyu/skill/fan_linji1.mp3",
       "trim_seconds": null,
       "volume": {
-        "id": "fan_linji",
+        "id": "fan_linji1",
         "gain_db": -0.9,
         "before": {
           "lufs": -13.35,
@@ -57,17 +141,17 @@
       "sha256": "fe7773e73de2c436e40f196477d799364ba666268c75caffbedf2100e5d701be",
       "output_bytes": 13916
     },
-    "fan_linji_charge": {
+    "fan_linji2": {
       "label": "元素战技·其二",
       "url": "https://patchwiki.biligame.com/images/ys/6/6e/h93axyhqjfzwv48hhzxi6ei8nlj34f3.mp3",
       "text": "闲人勿扰。",
       "bytes": 19232,
       "original_sha256": "070fbc7078d6befcdeb0f5a1bbddb41db851a8561e7af47b490d98e062305a74",
-      "original": "audio/ganyu/originals/fan_linji_charge.mp3",
-      "output": "audio/ganyu/skill/fan_linji_charge.mp3",
+      "original": "audio/ganyu/originals/fan_linji2.mp3",
+      "output": "audio/ganyu/skill/fan_linji2.mp3",
       "trim_seconds": null,
       "volume": {
-        "id": "fan_linji_charge",
+        "id": "fan_linji2",
         "gain_db": -2.89,
         "before": {
           "lufs": -11.36,
@@ -85,45 +169,157 @@
       "sha256": "13c452ce5badf64ef9144ddd0d31455763cc8c135e946d08470d062983d03673",
       "output_bytes": 13868
     },
-    "fan_xingzuo": {
-      "label": "打开宝箱·其一",
-      "url": "https://patchwiki.biligame.com/images/ys/9/96/kjqgaf4p9r8pyl66wm86pty3mqk55uw.mp3",
-      "text": "有所收获，就是一件好事。",
-      "bytes": 40736,
-      "original_sha256": "084fb8156bb1dca100f31c8f1c27433c67836c3f697853ebd2d51e8b5e476985",
-      "original": "audio/ganyu/originals/fan_xingzuo.mp3",
-      "output": "audio/ganyu/skill/fan_xingzuo.mp3",
+    "fan_linji3": {
+      "label": "元素战技·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/b/b4/81fy40xvimy8jb1qtxn73gf3m6xjmmf.mp3",
+      "text": "霜寒化生。",
+      "bytes": 19232,
+      "original_sha256": "561082107d62941467fc3bcd900dacd7484c060ed356b1cd565f670e8b55d63f",
+      "original": "audio/ganyu/originals/fan_linji3.mp3",
+      "output": "audio/ganyu/skill/fan_linji3.mp3",
       "trim_seconds": null,
       "volume": {
-        "id": "fan_xingzuo",
-        "gain_db": 1.07,
+        "id": "fan_linji3",
+        "gain_db": -0.79,
         "before": {
-          "lufs": -15.32,
-          "true_peak_dbtp": -3.74,
-          "mean_dbfs": -19.4,
-          "peak_dbfs": -3.9
+          "lufs": -13.46,
+          "true_peak_dbtp": -3.48,
+          "mean_dbfs": -18.3,
+          "peak_dbfs": -3.8
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -4.33,
+          "mean_dbfs": -19.1,
+          "peak_dbfs": -4.7
+        }
+      },
+      "sha256": "35380eefb5b030aa8e2f1274a21eab6b33150c20a58cc0b257def69ae50a8263",
+      "output_bytes": 15068
+    },
+    "fan_xingzuo1": {
+      "label": "冲刺开始·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/b/bd/rptvyrbzh66hrsa2mibipc498njfj85.mp3",
+      "text": "下一项工作是…",
+      "bytes": 26144,
+      "original_sha256": "9dbc97825c4fa8c525b1fcf4b787c974a221cd19de2efac5249fbdd7cba55ec1",
+      "original": "audio/ganyu/originals/fan_xingzuo1.mp3",
+      "output": "audio/ganyu/skill/fan_xingzuo1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_xingzuo1",
+        "gain_db": 1.36,
+        "before": {
+          "lufs": -15.61,
+          "true_peak_dbtp": -4.98,
+          "mean_dbfs": -20.0,
+          "peak_dbfs": -5.0
+        },
+        "after": {
+          "lufs": -14.23,
+          "true_peak_dbtp": -3.46,
+          "mean_dbfs": -18.6,
+          "peak_dbfs": -3.5
+        }
+      },
+      "sha256": "dba3705abb67be19b8dde6b5b120b166e6b3600d269292e49fbe3c700f30bc26",
+      "output_bytes": 20588
+    },
+    "fan_xingzuo2": {
+      "label": "冲刺开始·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/2/2a/4zfrozytwoqzk66fqqpdpaunaovxqhc.mp3",
+      "text": "我会跟上的…",
+      "bytes": 18848,
+      "original_sha256": "746ceab62054763dbc41693cc6310f702aabf2ba5bf37cc763b275783c0b8c33",
+      "original": "audio/ganyu/originals/fan_xingzuo2.mp3",
+      "output": "audio/ganyu/skill/fan_xingzuo2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_xingzuo2",
+        "gain_db": -0.53,
+        "before": {
+          "lufs": -13.72,
+          "true_peak_dbtp": -1.65,
+          "mean_dbfs": -17.3,
+          "peak_dbfs": -1.7
+        },
+        "after": {
+          "lufs": -14.24,
+          "true_peak_dbtp": -2.19,
+          "mean_dbfs": -17.9,
+          "peak_dbfs": -2.2
+        }
+      },
+      "sha256": "8ef449d10dd1f419aeac7d0ab954e4552bb1934c02aefc5a33790b899b15c969",
+      "output_bytes": 14060
+    },
+    "fan_xingzuo3": {
+      "label": "加入队伍·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/5/51/s6zvqa3hioxpkup982pjdcle587trb1.mp3",
+      "text": "工作时间到了么？",
+      "bytes": 28064,
+      "original_sha256": "122ce6d050e3b5facf48a20863e9699e86bcce60ffebc83ee6ead28f00b11640",
+      "original": "audio/ganyu/originals/fan_xingzuo3.mp3",
+      "output": "audio/ganyu/skill/fan_xingzuo3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_xingzuo3",
+        "gain_db": -0.9,
+        "before": {
+          "lufs": -13.35,
+          "true_peak_dbtp": -4.98,
+          "mean_dbfs": -17.4,
+          "peak_dbfs": -5.1
         },
         "after": {
           "lufs": -14.25,
-          "true_peak_dbtp": -2.66,
+          "true_peak_dbtp": -6.02,
           "mean_dbfs": -18.3,
-          "peak_dbfs": -2.8
+          "peak_dbfs": -6.1
         }
       },
-      "sha256": "0e06d557bddc1e25fa9d8dfb9357fd6654cbbdd80e1fb0940865b13d6336ec6c",
-      "output_bytes": 32876
+      "sha256": "a347a0b9664a90c0cf036c9a7d188cbd6de231dc1b03d8322f1f1fc86b971f0c",
+      "output_bytes": 21068
     },
-    "fan_ganyu": {
+    "fan_xingzuo4": {
+      "label": "加入队伍·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f9/0tb1q4ctqkmltr4oh3tx55ldmwrc7cy.mp3",
+      "text": "谨遵你我「契约」。",
+      "bytes": 24992,
+      "original_sha256": "85a2ecfa03427972486bc7def514dfef25996cf4b94f144cd993cedfda0063f7",
+      "original": "audio/ganyu/originals/fan_xingzuo4.mp3",
+      "output": "audio/ganyu/skill/fan_xingzuo4.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_xingzuo4",
+        "gain_db": -2.59,
+        "before": {
+          "lufs": -11.66,
+          "true_peak_dbtp": -1.9,
+          "mean_dbfs": -15.1,
+          "peak_dbfs": -2.0
+        },
+        "after": {
+          "lufs": -14.26,
+          "true_peak_dbtp": -4.91,
+          "mean_dbfs": -17.7,
+          "peak_dbfs": -5.1
+        }
+      },
+      "sha256": "6dab8f85b078a4eca33c027e3b67eee5d0996b30626dcd092ce16fb86ff87536",
+      "output_bytes": 20804
+    },
+    "fan_ganyu1": {
       "label": "倒下·其一",
       "url": "https://patchwiki.biligame.com/images/ys/6/6b/t8wdaz658n6w538zgi4sj66jfbrsp68.mp3",
       "text": "帝君…对不起…",
       "bytes": 52256,
       "original_sha256": "fac55e186af2167a2f5a6d1d05d5578ac38f2b6e9c0069bd4d3d4aabe245931e",
-      "original": "audio/ganyu/originals/fan_ganyu.mp3",
-      "output": "audio/ganyu/die/fan_ganyu.mp3",
+      "original": "audio/ganyu/originals/fan_ganyu1.mp3",
+      "output": "audio/ganyu/die/fan_ganyu1.mp3",
       "trim_seconds": null,
       "volume": {
-        "id": "fan_ganyu",
+        "id": "fan_ganyu1",
         "gain_db": -0.79,
         "before": {
           "lufs": -13.46,
@@ -140,6 +336,153 @@
       },
       "sha256": "f9195ed8500db95f1ec8863311e988f7e7eac7cff14b028b1ea110f8f9af6c80",
       "output_bytes": 38900
+    },
+    "fan_ganyu2": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8f/ods94bmnt54aic3cpqnmj97tstapydd.mp3",
+      "text": "「契约」…尚未完成…",
+      "bytes": 64928,
+      "original_sha256": "ed348db3cf074aa1199601f691a7f7b67fe6049c7757bd8395625531bb249f3a",
+      "original": "audio/ganyu/originals/fan_ganyu2.mp3",
+      "output": "audio/ganyu/die/fan_ganyu2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_ganyu2",
+        "gain_db": -1.26,
+        "before": {
+          "lufs": -13.04,
+          "true_peak_dbtp": -0.24,
+          "mean_dbfs": -17.6,
+          "peak_dbfs": -0.8
+        },
+        "after": {
+          "lufs": -14.32,
+          "true_peak_dbtp": -1.41,
+          "mean_dbfs": -18.9,
+          "peak_dbfs": -1.9
+        }
+      },
+      "sha256": "28d20bab14704855562a484bde8a1802968f2b35b5e3cc27b8e0bb78a2ecc57b",
+      "output_bytes": 53924
+    },
+    "fan_ganyu3": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/b/b2/th3mnm89tmvg49rxagtvgetq68hc6f9.mp3",
+      "text": "我得…再撑一会…",
+      "bytes": 56864,
+      "original_sha256": "768c7150d5b4f9f9aaaeb13010aae4fb45a12f7e58d9002230f19aa273f3bebf",
+      "original": "audio/ganyu/originals/fan_ganyu3.mp3",
+      "output": "audio/ganyu/die/fan_ganyu3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_ganyu3",
+        "gain_db": -0.99,
+        "before": {
+          "lufs": -16.39,
+          "true_peak_dbtp": -0.51,
+          "mean_dbfs": -19.7,
+          "peak_dbfs": -0.5
+        },
+        "after": {
+          "lufs": -17.37,
+          "true_peak_dbtp": -1.53,
+          "mean_dbfs": -20.7,
+          "peak_dbfs": -1.5
+        }
+      },
+      "sha256": "482830c3509de1a2a3c29b45c1e2e47f6bc40c160f617d2a92573fd066f145b1",
+      "output_bytes": 47228
+    },
+    "fan_liutian_sha1": {
+      "label": "重攻击·1",
+      "text": "嘿！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/VO_ZH_Ganyu_Heavy_Attack_01.ogg",
+      "provided_file": "C:\\Users\\22697\\Downloads\\甘雨语音\\VO_ZH_Ganyu_Heavy_Attack_01.ogg",
+      "acquisition": "user-provided local Fandom recording",
+      "bytes": 13319,
+      "original_sha256": "a641b25e43cf98db35bf978982d6c75376ecd8488eca36ad3e999e6a94b495d3",
+      "original": "audio/ganyu/originals/fan_liutian_sha1.ogg",
+      "output": "audio/ganyu/skill/fan_liutian_sha1.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_liutian_sha1",
+        "gain_db": -0.59,
+        "before": {
+          "lufs": null,
+          "true_peak_dbtp": -0.91,
+          "mean_dbfs": -13.9,
+          "peak_dbfs": -0.9
+        },
+        "after": {
+          "lufs": null,
+          "true_peak_dbtp": -1.51,
+          "mean_dbfs": -14.5,
+          "peak_dbfs": -1.5
+        }
+      },
+      "sha256": "4902af1896dd9f499515c63ce4864266d0030514d95f92b21a31156eb64ebc58",
+      "output_bytes": 4460
+    },
+    "fan_liutian_sha2": {
+      "label": "重攻击·2",
+      "text": "喝！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5f/VO_ZH_Ganyu_Heavy_Attack_02.ogg",
+      "provided_file": "C:\\Users\\22697\\Downloads\\甘雨语音\\VO_ZH_Ganyu_Heavy_Attack_02.ogg",
+      "acquisition": "user-provided local Fandom recording",
+      "bytes": 14629,
+      "original_sha256": "cc47bf7f4e9b1f0da493670e372e3696ab1d6bd6c8f1ba11f653d2264a9be92e",
+      "original": "audio/ganyu/originals/fan_liutian_sha2.ogg",
+      "output": "audio/ganyu/skill/fan_liutian_sha2.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_liutian_sha2",
+        "gain_db": -0.54,
+        "before": {
+          "lufs": null,
+          "true_peak_dbtp": -0.96,
+          "mean_dbfs": -17.0,
+          "peak_dbfs": -1.0
+        },
+        "after": {
+          "lufs": null,
+          "true_peak_dbtp": -1.45,
+          "mean_dbfs": -17.5,
+          "peak_dbfs": -1.5
+        }
+      },
+      "sha256": "ff38e425c0e3fa7c07dbe55850de00261a750be491977e43b5f95488edebbc33",
+      "output_bytes": 4820
+    },
+    "fan_liutian_sha3": {
+      "label": "重攻击·3",
+      "text": "呀！",
+      "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0d/VO_ZH_Ganyu_Heavy_Attack_03.ogg",
+      "provided_file": "C:\\Users\\22697\\Downloads\\甘雨语音\\VO_ZH_Ganyu_Heavy_Attack_03.ogg",
+      "acquisition": "user-provided local Fandom recording",
+      "bytes": 12560,
+      "original_sha256": "982daca03723d67c2e9c179cd1d36bfa45067fb57774659a5c53e2cd0db29676",
+      "original": "audio/ganyu/originals/fan_liutian_sha3.ogg",
+      "output": "audio/ganyu/skill/fan_liutian_sha3.mp3",
+      "trim_seconds": null,
+      "volume": {
+        "id": "fan_liutian_sha3",
+        "gain_db": -0.16,
+        "before": {
+          "lufs": null,
+          "true_peak_dbtp": -1.34,
+          "mean_dbfs": -16.9,
+          "peak_dbfs": -1.3
+        },
+        "after": {
+          "lufs": null,
+          "true_peak_dbtp": -1.72,
+          "mean_dbfs": -17.1,
+          "peak_dbfs": -1.7
+        }
+      },
+      "sha256": "b9961f3fa26e091fdee1438906825f9bb51bb314049f0519c587b3100aad6e30",
+      "output_bytes": 3860
     }
-  }
+  },
+  "missing": []
 }

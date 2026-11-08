@@ -65,7 +65,7 @@ const spoken = voices.length; await liu.content({}, {}, owner); assert.equal(voi
 const begin = { player: other };
 assert(lin.filter(begin, owner)); await lin.content({}, begin, owner);
 assert.equal(owner.countCharge(), 1); assert.equal(owner.storage.fan_linji_count, 1);
-assert.equal(voices.at(-1), "fan_linji_charge");
+assert.equal(voices.at(-1), "fan_linji");
 assert.deepEqual(settings.selectButton, [0, 1]); assert(!settings.filterOk());
 ui.selected.buttons = [{ link: "charge" }]; assert(settings.filterOk()); ui.selected.buttons = []; assert(!settings.filterOk());
 const mod = skills.fan_linji_distance.mod;
@@ -122,8 +122,13 @@ const characters = loadedCharacters;
 for (const id of characters.fan_ganyu[3]) { assert(skills[id]); assert.equal(skills[id].locked, false); }
 assert.equal(lin.trigger.global, "phaseZhunbeiBegin"); assert.equal(star.trigger.global, "phaseDiscardEnd");
 assert.equal(liu.usable, 1);
-const translations = new Function("get", read("character/translate.js").replace(/^import .*;\r?\n/gm, "").replace(/export /g, "") + "\nreturn { characterTranslate, skills: createSkillTranslate() };")({ poptip: id => id });
+const translations = new Function("nativeGet", "lib", read("character/translate.js").replace(/^import .*;\r?\n/gm, "").replace(/export /g, "") + "\nreturn { characterTranslate, skills: createSkillTranslate() };")({ poptip: id => id }, { translate: {} });
 assert.equal(translations.characterTranslate.fan_ganyu, "甘雨");
 for (const id of characters.fan_ganyu[3]) { assert(translations.skills[id]); assert(translations.skills[id + "_info"]); }
 assert.equal(translations.skills.fan_xingzuo, "星佐");
 console.log("PASS: Ganyu native charge cap, payment, useCard binding, one-way distance, round quota, cancelled/stale choices, exact discard phase, damage gate and AI (simulation; no live game).");
+
+const targetEvent = { isFirstTarget: true, getParent: () => use };
+assert(skills.fan_liutian_sha.filter(targetEvent));
+await skills.fan_liutian_sha.content({},targetEvent,owner);
+assert(!skills.fan_liutian_sha.filter(targetEvent));

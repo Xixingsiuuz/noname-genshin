@@ -55,7 +55,7 @@ export default {
       if (!result.bool || !eligible(trigger, player) || !player.isIn()) return;
       // 在嵌套伤害前消耗资格，防止自己的追加伤害再次触发。
       player.addTempSkill("fan_baie_used", { global: "phaseBefore" });
-      player.logSkill("fan_baie", target);
+      player.logSkill("fan_baie", target, null, null, []);
       game.trySkillAudio("fan_baie", player, true);
       await target.damage(1, player, "nocard");
     },

@@ -1,5 +1,5 @@
 import {lib,game,get,ui,_status} from "../../../../noname.js";
-const state=p=>p.storage.fan_xigou ||= [];
+const state=p=>(p.storage.fan_xigou || (p.storage.fan_xigou = []));
 const values=[[1,2,3,4,5,6,7,8,9,10,11,12,13],["spade","heart","club","diamond"],["basic","trick","equip"]];
 const value=(c,i)=>i===2?get.type2(c,false):i===1?get.suit(c,false):get.number(c,false);
 async function record(p,v){

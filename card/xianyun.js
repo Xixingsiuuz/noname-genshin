@@ -1,4 +1,4 @@
-import guozhan from "../../../card/guozhan.js";
+import guozhan from "./native-taiping.js";
 
 export const mechanisms = [
   ["club", 12, "fan_pengrenshenji"], ["diamond", 6, "fan_zhuxing"],

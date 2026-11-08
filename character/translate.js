@@ -1,9 +1,31 @@
-import { get } from "../../../noname.js";
+import { get as nativeGet, lib } from "../../../noname.js";
+
+// 旧引擎没有 poptip 系统；只在本扩展描述中提供兼容提示，不修改全局 get。
+const escapeTip = text => String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const get = {
+  poptip(id) {
+    if (typeof nativeGet.poptip === "function") return nativeGet.poptip(id);
+    const name = characterTranslate[id] || lib.translate[id] || ({rule_beishui:"背水",rule_chengshi:"成势"})[id] || id;
+    const info = skillTranslateForLegacy[id + "_info"] || lib.translate[id + "_info"] || "";
+    return `<span data-fan-legacy-tip="${escapeTip(id)}" title="${escapeTip(info.replace(/<[^>]*>/g, ""))}">【${escapeTip(name)}】</span>`;
+  },
+};
+let skillTranslateForLegacy = {};
+if (typeof document !== "undefined") document.addEventListener("mouseover", event => {
+  const node = event.target.closest?.("[data-fan-legacy-tip]");
+  if (!node) return;
+  const id = node.dataset.fanLegacyTip;
+  const name = lib.translate[id] || skillTranslateForLegacy[id] || characterTranslate[id];
+  if (name) node.textContent = `【${name}】`;
+  node.title = String(lib.translate[id + "_info"] || skillTranslateForLegacy[id + "_info"] || "").replace(/<[^>]*>/g, "");
+});
 
 
 export const characterTranslate = { fan_sp_sandrone: "SP桑多涅", fan_sp_sandrone_prefix: "SP", fan_sandrone: "桑多涅", fan_linnea: "莉奈娅", fan_mona: "莫娜", fan_qiqi: "七七", fan_jean: "琴", fan_xiao: "魈", fan_itto: "荒泷一斗", fan_yaemiko: "八重神子", fan_xilonen: "希诺宁", fan_kinich: "基尼奇", fan_mualani: "玛拉妮", fan_emilie: "艾梅莉埃", fan_sigewinne: "希格雯", fan_furina: "芙宁娜", fan_xianyun: "闲云", fan_chiori: "千织", fan_clorinde: "克洛琳德" };
 
 characterTranslate.fan_albedo = "阿贝多";
+characterTranslate.fan_sp_citlali = "SP茜特菈莉";
+characterTranslate.fan_sp_citlali_prefix = "SP";
 characterTranslate.fan_citlali = "茜特菈莉";
 characterTranslate.fan_ganyu = "甘雨";
 characterTranslate.fan_hutao = "胡桃";
@@ -57,7 +79,15 @@ characterTranslate.fan_diluc = "迪卢克";
 characterTranslate.fan_eula = "优菈";
 
 export function createSkillTranslate() {
-  return {
+  return skillTranslateForLegacy = {
+    fan_shixin: "失心",
+    fan_shixin_info: "锁定技，你对对你造成过伤害的角色使用牌无距离和次数限制。",
+    fan_xunshen: "寻神",
+    fan_xunshen_info: "锁定技，你的手牌数始终为2。摸牌阶段，你失去1点体力，然后少摸两张牌。",
+    fan_genchu: "根除",
+    fan_genchu_info: "使命技。每回合限一次，你对其他角色造成伤害后，可以弃置你与其区域内各一张牌。<br>成功：当你进入濒死状态时，回复体力至1点，然后失去【寻神】，获得" + get.poptip("fan_wendao") + "。<br>失败：当你杀死一名角色后，【寻神】中的“2”改为“4”。",
+    fan_wendao: "问道",
+    fan_wendao_info: "锁定技，你的手牌数至少为2。摸牌阶段，你回复1点体力，然后多摸两张牌。",
     fan_re_dixin: "地心", fan_re_dixin_give: "地心·获得护甲", fan_re_dixin_remove: "地心·移除护甲",
     fan_re_dixin_info: "出牌阶段限两次，你可以选择一项：1.失去1点体力，令你与一名角色各获得1点护甲；2.移除一名其他角色的护甲。",
     fan_dingqi: "定契", fan_dingqi_contract: "契",
@@ -99,6 +129,14 @@ export function createSkillTranslate() {
     fan_bowen_info: "每轮开始时，你可以明置一名角色的一张手牌，或者选择其已经明置的一张手牌，若该牌类型为基本牌或锦囊牌，你记录此牌名。每回合限一次，你可以将一张牌当任意一张已记录牌名的牌使用或打出。",
     fan_shizhi: "识谶", fan_shizhi_disabled: "识谶",
     fan_shizhi_info: "当有角色成为【博闻】已记录的伤害牌的目标时，你可以选择一项：摸一张牌；取消该目标，然后此技能失效直到本轮结束。",
+    fan_sp_yingxin: "映心", fan_sp_yingxin_share: "映心", fan_sp_yingxin_draw: "映心", fan_sp_yingxin_hand: "映心",
+    fan_sp_yingxin_info: "锁定技，游戏开始时，你选择一名其他角色，你与其可以如手牌般使用或打出对方的手牌，且失去最后的手牌时摸一张牌。",
+    fan_sp_zhuyao: "诸曜",
+    fan_sp_zhuyao_info: `锁定技，每回合限一次，当你失去最后的手牌后，若这些牌中：有黑色牌，你令一名角色失去1点体力；有红色牌，你与【映心】角色各摸一张牌。${get.poptip("rule_chengshi")}：直到你的下个回合开始，你视为拥有${get.poptip("fan_sp_citlali_lianying")}。`,
+    fan_sp_citlali_lianying: "连营",
+    fan_sp_citlali_lianying_info: "其他角色的回合结束时，你可以观看牌堆顶的X张牌，然后将这些牌交给任意角色（X为你本回合失去的牌数+1，至多为5）。",
+    fan_sp_miyan: "谜烟",
+    fan_sp_miyan_info: "每回合限一次，当你或【映心】角色受到伤害后，若你的武将牌正面朝上，你可以弃置所有手牌，视为对伤害来源随机使用一张伤害牌，然后你翻面，并从牌堆中随机获得一张基本牌。",
     fan_yingxin: "映心", fan_yingxin_share: "映心", fan_yingxin_draw: "映心", fan_yingxin_hand: "映心",
     fan_yingxin_info: "锁定技，游戏开始时，你选择一名其他角色，你与其可以如手牌般使用或打出对方的手牌，且失去最后的手牌时摸一张牌。",
     fan_zhuyao: "诸曜",
@@ -552,3 +590,5 @@ characterTranslate.fan_klee = "可莉";
 characterTranslate.fan_nicole = "尼可";
 
 characterTranslate.fan_re_zhongli = "钟离";
+
+characterTranslate.fan_wanderer = "流浪者";

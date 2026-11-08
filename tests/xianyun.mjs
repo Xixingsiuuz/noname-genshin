@@ -27,7 +27,10 @@ const nativeHasPlayer = gameSource.match(/  hasPlayer\(func, includeOut\) \{([\s
 game.hasPlayer = new Function('game','return function(func,includeOut){'+nativeHasPlayer+'}')(game);
 const guozhanSource = strip(read('../../../card/guozhan.js')).replace(/export\s*\{[\s\S]*?\};?\s*$/, '');
 const guozhan = new Function('game','get','lib','ui','_status',guozhanSource+';return guozhan;')(game,get,lib,ui,status);
-const cards = new Function('guozhan',strip(read('../card/xianyun.js'))+';return {mechanisms,xianyunCards,nativeTaipingSkill,xianyunCardTranslate};')(guozhan);
+const snapshot = new Function('game','get',strip(read('../card/native-taiping.js')).replace('export default','return'))(game,get);
+assert.equal(snapshot.translate.taipingyaoshu_info, guozhan.translate.taipingyaoshu_info);
+assert.equal(snapshot.skill.taipingyaoshu.filter.toString().replace(/\r/g, ""), guozhan.skill.taipingyaoshu.filter.toString().replace(/\r/g, ""));
+const cards = new Function('guozhan',strip(read('../card/xianyun.js'))+';return {mechanisms,xianyunCards,nativeTaipingSkill,xianyunCardTranslate};')(snapshot);
 Object.assign(lib.card,cards.xianyunCards);
 const {skills,mechanismPresent,canPlaceMechanism,luanyinValue} = new Function('game','get','lib','ui','_status','mechanisms',
   strip(read('../character/skills/xianyun.js')).replace('export default','const skills =')+';return {skills,mechanismPresent,canPlaceMechanism,luanyinValue};')
@@ -194,8 +197,8 @@ reset();owner.e=[urn];owner.h=[stored];owner.afterStore=()=>owner.e=[];
 await equipment.fan_chengehu_skill.content({cards:[stored]}, {},owner);assert(owner.h.includes(stored));assert(!owner.s.length);
 assert(!calls.some(c=>c[0]==='draw'),'interrupted storage returns card');
 assert.equal(equipment.fan_taipingyaoshu_skill.mod.maxHandcard(owner,3),5);
-assert.equal(equipment.fan_taipingyaoshu_skill.filter,guozhan.skill.taipingyaoshu.filter);
-assert.equal(equipment.fan_taipingyaoshu_skill.ai,guozhan.skill.taipingyaoshu.ai);
+assert.equal(equipment.fan_taipingyaoshu_skill.filter,snapshot.skill.taipingyaoshu.filter);
+assert.equal(equipment.fan_taipingyaoshu_skill.ai,snapshot.skill.taipingyaoshu.ai);
 owner.hasSkillTag=()=>false;
 assert.equal(equipment.fan_taipingyaoshu_skill.filter({nature:'fire'},owner),true);
 assert.equal(equipment.fan_taipingyaoshu_skill.filter({},owner),undefined);

@@ -48,16 +48,16 @@ game.trySkillAudio=new Function('game','lib','get','return function(skill,player
 // Native logSkill forwards its fifth argument to trySkillAudio: undefined bypasses logAudio.
 for (const id of ['fan_linji','fan_xingzuo']) {
  game.trySkillAudio(id,'fan_ganyu',true,true);
- assert.equal(played.at(-1).length,1,'reproduce unsuppressed legacy log: '+id);
+ assert.equal(played.at(-1).length,id==='fan_linji'?3:4,'reproduce unsuppressed legacy log: '+id);
  game.trySkillAudio(id,'fan_ganyu',true,true,null,[]);
  assert.deepEqual(played.at(-1),[],'explicit args enable logAudio suppression: '+id);
  game.trySkillAudio(id,'fan_ganyu',true,true);
- assert.equal(played.at(-1).length,1,'manual playback retains one clip: '+id);
+ assert.equal(played.at(-1).length,id==='fan_linji'?3:4,'manual playback exposes the intended random pool: '+id);
 }
 game.trySkillAudio('fan_linji','fan_ganyu',true,true,null,[]);
-game.trySkillAudio('fan_linji_charge','fan_ganyu',true,true);
+game.trySkillAudio('fan_linji','fan_ganyu',true,true);
 assert.deepEqual(played.at(-2),[]);
-assert.deepEqual(played.at(-1),['ext:原神/audio/ganyu/skill/fan_linji_charge.mp3']);
+assert.equal(played.at(-1).length,3);
 for(const [id,count] of Object.entries({fan_nichi:3,fan_yunjian_full:4,fan_yunjian_form:2,fan_sanxiang_leave_ren:2,fan_yanjian_damage:2,fan_yanjian_full_damage:3,fan_yanjian_control_voice:2,fan_yanjian_full_control_voice:1,fan_renjian_reveal:2,fan_renjian_full_reveal:2,fan_renjian_gift:1,fan_renjian_full_gift:1})){
  game.trySkillAudio(id,'fan_zibai',true,true);assert.equal(played.at(-1).length,count,id);
 }
@@ -213,3 +213,9 @@ const monaVoiceText=JSON.parse(read('audio/mona/originals/mona-fandom-voice-page
 assert.match(monaVoiceText,/hit-h_1_file\s*= Heavy Hit Taken 02/);
 assert.match(monaVoiceText,/hit-h_1_tx_s\s*= 离我…远点！/);
 console.log('PASS Mona spoken heavy-hit line maps to audio file 02, not grunt file 01.');
+
+lib.config.background_speak=true;
+game.trySkillAudio("fan_liutian_sha","fan_ganyu",true,true);
+assert.deepEqual(played.at(-1),[1,2,3].map(i=>`ext:原神/audio/ganyu/skill/fan_liutian_sha${i}.mp3`));
+lib.config.background_speak=false;
+const ganyuMuted=played.length; game.trySkillAudio("fan_liutian_sha","fan_ganyu",true,true); assert.equal(played.length,ganyuMuted);

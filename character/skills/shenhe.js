@@ -10,7 +10,7 @@ const lingweiCard = (player, nature) => ({ name: "sha", nature, isCard: true,
 const lingweiNatures = [undefined, "fire", "thunder"];
 
 export function changeCurse(target, owner, amount) {
-  const tokens = target.storage.fan_yizhou_tokens ||= {};
+  const tokens = (target.storage.fan_yizhou_tokens || (target.storage.fan_yizhou_tokens = {}));
   tokens[owner] = Math.max(0, (tokens[owner] || 0) + amount);
   if (!tokens[owner]) delete tokens[owner];
   target.syncStorage("fan_yizhou_tokens");
@@ -58,7 +58,7 @@ function spendLingwei(result, player) {
   const free = fieldCurses() === 0;
   player.storage.fan_lingwei_uses = lingweiUses(player) + 1;
   player.storage.fan_lingwei_round = game.roundNumber;
-  result.card.storage ||= {};
+  (result.card.storage || (result.card.storage = {}));
   result.card.storage.fan_lingwei = player.playerid;
   result.card.storage.fan_lingwei_free = free;
   player.syncStorage("fan_lingwei_uses");

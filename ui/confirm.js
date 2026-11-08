@@ -2,6 +2,7 @@
 export function installSelectionConfirm(ui, status, lib) {
   installSkillButtons(ui, status, lib);
   installXiajiControls(ui, status);
+  installPhaseEndControl(ui, status);
   installMuniuSelection(ui, status, lib);
   if (ui.create.confirm.fanSelectionConfirm) return;
   const original = ui.create.confirm;
@@ -33,6 +34,41 @@ export function installSelectionConfirm(ui, status, lib) {
   }
   confirm.fanSelectionConfirm = true;
   ui.create.confirm = confirm;
+}
+
+// v1.11.6 chooseToUse 起始步骤可重入，原生会直接覆盖 event.endButton。
+// 在覆盖前关闭旧控件，避免旧按钮失去引用后仍留在牌桌。
+export function installPhaseEndControl(ui, status) {
+  const original = ui.create.control;
+  if (!original || original.fanPhaseEndControl) return;
+  let previous;
+  function control(...args) {
+    const event = status?.event;
+    // The native phase selector can be recreated under a different event. Its old
+    // endButton reference is then absent from the new event, so track the control
+    // across events as well. Match the native signature rather than current status.
+    if (args[0] === "结束回合" && args[1] === "stayleft" && typeof args[2] === "function") {
+      const stale = new Set([previous, event?.endButton]);
+      for (const node of stale) {
+        if (!node) continue;
+        // Native close() animates deletion: hide immediately to prevent two live
+        // buttons during that transition, but retain native removal/layout cleanup.
+        if (node.style) node.style.display = "none";
+        node.close();
+      }
+      if (event?.endButton) delete event.endButton;
+      previous = original.apply(this, args);
+      const close = previous.close;
+      previous.close = function (...closeArgs) {
+        if (previous === this) previous = undefined;
+        return close.apply(this, closeArgs);
+      };
+      return previous;
+    }
+    return original.apply(this, args);
+  }
+  control.fanPhaseEndControl = true;
+  ui.create.control = control;
 }
 
 // 单辆木牛没有装备选择空间，直接使用原生 backup 进入扣置手牌的步骤。
@@ -120,6 +156,8 @@ export function installSkillButtons(ui, status, lib) {
       pending = true;
       requestAnimationFrame(() => {
         pending = false;
+        // 字体可在主菜单加载完成；十周年 UI 的 updatec 会直接读取 control.childNodes。
+        if (!ui.control) return;
         ui.updatec();
       });
     };
@@ -127,6 +165,7 @@ export function installSkillButtons(ui, status, lib) {
     // 只观察子按钮，不观察我们设置宽度的父控件，避免布局反馈循环。
     const observer = typeof ResizeObserver === "undefined" ? null : new ResizeObserver(relayout);
     function update(...args) {
+      if (!ui.control) return;
       const current = new Set();
       const controls = new Set([
         ...["skills", "skills2", "skills3"].map(name => ui[name]),

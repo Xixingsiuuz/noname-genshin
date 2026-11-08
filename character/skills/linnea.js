@@ -48,7 +48,7 @@ export default {
       if (!shown(card)) await target.addShownCards(card, "visible_fan_bowen");
       const name = get.name(card, target);
       if (["basic", "trick"].includes(get.type(card, null, target))) {
-        (player.storage.fan_bowen ||= []).add(name);
+        ((player.storage.fan_bowen || (player.storage.fan_bowen = []))).add(name);
         player.markSkill("fan_bowen"); player.syncStorage("fan_bowen");
       }
     },

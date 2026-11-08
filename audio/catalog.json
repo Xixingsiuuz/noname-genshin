@@ -1464,36 +1464,6 @@
     "sha256": "3a6b5795f5f75ae2035653d82e414e5ccad9ec185ff3eccecfde1e8ac740eecc"
   },
   {
-    "role": "ganyu",
-    "path": "audio/ganyu/skill/fan_linji.mp3",
-    "bytes": 13916,
-    "sha256": "fe7773e73de2c436e40f196477d799364ba666268c75caffbedf2100e5d701be"
-  },
-  {
-    "role": "ganyu",
-    "path": "audio/ganyu/skill/fan_linji_charge.mp3",
-    "bytes": 13868,
-    "sha256": "13c452ce5badf64ef9144ddd0d31455763cc8c135e946d08470d062983d03673"
-  },
-  {
-    "role": "ganyu",
-    "path": "audio/ganyu/skill/fan_liutian.mp3",
-    "bytes": 21548,
-    "sha256": "f1f72d1ab1014939cfd1144cd82d448f44550649e21279cedea57af257db2689"
-  },
-  {
-    "role": "ganyu",
-    "path": "audio/ganyu/skill/fan_xingzuo.mp3",
-    "bytes": 32876,
-    "sha256": "0e06d557bddc1e25fa9d8dfb9357fd6654cbbdd80e1fb0940865b13d6336ec6c"
-  },
-  {
-    "role": "ganyu",
-    "path": "audio/ganyu/die/fan_ganyu.mp3",
-    "bytes": 38900,
-    "sha256": "f9195ed8500db95f1ec8863311e988f7e7eac7cff14b028b1ea110f8f9af6c80"
-  },
-  {
     "role": "xianyun",
     "path": "audio/xianyun/skill/fan_luanyin1.mp3",
     "bytes": 14516,
@@ -5963,5 +5933,545 @@
     "path": "audio/mavuika/die/fan_mavuika3.mp3",
     "bytes": 30908,
     "sha256": "2b568079516ed56378f7721b4846dc0c02939b0233a67140d5391f3be0185565"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_shixin_pending1.mp3",
+    "bytes": 35744,
+    "sha256": "97db13ce2d28a6e4ae33db6ba8e955e3f853089377a66f5de16929dac8112912"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_shixin_pending1.mp3",
+    "bytes": 35744,
+    "sha256": "97db13ce2d28a6e4ae33db6ba8e955e3f853089377a66f5de16929dac8112912"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_shixin_pending2.mp3",
+    "bytes": 28064,
+    "sha256": "189bda051a322ce4cede40d12c8c9dfbf93062fdca5f8bdeb5b8cca24ecc0c64"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_shixin_pending2.mp3",
+    "bytes": 28064,
+    "sha256": "189bda051a322ce4cede40d12c8c9dfbf93062fdca5f8bdeb5b8cca24ecc0c64"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_xunshen_draw_pending1.mp3",
+    "bytes": 38816,
+    "sha256": "58a8b8d6178e0767a5ca49ea0b400a1e109a57d426d9de8380b7567b9c4e3e1d"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_xunshen_draw_pending1.mp3",
+    "bytes": 38816,
+    "sha256": "58a8b8d6178e0767a5ca49ea0b400a1e109a57d426d9de8380b7567b9c4e3e1d"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_xunshen_draw_pending2.mp3",
+    "bytes": 38816,
+    "sha256": "3d8626ea02391b394fcc2e0acfab4b729b3655fa153c6f3b62531b5e17cd7038"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_xunshen_draw_pending2.mp3",
+    "bytes": 38816,
+    "sha256": "3d8626ea02391b394fcc2e0acfab4b729b3655fa153c6f3b62531b5e17cd7038"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_xunshen_loss1.mp3",
+    "bytes": 18464,
+    "sha256": "2433c35bfefac31637968cb7bc8fe2993977b8ec385b1a411184c8f084ec6cb9"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_xunshen_loss1.mp3",
+    "bytes": 18464,
+    "sha256": "2433c35bfefac31637968cb7bc8fe2993977b8ec385b1a411184c8f084ec6cb9"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_xunshen_loss2.mp3",
+    "bytes": 21152,
+    "sha256": "fa4161b891c1d54bbe9c951246d750f6a2ff39fef1747941830433578540df3c"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_xunshen_loss2.mp3",
+    "bytes": 21152,
+    "sha256": "fa4161b891c1d54bbe9c951246d750f6a2ff39fef1747941830433578540df3c"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_genchu_discard1.mp3",
+    "bytes": 34592,
+    "sha256": "568f834edd6ac4b57fbf4a5495bf2a10e060127e6a1d7aae0225cdc047799887"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_genchu_discard1.mp3",
+    "bytes": 34592,
+    "sha256": "568f834edd6ac4b57fbf4a5495bf2a10e060127e6a1d7aae0225cdc047799887"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_genchu_discard2.mp3",
+    "bytes": 42656,
+    "sha256": "cdaaa2636aa12625ad20c31f60c82d414a98f49fd76403f91a280a16ff8ddcb2"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_genchu_discard2.mp3",
+    "bytes": 42656,
+    "sha256": "cdaaa2636aa12625ad20c31f60c82d414a98f49fd76403f91a280a16ff8ddcb2"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_genchu_success_voice1.mp3",
+    "bytes": 112928,
+    "sha256": "2b0b9a8a184bd876f21b45121f604cf69a455b857086f8a8f72e77cbc6b289b5"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_genchu_success_voice1.mp3",
+    "bytes": 112928,
+    "sha256": "2b0b9a8a184bd876f21b45121f604cf69a455b857086f8a8f72e77cbc6b289b5"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_genchu_success_voice2.mp3",
+    "bytes": 173216,
+    "sha256": "314ca520a7851fcd167815435dad9cdf56959b8698887d727b723cc05ca16c38"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_genchu_success_voice2.mp3",
+    "bytes": 173216,
+    "sha256": "314ca520a7851fcd167815435dad9cdf56959b8698887d727b723cc05ca16c38"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_shixin_success_voice1.mp3",
+    "bytes": 23840,
+    "sha256": "205bc6aba5f138e2b1dabd2851e8d4c6a43cdb987553d814d24c28e7fb1a37c6"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_shixin_success_voice1.mp3",
+    "bytes": 23840,
+    "sha256": "205bc6aba5f138e2b1dabd2851e8d4c6a43cdb987553d814d24c28e7fb1a37c6"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_shixin_success_voice2.mp3",
+    "bytes": 21152,
+    "sha256": "8ac0a8ceb09389db12cc2d7925a3700c221c5fdb36695a8dd9e7eaee556477c5"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_shixin_success_voice2.mp3",
+    "bytes": 21152,
+    "sha256": "8ac0a8ceb09389db12cc2d7925a3700c221c5fdb36695a8dd9e7eaee556477c5"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_wendao_voice1.mp3",
+    "bytes": 35744,
+    "sha256": "db40aac751efc9c69eb0ba1cec726f383ab57bc695d59862bdfbe034e0623c5b"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_wendao_voice1.mp3",
+    "bytes": 35744,
+    "sha256": "db40aac751efc9c69eb0ba1cec726f383ab57bc695d59862bdfbe034e0623c5b"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_wendao_voice2.mp3",
+    "bytes": 16544,
+    "sha256": "4e008024e3f331d00c0054339414ec7e3953199d876ce69ca93ea8fa175758fd"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_wendao_voice2.mp3",
+    "bytes": 16544,
+    "sha256": "4e008024e3f331d00c0054339414ec7e3953199d876ce69ca93ea8fa175758fd"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_wanderer1.mp3",
+    "bytes": 44192,
+    "sha256": "03f37f85314384d19f85ac519a2f7da738be5f042a4629877f6cbd63d22e7142"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/die/fan_wanderer1.mp3",
+    "bytes": 44192,
+    "sha256": "03f37f85314384d19f85ac519a2f7da738be5f042a4629877f6cbd63d22e7142"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_wanderer2.mp3",
+    "bytes": 44960,
+    "sha256": "c94b4c08ab9a97b76678ffd9132dfc895fd600b0e64d02c73f3a060cba079103"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/die/fan_wanderer2.mp3",
+    "bytes": 44960,
+    "sha256": "c94b4c08ab9a97b76678ffd9132dfc895fd600b0e64d02c73f3a060cba079103"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/fan_wanderer3.mp3",
+    "bytes": 29600,
+    "sha256": "eb327357c9e8303d6ba01bb458d82f7565109dd2b6c39a3be62b4cf6aa52c590"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/die/fan_wanderer3.mp3",
+    "bytes": 29600,
+    "sha256": "eb327357c9e8303d6ba01bb458d82f7565109dd2b6c39a3be62b4cf6aa52c590"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，微小虫孑，岂敢视神？.mp3",
+    "bytes": 165416,
+    "sha256": "8600ecbe233d1ce3abae4d718bda436d8c2f5f07df531dc60d36f82971c3de5a"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_genchu_failure_voice1.mp3",
+    "bytes": 162198,
+    "sha256": "462e41375fd69afb4d3d96bed982df3c56998511bef1db95570d95edf9e2837d"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，伟力如此，皆为神诞.mp3",
+    "bytes": 131685,
+    "sha256": "005948fc12dbaf8c2a5c16c502411d5eeaaa81f99a1f2581585760845899d743"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_genchu_failure_voice2.mp3",
+    "bytes": 131971,
+    "sha256": "11c7cbb69e9e17c459a7d02f868c16d6a31ae5ac248cbf684099bb104d786972"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，七叶之下，唯我长存！.mp3",
+    "bytes": 121645,
+    "sha256": "0569382e946649fb2e13a2595304d2a2cf68333fedd328586788953a3bfb7c0e"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_genchu_failure_voice3.mp3",
+    "bytes": 109499,
+    "sha256": "2f3200f67868d636549cd7ba249ca48c0b2d61d6d957fbf79390dca9d146f033"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，巴尔泽布，我已登神！.mp3",
+    "bytes": 139754,
+    "sha256": "eff5b7769580788e889c231070f741fd3fe65bc6a85e6bf6df7b4830a60aa225"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_genchu_raiden_alive1.mp3",
+    "bytes": 116856,
+    "sha256": "fa3c3f77095d2aa0cf68b5bde4d48bc0a8d69afa41079ea42900d7fb16d5ef57"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，巴尔泽布，你以无心无力.mp3",
+    "bytes": 125101,
+    "sha256": "8781cd9e179d52a36f28ac572fe1b86b580c5fd2a3ac75f67a3844eedadb8cfe"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_genchu_raiden_dead1.mp3",
+    "bytes": 104363,
+    "sha256": "4d88c2012a79f9c90f5d660a71978e3870e110ed66166de36e11b2224479dc74"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，镇压！.mp3",
+    "bytes": 154730,
+    "sha256": "d7f713e0a3e5d799fb8bde0e22a8592af3742c79d1fb803aa58db7d681b699d9"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_shixin_failure_voice1.mp3",
+    "bytes": 136152,
+    "sha256": "0aea1adcc046cd69c38ea5707a7b9ff4cbc7f0a81d0f3ed9e77fae5ee5ea10ee"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，雷殛！.mp3",
+    "bytes": 91942,
+    "sha256": "7c93368397f70339019468145016bfdc6f384fe1631f2704a3d25419a55d625e"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_shixin_failure_voice2.mp3",
+    "bytes": 79124,
+    "sha256": "66f3a0da28751fac3ab92d6e769392573e0c291f1fc95124876db3c455b65d4b"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，焚毁！.mp3",
+    "bytes": 122474,
+    "sha256": "8a8c47a9e871102bbca2613253ab88d1da7ce48c6f649c8f9c46a2512b54222d"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_shixin_failure_voice3.mp3",
+    "bytes": 113328,
+    "sha256": "0d05b6c5b7107b1a1f16bd6686fe71be64e7f91395a4b8ff9aa1c86821664c60"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，渎神，大罪！.mp3",
+    "bytes": 128557,
+    "sha256": "edf599b761a287b6a78142b7e380419d0e0aa5075439affe34b9fe1cfc4c7639"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_shixin_failure_voice4.mp3",
+    "bytes": 119003,
+    "sha256": "cf7564ab7ef10fda7a9dcbc5a53f29ac81287f80bc03c65c453a91e5516b4414"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，旋流，涡转！.mp3",
+    "bytes": 216680,
+    "sha256": "c6f636059a99006680641fe9d83f331b0f3ab86bbd5ce82c74e3d865cf97c6a8"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_xunshen_draw_failure1.mp3",
+    "bytes": 181830,
+    "sha256": "32ed11baa7878c2d80db86e1a65c0d8db8e0faf474c54e34b55f46bcdf554827"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，寂照万物！.mp3",
+    "bytes": 61561,
+    "sha256": "b5a2be4654b3de0774d6f95b58da115b64a62a95333319b0a61b2fb8c7331fc6"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_xunshen_draw_failure3.mp3",
+    "bytes": 56327,
+    "sha256": "77647c4949ced400aedabfa9819f83a5c0cd8da02da4801e7f62f37e93fa54f7"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，扫拭六尘！.mp3",
+    "bytes": 67749,
+    "sha256": "197295611ffc33a63ee3f42f857af44e46a11585ce005ee4b3a8ee08b199edf3"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_xunshen_draw_failure4.mp3",
+    "bytes": 59635,
+    "sha256": "372dff242f1cb960fdae6536e8c1d300f7daa4dff3797dce20097ae0442c9b47"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，涤净诸相！.mp3",
+    "bytes": 151274,
+    "sha256": "5f0175d4879815863dc2397d94215630aa9035b0d9fa1c6cbf56610238a57703"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_xunshen_draw_failure5.mp3",
+    "bytes": 127416,
+    "sha256": "edd277d4ddf2f66b1dac1571828890b511f4d1a0e2aad1725a33a7e69898de9f"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，十祸消聚！.mp3",
+    "bytes": 169706,
+    "sha256": "39f456caf39e0fb5597a9b68d94bfb2748098d286d7af188b192cfcd07f6972b"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_xunshen_draw_failure6.mp3",
+    "bytes": 163992,
+    "sha256": "e17d205b15ee239abaa3a4e31bfbbc69f89b198761c7800f8f86f1a9e34989da"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，正名神诞！.mp3",
+    "bytes": 176618,
+    "sha256": "7f26675f7e2d95e910160c889ffa64129706868e7bca6cb80de09399fd44bc6e"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_xunshen_draw_failure7.mp3",
+    "bytes": 173112,
+    "sha256": "c379658309a1036019724687c0bbde769215e74c124cf9183137d8c649ce8e3d"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，我...还没有....mp3",
+    "bytes": 186986,
+    "sha256": "a48e7fb4028b4d8134e2f5e3f76954efa5ba683aa8b52a7b5d73ee5b808564c7"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/die/fan_wanderer_failure1.mp3",
+    "bytes": 173400,
+    "sha256": "0fa0b8588b319e4748dbd32a277752de88bc7eeeb21323e378314773896dcfa4"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，怎能...再次失去？.mp3",
+    "bytes": 167978,
+    "sha256": "44b68905fa1e30b6e328f03ed8cc74040ed0a51bc6b05d97ab2f3433290994d5"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/die/fan_wanderer_failure2.mp3",
+    "bytes": 161688,
+    "sha256": "41fe84986a5aee8fe4e9426caf21b8f6ab6ddbe5609beab74eea353f12231ed1"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，轮转百劫！.mp3",
+    "bytes": 113577,
+    "sha256": "c2f0d809de6101b369015acc9bc076b106cad730930b8c69dad6925ef4fc5c9e"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_xunshen_draw_failure2.mp3",
+    "bytes": 103447,
+    "sha256": "37e7eb1914c477a44baf3bc78952f1280b375cb8896843c28a2e6faa29601140"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，你也将，无处立足.mp3",
+    "bytes": 142377,
+    "sha256": "b1f23039bdcb4bf499364b19ebba6ed9a59818616e911972d0575214781590d8"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/skill/fan_shixin_failure_voice5.mp3",
+    "bytes": 129559,
+    "sha256": "a6c727aa34aab4e53b2b01ab563ac626182e11680ddcedcfdf020df660da03ca"
+  },
+  {
+    "role": "wanderer",
+    "path": "audio/wanderer/originals/流浪者，蝼蚁之众.mp3",
+    "bytes": 57128,
+    "sha256": "f5b6da94fbfab0ca7872c2813f9918546c9b72c4a7a50497e4e1115b3fbd2749"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/skill/fan_liutian1.mp3",
+    "bytes": 21548,
+    "sha256": "f1f72d1ab1014939cfd1144cd82d448f44550649e21279cedea57af257db2689"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/skill/fan_liutian2.mp3",
+    "bytes": 24740,
+    "sha256": "ca590b9f1ee755bb42188381d92ebdebedd3b84240331af39b1ec12626a83801"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/skill/fan_liutian3.mp3",
+    "bytes": 29132,
+    "sha256": "0b42512748e4d7ac467e48dc78342b277c9167e4ca3cd4d4a4279cdd21daae30"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/skill/fan_liutian4.mp3",
+    "bytes": 19004,
+    "sha256": "52184202cb499e1fa33030b8fa3a728c819474aced32bb16290cdb83277301ee"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/skill/fan_linji1.mp3",
+    "bytes": 13916,
+    "sha256": "fe7773e73de2c436e40f196477d799364ba666268c75caffbedf2100e5d701be"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/skill/fan_linji2.mp3",
+    "bytes": 13868,
+    "sha256": "13c452ce5badf64ef9144ddd0d31455763cc8c135e946d08470d062983d03673"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/skill/fan_linji3.mp3",
+    "bytes": 15068,
+    "sha256": "35380eefb5b030aa8e2f1274a21eab6b33150c20a58cc0b257def69ae50a8263"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/skill/fan_xingzuo1.mp3",
+    "bytes": 20588,
+    "sha256": "dba3705abb67be19b8dde6b5b120b166e6b3600d269292e49fbe3c700f30bc26"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/skill/fan_xingzuo2.mp3",
+    "bytes": 14060,
+    "sha256": "8ef449d10dd1f419aeac7d0ab954e4552bb1934c02aefc5a33790b899b15c969"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/skill/fan_xingzuo3.mp3",
+    "bytes": 21068,
+    "sha256": "a347a0b9664a90c0cf036c9a7d188cbd6de231dc1b03d8322f1f1fc86b971f0c"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/skill/fan_xingzuo4.mp3",
+    "bytes": 20804,
+    "sha256": "6dab8f85b078a4eca33c027e3b67eee5d0996b30626dcd092ce16fb86ff87536"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/die/fan_ganyu1.mp3",
+    "bytes": 38900,
+    "sha256": "f9195ed8500db95f1ec8863311e988f7e7eac7cff14b028b1ea110f8f9af6c80"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/die/fan_ganyu2.mp3",
+    "bytes": 53924,
+    "sha256": "28d20bab14704855562a484bde8a1802968f2b35b5e3cc27b8e0bb78a2ecc57b"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/die/fan_ganyu3.mp3",
+    "bytes": 47228,
+    "sha256": "482830c3509de1a2a3c29b45c1e2e47f6bc40c160f617d2a92573fd066f145b1"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/skill/fan_liutian_sha1.mp3",
+    "bytes": 4460,
+    "sha256": "4902af1896dd9f499515c63ce4864266d0030514d95f92b21a31156eb64ebc58"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/skill/fan_liutian_sha2.mp3",
+    "bytes": 4820,
+    "sha256": "ff38e425c0e3fa7c07dbe55850de00261a750be491977e43b5f95488edebbc33"
+  },
+  {
+    "role": "ganyu",
+    "path": "audio/ganyu/skill/fan_liutian_sha3.mp3",
+    "bytes": 3860,
+    "sha256": "b9961f3fa26e091fdee1438906825f9bb51bb314049f0519c587b3100aad6e30"
   }
 ]

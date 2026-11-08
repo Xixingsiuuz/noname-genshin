@@ -30,7 +30,7 @@ export default {
       const target = event.target;
       const phase = event.getParent("phaseUse");
       if (!phase || !target.isIn() || !target.hasSkill("fan_wenbu") || !player.getCards("h").includes(event.cards[0])) return;
-      phase.fan_wenbu_visits ||= [];
+      (phase.fan_wenbu_visits || (phase.fan_wenbu_visits = []));
       if (phase.fan_wenbu_visits.includes(target)) return;
       phase.fan_wenbu_visits.push(target);
       game.trySkillAudio("fan_wenbu", target, true, true);
@@ -122,7 +122,7 @@ export default {
       await target.recover(target.maxHp - target.hp);
       if (!target.isIn()) return;
       target.clearSkills(true);
-      target.storage.fan_shiqi_returns ||= [];
+      (target.storage.fan_shiqi_returns || (target.storage.fan_shiqi_returns = []));
       target.storage.fan_shiqi_returns.push({ owner: player, skills: originals });
       target.addSkill("fan_shiqi_return");
     },

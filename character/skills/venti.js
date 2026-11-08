@@ -71,7 +71,7 @@ export default {
       const key = `fan_qingzhan_${player.playerid}_${player.storage.fan_qingzhan_serial = (player.storage.fan_qingzhan_serial || 0) + 1}`;
       target.addAdditionalSkill(key, "reluoying");
       player.addAdditionalSkill(key, "fan_jiushi");
-      (player.storage.fan_qingzhan_rewards ||= []).push({ target, key });
+      ((player.storage.fan_qingzhan_rewards || (player.storage.fan_qingzhan_rewards = []))).push({ target, key });
       player.addSkill("fan_qingzhan_expire");
     },
   },

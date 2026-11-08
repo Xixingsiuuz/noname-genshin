@@ -1,3 +1,5 @@
+import spCitlaliSkills from "./skills/sp_citlali.js";
+import wandererSkills from "./skills/wanderer.js";
 import zhongliReworkSkills from "./skills/zhongli_rework.js";
 import spSandroneSkills from "./skills/sp_sandrone.js";
 import sandroneSkills from "./skills/sandrone.js";
@@ -64,12 +66,14 @@ import albedoSkills from "./skills/albedo.js";
 import xiaoSkills from "./skills/xiao.js";
 
 export default {
+  ...wandererSkills,
   ...zhongliReworkSkills,
   ...sandroneSkills,
   ...spSandroneSkills,
   ...nicoleSkills,
   ...linneaSkills,
   ...citlaliSkills,
+  ...spCitlaliSkills,
   ...monaSkills,
   ...qiqiSkills,
   ...jeanSkills,

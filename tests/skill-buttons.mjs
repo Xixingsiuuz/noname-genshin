@@ -96,5 +96,13 @@ fontEvents.loadingdone(); frames.shift()(); assertGaps();
 delete ui.skills;
 own.childNodes[0].offsetWidth = 190;
 ui.updatec(); assertGaps();
+// Font events can fire in the main menu, before the arena/control exists.
+const savedControl = ui.control;
+delete ui.control;
+assert.doesNotThrow(() => ui.updatec());
+fontEvents.loadingdone();
+assert.doesNotThrow(() => frames.shift()());
+ui.control = savedControl;
+ui.updatec(); assertGaps();
 delete globalThis.document; delete globalThis.ResizeObserver; delete globalThis.requestAnimationFrame;
 console.log("PASS: real engine control positioning, recast/equipment/confirm gaps, late resize, hide/show and dynamic controls (simulation)");

@@ -27,7 +27,7 @@ export default {
     },
     async content(event, trigger, player) {
       const phase = phaseOf(trigger);
-      (phase.fan_jianliu_seen ||= []).push(player);
+      ((phase.fan_jianliu_seen || (phase.fan_jianliu_seen = []))).push(player);
       const cards = trigger.getg(player).filter(card => canUseSword(card, player));
       if (!cards.length) return;
       // 原生转化牌选择流程：同屏选素材和目标，由引擎统一确认并使用。
@@ -83,7 +83,7 @@ export default {
       target.addTempSkill("fan_guiji_silenced", { global: "phaseAfter" });
       // 绑定本次用牌事件及目标，避免其他杀、其他丝柯克或未发动封印的目标误触发扣牌。
       const use = trigger.getParent("useCard");
-      const targets = use.fan_guiji_targets ||= [];
+      const targets = (use.fan_guiji_targets || (use.fan_guiji_targets = []));
       if (!targets.includes(target)) targets.push(target);
     },
     group: "fan_guiji_capture",

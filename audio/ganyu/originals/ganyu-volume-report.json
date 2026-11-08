@@ -3,7 +3,7 @@
   "method": "static gain, intact originals, encoded true peak <= -1 dBTP",
   "clips": [
     {
-      "id": "fan_liutian",
+      "id": "fan_liutian1",
       "gain_db": -0.01,
       "before": {
         "lufs": -14.24,
@@ -19,7 +19,55 @@
       }
     },
     {
-      "id": "fan_linji",
+      "id": "fan_liutian2",
+      "gain_db": -2.53,
+      "before": {
+        "lufs": -11.72,
+        "true_peak_dbtp": -2.29,
+        "mean_dbfs": -15.7,
+        "peak_dbfs": -2.3
+      },
+      "after": {
+        "lufs": -14.24,
+        "true_peak_dbtp": -4.71,
+        "mean_dbfs": -18.3,
+        "peak_dbfs": -4.7
+      }
+    },
+    {
+      "id": "fan_liutian3",
+      "gain_db": 1.06,
+      "before": {
+        "lufs": -15.31,
+        "true_peak_dbtp": -5.45,
+        "mean_dbfs": -19.1,
+        "peak_dbfs": -5.5
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -4.33,
+        "mean_dbfs": -18.1,
+        "peak_dbfs": -4.4
+      }
+    },
+    {
+      "id": "fan_liutian4",
+      "gain_db": -1.81,
+      "before": {
+        "lufs": -12.44,
+        "true_peak_dbtp": -1.55,
+        "mean_dbfs": -15.9,
+        "peak_dbfs": -1.6
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -3.36,
+        "mean_dbfs": -17.7,
+        "peak_dbfs": -3.4
+      }
+    },
+    {
+      "id": "fan_linji1",
       "gain_db": -0.9,
       "before": {
         "lufs": -13.35,
@@ -35,7 +83,7 @@
       }
     },
     {
-      "id": "fan_linji_charge",
+      "id": "fan_linji2",
       "gain_db": -2.89,
       "before": {
         "lufs": -11.36,
@@ -51,23 +99,87 @@
       }
     },
     {
-      "id": "fan_xingzuo",
-      "gain_db": 1.07,
+      "id": "fan_linji3",
+      "gain_db": -0.79,
       "before": {
-        "lufs": -15.32,
-        "true_peak_dbtp": -3.74,
-        "mean_dbfs": -19.4,
-        "peak_dbfs": -3.9
+        "lufs": -13.46,
+        "true_peak_dbtp": -3.48,
+        "mean_dbfs": -18.3,
+        "peak_dbfs": -3.8
       },
       "after": {
-        "lufs": -14.25,
-        "true_peak_dbtp": -2.66,
-        "mean_dbfs": -18.3,
-        "peak_dbfs": -2.8
+        "lufs": -14.23,
+        "true_peak_dbtp": -4.33,
+        "mean_dbfs": -19.1,
+        "peak_dbfs": -4.7
       }
     },
     {
-      "id": "fan_ganyu",
+      "id": "fan_xingzuo1",
+      "gain_db": 1.36,
+      "before": {
+        "lufs": -15.61,
+        "true_peak_dbtp": -4.98,
+        "mean_dbfs": -20.0,
+        "peak_dbfs": -5.0
+      },
+      "after": {
+        "lufs": -14.23,
+        "true_peak_dbtp": -3.46,
+        "mean_dbfs": -18.6,
+        "peak_dbfs": -3.5
+      }
+    },
+    {
+      "id": "fan_xingzuo2",
+      "gain_db": -0.53,
+      "before": {
+        "lufs": -13.72,
+        "true_peak_dbtp": -1.65,
+        "mean_dbfs": -17.3,
+        "peak_dbfs": -1.7
+      },
+      "after": {
+        "lufs": -14.24,
+        "true_peak_dbtp": -2.19,
+        "mean_dbfs": -17.9,
+        "peak_dbfs": -2.2
+      }
+    },
+    {
+      "id": "fan_xingzuo3",
+      "gain_db": -0.9,
+      "before": {
+        "lufs": -13.35,
+        "true_peak_dbtp": -4.98,
+        "mean_dbfs": -17.4,
+        "peak_dbfs": -5.1
+      },
+      "after": {
+        "lufs": -14.25,
+        "true_peak_dbtp": -6.02,
+        "mean_dbfs": -18.3,
+        "peak_dbfs": -6.1
+      }
+    },
+    {
+      "id": "fan_xingzuo4",
+      "gain_db": -2.59,
+      "before": {
+        "lufs": -11.66,
+        "true_peak_dbtp": -1.9,
+        "mean_dbfs": -15.1,
+        "peak_dbfs": -2.0
+      },
+      "after": {
+        "lufs": -14.26,
+        "true_peak_dbtp": -4.91,
+        "mean_dbfs": -17.7,
+        "peak_dbfs": -5.1
+      }
+    },
+    {
+      "id": "fan_ganyu1",
       "gain_db": -0.79,
       "before": {
         "lufs": -13.46,
@@ -80,6 +192,86 @@
         "true_peak_dbtp": -2.58,
         "mean_dbfs": -19.8,
         "peak_dbfs": -3.5
+      }
+    },
+    {
+      "id": "fan_ganyu2",
+      "gain_db": -1.26,
+      "before": {
+        "lufs": -13.04,
+        "true_peak_dbtp": -0.24,
+        "mean_dbfs": -17.6,
+        "peak_dbfs": -0.8
+      },
+      "after": {
+        "lufs": -14.32,
+        "true_peak_dbtp": -1.41,
+        "mean_dbfs": -18.9,
+        "peak_dbfs": -1.9
+      }
+    },
+    {
+      "id": "fan_ganyu3",
+      "gain_db": -0.99,
+      "before": {
+        "lufs": -16.39,
+        "true_peak_dbtp": -0.51,
+        "mean_dbfs": -19.7,
+        "peak_dbfs": -0.5
+      },
+      "after": {
+        "lufs": -17.37,
+        "true_peak_dbtp": -1.53,
+        "mean_dbfs": -20.7,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_liutian_sha1",
+      "gain_db": -0.59,
+      "before": {
+        "lufs": null,
+        "true_peak_dbtp": -0.91,
+        "mean_dbfs": -13.9,
+        "peak_dbfs": -0.9
+      },
+      "after": {
+        "lufs": null,
+        "true_peak_dbtp": -1.51,
+        "mean_dbfs": -14.5,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_liutian_sha2",
+      "gain_db": -0.54,
+      "before": {
+        "lufs": null,
+        "true_peak_dbtp": -0.96,
+        "mean_dbfs": -17.0,
+        "peak_dbfs": -1.0
+      },
+      "after": {
+        "lufs": null,
+        "true_peak_dbtp": -1.45,
+        "mean_dbfs": -17.5,
+        "peak_dbfs": -1.5
+      }
+    },
+    {
+      "id": "fan_liutian_sha3",
+      "gain_db": -0.16,
+      "before": {
+        "lufs": null,
+        "true_peak_dbtp": -1.34,
+        "mean_dbfs": -16.9,
+        "peak_dbfs": -1.3
+      },
+      "after": {
+        "lufs": null,
+        "true_peak_dbtp": -1.72,
+        "mean_dbfs": -17.1,
+        "peak_dbfs": -1.7
       }
     }
   ]

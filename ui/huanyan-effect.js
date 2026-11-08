@@ -2,7 +2,7 @@
 export function setHuanyanEffect(target, source, active) {
   if (typeof document === "undefined" || !target?.node) return;
   const host = target.node.avatar || target;
-  const owners = host.fanHuanyanOwners ||= new Set();
+  const owners = host.fanHuanyanOwners || (host.fanHuanyanOwners = new Set());
   if (active) owners.add(source); else owners.delete(source);
   const previous = host.querySelector(".fan-huanyan-effect");
   if (!owners.size) { previous?.remove(); delete host.fanHuanyanOwners; return; }

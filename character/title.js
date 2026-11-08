@@ -1,11 +1,13 @@
 // 武将详情页称号使用 lib.characterTitle，与姓名前缀的 _prefix 翻译独立。
 // 后续武将按武将牌原文在此补充，未确认的称号不自行推测。
 export default {
+  fan_wanderer: "久世浮倾",
   fan_re_zhongli: "尘世闲游",
   fan_sp_sandrone: "镜水析谬",
   fan_sandrone: "镜水析谬",
   fan_nicole: "喧寂于心",
   fan_linnea: "博闻异旅",
+  fan_sp_citlali: "白星黑曜",
   fan_citlali: "白星黑曜",
   fan_mona: "星天水镜",
   fan_qiqi: "冻冻回魂夜",

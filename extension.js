@@ -1,3 +1,4 @@
+import { installWandererDeathAudio } from "./ui/wanderer-voices.js";
 import { createUpdateChecker, EXTENSION_VERSION } from "./ui/update-check.js";
 import { installHuanyanReplay } from "./ui/huanyan-effect.js";
 import { installSharedZhinang } from "./character/zhinang.js";
@@ -30,9 +31,10 @@ export default function () {
   return {
     name: "原神",
     content() {
+      installWandererDeathAudio(game, lib, get);
       updater.start();
       installSharedZhinang(get, () => _status);
-      (lib.dynamicTranslate ||= {}).fan_tianlin = player => player.storage.fan_duanyu_failed
+      (lib.dynamicTranslate || (lib.dynamicTranslate = {})).fan_tianlin = player => player.storage.fan_duanyu_failed
         ? "锁定技，每轮开始时，你选择一个本局游戏未选择过的基本牌或普通锦囊牌的牌名，那之后，当其他角色使用牌名被【天霖】选择过，且非转化的手牌指定目标时，你于此牌结算后将其置于你的武将牌上，称为“忆”，然后你摸一张牌。"
         : lib.translate.fan_tianlin_info;
       if (!lib.hooks.checkEnd.some(fn => fn.fanTianlinAuto)) {
@@ -122,7 +124,7 @@ export default function () {
       card: createCardPackage(),
     },
     files: {
-      character: ["image/character/originals/zhongli-rework.png", "image/character/portraits/zhongli-rework.png", "image/character/portraits/zhongli-rework-select.png", "image/character/portraits/zhongli-rework-detail.png", ...Object.values(smoothPortraits), "image/character/originals/sandrone.png", "image/character/portraits/sandrone.png", "image/character/portraits/sandrone-select.png", "image/character/portraits/sandrone-detail.png", "image/character/originals/nicole.png", "image/character/portraits/nicole.png", "image/character/portraits/nicole-select.png", "image/character/portraits/nicole-detail.png", "image/character/originals/citlali.png", "image/character/portraits/citlali.png", "image/character/portraits/citlali-select.png", "image/character/portraits/citlali-detail.png", "image/character/originals/mona.png", "image/character/portraits/mona.png", "image/character/portraits/mona-select.png", "image/character/portraits/mona-detail.png", "image/character/originals/qiqi.png", "image/character/portraits/qiqi.png", "image/character/portraits/qiqi-select.png", "image/character/portraits/qiqi-detail.png", "image/character/portraits/jean-select-centered-20261028.png", "image/character/portraits/jean-centered-20261028.png", "image/character/portraits/jean-detail-centered-20261028.png", "image/character/originals/jean.png", "image/character/portraits/jean.png", "image/character/portraits/jean-select.png", "image/character/portraits/jean-detail.png", "image/character/portraits/xiao-centered-20261027.png", "image/character/portraits/xiao-detail-centered-20261027.png", "image/character/originals/xiao.png", "image/character/portraits/xiao.png", "image/character/portraits/xiao-select.png", "image/character/portraits/xiao-detail.png", "image/character/originals/hutao.png", "image/character/originals/hutao-skin1.jpg", "image/character/originals/hutao-skin2.png",
+      character: ["image/character/originals/wanderer.png", "image/character/portraits/wanderer.png", "image/character/portraits/wanderer-select.png", "image/character/portraits/wanderer-detail.png", "image/character/originals/zhongli-rework.png", "image/character/portraits/zhongli-rework.png", "image/character/portraits/zhongli-rework-select.png", "image/character/portraits/zhongli-rework-detail.png", ...Object.values(smoothPortraits), "image/character/originals/sandrone.png", "image/character/portraits/sandrone.png", "image/character/portraits/sandrone-select.png", "image/character/portraits/sandrone-detail.png", "image/character/originals/nicole.png", "image/character/portraits/nicole.png", "image/character/portraits/nicole-select.png", "image/character/portraits/nicole-detail.png", "image/character/originals/citlali.png", "image/character/portraits/citlali.png", "image/character/portraits/citlali-select.png", "image/character/portraits/citlali-detail.png", "image/character/originals/mona.png", "image/character/portraits/mona.png", "image/character/portraits/mona-select.png", "image/character/portraits/mona-detail.png", "image/character/originals/qiqi.png", "image/character/portraits/qiqi.png", "image/character/portraits/qiqi-select.png", "image/character/portraits/qiqi-detail.png", "image/character/portraits/jean-select-centered-20261028.png", "image/character/portraits/jean-centered-20261028.png", "image/character/portraits/jean-detail-centered-20261028.png", "image/character/originals/jean.png", "image/character/portraits/jean.png", "image/character/portraits/jean-select.png", "image/character/portraits/jean-detail.png", "image/character/portraits/xiao-centered-20261027.png", "image/character/portraits/xiao-detail-centered-20261027.png", "image/character/originals/xiao.png", "image/character/portraits/xiao.png", "image/character/portraits/xiao-select.png", "image/character/portraits/xiao-detail.png", "image/character/originals/hutao.png", "image/character/originals/hutao-skin1.jpg", "image/character/originals/hutao-skin2.png",
         "image/character/portraits/hutao.png", "image/character/portraits/hutao-select.png", "image/character/portraits/hutao-detail.png",
         "image/character/portraits/hutao-skin1.png", "image/character/portraits/hutao-skin1-select.png", "image/character/portraits/hutao-skin1-detail.png",
         "image/character/portraits/hutao-skin2.png", "image/character/portraits/hutao-skin2-select.png", "image/character/portraits/hutao-skin2-detail.png",
@@ -135,6 +137,23 @@ export default function () {
       card: ["image/card/fan_pengrenshenji-mechanism.png", "image/card/fan_zhuxing-mechanism.png",
         "image/card/fan_guizhongji-mechanism.png", "image/card/fan_chengehu-mechanism.png"],
       skill: [], audio: [
+      "audio/ganyu/skill/fan_liutian1.mp3",
+      "audio/ganyu/skill/fan_liutian2.mp3",
+      "audio/ganyu/skill/fan_liutian3.mp3",
+      "audio/ganyu/skill/fan_liutian4.mp3",
+      "audio/ganyu/skill/fan_linji1.mp3",
+      "audio/ganyu/skill/fan_linji2.mp3",
+      "audio/ganyu/skill/fan_linji3.mp3",
+      "audio/ganyu/skill/fan_xingzuo1.mp3",
+      "audio/ganyu/skill/fan_xingzuo2.mp3",
+      "audio/ganyu/skill/fan_xingzuo3.mp3",
+      "audio/ganyu/skill/fan_xingzuo4.mp3",
+      "audio/ganyu/die/fan_ganyu1.mp3",
+      "audio/ganyu/die/fan_ganyu2.mp3",
+      "audio/ganyu/die/fan_ganyu3.mp3",
+      "audio/ganyu/skill/fan_liutian_sha1.mp3",
+      "audio/ganyu/skill/fan_liutian_sha2.mp3", "audio/ganyu/skill/fan_liutian_sha3.mp3",
+"audio/wanderer/skill/fan_shixin_pending1.mp3","audio/wanderer/skill/fan_shixin_pending2.mp3","audio/wanderer/skill/fan_xunshen_draw_pending1.mp3","audio/wanderer/skill/fan_xunshen_draw_pending2.mp3","audio/wanderer/skill/fan_xunshen_loss1.mp3","audio/wanderer/skill/fan_xunshen_loss2.mp3","audio/wanderer/skill/fan_genchu_discard1.mp3","audio/wanderer/skill/fan_genchu_discard2.mp3","audio/wanderer/skill/fan_genchu_success_voice1.mp3","audio/wanderer/skill/fan_genchu_success_voice2.mp3","audio/wanderer/skill/fan_shixin_success_voice1.mp3","audio/wanderer/skill/fan_shixin_success_voice2.mp3","audio/wanderer/skill/fan_wendao_voice1.mp3","audio/wanderer/skill/fan_wendao_voice2.mp3","audio/wanderer/die/fan_wanderer1.mp3","audio/wanderer/die/fan_wanderer2.mp3","audio/wanderer/die/fan_wanderer3.mp3","audio/wanderer/skill/fan_genchu_failure_voice1.mp3","audio/wanderer/skill/fan_genchu_failure_voice2.mp3","audio/wanderer/skill/fan_genchu_failure_voice3.mp3","audio/wanderer/skill/fan_genchu_raiden_alive1.mp3","audio/wanderer/skill/fan_genchu_raiden_dead1.mp3","audio/wanderer/skill/fan_shixin_failure_voice1.mp3","audio/wanderer/skill/fan_shixin_failure_voice2.mp3","audio/wanderer/skill/fan_shixin_failure_voice3.mp3","audio/wanderer/skill/fan_shixin_failure_voice4.mp3","audio/wanderer/skill/fan_shixin_failure_voice5.mp3","audio/wanderer/skill/fan_xunshen_draw_failure1.mp3","audio/wanderer/skill/fan_xunshen_draw_failure2.mp3","audio/wanderer/skill/fan_xunshen_draw_failure3.mp3","audio/wanderer/skill/fan_xunshen_draw_failure4.mp3","audio/wanderer/skill/fan_xunshen_draw_failure5.mp3","audio/wanderer/skill/fan_xunshen_draw_failure6.mp3","audio/wanderer/skill/fan_xunshen_draw_failure7.mp3","audio/wanderer/die/fan_wanderer_failure1.mp3","audio/wanderer/die/fan_wanderer_failure2.mp3",
       "audio/zhongli_rework/skill/fan_dingqi_start1.mp3",
       "audio/zhongli_rework/skill/fan_dingqi_start2.mp3",
       "audio/zhongli_rework/skill/fan_dingqi_start3.mp3",
@@ -392,7 +411,7 @@ export default function () {
       "audio/hutao/skill/fan_qiyun_ningguang.mp3",
       "audio/hutao/skill/fan_wangsheng_customer1.mp3", "audio/hutao/skill/fan_wangsheng_customer2.mp3", "audio/hutao/skill/fan_wangsheng_customer3.mp3",
       "audio/hutao/skill/fan_youdie_burst1.mp3", "audio/hutao/skill/fan_youdie_burst2.mp3", "audio/hutao/skill/fan_youdie_burst3.mp3",
-      "audio/ganyu/skill/fan_liutian.mp3", "audio/ganyu/skill/fan_linji.mp3", "audio/ganyu/skill/fan_linji_charge.mp3", "audio/ganyu/skill/fan_xingzuo.mp3", "audio/ganyu/die/fan_ganyu.mp3",
+          
       "audio/xianyun/skill/fan_luanyin1.mp3", "audio/xianyun/skill/fan_luanyin2.mp3",
       "audio/xianyun/skill/fan_luanyin3.mp3", "audio/xianyun/skill/fan_xianzhu1.mp3",
       "audio/xianyun/skill/fan_xianzhu2.mp3", "audio/xianyun/die/fan_xianyun.mp3",

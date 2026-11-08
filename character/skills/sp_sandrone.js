@@ -2,7 +2,7 @@ import {game,get,ui,_status} from "../../../../noname.js";
 import standard from "./sandrone.js";
 const values=[Array.from({length:13},(_,i)=>i+1),["spade","heart","club","diamond"],["basic","trick","equip"]];
 const names=["点数","花色","类别"];
-const state=p=>p.storage.fan_sp_xigou ||= [[],[],[]];
+const state=p=>(p.storage.fan_sp_xigou || (p.storage.fan_sp_xigou = [[],[],[]]));
 const value=(c,i)=>i===0?get.number(c,false):i===1?get.suit(c,false):get.type2(c,false);
 const complete=(p,i)=>values[i].every(v=>state(p)[i].includes(v));
 const missing=(p,i)=>values[i].filter(v=>!state(p)[i].includes(v));

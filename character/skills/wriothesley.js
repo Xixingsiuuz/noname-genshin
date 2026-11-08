@@ -28,7 +28,7 @@ export default {
     async content(event, trigger, player) {
       const target = event.target, phase = event.getParent("phaseUse");
       if (!phase || phase.fan_dianyu_stop || phase.fan_dianyu_targets?.includes(target) || target === player || !target.isIn()) return;
-      (phase.fan_dianyu_targets ??= []).push(target);
+      ((phase.fan_dianyu_targets ?? (phase.fan_dianyu_targets = []))).push(target);
       if (!harmed(target, player)) phase.fan_dianyu_stop = true;
       const result = await target.chooseControl(choices)
         .set("prompt", "典狱：选择一项")

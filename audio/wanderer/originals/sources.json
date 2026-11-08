@@ -1,0 +1,572 @@
+{
+  "page": "https://wiki.biligame.com/ys/流浪者语音",
+  "clips": {
+    "fan_shixin_pending1": {
+      "label": "元素爆发·其三",
+      "text": "叫大声点！",
+      "url": "https://patchwiki.biligame.com/images/ys/5/5e/jmbl1d6kyy1g6zn8dvcxpiyfelgpcxm.mp3",
+      "original": "audio/wanderer/originals/fan_shixin_pending1.mp3",
+      "output": "audio/wanderer/skill/fan_shixin_pending1.mp3",
+      "bytes": 35744,
+      "trim_seconds": null,
+      "sha256": "97db13ce2d28a6e4ae33db6ba8e955e3f853089377a66f5de16929dac8112912",
+      "output_bytes": 35744,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_shixin_pending2": {
+      "label": "元素爆发·其四",
+      "text": "把头低下！",
+      "url": "https://patchwiki.biligame.com/images/ys/4/42/c1hxxx7jvvbf5iezwt0kjuo2ulop31k.mp3",
+      "original": "audio/wanderer/originals/fan_shixin_pending2.mp3",
+      "output": "audio/wanderer/skill/fan_shixin_pending2.mp3",
+      "bytes": 28064,
+      "trim_seconds": null,
+      "sha256": "189bda051a322ce4cede40d12c8c9dfbf93062fdca5f8bdeb5b8cca24ecc0c64",
+      "output_bytes": 28064,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_xunshen_draw_pending1": {
+      "label": "元素爆发·其一",
+      "text": "不度蝼蚁！",
+      "url": "https://patchwiki.biligame.com/images/ys/9/9d/mb70yo37tuzlmzxmu4hynhal9pgn2qu.mp3",
+      "original": "audio/wanderer/originals/fan_xunshen_draw_pending1.mp3",
+      "output": "audio/wanderer/skill/fan_xunshen_draw_pending1.mp3",
+      "bytes": 38816,
+      "trim_seconds": null,
+      "sha256": "58a8b8d6178e0767a5ca49ea0b400a1e109a57d426d9de8380b7567b9c4e3e1d",
+      "output_bytes": 38816,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_xunshen_draw_pending2": {
+      "label": "元素爆发·其二",
+      "text": "鼠雀之辈！",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c3/4l8o86o34mpiorrqqokzs8t0gke0stb.mp3",
+      "original": "audio/wanderer/originals/fan_xunshen_draw_pending2.mp3",
+      "output": "audio/wanderer/skill/fan_xunshen_draw_pending2.mp3",
+      "bytes": 38816,
+      "trim_seconds": null,
+      "sha256": "3d8626ea02391b394fcc2e0acfab4b729b3655fa153c6f3b62531b5e17cd7038",
+      "output_bytes": 38816,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_xunshen_loss1": {
+      "label": "重受击·其一",
+      "text": "不过如此。",
+      "url": "https://patchwiki.biligame.com/images/ys/d/d4/gdl60wb6ddf23lqny6wwhxpnv3m6rmt.mp3",
+      "original": "audio/wanderer/originals/fan_xunshen_loss1.mp3",
+      "output": "audio/wanderer/skill/fan_xunshen_loss1.mp3",
+      "bytes": 18464,
+      "trim_seconds": null,
+      "sha256": "2433c35bfefac31637968cb7bc8fe2993977b8ec385b1a411184c8f084ec6cb9",
+      "output_bytes": 18464,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_xunshen_loss2": {
+      "label": "重受击·其二",
+      "text": "…可笑。",
+      "url": "https://patchwiki.biligame.com/images/ys/4/48/adlbyf2f32elbvooq9img4isu2o0dpi.mp3",
+      "original": "audio/wanderer/originals/fan_xunshen_loss2.mp3",
+      "output": "audio/wanderer/skill/fan_xunshen_loss2.mp3",
+      "bytes": 21152,
+      "trim_seconds": null,
+      "sha256": "fa4161b891c1d54bbe9c951246d750f6a2ff39fef1747941830433578540df3c",
+      "output_bytes": 21152,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_genchu_discard1": {
+      "label": "元素爆发·其五",
+      "text": "毫无自知之明！",
+      "url": "https://patchwiki.biligame.com/images/ys/5/55/pwk7ot5e4jz6qraoq9u3glguoi42lct.mp3",
+      "original": "audio/wanderer/originals/fan_genchu_discard1.mp3",
+      "output": "audio/wanderer/skill/fan_genchu_discard1.mp3",
+      "bytes": 34592,
+      "trim_seconds": null,
+      "sha256": "568f834edd6ac4b57fbf4a5495bf2a10e060127e6a1d7aae0225cdc047799887",
+      "output_bytes": 34592,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_genchu_discard2": {
+      "label": "元素爆发·其六",
+      "text": "就凭你，也配直视我？",
+      "url": "https://patchwiki.biligame.com/images/ys/2/23/3bwtwp2setmvz3e31w9xfleo1nmxtdn.mp3",
+      "original": "audio/wanderer/originals/fan_genchu_discard2.mp3",
+      "output": "audio/wanderer/skill/fan_genchu_discard2.mp3",
+      "bytes": 42656,
+      "trim_seconds": null,
+      "sha256": "cdaaa2636aa12625ad20c31f60c82d414a98f49fd76403f91a280a16ff8ddcb2",
+      "output_bytes": 42656,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_genchu_success_voice1": {
+      "label": "关于流浪者自己·人偶",
+      "text": "烧掉一个人偶会留下灰烬。至于灰烬中会诞生什么…",
+      "url": "https://patchwiki.biligame.com/images/ys/c/ca/8m4dkltbj9ewzp0lk2aicf7fo03dfgy.mp3",
+      "original": "audio/wanderer/originals/fan_genchu_success_voice1.mp3",
+      "output": "audio/wanderer/skill/fan_genchu_success_voice1.mp3",
+      "bytes": 112928,
+      "trim_seconds": null,
+      "sha256": "2b0b9a8a184bd876f21b45121f604cf69a455b857086f8a8f72e77cbc6b289b5",
+      "output_bytes": 112928,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_genchu_success_voice2": {
+      "label": "关于流浪者自己·心",
+      "text": "那种东西随便了。执着于注定不属于自己的事物只是在浪费时间，现在的我有更重要的事情要做。",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f5/e6zqryv89fxrx9nrmykisik69lnjzg2.mp3",
+      "original": "audio/wanderer/originals/fan_genchu_success_voice2.mp3",
+      "output": "audio/wanderer/skill/fan_genchu_success_voice2.mp3",
+      "bytes": 173216,
+      "trim_seconds": null,
+      "sha256": "314ca520a7851fcd167815435dad9cdf56959b8698887d727b723cc05ca16c38",
+      "output_bytes": 173216,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_shixin_success_voice1": {
+      "label": "元素战技·其二",
+      "text": "俯瞰凡尘！",
+      "url": "https://patchwiki.biligame.com/images/ys/2/21/kcfbv2omfulodc0d6gyt0dkostg1ky2.mp3",
+      "original": "audio/wanderer/originals/fan_shixin_success_voice1.mp3",
+      "output": "audio/wanderer/skill/fan_shixin_success_voice1.mp3",
+      "bytes": 23840,
+      "trim_seconds": null,
+      "sha256": "205bc6aba5f138e2b1dabd2851e8d4c6a43cdb987553d814d24c28e7fb1a37c6",
+      "output_bytes": 23840,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_shixin_success_voice2": {
+      "label": "元素战技·其三",
+      "text": "怒风腾天！",
+      "url": "https://patchwiki.biligame.com/images/ys/b/b1/6n6754xcgdposozb03njne34snfbcz6.mp3",
+      "original": "audio/wanderer/originals/fan_shixin_success_voice2.mp3",
+      "output": "audio/wanderer/skill/fan_shixin_success_voice2.mp3",
+      "bytes": 21152,
+      "trim_seconds": null,
+      "sha256": "8ac0a8ceb09389db12cc2d7925a3700c221c5fdb36695a8dd9e7eaee556477c5",
+      "output_bytes": 21152,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_wendao_voice1": {
+      "label": "打开宝箱·其一",
+      "text": "多余。",
+      "url": "https://patchwiki.biligame.com/images/ys/1/1b/53xc5ymdnvqrds0dg1wj0szohnr1234.mp3",
+      "original": "audio/wanderer/originals/fan_wendao_voice1.mp3",
+      "output": "audio/wanderer/skill/fan_wendao_voice1.mp3",
+      "bytes": 35744,
+      "trim_seconds": null,
+      "sha256": "db40aac751efc9c69eb0ba1cec726f383ab57bc695d59862bdfbe034e0623c5b",
+      "output_bytes": 35744,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_wendao_voice2": {
+      "label": "元素战技·其一",
+      "text": "风起！",
+      "url": "https://patchwiki.biligame.com/images/ys/3/3d/olbn0mnkd2pw7o4kyl6hzbzmufsm8y6.mp3",
+      "original": "audio/wanderer/originals/fan_wendao_voice2.mp3",
+      "output": "audio/wanderer/skill/fan_wendao_voice2.mp3",
+      "bytes": 16544,
+      "trim_seconds": null,
+      "sha256": "4e008024e3f331d00c0054339414ec7e3953199d876ce69ca93ea8fa175758fd",
+      "output_bytes": 16544,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_wanderer1": {
+      "label": "倒下·其一",
+      "text": "坠入…深渊…",
+      "url": "https://patchwiki.biligame.com/images/ys/f/f4/ez04h9lgj4ax06djxzcv778y6rjsnnn.mp3",
+      "original": "audio/wanderer/originals/fan_wanderer1.mp3",
+      "output": "audio/wanderer/die/fan_wanderer1.mp3",
+      "bytes": 44192,
+      "trim_seconds": null,
+      "sha256": "03f37f85314384d19f85ac519a2f7da738be5f042a4629877f6cbd63d22e7142",
+      "output_bytes": 44192,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_wanderer2": {
+      "label": "倒下·其二",
+      "text": "皆为…徒劳…",
+      "url": "https://patchwiki.biligame.com/images/ys/b/bc/h5pwlw0ha78ugx8owe9980yi240j34r.mp3",
+      "original": "audio/wanderer/originals/fan_wanderer2.mp3",
+      "output": "audio/wanderer/die/fan_wanderer2.mp3",
+      "bytes": 44960,
+      "trim_seconds": null,
+      "sha256": "c94b4c08ab9a97b76678ffd9132dfc895fd600b0e64d02c73f3a060cba079103",
+      "output_bytes": 44960,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_wanderer3": {
+      "label": "倒下·其三",
+      "text": "罪业的报偿…",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8e/230iln6qsqydxhp733jbtiuhf79jj0d.mp3",
+      "original": "audio/wanderer/originals/fan_wanderer3.mp3",
+      "output": "audio/wanderer/die/fan_wanderer3.mp3",
+      "bytes": 29600,
+      "trim_seconds": null,
+      "sha256": "eb327357c9e8303d6ba01bb458d82f7565109dd2b6c39a3be62b4cf6aa52c590",
+      "output_bytes": 29600,
+      "text_source": "BWIKI Chinese voice text"
+    },
+    "fan_genchu_failure_voice1": {
+      "label": "微小虫孑，岂敢视神？",
+      "text": "微小虫孑，岂敢视神？",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，微小虫孑，岂敢视神？.mp3",
+      "original": "audio/wanderer/originals/流浪者，微小虫孑，岂敢视神？.mp3",
+      "output": "audio/wanderer/skill/fan_genchu_failure_voice1.mp3",
+      "bytes": 165416,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "462e41375fd69afb4d3d96bed982df3c56998511bef1db95570d95edf9e2837d",
+      "output_bytes": 162198,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_genchu_failure_voice2": {
+      "label": "伟力如此，皆为神诞",
+      "text": "伟力如此，皆为神诞",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，伟力如此，皆为神诞.mp3",
+      "original": "audio/wanderer/originals/流浪者，伟力如此，皆为神诞.mp3",
+      "output": "audio/wanderer/skill/fan_genchu_failure_voice2.mp3",
+      "bytes": 131685,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "11c7cbb69e9e17c459a7d02f868c16d6a31ae5ac248cbf684099bb104d786972",
+      "output_bytes": 131971,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_genchu_failure_voice3": {
+      "label": "七叶之下，唯我长存！",
+      "text": "七叶之下，唯我长存！",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，七叶之下，唯我长存！.mp3",
+      "original": "audio/wanderer/originals/流浪者，七叶之下，唯我长存！.mp3",
+      "output": "audio/wanderer/skill/fan_genchu_failure_voice3.mp3",
+      "bytes": 121645,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "2f3200f67868d636549cd7ba249ca48c0b2d61d6d957fbf79390dca9d146f033",
+      "output_bytes": 109499,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_genchu_raiden_alive1": {
+      "label": "巴尔泽布，我已登神！",
+      "text": "巴尔泽布，我已登神！",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，巴尔泽布，我已登神！.mp3",
+      "original": "audio/wanderer/originals/流浪者，巴尔泽布，我已登神！.mp3",
+      "output": "audio/wanderer/skill/fan_genchu_raiden_alive1.mp3",
+      "bytes": 139754,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "fa3c3f77095d2aa0cf68b5bde4d48bc0a8d69afa41079ea42900d7fb16d5ef57",
+      "output_bytes": 116856,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_genchu_raiden_dead1": {
+      "label": "巴尔泽布，你以无心无力",
+      "text": "巴尔泽布，你以无心无力",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，巴尔泽布，你以无心无力.mp3",
+      "original": "audio/wanderer/originals/流浪者，巴尔泽布，你以无心无力.mp3",
+      "output": "audio/wanderer/skill/fan_genchu_raiden_dead1.mp3",
+      "bytes": 125101,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "4d88c2012a79f9c90f5d660a71978e3870e110ed66166de36e11b2224479dc74",
+      "output_bytes": 104363,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_shixin_failure_voice1": {
+      "label": "镇压！",
+      "text": "镇压！",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，镇压！.mp3",
+      "original": "audio/wanderer/originals/流浪者，镇压！.mp3",
+      "output": "audio/wanderer/skill/fan_shixin_failure_voice1.mp3",
+      "bytes": 154730,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "0aea1adcc046cd69c38ea5707a7b9ff4cbc7f0a81d0f3ed9e77fae5ee5ea10ee",
+      "output_bytes": 136152,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_shixin_failure_voice2": {
+      "label": "雷殛！",
+      "text": "雷殛！",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，雷殛！.mp3",
+      "original": "audio/wanderer/originals/流浪者，雷殛！.mp3",
+      "output": "audio/wanderer/skill/fan_shixin_failure_voice2.mp3",
+      "bytes": 91942,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "66f3a0da28751fac3ab92d6e769392573e0c291f1fc95124876db3c455b65d4b",
+      "output_bytes": 79124,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_shixin_failure_voice3": {
+      "label": "焚毁！",
+      "text": "焚毁！",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，焚毁！.mp3",
+      "original": "audio/wanderer/originals/流浪者，焚毁！.mp3",
+      "output": "audio/wanderer/skill/fan_shixin_failure_voice3.mp3",
+      "bytes": 122474,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "0d05b6c5b7107b1a1f16bd6686fe71be64e7f91395a4b8ff9aa1c86821664c60",
+      "output_bytes": 113328,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_shixin_failure_voice4": {
+      "label": "渎神，大罪！",
+      "text": "渎神，大罪！",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，渎神，大罪！.mp3",
+      "original": "audio/wanderer/originals/流浪者，渎神，大罪！.mp3",
+      "output": "audio/wanderer/skill/fan_shixin_failure_voice4.mp3",
+      "bytes": 128557,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "cf7564ab7ef10fda7a9dcbc5a53f29ac81287f80bc03c65c453a91e5516b4414",
+      "output_bytes": 119003,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_xunshen_draw_failure1": {
+      "label": "旋流，涡转！",
+      "text": "旋流，涡转！",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，旋流，涡转！.mp3",
+      "original": "audio/wanderer/originals/流浪者，旋流，涡转！.mp3",
+      "output": "audio/wanderer/skill/fan_xunshen_draw_failure1.mp3",
+      "bytes": 216680,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "32ed11baa7878c2d80db86e1a65c0d8db8e0faf474c54e34b55f46bcdf554827",
+      "output_bytes": 181830,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_xunshen_draw_failure3": {
+      "label": "寂照万物！",
+      "text": "寂照万物！",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，寂照万物！.mp3",
+      "original": "audio/wanderer/originals/流浪者，寂照万物！.mp3",
+      "output": "audio/wanderer/skill/fan_xunshen_draw_failure3.mp3",
+      "bytes": 61561,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "77647c4949ced400aedabfa9819f83a5c0cd8da02da4801e7f62f37e93fa54f7",
+      "output_bytes": 56327,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_xunshen_draw_failure4": {
+      "label": "扫拭六尘！",
+      "text": "扫拭六尘！",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，扫拭六尘！.mp3",
+      "original": "audio/wanderer/originals/流浪者，扫拭六尘！.mp3",
+      "output": "audio/wanderer/skill/fan_xunshen_draw_failure4.mp3",
+      "bytes": 67749,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "372dff242f1cb960fdae6536e8c1d300f7daa4dff3797dce20097ae0442c9b47",
+      "output_bytes": 59635,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_xunshen_draw_failure5": {
+      "label": "涤净诸相！",
+      "text": "涤净诸相！",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，涤净诸相！.mp3",
+      "original": "audio/wanderer/originals/流浪者，涤净诸相！.mp3",
+      "output": "audio/wanderer/skill/fan_xunshen_draw_failure5.mp3",
+      "bytes": 151274,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "edd277d4ddf2f66b1dac1571828890b511f4d1a0e2aad1725a33a7e69898de9f",
+      "output_bytes": 127416,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_xunshen_draw_failure6": {
+      "label": "十祸消聚！",
+      "text": "十祸消聚！",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，十祸消聚！.mp3",
+      "original": "audio/wanderer/originals/流浪者，十祸消聚！.mp3",
+      "output": "audio/wanderer/skill/fan_xunshen_draw_failure6.mp3",
+      "bytes": 169706,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "e17d205b15ee239abaa3a4e31bfbbc69f89b198761c7800f8f86f1a9e34989da",
+      "output_bytes": 163992,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_xunshen_draw_failure7": {
+      "label": "正名神诞！",
+      "text": "正名神诞！",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，正名神诞！.mp3",
+      "original": "audio/wanderer/originals/流浪者，正名神诞！.mp3",
+      "output": "audio/wanderer/skill/fan_xunshen_draw_failure7.mp3",
+      "bytes": 176618,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "c379658309a1036019724687c0bbde769215e74c124cf9183137d8c649ce8e3d",
+      "output_bytes": 173112,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_wanderer_failure1": {
+      "label": "我...还没有...",
+      "text": "我...还没有...",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，我...还没有....mp3",
+      "original": "audio/wanderer/originals/流浪者，我...还没有....mp3",
+      "output": "audio/wanderer/die/fan_wanderer_failure1.mp3",
+      "bytes": 186986,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "0fa0b8588b319e4748dbd32a277752de88bc7eeeb21323e378314773896dcfa4",
+      "output_bytes": 173400,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_wanderer_failure2": {
+      "label": "怎能...再次失去？",
+      "text": "怎能...再次失去？",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，怎能...再次失去？.mp3",
+      "original": "audio/wanderer/originals/流浪者，怎能...再次失去？.mp3",
+      "output": "audio/wanderer/die/fan_wanderer_failure2.mp3",
+      "bytes": 167978,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "41fe84986a5aee8fe4e9426caf21b8f6ab6ddbe5609beab74eea353f12231ed1",
+      "output_bytes": 161688,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_xunshen_draw_failure2": {
+      "label": "轮转百劫！",
+      "text": "轮转百劫！",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，轮转百劫！.mp3",
+      "original": "audio/wanderer/originals/流浪者，轮转百劫！.mp3",
+      "output": "audio/wanderer/skill/fan_xunshen_draw_failure2.mp3",
+      "bytes": 113577,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "37e7eb1914c477a44baf3bc78952f1280b375cb8896843c28a2e6faa29601140",
+      "output_bytes": 103447,
+      "text_source": "user-provided label; not auditorily verified"
+    },
+    "fan_shixin_failure_voice5": {
+      "label": "你也将，无处立足",
+      "text": "你也将，无处立足",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，你也将，无处立足.mp3",
+      "original": "audio/wanderer/originals/流浪者，你也将，无处立足.mp3",
+      "output": "audio/wanderer/skill/fan_shixin_failure_voice5.mp3",
+      "bytes": 142377,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "a6c727aa34aab4e53b2b01ab563ac626182e11680ddcedcfdf020df660da03ca",
+      "output_bytes": 129559,
+      "text_source": "user-provided label; not auditorily verified"
+    }
+  },
+  "retired_clips": [
+    {
+      "label": "蝼蚁之众",
+      "text": "蝼蚁之众。",
+      "url": null,
+      "source": "C:\\Users\\22697\\Downloads\\流浪者语音\\流浪者，蝼蚁之众.mp3",
+      "original": "audio/wanderer/originals/流浪者，蝼蚁之众.mp3",
+      "output": "audio/wanderer/skill/fan_xunshen_draw_failure2.mp3",
+      "bytes": 57128,
+      "trim_seconds": null,
+      "fade_seconds": {
+        "in": 0.005,
+        "out": 0.005
+      },
+      "review": "complete source retained; no auditory review; no speech/SFX separation",
+      "sha256": "6837989fada083525fc67f8141b887ad12b05004ac623f5c3ab73daaacd6ddce",
+      "output_bytes": 44838,
+      "text_source": "user-provided label; not auditorily verified",
+      "reason": "用户要求删除播放；保留未经剪辑的原始录音"
+    }
+  ]
+}

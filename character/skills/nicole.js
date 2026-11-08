@@ -220,12 +220,12 @@ export default {
       const use = trigger.name === "useCard" ? trigger : orderingUse(trigger);
       // useCardAfter 尚在处理区时等实际入弃牌堆；没有实体素材也仅摸一次。
       if (trigger.name === "useCard" && use.cards?.some(card => get.position(card, true) === "o")) return;
-      (use.fan_tianlin_collected ||= []).push(player.playerid);
+      ((use.fan_tianlin_collected || (use.fan_tianlin_collected = []))).push(player.playerid);
       const cards = (use.cards || []).filter(card => get.position(card, true) === "d"
         && (trigger.name === "useCard" || trigger.cards.includes(card)));
       if (cards.length) {
         await player.addToExpansion(cards, "gain2").set("gaintag", ["fan_tianlin"]);
-        (player.storage.fan_tianlin_order ||= []).push(...cards);
+        ((player.storage.fan_tianlin_order || (player.storage.fan_tianlin_order = []))).push(...cards);
       }
       if (player.isIn()) { game.trySkillAudio("fan_tianlin_draw_voice", player, true); await player.draw(); }
     },

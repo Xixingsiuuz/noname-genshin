@@ -20,8 +20,8 @@ function attackValue(player) {
 
 export default {
   fan_liutian: {
-    audio: "ext:原神/audio/ganyu/skill:true", logAudio: () => false,
-    locked: false, chargeSkill: 2,
+    audio: "ext:原神/audio/ganyu/skill:4", logAudio: () => false,
+    locked: false, chargeSkill: 2, group: "fan_liutian_sha",
     init(player) {
       if (!player.storage.fan_liutian_initialized) {
         player.storage.fan_liutian_initialized = true;
@@ -38,6 +38,15 @@ export default {
     },
     ai: { order: 8, result: { player: player => attackValue(player) > 0 ? 1 : 0 } },
   },
+  fan_liutian_sha: {
+    audio: "ext:原神/audio/ganyu/skill:3", locked: false,
+    trigger: { player: "useCardToPlayered" }, forced: true, silent: true, popup: false,
+    filter(event) { return event.isFirstTarget && event.getParent().fan_liutian_enhanced && !event.getParent().fan_liutian_voiced; },
+    async content(event, trigger, player) {
+      trigger.getParent().fan_liutian_voiced = true;
+      game.trySkillAudio("fan_liutian_sha", player, true);
+    },
+  },
   fan_liutian_ready: {
     charlotte: true, locked: false, mark: true, marktext: "霜",
     intro: { content: "本回合下一张杀无距离限制且伤害+1" },
@@ -47,6 +56,7 @@ export default {
     async content(event, trigger, player) {
       // 只修改本次useCard，不影响嵌套的另一张杀；取消目标也不返还。
       trigger.baseDamage++;
+      trigger.fan_liutian_enhanced = true;
       player.removeSkill("fan_liutian_ready");
     },
     ai: { effect: { player(card, player, target) {
@@ -54,7 +64,7 @@ export default {
     } } },
   },
   fan_linji: {
-    audio: "ext:原神/audio/ganyu/skill:true", logAudio: () => false,
+    audio: "ext:原神/audio/ganyu/skill:3", logAudio: () => false,
     locked: false, direct: true, trigger: { global: "phaseZhunbeiBegin" },
     filter(event, player) { return event.player !== player && event.player.isIn() && uses(player) < 1; },
     async content(event, trigger, player) {
@@ -81,7 +91,7 @@ export default {
       if (choice === "charge") {
         const before = player.countCharge();
         player.addCharge(1);
-        if (player.countCharge() > before) game.trySkillAudio("fan_linji_charge", player, true);
+        if (player.countCharge() > before) game.trySkillAudio("fan_linji", player, true);
       } else {
         game.trySkillAudio("fan_linji", player, true);
         await player.draw();
@@ -91,7 +101,6 @@ export default {
       player.markAuto("fan_linji_distance", [target]);
     },
   },
-  fan_linji_charge: { audio: "ext:原神/audio/ganyu/skill:true" },
   fan_linji_distance: {
     charlotte: true, locked: false, onremove: true,
     mod: {
@@ -102,7 +111,7 @@ export default {
     },
   },
   fan_xingzuo: {
-    audio: "ext:原神/audio/ganyu/skill:true", logAudio: () => false,
+    audio: "ext:原神/audio/ganyu/skill:4", logAudio: () => false,
     locked: false, direct: true, trigger: { global: "phaseDiscardEnd" },
     filter(event, player) { return eligible(event, player) && discarded(event).length > 0; },
     async content(event, trigger, player) {
