@@ -153,3 +153,26 @@ lib.config.background_speak=false;const playCount=played.length;nativePlay('fan_
 for(const id of ['fan_yingxin_draw1','fan_zhuyao_lose1','fan_zhuyao_draw1','fan_zhuyao_chengshi','fan_citlali_lianying1','fan_miyan_use1','fan_miyan_turn1']){nativePlay(id,'fan_citlali');assert.equal(played.at(-1).length,1);}
 console.log('PASS Citlali mounted-group event simulation: loseEnd/loseAfter snapshots, original-owner borrowed material/response, stale card cancellation, red/black branches/seat order/departure, complete Miyan chain/cancellation/selection/AI/range-count checks, SB Lianying allocation/cap/expiry. No live game UI.');
 console.log('PASS Citlali native audio: 17 exact source entries, original/output hashes, encoded peaks, trim/subtitles, silent log calls, native branch playback, death clips and mute switch. No manual listening.');
+
+const revised=lib.skill.fan_miyan_revised;
+const originalInfo=get.info;get.info=id=>typeof id==="object"?{}:originalInfo(id);
+lib.filter.selectTarget=()=>[1,1];
+lib.filter.cardDiscardable=card=>!card.disabled;
+c.turned=false;c.h=[card('sha','black'),card('tao','red')];
+const revisedTrace=[];
+c.chooseButton=arg=>{assert(arg[1][0].every(x=>get.type(x[2])==='trick'));return choice(()=>({bool:true,links:[['trick','','wuzhong']]}));};
+c.chooseToUse=args=>{assert.equal(args.chooseonly,true);return choice(()=>({bool:useAccept,targets:[c]}));};
+c.canUse=()=>true;
+c.discard=async hand=>{assert.equal(trace.at(-1),'fan_miyan_use1');assert.deepEqual(hand,c.h);assert(!revised.filter({player:c},c),'nested damage must be blocked before discard resolves');revisedTrace.push('discard');c.h=[];};
+c.useCard=async (v,targets)=>{assert.equal(v.name,'wuzhong');assert.equal(v.cards,undefined);assert.deepEqual(targets,[c]);revisedTrace.push('use');};
+useAccept=false;await revised.content({}, {player:c},c);assert.equal(c.h.length,2);assert(!c.hasSkill('fan_miyan_revised_used'));
+useAccept=true;await revised.content({}, {player:c},c);assert.deepEqual(revisedTrace,['discard','use']);assert(c.turned);
+assert.deepEqual(c.temp.fan_miyan_revised_used,'phaseAfter');c.turned=false;c.h=[card('sha','red')];assert(!revised.filter({player:c},c));
+c.mounted.delete('fan_miyan_revised_used');assert(revised.filter({player:c},c));c.h[0].disabled=true;assert(!revised.filter({player:c},c));
+console.log('PASS revised Miyan: ordinary tricks only, cancellation, discard before virtual use, nested damage blocked, turn expiration, undiscardable hand.');
+
+c.h[0].disabled=false;
+c.canUse=(v,target)=>target===c;
+c.chooseToUse=()=>{throw Error('fixed target must skip second confirmation');};
+await revised.content({}, {player:c},c);
+assert.deepEqual(revisedTrace,['discard','use','discard','use']);

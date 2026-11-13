@@ -8,7 +8,9 @@ export function installSelectionConfirm(ui, status, lib) {
   const original = ui.create.confirm;
   function confirm(...args) {
     const event = status?.event;
-    const pairedSelection = (event?.fanPairedConfirm || lib?.skill?.[event?.skill]?.fanPairedConfirm || event?.skill === "muniu_skill_backup") && event.isMine?.()
+    const soulChoice = event?.type === "chooseToUse_button"
+      && lib?.skill?.[event.getParent()?.buttoned]?.fan_cyno_open_choice;
+    const pairedSelection = (soulChoice || event?.fanPairedConfirm || lib?.skill?.[event?.skill]?.fanPairedConfirm || event?.skill === "muniu_skill_backup") && event.isMine?.()
       && ["o", "c", "oc", "co"].includes(args[0]);
     const disabled = pairedSelection && !args[0].includes("o");
     if (pairedSelection) args[0] = "oc";

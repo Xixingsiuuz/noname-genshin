@@ -29,3 +29,4 @@ Thumbs.db
 !.env.example
 *.pem
 *.key
+/developer-mode.local.js

@@ -1,0 +1,240 @@
+[
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_pack1.ogg",
+    "title": "关于我们·决斗",
+    "source": "https://patchwiki.biligame.com/images/ys/a/a3/69jwoiylpe0z9oary8wyyd9we77gm1a.mp3",
+    "bytes": 33910,
+    "text": "要打一把「七圣召唤」吗？给你看看我的新卡组。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_pack2.ogg",
+    "title": "关于我们·此刻",
+    "source": "https://patchwiki.biligame.com/images/ys/6/6b/tca6hzx9fi21m5vldd3ohuu75e4s3n9.mp3",
+    "bytes": 58165,
+    "text": "过去无法更改，未来无法预料，所以我很珍惜眼前的时光。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_pack3.ogg",
+    "title": "突破的感受·起",
+    "source": "https://patchwiki.biligame.com/images/ys/0/08/ibvko6l7z77sq5ekdfl46yjzkir34i3.mp3",
+    "bytes": 35484,
+    "text": "我能感受到新的力量，这是变强的证明。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_pack4.ogg",
+    "title": "闲聊·牌运",
+    "source": "https://patchwiki.biligame.com/images/ys/c/c2/mbp8su4i0zb9imisphm46ore0ohyqwm.mp3",
+    "bytes": 47210,
+    "text": "运势会左右某一场对决的胜负，但不会一直影响下去。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_pack5.ogg",
+    "title": "闲聊·称重",
+    "source": "https://patchwiki.biligame.com/images/ys/5/5d/cr47xmjr3p77hr6hx5gsru01ztr6tvk.mp3",
+    "bytes": 33042,
+    "text": "善与恶，最终都会被称量。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_negate1.ogg",
+    "title": "元素战技·其四",
+    "source": "https://patchwiki.biligame.com/images/ys/1/17/eun1evbsg7iuos1ywqgckcng0t1tmfu.mp3",
+    "bytes": 12528,
+    "text": "裁决已至。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_negate2.ogg",
+    "title": "元素战技·其五",
+    "source": "https://patchwiki.biligame.com/images/ys/5/55/c9e3e681ozpr62murwp2w1fwe5wv8b7.mp3",
+    "bytes": 10415,
+    "text": "该定罪了。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_negate3.ogg",
+    "title": "元素战技·其六",
+    "source": "https://patchwiki.biligame.com/images/ys/8/85/i8xa4becy5zfl461dmfrogkjrywxodx.mp3",
+    "bytes": 12655,
+    "text": "偿还罪业！"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_damage1.ogg",
+    "title": "元素爆发·其一",
+    "source": "https://patchwiki.biligame.com/images/ys/5/5c/1d8ur6nwk4fz8v6xp2s6ojdm7ihlc5i.mp3",
+    "bytes": 24440,
+    "text": "以此身…肃正万象！"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_damage2.ogg",
+    "title": "元素爆发·其二",
+    "source": "https://patchwiki.biligame.com/images/ys/7/7a/3qjb3nd4y5p4pukeip740gc94dawbg2.mp3",
+    "bytes": 25742,
+    "text": "判决，如期降临。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_damage3.ogg",
+    "title": "元素爆发·其三",
+    "source": "https://patchwiki.biligame.com/images/ys/0/03/8mogpgs7paxdphzzu1e7nhr8yfh7ujc.mp3",
+    "bytes": 24475,
+    "text": "称量，你的罪孽。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_other1.ogg",
+    "title": "元素战技·其一",
+    "source": "https://patchwiki.biligame.com/images/ys/5/57/2tetfwyj21iq5fafan4moaxmo6strca.mp3",
+    "bytes": 11850,
+    "text": "束手就擒吧。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_other2.ogg",
+    "title": "元素战技·其二",
+    "source": "https://patchwiki.biligame.com/images/ys/4/4f/b42eu85c5jfuezkgntjdd3ydvam71s4.mp3",
+    "bytes": 11474,
+    "text": "徒劳的挣扎。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_other3.ogg",
+    "title": "元素战技·其三",
+    "source": "https://patchwiki.biligame.com/images/ys/2/28/8m66a4co1jqzratf1m9b4ogm6pf0jr9.mp3",
+    "bytes": 11489,
+    "text": "你无处可逃！"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_self1.ogg",
+    "title": "打开宝箱·其三",
+    "source": "https://patchwiki.biligame.com/images/ys/a/ae/sktpmtrmf4sb3c0n8x9d1odfw9kn149.mp3",
+    "bytes": 31628,
+    "text": "财富积累，成为文明的基石。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_self2.ogg",
+    "title": "突破的感受·承",
+    "source": "https://patchwiki.biligame.com/images/ys/2/21/45yl9wh64b8izbxdacs2frxogksbpe1.mp3",
+    "bytes": 27582,
+    "text": "审判罪恶，维护规则。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_self3.ogg",
+    "title": "打开宝箱·其二",
+    "source": "https://patchwiki.biligame.com/images/ys/5/5f/c83e8qrew7zxvd6k8cooj9brclwm7va.mp3",
+    "bytes": 10860,
+    "text": "贵在恒心。"
+  },
+  {
+    "file": "audio/cyno/die/fan_cyno1.ogg",
+    "title": "倒下·其一",
+    "source": "https://patchwiki.biligame.com/images/ys/c/c5/pvkmfo6km3hmv7tfs7ynsyetpd7jcph.mp3",
+    "bytes": 26080,
+    "text": "轮到我了吗…"
+  },
+  {
+    "file": "audio/cyno/die/fan_cyno2.ogg",
+    "title": "倒下·其二",
+    "source": "https://patchwiki.biligame.com/images/ys/2/2e/si6b2kfs81dcph77g6s2uqd833t7xro.mp3",
+    "bytes": 54024,
+    "text": "覆灭…新生…终而复始。"
+  },
+  {
+    "file": "audio/cyno/die/fan_cyno3.ogg",
+    "title": "倒下·其三",
+    "source": "https://patchwiki.biligame.com/images/ys/0/01/iudrz3lj3l2nh572me1764li05nq846.mp3",
+    "bytes": 30938,
+    "text": "审判，失败了…"
+  },
+  {
+    "file": "audio/cyno/skill/fan_lengfeng1.mp3",
+    "title": "怎么样？冷不丁吃到一块「冷布丁」的感觉。.mp3",
+    "source": "file:///C:/Users/22697/Downloads/%E8%B5%9B%E8%AF%BA%E8%AF%AD%E9%9F%B3/%E5%86%B7%E7%AC%91%E8%AF%9D/%E6%80%8E%E4%B9%88%E6%A0%B7%EF%BC%9F%E5%86%B7%E4%B8%8D%E4%B8%81%E5%90%83%E5%88%B0%E4%B8%80%E5%9D%97%E3%80%8C%E5%86%B7%E5%B8%83%E4%B8%81%E3%80%8D%E7%9A%84%E6%84%9F%E8%A7%89%E3%80%82.mp3",
+    "bytes": 90559,
+    "text": "怎么样？冷不丁吃到一块「冷布丁」的感觉。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_lengfeng2.mp3",
+    "title": "赛诺，「拍背」。所以是...「牌背」。.mp3",
+    "source": "file:///C:/Users/22697/Downloads/%E8%B5%9B%E8%AF%BA%E8%AF%AD%E9%9F%B3/%E5%86%B7%E7%AC%91%E8%AF%9D/%E8%B5%9B%E8%AF%BA%EF%BC%8C%E3%80%8C%E6%8B%8D%E8%83%8C%E3%80%8D%E3%80%82%E6%89%80%E4%BB%A5%E6%98%AF...%E3%80%8C%E7%89%8C%E8%83%8C%E3%80%8D%E3%80%82.mp3",
+    "bytes": 140100,
+    "text": "「拍背」。所以是…「牌背」。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_lengfeng3.mp3",
+    "title": "赛诺，你们不是说她是妖怪吗？暗示我们「怪倒」。.mp3",
+    "source": "file:///C:/Users/22697/Downloads/%E8%B5%9B%E8%AF%BA%E8%AF%AD%E9%9F%B3/%E5%86%B7%E7%AC%91%E8%AF%9D/%E8%B5%9B%E8%AF%BA%EF%BC%8C%E4%BD%A0%E4%BB%AC%E4%B8%8D%E6%98%AF%E8%AF%B4%E5%A5%B9%E6%98%AF%E5%A6%96%E6%80%AA%E5%90%97%EF%BC%9F%E6%9A%97%E7%A4%BA%E6%88%91%E4%BB%AC%E3%80%8C%E6%80%AA%E5%80%92%E3%80%8D%E3%80%82.mp3",
+    "bytes": 108420,
+    "text": "你们不是说她是妖怪吗？暗示我们「怪倒」。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_lengfeng4.mp3",
+    "title": "赛诺，刚才那句话，像是在叫她「柯莱莱」，类似的格式，我还听过「堆高高」。.mp3",
+    "source": "file:///C:/Users/22697/Downloads/%E8%B5%9B%E8%AF%BA%E8%AF%AD%E9%9F%B3/%E5%86%B7%E7%AC%91%E8%AF%9D/%E8%B5%9B%E8%AF%BA%EF%BC%8C%E5%88%9A%E6%89%8D%E9%82%A3%E5%8F%A5%E8%AF%9D%EF%BC%8C%E5%83%8F%E6%98%AF%E5%9C%A8%E5%8F%AB%E5%A5%B9%E3%80%8C%E6%9F%AF%E8%8E%B1%E8%8E%B1%E3%80%8D%EF%BC%8C%E7%B1%BB%E4%BC%BC%E7%9A%84%E6%A0%BC%E5%BC%8F%EF%BC%8C%E6%88%91%E8%BF%98%E5%90%AC%E8%BF%87%E3%80%8C%E5%A0%86%E9%AB%98%E9%AB%98%E3%80%8D%E3%80%82.mp3",
+    "bytes": 162564,
+    "text": "刚才那句话，像是在叫她「柯莱莱」，类似的格式，我还听过「堆高高」。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_lengfeng5.mp3",
+    "title": "赛诺，可以请旅行者「拍蒙」派蒙。.mp3",
+    "source": "file:///C:/Users/22697/Downloads/%E8%B5%9B%E8%AF%BA%E8%AF%AD%E9%9F%B3/%E5%86%B7%E7%AC%91%E8%AF%9D/%E8%B5%9B%E8%AF%BA%EF%BC%8C%E5%8F%AF%E4%BB%A5%E8%AF%B7%E6%97%85%E8%A1%8C%E8%80%85%E3%80%8C%E6%8B%8D%E8%92%99%E3%80%8D%E6%B4%BE%E8%92%99%E3%80%82.mp3",
+    "bytes": 57151,
+    "text": "可以请旅行者「拍蒙」派蒙。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_lengfeng6.mp3",
+    "title": "赛诺，因为…它的花瓣向来只有五片，绝不可能存在「七片」！.mp3",
+    "source": "file:///C:/Users/22697/Downloads/%E8%B5%9B%E8%AF%BA%E8%AF%AD%E9%9F%B3/%E5%86%B7%E7%AC%91%E8%AF%9D/%E8%B5%9B%E8%AF%BA%EF%BC%8C%E5%9B%A0%E4%B8%BA%E2%80%A6%E5%AE%83%E7%9A%84%E8%8A%B1%E7%93%A3%E5%90%91%E6%9D%A5%E5%8F%AA%E6%9C%89%E4%BA%94%E7%89%87%EF%BC%8C%E7%BB%9D%E4%B8%8D%E5%8F%AF%E8%83%BD%E5%AD%98%E5%9C%A8%E3%80%8C%E4%B8%83%E7%89%87%E3%80%8D%EF%BC%81.mp3",
+    "bytes": 145284,
+    "text": "因为…它的花瓣向来只有五片，绝不可能存在「七片」！"
+  },
+  {
+    "file": "audio/cyno/skill/fan_lengfeng7.mp3",
+    "title": "赛诺，因为「落落莓」的「落」，让派蒙「落」在了地上。.mp3",
+    "source": "file:///C:/Users/22697/Downloads/%E8%B5%9B%E8%AF%BA%E8%AF%AD%E9%9F%B3/%E5%86%B7%E7%AC%91%E8%AF%9D/%E8%B5%9B%E8%AF%BA%EF%BC%8C%E5%9B%A0%E4%B8%BA%E3%80%8C%E8%90%BD%E8%90%BD%E8%8E%93%E3%80%8D%E7%9A%84%E3%80%8C%E8%90%BD%E3%80%8D%EF%BC%8C%E8%AE%A9%E6%B4%BE%E8%92%99%E3%80%8C%E8%90%BD%E3%80%8D%E5%9C%A8%E4%BA%86%E5%9C%B0%E4%B8%8A%E3%80%82.mp3",
+    "bytes": 89404,
+    "text": "因为「落落莓」的「落」，让派蒙「落」在了地上。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_lengfeng8.mp3",
+    "title": "赛诺，我还以为是因为我「肠胃」出了问题，所以才没法「尝味」的。.mp3",
+    "source": "file:///C:/Users/22697/Downloads/%E8%B5%9B%E8%AF%BA%E8%AF%AD%E9%9F%B3/%E5%86%B7%E7%AC%91%E8%AF%9D/%E8%B5%9B%E8%AF%BA%EF%BC%8C%E6%88%91%E8%BF%98%E4%BB%A5%E4%B8%BA%E6%98%AF%E5%9B%A0%E4%B8%BA%E6%88%91%E3%80%8C%E8%82%A0%E8%83%83%E3%80%8D%E5%87%BA%E4%BA%86%E9%97%AE%E9%A2%98%EF%BC%8C%E6%89%80%E4%BB%A5%E6%89%8D%E6%B2%A1%E6%B3%95%E3%80%8C%E5%B0%9D%E5%91%B3%E3%80%8D%E7%9A%84%E3%80%82.mp3",
+    "bytes": 120516,
+    "text": "我还以为是因为我「肠胃」出了问题，所以才没法「尝味」的。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_lengfeng9.mp3",
+    "title": "赛诺，我还以为是派蒙你吃了很多...「落落莓」。.mp3",
+    "source": "file:///C:/Users/22697/Downloads/%E8%B5%9B%E8%AF%BA%E8%AF%AD%E9%9F%B3/%E5%86%B7%E7%AC%91%E8%AF%9D/%E8%B5%9B%E8%AF%BA%EF%BC%8C%E6%88%91%E8%BF%98%E4%BB%A5%E4%B8%BA%E6%98%AF%E6%B4%BE%E8%92%99%E4%BD%A0%E5%90%83%E4%BA%86%E5%BE%88%E5%A4%9A...%E3%80%8C%E8%90%BD%E8%90%BD%E8%8E%93%E3%80%8D%E3%80%82.mp3",
+    "bytes": 84793,
+    "text": "我还以为是派蒙你吃了很多…「落落莓」。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_lengfeng10.mp3",
+    "title": "赛诺，柯莱，「可」算「来」了。.mp3",
+    "source": "file:///C:/Users/22697/Downloads/%E8%B5%9B%E8%AF%BA%E8%AF%AD%E9%9F%B3/%E5%86%B7%E7%AC%91%E8%AF%9D/%E8%B5%9B%E8%AF%BA%EF%BC%8C%E6%9F%AF%E8%8E%B1%EF%BC%8C%E3%80%8C%E5%8F%AF%E3%80%8D%E7%AE%97%E3%80%8C%E6%9D%A5%E3%80%8D%E4%BA%86%E3%80%82.mp3",
+    "bytes": 81207,
+    "text": "柯莱，「可」算「来」了。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_lengfeng11.mp3",
+    "title": "赛诺，用鼻子呼气交到的朋友能算「鼻友」吗？.mp3",
+    "source": "file:///C:/Users/22697/Downloads/%E8%B5%9B%E8%AF%BA%E8%AF%AD%E9%9F%B3/%E5%86%B7%E7%AC%91%E8%AF%9D/%E8%B5%9B%E8%AF%BA%EF%BC%8C%E7%94%A8%E9%BC%BB%E5%AD%90%E5%91%BC%E6%B0%94%E4%BA%A4%E5%88%B0%E7%9A%84%E6%9C%8B%E5%8F%8B%E8%83%BD%E7%AE%97%E3%80%8C%E9%BC%BB%E5%8F%8B%E3%80%8D%E5%90%97%EF%BC%9F.mp3",
+    "bytes": 88254,
+    "text": "用鼻子呼气交到的朋友能算「鼻友」吗？"
+  },
+  {
+    "file": "audio/cyno/skill/fan_lengfeng12.mp3",
+    "title": "赛诺，真是个「巧合」，就像「桥」的下面总有「河」。.mp3",
+    "source": "file:///C:/Users/22697/Downloads/%E8%B5%9B%E8%AF%BA%E8%AF%AD%E9%9F%B3/%E5%86%B7%E7%AC%91%E8%AF%9D/%E8%B5%9B%E8%AF%BA%EF%BC%8C%E7%9C%9F%E6%98%AF%E4%B8%AA%E3%80%8C%E5%B7%A7%E5%90%88%E3%80%8D%EF%BC%8C%E5%B0%B1%E5%83%8F%E3%80%8C%E6%A1%A5%E3%80%8D%E7%9A%84%E4%B8%8B%E9%9D%A2%E6%80%BB%E6%9C%89%E3%80%8C%E6%B2%B3%E3%80%8D%E3%80%82.mp3",
+    "bytes": 99146,
+    "text": "真是个「巧合」，就像「桥」的下面总有「河」。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_lengfeng13.mp3",
+    "title": "赛诺，风车应该也能算得上是一种「大风机关」吧。.mp3",
+    "source": "file:///C:/Users/22697/Downloads/%E8%B5%9B%E8%AF%BA%E8%AF%AD%E9%9F%B3/%E5%86%B7%E7%AC%91%E8%AF%9D/%E8%B5%9B%E8%AF%BA%EF%BC%8C%E9%A3%8E%E8%BD%A6%E5%BA%94%E8%AF%A5%E4%B9%9F%E8%83%BD%E7%AE%97%E5%BE%97%E4%B8%8A%E6%98%AF%E4%B8%80%E7%A7%8D%E3%80%8C%E5%A4%A7%E9%A3%8E%E6%9C%BA%E5%85%B3%E3%80%8D%E5%90%A7%E3%80%82.mp3",
+    "bytes": 96317,
+    "text": "风车应该也能算得上是一种「大风机关」吧。"
+  },
+  {
+    "file": "audio/cyno/skill/fan_zhaohuan_open1.mp3",
+    "title": "赛诺，「七圣召唤」是一个不错的卡牌游戏....mp3",
+    "source": "file:///C:/Users/22697/Downloads/%E8%B5%9B%E8%AF%BA%E8%AF%AD%E9%9F%B3/%E8%B5%9B%E8%AF%BA%EF%BC%8C%E3%80%8C%E4%B8%83%E5%9C%A3%E5%8F%AC%E5%94%A4%E3%80%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E4%B8%8D%E9%94%99%E7%9A%84%E5%8D%A1%E7%89%8C%E6%B8%B8%E6%88%8F....mp3",
+    "bytes": 260479,
+    "text": "「七圣召唤」是一个不错的卡牌游戏，堪称艺术。它让许多人得以相识、相知，共同体会决斗的乐趣。"
+  }
+]

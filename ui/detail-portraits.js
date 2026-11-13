@@ -16,12 +16,17 @@ export function installDetailPortraits(ui, lib) {
   if (preset && !preset.fanGanyuPortrait) {
     const character = function (...args) {
       const node = preset.apply(this, args);
+      if (node?.link === "fan_mokuai_ceshi") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/mokuai-ceshi-select.png")`;
+      if (node?.link === "fan_cyno") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/cyno-select.png")`;
+      if (node?.link === "fan_alhaitham") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/alhaitham-select.png")`;
+      if (node?.link === "fan_dehya") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/dehya-select.png")`;
       if (node?.link === "fan_wanderer") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/wanderer-select.png")`;
       if (["fan_sandrone", "fan_sp_sandrone"].includes(node?.link)) node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/sandrone-select.png")`;
       if (node?.link === "fan_re_zhongli") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/zhongli-rework-select.png")`;
       if (node?.link === "fan_linnea") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/linnea-select.png")`;
       if (node?.link === "fan_nicole") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/nicole-select.png")`;
-      if (["fan_citlali", "fan_sp_citlali"].includes(node?.link)) node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/citlali-select.png")`;
+      if (["fan_citlali", "fan_citlali_revised"].includes(node?.link)) node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/citlali-select.png")`;
+      if (node?.link === "fan_tighnari") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/tighnari-select.png")`;
       if (node?.link === "fan_mona") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/mona-select.png")`;
       if (node?.link === "fan_qiqi") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/qiqi-select.png")`;
       if (node?.link === "fan_jean") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/jean-select-centered-20261028.png")`;
@@ -37,13 +42,17 @@ export function installDetailPortraits(ui, lib) {
   const detailImages = {
     fan_wanderer: "../originals/wanderer.png",
     ...Object.fromEntries(Object.entries(originalPortraits).map(([id, path]) => [id, `../${path.slice("image/character/".length)}`])),
+    fan_mokuai_ceshi: "mokuai-ceshi-detail.png",
+    fan_cyno: "cyno-detail.png",
+    fan_alhaitham: "alhaitham-detail.png",
+    fan_dehya: "dehya-detail.png",
     fan_re_zhongli: "zhongli-rework-detail.png",
     fan_sp_sandrone: "sandrone-detail.png",
     fan_sandrone: "sandrone-detail.png",
     fan_linnea: "linnea-detail.png",
     fan_nicole: "nicole-detail.png",
     fan_citlali: "citlali-detail.png",
-    fan_sp_citlali: "citlali-detail.png",
+    fan_citlali_revised: "citlali-detail.png",
     fan_mona: "mona-detail.png",
     fan_qiqi: "qiqi-detail.png",
     fan_jean: "jean-detail-centered-20261028.png",
@@ -52,6 +61,7 @@ export function installDetailPortraits(ui, lib) {
     fan_kokomi: "kokomi-detail.png",
     fan_xianyun: "xianyun.png",
     fan_skirk: "skirk-v2.png",
+    fan_tighnari: "tighnari-detail.png",
     fan_shenhe: "shenhe.png",
   };
   if (typeof document !== "undefined" && !document.getElementById("fan-xianyun-detail-style")) {
@@ -89,6 +99,10 @@ export function installDetailPortraits(ui, lib) {
         portrait.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/${detailImages[args[0]]}")`;
         portrait.style.backgroundSize = "cover";
         portrait.style.backgroundPosition = "center top";
+        if (args[0] === "fan_dehya") {
+          portrait.style.backgroundSize = "auto 100%";
+          portrait.style.backgroundRepeat = "no-repeat";
+        }
         // 镜头右移5个显示像素，即画面向左移动5px，不改变大图比例。
         if (args[0] === "fan_re_zhongli") portrait.style.backgroundPosition = "calc(50% - 5px) top";
         if (args[0] === "fan_linnea") {

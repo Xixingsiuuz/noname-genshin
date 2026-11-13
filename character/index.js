@@ -4,7 +4,7 @@ import { characterTranslate, createSkillTranslate } from "./translate.js";
 import voices from "./voices.js";
 
 export function createCharacterPackage() {
-  return { character: characters, translate: characterTranslate };
+  return { connect: true, character: characters, translate: characterTranslate };
 }
 
 export function createSkillPackage() {

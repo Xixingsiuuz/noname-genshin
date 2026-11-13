@@ -43,8 +43,8 @@ def main():
                 records = {Path(c['output']).stem: c for c in entries_data if c.get('output')}
         if manifests:
             data = json.loads(manifests[0].read_text(encoding='utf8'))
-            clips = data.get('clips', data)
-            records.update(clips if isinstance(clips, dict) else {Path(c.get('output') or c['path']).stem: c for c in clips})
+            clips = data.get('clips', data) if isinstance(data, dict) else data
+            records.update(clips if isinstance(clips, dict) else {Path(c.get('output') or c.get('file') or c['path']).stem: c for c in clips})
         pages = list(directory.glob('*voice-page.html'))
         page = pages[0].read_text(encoding='utf8') if pages else ''
         for entry in [e for e in catalog if e['role'] == role and '/originals/' not in e['path']]:

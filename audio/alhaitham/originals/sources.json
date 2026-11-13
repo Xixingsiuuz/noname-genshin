@@ -1,0 +1,74 @@
+[
+  {
+    "entry": "闲聊·读书",
+    "url": "https://patchwiki.biligame.com/images/ys/1/1c/lexf6yzbh72z1wti2k7kafzol4kczaq.mp3",
+    "bytes": 45392,
+    "file": "skill/fan_jipin_draw1.ogg"
+  },
+  {
+    "entry": "闲聊·思考",
+    "url": "https://patchwiki.biligame.com/images/ys/0/08/t1lpjicjwhmhtpludt0a2rdipz2nn8d.mp3",
+    "bytes": 48518,
+    "file": "skill/fan_jipin_draw2.ogg"
+  },
+  {
+    "entry": "元素战技·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/b/b6/e39xmwkvgwpgmn8v2hyki0z4o5wtnks.mp3",
+    "bytes": 8099,
+    "file": "skill/fan_zhengyan_voice1.ogg"
+  },
+  {
+    "entry": "元素战技·其二",
+    "url": "https://patchwiki.biligame.com/images/ys/c/c9/ljqglt4d1p96gd0pj0zh90ca8s7lzip.mp3",
+    "bytes": 7196,
+    "file": "skill/fan_zhengyan_voice2.ogg"
+  },
+  {
+    "entry": "元素爆发·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/1/16/2z9qxhwr55j2ybeilvsmbcu2mo7svhg.mp3",
+    "bytes": 9650,
+    "file": "skill/fan_zhengyan_voice3.ogg"
+  },
+  {
+    "entry": "元素爆发·其二",
+    "url": "https://patchwiki.biligame.com/images/ys/6/6b/2q9lj0c0aed7pt2cz44d1722zocv61b.mp3",
+    "bytes": 9889,
+    "file": "skill/fan_zhengyan_voice4.ogg"
+  },
+  {
+    "entry": "元素爆发·其三",
+    "url": "https://patchwiki.biligame.com/images/ys/d/d8/suw2879fv3buvw4b7oac1crg0c87wnq.mp3",
+    "bytes": 14526,
+    "file": "skill/fan_zhengyan_voice5.ogg"
+  },
+  {
+    "entry": "同伴生命值低·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/a/a2/5vcf7soyk84jsueyk59wrtnlrvzzeiw.mp3",
+    "bytes": 8061,
+    "file": "skill/fan_jipin_give1.ogg"
+  },
+  {
+    "entry": "同伴生命值低·其二",
+    "url": "https://patchwiki.biligame.com/images/ys/3/3c/9g72olu8b51129egtvtnd8ciyhjieu3.mp3",
+    "bytes": 9482,
+    "file": "skill/fan_jipin_give2.ogg"
+  },
+  {
+    "entry": "倒下·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/6/63/80kng67h72ab6fqai23o6ml4mf1t1aq.mp3",
+    "bytes": 13583,
+    "file": "die/fan_alhaitham1.ogg"
+  },
+  {
+    "entry": "倒下·其二",
+    "url": "https://patchwiki.biligame.com/images/ys/2/2b/6qp0czt54qh2aqkzmsrnrbrvhbmhikn.mp3",
+    "bytes": 11981,
+    "file": "die/fan_alhaitham2.ogg"
+  },
+  {
+    "entry": "倒下·其三",
+    "url": "https://patchwiki.biligame.com/images/ys/8/8c/kezg460pq7m1zzk321vtcilnsc4y2su.mp3",
+    "bytes": 11932,
+    "file": "die/fan_alhaitham3.ogg"
+  }
+]

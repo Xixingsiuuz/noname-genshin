@@ -1,0 +1,80 @@
+import assert from'node:assert/strict';
+import{readFileSync,existsSync}from'node:fs';
+const read=p=>readFileSync(new URL(p,import.meta.url),'utf8');
+const strip=s=>s.replace(/^import.*;\r?\n/gm,'').replace(/export /g,'');
+const data=new Function(strip(read('../card/monarch-data.js'))+';return{monarchFaces,sampleMonarch,sampleHeavenlyMonarch};')();
+const{monarchFaces:faces,sampleMonarch:sample,sampleHeavenlyMonarch:watch}=data;
+assert.equal(sample(()=>0).filter(c=>c.source==='pile').length,2);assert(sample(()=>0).slice(0,2).every(c=>c.name==='sha'));
+assert(sample(()=>.99).slice(0,3).every(c=>c.name==='guohe'));
+let rolls=[0,0,0,.4,0,.4,.9,.9];assert.deepEqual(sample(()=>rolls.shift()).slice(2).map(c=>c.name),['fan_yuanxiedi','fan_xiedi','fan_diwanglingyu']);
+assert.throws(()=>sample(()=>-1),RangeError);
+const pile=[...Array.from({length:50},()=>({name:'sha'})),{name:'shan'},{name:'tao'},{name:'guohe'}],original=pile.slice();
+let seed=1;const random=()=>((seed=(1664525*seed+1013904223)>>>0)/2**32);let sha=0;
+for(let i=0;i<10000;i++){const seen=watch(pile,random);assert.equal(new Set(seen.map(c=>c.name)).size,3);sha+=seen.some(c=>c.name==='sha');}
+assert(Math.abs(sha/10000-.75)<.02,'按牌名抽取，不因杀实体多而偏重');assert.deepEqual(pile,original,'抽样不移动或重排牌堆');
+assert.equal(watch([{name:'sha'},{name:'sha'}],()=>0).length,1);assert.deepEqual(watch([],()=>0),[]);
+Object.defineProperty(Array.prototype,'sortBySeat',{configurable:true,value(){return this;}});
+const get={color:c=>c.color};const lib={filter:{cardDiscardable:c=>!c.protected}};const ui={};const game={};
+const{monarchCards:cards,monarchSkills:skills,outsideDraw,domainGained}=new Function('game','get','lib','ui','_status','monarchFaces','sampleMonarch','sampleHeavenlyMonarch',strip(read('../card/monarch.js'))+';return{monarchCards,monarchSkills,outsideDraw,domainGained};')(game,get,lib,ui,{},faces,sample,watch);
+for(const[name,c]of Object.entries(cards)){assert.equal(c.derivation,'fan_cyno');assert.equal(c.destroy,'discardPile');assert(faces[name]);assert(existsSync(new URL('../'+c.image.replace('ext:原神/',''),import.meta.url)));}
+let hp=0,discardCount=0;
+const target={isIn:()=>true,countDiscardableCards:()=>1,async loseHp(){hp++;}};
+const actor={discardPlayerCard(t,zone,n){discardCount=n;return{async forResult(){return{bool:true,cards:[{color:'black'}]};},then(resolve){resolve();}};}};
+await cards.fan_xiedi.content({target},null,actor);assert.equal(hp,1);assert.equal(discardCount,1);
+actor.discardPlayerCard=()=>({async forResult(){return{bool:true,cards:[{color:'red'}]};}});
+await cards.fan_xiedi.content({target},null,actor);assert.equal(hp,1);
+actor.discardPlayerCard=(t,z,n)=>{discardCount=n;return Promise.resolve();};
+await cards.fan_yuanxiedi.content({target},null,actor);assert.equal(discardCount,1);assert.equal(hp,2,'不足两张仍失血');
+const p={storage:{},held:[],isIn:()=>true,addSkill(){},markSkill(){},removeSkill(id){delete this.storage[id];},getCards(){return this.held;},async discard(c){this.discarded=c;}};
+const c={name:'sha'},protectedCard={protected:true},gone={};p.held=[c,protectedCard];
+const gain={name:'gain',player:p,getg:who=>who===p?[c,protectedCard,gone]:[]};
+assert.deepEqual(domainGained(gain,p),[c,protectedCard]);assert(outsideDraw(gain,p));
+assert(!outsideDraw({...gain,parent:{name:'phaseDraw',player:p}},p));assert(outsideDraw({...gain,parent:{name:'phaseDraw',player:{}}},p));
+const effect=skills.fan_diwanglingyu_effect;assert(effect.filter(gain,p));await effect.content({},gain,p);assert.deepEqual(p.discarded,[c]);
+for(const name of ['equip','addJudge','addToExpansion']){
+ const e={name,player:p,cards:[c],getg:()=>[],getl:()=>({cards:[]})};assert.deepEqual(domainGained(e,p),[]);
+ assert.deepEqual(domainGained({...e,getl:()=>({cards:[c]})},p),[],'自己的牌在区域间移动不算获得');
+}
+assert.equal(effect.trigger.player,'gainAfter');assert.equal(effect.cardSkill,true);
+// 真实用装备路径：useCard先把素材从手牌移至处理区，后续equip.getl为空，仍不是获得牌。
+assert.deepEqual(domainGained({name:'equip',player:p,cards:[c],parent:{name:'useCard',player:p,cards:[c]},getg:()=>[],getl:()=>({cards:[]})},p),[]);
+assert.deepEqual(domainGained({name:'loseAsync',getg:()=>[c]},p),[c]);
+const source={},secondSource={};await cards.fan_diwanglingyu.content({target:p},null,source);await cards.fan_diwanglingyu.content({target:p},null,secondSource);
+assert.deepEqual(p.storage.fan_diwanglingyu_effect,[source,secondSource]);
+game.hasPlayer=fn=>fn(p);game.filterPlayer=fn=>[p].filter(fn);
+const expiry=skills.fan_diwanglingyu_expire;assert(expiry.filter({player:source}));await expiry.content({}, {player:source});assert.deepEqual(p.storage.fan_diwanglingyu_effect,[secondSource]);await expiry.content({}, {player:secondSource});assert(!p.storage.fan_diwanglingyu_effect);
+// 天帝只动所选牌，既不先入手，也不改变未选牌顺序。
+ui.cardPile={};const viewed=[{name:'sha'},{name:'shan'},{name:'tao'}];for(const c of viewed)c.parentNode=ui.cardPile;
+ui.cardPile.childNodes=viewed;let step=0,discardedCard;
+const choice=links=>({set(){return this;},async forResult(){return{bool:true,links};}});
+const heaven={isIn:()=>true,hasUseTarget:()=>false,chooseButton(){return choice(step++===0?[viewed[1]]:['discard']);}};
+game.cardsDiscard=async list=>{discardedCard=list[0];};game.updateRoundNumber=()=>{};
+await cards.fan_tiandi.content({},null,heaven);assert.equal(discardedCard,viewed[1]);assert.deepEqual(ui.cardPile.childNodes,viewed);
+step=0;let usedCard;heaven.hasUseTarget=()=>true;heaven.chooseButton=()=>choice(step++===0?[viewed[0]]:['use']);heaven.chooseUseTarget=async options=>{usedCard=options.card;assert.equal(options.forced,true);assert.equal(options.addCount,undefined,'保留正常次数检查');};
+await cards.fan_tiandi.content({},null,heaven);assert.equal(usedCard,viewed[0]);
+assert(read('../card/index.js').includes('...monarchCards'));assert(read('../character/skill.js').includes('...monarchSkills'));assert(read('../card/cyno-faces.js').includes('monarchFaces') && read('../character/skills/tester.js').includes('faces[link[2]]'));
+// 直接运行本地v1.11.6优先级和排队方法，避免仅靠“priority更小”断言掩盖重复询问。
+const nativeGet=readFileSync(new URL('../../../noname/get/index.js',import.meta.url),'utf8');
+const priorityText=nativeGet.slice(nativeGet.indexOf('  priority(skill) {'),nativeGet.indexOf('\n  /**',nativeGet.indexOf('  priority(skill) {')));
+const definitions={fan_jianliu:{},second_character_skill:{},...skills};
+lib.skill=definitions;lib.translate=Object.fromEntries(Object.keys(definitions).map(id=>[id,id]));
+get.info=id=>definitions[id];get.priority=new Function('get','return ({'+priorityText+'}).priority;')(get);
+get.itemtype=object=>object===p?'player':undefined;get.skillTranslation=id=>id;
+const nativeContent=readFileSync(new URL('../../../noname/library/element/content.js',import.meta.url),'utf8');
+const start=nativeContent.indexOf('  async arrangeTrigger('),end=nativeContent.indexOf('\n  async createTrigger(',start);
+const arrange=new Function('lib','game','get','return ({'+nativeContent.slice(start,end)+'}).arrangeTrigger;')(lib,game,get);
+Object.defineProperty(Array.prototype,'remove',{configurable:true,value(item){const i=this.indexOf(item);if(i>=0)this.splice(i,1);return this;}});
+Object.defineProperty(Array.prototype,'unique',{configurable:true,value(){return [...new Set(this)];}});
+const order=[];let questions=0;
+p.chooseControl=()=>{questions++;return{set(){return this;},async forResult(){return{index:1};}};};
+lib.filter.filterTrigger=(event,who,name,id)=>id!=='fan_diwanglingyu_effect'||effect.filter(event,who);
+game.createTrigger=(name,id,who,event)=>({async forResult(){order.push(id);if(id==='fan_jianliu')who.held=who.held.filter(card=>card!==c);if(id==='fan_diwanglingyu_effect')await effect.content({},event,who);}});
+const entry=id=>({skill:id,player:p,priority:get.priority(id)});
+const remaining={name:'shan'};p.held=[c,remaining];p.discarded=[];
+const simultaneous={name:'gain',player:p,getg:()=>[c,remaining]};
+await arrange({triggername:'gainAfter',doingList:[{player:p,todoList:['fan_diwanglingyu_effect','fan_jianliu'].map(entry).sort((a,b)=>b.priority-a.priority),doneList:[]}]},simultaneous,p);
+assert.deepEqual(order,['fan_jianliu','fan_diwanglingyu_effect']);assert.equal(questions,0);assert.deepEqual(p.discarded,[remaining],'剑流已用的牌不再被领域追踪弃置');
+order.length=0;await arrange({triggername:'gainAfter',doingList:[{player:p,todoList:['fan_jianliu','second_character_skill'].map(entry),doneList:[]}]},simultaneous,p);assert.equal(questions,1,'同一角色两个同优先级武将技能仍允许排序');
+delete Array.prototype.remove;delete Array.prototype.unique;
+delete Array.prototype.sortBySeat;
+console.log('PASS 真帝王：开包、天帝、弃牌失血、原生获得牌判定、领域到期及原生触发队列中剑流先于领域且无排序询问（模拟，非对局实测）');

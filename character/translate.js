@@ -21,11 +21,10 @@ if (typeof document !== "undefined") document.addEventListener("mouseover", even
 });
 
 
-export const characterTranslate = { fan_sp_sandrone: "SP桑多涅", fan_sp_sandrone_prefix: "SP", fan_sandrone: "桑多涅", fan_linnea: "莉奈娅", fan_mona: "莫娜", fan_qiqi: "七七", fan_jean: "琴", fan_xiao: "魈", fan_itto: "荒泷一斗", fan_yaemiko: "八重神子", fan_xilonen: "希诺宁", fan_kinich: "基尼奇", fan_mualani: "玛拉妮", fan_emilie: "艾梅莉埃", fan_sigewinne: "希格雯", fan_furina: "芙宁娜", fan_xianyun: "闲云", fan_chiori: "千织", fan_clorinde: "克洛琳德" };
+export const characterTranslate = { fan_cyno: "赛诺", fan_mokuai_ceshi: "模块测试", fan_alhaitham: "艾尔海森", fan_dehya: "迪希雅", fan_sp_sandrone: "SP桑多涅", fan_sp_sandrone_prefix: "SP", fan_sandrone: "桑多涅", fan_linnea: "莉奈娅", fan_tighnari: "提纳里", fan_mona: "莫娜", fan_qiqi: "七七", fan_jean: "琴", fan_xiao: "魈", fan_itto: "荒泷一斗", fan_yaemiko: "八重神子", fan_xilonen: "希诺宁", fan_kinich: "基尼奇", fan_mualani: "玛拉妮", fan_emilie: "艾梅莉埃", fan_sigewinne: "希格雯", fan_furina: "芙宁娜", fan_xianyun: "闲云", fan_chiori: "千织", fan_clorinde: "克洛琳德" };
 
 characterTranslate.fan_albedo = "阿贝多";
-characterTranslate.fan_sp_citlali = "SP茜特菈莉";
-characterTranslate.fan_sp_citlali_prefix = "SP";
+characterTranslate.fan_citlali_revised = "茜特菈莉";
 characterTranslate.fan_citlali = "茜特菈莉";
 characterTranslate.fan_ganyu = "甘雨";
 characterTranslate.fan_hutao = "胡桃";
@@ -80,6 +79,20 @@ characterTranslate.fan_eula = "优菈";
 
 export function createSkillTranslate() {
   return skillTranslateForLegacy = {
+    fan_lengfeng: "冷风",
+    fan_lengfeng_info: "锁定技，你对其他角色造成伤害时，该角色减少等量的手牌上限。该角色下次回复体力后，恢复以此法减少的手牌上限。",
+    fan_lengfeng_limit: "冷风",
+    fan_zhaohuan: "召唤",
+    fan_zhaohuan_info: "锁定技，游戏开始时，你弃置所有手牌，展示收藏的“召唤王卡牌包”，选择一个获得相应的牌，然后随机将六个其他“卡牌包”扣置于你的武将牌上。出牌阶段开始时，你随机获得一个武将牌上的“卡牌包”，若无牌可获得则你死亡。“召唤王”衍生牌置入弃牌堆时，将其销毁。",
+    fan_zhaohuan_reserve: "卡牌包",
+    fan_ceshi: "测试",
+    fan_ceshi_info: "出牌阶段，你可以选择一项：<br>1.获得任意张牌；<br>2.摸至多十张牌；<br>3.获得【原神】扩展的一个技能；<br>4.获得【原神】扩展的任意张衍生牌；<br>5.调整你的体力值和上限为任意值；<br>6.将任意张牌交给一名其他角色。",
+    fan_biesi: "别死",
+    fan_biesi_info: "当你死亡后，你可以复活，然后调整体力至体力上限。",
+ fan_zhengyan: "诤言", fan_zhengyan_info: "锁定技，你使用的黑色牌不可被响应，红色牌造成的伤害+1。",
+ fan_jipin: "济贫", fan_jipin_info: "出牌阶段限一次，你可以摸一张牌；或者将一张【桃】交给一名已受伤的其他角色，然后摸三张牌。",
+ fan_chizong: "炽鬃", fan_chizong_give: "炽鬃", fan_chizong_info: "其他角色的出牌阶段限一次，其可以交给你一张装备牌，然后你视为使用一张【杀】。",
+ fan_shixue: "狮血", fan_shixue_info: "每回合限一次，与你距离1以内的角色受到伤害后，若你的体力值不小于体力上限的一半，你可以失去1点体力，令该角色回复1点体力；否则，你回复1点体力。",
     fan_shixin: "失心",
     fan_shixin_info: "锁定技，你对对你造成过伤害的角色使用牌无距离和次数限制。",
     fan_xunshen: "寻神",
@@ -129,21 +142,20 @@ export function createSkillTranslate() {
     fan_bowen_info: "每轮开始时，你可以明置一名角色的一张手牌，或者选择其已经明置的一张手牌，若该牌类型为基本牌或锦囊牌，你记录此牌名。每回合限一次，你可以将一张牌当任意一张已记录牌名的牌使用或打出。",
     fan_shizhi: "识谶", fan_shizhi_disabled: "识谶",
     fan_shizhi_info: "当有角色成为【博闻】已记录的伤害牌的目标时，你可以选择一项：摸一张牌；取消该目标，然后此技能失效直到本轮结束。",
-    fan_sp_yingxin: "映心", fan_sp_yingxin_share: "映心", fan_sp_yingxin_draw: "映心", fan_sp_yingxin_hand: "映心",
-    fan_sp_yingxin_info: "锁定技，游戏开始时，你选择一名其他角色，你与其可以如手牌般使用或打出对方的手牌，且失去最后的手牌时摸一张牌。",
-    fan_sp_zhuyao: "诸曜",
-    fan_sp_zhuyao_info: `锁定技，每回合限一次，当你失去最后的手牌后，若这些牌中：有黑色牌，你令一名角色失去1点体力；有红色牌，你与【映心】角色各摸一张牌。${get.poptip("rule_chengshi")}：直到你的下个回合开始，你视为拥有${get.poptip("fan_sp_citlali_lianying")}。`,
-    fan_sp_citlali_lianying: "连营",
-    fan_sp_citlali_lianying_info: "其他角色的回合结束时，你可以观看牌堆顶的X张牌，然后将这些牌交给任意角色（X为你本回合失去的牌数+1，至多为5）。",
-    fan_sp_miyan: "谜烟",
-    fan_sp_miyan_info: "每回合限一次，当你或【映心】角色受到伤害后，若你的武将牌正面朝上，你可以弃置所有手牌，视为对伤害来源随机使用一张伤害牌，然后你翻面，并从牌堆中随机获得一张基本牌。",
     fan_yingxin: "映心", fan_yingxin_share: "映心", fan_yingxin_draw: "映心", fan_yingxin_hand: "映心",
     fan_yingxin_info: "锁定技，游戏开始时，你选择一名其他角色，你与其可以如手牌般使用或打出对方的手牌，且失去最后的手牌时摸一张牌。",
     fan_zhuyao: "诸曜",
+    fan_bowu: "博物",
+    fan_bowu_draw: "博物",
+    fan_bowu_info: "出牌阶段开始时，你可以展示一名其他角色一张手牌，然后你于回合内使用此类别的牌时，摸一张牌。",
+    fan_xunlin: "巡林",
+    fan_xunlin_info: "每回合限一次，你可以将一张♦牌当任意基本牌使用或打出。",
     fan_zhuyao_info: `锁定技，当你失去最后的手牌后，若这些牌中：有黑色牌，你令一名角色失去1点体力；有红色牌，你与【映心】角色各摸一张牌。${get.poptip("rule_chengshi")}：直到你的下个回合开始，你视为拥有${get.poptip("fan_citlali_lianying")}。`,
     fan_citlali_lianying: "连营",
     fan_citlali_lianying_info: "其他角色的回合结束时，你可以观看牌堆顶的X张牌，然后将这些牌交给任意角色（X为你本回合失去的牌数+1，至多为5）。",
     fan_miyan: "谜烟", fan_miyan_backup: "谜烟",
+    fan_miyan_revised: "谜烟", fan_miyan_revised_backup: "谜烟",
+    fan_miyan_revised_info: "每回合限一次，当你或【映心】角色受到伤害后，若你的武将牌正面朝上，你可以弃置所有手牌，视为使用任意一张普通锦囊牌，然后你翻面，并从牌堆中随机获得一张基本牌。",
     fan_miyan_info: "当你或【映心】角色受到伤害后，若你的武将牌正面朝上，你可以将所有手牌当任意一张基本牌或普通锦囊牌使用，然后你翻面，并从牌堆中随机获得一张基本牌。",
     fan_jiliu: "激流",
     fan_jiliu_info: "每当你成为其他角色使用牌的目标后，其他角色计算与你的距离+1，直到你的回合结束。",
@@ -219,11 +231,11 @@ export function createSkillTranslate() {
     fan_binghua_info: "蓄力技（1/4），出牌阶段限一次，你可以令一名其他角色选择一项：<br>1.直到该角色的下个回合结束，你与其计算彼此的距离均视为1，当其中一名角色使用牌指定另一名角色为目标时，可以消耗1个蓄力点并获得后者区域内的一张牌；<br>2.你与其各弃置X张【杀】，然后摸X张牌（X为你的蓄力点数且至少为1）。",
 
     fan_guiwang: "鬼王",
-    fan_guiwang_info: `蓄力技（0/5）。当你造成或受到1点伤害后，你获得1个蓄力点，然后选择一项：摸一张牌；移动场上的一张装备牌。当你的蓄力点数量达到上限时，你可以执行${get.poptip("rule_beishui")}：摸一张牌。`,
+    fan_guiwang_info: "蓄力技（0/5），当你造成或受到1点伤害后，获得1个蓄力点，然后选择一项：摸一张牌；移动场上一张装备牌。若你的蓄力点数量已达到上限，你可以背水：消耗所有蓄力点，弃置任意名角色区域内各一张牌。",
     fan_yongyi: "勇仪",
     fan_yongyi_info: "出牌阶段限一次，你可以与一名其他角色拼点，没赢的角色须选择一项：弃置装备区的一张牌；受到另一名角色造成的1点伤害。若你没赢，此技能视为未发动过。",
     fan_miaosuan: "妙算",
-    fan_miaosuan_info: `每轮开始时，你可以秘密选择一名角色，本轮结束时，若该角色本轮内回复过体力或体力值已满，你获得每种智囊牌各一张，然后将至多等量张手牌交给该角色。${get.poptip("rule_chengshi")}：将一种不为智囊牌的锦囊牌名记录为智囊牌。`,
+    fan_miaosuan_info: `每轮开始时，你可以秘密选择一名角色，本轮结束时，若该角色本轮内回复过体力或体力值已满，你获得每种${get.poptip("rule_zhinang")}牌各一张，然后将至多等量张手牌交给该角色。${get.poptip("rule_chengshi")}：将一种不为智囊牌的锦囊牌名记录为智囊牌。`,
     fan_haiji: "海姬",
     fan_haiji_info: "锁定技，当你造成伤害时，防止此伤害，然后令一名角色回复1点体力。",
     fan_jilv: "羁旅",
@@ -448,7 +460,7 @@ export function createSkillTranslate() {
     fan_xianggao: "香糕",
     fan_xianggao_info: "锁定技，一名角色的结束阶段，若你令其回复过体力，该角色摸1张牌。",
     fan_shanlie: "闪烈",
-    fan_shanlie_info: `结束阶段，你可以选择一项：1.对至多X名角色各造成1点雷电伤害；2.令至多Y名角色各回复1点体力。${get.poptip("rule_beishui")}：跳过你的下个出牌阶段，依次执行两项（X、Y分别为发动时本回合进入过弃牌堆的牌中黑色、红色花色的种类数）。`,
+    fan_shanlie_info: `结束阶段，你可以选择一项：1.对至多X名角色各造成1点雷电伤害；2.令至多Y名角色各回复1点体力。${get.poptip("rule_beishui")}：跳过你的下个出牌阶段（X、Y分别为发动时本回合进入过弃牌堆的牌中黑色、红色花色的种类数）。`,
     fan_haoyan: "豪宴",
     fan_haoyan_info: "锁定技，摸牌阶段，你额外摸等于当前体力值的牌。",
     fan_chihun: "炽魂",

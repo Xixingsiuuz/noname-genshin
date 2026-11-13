@@ -3,6 +3,12 @@ import { lib, game, get, ui, _status } from "../../../../noname.js";
 const prefix = "fan_xijuan_weapon_";
 const weapons = player => player.getVCards("e", card => get.subtype(card) === "equip1");
 const materialEnabled = (card, player) => game.checkMod(card, player, "unchanged", "cardEnabled2", player) !== false;
+function ensureShuofengSlot(player) {
+  if (player.storage.fan_shuofeng_slot) return;
+  // 先记录再排队，防止初始化和入场触发在同一轮重复扩栏。
+  player.storage.fan_shuofeng_slot = true;
+  return player.expandEquip(1);
+}
 
 // 使用原生虚拟装备保存锦囊实体，不修改实体牌名。离开装备区自动还原。
 function weaponName(name) {
@@ -43,6 +49,10 @@ function kaigeUse(event) {
 export default {
   fan_shuofeng: {
     locked: true,
+    init(player) {
+      // 开局仍走原有静默初始化；中途addSkill也必须获得额外武器栏。
+      if (game.phaseNumber > 0) ensureShuofengSlot(player);
+    },
     enable: ["chooseToUse", "chooseToRespond"],
     position: "he",
     selectCard: [0, 1],
@@ -83,8 +93,7 @@ export default {
         forced: true, silent: true, popup: false, firstDo: true,
         filter: (event, player) => !player.storage.fan_shuofeng_slot && (event.name !== "phase" || game.phaseNumber === 0),
         async content(event, trigger, player) {
-          player.storage.fan_shuofeng_slot = true;
-          await player.expandEquip(1);
+          await ensureShuofengSlot(player);
         },
       },
     },

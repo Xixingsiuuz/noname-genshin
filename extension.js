@@ -16,7 +16,11 @@ import { installZibaiControlPrivacy } from "./ui/zibai-control-privacy.js";
 import { installSkillVoices } from "./ui/skill-voices.js";
 import { get } from "../../noname.js";
 import { installMechanismCardStyle } from "./ui/mechanism-cards.js";
+import { cynoPackArt } from "./character/skills/cyno.js";
 import { sortExtensionHandcards } from "./ui/auto-sort-handcards.js";
+import { installCynoCardPrompt } from "./ui/cyno-card-prompt.js";
+import { installPoptipStack } from "./ui/poptip-stack.js";
+import { installDerivedEquipSubtitle } from "./card/cyno-sound.js";
 
 function sortLocalHandcards() {
   if (game.me && game.me.countCards("h") > 1) {
@@ -24,11 +28,38 @@ function sortLocalHandcards() {
   }
 }
 
+const localCustomization = await import("./developer-mode.local.js").catch(() => null);
+
+function saveNativeMenuBarPreference(hidden) {
+  if (!globalThis.process?.versions?.electron || typeof globalThis.require !== "function") return;
+  try {
+    const require = globalThis.require;
+    const { app } = require("@electron/remote");
+    const path = require("path").join(app.getPath("userData"), "fan-hide-native-menu-bar");
+    const fs = require("fs");
+    if (hidden) fs.writeFileSync(path, "");
+    else fs.rmSync(path, { force: true });
+  } catch (error) {
+    console.warn("[原神] 无法保存启动菜单栏设置", error);
+  }
+}
+
+function hideNativeMenuBar() {
+  if (!globalThis.process?.versions?.electron || typeof globalThis.require !== "function") return;
+  try {
+    const remote = globalThis.require("@electron/remote");
+    const nativeWindow = remote.getCurrentWindow();
+    if (nativeWindow?.isMenuBarVisible?.()) nativeWindow.setMenuBarVisibility(false);
+  } catch (error) {
+    console.warn("[原神] 无法隐藏窗口菜单栏", error);
+  }
+}
+
 export const type = "extension";
 
 export default function () {
   const updater = createUpdateChecker(game);
-  return {
+  const extension = {
     name: "原神",
     content() {
       installWandererDeathAudio(game, lib, get);
@@ -39,8 +70,21 @@ export default function () {
         : lib.translate.fan_tianlin_info;
       if (!lib.hooks.checkEnd.some(fn => fn.fanTianlinAuto)) {
         const submit = (event, { ok }) => {
-          if (!ok || !event.isMine() || !(lib.skill[event.skill]?.fan_tianlin_auto || lib.skill[event.skill]?.fan_wanli_auto) || event.fan_tianlin_submitting) return;
+          if (!ok || !event.isMine() || event.fan_tianlin_submitting) return;
           const skill = event.skill;
+          const info = lib.skill[skill];
+          const fixedTarget = () => {
+            if (!info?.fan_cyno_fixed_target || ui.selected.cards.length !== 1) return false;
+            const card = get.card();
+            if (!card) return false;
+            const definition = get.info(card);
+            if (definition?.notarget) return true;
+            const range = lib.filter.selectTarget(card, event.player);
+            return (range?.[0] === -1 && range[1] === -1) || (range?.[0] === 0 && range[1] === 0);
+          };
+          const automatic = () => info?.fan_tianlin_auto || info?.fan_wanli_auto ||
+            info?.fan_ceshi_auto || info?.fan_cyno_open_choice || fixedTarget();
+          if (!automatic()) return;
           event.fan_tianlin_submitting = true;
           // chooseToUse 在 check() 返回后仍会 pause()。同步 ok/resume 会被后面的
           // pause 再次暂停，形成无按钮的死界面；须等本轮选择初始化完成再提交。
@@ -48,7 +92,7 @@ export default function () {
             try {
               // filterOk is optional. Re-run the native full legality check instead;
               // keep the guard set so this check cannot schedule another submission.
-              if (_status.event === event && event.skill === skill && game.check()) {
+              if (_status.event === event && event.skill === skill && game.check() && automatic()) {
                 // Match native autoConfirm: check() may recreate the outer confirm bar.
                 // Close it before entering the skill's own chooseControl.
                 if (ui.confirm) ui.confirm.close();
@@ -68,6 +112,9 @@ export default function () {
       installSkillVoices(get);
       installMoranFrost(lib);
       installSelectionConfirm(ui, _status, lib);
+      installCynoCardPrompt(lib, ui, get, _status);
+      installPoptipStack(lib, game, get, _status);
+      installDerivedEquipSubtitle();
       installZibaiEyes(ui, game);
       installZibaiControlPrivacy(game, lib);
       installDetailPortraits(ui, lib);
@@ -90,13 +137,29 @@ export default function () {
         },
       };
       game.addGlobalSkill("fan_auto_sort_handcards");
+      registerLocalSkills?.();
     },
     precontent() {
+      const hideMenuBar = !!game.getExtensionConfig("原神", "hide_native_menu_bar");
+      saveNativeMenuBarPreference(hideMenuBar);
+      if (hideMenuBar) hideNativeMenuBar();
+      lib.characterFilter.fan_mokuai_ceshi = () =>
+        game.getExtensionConfig("原神", "test_features") === true;
       // 扩展加载时注册，武将详情页直接从此表读取称号。
       Object.assign(lib.characterTitle, characterTitles);
       Object.assign(lib.characterIntro, characterIntros);
     },
     config: {
+      hide_native_menu_bar: {
+        name: "隐藏白色菜单栏",
+        intro: "适用于桌面客户端。开启立即隐藏，关闭后重启游戏生效。",
+        init: false,
+        onclick(value) {
+          game.saveExtensionConfig("原神", "hide_native_menu_bar", value);
+          saveNativeMenuBarPreference(value);
+          if (value) hideNativeMenuBar();
+        },
+      },
       check_update: {
         name: "检查更新",
         clear: true,
@@ -107,6 +170,12 @@ export default function () {
         intro: "检查 GitHub 正式发布版本；同一新版只自动提醒一次。",
         init: true,
         onclick(value) { game.saveExtensionConfig("原神", "auto_check_update", value); },
+      },
+      test_features: {
+        name: "测试功能",
+        intro: "开启后，可在自由选将中手动选择「模块测试」。",
+        init: false,
+        onclick(value) { game.saveExtensionConfig("原神", "test_features", value); },
       },
       auto_sort_handcards: {
         name: "手牌自动排序",
@@ -124,19 +193,67 @@ export default function () {
       card: createCardPackage(),
     },
     files: {
-      character: ["image/character/originals/wanderer.png", "image/character/portraits/wanderer.png", "image/character/portraits/wanderer-select.png", "image/character/portraits/wanderer-detail.png", "image/character/originals/zhongli-rework.png", "image/character/portraits/zhongli-rework.png", "image/character/portraits/zhongli-rework-select.png", "image/character/portraits/zhongli-rework-detail.png", ...Object.values(smoothPortraits), "image/character/originals/sandrone.png", "image/character/portraits/sandrone.png", "image/character/portraits/sandrone-select.png", "image/character/portraits/sandrone-detail.png", "image/character/originals/nicole.png", "image/character/portraits/nicole.png", "image/character/portraits/nicole-select.png", "image/character/portraits/nicole-detail.png", "image/character/originals/citlali.png", "image/character/portraits/citlali.png", "image/character/portraits/citlali-select.png", "image/character/portraits/citlali-detail.png", "image/character/originals/mona.png", "image/character/portraits/mona.png", "image/character/portraits/mona-select.png", "image/character/portraits/mona-detail.png", "image/character/originals/qiqi.png", "image/character/portraits/qiqi.png", "image/character/portraits/qiqi-select.png", "image/character/portraits/qiqi-detail.png", "image/character/portraits/jean-select-centered-20261028.png", "image/character/portraits/jean-centered-20261028.png", "image/character/portraits/jean-detail-centered-20261028.png", "image/character/originals/jean.png", "image/character/portraits/jean.png", "image/character/portraits/jean-select.png", "image/character/portraits/jean-detail.png", "image/character/portraits/xiao-centered-20261027.png", "image/character/portraits/xiao-detail-centered-20261027.png", "image/character/originals/xiao.png", "image/character/portraits/xiao.png", "image/character/portraits/xiao-select.png", "image/character/portraits/xiao-detail.png", "image/character/originals/hutao.png", "image/character/originals/hutao-skin1.jpg", "image/character/originals/hutao-skin2.png",
+      character: ["image/character/portraits/tighnari.png", "image/character/portraits/tighnari-select.png", "image/character/portraits/tighnari-detail.png", "image/character/originals/cyno.png", "image/character/portraits/cyno.png", "image/character/portraits/cyno-select.png", "image/character/portraits/cyno-detail.png", "image/character/originals/alhaitham.jpg", "image/character/portraits/alhaitham.png", "image/character/portraits/alhaitham-select.png", "image/character/portraits/alhaitham-detail.png", "image/character/originals/dehya.jpg", "image/character/portraits/dehya.png", "image/character/portraits/dehya-select.png", "image/character/portraits/dehya-detail.png", "image/character/originals/wanderer.png", "image/character/portraits/wanderer.png", "image/character/portraits/wanderer-select.png", "image/character/portraits/wanderer-detail.png", "image/character/originals/zhongli-rework.png", "image/character/portraits/zhongli-rework.png", "image/character/portraits/zhongli-rework-select.png", "image/character/portraits/zhongli-rework-detail.png", ...Object.values(smoothPortraits), "image/character/originals/sandrone.png", "image/character/portraits/sandrone.png", "image/character/portraits/sandrone-select.png", "image/character/portraits/sandrone-detail.png", "image/character/originals/nicole.png", "image/character/portraits/nicole.png", "image/character/portraits/nicole-select.png", "image/character/portraits/nicole-detail.png", "image/character/originals/citlali.png", "image/character/portraits/citlali.png", "image/character/portraits/citlali-select.png", "image/character/portraits/citlali-detail.png", "image/character/originals/mona.png", "image/character/portraits/mona.png", "image/character/portraits/mona-select.png", "image/character/portraits/mona-detail.png", "image/character/originals/qiqi.png", "image/character/portraits/qiqi.png", "image/character/portraits/qiqi-select.png", "image/character/portraits/qiqi-detail.png", "image/character/portraits/jean-select-centered-20261028.png", "image/character/portraits/jean-centered-20261028.png", "image/character/portraits/jean-detail-centered-20261028.png", "image/character/originals/jean.png", "image/character/portraits/jean.png", "image/character/portraits/jean-select.png", "image/character/portraits/jean-detail.png", "image/character/portraits/xiao-centered-20261027.png", "image/character/portraits/xiao-detail-centered-20261027.png", "image/character/originals/xiao.png", "image/character/portraits/xiao.png", "image/character/portraits/xiao-select.png", "image/character/portraits/xiao-detail.png", "image/character/originals/hutao.png", "image/character/originals/hutao-skin1.jpg", "image/character/originals/hutao-skin2.png",
         "image/character/portraits/hutao.png", "image/character/portraits/hutao-select.png", "image/character/portraits/hutao-detail.png",
         "image/character/portraits/hutao-skin1.png", "image/character/portraits/hutao-skin1-select.png", "image/character/portraits/hutao-skin1-detail.png",
         "image/character/portraits/hutao-skin2.png", "image/character/portraits/hutao-skin2-select.png", "image/character/portraits/hutao-skin2-detail.png",
         "image/skin/fan_hutao/1.png", "image/skin/fan_hutao/2.png",
-        "audio/linnea/skill/fan_bowen_reveal_voice1.mp3","audio/linnea/skill/fan_bowen_reveal_voice2.mp3","audio/linnea/skill/fan_bowen_convert_voice1.mp3","audio/linnea/skill/fan_bowen_convert_voice2.mp3","audio/linnea/skill/fan_bowen_convert_voice3.mp3","audio/linnea/skill/fan_bowen_convert_voice4.mp3","audio/linnea/skill/fan_bowen_convert_voice5.mp3","audio/linnea/skill/fan_shizhi_draw_voice1.mp3","audio/linnea/skill/fan_shizhi_draw_voice2.mp3","audio/linnea/skill/fan_shizhi_cancel_voice1.mp3","audio/linnea/skill/fan_shizhi_cancel_voice2.mp3","audio/linnea/skill/fan_shizhi_cancel_voice3.mp3","audio/linnea/die/fan_linnea1.mp3","audio/linnea/die/fan_linnea2.mp3","audio/linnea/die/fan_linnea3.mp3",
+      "audio/linnea/skill/fan_bowen_reveal_voice1.mp3","audio/linnea/skill/fan_bowen_reveal_voice2.mp3","audio/linnea/skill/fan_bowen_convert_voice1.mp3","audio/linnea/skill/fan_bowen_convert_voice2.mp3","audio/linnea/skill/fan_bowen_convert_voice3.mp3","audio/linnea/skill/fan_bowen_convert_voice4.mp3","audio/linnea/skill/fan_bowen_convert_voice5.mp3","audio/linnea/skill/fan_shizhi_draw_voice1.mp3","audio/linnea/skill/fan_shizhi_draw_voice2.mp3","audio/linnea/skill/fan_shizhi_cancel_voice1.mp3","audio/linnea/skill/fan_shizhi_cancel_voice2.mp3","audio/linnea/skill/fan_shizhi_cancel_voice3.mp3","audio/linnea/die/fan_linnea1.mp3","audio/linnea/die/fan_linnea2.mp3","audio/linnea/die/fan_linnea3.mp3",
         "image/character/originals/linnea.jpg", "image/character/portraits/linnea.png", "image/character/portraits/linnea-select.png", "image/character/portraits/linnea-detail.png",
         "image/character/originals/ganyu.png", "image/character/portraits/ganyu.png", "image/character/portraits/ganyu-select.png", "image/character/portraits/ganyu-detail.png", "image/character/portraits/xianyun.png", "image/character/portraits/xianyun-avatar-20261027.png",
         "image/character/portraits/skirk-v2.png", "image/character/portraits/skirk-avatar-20261027.png",
         "image/character/portraits/navia-centered-20261104.png", "image/character/smooth/navia-centered-20261104.png", "image/character/portraits/shenhe.png", "image/character/portraits/shenhe-avatar-20261027.png"],
-      card: ["image/card/fan_pengrenshenji-mechanism.png", "image/card/fan_zhuxing-mechanism.png",
+      card: [...cynoPackArt, "image/card/fan_pengrenshenji-mechanism.png", "image/card/fan_zhuxing-mechanism.png",
         "image/card/fan_guizhongji-mechanism.png", "image/card/fan_chengehu-mechanism.png"],
       skill: [], audio: [
+        "audio/dehya/skill/fan_chizong1.mp3", "audio/dehya/skill/fan_chizong2.mp3", "audio/dehya/skill/fan_chizong3.mp3", "audio/dehya/skill/fan_shixue_self1.mp3", "audio/dehya/skill/fan_shixue_self2.mp3", "audio/dehya/skill/fan_shixue_self3.mp3", "audio/dehya/skill/fan_shixue_ally1.mp3", "audio/dehya/skill/fan_shixue_ally2.mp3", "audio/dehya/skill/fan_shixue_ally3.mp3", "audio/dehya/die/fan_dehya1.mp3", "audio/dehya/die/fan_dehya2.mp3", "audio/dehya/die/fan_dehya3.mp3",
+      "audio/alhaitham/skill/fan_jipin_draw1.ogg",
+      "audio/alhaitham/skill/fan_jipin_draw2.ogg",
+      "audio/alhaitham/skill/fan_zhengyan_voice1.ogg",
+      "audio/alhaitham/skill/fan_zhengyan_voice2.ogg",
+      "audio/alhaitham/skill/fan_zhengyan_voice3.ogg",
+      "audio/alhaitham/skill/fan_zhengyan_voice4.ogg",
+      "audio/alhaitham/skill/fan_zhengyan_voice5.ogg",
+      "audio/alhaitham/skill/fan_jipin_give1.ogg",
+      "audio/alhaitham/skill/fan_jipin_give2.ogg",
+      "audio/alhaitham/die/fan_alhaitham1.ogg",
+      "audio/alhaitham/die/fan_alhaitham2.ogg",
+      "audio/alhaitham/die/fan_alhaitham3.ogg",
+        "audio/cyno/skill/fan_zhaohuan_pack1.ogg",
+        "audio/cyno/skill/fan_zhaohuan_pack2.ogg",
+        "audio/cyno/skill/fan_zhaohuan_pack3.ogg",
+        "audio/cyno/skill/fan_zhaohuan_pack4.ogg",
+        "audio/cyno/skill/fan_zhaohuan_pack5.ogg",
+        "audio/cyno/skill/fan_zhaohuan_negate1.ogg",
+        "audio/cyno/skill/fan_zhaohuan_negate2.ogg",
+        "audio/cyno/skill/fan_zhaohuan_negate3.ogg",
+        "audio/cyno/skill/fan_zhaohuan_damage1.ogg",
+        "audio/cyno/skill/fan_zhaohuan_damage2.ogg",
+        "audio/cyno/skill/fan_zhaohuan_damage3.ogg",
+        "audio/cyno/skill/fan_zhaohuan_other1.ogg",
+        "audio/cyno/skill/fan_zhaohuan_other2.ogg",
+        "audio/cyno/skill/fan_zhaohuan_other3.ogg",
+        "audio/cyno/skill/fan_zhaohuan_self1.ogg",
+        "audio/cyno/skill/fan_zhaohuan_self2.ogg",
+        "audio/cyno/skill/fan_zhaohuan_self3.ogg",
+        "audio/cyno/die/fan_cyno1.ogg",
+        "audio/cyno/die/fan_cyno2.ogg",
+        "audio/cyno/die/fan_cyno3.ogg",
+        "audio/cyno/skill/fan_lengfeng1.mp3",
+        "audio/cyno/skill/fan_lengfeng2.mp3",
+        "audio/cyno/skill/fan_lengfeng3.mp3",
+        "audio/cyno/skill/fan_lengfeng4.mp3",
+        "audio/cyno/skill/fan_lengfeng5.mp3",
+        "audio/cyno/skill/fan_lengfeng6.mp3",
+        "audio/cyno/skill/fan_lengfeng7.mp3",
+        "audio/cyno/skill/fan_lengfeng8.mp3",
+        "audio/cyno/skill/fan_lengfeng9.mp3",
+        "audio/cyno/skill/fan_lengfeng10.mp3",
+        "audio/cyno/skill/fan_lengfeng11.mp3",
+        "audio/cyno/skill/fan_lengfeng12.mp3",
+        "audio/cyno/skill/fan_lengfeng13.mp3",
+        "audio/cyno/skill/fan_zhaohuan_open1.mp3",
+        "audio/cyno/card/attack.ogg",
       "audio/ganyu/skill/fan_liutian1.mp3",
       "audio/ganyu/skill/fan_liutian2.mp3",
       "audio/ganyu/skill/fan_liutian3.mp3",
@@ -502,6 +619,19 @@ export default function () {
       "audio/keqing/skill/fan_yuheng1.mp3", "audio/keqing/skill/fan_yuheng2.mp3", "audio/keqing/die/fan_keqing.mp3",
       "audio/diluc/skill/fan_niyan1.mp3", "audio/diluc/skill/fan_niyan2.mp3", "audio/diluc/skill/fan_niyan3.mp3",
       "audio/diluc/skill/fan_chenxi1.mp3", "audio/diluc/skill/fan_chenxi2.mp3", "audio/diluc/die/fan_diluc.mp3",
+      "audio/tighnari/skill/fan_bowu_knowledge.mp3",
+      "audio/tighnari/skill/fan_bowu_mistakes.ogg",
+      "audio/tighnari/skill/fan_bowu_draw1.mp3",
+      "audio/tighnari/skill/fan_bowu_draw2.mp3",
+      "audio/tighnari/skill/fan_xunlin_skill1.mp3",
+      "audio/tighnari/skill/fan_xunlin_skill2.mp3",
+      "audio/tighnari/skill/fan_xunlin_skill3.mp3",
+      "audio/tighnari/skill/fan_xunlin_burst1.mp3",
+      "audio/tighnari/skill/fan_xunlin_burst2.mp3",
+      "audio/tighnari/skill/fan_xunlin_burst3.mp3",
+      "audio/tighnari/die/fan_tighnari1.mp3",
+      "audio/tighnari/die/fan_tighnari2.mp3",
+      "audio/tighnari/die/fan_tighnari3.mp3",
       "audio/shenhe/skill/fan_xinzhai.mp3", "audio/shenhe/skill/fan_yizhou1.mp3",
       "audio/shenhe/skill/fan_yizhou_start_extra.mp3",
       "audio/shenhe/skill/fan_yizhou_move_extra1.mp3",
@@ -715,6 +845,8 @@ export default function () {
     author: "原创武将开发",
     version: EXTENSION_VERSION,
     editable: false,
-    connect: false,
+    connect: true,
   };
+  const registerLocalSkills = localCustomization?.install(extension.config, lib, game, _status);
+  return extension;
 }

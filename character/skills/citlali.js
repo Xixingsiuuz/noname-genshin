@@ -56,18 +56,99 @@ function virtualCards(player) {
   return list.filter(card => lib.filter.cardEnabled({ ...card, cards }, player)
     && player.hasUseTarget({ ...card, cards }, undefined, true));
 }
-export function miyanValue(player, card) {
+export function miyanValue(player, card, discard = false) {
   const hand = player.getCards("h");
   const cost = hand.reduce((sum, c) => sum + Math.max(0, get.value(c, player)), 0) / 5;
   const synergy = emptyHandBenefit(player, player, hand);
   // Spending a whole hand and losing the next turn must both enter the estimate.
   const turnCost = _status.currentPhase === player ? 1.8 : player.hp <= 1 ? 3 : 2.5;
   // Native getUseValue already includes the share skill's empty-hand effect AI.
-  return player.getUseValue({ ...card, cards: hand }, undefined, true)
-    + (player.hasSkill("fan_yingxin_share") ? 0 : synergy) + 1 - cost - turnCost;
+  return player.getUseValue({ ...card, cards: discard ? [] : hand }, undefined, true)
+    + (!discard && player.hasSkill("fan_yingxin_share") ? 0 : synergy) + 1 - cost - turnCost;
+}
+
+const revisedMiyan = "fan_miyan_revised";
+const revisedUsed = "fan_miyan_revised_used";
+function revisedHand(player) {
+  const hand = player.getCards("h");
+  return player.isIn() && !player.isTurnedOver() && !player.hasSkill(revisedUsed)
+    && hand.length && hand.every(card => lib.filter.cardDiscardable(card, player, revisedMiyan)) ? hand : [];
+}
+function revisedChoices(player) {
+  if (!revisedHand(player).length) return [];
+  return lib.inpile.filter(name => get.type(name) === "trick").filter(name => {
+    const card = { name, isCard: true };
+    return lib.filter.cardEnabled(card, player) && player.hasUseTarget(card, undefined, true);
+  });
 }
 
 export default {
+  fan_miyan_revised_used: { charlotte: true },
+  fan_miyan_revised: {
+    audio: false, direct: true, locked: false,
+    trigger: { global: "damageEnd" },
+    filter(event, player) {
+      return (event.player === player || event.player === player.storage.fan_yingxin_target)
+        && revisedChoices(player).length > 0;
+    },
+    async content(event, trigger, player) {
+      const choices = revisedChoices(player);
+      if (!choices.length) return;
+      const picked = await player.chooseButton(["谜烟：弃置所有手牌，选择普通锦囊", [choices.map(name => ["trick", "", name]), "vcard"]])
+        .set("prompt2", false).set("fanPairedConfirm", true).set("manualConfirm", true)
+        .set("ai", button => miyanValue(player, { name: button.link[2] }, true)).forResult();
+      const name = picked.links?.[0]?.[2];
+      if (!picked.bool || !revisedChoices(player).includes(name)) return;
+      const hand = revisedHand(player).slice();
+      const card = { name, isCard: true };
+      const info = get.info(card);
+      const range = lib.filter.selectTarget(card, player);
+      const legal = game.filterPlayer(t => player.canUse(card, t, undefined, true));
+      let result;
+      if (info.notarget || range?.[1] === 0) {
+        result = { bool: true, targets: [] };
+      } else if (!info.complexTarget && !info.complexSelect && !info.singleCard
+        && (range?.[0] === -1 || (range?.[0] > 0 && range[0] === legal.length && range[1] >= range[0]))) {
+        result = { bool: legal.length > 0, targets: legal.sortBySeat(_status.currentPhase || player) };
+      } else {
+        const next = player.chooseToUse({
+          prompt: "谜烟：使用" + get.translation(card), prompt2: false, chooseonly: true,
+          fan_miyan_revised_card: card, norestore: true, _backupevent: "fan_miyan_revised_backup",
+          custom: { add: {}, replace: { window() {} } },
+        });
+        next.backup("fan_miyan_revised_backup");
+        next.set("fanPairedConfirm", true).set("manualConfirm", true);
+        result = await next.forResult();
+      }
+      const current = revisedHand(player);
+      const targets = result.targets || [];
+      if (!result.bool || current.length !== hand.length || !hand.every(c => current.includes(c))
+        || !revisedChoices(player).includes(name) || targets.some(t => !t.isIn() || !player.canUse(card, t, undefined, true))) return;
+      // Consume the turn quota before discard triggers can cause nested damage.
+      player.addTempSkill(revisedUsed, "phaseAfter");
+      player.logSkill(revisedMiyan, null, null, null, []);
+      speak("fan_miyan_use", player);
+      await player.discard(hand);
+      if (!player.isIn()) return;
+      if (lib.filter.cardEnabled(card, player) && targets.every(t => t.isIn() && player.canUse(card, t, undefined, true))) {
+        await player.useCard(card, targets);
+      }
+      if (!player.isIn()) return;
+      speak("fan_miyan_turn", player);
+      await player.turnOver();
+      if (!player.isIn()) return;
+      const basics = Array.from(ui.cardPile.childNodes).filter(c => get.type(c, false) === "basic");
+      if (basics.length) await player.gain(basics.randomGet(), "draw");
+    },
+    subSkill: {
+      backup: {
+        audio: false, sourceSkill: revisedMiyan, selectCard: -1, filterCard: () => false,
+        viewAs() { return _status.event.fan_miyan_revised_card; },
+        manualConfirm: true,
+      },
+    },
+    ai: { threaten: 1.4 },
+  },
   ...voices,
   fan_yingxin: {
     audio: false, forced: true, locked: true,

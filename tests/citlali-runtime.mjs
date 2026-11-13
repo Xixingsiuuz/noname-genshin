@@ -36,7 +36,7 @@ for(const [id,info] of Object.entries(skills))for(const child of [info,...Object
  for(const key of ['content','precontent'])if(typeof child[key]==='function')assert(asyncCompiler.filter(child[key]),id+'.'+key);
 }
 // Execute Card.addGaintag itself, so the visible caption uses actual translation.
-const translations=new Function('get',read('../character/translate.js').replace(/^import .*;\r?\n/gm,'').replace('export const','const').replace('export function','function')+'\nreturn createSkillTranslate();')({poptip:id=>id});
+const translations=new Function('nativeGet','lib',read('../character/translate.js').replace(/^import .*;\r?\n/gm,'').replace('export const','const').replace('export function','function')+'\nreturn createSkillTranslate();')({poptip:id=>id});
 const add=read('../../../noname/library/element/card.js').match(/  addGaintag\(gaintag\) \{([\s\S]*?)\n  \}/);
 const addGaintag=new Function('get','return function(gaintag){'+add[1]+'}')( {translation:id=>translations[id]||id} );
 const card={gaintag:[],node:{gaintag:{innerHTML:''}}};addGaintag.call(card,['fan_yingxin_hand']);

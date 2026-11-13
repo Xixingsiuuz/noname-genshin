@@ -1,22 +1,9 @@
+import { selectConversionMaterial } from "../../ui/conversion-material.js";
 import { lib, game, get, ui, _status } from "../../../../noname.js";
 
 const available = player => player.countCharge() > 0 && !player.hasSkill("fan_miyuan_used");
 const options = (event, player) => get.zhinangs().filter(name =>
   (event._backup?.filterCard || event.filterCard)({ name }, player, event));
-const pendingConfirm = new WeakSet();
-function confirmAutomatic() {
-  const event = _status.event;
-  if (event?.name !== "chooseToUse" || event.skill !== "fan_miyuan_backup"
-    || !event.isMine() || pendingConfirm.has(event)) return true;
-  pendingConfirm.add(event);
-  queueMicrotask(() => {
-    try {
-      if (_status.event === event && event.skill === "fan_miyuan_backup" && game.check()) ui.click.ok();
-    } finally { pendingConfirm.delete(event); }
-  });
-  return true;
-}
-
 export default {
   fan_wentai: {
     audio: "ext:原神/audio/ineffa/skill:2",
@@ -84,29 +71,28 @@ export default {
       },
     },
     chooseButton: {
-      dialog(event, player) {
-        const dialog = ui.create.dialog("秘源：选择一张装备和智囊牌名", [options(event, player), "vcard"]);
-        dialog.add(player.getCards("e"));
-        return dialog;
+      dialog: (event, player) => ui.create.dialog("秘源：选择一张装备和智囊牌名", [options(event, player), "vcard"]),
+      select: [0, 1],
+      filter() {
+        const event = _status.event;
+        selectConversionMaterial(event, game, ui, _status, "e", (card, player) =>
+          available(player) && player.getCards("e").includes(card)
+          && game.checkMod(card, player, "unchanged", "cardEnabled2", player) !== false,
+          (button, card, player) => player.getUseValue({name: button.link[2]}) + 3 - get.value(card, player));
+        return true;
       },
-      select: 2,
-      filter(button, player) {
-        const isName = Array.isArray(button.link);
-        if (ui.selected.buttons.some(selected => selected !== button
-          && Array.isArray(selected.link) === isName)) return false;
-        return isName || (player.getCards("e").includes(button.link)
-          && game.checkMod(button.link, player, "unchanged", "cardEnabled2", player) !== false);
+      filterOk() {
+        const event = _status.event;
+        const card = ui.selected.cards[0];
+        const valid = ui.selected.buttons.length === 1 && ui.selected.cards.length === 1
+          && event.filterCard(card, event.player);
+        event.getParent().fanConversionCard = valid ? card : undefined;
+        return valid;
       },
-      filterOk: () => ui.selected.buttons.length === 2
-        && ui.selected.buttons.filter(button => Array.isArray(button.link)).length === 1,
-      check: button => Array.isArray(button.link)
-        ? get.player().getUseValue({ name: button.link[2] }) : 7 - get.value(button.link),
       backup(links, player) {
-        const material = links.find(link => !Array.isArray(link));
+        const material = _status.event.fanConversionCard;
+        delete _status.event.fanConversionCard;
         const card = { name: links.find(Array.isArray)[2], cards: [material] };
-        const info = get.info(card), range = lib.filter.selectTarget(card, player);
-        const automatic = !info.complexTarget && !info.complexSelect
-          && (info.notarget || range?.[1] === -1 || (range?.[0] === 0 && range?.[1] === 0));
         return {
           position: "e",
           filterCard: card => card === material,
@@ -115,10 +101,11 @@ export default {
           popname: true,
           direct: false,
           manualConfirm: true,
+          fan_cyno_fixed_target: true,
           filterOk() {
             if (!available(player) || !player.getCards("e").includes(material)
               || ui.selected.cards.length !== 1 || ui.selected.cards[0] !== material) return false;
-            return automatic ? confirmAutomatic() : true;
+            return true;
           },
           onuse(result, player) {
             player.removeCharge(1);

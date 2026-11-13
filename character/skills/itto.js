@@ -1,4 +1,4 @@
-import { game, lib, _status } from "../../../../noname.js";
+import { game, get, lib, _status } from "../../../../noname.js";
 
 export default {
   fan_guiwang_damage: { audio: "ext:原神/audio/itto/skill:true" },
@@ -24,13 +24,20 @@ export default {
           speak(event.triggername === "damageSource" ? "fan_guiwang_damage" : "fan_guiwang_hurt");
         }
         const movable = player.canMoveCard(null, true);
-        const full = player.countCharge() >= player.getMaxCharge();
-        const choices = ["摸牌"];
-        if (movable) choices.push("移动装备");
-        if (movable && full) choices.push("背水");
-        const choice = choices.length === 1 ? choices[0] : (await player.chooseControl(choices)
-          .set("prompt", "鬼王：选择一项")
-          .set("prompt2", false).set("ai", () => choices.includes("背水") ? "背水" : "摸牌").forResult()).control;
+        const full = () => player.countCharge() > 0 && player.countCharge() >= player.getMaxCharge();
+        const discardable = target => target.isIn() && target.countDiscardableCards(player, "hej") > 0;
+        const discardScore = target => get.effect(target, { name: "guohe" }, player, player);
+        const moveScore = movable ? Math.max(0, ...game.filterPlayer().flatMap(from =>
+          from.getCards("e").flatMap(card => game.filterPlayer(to => to !== from && !to.isMin() && to.canEquip(card, false))
+            .map(to => (get.value(card, to) * get.attitude(player, to) - get.value(card, from) * get.attitude(player, from)) / 20)))) : 0;
+        const discardScoreTotal = game.filterPlayer(discardable).reduce((sum, target) => sum + Math.max(0, discardScore(target)), 0);
+        const { links } = await player.chooseButton(["鬼王：选择一项", [["摸牌", "移动装备", "背水"], "textbutton"]], true)
+          .set("prompt2", false)
+          .set("filterButton", button => button.link === "摸牌" || (player.canMoveCard(null, true) && (button.link === "移动装备" || full())))
+          .set("ai", button => button.link === "摸牌" ? 2 : button.link === "移动装备" ? moveScore : 2 + moveScore + discardScoreTotal - 3)
+          .forResult();
+        const choice = links?.[0];
+        if (choice === "背水" && (!full() || !player.canMoveCard(null, true))) continue;
         if (choice === "背水") speak("fan_guiwang");
         if (choice === "摸牌" || choice === "背水") await player.draw();
         if ((choice === "移动装备" || choice === "背水") && player.isIn() && player.canMoveCard(null, true)) {
@@ -41,7 +48,17 @@ export default {
           });
           await move;
         }
-        if (choice === "背水" && player.isIn()) await player.draw();
+        if (choice === "背水" && player.isIn() && full()) {
+          player.removeCharge(player.countCharge());
+          if (!game.hasPlayer(discardable)) continue;
+          const { targets } = await player.chooseTarget("鬼王：选择要弃置其区域内牌的角色", [1, Infinity],
+            (card, owner, target) => target.countDiscardableCards(owner, "hej") > 0)
+            .set("prompt2", false).set("ai", discardScore).forResult();
+          for (const target of (targets || []).sortBySeat(_status.currentPhase || player)) {
+            if (!player.isIn()) break;
+            if (discardable(target)) await player.discardPlayerCard(target, "hej", true);
+          }
+        }
       }
     },
   },

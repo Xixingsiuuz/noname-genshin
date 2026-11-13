@@ -13,10 +13,11 @@ const skills = new Function("lib", "game", "get", "ui", "_status", "setZibaiEyes
   (lib, game, {}, {}, {}, () => {});
 const source = readFileSync(new URL("../extension.js", import.meta.url), "utf8")
   .replace(/^import .*;\r?\n/gm, "").replace(/^export const type = .*;\r?\n/m, "")
+  .replace(/^const localCustomization = .*;\r?\n/m, "const localCustomization = null;\n")
   .replace("export default function", "return function");
 const installMechanismCardStyle = () => {};
-const factory = new Function("createCharacterPackage", "createSkillPackage", "createCardPackage", "lib", "game", "ui", "_status", "installSelectionConfirm", "characterTitles", "installZibaiEyes", "installDetailPortraits", "installZibaiControlPrivacy", "installMoranFrost", "installSkillVoices", "get", "installMechanismCardStyle", "createUpdateChecker", "EXTENSION_VERSION", "installSharedZhinang", "installHuanyanReplay", "characterIntros", "smoothPortraits", "installWandererDeathAudio", source)
-  (() => ({}), () => ({ skill: skills }), () => ({}), lib, game, {}, {}, () => {}, {}, () => {}, () => {}, () => {}, () => {}, () => {}, {}, installMechanismCardStyle, () => ({ start() {} }), "0.2.0", () => {}, () => {}, {}, {}, () => {});
+const factory = new Function("createCharacterPackage", "createSkillPackage", "createCardPackage", "lib", "game", "ui", "_status", "installSelectionConfirm", "characterTitles", "installZibaiEyes", "installDetailPortraits", "installZibaiControlPrivacy", "installMoranFrost", "installSkillVoices", "get", "installMechanismCardStyle", "createUpdateChecker", "EXTENSION_VERSION", "installSharedZhinang", "installHuanyanReplay", "characterIntros", "smoothPortraits", "installWandererDeathAudio", "installCynoCardPrompt", "installPoptipStack", "installDerivedEquipSubtitle", "cynoPackArt", source)
+  (() => ({}), () => ({ skill: skills }), () => ({}), lib, game, {}, {}, () => {}, {}, () => {}, () => {}, () => {}, () => {}, () => {}, {}, installMechanismCardStyle, () => ({ start() {} }), "0.2.0", () => {}, () => {}, {}, {}, () => {}, () => {}, () => {}, () => {}, []);
 const extension = factory();
 extension.content();
 assert(!lib.skill.fan_zibai_record, "skill package has not yet been merged at this point");

@@ -1,4 +1,8 @@
-import spCitlaliSkills from "./skills/sp_citlali.js";
+import { cynoSoundSkill } from "../card/cyno-sound.js";
+import testSkills from "./skills/tester.js";
+import cynoSkills from "./skills/cyno.js";
+import alhaithamSkills from "./skills/alhaitham.js";
+import dehyaSkills from "./skills/dehya.js";
 import wandererSkills from "./skills/wanderer.js";
 import zhongliReworkSkills from "./skills/zhongli_rework.js";
 import spSandroneSkills from "./skills/sp_sandrone.js";
@@ -16,6 +20,7 @@ import kleeSkills from "./skills/klee.js";
 import eulaSkills from "./skills/eula.js";
 import keqingSkills from "./skills/keqing.js";
 import dilucSkills from "./skills/diluc.js";
+import tighnariSkills from "./skills/tighnari.js";
 import shenheSkills from "./skills/shenhe.js";
 import yelanSkills from "./skills/yelan.js";
 import yoimiyaSkills from "./skills/yoimiya.js";
@@ -55,6 +60,19 @@ import xianyunSkills from "./skills/xianyun.js";
 import chioriSkills from "./skills/chiori.js";
 import clorindeSkills from "./skills/clorinde.js";
 import zhuxingSkills from "../card/skill.js";
+import cynoCardSkills from "../card/cyno-skills.js";
+import { blueEyesSkills } from "../card/blue-eyes.js";
+import { stardustSkills } from "../card/stardust.js";
+import { utopiaSkills } from "../card/utopia.js";
+import { pendulumSkills } from "../card/pendulum.js";
+import { cyberseSkills } from "../card/cyberse.js";
+import { redEyesSkills } from "../card/red-eyes.js";
+import { cyberDragonSkills } from "../card/cyber-dragon.js";
+import { trainSkills } from "../card/trains.js";
+import { blackwingSkills } from "../card/blackwing.js";
+import { monarchSkills } from "../card/monarch.js";
+import { skyStrikerSkills } from "../card/sky-striker.js";
+import { sixSamuraiSkills } from "../card/six-samurai.js";
 import mualaniSkills from "./skills/mualani.js";
 import kinichSkills from "./skills/kinich.js";
 import chascaSkills from "./skills/chasca.js";
@@ -66,6 +84,10 @@ import albedoSkills from "./skills/albedo.js";
 import xiaoSkills from "./skills/xiao.js";
 
 export default {
+  ...testSkills,
+  ...cynoSkills,
+  ...alhaithamSkills,
+  ...dehyaSkills,
   ...wandererSkills,
   ...zhongliReworkSkills,
   ...sandroneSkills,
@@ -73,7 +95,6 @@ export default {
   ...nicoleSkills,
   ...linneaSkills,
   ...citlaliSkills,
-  ...spCitlaliSkills,
   ...monaSkills,
   ...qiqiSkills,
   ...jeanSkills,
@@ -86,6 +107,7 @@ export default {
   ...eulaSkills,
   ...keqingSkills,
   ...dilucSkills,
+  ...tighnariSkills,
   ...shenheSkills,
   ...yelanSkills,
   ...yoimiyaSkills,
@@ -129,4 +151,18 @@ export default {
   ...chioriSkills,
   ...clorindeSkills,
   ...zhuxingSkills,
+  ...cynoCardSkills,
+  fan_cyno_card_sound: cynoSoundSkill,
+  ...blueEyesSkills,
+  ...stardustSkills,
+  ...utopiaSkills,
+  ...pendulumSkills,
+  ...cyberseSkills,
+  ...redEyesSkills,
+  ...cyberDragonSkills,
+  ...trainSkills,
+  ...blackwingSkills,
+  ...monarchSkills,
+  ...sixSamuraiSkills,
+  ...skyStrikerSkills,
 };

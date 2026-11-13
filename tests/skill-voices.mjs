@@ -21,7 +21,7 @@ function collect(skills, prefix = "") {
 }
 const roles = [...new Set(JSON.parse(read("audio/catalog.json")).map(entry => entry.role || entry.path?.split("/")[1]).filter(Boolean))];
 const mechanisms = new Function('return ' + read('card/xianyun.js').match(/export const mechanisms = (\[[\s\S]*?\n\]);/)[1])();
-for (const role of [...roles, "venti", "linnea", "sp_sandrone", "sp_citlali"]) {
+for (const role of new Set([...roles, "alhaitham", "venti", "linnea", "sp_sandrone", "cyno", "tighnari"])) {
   const source = read("character/skills/" + role + ".js");
   collect(new Function("lib", "get", "game", "ui", "_status", "mechanisms", "standard", source
     .replace(/^import .*;\r?\n/gm, "").replace(/export async function/g, "async function").replace(/export function/g, "function").replace(/export const/g, "const")
@@ -34,8 +34,12 @@ lib.skill.rejiushi = { audio: 2 };
 const original = Audio.skill;
 const before = Object.fromEntries(Object.keys(lib.skill).map(id => [id, original.call(Audio, { skill: id }).fileList]));
 installSkillVoices(get);
+assert.equal(Audio.skill({ skill: "fan_bowu" }).textList.length, 4);
+assert.equal(Audio.skill({ skill: "fan_xunlin" }).textList.length, 6);
+assert.equal(Audio.skill({ skill: "fan_zhaohuan" }).textList.length, 18);
+assert.equal(Audio.skill({ skill: "fan_zhaohuan" }).fileList.length, 18);
 assert.deepEqual(skillVoiceGroups.fan_huanwu, ["fan_huanwu", "fan_huanwu_use_voice"]);
-for (const [skill, count] of [["fan_huanwu", 6], ["fan_miwen", 3], ["fan_wenbu", 3], ["fan_tongxuan", 3], ["fan_shiqi", 3]]) {
+for (const [skill, count] of [["fan_zhengyan", 5], ["fan_jipin", 4], ["fan_huanwu", 6], ["fan_miwen", 3], ["fan_wenbu", 3], ["fan_tongxuan", 3], ["fan_shiqi", 3]]) {
   assert.equal(Audio.skill({ skill }).fileList.length, count, skill + " detail pool count");
   assert.equal(Audio.skill({ skill }).textList.length, count, skill + " detail subtitle count");
 }
@@ -83,7 +87,7 @@ for (const [id, files] of Object.entries(before)) {
   assert.deepEqual(Audio.skill({ skill: id, info: undefined, args: undefined }).fileList, files, id + " playback unchanged");
 }
 const characters = loadedCharacters;
-for (const role of [...roles, "venti", "linnea"]) {
+for (const role of [...roles, "alhaitham", "venti", "linnea"]) {
   const characterId = role === "zhongli_rework" ? "fan_re_zhongli" : "fan_" + role;
   for (const id of characters[characterId][3]) assert(id in skillVoiceGroups, role + ":" + id);
   const die = characters[characterId][4].find(tag => tag.startsWith("die:"));

@@ -1,0 +1,45 @@
+import assert from'node:assert/strict';
+import{readFileSync,existsSync}from'node:fs';
+const read=p=>readFileSync(new URL(p,import.meta.url),'utf8');
+const ui={discardPile:{},selected:{cards:[],targets:[]}};
+const game={phaseNumber:1,hasPlayer:fn=>fn(target)};
+const get={name:c=>c.name};const lib={filter:{cardDiscardable:c=>!c.protected}};
+const{trainCards:cards,trainSkills:skills,sampleTrains:sample,shotCard}=new Function('game','get','lib','ui','const playCynoSound = () => {};\n'+read('../card/trains.js').replace(/^import.*;\r?\n/gm,'').replace(/export /g,'')+';return{trainCards,trainSkills,sampleTrains,shotCard};')(game,get,lib,ui);
+assert.equal(sample(()=>0).filter(c=>c.source==='pile').length,2);assert(sample(()=>0).slice(0,2).every(c=>c.name==='sha'));
+assert(sample(()=>.99).slice(0,3).every(c=>c.name==='tiesuo'));
+let rolls=[0,0,0,.4,0,.4,.9,.9];assert.deepEqual(sample(()=>rolls.shift()).slice(2).map(c=>c.name),['fan_potianjuai','fan_paotalieche','fan_zhunwuweijian']);
+for(const[name,c]of Object.entries(cards)){assert.equal(c.destroy,'discardPile');assert(existsSync(new URL('../'+c.image.replace('ext:原神/',''),import.meta.url)));}
+assert.equal(cards.fan_paotalieche.distance.attackFrom,-4);assert.equal(cards.fan_potianjuai.distance.attackFrom,-4);
+assert(shotCard({name:'sha'},{}));assert(!shotCard({name:'sha',protected:true},{}));assert(!shotCard({name:'shan'},{}));
+let damage=0,range=true;
+const target={isIn:()=>true,async damage(n){damage+=n}};
+const player={isIn:()=>true,inRange:()=>range};
+for(const id of ['fan_paotalieche_shoot','fan_potianjuai_shoot']){
+ const s=skills[id].fanFusionBase||skills[id];assert.equal(s.usable,1);assert.equal(s.manualConfirm,true);
+ ui.selected.cards=[];ui.selected.targets=[target];assert.equal(s.filterOk(),false);
+ ui.selected.cards=[{name:'sha'}];assert.equal(s.filterOk(),true);
+ ui.selected.targets=[];assert.equal(s.filterOk(),false);
+ await s.content({targets:[target]},null,player);
+}
+assert.equal(damage,2);range=false;await skills.fan_potianjuai_shoot.content({targets:[target]},null,player);assert.equal(damage,2);
+assert(cards.fan_potianjuai.skills.includes('fan_potianjuai_targets'));
+const targets=skills.fan_potianjuai_targets.mod.selectTarget;
+const shaRange=[1,1];targets({name:'sha'},player,shaRange);assert.deepEqual(shaRange,[1,Infinity]);
+const otherRange=[1,1];targets({name:'juedou'},player,otherRange);assert.deepEqual(otherRange,[1,1]);
+const allRange=[1,-1];targets({name:'sha'},player,allRange);assert.deepEqual(allRange,[1,-1]);
+let cancelled=false,discarded=false;
+const armor={name:'fan_zhunwuweijian'};
+await skills.fan_zhunwuweijian_guard.content({}, {num:5,cancel(){cancelled=true}}, {getEquip:()=>armor,getCards:()=>[armor],async lose(c,destination){assert.equal(c,armor);assert.equal(destination,ui.discardPile);discarded=true},$throw(c){assert(discarded);assert.equal(c,armor)}});
+assert(cancelled&&discarded);assert.equal(skills.fan_zhunwuweijian_guard.locked,true);
+assert.equal(skills.fan_huizhuandiaoche_limit.mod.maxHandcard({countMark:()=>4},3),7);
+const first={name:'fan_paotalieche'},second={name:'fan_paotalieche'};let current=first;range=true;
+Object.assign(player,{getEquip:()=>current,getCards:()=>[{name:'sha'}]});
+const turret=skills.fan_paotalieche_shoot;
+assert(turret.filter({},player));await turret.content({targets:[target]},null,player);assert(!turret.filter({},player));
+current=second;assert(turret.filter({},player));await turret.content({targets:[target]},null,player);assert(!turret.filter({},player));
+current=first;assert(!turret.filter({},player));
+await cards.fan_paotalieche.onEquip({cards:[first]});assert(turret.filter({},player),'同张牌离区再装备刷新');
+await turret.content({targets:[target]},null,player);assert(!turret.filter({},player));
+game.phaseNumber++;assert(turret.filter({},player));
+assert.equal(skills.fan_potianjuai_shoot.usable,1);
+console.log('PASS 列车：抽包升格、武器范围、联合确认、合法素材、实时范围、防止整次伤害及永久额度（模拟，非对局实测）');

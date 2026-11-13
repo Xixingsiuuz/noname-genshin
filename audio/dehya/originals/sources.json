@@ -1,0 +1,125 @@
+{
+  "page": "https://wiki.biligame.com/ys/%E8%BF%AA%E5%B8%8C%E9%9B%85%E8%AF%AD%E9%9F%B3",
+  "clips": [
+    {
+      "id": "fan_chizong1",
+      "label": "加入队伍·其三",
+      "text": "该开始干活了。",
+      "url": "https://patchwiki.biligame.com/images/ys/1/12/pamtgd00mruhyxphix5eiilnusnoc4h.mp3",
+      "bytes": 36699,
+      "original": "audio/dehya/originals/fan_chizong1.ogg",
+      "path": "audio/dehya/skill/fan_chizong1.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_chizong2",
+      "label": "元素战技·其一",
+      "text": "开打吧！",
+      "url": "https://patchwiki.biligame.com/images/ys/8/88/roltw4qupxiw1g9cb55eng8fuolzv7r.mp3",
+      "bytes": 25719,
+      "original": "audio/dehya/originals/fan_chizong2.ogg",
+      "path": "audio/dehya/skill/fan_chizong2.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_chizong3",
+      "label": "元素战技·其三",
+      "text": "一起上！",
+      "url": "https://patchwiki.biligame.com/images/ys/b/b6/6bgv98rsiu9mav3sv71cktvn1dzq0od.mp3",
+      "bytes": 23381,
+      "original": "audio/dehya/originals/fan_chizong3.ogg",
+      "path": "audio/dehya/skill/fan_chizong3.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_shixue_self1",
+      "label": "生命值低·其二",
+      "text": "该动真格的了！",
+      "url": "https://patchwiki.biligame.com/images/ys/c/cb/qmvni4rqxbsguglypf2dyne7kpc77zq.mp3",
+      "bytes": 36872,
+      "original": "audio/dehya/originals/fan_shixue_self1.ogg",
+      "path": "audio/dehya/skill/fan_shixue_self1.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_shixue_self2",
+      "label": "生命值低·其三",
+      "text": "这不是正好？",
+      "url": "https://patchwiki.biligame.com/images/ys/d/dc/ketx4nnsso3610hcsvzn6kwfngcdqjs.mp3",
+      "bytes": 39037,
+      "original": "audio/dehya/originals/fan_shixue_self2.ogg",
+      "path": "audio/dehya/skill/fan_shixue_self2.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_shixue_self3",
+      "label": "生命值低·其一",
+      "text": "哼…有点本事！",
+      "url": "https://patchwiki.biligame.com/images/ys/b/ba/q0g8qwde4hwmp5b9l7acasdlgttab6x.mp3",
+      "bytes": 50934,
+      "original": "audio/dehya/originals/fan_shixue_self3.ogg",
+      "path": "audio/dehya/skill/fan_shixue_self3.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_shixue_ally1",
+      "label": "同伴生命值低·其一",
+      "text": "稳住！别慌张！",
+      "url": "https://patchwiki.biligame.com/images/ys/5/51/1s3so652rk8tu3ubybt6ytftmxu8qhs.mp3",
+      "bytes": 39865,
+      "original": "audio/dehya/originals/fan_shixue_ally1.ogg",
+      "path": "audio/dehya/skill/fan_shixue_ally1.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_shixue_ally2",
+      "label": "同伴生命值低·其二",
+      "text": "退后，让我来！",
+      "url": "https://patchwiki.biligame.com/images/ys/7/7b/ruzswzqdhk172v6zflf88sb4i9w4fb6.mp3",
+      "bytes": 45647,
+      "original": "audio/dehya/originals/fan_shixue_ally2.ogg",
+      "path": "audio/dehya/skill/fan_shixue_ally2.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_shixue_ally3",
+      "label": "普通受击·其一",
+      "text": "小花招！",
+      "url": "https://patchwiki.biligame.com/images/ys/9/9d/rixhy0fxdo25nfwhzb0k039cgf4y7g9.mp3",
+      "bytes": 29091,
+      "original": "audio/dehya/originals/fan_shixue_ally3.ogg",
+      "path": "audio/dehya/skill/fan_shixue_ally3.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_dehya1",
+      "label": "倒下·其一",
+      "text": "这下…糟了…",
+      "url": "https://patchwiki.biligame.com/images/ys/a/a7/o00lvhctco0m4whhjttfvq9xzsj0zyd.mp3",
+      "bytes": 63359,
+      "original": "audio/dehya/originals/fan_dehya1.ogg",
+      "path": "audio/dehya/die/fan_dehya1.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_dehya2",
+      "label": "倒下·其二",
+      "text": "真是…大意了…",
+      "url": "https://patchwiki.biligame.com/images/ys/b/bf/beg6fgkhjt45u521t9o7vg2p75ncr2h.mp3",
+      "bytes": 61915,
+      "original": "audio/dehya/originals/fan_dehya2.ogg",
+      "path": "audio/dehya/die/fan_dehya2.mp3",
+      "trim_seconds": null
+    },
+    {
+      "id": "fan_dehya3",
+      "label": "倒下·其三",
+      "text": "佣兵的…宿命…",
+      "url": "https://patchwiki.biligame.com/images/ys/e/ef/ayrfh6oeuc89svfogd7s5lt3fveq92f.mp3",
+      "bytes": 83397,
+      "original": "audio/dehya/originals/fan_dehya3.ogg",
+      "path": "audio/dehya/die/fan_dehya3.mp3",
+      "trim_seconds": null
+    }
+  ]
+}

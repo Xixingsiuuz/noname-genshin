@@ -1,3 +1,4 @@
+import { selectConversionMaterial } from "../ui/conversion-material.js";
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 const read = path => readFileSync(new URL(path, import.meta.url), 'utf8');
@@ -16,13 +17,14 @@ const get = {
   effect: (t, card) => t.linkValue ?? 0, order: () => 5,
 };
 const lib = { inpile: ['equip1', 'equip2', 'equip3', 'equip4', 'equip5'] };
-const skills = new Function('game', 'get', 'lib', 'ui', '_status', 'setTimeout', read('../character/skills/ajax.js')
-  .replace(/^import .*;\r?\n/gm, '').replace('export default', 'return'))(game, get, lib, ui, status, callback => callback());
+const skills = new Function('game', 'get', 'lib', 'ui', '_status', 'setTimeout', 'selectConversionMaterial', read('../character/skills/ajax.js')
+  .replace(/^import .*;\r?\n/gm, '').replace('export default', 'return'))(game, get, lib, ui, status, callback => callback(), selectConversionMaterial);
 for (const [id, info] of Object.entries({ ...skills })) {
   for (const [sub, definition] of Object.entries(info.subSkill || {})) skills[id + '_' + sub] = definition;
 }
 const equip = { name: 'equip1', type: 'equip', value: 4 };
-const shaConvert = skills.fan_jingwu_sha.chooseButton.backup([equip, ['basic', '', 'sha', 'fire']]);
+status.event.fanConversionCard = equip;
+const shaConvert = skills.fan_jingwu_sha.chooseButton.backup([['basic', '', 'sha', 'fire']]);
 let dialogList;
 ui.create = { dialog(title, [list, type]) { assert.equal(type, 'vcard'); dialogList = list; return { add(cards) { assert(cards.every(card => card.type === 'equip')); } }; } };
 function actor() {
@@ -112,16 +114,22 @@ for (const nature of [undefined, 'fire', 'thunder', 'ice']) {
 }
 const combinedChoice = skills.fan_jingwu_sha.chooseButton;
 status.event = { player, getParent: () => selection };
-const equipButton = { link: equip }, natureButton = { link: ['basic', '', 'sha', 'fire'] };
-ui.selected.buttons = []; assert(combinedChoice.filter(equipButton, player)); assert(combinedChoice.filter(natureButton, player));
-ui.selected.buttons = [equipButton]; assert(!combinedChoice.filterOk()); assert(combinedChoice.filter(natureButton, player));
-ui.selected.buttons = [natureButton]; assert(!combinedChoice.filterOk()); assert(combinedChoice.filter(equipButton, player));
-ui.selected.buttons = [natureButton, equipButton]; assert(combinedChoice.filterOk());
-assert(!combinedChoice.filter({ link: ['basic', '', 'sha', 'thunder'] }, player), 'only one nature may be selected');
-player.hand = []; assert(!combinedChoice.filterOk()); assert(!shaConvert.viewAsFilter(player));
-assert(!shaConvert.filterCard({ name: 'equip2', type: 'equip' }, player), 'cannot substitute another equipment');
-player.hand = [equip]; ui.selected.buttons = []; assert(!combinedChoice.filterOk());
-assert.equal(combinedChoice.select, 2, 'two buttons require manual confirmation in the native selection checker');
+const natureButton = { link: ['basic', '', 'sha', 'fire'] };
+assert(combinedChoice.filter(natureButton, player));
+assert.equal(status.event.position, "he");
+ui.selected.buttons = [natureButton];
+ui.selected.cards = [];
+assert(!combinedChoice.filterOk());
+ui.selected.cards = [equip];
+assert(combinedChoice.filterOk());
+ui.selected.buttons = [];
+assert(!combinedChoice.filterOk());
+ui.selected.buttons = [natureButton];
+assert(combinedChoice.filterOk());
+player.hand = [];
+assert(!combinedChoice.filterOk());
+assert(!shaConvert.viewAsFilter(player));
+player.hand = [equip];
 status.event = { player, skill: 'fan_jingwu_sha' };
 assert(!skills.fan_jingwu_effect.filter({ skill: 'unrelated_backup' }));
 assert(skills.fan_jingwu_effect.filter({ skill: 'fan_jingwu_sha_backup' }));

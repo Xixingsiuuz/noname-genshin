@@ -6473,5 +6473,221 @@
     "path": "audio/ganyu/skill/fan_liutian_sha3.mp3",
     "bytes": 3860,
     "sha256": "b9961f3fa26e091fdee1438906825f9bb51bb314049f0519c587b3100aad6e30"
-  }
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_pack1.ogg",
+    "bytes": 33910,
+    "sha256": "caa8ac930c50499644ba1a89506740da77dd6b2ea28dd287cc2d1777014ea2eb"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_pack2.ogg",
+    "bytes": 58165,
+    "sha256": "331edc2eff6f714a2b7a9b4bda7bbae5f626675a624ea28cc3410b4156b2716f"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_pack3.ogg",
+    "bytes": 35484,
+    "sha256": "7e1df20da06d290a2b4bad1fc73a3f16bd28e0b07ca4795845e82c173e694784"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_pack4.ogg",
+    "bytes": 47210,
+    "sha256": "48dc618249287dcd50d399f52500440d88df0985a8a236d4e42810bc8c124bd9"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_pack5.ogg",
+    "bytes": 33042,
+    "sha256": "1cf4d9a1a04d505b1f4d9c431370e414b4b8d0fc42a82ee9048b342b0c3b8e63"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_negate1.ogg",
+    "bytes": 12528,
+    "sha256": "8c55572715f932523122cc386541fe0cecf5552a4355e5a58636df70da370c32"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_negate2.ogg",
+    "bytes": 10415,
+    "sha256": "d13b3079a3dca74d01034d24e3b8617720379fb44f4c91622c9eb2c4d171fac7"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_negate3.ogg",
+    "bytes": 12655,
+    "sha256": "4aee8d58e93a67145fac82f739d68e7ea98556ed80f83fe25692732b1ffb0daa"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_damage1.ogg",
+    "bytes": 24440,
+    "sha256": "85660670e61f78aa4bb5372f5803a78ff5800af2002cffa8835a658a289f600e"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_damage2.ogg",
+    "bytes": 25742,
+    "sha256": "860734f8ae3d66bc78af50af0256a1dd6d39ac5bfcedff060ae99a41c1cd6493"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_damage3.ogg",
+    "bytes": 24475,
+    "sha256": "da5f14d733cdf0255728b3a03fb47a8c756066ddaea5d83afbfb881a5f669e9f"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_other1.ogg",
+    "bytes": 11850,
+    "sha256": "9c61f95407eb160d7195b934cf2e50fbc040638b08d65a021f41484eb9a0e793"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_other2.ogg",
+    "bytes": 11474,
+    "sha256": "1730829f9d6db9fcfc7c878c243005457db21c2dd5a7895de1717e9c321ad20c"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_other3.ogg",
+    "bytes": 11489,
+    "sha256": "e3ce9f5366947587ee00c9203febe8d20c93eb2d0f493095f956616ca90bf098"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_self1.ogg",
+    "bytes": 31628,
+    "sha256": "e37100f3e677ff05b07c333668016162bbbff53f93a6eb90283575de9a3f5f6b"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_self2.ogg",
+    "bytes": 27582,
+    "sha256": "4269149e6ec510e885030f371e77551b6c4d1a765660e0435a82a1bac4bc0724"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_self3.ogg",
+    "bytes": 10860,
+    "sha256": "9e46ef247f04204e5a60d1c341687a4952293c5c147a1c67472602dd6eef3fba"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/die/fan_cyno1.ogg",
+    "bytes": 26080,
+    "sha256": "2902c1570d3ca0e4b2338c3a982086d17c805332595c48335028234c0d6b6877"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/die/fan_cyno2.ogg",
+    "bytes": 54024,
+    "sha256": "981566099d0c5182dc297c7a7936ceea9c2c696b3c896a06265d3b3dbbae1af5"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/die/fan_cyno3.ogg",
+    "bytes": 30938,
+    "sha256": "c8dfa32c02dc0de4576ff0aaad92e45e7f1c21070a0296768ce083cad59e27d0"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_lengfeng1.mp3",
+    "bytes": 90559,
+    "sha256": "f1c1fb6878ba0d4504d9b136facaf284fcc4641ee83b09cf77f3da5f8f1adddf"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_lengfeng2.mp3",
+    "bytes": 140100,
+    "sha256": "ecc53049719002f9e854f53b13a3166b99fb2bc3049116a662ca820be124e147"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_lengfeng3.mp3",
+    "bytes": 108420,
+    "sha256": "20d273204f334fae27d5ef4c46c002033fd5f1d22c7be5a3fe2d536142bcb949"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_lengfeng4.mp3",
+    "bytes": 162564,
+    "sha256": "75e5373f159aa9cd94963bb0d07356b162640662d57938683b077ba1b3d494e8"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_lengfeng5.mp3",
+    "bytes": 57151,
+    "sha256": "b991f929c286ff556164636997ebfc42e0d82a6dd0c8b79b5d21f635bcd4d054"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_lengfeng6.mp3",
+    "bytes": 145284,
+    "sha256": "5178c690d80b3da3eece9cf058caaea208cf461b688e67ff30f3d1e100c4ab7c"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_lengfeng7.mp3",
+    "bytes": 89404,
+    "sha256": "6a986e7ce50beb4e4c2378b6732ffa3fe9b898e6646af47cf7b662f1c95ccca1"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_lengfeng8.mp3",
+    "bytes": 120516,
+    "sha256": "e5bec470e3311dc32421c236f63d7cc7fe87e4d7870f5e084da206f1349031f5"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_lengfeng9.mp3",
+    "bytes": 84793,
+    "sha256": "8fdf73ceaee0d47a6a48374fe67682127e7df5d6cbe359a3d8c38f3f66a8db9a"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_lengfeng10.mp3",
+    "bytes": 81207,
+    "sha256": "a55ad95c8a8b455f999cb8123f1ce5cd0b0cdd1aa6d3cc4cef3a991645392ecd"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_lengfeng11.mp3",
+    "bytes": 88254,
+    "sha256": "d2621586015b486ce58b0e7087bcb615878b7c8e0843e16e1117ee357c1ceaa4"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_lengfeng12.mp3",
+    "bytes": 99146,
+    "sha256": "ca80082818a6fcca197a4b450ede90505133055f27806df2c048a76768297ab0"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_lengfeng13.mp3",
+    "bytes": 96317,
+    "sha256": "b69b95049e854469caf0ad446e6ccaf9f606ba266fe0827b41f336b3b05eb7c8"
+  },
+  {
+    "role": "cyno",
+    "path": "audio/cyno/skill/fan_zhaohuan_open1.mp3",
+    "bytes": 260479,
+    "sha256": "e2c71a125cf0cfc4f18360db0ada08e377de95aa3ce9f2462b156155bf499b1a"
+  },
+  {"role": "dehya", "path": "audio/dehya/skill/fan_chizong1.mp3", "bytes": 13004, "sha256": "60e7b6f17ec0730b27c1d533fa33a2f6e92c5a6dced6ce8310c9abbce0321cba"},
+  {"role": "dehya", "path": "audio/dehya/skill/fan_chizong2.mp3", "bytes": 9740, "sha256": "432d016ce88a284fc351edfab2416fca5c580f778a4f0729d773ed90fe09e662"},
+  {"role": "dehya", "path": "audio/dehya/skill/fan_chizong3.mp3", "bytes": 8252, "sha256": "05cc9f923b9ffe97b97a6153419bd3eae5c9f84f008bac1f4d1461c6be3601a4"},
+  {"role": "dehya", "path": "audio/dehya/skill/fan_shixue_self1.mp3", "bytes": 14924, "sha256": "b547c330e17792d09390cfcdb1f2041c9fc7b15be3e8f02fab05fae6357e4a70"},
+  {"role": "dehya", "path": "audio/dehya/skill/fan_shixue_self2.mp3", "bytes": 14228, "sha256": "bc0dc762c545b6f898bdc31c8c0ecc5e2c6d14bf2a33fcfae486b0abebc795e5"},
+  {"role": "dehya", "path": "audio/dehya/skill/fan_shixue_self3.mp3", "bytes": 20180, "sha256": "ed4aadddc1269c32c9dbfcb332c8c5a65b501885f15e6fd481ea00a155dd4ff8"},
+  {"role": "dehya", "path": "audio/dehya/skill/fan_shixue_ally1.mp3", "bytes": 14468, "sha256": "14bd8af5af0822f99cef123c369749cbb5d1fda5e266f26bd4f9f814fc278836"},
+  {"role": "dehya", "path": "audio/dehya/skill/fan_shixue_ally2.mp3", "bytes": 15884, "sha256": "635ebee509768d208dcc6f98d568a1e496d8d2ec9a61718f1db81c92b184a35f"},
+  {"role": "dehya", "path": "audio/dehya/skill/fan_shixue_ally3.mp3", "bytes": 10724, "sha256": "62a6de7614ecd806f4fbd204428eaad11a79ff52bfd6ac5fccc73336900fb652"},
+  {"role": "dehya", "path": "audio/dehya/die/fan_dehya1.mp3", "bytes": 24572, "sha256": "1695ff74b6b154c069343f524152228d76a315fde098f115a4cbb71e2d93ca3e"},
+  {"role": "dehya", "path": "audio/dehya/die/fan_dehya2.mp3", "bytes": 23972, "sha256": "d2e82fe9f44f584364009a79f92a29f76aeac8b81682720aefb765b83658ab34"},
+  {"role": "dehya", "path": "audio/dehya/die/fan_dehya3.mp3", "bytes": 31916, "sha256": "104a36eb4e792a7d53b27da6fbc1d0cc7ba98340de666f2f0f937f627ec120f9"}
 ]

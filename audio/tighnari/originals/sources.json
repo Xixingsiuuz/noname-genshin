@@ -1,0 +1,96 @@
+[
+  {
+    "entry": "闲聊·犯错",
+    "url": "https://genshin-impact.fandom.com/wiki/File:VO_ZH_Tighnari_Chat_-_Mistakes.ogg",
+    "bytes": 44689,
+    "file": "audio/tighnari/skill/fan_bowu_mistakes.ogg",
+    "original": "audio/tighnari/originals/VO_ZH_Tighnari_Chat_-_Mistakes.ogg",
+    "trim": null
+  },
+  {
+    "entry": "闲聊·知识的价值",
+    "url": "https://patchwiki.biligame.com/images/ys/6/67/smiobmb2paedfc26po671khvbn0sqh3.mp3",
+    "bytes": 119997,
+    "file": "audio/tighnari/skill/fan_bowu_knowledge.mp3",
+    "trim": null,
+    "original": "audio/tighnari/originals/fan_bowu.mp3",
+    "gain_db": 5
+  },
+  {
+    "entry": "加入队伍·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/d/d7/9wt1333rpsrp6zm1zb0e18yg4i5e9wr.mp3",
+    "bytes": 46129,
+    "file": "audio/tighnari/skill/fan_bowu_draw1.mp3",
+    "trim": null
+  },
+  {
+    "entry": "加入队伍·其三",
+    "url": "https://patchwiki.biligame.com/images/ys/8/81/p7guapnekev23g027tp1mpnsgmmxq8y.mp3",
+    "bytes": 57397,
+    "file": "audio/tighnari/skill/fan_bowu_draw2.mp3",
+    "trim": null
+  },
+  {
+    "entry": "元素战技·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/f/f0/cy5epah1e4s8v2iob4wkw6nbv3x0cet.mp3",
+    "bytes": 37365,
+    "file": "audio/tighnari/skill/fan_xunlin_skill1.mp3",
+    "trim": null
+  },
+  {
+    "entry": "元素战技·其二",
+    "url": "https://patchwiki.biligame.com/images/ys/2/29/qg3p3t1ytm2ooxvhlgbwkermhuvtqns.mp3",
+    "bytes": 39869,
+    "file": "audio/tighnari/skill/fan_xunlin_skill2.mp3",
+    "trim": null
+  },
+  {
+    "entry": "元素战技·其三",
+    "url": "https://patchwiki.biligame.com/images/ys/6/62/26jhh35prfdmwixbz1frw0oqlkaamyj.mp3",
+    "bytes": 44877,
+    "file": "audio/tighnari/skill/fan_xunlin_skill3.mp3",
+    "trim": null
+  },
+  {
+    "entry": "元素爆发·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/5/5d/d2mc3ehqi0aum1wef2hrbuqz6xcnz05.mp3",
+    "bytes": 51763,
+    "file": "audio/tighnari/skill/fan_xunlin_burst1.mp3",
+    "trim": null
+  },
+  {
+    "entry": "元素爆发·其二",
+    "url": "https://patchwiki.biligame.com/images/ys/4/40/ntuuvjklj2sq1o49ueicwgxkqrjkwc2.mp3",
+    "bytes": 52389,
+    "file": "audio/tighnari/skill/fan_xunlin_burst2.mp3",
+    "trim": null
+  },
+  {
+    "entry": "元素爆发·其三",
+    "url": "https://patchwiki.biligame.com/images/ys/f/f6/5bcqznabrm2j1rl714p2hfcxa13uvca.mp3",
+    "bytes": 64909,
+    "file": "audio/tighnari/skill/fan_xunlin_burst3.mp3",
+    "trim": null
+  },
+  {
+    "entry": "倒下·其一",
+    "url": "https://patchwiki.biligame.com/images/ys/d/d0/k9syoah9cryursmf2p5ux9ni6xgi32j.mp3",
+    "bytes": 98713,
+    "file": "audio/tighnari/die/fan_tighnari1.mp3",
+    "trim": null
+  },
+  {
+    "entry": "倒下·其二",
+    "url": "https://patchwiki.biligame.com/images/ys/3/32/meo5xnu7py7g22g9oswomawgfmngci1.mp3",
+    "bytes": 104347,
+    "file": "audio/tighnari/die/fan_tighnari2.mp3",
+    "trim": null
+  },
+  {
+    "entry": "倒下·其三",
+    "url": "https://patchwiki.biligame.com/images/ys/a/af/s1hvzllryrfgftzwfi3yg7cbuv8p2jz.mp3",
+    "bytes": 99965,
+    "file": "audio/tighnari/die/fan_tighnari3.mp3",
+    "trim": null
+  }
+]

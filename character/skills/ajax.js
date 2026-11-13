@@ -1,3 +1,4 @@
+import { selectConversionMaterial } from "../../ui/conversion-material.js";
 import { game, get, lib, ui, _status } from "../../../../noname.js";
 
 const stages = ["获得手牌", "造成伤害", "摸两张牌"];
@@ -104,27 +105,23 @@ function attackConversion() {
     },
     filter: (event, player) => base.viewAsFilter(player) && attackChoices(event, player).length > 0,
     chooseButton: {
-      dialog(event, player) {
-        const dialog = ui.create.dialog("精武：选择装备牌和杀的属性", [attackChoices(event, player), "vcard"]);
-        dialog.add(player.getCards("he").filter(card => material(card, player)));
-        return dialog;
-      },
-      select: 2,
-      filter(button, player) {
-        const choice = _status.event;
-        choice.fanPairedConfirm = true;
-        const isNature = Array.isArray(button.link);
-        if (ui.selected.buttons.some(other => other !== button && Array.isArray(other.link) === isNature)) return false;
-        if (!isNature) return player.getCards("he").includes(button.link) && material(button.link, player);
-        return attackChoices(choice.getParent(), player).some(link => link[3] === button.link[3]);
+      dialog: (event, player) => ui.create.dialog("精武：选择装备牌和杀的属性", [attackChoices(event, player), "vcard"]),
+      select: [0, 1],
+      filter() {
+        const event = _status.event;
+        selectConversionMaterial(event, game, ui, _status, "he", (card, player) =>
+          player.getCards("he").includes(card) && material(card, player)
+          && game.checkMod(card, player, "unchanged", "cardEnabled2", player) !== false,
+          (button, card, player) => (event.getParent().type === 'phase' ? player.getUseValue({name: 'sha', nature: button.link[3]}) : 8) + 3 - materialCost(card, player));
+        return true;
       },
       filterOk() {
-        const player = _status.event.player;
-        const links = ui.selected.buttons.map(button => button.link);
-        const card = links.find(link => !Array.isArray(link));
-        const nature = links.find(Array.isArray);
-        return links.length === 2 && !!card && !!nature && player.getCards("he").includes(card)
-          && material(card, player) && attackChoices(_status.event.getParent(), player).some(link => link[3] === nature[3]);
+        const event = _status.event;
+        const card = ui.selected.cards[0];
+        const valid = ui.selected.buttons.length === 1 && ui.selected.cards.length === 1
+          && event.filterCard(card, event.player);
+        event.getParent().fanConversionCard = valid ? card : undefined;
+        return valid;
       },
       check(button) {
         const player = get.player();
@@ -138,7 +135,8 @@ function attackConversion() {
           + bonus(player, target) * 5 + projectedChain(card, player, target))) : player.getUseValue(card);
       },
       backup(links) {
-        const card = links.find(link => !Array.isArray(link));
+        const card = _status.event.fanConversionCard;
+        delete _status.event.fanConversionCard;
         const nature = links.find(Array.isArray)?.[3];
         const valid = player => player.getCards("he").includes(card) && material(card, player);
         return { ...conversion("sha"), enable: undefined, direct: false,

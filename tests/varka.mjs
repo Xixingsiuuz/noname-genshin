@@ -41,6 +41,28 @@ await slot.content({}, null, player);
 assert.equal(slots, 1);
 assert(!slot.filter({ name: "enterGame" }, player));
 
+// 中途获得：直接执行本地addSkillTrigger，确认原生挂载会调用init。
+const nativePlayer=readFileSync(new URL('../../../noname/library/element/player.js',import.meta.url),'utf8');
+const hookStart=nativePlayer.indexOf('  addSkillTrigger(skills, hidden, triggeronly) {');
+const hookEnd=nativePlayer.indexOf('\n  addSkillLog(',hookStart);
+lib.skill={...skills,fan_shuofeng_slot:slot};
+game.expandSkills=list=>{if(list.includes('fan_shuofeng')&&!list.includes('fan_shuofeng_slot'))list.push('fan_shuofeng_slot');return list;};
+status.event={clearStepCache(){}};
+const addSkillTrigger=new Function('lib','game','_status','return ({'+nativePlayer.slice(hookStart,hookEnd)+'}).addSkillTrigger;')(lib,game,status);
+game.phaseNumber=3;
+let extra=0,pending=[];
+const acquired={storage:{},initedSkills:[],expandEquip(n){assert.equal(n,1);pending.push(()=>{extra+=n;});return{};}};
+addSkillTrigger.call(acquired,'fan_shuofeng');assert.equal(pending.length,1,'中途获得立即排队扩栏');
+assert(!slot.filter({name:'enterGame'},acquired));
+skills.fan_shuofeng.init(acquired);addSkillTrigger.call(acquired,'fan_shuofeng');assert.equal(pending.length,1,'扩栏尚未完成时重复初始化也不重复');
+pending.shift()();assert.equal(extra,1);
+game.phaseNumber=4;skills.fan_shuofeng.init(acquired);assert.equal(pending.length,0,'回合切换不重复扩栏');
+game.phaseNumber=0;
+const initial={storage:{},expandEquip(n){extra+=n;}};
+skills.fan_shuofeng.init(initial);assert(!initial.storage.fan_shuofeng_slot,'开局保留原有触发时机');
+await slot.content({},null,initial);assert.equal(extra,2);
+skills.fan_shuofeng.init(initial);assert(!slot.filter({name:'enterGame'},initial));
+
 assert(skills.fan_xijuan.filterCard(material, player));
 await skills.fan_xijuan.content({ cards: [material] }, null, player);
 const weapon = equipped[0];
