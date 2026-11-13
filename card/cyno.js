@@ -1,3 +1,4 @@
+import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import { playCynoSound } from "./cyno-sound.js";
 import { game, get } from "../../../noname.js";
 import { sampleDarkMagician } from "./qisheng-pool.js";
@@ -13,7 +14,7 @@ export const cynoCardFaces = Object.freeze({
 const base = { derivation: "fan_cyno", destroy: "discardPile" };
 const trick = { ...base, type: "trick", enable: true };
 function equipment(subtype, skill) {
-  return { ...base, type: "equip", subtype, skills: [skill], enable: true,
+  return { ...base, type: "equip", subtype, skills: [].concat(skill), enable: true,
     selectTarget: -1, toself: true, modTarget: true,
     filterTarget: (card, player, target) => player === target && target.canEquip(card, true),
     async content(event) { await event.target.equip(event.cards[0]); },
@@ -34,11 +35,11 @@ export const cynoCards = {
           else pileCards.push(...get.cards(1));
       }
       game.updateRoundNumber();
-      if (pileCards.length) await player.gain(pileCards, "draw");
+      if (pileCards.length) await gainCynoPackCards(player, pileCards, "draw", (event.cards?.length === 1 ? event.cards[0] : event.card));
       if (!player.isIn()) return;
       const derived = plan.filter(item => item.source === "derived").map(item =>
-        game.createCard(item.name, ...cynoCardFaces[item.name]));
-      if (derived.length) await player.gain(derived, "draw");
+        createCynoReward(game, (event.cards?.length === 1 ? event.cards[0] : event.card), item.name, ...cynoCardFaces[item.name]));
+      if (derived.length) await gainCynoPackCards(player, derived, "draw");
     },
     ai: { order: 10, value: 10, useful: 10, result: { target: 5 } },
   },
@@ -48,7 +49,7 @@ export const cynoCards = {
     ...base, type: "trick", global: ["fan_heimoshushi_rule", "fan_modaoqishi_reward"],
     ai: { value: 9, useful: 9 },
   },
-  fan_yongyuanzhihun: { ...equipment("equip5", "fan_yongyuanzhihun_skill"),
+  fan_yongyuanzhihun: { ...equipment("equip5", ["fan_yongyuanzhihun_skill", "fan_yongyuanzhihun_wuxie"]),
     forceDie: true, async onLose(event, trigger, player) { playCynoSound("addcounter"); await player.loseHp(); } },
   fan_heimodaozhen: equipment("equip2", "fan_heimodaozhen_skill"),
 };
@@ -57,6 +58,7 @@ export const cynoCardTranslate = {
   fan_heimoshushi_rule: "黑魔术师",
   fan_heimoshushi_rule_info: "将一张黑魔术师或魔导骑士当【无懈可击】使用。",
   fan_yongyuanzhihun_skill: "永远之魂",
+  fan_yongyuanzhihun_wuxie: "永远之魂",
   fan_heimodaozhen_skill: "黑魔导阵",
   fan_heimoshumiyi: "黑魔术秘仪", fan_heimoshumiyi_info: "出牌阶段，对你自己使用。你随机获得五张【黑魔术师】卡组相关的牌。",
   fan_heimoshushi: "黑魔术师", fan_heimoshushi_info: "此牌不计入手牌上限，可以当【无懈可击】使用。",

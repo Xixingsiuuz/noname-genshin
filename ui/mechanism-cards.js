@@ -95,6 +95,34 @@ export function installMechanismCardStyle() {
   style.textContent += trickCards.map(card => `.dialog .buttons > ${card}.button > .name.long`).join(",\n") +
     " { top: 50%; translate: 0 -50%; }";
   style.textContent += `
+    @keyframes fan-cyno-packs-fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    #arena > .dialog.fan-cyno-packs,
+    #window > .dialog.fan-cyno-packs,
+    .dialog.fan-cyno-packs {
+      /* Dialog.open writes its scale and transition inline. */
+      transform: none !important;
+      animation: fan-cyno-packs-fade 0.3s ease-out;
+      transition-property: opacity !important;
+    }
+    .dialog.fan-cyno-packs .buttons > .card.button,
+    .dialog.fan-cyno-packs .buttons > .card.button > .image {
+      animation: none;
+      transition-property: opacity !important;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #arena > .dialog.fan-cyno-packs,
+      #window > .dialog.fan-cyno-packs,
+      .dialog.fan-cyno-packs { animation: none; }
+    }
+    #arena > .dialog.fan-cyno-packs.removing,
+    #window > .dialog.fan-cyno-packs.removing {
+      animation: none;
+      opacity: 0;
+      transition-property: opacity !important;
+    }
     .dialog.fan-cyno-packs .buttons {
       display: grid;
       grid-template-columns: repeat(7, minmax(0, 1fr));

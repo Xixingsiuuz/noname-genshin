@@ -1,3 +1,4 @@
+import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import { playCynoSound } from "./cyno-sound.js";
 import{game,get,lib,ui}from"../../../noname.js";
 export const trainFaces={fan_chaonujilieche:["spade",13],fan_huizhuandiaoche:["spade",1],fan_paotalieche:["spade",10],fan_potianjuai:["spade",11],fan_zhunwuweijian:["spade",4]};
@@ -11,7 +12,7 @@ function equipment(subtype,skill,value){return{type:"equip",subtype,skills:[skil
 export const trainCards={
  fan_chaonujilieche:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
   const plan=sampleTrains(),cards=[];for(const item of plan.filter(i=>i.source==="pile")){const card=get.cardPile2(c=>c.name===item.name);if(card){card.remove();card.original="c";cards.push(card)}else cards.push(...get.cards(1));}
-  game.updateRoundNumber();if(cards.length)await player.gain(cards,"draw");if(player.isIn())await player.gain(plan.filter(i=>i.source==="derived").map(i=>game.createCard(i.name,...trainFaces[i.name])),"draw");
+  game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));if(player.isIn())await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...trainFaces[i.name])),"draw");
  }},
  fan_huizhuandiaoche:{...self,filter:(c,p)=>p.getCards("he").some(card=>card!==c&&lib.filter.cardDiscardable(card,p)),
   async content(event,trigger,player){

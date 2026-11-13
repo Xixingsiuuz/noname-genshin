@@ -1,3 +1,4 @@
+import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import{game,get,lib,ui,_status}from"../../../noname.js";
 import{monarchFaces,sampleMonarch,sampleHeavenlyMonarch}from"./monarch-data.js";
 const self={type:"trick",enable:true,selectTarget:-1,toself:true,filterTarget:(c,p,t)=>p===t};
@@ -13,8 +14,8 @@ export const monarchCards={
  fan_fanshenzhidiwang:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
   const plan=sampleMonarch(),cards=[];
   for(const item of plan.filter(i=>i.source==="pile")){const c=get.cardPile2(c=>c.name===item.name);if(c){c.remove();c.original="c";cards.push(c);}else cards.push(...get.cards(1));}
-  game.updateRoundNumber();if(cards.length)await player.gain(cards,"draw");
-  if(player.isIn())await player.gain(plan.filter(i=>i.source==="derived").map(i=>game.createCard(i.name,...monarchFaces[i.name])),"draw");
+  game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));
+  if(player.isIn())await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...monarchFaces[i.name])),"draw");
  }},
  fan_tiandi:{...self,ai:{order:8,value:8,result:{target:2}},async content(event,trigger,player){
   const shown=sampleHeavenlyMonarch(Array.from(ui.cardPile.childNodes));if(!shown.length)return;

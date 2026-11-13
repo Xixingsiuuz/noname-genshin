@@ -1,3 +1,4 @@
+import { installCynoRarity } from "./ui/cyno-rarity.js";
 import { installWandererDeathAudio } from "./ui/wanderer-voices.js";
 import { createUpdateChecker, EXTENSION_VERSION } from "./ui/update-check.js";
 import { installHuanyanReplay } from "./ui/huanyan-effect.js";
@@ -16,7 +17,7 @@ import { installZibaiControlPrivacy } from "./ui/zibai-control-privacy.js";
 import { installSkillVoices } from "./ui/skill-voices.js";
 import { get } from "../../noname.js";
 import { installMechanismCardStyle } from "./ui/mechanism-cards.js";
-import { cynoPackArt } from "./character/skills/cyno.js";
+import { cynoPackArt, installCynoPackReplay } from "./character/skills/cyno.js";
 import { sortExtensionHandcards } from "./ui/auto-sort-handcards.js";
 import { installCynoCardPrompt } from "./ui/cyno-card-prompt.js";
 import { installPoptipStack } from "./ui/poptip-stack.js";
@@ -58,6 +59,7 @@ function hideNativeMenuBar() {
 export const type = "extension";
 
 export default function () {
+  const inConnectMode = () => _status.connectMode || game.online || lib.config.mode === "connect";
   const updater = createUpdateChecker(game);
   const extension = {
     name: "原神",
@@ -108,6 +110,7 @@ export default function () {
         lib.hooks.checkEnd.push(submit);
       }
       installHuanyanReplay(game);
+      installCynoPackReplay();
       installMechanismCardStyle();
       installSkillVoices(get);
       installMoranFrost(lib);
@@ -140,6 +143,7 @@ export default function () {
       registerLocalSkills?.();
     },
     precontent() {
+      installCynoRarity(get, lib, ui, game, () => inConnectMode() ? null : game.getExtensionConfig("原神", "cyno_rarity"));
       const hideMenuBar = !!game.getExtensionConfig("原神", "hide_native_menu_bar");
       saveNativeMenuBarPreference(hideMenuBar);
       if (hideMenuBar) hideNativeMenuBar();
@@ -184,6 +188,16 @@ export default function () {
         onclick(value) {
           game.saveExtensionConfig("原神", "auto_sort_handcards", value);
           if (value) sortLocalHandcards();
+        },
+      },
+      cyno_rarity: {
+        name: "召唤王卡牌罕贵度",
+        intro: "仅单机生效，修改为默认以外的选项后，获得的召唤王卡牌必定具有该罕贵度。召唤王卡牌来源于赛诺。",
+        init: "random",
+        item: { random: "默认", normal: "普通", gold: "金闪", mirror: "镜碎", holo: "全息" },
+        onclick(value) {
+          if (inConnectMode() && value !== "random") return false;
+          game.saveExtensionConfig("原神", "cyno_rarity", value);
         },
       },
     },

@@ -30,7 +30,7 @@ const deckTips = [
   ["黑羽", "fan_qiheizhixuanfeng", blackwingCards, [], "黑色【杀】、黑色非【杀】牌"],
   ["真帝王", "fan_fanshenzhidiwang", monarchCards, ["sha", "guohe"]],
   ["闪刀", "fan_shandaozhijilve", skyStrikerCards, ["shan", "tao"]],
-  ["六武众", "fan_liuwuzhijiezhen", sixSamuraiCards, ["sha", "taoyuan"]],
+  ["六武众", "fan_liuwuzhijiezhen", sixSamuraiCards, ["sha", "juedou"]],
 ];
 
 // Card packs may not have registered their translations when this package is built.

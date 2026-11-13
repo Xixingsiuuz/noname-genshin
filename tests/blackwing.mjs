@@ -1,3 +1,4 @@
+import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import assert from'node:assert/strict';
 import{readFileSync,existsSync}from'node:fs';
 const read=p=>readFileSync(new URL(p,import.meta.url),'utf8');
@@ -17,7 +18,7 @@ Object.defineProperty(Array.prototype,'sortBySeat',{configurable:true,value(){re
 const get={color:c=>c.color,position:c=>c.position,name:c=>c.name,type:c=>c.type,value:()=>2,order:()=>5};
 const lib={card:{fan_ronghe_test:{source:['fan_ronghe','fan_chongzhuangkaiyi']}},filter:{cardDiscardable:c=>!c.protected}};
 const game={},ui={};
-const{blackwingCards:cards,blackwingSkills:skills,wedgeTargets}=new Function('game','get','lib','ui','_status','blackwingFaces','sampleBlackwing','const playCynoSound = () => {};\n'+strip(read('../card/blackwing.js'))+';return{blackwingCards,blackwingSkills,wedgeTargets};')(game,get,lib,ui,{},faces,sample);
+const{blackwingCards:cards,blackwingSkills:skills,wedgeTargets}=new Function('game','get','lib','ui','_status','blackwingFaces','sampleBlackwing','gainCynoPackCards','createCynoReward','const playCynoSound = () => {};\n'+strip(read('../card/blackwing.js'))+';return{blackwingCards,blackwingSkills,wedgeTargets};')(game,get,lib,ui,{},faces,sample,gainCynoPackCards,createCynoReward);
 for(const[name,c]of Object.entries(cards)){assert.equal(c.destroy,'discardPile');assert.equal(c.derivation,'fan_cyno');assert(faces[name]);assert(existsSync(new URL('../'+c.image.replace('ext:原神/',''),import.meta.url)));assert.equal(c.global,'fan_chongzhuangkaiyi_record');}
 assert.equal(cards.fan_kaiyiya.subtype,'equip2');assert.equal(cards.fan_chongzhuangkaiyi.subtype,'equip2');assert.equal(cards.fan_heixuanfeng.subtype,'equip5');
 for(const id of ['fan_kaiyiya_sha','fan_kaiyiya_shan','fan_chongzhuangkaiyi_sha','fan_chongzhuangkaiyi_shan']){assert(skills[id].filterCard({color:'black'},{}));assert(!skills[id].filterCard({color:'red'},{}));assert.equal(skills[id].equipSkill,true);}
@@ -82,3 +83,15 @@ try{await cards.fan_qiheizhixuanfeng.content({},null,{isIn:()=>true,async gain(c
 assert.equal(taken.length,1);assert.equal(taken[0].color,'black');assert.equal(gains.length,2);assert.equal(gains[0].length,2);assert.equal(gains[1].length,3);assert(gains[1].every(c=>c.suit==='club'&&c.number===10));
 delete Array.prototype.sortBySeat;
 console.log('PASS 黑羽：概率、资源注册、转化、使用/响应标记、不叠加、回合结束收牌、黑色用牌摸牌及装备保护（模拟，非对局实测）');
+
+const empty = { isIn: () => true, countDiscardableCards: () => 0 };
+const cut = cards.fan_zhouyuleiqie;
+assert(cut.filterTarget(null, owner, empty));
+assert(!cut.filterTarget(null, owner, owner));
+assert.equal(cut.ai.result.target(owner, empty), 0);
+let paid = false;
+await cut.content({ target: empty }, null, {
+  chooseToDiscard() { paid = true; return choice; },
+  discardPlayerCard() { assert.fail("Empty target has nothing to discard"); },
+});
+assert(paid);

@@ -1,3 +1,4 @@
+import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import { playCynoSound } from "./cyno-sound.js";
 import { game, get } from "../../../noname.js";
 import { blueEyesFaces } from "./blue-eyes-data.js";
@@ -13,7 +14,7 @@ export function sampleBlueEyes(random = Math.random) {
   }
   return result;
 }
-export function createBlueEyes() { return game.createCard("fan_qingyanbailong", ...blueEyesFaces.fan_qingyanbailong); }
+export function createBlueEyes(source) { return createCynoReward(game, source, "fan_qingyanbailong", ...blueEyesFaces.fan_qingyanbailong); }
 const self = { type: "trick", enable: true, selectTarget: -1, toself: true,
   filterTarget: (card, player, target) => player === target };
 const partner = {
@@ -21,7 +22,7 @@ const partner = {
   async content(event, trigger, player) {
     player.addTempSkill("fan_zhengyi_quota");
     player.addMark("fan_zhengyi_quota", 3, false);
-    if (event.card.name === "fan_zhengyichuanshuo") await player.gain(Array.from({ length: 3 }, createBlueEyes), "draw");
+    if (event.card.name === "fan_zhengyichuanshuo") await player.gain(Array.from({ length: 3 }, () => createBlueEyes(event.cards?.length === 1 ? event.cards[0] : event.card)), "draw");
   },
   ai: { order: 9, value: 6, useful: 3, result: { target(player) { return player.countCards("h", card => card.name === "sha" || card.name === "fan_qingyanbailong") > 0 ? 1 : .1; } } },
 };
@@ -36,9 +37,9 @@ export const blueEyesCards = {
         else cards.push(...get.cards(1));
       }
       game.updateRoundNumber();
-      if (cards.length) await player.gain(cards, "draw");
+      if (cards.length) await gainCynoPackCards(player, cards, "draw", (event.cards?.length === 1 ? event.cards[0] : event.card));
       if (!player.isIn()) return;
-      await player.gain(plan.filter(item => item.source === "derived").map(item => game.createCard(item.name, ...blueEyesFaces[item.name])), "draw");
+      await gainCynoPackCards(player, plan.filter(item => item.source === "derived").map(item => createCynoReward(game, (event.cards?.length === 1 ? event.cards[0] : event.card), item.name, ...blueEyesFaces[item.name])), "draw");
     },
     ai: { order: 10, value: 10, useful: 10, result: { target: 5 } },
   },
@@ -88,7 +89,7 @@ export const blueEyesSkills = {
       if (!player.isIn() || !blueEyesSkills.fan_baizhishaonv_skill.filter(trigger, player)) return;
       playCynoSound("addcounter");
       player.addTempSkill("fan_baizhishaonv_used");
-      await player.gain(createBlueEyes(), "draw");
+      await player.gain(createBlueEyes(player.getVCards("e").find(card => card.name === "fan_baizhishaonv")), "draw");
     },
   },
 };

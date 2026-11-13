@@ -5,6 +5,13 @@ const soulAvailable = player => !player.hasSkill("fan_yongyuanzhihun_used");
 const soulChoices = (event, player) => get.inpileVCardList(info => ["trick", "delay"].includes(info[0])
   && event.filterCard(get.autoViewAs({name:info[2]}, "unsure"), player, event));
 
+async function useSoul(event, trigger, player) {
+  playCynoSound("activate");
+  player.addTempSkill("fan_yongyuanzhihun_used");
+  player.when({ player: "useCardAfter" }).filter(evt => evt.getParent() === event.getParent())
+    .step(async (event, trigger, player) => { await player.draw(); });
+}
+
 const magicianCards = ["fan_heimoshushi", "fan_modaoqishi"];
 const wuxie = {
   locked: false, enable: "chooseToUse", position: "h", selectCard: 1,
@@ -54,11 +61,19 @@ export default {
     },
   },
   fan_yongyuanzhihun_used: { charlotte: true },
+  fan_yongyuanzhihun_wuxie: {
+    ...wuxie, equipSkill: true, position: "hes", filterCard: true,
+    manualConfirm: true, prompt: "将一张牌当【无懈可击】使用", prompt2: false,
+    filter: event => event.type === "wuxie",
+    viewAsFilter: player => soulAvailable(player) && player.countCards("hes") > 0,
+    hiddenCard: (player, name) => name === "wuxie" && soulAvailable(player) && player.countCards("hes") > 0,
+    precontent: useSoul,
+  },
   fan_yongyuanzhihun_skill: {
     equipSkill: true, locked: false, direct: true, enable: "chooseToUse",
     fan_cyno_open_choice: true,
     filter(event, player) {
-      return !player.hasSkill("fan_yongyuanzhihun_used") && player.countCards("hes") > 0 &&
+      return event.type !== "wuxie" && !player.hasSkill("fan_yongyuanzhihun_used") && player.countCards("hes") > 0 &&
         get.inpileVCardList(info => ["trick", "delay"].includes(info[0]) && event.filterCard(get.autoViewAs({ name: info[2] }, "unsure"), player, event)).length > 0;
     },
     chooseButton: {
@@ -115,11 +130,7 @@ export default {
           && player.getCards("hes").includes(card)
           && game.checkMod(card, player, "unchanged", "cardEnabled2", player) !== false,
         viewAs: { name: option[2] },
-        async precontent(event, trigger, player) {
-          playCynoSound("activate");
-          player.addTempSkill("fan_yongyuanzhihun_used");
-          player.when({ player: "useCardAfter" }).filter(evt => evt.getParent() === event.getParent()).step(async (event, trigger, player) => { await player.draw(); });
-        },
+        precontent: useSoul,
       }; },
       prompt: links => `将一张牌当${get.translation(links.find(Array.isArray)[2])}使用`,
     },

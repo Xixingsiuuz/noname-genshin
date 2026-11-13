@@ -1,3 +1,4 @@
+import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import { playCynoSound } from "./cyno-sound.js";
 import { game, get, lib, ui } from "../../../noname.js";
 import { heroFaces, sampleHeroes } from "./hero-data.js";
@@ -47,8 +48,8 @@ export const heroCards = {
         else cards.push(...get.cards(1));
       }
       game.updateRoundNumber();
-      if (cards.length) await player.gain(cards, "draw");
-      if (player.isIn()) await player.gain(plan.filter(item => item.source === "derived").map(item => game.createCard(item.name, ...heroFaces[item.name])), "draw");
+      if (cards.length) await gainCynoPackCards(player, cards, "draw", (event.cards?.length === 1 ? event.cards[0] : event.card));
+      if (player.isIn()) await gainCynoPackCards(player, plan.filter(item => item.source === "derived").map(item => createCynoReward(game, (event.cards?.length === 1 ? event.cards[0] : event.card), item.name, ...heroFaces[item.name])), "draw");
     },
     ai: { order: 10, value: 10, useful: 10, result: { target: 5 } },
   },
@@ -109,8 +110,7 @@ export const heroCards = {
         lib.translate[id + "_info"] = names.length ? "具有" + names.map(name => get.translation(name)).join("、") + "的效果。" : "无附加装备效果。";
       }, id, names, slot);
       const card = event.cards[0];
-      card.init(["heart", 1, id]);
-      await player.equip(card);
+      await player.equip(get.autoViewAs({ name: id }, [card]));
     },
     fanBuildDefinition: fusionDefinition,
     ai: { order: 7, value: 7, useful: 3, result: { target: player => player.countCards("hej", card => get.type(card) === "equip") ? 2 : 0 } },

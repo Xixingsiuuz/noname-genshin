@@ -1,3 +1,4 @@
+import { createCynoReward } from "../ui/cyno-rarity.js";
 import {get,game,lib,ui} from "../../../noname.js";
 
 // 只统计本次实际弃置的两张牌，保留弃置前点数，避免销毁/失去标签改变判定。
@@ -20,5 +21,5 @@ export async function exchangeStardust(event,player){
  // chooseToDiscard.done为discard，discard.done为实际lose事件。
  const paid=(next.done?.done?.cards2||[]).filter(c=>result.cards?.includes(c)&&numbers.has(c));
  if(paid.length&&player.isIn())await player.draw(paid.length);
- if(player.isIn()&&qualifiesForCosmic(paid,starNumber,c=>numbers.get(c)))await player.gain(game.createCard("fan_yuzhouyaobian","heart",12),"draw");
+ if(player.isIn()&&qualifiesForCosmic(paid,starNumber,c=>numbers.get(c)))await player.gain(createCynoReward(game, star ?? event.card, "fan_yuzhouyaobian", "heart", 12),"draw");
 }

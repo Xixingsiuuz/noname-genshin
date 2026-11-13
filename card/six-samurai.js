@@ -1,3 +1,4 @@
+import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import{game,get,lib,ui}from"../../../noname.js";
 import{sixSamuraiFaces,sampleSixSamurai}from"./six-samurai-data.js";
 function samuraiEquip(subtype, skill, distance, value) {
@@ -17,6 +18,7 @@ function colorExchange(from,to) {
 function negate() {
  return {equipSkill:true,locked:false,enable:"chooseToUse",usable:1,position:"h",
   filter:event=>event.type==="wuxie",filterCard:true,viewAs:{name:"wuxie"},
+  manualConfirm:true, prompt:"将一张手牌当【无懈可击】使用", prompt2:false,
   viewAsFilter:player=>player.countCards("h")>0,
   hiddenCard:(player,name)=>name==="wuxie"&&player.countCards("h")>0&&!player.getStat("skill").fan_ziyan_convert,
   check:card=>7-get.value(card),ai:{respondWuxie:true}};
@@ -26,11 +28,11 @@ export const sixSamuraiCards={
  fan_liuwuzhijiezhen:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
   const plan=sampleSixSamurai(),cards=[];
   for(const item of plan.filter(i=>i.source==="pile")){const c=get.cardPile2(c=>c.name===item.name);if(c){c.remove();c.original="c";cards.push(c);}else cards.push(...get.cards(1));}
-  game.updateRoundNumber();if(cards.length)await player.gain(cards,"draw");
-  if(player.isIn())await player.gain(plan.filter(i=>i.source==="derived").map(i=>game.createCard(i.name,...sixSamuraiFaces[i.name])),"draw");
+  game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));
+  if(player.isIn())await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...sixSamuraiFaces[i.name])),"draw");
  }},
  fan_ziyan:samuraiEquip("equip2","fan_ziyan_convert",{},7),
- fan_zhenmoziyan:samuraiEquip("equip1","fan_zhenmoziyan_convert",{attackFrom:-2},8),
+ fan_zhenmoziyan:{...samuraiEquip("equip1","fan_zhenmoziyan_convert",{attackFrom:-2},8), skills:["fan_zhenmoziyan_convert","fan_zhenmoziyan_wuxie"]},
  fan_shinai:samuraiEquip("equip3","fan_shinai_gain",{globalTo:1},8),
  fan_ruisui:samuraiEquip("equip4","fan_ruisui_gain",{globalFrom:-1},8),
 
@@ -40,9 +42,15 @@ export const sixSamuraiSkills={
  fan_shinai_gain:colorExchange("black","red"),
  fan_ruisui_gain:colorExchange("red","black"),
  fan_ziyan_convert:negate(),
+ fan_zhenmoziyan_wuxie:{
+  ...negate(), usable:undefined,
+  viewAsFilter:player=>player.countCards("h")>0&&!player.getStat("skill").fan_zhenmoziyan_convert,
+  hiddenCard:(player,name)=>name==="wuxie"&&player.countCards("h")>0&&!player.getStat("skill").fan_zhenmoziyan_convert,
+  precontent(event,trigger,player){player.getStat("skill").fan_zhenmoziyan_convert=1;},
+ },
  fan_zhenmoziyan_convert:{
   equipSkill:true,locked:false,enable:"chooseToUse",usable:1,position:"h",selectCard:1,filterCard:true,
-  filter(event,player){return player.countCards("h")>0&&lib.skill.fan_zhenmoziyan_convert.choices(event,player).length>0;},
+  filter(event,player){return event.type!=="wuxie"&&player.countCards("h")>0&&lib.skill.fan_zhenmoziyan_convert.choices(event,player).length>0;},
   choices(event,player){
    return [...lib.inpile.filter(name=>get.type(name)==="basic").flatMap(name=>name==="sha"
     ? [[name],[name,"fire"],[name,"thunder"]] : [[name]]),["wuxie"]]
@@ -64,5 +72,5 @@ export const sixSamuraiTranslate={
  fan_zhenmoziyan:"真魔紫炎",fan_zhenmoziyan_info:"每回合限一次，你可以将一张手牌当"+get.poptip("wuxie")+"或任意基本牌使用。",
  fan_shinai:"志乃",fan_shinai_info:"你使用一张黑色牌时，从牌堆随机获得一张红色牌。",
  fan_ruisui:"瑞穗",fan_ruisui_info:"你使用一张红色牌时，从牌堆随机获得一张黑色牌。",
- fan_ziyan_convert:"紫炎",fan_zhenmoziyan_convert:"真魔紫炎",fan_shinai_gain:"志乃",fan_ruisui_gain:"瑞穗",
+ fan_zhenmoziyan_wuxie:"真魔紫炎",fan_ziyan_convert:"紫炎",fan_zhenmoziyan_convert:"真魔紫炎",fan_shinai_gain:"志乃",fan_ruisui_gain:"瑞穗",
 };

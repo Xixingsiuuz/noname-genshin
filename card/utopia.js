@@ -1,3 +1,4 @@
+import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import { playCynoSound } from "./cyno-sound.js";
 import {game,get,lib,ui,_status} from "../../../noname.js";
 import {utopiaFaces,sampleUtopia} from "./utopia-data.js";
@@ -18,8 +19,8 @@ export const utopiaCards={
  fan_xiwangdechaoyue:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
   const plan=sampleUtopia(),cards=[];
   for(const item of plan.filter(i=>i.source==="pile")){const c=get.cardPile2(c=>c.name===item.name);if(c){c.remove();c.original="c";cards.push(c)}else cards.push(...get.cards(1));}
-  game.updateRoundNumber();if(cards.length)await player.gain(cards,"draw");
-  if(player.isIn())await player.gain(plan.filter(i=>i.source==="derived").map(i=>game.createCard(i.name,...utopiaFaces[i.name])),"draw");
+  game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));
+  if(player.isIn())await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...utopiaFaces[i.name])),"draw");
  }},
  fan_xiwanghuang:{...armor,skills:["fan_xiwang_break","fan_xiwang_cancel"]},
  fan_weilaihuang:{...armor,skills:["fan_weilai_protect","fan_weilai_cancel"]},

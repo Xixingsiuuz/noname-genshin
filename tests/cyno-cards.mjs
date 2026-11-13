@@ -1,3 +1,4 @@
+import { gainCynoPackCards, createCynoReward, inheritCynoRarity, rollCynoRarity } from "../ui/cyno-rarity.js";
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 const read = path => readFileSync(new URL(path, import.meta.url), 'utf8');
@@ -13,7 +14,7 @@ assert(high.slice(0, 3).every(c => c.name === 'wuzhong'));
 assert(high.slice(3).every(c => c.name === 'fan_yongyuanzhihun'));
 for (const value of [-1, 1, NaN]) assert.throws(() => sample(() => value), RangeError);
 const cardsSource = read('../card/cyno.js').replace(/^import .*;\r?\n/gm, '').replace(/export /g, '');
-const cards = new Function('game', 'get', 'sampleDarkMagician', cardsSource + ';return cynoCards;')({}, { poptip: id => id }, sample);
+const cards = new Function('game', 'get', 'sampleDarkMagician', 'gainCynoPackCards', 'createCynoReward', cardsSource + ';return cynoCards;')({}, { poptip: id => id }, sample, gainCynoPackCards, createCynoReward);
 assert.equal(Object.keys(cards).length, 5);
 // 直接复用原生销毁判断，测试没有角色、技能或持有者的路径。
 const native = read('../../../noname/library/element/card.js');
@@ -44,11 +45,11 @@ const pile = [];
 function entity(name) { const card = { name, remove() { pile.splice(pile.indexOf(card), 1); } }; return card; }
 pile.push(entity('wuxie'), entity('sha'));
 const batches = [];
-const runtime = new Function('game', 'get', 'sampleDarkMagician', cardsSource + ';return cynoCards;')({
+const runtime = new Function('game', 'get', 'sampleDarkMagician', 'gainCynoPackCards', 'createCynoReward', cardsSource + ';return cynoCards;')({
   updateRoundNumber() {}, createCard: (name, suit, number) => ({ name, suit, number }),
 }, {
   poptip: id => id, cardPile2: fn => pile.find(fn), cards: num => pile.splice(0, num),
-}, () => [{ source: 'pile', name: 'wuxie' }, { source: 'pile', name: 'wuxie' }, ...Array.from({length:3}, () => ({source:'derived',name:'fan_heimoshushi'}))]);
+}, () => [{ source: 'pile', name: 'wuxie' }, { source: 'pile', name: 'wuxie' }, ...Array.from({length:3}, () => ({source:'derived',name:'fan_heimoshushi'}))], gainCynoPackCards, createCynoReward);
 await runtime.fan_heimoshumiyi.content({}, null, {isIn:()=>true, async gain(cards, animation) { batches.push({cards,animation}); }});
 assert.equal(batches.length, 2);
 assert.deepEqual(batches[0].cards.map(c=>c.name), ['wuxie','sha']);
@@ -59,3 +60,37 @@ assert(batches.every(batch=>batch.animation==='draw'));
 assert.equal(skills.fan_heimoshushi_rule.prompt2, false);
 assert.equal(typeof skills.fan_heimoshushi_rule.prompt, 'string');
 console.log('两批暗置获得、重复牌名缺牌回退、衍生牌梅花7与简短居中提示配置检查通过。');
+
+const counts = {};
+for (let i = 0; i < 100; i++) {
+  const rarity = rollCynoRarity(() => (i + 0.5) / 100);
+  counts[rarity] = (counts[rarity] || 0) + 1;
+}
+assert.deepEqual(counts, { gold: 20, mirror: 10, holo: 5, normal: 65 });
+const card = { ownerDocument: {}, querySelector() { return null; } };
+const receiver = { gain(cards) { return cards; } };
+const previousRandom = Math.random;
+let rolls = 0;
+try {
+  Math.random = () => { rolls++; return 0.99; };
+  gainCynoPackCards(receiver, card);
+  gainCynoPackCards(receiver, card);
+  assert.equal(card.fanCynoRarity, "normal");
+  assert.equal(rolls, 1);
+} finally {
+  Math.random = previousRandom;
+}
+
+for (const [floor, expected] of Object.entries({
+  normal: [65, 20, 10, 5], gold: [0, 85, 10, 5],
+  mirror: [0, 0, 95, 5], holo: [0, 0, 0, 100],
+})) {
+  const levels = ["normal", "gold", "mirror", "holo"];
+  const actual = [0, 0, 0, 0];
+  for (let i = 0; i < 100; i++) {
+    const rolled = rollCynoRarity(() => (i + 0.5) / 100);
+    const result = inheritCynoRarity(rolled, { cards: [{ fanCynoRarity: floor }] });
+    actual[levels.indexOf(result)]++;
+  }
+  assert.deepEqual(actual, expected);
+}

@@ -1,3 +1,4 @@
+import { createCynoReward } from "../ui/cyno-rarity.js";
 import assert from'node:assert/strict';
 import{readFileSync}from'node:fs';
 const read=p=>readFileSync(new URL(p,import.meta.url),'utf8');
@@ -5,9 +6,9 @@ const strip=s=>'const playCynoSound = () => {};\n'+s.replace(/^import .*;\r?\n/g
 const get={number:c=>c.number,value:()=>2,tag:c=>c.damage?1:0,poptip:id=>id};
 const game={createCard:(name,suit,number)=>({name,suit,number})};
 const lib={filter:{cardDiscardable:c=>!c.protected}},ui={selected:{cards:[]}},status={};
-const{qualifiesForCosmic,exchangeStardust}=new Function('get','game','lib','ui',strip(read('../card/stardust-sync.js'))+';return{qualifiesForCosmic,exchangeStardust};')(get,game,lib,ui);
+const{qualifiesForCosmic,exchangeStardust}=new Function('get','game','lib','ui','createCynoReward',strip(read('../card/stardust-sync.js'))+';return{qualifiesForCosmic,exchangeStardust};')(get,game,lib,ui,createCynoReward);
 const data=new Function(strip(read('../card/stardust-data.js'))+';return{stardustFaces,sampleStardust};')();
-const{stardustCards:cards,stardustSkills:skills,stardustTranslate:translate}=new Function('game','get','lib','ui','_status','stardustFaces','sampleStardust','exchangeStardust','cosmicMovementSkill',strip(read('../card/stardust.js'))+';return{stardustCards,stardustSkills,stardustTranslate};')(game,get,lib,ui,status,data.stardustFaces,data.sampleStardust,exchangeStardust,{});
+const{stardustCards:cards,stardustSkills:skills,stardustTranslate:translate}=new Function('game','get','lib','ui','_status','stardustFaces','sampleStardust','exchangeStardust','cosmicMovementSkill','createCynoReward',strip(read('../card/stardust.js'))+';return{stardustCards,stardustSkills,stardustTranslate};')(game,get,lib,ui,status,data.stardustFaces,data.sampleStardust,exchangeStardust,{},createCynoReward);
 assert(!skills.fan_tongbu);assert(!cards.fan_xingchendehuiguang.derivationSkills);assert(!translate.fan_tongbu);
 assert.equal(translate.fan_xingchendehuiguang_info,'出牌阶段，对你使用。你随机获得五张【星尘同步】卡组相关的牌。');
 async function scenario(numbers,starNumber=8,actualCount=numbers.length){

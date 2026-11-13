@@ -5,7 +5,7 @@ const strip=s=>s.replace(/^import.*;\r?\n/gm,'').replace(/export /g,'');
 const data=new Function(strip(read('../card/six-samurai-data.js'))+';return{sixSamuraiFaces,sampleSixSamurai};')();
 const{sixSamuraiFaces:faces,sampleSixSamurai:sample}=data;
 assert.equal(sample(()=>0).filter(c=>c.source==='pile').length,2);assert(sample(()=>0).slice(0,2).every(c=>c.name==='sha'));
-assert(sample(()=>.99).slice(0,3).every(c=>c.name==='taoyuan'));assert(sample(()=>0).slice(2).every(c=>c.name==='fan_zhenmoziyan'));
+assert(sample(()=>.99).slice(0,3).every(c=>c.name==='juedou'));assert(sample(()=>0).slice(2).every(c=>c.name==='fan_zhenmoziyan'));
 assert.throws(()=>sample(()=>1),RangeError);
 let seed=1,pileCount=0,sha=0,up=0,base=0;
 for(let i=0;i<20000;i++)for(const c of sample(()=>((seed=(1664525*seed+1013904223)>>>0)/2**32))){if(c.source==='pile'){pileCount++;sha+=c.name==='sha';}else{up+=c.name==='fan_zhenmoziyan';base+=c.name==='fan_ziyan';}}

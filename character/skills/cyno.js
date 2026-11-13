@@ -1,4 +1,5 @@
-import { game, get, lib, ui } from "../../../../noname.js";
+import { gainCynoPackCards } from "../../ui/cyno-rarity.js";
+import { game, get, lib, ui, _status } from "../../../../noname.js";
 import { cynoCardFaceMap } from "../../card/cyno-faces.js";
 
 export const cynoPacks = [
@@ -38,8 +39,8 @@ async function gainPack(player, name) {
   await next;
 }
 
-function packRows() {
-  const buttons = cynoPacks.map(name => ["trick", "", name]);
+function packRows(names = cynoPacks) {
+  const buttons = names.map(name => ["trick", "", name]);
   return [[buttons.slice(0, 7), "vcard"], [buttons.slice(7), "vcard"]];
 }
 
@@ -52,6 +53,20 @@ function stylePackDialog(dialog) {
     label.textContent = title;
     button._customintro = [title, "可能获得的牌：" + lib.translate[name + "_pack_rewards"]];
   }
+}
+
+export function installCynoPackReplay() {
+  game.videoContent.fanCynoPackOpen = (player, { id, title, names }) => {
+    if (get.idDialog(id)) return;
+    const dialog = ui.create.dialog(title, "notouchscroll", "hidden");
+    for (const row of packRows(names)) dialog.add(row, true);
+    stylePackDialog(dialog);
+    dialog.videoId = id;
+    dialog.open();
+  };
+  game.videoContent.fanCynoPackClose = (player, id) => {
+    get.idDialog(id)?.close();
+  };
 }
 
 function packValue(name, player) {
@@ -81,35 +96,27 @@ function packValue(name, player) {
 export default {
   fan_lengfeng: {
     audio: "ext:原神/audio/cyno/skill:13",
-    locked: true,
+    locked: false,
     forced: true,
     trigger: { source: "damageBegin1" },
     filter(event, player) {
       return event.player !== player && event.player.isIn() && event.num > 0;
     },
-    async content(event, trigger) {
-      trigger.player.addSkill("fan_lengfeng_limit");
-      trigger.player.addMark("fan_lengfeng_limit", trigger.num, false);
-    },
-  },
-  fan_lengfeng_limit: {
-    audio: false,
-    charlotte: true,
-    locked: true,
-    forced: true,
-    popup: false,
-    marktext: "风",
-    intro: { content: "手牌上限-#" },
-    trigger: { player: "recoverAfter" },
-    mod: {
-      maxHandcard(player, num) {
-        return num - player.countMark("fan_lengfeng_limit");
-      },
-    },
     async content(event, trigger, player) {
-      player.removeSkill("fan_lengfeng_limit");
+      const target = trigger.player;
+      if (target.countDiscardableCards(target, "he") < 2) return;
+      const result = await target.chooseToDiscard("he", 2, "冷风：你可以弃置两张牌，然后获得1点护甲")
+        .set("ai", card => {
+          const owner = get.owner(card);
+          const damage = _status.event.getParent("damage");
+          if (!owner || owner.hujia >= 5 || owner.hasSkillTag("nohujia") || damage?.nohujia) return -1;
+          const urgent = damage && damage.num >= owner.hp + (owner.hujia || 0);
+          return (urgent ? 8 : 4) - get.value(card, owner);
+        }).forResult();
+      if (!result.bool || result.cards?.length !== 2) return;
+      game.trySkillAudio("fan_lengfeng", player, true);
+      if (target.isIn()) await target.changeHujia(1, "gain", 5);
     },
-    onremove: true,
   },
   fan_zhaohuan: {
     audio: false,
@@ -131,13 +138,16 @@ export default {
 
       const rows = packRows();
       const id = lib.status.videoId++;
+      const title = get.translation(player) + "展示收藏的召唤王卡牌包";
+      game.addVideo("fanCynoPackOpen", player, { id, title, names: cynoPacks.slice() });
       game.broadcastAll((chooser, title, rows, id, styleDialog) => {
         if (game.me === chooser) return;
-        const dialog = ui.create.dialog(title, "notouchscroll");
+        const dialog = ui.create.dialog(title, "notouchscroll", "hidden");
         for (const row of rows) dialog.add(row, true);
         styleDialog(dialog);
         dialog.videoId = id;
-      }, player, get.translation(player) + "展示收藏的召唤王卡牌包", rows, id, stylePackDialog);
+        dialog.open();
+      }, player, title, rows, id, stylePackDialog);
       let result;
       try {
         if (!player.isMine() && !player.isOnline()) await game.delay(3);
@@ -147,6 +157,7 @@ export default {
           [stylePackDialog, "handle"],
         ], true).set("ai", button => packValue(button.link[2], player)).forResult();
       } finally {
+        game.addVideo("fanCynoPackClose", player, id);
         game.broadcastAll("closeDialog", id);
       }
       const selected = result.links?.[0]?.[2];
@@ -188,7 +199,7 @@ export default {
       player.removeMark("fan_zhaohuan_reserve", 1, false);
       const card = game.createCard(name, ...cynoCardFaceMap[name]);
       game.trySkillAudio("fan_zhaohuan_pack", player, true);
-      await player.gain(card, "draw");
+      await gainCynoPackCards(player, card, "draw");
     },
   },
   fan_zhaohuan_open: { audio: summonAudio(1, "mp3") },

@@ -1,3 +1,4 @@
+import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import { playCynoSound } from "./cyno-sound.js";
 import { game, get, lib, ui, _status } from "../../../noname.js";
 import { stardustFaces, sampleStardust } from "./stardust-data.js";
@@ -34,8 +35,8 @@ export const stardustCards={
     const list=Array.from(ui.cardPile.childNodes).filter(c=>item.kind==="shan"?c.name==="shan":get.number(c)>0&&get.number(c)<=3);
     const card=list.randomGet();if(card){card.remove();card.original="c";cards.push(card)}else cards.push(...get.cards(1));
    }
-   game.updateRoundNumber();if(cards.length)await player.gain(cards,"draw");if(!player.isIn())return;
-   await player.gain(plan.filter(i=>i.source==="derived").map(i=>game.createCard(i.name,...stardustFaces[i.name])),"draw");
+   game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));if(!player.isIn())return;
+   await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...stardustFaces[i.name])),"draw");
   }},
  fan_tiaolv:{...self,ai:valuable,async content(event,trigger,player){
   const numbers=Array.from({length:13},(_,i)=>String(i+1));
@@ -99,7 +100,7 @@ export const stardustSkills={
   }},
  fan_liuxinglong_after:{cardSkill:true,trigger:{global:"useCardAfter"},forced:true,popup:false,locked:false,
   filter:e=>e.player.isIn()&&(e.card.name==="fan_liuxinglong"||(e.cards||[]).some(c=>c.name==="fan_liuxinglong")),
-  async content(event,trigger){if(trigger.fanMeteorRewarded)return;trigger.fanMeteorRewarded=true;await trigger.player.gain(game.createCard("fan_xingchenlong",...stardustFaces.fan_xingchenlong),"draw");}},
+  async content(event,trigger){if(trigger.fanMeteorRewarded)return;trigger.fanMeteorRewarded=true;await trigger.player.gain(createCynoReward(game, trigger.cards?.length === 1 ? trigger.cards[0] : trigger.card, "fan_xingchenlong",...stardustFaces.fan_xingchenlong),"draw");}},
  fan_xingchen_hand:{mod:{ignoredHandcard:c=>dragons.includes(c.name)?true:undefined,cardDiscardable(c,p,name){if(name==="phaseDiscard"&&dragons.includes(c.name))return false;}}},
  fan_yuzhou_return:{charlotte:true,mark:true,marktext:"耀",intro:{
   name:"宇宙耀变",

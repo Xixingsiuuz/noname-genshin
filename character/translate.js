@@ -80,8 +80,7 @@ characterTranslate.fan_eula = "优菈";
 export function createSkillTranslate() {
   return skillTranslateForLegacy = {
     fan_lengfeng: "冷风",
-    fan_lengfeng_info: "锁定技，你对其他角色造成伤害时，该角色减少等量的手牌上限。该角色下次回复体力后，恢复以此法减少的手牌上限。",
-    fan_lengfeng_limit: "冷风",
+    fan_lengfeng_info: "你对其他角色造成伤害时，该角色可以弃置两张牌，然后获得1点护甲。",
     fan_zhaohuan: "召唤",
     fan_zhaohuan_info: "锁定技，游戏开始时，你弃置所有手牌，展示收藏的“召唤王卡牌包”，选择一个获得相应的牌，然后随机将六个其他“卡牌包”扣置于你的武将牌上。出牌阶段开始时，你随机获得一个武将牌上的“卡牌包”，若无牌可获得则你死亡。“召唤王”衍生牌置入弃牌堆时，将其销毁。",
     fan_zhaohuan_reserve: "卡牌包",

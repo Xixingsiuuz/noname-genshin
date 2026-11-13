@@ -1,3 +1,4 @@
+import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import{game,get,lib,ui,_status}from"../../../noname.js";
 export const cyberDragonFaces={fan_jiguanglongxilei:["spade",13],fan_jinjihujiao:["spade",1],fan_xinxing:["spade",5],fan_wuxian:["spade",6],fan_wuxianpaoying:["spade",2]};
 export function sampleCyberDragon(random=Math.random){
@@ -19,7 +20,7 @@ const nova={...self,async content(event,trigger,player){player.addSkill("fan_dia
 export const cyberDragonCards={
  fan_jiguanglongxilei:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
   const plan=sampleCyberDragon(),cards=[];for(const item of plan.filter(i=>i.source==="pile")){const list=Array.from(ui.cardPile.childNodes).filter(c=>item.kind==="tiesuo"?c.name==="tiesuo":get.subtype(c)==="equip2");const c=list.randomGet();if(c){c.remove();c.original="c";cards.push(c)}else cards.push(...get.cards(1));}
-  game.updateRoundNumber();if(cards.length)await player.gain(cards,"draw");if(player.isIn())await player.gain(plan.filter(i=>i.source==="derived").map(i=>game.createCard(i.name,...cyberDragonFaces[i.name])),"draw");
+  game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));if(player.isIn())await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...cyberDragonFaces[i.name])),"draw");
  }},
  fan_xinxing:{...nova},fan_wuxian:{...nova},
  fan_jinjihujiao:{...self,ai:{order:8,value:8,result:{target:p=>p.isDamaged()?2:1}},async content(event,trigger,player){

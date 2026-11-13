@@ -1,3 +1,4 @@
+import { gainCynoPackCards, createCynoReward, copyCynoRarity } from "../ui/cyno-rarity.js";
 import { game, get, lib, _status } from "../../../noname.js";
 import { skyStrikerFaces, sampleSkyStriker } from "./sky-striker-data.js";
 import { gainCardMatchingText } from "./pile-text-search.js";
@@ -19,12 +20,15 @@ function anchorSource(event) {
  }
 }
 
-function hasChainDraw(event) {
+function chainDrawSource(event) {
  const materials = event.cards || [];
- const hasTag = event.player.getHistory("lose", loss => loss.getParent() === event &&
-  loss.hs?.some(card => materials.includes(card) && loss.gaintag_map?.[card.cardid]?.includes(tag))
- ).length > 0;
- return event.card.name === zero || materials.some(card => card.name === zero) || hasTag;
+ const zeroCard = materials.find(card => card.name === zero);
+ if (zeroCard) return zeroCard;
+ if (event.card.name === zero) return event.card;
+ const losses = event.player.getHistory("lose", loss => loss.getParent() === event);
+ return materials.find(card => losses.some(loss =>
+  loss.hs?.includes(card) && loss.gaintag_map?.[card.cardid]?.includes(tag)
+ ));
 }
 
 export const skyStrikerCards = {
@@ -44,10 +48,10 @@ export const skyStrikerCards = {
     }
    }
    game.updateRoundNumber();
-   if (cards.length) await player.gain(cards,"draw");
+   if (cards.length) await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));
    if (player.isIn()) {
-    await player.gain(plan.filter(item => item.source === "derived")
-     .map(item => game.createCard(item.name,...skyStrikerFaces[item.name])),"draw");
+    await gainCynoPackCards(player, plan.filter(item => item.source === "derived")
+     .map(item => createCynoReward(game, (event.cards?.length === 1 ? event.cards[0] : event.card), item.name, ...skyStrikerFaces[item.name])),"draw");
    }
   },
  },
@@ -62,8 +66,8 @@ export const skyStrikerCards = {
  fan_shandaoqidong: {
   ...self, ai:{...drawAi, order:7},
   async content(event, trigger, player) {
-   await gainCardMatchingText(player, "闪", "闪刀起动：选择要获得的牌");
-   if (player.isIn()) await player.draw();
+   await gainCardMatchingText(player, "闪", "闪刀起动：选择要获得的牌", event.cards?.length === 1 ? event.cards[0] : event.card);
+   if (player.isIn()) await player.draw().set("fanCynoExactRaritySource", event.cards?.length === 1 ? event.cards[0] : event.card);
   },
  },
  [anchor]: {
@@ -81,7 +85,7 @@ export const skyStrikerCards = {
 for (const [name,card] of Object.entries(skyStrikerCards)) {
  Object.assign(card,{
   derivation:"fan_cyno", destroy:"discardPile", fullskin:true,
-  image:`ext:原神/image/card/${name}-framed.png`, global:[tag,"fan_yihualingyi_gain","fan_heiguafuqian_window"],
+  image:`ext:原神/image/card/${name}-framed.png`, global:[tag,"fan_cyno_exact_draw","fan_yihualingyi_gain","fan_heiguafuqian_window"],
  });
 }
 
@@ -115,19 +119,29 @@ export const skyStrikerSkills = {
    });
   },
  },
+ fan_cyno_exact_draw: {
+  charlotte:true, forced:true, silent:true, popup:false,
+  trigger:{global:"gainBefore"},
+  filter(event) { return !!event.getParent("draw")?.fanCynoExactRaritySource &&
+    event.parent?.name === "draw"; },
+  async content(event, trigger) {
+   for (const card of trigger.cards) copyCynoRarity(card, trigger.parent.fanCynoExactRaritySource);
+  },
+ },
  [tag]: {
   cardSkill:true, forced:true, locked:false, popup:false,
   trigger:{global:["useCardAfter","respondAfter"]},
   filter(event) {
    if (resolvedDraws.has(event) || !event.player.isIn()) return false;
-   return hasChainDraw(event);
+   return !!chainDrawSource(event);
   },
   async content(event,trigger) {
    if (resolvedDraws.has(trigger) || !trigger.player.isIn()) return;
    const player = trigger.player;
-   if (!hasChainDraw(trigger)) return;
+   const source = chainDrawSource(trigger);
+   if (!source) return;
    resolvedDraws.add(trigger);
-   const draw = player.draw();
+   const draw = player.draw().set("fanCynoExactRaritySource", source);
    draw.gaintag.add(tag);
    await draw;
   },
@@ -142,7 +156,7 @@ export const skyStrikerSkills = {
    if (!skyStrikerSkills.fan_yihualingyi_gain.filter(trigger)) return;
    resolvedUpgradeGains.add(trigger);
    const player = trigger.player;
-   await player.gain(game.createCard(zero,...skyStrikerFaces[zero]),"draw");
+   await player.gain(createCynoReward(game, trigger.cards?.length === 1 ? trigger.cards[0] : trigger.card, zero,...skyStrikerFaces[zero]),"draw");
   },
  },
 };

@@ -1,0 +1,88 @@
+/* Add the overlay as a child of a positioned card element. */
+.cyno-foil {
+  position:absolute; inset:3%; z-index:2; pointer-events:none;
+  border-radius:inherit; overflow:hidden;
+}
+.cyno-foil::before,.cyno-foil::after {
+  content:""; position:absolute; inset:0;
+}
+/* Confine moving reflections to the illustration, away from the printed labels. */
+.cyno-foil::before {
+  inset:24% 2% 2% 20%;
+  mask-image:radial-gradient(ellipse at 55% 58%,#000 44%,transparent 77%);
+  -webkit-mask-image:radial-gradient(ellipse at 55% 58%,#000 44%,transparent 77%);
+  background-size:240% 100%; animation:cyno-sweep 4.8s ease-in-out infinite;
+}
+.cyno-foil--gold::before {
+  background-image:linear-gradient(118deg,transparent 25%,#ffc75322 40%,#fff1baaf 49%,#ffd06b52 54%,transparent 68%);
+}
+.cyno-foil--gold::after {
+  box-shadow:inset 0 0 0 1px #ffc865bb,inset 0 0 11px #db8e3870;
+}
+.cyno-foil--mirror, .cyno-foil--holo { inset:0; z-index:10; }
+.cyno-foil--mirror::before, .cyno-foil--holo::before { inset:0; mask-image:none; -webkit-mask-image:none; }
+.cyno-foil--mirror::before {
+  background-image:linear-gradient(125deg,transparent 25%,#6ed5ff36 43%,#fff9 52%,#b79aff44 58%,transparent 75%);
+  animation-duration:5.6s;
+}
+.cyno-foil--mirror::after {
+  box-shadow:inset 0 0 0 1px #d2eaff9c,inset 0 0 9px #9fbcff61;
+}
+.cyno-foil__shard {
+  position:absolute; inset:24% 2% 3% 22%; pointer-events:none;
+  background:linear-gradient(142deg,transparent 5%,var(--glint) 60%,transparent 97%);
+  clip-path:polygon(var(--shape));
+  animation:cyno-glint 4.4s ease-in-out infinite;
+  animation-delay:var(--delay);
+}
+.cyno-foil--holo::before {
+  background-image:linear-gradient(111deg,transparent 16%,#cf70ff49 31%,#678fff72 40%,#78f7de88 49%,#ffef987c 57%,#ff8ea766 64%,transparent 77%);
+  animation-duration:6.8s;
+}
+.cyno-foil--holo::after {
+  background:linear-gradient(138deg,#bd9cffab,transparent 34%,transparent 69%,#74efd5aa);
+  padding:1px;
+  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;
+  mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  mask-composite:exclude;
+}
+@keyframes cyno-sweep {
+  0%,100% {background-position:100% 50%}
+  50% {background-position:0% 50%}
+}
+@keyframes cyno-glint {
+  0%,100% {opacity:.18}
+  48% {opacity:.78}
+}
+@media(prefers-reduced-motion:reduce) {
+  .cyno-foil::before,.cyno-foil__shard {animation:none;background-position:50% 50%}
+}
+
+.card.infohidden > .cyno-foil, .card.drawinghidden > .cyno-foil { display: none; }
+
+.card[style*="--fan-cyno-color-art"]:not(.infohidden):not(.drawinghidden) > .image {
+  background-image: var(--fan-cyno-color-art) !important;
+  filter: blur(0.45px);
+}
+
+.fan-cyno-equip-preview { display:flex; justify-content:center; margin:4px auto 8px; }
+.fan-cyno-equip-preview > .card { position:relative; pointer-events:none; }
+
+/* Keep preview geometry stable */
+#window > .dialog.popped:has(.fan-cyno-equip-preview) {
+  animation: fan-cyno-preview-fade 0.3s ease-out;
+  transition-property: opacity;
+}
+.fan-cyno-equip-preview > .card,
+.fan-cyno-equip-preview > .card > .image {
+  animation: none;
+  transition: none;
+}
+@keyframes fan-cyno-preview-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #window > .dialog.popped:has(.fan-cyno-equip-preview) { animation: none; }
+}

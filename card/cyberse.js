@@ -1,3 +1,4 @@
+import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import{game,get,lib,ui,_status}from"../../../noname.js";
 import{cyberseFaces,sampleCyberse}from"./cyberse-data.js";
 const self={type:"trick",enable:true,selectTarget:-1,toself:true,filterTarget:(c,p,t)=>p===t};
@@ -26,7 +27,7 @@ export function matchingNumber(card,selected,player){return !selected.length||ge
 export const cyberseCards={
  fan_dianzijielianjie:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
   const plan=sampleCyberse(),cards=[];for(const item of plan.filter(i=>i.source==="pile")){const card=get.cardPile2(c=>c.name===item.name);if(card){card.remove();card.original="c";cards.push(card)}else cards.push(...get.cards(1));}
-  game.updateRoundNumber();if(cards.length)await player.gain(cards,"draw");if(player.isIn())await player.gain(plan.filter(i=>i.source==="derived").map(i=>game.createCard(i.name,...cyberseFaces[i.name])),"draw");
+  game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));if(player.isIn())await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...cyberseFaces[i.name])),"draw");
  }},
  fan_lianmayuzhe:{...self,ai:{order:7,value:8,result:{target:p=>p.getCards("he").some(c=>lib.filter.cardDiscardable(c,p)&&get.value(c)<6)&&game.hasPlayer(t=>t!==p&&p.canUse({name:"sha"},t,false,false)&&get.effect(t,{name:"sha"},p,p)>0)?2:0}},async content(event,trigger,player){
   const choice=await player.chooseToDiscard("he",[1,Infinity],true,"连码语者：弃置同点数的牌").set("complexCard",true)

@@ -1,3 +1,4 @@
+import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import { playCynoSound } from "./cyno-sound.js";
 import{game,get,lib,ui,_status}from"../../../noname.js";
 import{blackwingFaces,sampleBlackwing}from"./blackwing-data.js";
@@ -14,14 +15,14 @@ export const blackwingCards={
    const card=candidates.length?candidates[Math.floor(Math.random()*candidates.length)]:null;
    if(card){card.remove();card.original="c";cards.push(card);}else cards.push(...get.cards(1));
   }
-  game.updateRoundNumber();if(cards.length)await player.gain(cards,"draw");
-  if(player.isIn())await player.gain(plan.filter(i=>i.source==="derived").map(i=>game.createCard(i.name,...blackwingFaces[i.name])),"draw");
+  game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));
+  if(player.isIn())await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...blackwingFaces[i.name])),"draw");
  }},
  fan_kaiyiya:armor(["fan_kaiyiya_sha","fan_kaiyiya_shan"]),
  fan_chongzhuangkaiyi:{...armor(["fan_chongzhuangkaiyi_sha","fan_chongzhuangkaiyi_shan","fan_chongzhuangkaiyi_protect"]),ai:{order:9,value:10,basic:{equipValue:10},result:{target:1}}},
  fan_heixuanfeng:{...armor(["fan_heixuanfeng_draw"]),subtype:"equip5"},
  fan_zhouyuleiqie:{type:"trick",enable:true,filter:(c,p)=>p.getCards("he").some(card=>card!==c&&black(card,p)&&lib.filter.cardDiscardable(card,p)),
-  filterTarget:(c,p,t)=>p!==t&&t.countDiscardableCards(p,"hej")>0,
+  filterTarget:(c,p,t)=>p!==t,
   async content(event,trigger,player){
    const choice=await player.chooseToDiscard("he",[1,Infinity],"骤雨雷切：弃置黑色牌",true)
     .set("filterCard",(c,p)=>black(c,p)&&lib.filter.cardDiscardable(c,p))
@@ -29,7 +30,7 @@ export const blackwingCards={
    if(!choice.bool||!choice.cards?.length||!event.target.isIn())return;
    const n=Math.min(choice.cards.length,event.target.countDiscardableCards(player,"hej"));
    if(n)await player.discardPlayerCard(event.target,"hej",n,true);
-  },ai:{order:7,value:7,result:{target:-1}}},
+  },ai:{order:7,value:7,result:{target:(player,target)=>target.countDiscardableCards(player,"hej")>0?-1:0}}},
 };
 for(const[name,card]of Object.entries(blackwingCards))Object.assign(card,{derivation:"fan_cyno",destroy:"discardPile",fullskin:true,image:`ext:原神/image/card/${name}-framed.png`,global:"fan_chongzhuangkaiyi_record"});
 function conversion(name){return{equipSkill:true,locked:false,enable:["chooseToUse","chooseToRespond"],position:"he",selectCard:1,
@@ -84,7 +85,7 @@ export const blackwingTranslate={
  fan_qiheizhixuanfeng:"漆黑之旋风",fan_qiheizhixuanfeng_info:"出牌阶段，对你使用。你随机获得五张【黑羽】卡组相关的牌。",
  fan_kaiyiya:"铠翼鸦",fan_kaiyiya_info:"你可以将一张黑色牌当【杀】或【闪】使用或打出。",
  fan_chongzhuangkaiyi:"重装铠翼",fan_chongzhuangkaiyi_info:"锁定技，装备区的此牌不能被弃置。<br>你可以将一张黑色牌当【杀】或【闪】使用或打出，目标角色的下个回合结束时，你获得其所有手牌。",
- fan_zhouyuleiqie:"骤雨雷切",fan_zhouyuleiqie_info:"出牌阶段，对一名其他角色使用。弃置任意张黑色牌，然后弃置该角色区域内等量张牌。",
+ fan_zhouyuleiqie:"骤雨雷切",fan_zhouyuleiqie_info:"出牌阶段，对一名其他角色使用。你弃置任意张黑色牌，然后弃置该角色区域内等量张牌。",
  fan_heixuanfeng:"黑旋风",fan_heixuanfeng_info:"锁定技，你使用黑色牌时，摸一张牌。",
  fan_kaiyiya_sha:"铠翼鸦·杀",fan_kaiyiya_shan:"铠翼鸦·闪",fan_chongzhuangkaiyi_sha:"重装铠翼·杀",fan_chongzhuangkaiyi_shan:"重装铠翼·闪",
  fan_chongzhuangkaiyi_protect:"重装铠翼",fan_chongzhuangkaiyi_xie:"楔",fan_heixuanfeng_draw:"黑旋风",
