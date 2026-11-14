@@ -36,7 +36,7 @@ function shooting(damage){return{equipSkill:true,locked:false,enable:"phaseUse",
  check:card=>7-get.value(card),
  async content(event,trigger,player){const target=event.targets[0];if(!target.isIn()||!player.isIn()||!player.inRange(target))return;
   playCynoSound("attack");
-  playCynoSound("explode");
+  setTimeout(() => playCynoSound("explode"), 2000 / 3);
   await target.damage(damage,player);},
  ai:{order:6,result:{target:(p,t)=>get.damageEffect(t,p,t)*damage}}};}
 export const trainSkills={

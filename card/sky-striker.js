@@ -85,7 +85,7 @@ export const skyStrikerCards = {
 for (const [name,card] of Object.entries(skyStrikerCards)) {
  Object.assign(card,{
   derivation:"fan_cyno", destroy:"discardPile", fullskin:true,
-  image:`ext:原神/image/card/${name}-framed.png`, global:[tag,"fan_cyno_exact_draw","fan_yihualingyi_gain","fan_heiguafuqian_window"],
+  image:`ext:原神/image/card/${name === upgraded ? "fan_yihualingyi-hand" : name + "-framed"}.png`, global:[tag,"fan_cyno_exact_draw","fan_yihualingyi_gain","fan_heiguafuqian_window"],
  });
 }
 

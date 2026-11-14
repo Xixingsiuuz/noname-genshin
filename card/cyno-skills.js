@@ -42,22 +42,27 @@ export default {
     check(card) {
       const player = _status.event.player;
       const attack = player.getCards("h").some(other => other !== card && get.name(other, player) === "sha");
-      return 8 - get.value(card, player) + (attack && !player.hasSkill("fan_hongmo_damage") ? 0.5 : 0);
+      return 8 - get.value(card, player) + (attack ? 0.5 : 0);
     },
     async precontent(event, trigger, player) {
       player.addTempSkill("fan_hongmo_used", { global: "phaseAfter" });
+      const pending = player.hasSkill("fan_hongmo_damage") ? player.storage.fan_hongmo_damage ?? 1 : 0;
+      player.storage.fan_hongmo_damage = pending + 1;
       player.addSkill("fan_hongmo_damage");
+      player.markSkill("fan_hongmo_damage");
     },
   },
   fan_hongmo_used: { charlotte: true },
   fan_hongmo_damage: {
     charlotte: true, forced: true, popup: false, mark: true,
-    intro: { content: "你使用的下一张【杀】造成的伤害+1" },
+    onremove: true,
+    intro: { content: amount => `你使用的下一张【杀】造成的伤害+${amount ?? 1}` },
     trigger: { player: "useCard1" },
     filter: event => event.card.name === "sha",
     content(event, trigger, player) {
+      const amount = player.storage.fan_hongmo_damage ?? 1;
       player.removeSkill("fan_hongmo_damage");
-      trigger.baseDamage = (trigger.baseDamage ?? 1) + 1;
+      trigger.baseDamage = (trigger.baseDamage ?? 1) + amount;
     },
   },
   fan_yongyuanzhihun_used: { charlotte: true },
