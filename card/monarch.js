@@ -13,16 +13,50 @@ export const monarchCards={
   if(player.isIn())await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...monarchFaces[i.name])),"draw");
  }},
  fan_tiandi:{...self,ai:{order:8,value:8,result:{target:2}},async content(event,trigger,player){
+  const countsUse=card=>get.name(card,player)!=="sha";
+  const canUse=card=>player.hasUseTarget(card,true,countsUse(card));
+  const useValue=card=>player.getUseValue(card,true,countsUse(card));
   const shown=sampleHeavenlyMonarch(Array.from(ui.cardPile.childNodes));if(!shown.length)return;
-  const choice=await player.chooseButton(["天帝：选择一张牌",shown],true).set("filterButton",b=>b.link.parentNode===ui.cardPile)
-   .set("ai",b=>player.hasUseTarget(b.link)?player.getUseValue(b.link):0).forResult();
-  const card=choice.links?.[0];if(!choice.bool||!shown.includes(card)||card.parentNode!==ui.cardPile||!player.isIn())return;
-  const action=await player.chooseButton(["天帝：选择操作",[[["use","使用"],["discard","置入弃牌堆"]],"textbutton"]],true)
-   .set("filterButton",b=>b.link==="discard"||(card.parentNode===ui.cardPile&&player.hasUseTarget(card)))
-   .set("ai",b=>b.link==="use"&&player.getUseValue(card)>0?2:1).forResult();
-  if(!action.bool||card.parentNode!==ui.cardPile||!player.isIn())return;
-  if(action.links[0]==="use"&&player.hasUseTarget(card))await player.chooseUseTarget({card,forced:true,prompt:"天帝：使用所选牌",prompt2:false});
-  else if(action.links[0]==="discard")await game.cardsDiscard([card]);
+  const selection=player.chooseButton(["天帝：选择一张牌",shown],true)
+   .set("filterButton",b=>b.link.parentNode===ui.cardPile)
+   .set("ai",b=>canUse(b.link)?useValue(b.link):0);
+  let control, operation;
+  if(selection.isMine?.()){
+   // The action buttons submit the selected card directly.
+   selection.set("filterOk",()=>false);
+   selection.custom.add.button=()=>{
+    const card=ui.selected.buttons[0]?.link;
+    if(!card){control?.close();control=null;return;}
+    if(!control){
+     control=ui.create.control("使用","置入弃牌堆",(label)=>{
+      const chosen=ui.selected.buttons[0]?.link;
+      if(_status.event!==selection||!player.isIn()||!shown.includes(chosen)||chosen.parentNode!==ui.cardPile)return;
+      const use=label==="使用";
+      if(use&&!canUse(chosen))return;
+      operation=use?"use":"discard";
+      ui.click.ok();
+     });
+    }
+    const usable=canUse(card);
+    control.firstChild.classList.toggle("disabled",!usable);
+    control.firstChild.style.opacity=usable?"":"0.4";
+    control.firstChild.setAttribute("aria-disabled",String(!usable));
+   };
+  }
+  let choice;
+  try { choice=await selection.forResult(); }
+  finally { control?.close(); }
+  const card=choice.links?.[0];
+  if(!choice.bool||!shown.includes(card)||card.parentNode!==ui.cardPile||!player.isIn())return;
+  if(!operation){
+   const action=await player.chooseButton(["天帝：选择操作",[[["use","使用"],["discard","置入弃牌堆"]],"textbutton"]],true)
+    .set("filterButton",b=>b.link==="discard"||(card.parentNode===ui.cardPile&&canUse(card)))
+    .set("ai",b=>b.link==="use"&&useValue(card)>0?2:1).forResult();
+   if(!action.bool||card.parentNode!==ui.cardPile||!player.isIn())return;
+   operation=action.links[0];
+  }
+  if(operation==="use"&&canUse(card))await player.chooseUseTarget({card,addCount:countsUse(card),forced:true,prompt:"天帝：使用所选牌",prompt2:false});
+  else if(operation==="discard")await game.cardsDiscard([card]);
   game.updateRoundNumber();
  }},
  fan_xiedi:{...removal,ai:{order:7,value:7,result:{target:-2}},async content(event,trigger,player){

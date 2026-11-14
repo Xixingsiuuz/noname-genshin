@@ -1,5 +1,5 @@
 import { gainCynoPackCards } from "../../ui/cyno-rarity.js";
-import { game, get, lib, ui, _status } from "../../../../noname.js";
+import { game, get, lib, ui } from "../../../../noname.js";
 import { cynoCardFaceMap } from "../../card/cyno-faces.js";
 
 export const cynoPacks = [
@@ -56,15 +56,17 @@ function stylePackDialog(dialog) {
 }
 
 export function installCynoPackReplay() {
-  game.videoContent.fanCynoPackOpen = (player, { id, title, names }) => {
+  game.videoContent.fanCynoPackOpen = async (player, payload = player) => {
+    const { id, title, names } = payload;
     if (get.idDialog(id)) return;
     const dialog = ui.create.dialog(title, "notouchscroll", "hidden");
     for (const row of packRows(names)) dialog.add(row, true);
     stylePackDialog(dialog);
     dialog.videoId = id;
     dialog.open();
+    await game.delay(0, 1500);
   };
-  game.videoContent.fanCynoPackClose = (player, id) => {
+  game.videoContent.fanCynoPackClose = (player, id = player) => {
     get.idDialog(id)?.close();
   };
 }
@@ -105,17 +107,17 @@ export default {
     async content(event, trigger, player) {
       const target = trigger.player;
       if (target.countDiscardableCards(target, "he") < 2) return;
-      const result = await target.chooseToDiscard("he", 2, "冷风：你可以弃置两张牌，然后获得1点护甲")
+      const result = await target.chooseToDiscard("he", 2, "冷风：你可以弃置两张牌，令此伤害-1")
         .set("ai", card => {
-          const owner = get.owner(card);
-          const damage = _status.event.getParent("damage");
-          if (!owner || owner.hujia >= 5 || owner.hasSkillTag("nohujia") || damage?.nohujia) return -1;
-          const urgent = damage && damage.num >= owner.hp + (owner.hujia || 0);
-          return (urgent ? 8 : 4) - get.value(card, owner);
+          if (trigger.num <= 0) return -1;
+          const armor = trigger.nohujia || target.hasSkillTag("nohujia") ? 0 : target.hujia || 0;
+          const savesFromDying = trigger.num === target.hp + armor;
+          const threshold = savesFromDying ? 9 : trigger.num > armor ? 5 : 2;
+          return threshold - get.value(card, target);
         }).forResult();
       if (!result.bool || result.cards?.length !== 2) return;
       game.trySkillAudio("fan_lengfeng", player, true);
-      if (target.isIn()) await target.changeHujia(1, "gain", 5);
+      trigger.num = Math.max(0, trigger.num - 1);
     },
   },
   fan_zhaohuan: {
@@ -206,7 +208,7 @@ export default {
   fan_zhaohuan_pack: { audio: summonAudio(5) },
   fan_zhaohuan_negate: { audio: summonAudio(3) },
   fan_zhaohuan_damage: { audio: summonAudio(3) },
-  fan_zhaohuan_other: { audio: summonAudio(3) },
+  fan_zhaohuan_other: { audio: [summonAudio(3), "fan_zhaohuan_damage"] },
   fan_zhaohuan_self: { audio: summonAudio(3) },
   fan_zhaohuan_card_voice: {
     audio: false,

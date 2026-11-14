@@ -14,7 +14,7 @@ for(let i=0;i<10000;i++){const seen=watch(pile,random);assert.equal(new Set(seen
 assert(Math.abs(sha/10000-.75)<.02,'按牌名抽取，不因杀实体多而偏重');assert.deepEqual(pile,original,'抽样不移动或重排牌堆');
 assert.equal(watch([{name:'sha'},{name:'sha'}],()=>0).length,1);assert.deepEqual(watch([],()=>0),[]);
 Object.defineProperty(Array.prototype,'sortBySeat',{configurable:true,value(){return this;}});
-const sounds=[];const get={color:c=>c.color,translation:id=>id};const lib={filter:{cardDiscardable:c=>!c.protected}};const ui={};const game={};
+const sounds=[];const get={name:card=>card.name,color:c=>c.color,translation:id=>id};const lib={filter:{cardDiscardable:c=>!c.protected}};const ui={};const game={};
 const{monarchCards:cards,monarchSkills:skills,outsideDraw}=new Function('playCynoSound','game','get','lib','ui','_status','monarchFaces','sampleMonarch','sampleHeavenlyMonarch',strip(read('../card/monarch.js'))+';return{monarchCards,monarchSkills,outsideDraw};')(sound=>sounds.push(sound),game,get,lib,ui,{},faces,sample,watch);
 for(const[name,c]of Object.entries(cards)){assert.equal(c.derivation,'fan_cyno');assert.equal(c.destroy,'discardPile');assert(faces[name]);assert(existsSync(new URL('../'+c.image.replace('ext:原神/',''),import.meta.url)));}
 let hp=0,discardCount=0;
@@ -55,7 +55,7 @@ const choice=links=>({set(){return this;},async forResult(){return{bool:true,lin
 const heaven={isIn:()=>true,hasUseTarget:()=>false,chooseButton(){return choice(step++===0?[viewed[1]]:['discard']);}};
 game.cardsDiscard=async list=>{discardedCard=list[0];};game.updateRoundNumber=()=>{};
 await cards.fan_tiandi.content({},null,heaven);assert.equal(discardedCard,viewed[1]);assert.deepEqual(ui.cardPile.childNodes,viewed);
-step=0;let usedCard;heaven.hasUseTarget=()=>true;heaven.chooseButton=()=>choice(step++===0?[viewed[0]]:['use']);heaven.chooseUseTarget=async options=>{usedCard=options.card;assert.equal(options.forced,true);assert.equal(options.addCount,undefined,'保留正常次数检查');};
+step=0;let usedCard;heaven.hasUseTarget=(card,distance,includecard)=>card.name==="sha"&&distance===true&&includecard===false;heaven.chooseButton=()=>choice(step++===0?[viewed[0]]:['use']);heaven.chooseUseTarget=async options=>{usedCard=options.card;assert.equal(options.forced,true);assert.equal(options.addCount,false);};
 await cards.fan_tiandi.content({},null,heaven);assert.equal(usedCard,viewed[0]);
 assert(read('../card/index.js').includes('...monarchCards'));assert(read('../character/skill.js').includes('...monarchSkills'));assert(read('../card/cyno-faces.js').includes('monarchFaces') && read('../character/skills/tester.js').includes('faces[link[2]]'));
 delete Array.prototype.sortBySeat;
