@@ -14,7 +14,7 @@ function context(event) {
 }
 function legalDragon(name, use, player) {
  if(!use || use.all_excluded)return false;
- if(name==="fan_yuzhouyaobian")return use.player!==player;
+ if(name==="fan_yuzhouyaobian")return use.player!==player&&get.type(use.card)!=="equip";
  return !dragons.includes(use.card.name)&&get.tag(use.card,"damage");
 }
 function counterValue(use, owner) {
@@ -125,7 +125,7 @@ export const stardustTranslate={
  fan_feipinhuishou:"废品回收",fan_feipinhuishou_info:"出牌阶段，对你使用。你从弃牌堆获得一张点数为2的牌。",
  fan_xingchenlong:"星尘龙",fan_xingchenlong_info:"此牌不计入手牌上限。一名角色使用伤害牌时，对该牌使用。那张牌无效。<br>出牌阶段，对你使用，弃置两张牌，然后摸等量的牌，可能有额外效果。",
  fan_liuxinglong:"流星龙",fan_liuxinglong_info:"此牌不计入手牌上限。一名角色使用伤害牌时，对该牌使用。那张牌无效，然后弃置该角色区域内一张牌。<br>此牌使用后，获得一张"+get.poptip("fan_xingchenlong")+"。",
- fan_yuzhouyaobian:"宇宙耀变",fan_yuzhouyaobian_info:"此牌不计入手牌上限。<br>其他角色使用牌时，对该牌使用。该牌无效，然后弃置该角色区域内的一张牌。<br>此牌离开你的手牌区时，将其置于你的武将牌上，并于本回合结束时置入手牌。",
+ fan_yuzhouyaobian:"宇宙耀变",fan_yuzhouyaobian_info:"此牌不计入手牌上限。<br>其他角色使用非装备牌时，对该牌使用。那张牌无效，然后你弃置该角色区域内一张牌。<br>此牌离开你的手牌区时，将其置于你的武将牌上，本回合结束时，你获得之。",
  fan_liuxinglong_after:"流星龙",
  fan_yuzhou_return:"宇宙耀变",
 };

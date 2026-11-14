@@ -16,7 +16,7 @@ assert(sync.qualifiesForCosmic([{number:1},{number:3}],8));
 assert(!sync.qualifiesForCosmic([{number:4}],8));
 assert(!sync.qualifiesForCosmic([{number:1},{number:1},{number:2}],8));
 assert(sync.qualifiesForCosmic([{number:1},{number:1}],10));
-const get={tag:c=>c.damage?1:0,position:c=>c.position,poptip:id=>id};
+const get={type:c=>c.type??"trick",tag:c=>c.damage?1:0,position:c=>c.position,poptip:id=>id};
 const game={players:[],createCard:(name,suit,number)=>({name,suit,number})};
 const s=load('../card/stardust.js','stardustCards,stardustSkills',{game,get,lib:{},ui:{},_status:{},...sd,exchangeStardust:sync.exchangeStardust,cosmicMovementSkill:{}});
 const u=load('../card/utopia.js','utopiaCards,utopiaSkills,cancelUtopiaTarget',{game,get,lib:{},ui:{},_status:{},...ud});
@@ -52,8 +52,13 @@ const owner={async discardPlayerCard(){discarded++},isIn:()=>true};
 const use={card:{damage:true},player:source,all_excluded:false};
 await s.stardustCards.fan_liuxinglong.content({parent:{name:'chooseToUse',fanStardustUse:use,fanStardustOpen:true}},null,owner);
 assert.equal(use.all_excluded,true);assert.equal(discarded,1);
+{
+ const use={card:{name:'bagua',type:'equip'},player:source,all_excluded:false};
+ await s.stardustCards.fan_yuzhouyaobian.content({parent:{name:'chooseToUse',fanStardustUse:use,fanStardustOpen:true}},null,owner);
+ assert.equal(use.all_excluded,false);
+}
 for(const name of ['fan_xingchenlong','fan_liuxinglong']){
- const dragonUse={card:{name},player:source,all_excluded:false};
+ const dragonUse={card:{name,type:name==='bagua'?'equip':'trick'},player:source,all_excluded:false};
  assert(s.stardustSkills.fan_xingchen_window.filter(dragonUse));
  await s.stardustCards.fan_yuzhouyaobian.content({parent:{name:'chooseToUse',fanStardustUse:dragonUse,fanStardustOpen:true}},null,source);
  assert.equal(dragonUse.all_excluded,false,'不能反制自己使用的牌');
