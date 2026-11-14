@@ -11,7 +11,8 @@ const game = {
   getExtensionConfig(name, key) { assert.equal(name, "原神"); return config[key]; },
   saveExtensionConfig(name, key, value) { assert.equal(name, "原神"); config[key] = value; },
 };
-let release = { tag_name: "v0.3.0", body: "<script>example</script>" }, status = 200;
+const [major, minor, patch] = EXTENSION_VERSION.split(".").map(Number);
+let release = { tag_name: `v${major}.${minor}.${patch + 1}`, body: "<script>example</script>" }, status = 200;
 const checker = createUpdateChecker(game, {
   fetch: async () => ({ status, ok: status === 200, json: async () => release }),
   notify: message => messages.push(message), display: value => shown.push(value),
@@ -22,7 +23,7 @@ assert.equal(shown.length, 1, "same release auto-notified once");
 await checker.check(true);
 assert.equal(shown.length, 2, "manual check bypasses suppression");
 config.auto_check_update = false;
-release = { tag_name: "v0.4.0" };
+release = { tag_name: `v${major}.${minor}.${patch + 2}` };
 await checker.check();
 assert.equal(shown.length, 2);
 await checker.check(true);

@@ -206,6 +206,15 @@ export function installCynoRarity(get, lib, ui, game, getPreviewRarity) {
       child.textContent.trim().startsWith(label) || child.textContent.trim().startsWith("特殊" + label));
     if (!typeLine || intro.content.querySelector(".fan-cyno-equip-preview")) return intro;
     const materials = card[card.cardSymbol]?.cards;
+    if (definition.type === "equip" && intro.isNotCard) {
+      const materialsLabel = Array.from(intro.content.children).find(child =>
+        child.matches(".text.center") && child.textContent.trim() === "—— 对应实体牌 ——");
+      if (materialsLabel) {
+        const materialsRow = materialsLabel.nextElementSibling;
+        if (materialsRow?.classList.contains("buttons")) materialsRow.remove();
+        materialsLabel.remove();
+      }
+    }
     const physical = materials?.length === 1 && materials[0].name === card.name ? materials[0] : card;
     const preview = ui.create.card().init([physical.suit, physical.number, card.name, physical.nature]);
     const rarity = physical[rarityKey] ?? card[rarityKey];

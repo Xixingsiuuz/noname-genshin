@@ -206,7 +206,7 @@ export default {
   },
   fan_zhaohuan_open: { audio: summonAudio(1, "mp3") },
   fan_zhaohuan_pack: { audio: summonAudio(5) },
-  fan_zhaohuan_negate: { audio: summonAudio(3) },
+  fan_zhaohuan_negate: { audio: [summonAudio(3), "fan_zhaohuan_damage"] },
   fan_zhaohuan_damage: { audio: summonAudio(3) },
   fan_zhaohuan_other: { audio: [summonAudio(3), "fan_zhaohuan_damage"] },
   fan_zhaohuan_self: { audio: summonAudio(3) },
@@ -220,10 +220,10 @@ export default {
       if (timing === "eventNeutralized") {
         const counter = event._neutralize_event;
         return counter?.player === player && event.player !== player &&
-          !voicedUses.has(counter) && isSummonCard(counter);
+          !voicedUses.has(counter) && (counter.card?.name === "wuxie" || isSummonCard(counter));
       }
       const use = event.getParent();
-      return !voicedUses.has(use) && isSummonCard(use);
+      return use.card?.name !== "wuxie" && !voicedUses.has(use) && isSummonCard(use);
     },
     async content(event, trigger, player) {
       const neutralized = event.triggername === "eventNeutralized";

@@ -64,27 +64,22 @@ export const blackwingSkills={
     target.markSkill("fan_chongzhuangkaiyi_xie");
    }
   }},
- fan_chongzhuangkaiyi_xie:{charlotte:true,mark:true,marktext:"楔",group:"fan_chongzhuangkaiyi_xie_ready",intro:{content(storage,player){
-   const ready=player.storage.fan_chongzhuangkaiyi_xie_ready||[];
-   return (storage||[]).map(source=>`${ready.includes(source)?"本回合":"你的下个回合"}结束时，${get.translation(source)}获得你的所有手牌。`).join("<br>");
+ fan_chongzhuangkaiyi_xie:{charlotte:true,mark:true,marktext:"楔",intro:{content(storage){
+   return (storage||[]).map(source=>`该角色的回合结束时，${get.translation(source)}获得其所有手牌。`).join("<br>");
   }},
   trigger:{player:"phaseEnd"},forced:true,popup:false,
-  filter:(event,player)=>(player.storage.fan_chongzhuangkaiyi_xie_ready||[]).length>0,
+  filter:(event,player)=>!!player.storage.fan_chongzhuangkaiyi_xie?.length,
   async content(event,trigger,player){
-   const sources=(player.storage.fan_chongzhuangkaiyi_xie_ready||[]).slice().sortBySeat(_status.currentPhase||player);
-   delete player.storage.fan_chongzhuangkaiyi_xie_ready;
-   player.storage.fan_chongzhuangkaiyi_xie=(player.storage.fan_chongzhuangkaiyi_xie||[]).filter(source=>!sources.includes(source));
-   if(!player.storage.fan_chongzhuangkaiyi_xie.length)player.removeSkill("fan_chongzhuangkaiyi_xie");else player.markSkill("fan_chongzhuangkaiyi_xie");
+   const sources=(player.storage.fan_chongzhuangkaiyi_xie||[]).slice().sortBySeat(_status.currentPhase||player);
+   delete player.storage.fan_chongzhuangkaiyi_xie;
+   player.removeSkill("fan_chongzhuangkaiyi_xie");
    for(const owner of sources){if(!player.isIn()||!owner.isIn())continue;const cards=player.getCards("h");if(cards.length)await player.give(cards,owner);}
-  },onremove(player){delete player.storage.fan_chongzhuangkaiyi_xie;delete player.storage.fan_chongzhuangkaiyi_xie_ready;}},
- // 只在被标记者下一回合开始时锁定本次到期来源；回合内新增来源留待其再下一回合。
- fan_chongzhuangkaiyi_xie_ready:{charlotte:true,trigger:{player:"phaseBegin"},forced:true,popup:false,
-  async content(event,trigger,player){player.storage.fan_chongzhuangkaiyi_xie_ready=(player.storage.fan_chongzhuangkaiyi_xie||[]).slice();player.markSkill("fan_chongzhuangkaiyi_xie");}},
+  },onremove:true},
 };
 export const blackwingTranslate={
  fan_qiheizhixuanfeng:"漆黑之旋风",fan_qiheizhixuanfeng_info:"出牌阶段，对你使用。你随机获得五张【黑羽】卡组相关的牌。",
  fan_kaiyiya:"铠翼鸦",fan_kaiyiya_info:"你可以将一张黑色牌当【杀】或【闪】使用或打出。",
- fan_chongzhuangkaiyi:"重装铠翼",fan_chongzhuangkaiyi_info:"锁定技，装备区的此牌不能被弃置。<br>你可以将一张黑色牌当【杀】或【闪】使用或打出，目标角色的下个回合结束时，你获得其所有手牌。",
+ fan_chongzhuangkaiyi:"重装铠翼",fan_chongzhuangkaiyi_info:"锁定技，装备区的此牌不能被弃置。<br>你可以将一张黑色牌当【杀】或【闪】使用或打出，目标角色的回合结束时，你获得其所有手牌。",
  fan_zhouyuleiqie:"骤雨雷切",fan_zhouyuleiqie_info:"出牌阶段，对一名其他角色使用。你弃置任意张黑色牌，然后弃置该角色区域内等量张牌。",
  fan_heixuanfeng:"黑旋风",fan_heixuanfeng_info:"锁定技，你使用黑色牌时，摸一张牌。",
  fan_kaiyiya_sha:"铠翼鸦·杀",fan_kaiyiya_shan:"铠翼鸦·闪",fan_chongzhuangkaiyi_sha:"重装铠翼·杀",fan_chongzhuangkaiyi_shan:"重装铠翼·闪",

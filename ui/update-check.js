@@ -1,4 +1,4 @@
-export const EXTENSION_VERSION = "0.2.1";
+export const EXTENSION_VERSION = "0.3.0";
 const releaseURL = "https://api.github.com/repos/Xixingsiuuz/noname-genshin/releases/latest";
 const projectURL = "https://github.com/Xixingsiuuz/noname-genshin/releases";
 
