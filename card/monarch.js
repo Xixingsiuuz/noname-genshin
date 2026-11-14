@@ -1,15 +1,10 @@
 import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
-import{game,get,lib,ui,_status}from"../../../noname.js";
+import { playCynoSound } from "./cyno-sound.js";
+import{game,get,ui,_status}from"../../../noname.js";
 import{monarchFaces,sampleMonarch,sampleHeavenlyMonarch}from"./monarch-data.js";
 const self={type:"trick",enable:true,selectTarget:-1,toself:true,filterTarget:(c,p,t)=>p===t};
 const removal={type:"trick",enable:true,filterTarget:(c,p,t)=>p!==t&&t.countCards("hej")>0};
-export function outsideDraw(event,player){for(let e=event;e;e=e.parent)if(e.name==="phaseDraw"&&e.player===player)return false;return true;}
-export function domainGained(event,player){
- // 与那维莱特的获牌记录一致，使用/置入装备与判定区不属于获得牌。
- if(!["gain","loseAsync"].includes(event.name))return [];
- const held=player.getCards("h");
- return (event.getg?.(player)||[]).filter(c=>held.includes(c));
-}
+export function outsideDraw(event){for(let e=event;e;e=e.parent)if(e.name==="phaseDraw")return false;return true;}
 export const monarchCards={
  fan_fanshenzhidiwang:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
   const plan=sampleMonarch(),cards=[];
@@ -46,14 +41,15 @@ export const monarchCards={
 for(const[name,c]of Object.entries(monarchCards))Object.assign(c,{derivation:"fan_cyno",destroy:"discardPile",fullskin:true,image:`ext:原神/image/card/${name}-framed.png`,global:"fan_diwanglingyu_expire"});
 export const monarchSkills={
  fan_diwanglingyu_effect:{charlotte:true,cardSkill:true,locked:false,forced:true,popup:false,mark:true,marktext:"域",onremove:true,
-  intro:{content:storage=>`摸牌阶段外获得牌后弃置，持续至${(storage||[]).map(p=>get.translation(p)).join("、")}的下个回合开始。`},
-  trigger:{player:"gainAfter",global:"loseAsyncAfter"},
-  filter:(event,player)=>outsideDraw(event,player)&&domainGained(event,player).some(c=>lib.filter.cardDiscardable(c,player)),
+  intro:{content:storage=>`摸牌阶段外不能获得牌，持续至${(storage||[]).map(p=>get.translation(p)).join("、")}的下个回合开始。`},
+  trigger:{player:["drawBefore","gainBefore"]},
+  filter:outsideDraw,
   async content(event,trigger,player){
-   if(!outsideDraw(trigger,player))return;
-   const cards=domainGained(trigger,player).filter(c=>lib.filter.cardDiscardable(c,player));
-   if(cards.length)await player.discard(cards);
-  },ai:{nogain: true}},
+   trigger.cancel();
+   player.popup(get.translation("fan_diwanglingyu"),"metal");
+   playCynoSound("addcounter");
+  },
+  ai:{nogain:true,skillTagFilter:()=>outsideDraw(_status.event)}},
  fan_diwanglingyu_expire:{cardSkill:true,trigger:{global:"phaseBeginStart"},forced:true,popup:false,locked:false,
   filter:event=>game.hasPlayer(p=>p.storage.fan_diwanglingyu_effect?.includes(event.player)),
   async content(event,trigger){
@@ -69,6 +65,6 @@ export const monarchTranslate={
  fan_tiandi:"天帝",fan_tiandi_info:"出牌阶段，对你使用。观看牌堆三张牌名不同的牌，选择其中一张牌使用或置入弃牌堆。",
  fan_xiedi:"邪帝",fan_xiedi_info:"出牌阶段，对区域内有牌的一名其他角色使用。弃置其区域内一张牌，弃置黑色牌时，该角色失去1点体力。",
  fan_yuanxiedi:"怨邪帝",fan_yuanxiedi_info:"出牌阶段，对区域内有牌的一名其他角色使用。弃置其区域内两张牌，该角色失去1点体力。",
- fan_diwanglingyu:"帝王领域",fan_diwanglingyu_info:"出牌阶段，对所有角色使用。直到你的下个回合开始，每名角色于摸牌阶段外获得牌时，弃置这些牌。",
+ fan_diwanglingyu:"帝王领域",fan_diwanglingyu_info:"出牌阶段，对所有角色使用，直到你的下个回合开始，所有角色于摸牌阶段外获得牌时，防止之。",
  fan_diwanglingyu_effect:"帝王领域",
 };
