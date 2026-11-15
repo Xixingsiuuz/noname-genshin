@@ -62,6 +62,22 @@ assert.equal(new Set(batches[0].cards).size, 2);
 assert.equal(batches[1].cards.length, 3);
 assert(batches[1].cards.every(c=>c.suit==='club'&&c.number===7));
 assert(batches.every(batch=>batch.animation==='draw'));
+
+const skillSource = read('../character/skills/cyno.js').replace(/^import .*;\r?\n/gm, '').replace('export default {', 'const cynoSkills = {').replace(/export /g, '');
+const mockGame = {
+  createEvent(name) {
+    assert.equal(name, 'fan_zhaohuan_gain');
+    return {
+      setContent(content) { this.content = content; },
+      then(resolve, reject) { return this.content(this, undefined, this.player).then(resolve, reject); },
+    };
+  },
+};
+const gainPack = new Function('game', 'lib', skillSource + ';return gainPack;')(mockGame, {card: runtime});
+pile.push(entity('wuxie'), entity('sha'));
+batches.length = 0;
+await gainPack(target, 'fan_heimoshumiyi');
+assert.equal(batches.flatMap(batch => batch.cards).length, 5, '召唤王直接开包时也须给赛诺发牌');
 assert.equal(skills.fan_heimoshushi_rule.prompt2, false);
 assert.equal(typeof skills.fan_heimoshushi_rule.prompt, 'string');
 console.log('两批暗置获得、重复牌名缺牌回退、衍生牌梅花7与简短居中提示配置检查通过。');

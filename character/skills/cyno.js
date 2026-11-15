@@ -35,6 +35,8 @@ function updatePrivateReserveView(player) {
 async function gainPack(player, name) {
   const next = game.createEvent("fan_zhaohuan_gain");
   next.player = player;
+  next.target = player;
+  next.targets = [player];
   next.setContent(lib.card[name].content);
   await next;
 }
