@@ -2,7 +2,7 @@ import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import { playCynoSound } from "./cyno-sound.js";
 import {game,get,lib,ui,_status} from "../../../noname.js";
 import {utopiaFaces,sampleUtopia} from "./utopia-data.js";
-const self={type:"trick",enable:true,selectTarget:-1,toself:true,filterTarget:(c,p,t)=>p===t};
+const self={type:"trick",enable:true,selectTarget:-1,toself:true, modTarget: true,filterTarget:(c,p,t)=>p===t};
 const armor={type:"equip",subtype:"equip2",enable:true,selectTarget:-1,toself:true,modTarget:true,
  filterTarget:(c,p,t)=>p===t&&t.canEquip(c,true),async content(event){await event.target.equip(event.cards[0]);},
  ai:{order:9,value:8,basic:{equipValue:8},result:{target:1}}};
@@ -16,7 +16,8 @@ export function cancelUtopiaTarget(trigger){
  return true;
 }
 export const utopiaCards={
- fan_xiwangdechaoyue:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
+ fan_xiwangdechaoyue:{...self,ai:{order:10,value:10,result:{target:5}},async content(event){
+   const player = event.target;
   const plan=sampleUtopia(),cards=[];
   for(const item of plan.filter(i=>i.source==="pile")){const c=get.cardPile2(c=>c.name===item.name);if(c){c.remove();c.original="c";cards.push(c)}else cards.push(...get.cards(1));}
   game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));
@@ -27,8 +28,9 @@ export const utopiaCards={
  fan_xingguangliqiu:{type:"trick",global:"fan_utopia_rules",ai:{value:8,useful:7}},
  fan_fanbeijihui:{...self,enable:()=>!!missedUse(_status.event),ai:{order:0,value:7,useful:5,result:{target:2}},
   async content(event,trigger,player){const use=missedUse(event);if(!use||!noDamage(use,player))return;
-   player.addTempSkill("fan_fanbei_buff");player.addMark("fan_fanbei_buff",1,false);
-   player.storage.fan_fanbei_pending=(player.storage.fan_fanbei_pending||0)+1;
+   const recipient = event.target;
+   recipient.addTempSkill("fan_fanbei_buff");recipient.addMark("fan_fanbei_buff",1,false);
+   recipient.storage.fan_fanbei_pending=(player.storage.fan_fanbei_pending||0)+1;
   }},
 };
 for(const[name,card]of Object.entries(utopiaCards))Object.assign(card,{derivation:"fan_cyno",destroy:"discardPile",fullskin:true,image:`ext:原神/image/card/${name}-framed.png`});

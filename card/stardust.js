@@ -25,11 +25,12 @@ function counterValue(use, owner) {
   ? -Math.sign(get.attitude(owner,prior.player)) : 0;
  return discard-counterValue(prior,owner);
 }
-const self={type:"trick",enable:true,selectTarget:-1,toself:true,filterTarget:(card,player,target)=>player===target};
+const self={type:"trick",enable:true,selectTarget:-1,toself:true, modTarget: true,filterTarget:(card,player,target)=>player===target};
 const valuable={order:9,value:8,useful:6,result:{target:2}};
 export const stardustCards={
  fan_xingchendehuiguang:{...self,ai:valuable,
-  async content(event,trigger,player){
+  async content(event){
+   const player = event.target;
    const plan=sampleStardust(),cards=[];
    for(const item of plan.filter(i=>i.source==="pile")){
     const list=Array.from(ui.cardPile.childNodes).filter(c=>item.kind==="shan"?c.name==="shan":get.number(c)>0&&get.number(c)<=3);
@@ -38,14 +39,16 @@ export const stardustCards={
    game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));if(!player.isIn())return;
    await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...stardustFaces[i.name])),"draw");
   }},
- fan_tiaolv:{...self,ai:valuable,async content(event,trigger,player){
+ fan_tiaolv:{...self,ai:valuable,async content(event){
+   const player = event.target;
   const numbers=Array.from({length:13},(_,i)=>String(i+1));
   const result=await player.chooseControl(numbers).set("prompt","调律：选择点数").set("prompt2",false).set("ai",()=>"1").forResult();
   const n=Number(result.control);if(!Number.isInteger(n)||n<1||n>13)return;
   const cards=Array.from(ui.cardPile.childNodes).filter(c=>get.number(c)===n);
   if(cards.length)await player.gain(cards.randomGet(),"draw");
  }},
- fan_feipinhuishou:{...self,ai:valuable,async content(event,trigger,player){
+ fan_feipinhuishou:{...self,ai:valuable,async content(event){
+   const player = event.target;
   const cards=Array.from(ui.discardPile.childNodes).filter(c=>get.number(c)===2);if(!cards.length)return;
   const result=await player.chooseButton(["废品回收：获得一张牌",cards],true).set("ai",b=>get.value(b.link,player)).forResult();
   const card=result.links?.[0];if(result.bool&&cards.includes(card)&&card.parentNode===ui.discardPile)await player.gain(card,"gain2");
@@ -62,7 +65,7 @@ for(const name of dragons)stardustCards[name]={type:"trick",notarget:true,enable
  }};
 // 同一实体牌：反制窗口没有角色目标，主动使用时则自动以自己为目标。
 Object.defineProperty(stardustCards.fan_xingchenlong,"notarget",{enumerable:true,configurable:true,get(){return !!context(_status.event);}});
-Object.assign(stardustCards.fan_xingchenlong,{toself:true,selectTarget:-1,filterTarget:(c,p,t)=>p===t,
+Object.assign(stardustCards.fan_xingchenlong,{toself:true,selectTarget:-1,modTarget:true,filterTarget:(c,p,t)=>p===t,
  enable:()=>{const use=context(_status.event);return use?!!legalDragon("fan_xingchenlong",use):_status.event?.type==="phase";},
  ai:{...valuable,order:7},
  async content(event,trigger,player){
@@ -75,7 +78,7 @@ Object.assign(stardustCards.fan_xingchenlong,{toself:true,selectTarget:-1,filter
    }
    return;
   }
-  if(event.target===player)await exchangeStardust(event,player);
+  if(event.target?.isIn())await exchangeStardust(event,event.target);
  }});
 for(const[name,card]of Object.entries(stardustCards))Object.assign(card,{derivation:"fan_cyno",destroy:"discardPile",fullskin:true,image:`ext:原神/image/card/${name}-framed.png`,global:"fan_xingchen_window"});
 export const stardustSkills={

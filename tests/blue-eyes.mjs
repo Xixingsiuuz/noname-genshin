@@ -1,12 +1,13 @@
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
+import {createCynoReward} from '../ui/cyno-rarity.js';
 const read=p=>readFileSync(new URL(p,import.meta.url),'utf8');
 const faces=new Function(read('../card/blue-eyes-data.js').replace(/export /g,'')+';return blueEyesFaces;')();
 const source='const playCynoSound = () => {};\n'+read('../card/blue-eyes.js').replace(/^import .*;\r?\n/gm,'').replace(/export /g,'');
 const game={createCard:(name,suit,number)=>({name,suit,number})};
 const get={poptip:id=>id,type2:()=> 'trick',effect:()=>0};
 const lib={filter:{targetEnabled2:()=>true}};
-const {sampleBlueEyes:sample,blueEyesCards:cards,blueEyesSkills:skills}=new Function('game','get','lib','blueEyesFaces',source+';return {sampleBlueEyes,blueEyesCards,blueEyesSkills};')(game,get,lib,faces);
+const {sampleBlueEyes:sample,blueEyesCards:cards,blueEyesSkills:skills}=new Function('game','get','lib','blueEyesFaces','createCynoReward',source+';return {sampleBlueEyes,blueEyesCards,blueEyesSkills};')(game,get,lib,faces,createCynoReward);
 assert.equal(sample(()=>0).filter(c=>c.source==='pile').length,2);
 assert(sample(()=>0).slice(0,2).every(c=>c.name==='sha'));
 assert.equal(sample(()=>.99).filter(c=>c.source==='pile').length,3);
@@ -21,8 +22,13 @@ for(const [name,card] of Object.entries(cards)){
 }
 let marks=0, gained=[];
 const owner={isIn:()=>true,addTempSkill(){},addMark(id,n){marks+=n},countMark:()=>marks,async gain(cards){gained.push(cards)}};
-await cards.fan_zhengyihuoban.content({card:{name:'fan_zhengyihuoban'}},null,owner);
-await cards.fan_zhengyichuanshuo.content({card:{name:'fan_zhengyichuanshuo'}},null,owner);
+const originalUser = {};
+for (const name of ['fan_zhengyihuoban', 'fan_zhengyichuanshuo']) {
+ const card = cards[name];
+ assert.equal(card.filterTarget(card, originalUser, owner), false);
+ assert.equal(card.modTarget, true);
+ await card.content({player:originalUser,target:owner,card:{name}},null,originalUser);
+}
 assert.equal(marks,6);assert.equal(skills.fan_zhengyi_quota.mod.cardUsable({name:'sha'},owner,1),7);
 assert.equal(gained[0].length,3);assert(gained[0].every(c=>c.suit==='spade'&&c.number===8));
 assert.equal(skills.fan_qingyanbailong_rule.mod.ignoredHandcard({name:'fan_qingyanbailong'}),true);
@@ -30,7 +36,7 @@ const target={isIn:()=>true}, user={};
 let used=false;
 const use={targets:[owner,target],triggeredTargets2:[owner]};
 use.triggeredTargets2.remove=function(p){this.splice(this.indexOf(p),1)};
-Object.assign(owner,{hasSkill:()=>used,addTempSkill:()=>{used=true},logSkill(){},chooseTarget(){return {set(){return this},async forResult(){return {bool:true,targets:[target]}}}}});
+Object.assign(owner,{getVCards:()=>[{name:"fan_baizhishaonv"}],hasSkill:()=>used,addTempSkill:()=>{used=true},logSkill(){},chooseTarget(){return {set(){return this},async forResult(){return {bool:true,targets:[target]}}}}});
 const trigger={card:{name:'sha'},player:user,getParent:()=>use};
 game.hasPlayer=fn=>[owner,target,user].some(fn);
 assert.equal(skills.fan_baizhishaonv_skill.filter(trigger,owner),true);

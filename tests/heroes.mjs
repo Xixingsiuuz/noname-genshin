@@ -35,7 +35,7 @@ let equipment=3, discarded=0;
 const target={isIn:()=>true,countDiscardableCards:()=>2};
 game.hasPlayer=fn=>fn(target);
 const player={countCards:()=>equipment,isIn:()=>true,async draw(n){assert.equal(n,3);equipment=0},chooseTarget(){return {set(){return this},async forResult(){return {bool:true,targets:[target]}}}},async discardPlayerCard(t,pos,n){discarded=n}};
-await cards.fan_shanguangxinyi.content({},null,player);assert.equal(discarded,2);
+await cards.fan_shanguangxinyi.content({target:player},null,player);assert.equal(discarded,2);
 assert(read('../card/index.js').includes('...heroCards'));
 assert(read('../card/cyno-faces.js').includes('heroFaces') && read('../character/skills/tester.js').includes('faces[link[2]]'));
 const emptyTarget = {isIn:()=>true,countDiscardableCards:()=>0};

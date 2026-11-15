@@ -8,7 +8,7 @@ const upgraded = "fan_yihualingyi";
 const tag = "fan_shandao_draw";
 const resolvedDraws = new WeakSet();
 const resolvedUpgradeGains = new WeakSet();
-const self = {type:"trick", enable:true, selectTarget:-1, toself:true, filterTarget:(card,player,target)=>player===target};
+const self = {type:"trick", enable:true, selectTarget:-1, toself:true, modTarget: true, filterTarget:(card,player,target)=>player===target};
 const drawAi = {order:7, value:7, result:{target:1}};
 
 const anchor = "fan_heiguafuqian";
@@ -34,7 +34,8 @@ function chainDrawSource(event) {
 export const skyStrikerCards = {
  fan_shandaozhijilve: {
   ...self, ai:{order:10,value:10,result:{target:5}},
-  async content(event, trigger, player) {
+  async content(event) {
+    const player = event.target;
    const plan = sampleSkyStriker();
    const cards = [];
    for (const item of plan.filter(item => item.source === "pile")) {
@@ -57,15 +58,18 @@ export const skyStrikerCards = {
  },
  [zero]: {
   ...self,
-  ai:{...drawAi,result:{target:player=>player.countCards("he")>0 ? 0.25 : 1}},
-  async content(event,trigger,player) {
+  ai:{...drawAi,result:{target:(_user,player)=>player.countCards("he")>0 ? 0.25 : 1}},
+  async content(event) {
+    const player = event.target;
    await player.chooseToDiscard("he",1,true,"闪刀姬零：弃置一张牌");
   },
  },
- [upgraded]: {...self, ai:drawAi, async content(event,trigger,player) { await player.draw(); }},
+ [upgraded]: {...self, ai:drawAi, async content(event) {
+   await event.target.draw(); }},
  fan_shandaoqidong: {
   ...self, ai:{...drawAi, order:7},
-  async content(event, trigger, player) {
+  async content(event) {
+    const player = event.target;
    await gainCardMatchingText(player, "闪", "闪刀起动：选择要获得的牌", event.cards?.length === 1 ? event.cards[0] : event.card);
    if (player.isIn()) await player.draw().set("fanCynoExactRaritySource", event.cards?.length === 1 ? event.cards[0] : event.card);
   },
@@ -74,6 +78,7 @@ export const skyStrikerCards = {
   type:"trick", selectTarget:-1,
   enable:()=>!!anchorSource(_status.event),
   filterTarget:(card,player,target)=>target===anchorSource(_status.event) && target.countGainableCards(player,"hej")>0,
+  modTarget: true,
   ai:{order:0,value:7,result:{target:-1}},
   async content(event, trigger, player) {
    const target = event.target;

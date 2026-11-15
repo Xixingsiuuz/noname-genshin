@@ -15,20 +15,25 @@ export function characterSkillIds(){
  game.expandSkills(list);characterSkillCache=new Set(list);return characterSkillCache;
 }
 function seal(target){target.addTempSkill("fan_dianzilong_seal",{player:"phaseAfter"});}
-const self={type:"trick",enable:true,selectTarget:-1,toself:true,filterTarget:(c,p,t)=>p===t};
-const nova={...self,async content(event,trigger,player){player.addSkill("fan_dianzilong_growth");player.addMark("fan_dianzilong_growth",1,false);},ai:{order:9,value:9,result:{target:3}}};
+const self={type:"trick",enable:true,selectTarget:-1,toself:true, modTarget: true,filterTarget:(c,p,t)=>p===t};
+const nova={...self,async content(event){
+  const player = event.target;
+  player.addSkill("fan_dianzilong_growth");player.addMark("fan_dianzilong_growth",1,false);},ai:{order:9,value:9,result:{target:3}}};
 export const cyberDragonCards={
- fan_jiguanglongxilei:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
+ fan_jiguanglongxilei:{...self,ai:{order:10,value:10,result:{target:5}},async content(event){
+   const player = event.target;
   const plan=sampleCyberDragon(),cards=[];for(const item of plan.filter(i=>i.source==="pile")){const list=Array.from(ui.cardPile.childNodes).filter(c=>item.kind==="tiesuo"?c.name==="tiesuo":get.subtype(c)==="equip2");const c=list.randomGet();if(c){c.remove();c.original="c";cards.push(c)}else cards.push(...get.cards(1));}
   game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));if(player.isIn())await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...cyberDragonFaces[i.name])),"draw");
  }},
  fan_xinxing:{...nova},fan_wuxian:{...nova},
- fan_jinjihujiao:{...self,ai:{order:8,value:8,result:{target:p=>p.isDamaged()?2:1}},async content(event,trigger,player){
+ fan_jinjihujiao:{...self,ai:{order:8,value:8,result:{target:(_user,p)=>p.isDamaged()?2:1}},async content(event){
+   const player = event.target;
   const result=await player.chooseControl("摸两张牌","回复体力").set("prompt","紧急呼救：选择一项").set("prompt2",false).set("ai",()=>player.isDamaged()&&player.hp<=2?"回复体力":"摸两张牌").forResult();
   if(result.control==="回复体力")await player.recover();else if(result.control==="摸两张牌")await player.draw(2);
  }},
  fan_wuxianpaoying:{type:"trick",enable:()=>!!turnTarget(_status.event),filterTarget:(c,p,t)=>t!==p&&t===turnTarget(_status.event),
-  async content(event){if(event.target.isIn())seal(event.target);},ai:{order:0,value:8,useful:7,result:{target:-2}}},
+  modTarget: true,
+  async content(event){if(event.target.isIn())event.target.addTempSkill("fan_dianzilong_seal",{global:"phaseAfter"});},ai:{order:0,value:8,useful:7,result:{target:-2}}},
 };
 for(const[name,c]of Object.entries(cyberDragonCards))Object.assign(c,{derivation:"fan_cyno",destroy:"discardPile",fullskin:true,image:`ext:原神/image/card/${name}-framed.png`,global:["fan_dianzilong_hand","fan_wuxian_after","fan_wuxianpaoying_window"]});
 export const cyberDragonSkills={

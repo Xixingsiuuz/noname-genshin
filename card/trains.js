@@ -7,15 +7,17 @@ export function sampleTrains(random=Math.random){
  for(let i=0;i<count;i++)result.push({source:"pile",name:roll()<2/3?"sha":"tiesuo"});
  for(let i=count;i<5;i++){let name=["fan_huizhuandiaoche","fan_paotalieche","fan_zhunwuweijian"][Math.floor(roll()*3)];if(name==="fan_paotalieche"&&roll()<1/3)name="fan_potianjuai";result.push({source:"derived",name});}return result;
 }
-const self={type:"trick",enable:true,selectTarget:-1,toself:true,filterTarget:(c,p,t)=>p===t};
+const self={type:"trick",enable:true,selectTarget:-1,toself:true, modTarget: true,filterTarget:(c,p,t)=>p===t};
 function equipment(subtype,skill,value){return{type:"equip",subtype,skills:[skill],enable:true,selectTarget:-1,toself:true,modTarget:true,filterTarget:(c,p,t)=>p===t&&t.canEquip(c,true),async content(event){await event.target.equip(event.cards[0]);},ai:{order:9,value,basic:{equipValue:value},result:{target:1}}};}
 export const trainCards={
- fan_chaonujilieche:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
+ fan_chaonujilieche:{...self,ai:{order:10,value:10,result:{target:5}},async content(event){
+   const player = event.target;
   const plan=sampleTrains(),cards=[];for(const item of plan.filter(i=>i.source==="pile")){const card=get.cardPile2(c=>c.name===item.name);if(card){card.remove();card.original="c";cards.push(card)}else cards.push(...get.cards(1));}
   game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));if(player.isIn())await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...trainFaces[i.name])),"draw");
  }},
  fan_huizhuandiaoche:{...self,filter:(c,p)=>p.getCards("he").some(card=>card!==c&&lib.filter.cardDiscardable(card,p)),
-  async content(event,trigger,player){
+  async content(event){
+   const player = event.target;
    if(!player.getCards("he").some(c=>lib.filter.cardDiscardable(c,player)))return;
    const result=await player.chooseToDiscard("he",1,true,"回转调车：弃置一张牌").set("ai",c=>6-get.value(c)).forResult();
    if(!result.bool)return;

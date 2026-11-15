@@ -15,7 +15,7 @@ const dragons=["fan_yiyanhulong","fan_yiyannilong","fan_yiyanbawang"];
 const handledPendulumUses = new WeakSet();
 const globals=["fan_lingbai_install"];
 const labels={1:"武器栏",2:"防具栏",3:"防御坐骑栏",4:"进攻坐骑栏",5:"宝物栏"};
-const self={type:"trick",enable:true,selectTarget:-1,toself:true,filterTarget:(c,p,t)=>p===t};
+const self={type:"trick",enable:true,selectTarget:-1,toself:true, modTarget: true,filterTarget:(c,p,t)=>p===t};
 export async function installPendulum(player,card){
  if(!player.isIn()||get.position(card,true)!=="o")return;
  const slots=[1,2,3,4,5].filter(n=>player.hasEmptySlot(n));if(!slots.length)return;
@@ -38,11 +38,13 @@ const reverse={type:"trick",enable:true,filterTarget:(c,p,t)=>p!==t,
  },
  ai:{order:8,value:8,result:{target:(p,t)=>-t.countCards("hej",c=>get.number(c,t)>0&&get.number(c,t)<=7)}}};
 export const pendulumCards={
- fan_lingbaizhiqiji:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
+ fan_lingbaizhiqiji:{...self,ai:{order:10,value:10,result:{target:5}},async content(event){
+   const player = event.target;
   const plan=samplePendulum(),cards=[];for(const item of plan.filter(i=>i.source==="pile")){const c=get.cardPile2(c=>c.name===item.name);if(c){c.remove();c.original="c";cards.push(c)}else cards.push(...get.cards(1));}
   game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));if(player.isIn())await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...pendulumFaces[i.name])),"draw");
  }},
- fan_yiyanhulong:{...self,ai:{order:7,value:6,result:{target:1}},async content(event,trigger,player){
+ fan_yiyanhulong:{...self,ai:{order:7,value:6,result:{target:1}},async content(event){
+   const player = event.target;
   await gainCardMatchingText(player,"杀","异眼弧龙：选择要获得的牌", event.cards?.length === 1 ? event.cards[0] : event.card);
  }},
  fan_yiyannilong:{...reverse},

@@ -13,7 +13,7 @@ let rolls=[0,0,0,.4,0,.4,.9,.9];
 assert.deepEqual(sample(()=>rolls.shift()).slice(2).map(c=>c.name),['fan_wuxian','fan_xinxing','fan_wuxianpaoying']);
 for(const[name,c]of Object.entries(cards)){assert.equal(c.destroy,'discardPile');assert(c.global.includes('fan_wuxian_after'));assert(existsSync(new URL('../'+c.image.replace('ext:原神/',''),import.meta.url)));}
 const owner={isIn:()=>true,addSkill(){},addMark(id,n){marks+=n},countMark:()=>marks,chooseTarget(){choices++;return{set(){return this},async forResult(){return{bool:true,targets:[target]}}}}};
-await cards.fan_xinxing.content({},null,owner);await cards.fan_wuxian.content({},null,owner);
+await cards.fan_xinxing.content({target:owner},null,owner);await cards.fan_wuxian.content({target:owner},null,owner);
 assert.equal(marks,2);assert.equal(skills.fan_dianzilong_growth.mod.maxHandcard(owner,4),6);
 const draw={num:2};await skills.fan_dianzilong_growth.content({},draw,owner);assert.equal(draw.num,4);
 assert.equal(skills.fan_dianzilong_growth.filter({numFixed:true},owner),false);

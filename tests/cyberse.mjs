@@ -36,7 +36,7 @@ const chain={isIn:()=>true,canUse(card,t,distance,count){assert.equal(distance,f
  chooseToDiscard(position,range,forced){assert.equal(position,'he');assert.deepEqual(range,[1,Infinity]);assert.equal(forced,true);return{set(){return this},async forResult(){return{bool:true,cards:[{number:4},{number:4},{number:4}]}}}},
  chooseTarget(){return{set(){return this},async forResult(){return{bool:true,targets:[target]}}}},
  async useCard(card,t,count){assert.equal(count,false);hits++;if(hits===2)alive=false;}};
-await cards.fan_lianmayuzhe.content({},null,chain);assert.equal(hits,2,'逐次重验，目标离场停止剩余杀');
+await cards.fan_lianmayuzhe.content({target:chain},null,chain);assert.equal(hits,2,'逐次重验，目标离场停止剩余杀');
 const conflictUser = {playerid:"caster"};
 let mountedSkill;
 const conflictTarget = {storage:{},isIn:()=>true,markSkill(){},addTempSkill(skill,expire){
@@ -65,16 +65,16 @@ const mining = cards.fan_wangjiwakuang;
 const matching = {number:2};
 pile.push(matching);
 assert.equal(mining.ai.result.target(),2);
-await mining.content({},null,miner);
+await mining.content({target:miner},null,miner);
 assert.deepEqual(gained,[pile[0],matching]);
 pile.pop();
 assert.equal(mining.ai.result.target(),1);
-await mining.content({},null,miner);
+await mining.content({target:miner},null,miner);
 assert.deepEqual(gained,[pile[1]]);
 pile.length = 0;
 gained = undefined;
 assert.equal(mining.ai.result.target(),0);
-await mining.content({},null,miner);
+await mining.content({target:miner},null,miner);
 assert.equal(gained,undefined);
 delete Array.prototype.randomGet;
 delete Array.prototype.randomGets;

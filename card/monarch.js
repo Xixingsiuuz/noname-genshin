@@ -2,17 +2,19 @@ import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import { playCynoSound } from "./cyno-sound.js";
 import{game,get,ui,_status}from"../../../noname.js";
 import{monarchFaces,sampleMonarch,sampleHeavenlyMonarch}from"./monarch-data.js";
-const self={type:"trick",enable:true,selectTarget:-1,toself:true,filterTarget:(c,p,t)=>p===t};
+const self={type:"trick",enable:true,selectTarget:-1,toself:true, modTarget: true,filterTarget:(c,p,t)=>p===t};
 const removal={type:"trick",enable:true,filterTarget:(c,p,t)=>p!==t&&t.countCards("hej")>0};
 export function outsideDraw(event){for(let e=event;e;e=e.parent)if(e.name==="phaseDraw")return false;return true;}
 export const monarchCards={
- fan_fanshenzhidiwang:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
+ fan_fanshenzhidiwang:{...self,ai:{order:10,value:10,result:{target:5}},async content(event){
+   const player = event.target;
   const plan=sampleMonarch(),cards=[];
   for(const item of plan.filter(i=>i.source==="pile")){const c=get.cardPile2(c=>c.name===item.name);if(c){c.remove();c.original="c";cards.push(c);}else cards.push(...get.cards(1));}
   game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));
   if(player.isIn())await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...monarchFaces[i.name])),"draw");
  }},
- fan_tiandi:{...self,ai:{order:8,value:8,result:{target:2}},async content(event,trigger,player){
+ fan_tiandi:{...self,ai:{order:8,value:8,result:{target:2}},async content(event){
+   const player = event.target;
   const countsUse=card=>get.name(card,player)!=="sha";
   const canUse=card=>player.hasUseTarget(card,true,countsUse(card));
   const useValue=card=>player.getUseValue(card,true,countsUse(card));

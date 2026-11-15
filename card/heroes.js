@@ -3,7 +3,7 @@ import { playCynoSound } from "./cyno-sound.js";
 import { game, get, lib, ui } from "../../../noname.js";
 import { heroFaces, sampleHeroes } from "./hero-data.js";
 
-const self = { type: "trick", enable: true, selectTarget: -1, toself: true,
+const self = { type: "trick", enable: true, selectTarget: -1, toself: true, modTarget: true,
   filterTarget: (card, player, target) => player === target };
 const equip = (subtype, value) => ({ type: "equip", subtype, enable: true, selectTarget: -1, toself: true, modTarget: true,
   filterTarget: (card, player, target) => player === target && target.canEquip(card, true),
@@ -39,7 +39,8 @@ export function fusionDefinition(names, subtype, definitions = lib.card, namespa
 export const heroCards = {
   fan_yingxiongderonghe: {
     ...self,
-    async content(event, trigger, player) {
+    async content(event) {
+      const player = event.target;
       const plan = sampleHeroes(), cards = [];
       for (const item of plan.filter(item => item.source === "pile")) {
         const candidates = Array.from(ui.cardPile.childNodes).filter(card => item.kind === "sha" ? card.name === "sha" : get.type(card) === "equip");
@@ -71,7 +72,8 @@ export const heroCards = {
   },
   fan_shanguangxinyi: {
     ...self,
-    async content(event, trigger, player) {
+    async content(event) {
+      const player = event.target;
       const x = player.countCards("e");
       if (!x) return;
       await player.draw(x);
@@ -88,7 +90,8 @@ export const heroCards = {
   },
   fan_ronghe: {
     ...self,
-    async content(event, trigger, player) {
+    async content(event) {
+      const player = event.target;
       const choice = await player.chooseCard("hej", [0, 2], true, "融合：选择至多两张装备牌")
         .set("filterCard", card => get.type(card) === "equip")
         .set("ai", card => get.equipValue(card, player)).forResult();

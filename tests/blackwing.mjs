@@ -81,7 +81,8 @@ ui.cardPile={get childNodes(){return pile;}};
 get.cards=()=>[{name:'fallback'}];game.updateRoundNumber=()=>{};game.createCard=(name,suit,number)=>({name,suit,number});
 // 强制两个牌堆分支，再检查只发生两次获得，且所有实体牌保留花色点数。
 const oldRandom=Math.random;Math.random=()=>0;
-try{await cards.fan_qiheizhixuanfeng.content({},null,{isIn:()=>true,async gain(c,animation){assert.equal(animation,'draw');gains.push(c);}});}finally{Math.random=oldRandom;}
+const packRecipient = {isIn:()=>true,async gain(c,animation){assert.equal(animation,'draw');gains.push(c);}};
+try{await cards.fan_qiheizhixuanfeng.content({player:owner,target:packRecipient},null,owner);}finally{Math.random=oldRandom;}
 assert.equal(taken.length,1);assert.equal(taken[0].color,'black');assert.equal(gains.length,2);assert.equal(gains[0].length,2);assert.equal(gains[1].length,3);assert(gains[1].every(c=>c.suit==='club'&&c.number===10));
 delete Array.prototype.sortBySeat;
 console.log('PASS 黑羽：概率、资源注册、转化、使用/响应标记、不叠加、回合结束收牌、黑色用牌摸牌及装备保护（模拟，非对局实测）');

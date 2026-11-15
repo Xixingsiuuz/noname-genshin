@@ -23,9 +23,10 @@ function negate() {
   hiddenCard:(player,name)=>name==="wuxie"&&player.countCards("h")>0&&!player.getStat("skill").fan_ziyan_convert,
   check:card=>7-get.value(card),ai:{respondWuxie:true}};
 }
-const self={type:"trick",enable:true,selectTarget:-1,toself:true,filterTarget:(c,p,t)=>p===t};
+const self={type:"trick",enable:true,selectTarget:-1,toself:true, modTarget: true,filterTarget:(c,p,t)=>p===t};
 export const sixSamuraiCards={
- fan_liuwuzhijiezhen:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
+ fan_liuwuzhijiezhen:{...self,ai:{order:10,value:10,result:{target:5}},async content(event){
+   const player = event.target;
   const plan=sampleSixSamurai(),cards=[];
   for(const item of plan.filter(i=>i.source==="pile")){const c=get.cardPile2(c=>c.name===item.name);if(c){c.remove();c.original="c";cards.push(c);}else cards.push(...get.cards(1));}
   game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));

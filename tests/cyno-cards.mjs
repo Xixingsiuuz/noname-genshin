@@ -50,7 +50,12 @@ const runtime = new Function('game', 'get', 'sampleDarkMagician', 'gainCynoPackC
 }, {
   poptip: id => id, cardPile2: fn => pile.find(fn), cards: num => pile.splice(0, num),
 }, () => [{ source: 'pile', name: 'wuxie' }, { source: 'pile', name: 'wuxie' }, ...Array.from({length:3}, () => ({source:'derived',name:'fan_heimoshushi'}))], gainCynoPackCards, createCynoReward);
-await runtime.fan_heimoshumiyi.content({}, null, {isIn:()=>true, async gain(cards, animation) { batches.push({cards,animation}); }});
+const user = { gain() { assert.fail('转移后不应向原使用者发放奖励'); } };
+const target = { isIn: () => true, async gain(cards, animation) { batches.push({cards, animation}); } };
+assert.equal(runtime.fan_heimoshumiyi.filterTarget(null, user, user), true);
+assert.equal(runtime.fan_heimoshumiyi.filterTarget(null, user, target), false);
+assert.equal(runtime.fan_heimoshumiyi.modTarget, true);
+await runtime.fan_heimoshumiyi.content({ player: user, target }, null, user);
 assert.equal(batches.length, 2);
 assert.deepEqual(batches[0].cards.map(c=>c.name), ['wuxie','sha']);
 assert.equal(new Set(batches[0].cards).size, 2);

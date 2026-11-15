@@ -1,7 +1,7 @@
 import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import{game,get,lib,ui,_status}from"../../../noname.js";
 import{cyberseFaces,sampleCyberse}from"./cyberse-data.js";
-const self={type:"trick",enable:true,selectTarget:-1,toself:true,filterTarget:(c,p,t)=>p===t};
+const self={type:"trick",enable:true,selectTarget:-1,toself:true, modTarget: true,filterTarget:(c,p,t)=>p===t};
 const block = "fan_wangjichongtu_block";
 const ranks = ["A","2","3","4","5","6","7","8","9","10","J","Q","K"];
 const validRank = number => Number.isInteger(number) && number >= 1 && number <= 13;
@@ -25,11 +25,13 @@ function prohibitRank(card,player) {
 function nibiruSource(event){for(let e=event;e;e=e.parent){if(e.fanNibiruSource)return e.fanNibiruSource;if(e.name==="chooseToUse"||e.name==="chooseToRespond")return;}}
 export function matchingNumber(card,selected,player){return !selected.length||get.number(card,player)===get.number(selected[0],player);}
 export const cyberseCards={
- fan_dianzijielianjie:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
+ fan_dianzijielianjie:{...self,ai:{order:10,value:10,result:{target:5}},async content(event){
+   const player = event.target;
   const plan=sampleCyberse(),cards=[];for(const item of plan.filter(i=>i.source==="pile")){const card=get.cardPile2(c=>c.name===item.name);if(card){card.remove();card.original="c";cards.push(card)}else cards.push(...get.cards(1));}
   game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", (event.cards?.length === 1 ? event.cards[0] : event.card));if(player.isIn())await gainCynoPackCards(player, plan.filter(i=>i.source==="derived").map(i=>createCynoReward(game, event.cards?.length === 1 ? event.cards[0] : event.card, i.name, ...cyberseFaces[i.name])),"draw");
  }},
- fan_lianmayuzhe:{...self,ai:{order:7,value:8,result:{target:p=>p.getCards("he").some(c=>lib.filter.cardDiscardable(c,p)&&get.value(c)<6)&&game.hasPlayer(t=>t!==p&&p.canUse({name:"sha"},t,false,false)&&get.effect(t,{name:"sha"},p,p)>0)?2:0}},async content(event,trigger,player){
+ fan_lianmayuzhe:{...self,ai:{order:7,value:8,result:{target:(_user,p)=>p.getCards("he").some(c=>lib.filter.cardDiscardable(c,p)&&get.value(c)<6)&&game.hasPlayer(t=>t!==p&&p.canUse({name:"sha"},t,false,false)&&get.effect(t,{name:"sha"},p,p)>0)?2:0}},async content(event){
+   const player = event.target;
   const choice=await player.chooseToDiscard("he",[1,Infinity],true,"连码语者：弃置同点数的牌").set("complexCard",true)
    .set("filterCard",(card,p)=>matchingNumber(card,ui.selected.cards,p)&&lib.filter.cardDiscardable(card,p))
    .set("ai",card=>6-get.value(card)).forResult();
@@ -55,17 +57,19 @@ export const cyberseCards={
  fan_wangjiwakuang:{...self,ai:{order:9,value:8,result:{target(){
   const pile = ui.cardPile.childNodes;
   return pile.length ? (miningPairs(pile).length ? 2 : 1) : 0;
- }}},async content(event,trigger,player){
+ }}},async content(event){
+  const player = event.target;
   const pile = Array.from(ui.cardPile.childNodes);
   if (!pile.length) return;
   const group = miningPairs(pile).randomGet();
   await player.gain(group ? group.randomGets(2) : [pile.randomGet()],"draw");
  }},
  fan_yuanshishengming:{type:"trick",enable:()=>!!nibiruSource(_status.event),filterTarget:(c,p,t)=>t===nibiruSource(_status.event)&&p!==t,
+  modTarget: true,
   ai:{order:0,value:9,useful:8,result:{target:-3}},async content(event,trigger,player){
    const target=event.target;const cards=target.getCards("hej",c=>lib.filter.canBeDiscarded(c,player,target));
    if(cards.length)await target.discard(cards).set("discarder",player);
-   const players=[player,target].sortBySeat(_status.currentPhase||player);for(const p of players)if(p.isIn())await p.draw(2);
+   const players=Array.from(new Set([player,target])).sortBySeat(_status.currentPhase||player);for(const p of players)if(p.isIn())await p.draw(2);
   }},
 };
 for(const[name,card]of Object.entries(cyberseCards))Object.assign(card,{derivation:"fan_cyno",destroy:"discardPile",fullskin:true,image:`ext:原神/image/card/${name}-framed.png`,global:["fan_yuanshishengming_window","fan_yuanshishengming_hand"]});

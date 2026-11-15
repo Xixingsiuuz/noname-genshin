@@ -25,7 +25,9 @@ export const cynoCards = {
   fan_heimoshumiyi: {
     ...trick, selectTarget: -1, toself: true,
     filterTarget: (card, player, target) => player === target,
-    async content(event, trigger, player) {
+    modTarget: true,
+    async content(event) {
+      const { target } = event;
       const plan = sampleDarkMagician();
       const pileCards = [];
       for (const item of plan.filter(item => item.source === "pile")) {
@@ -35,11 +37,11 @@ export const cynoCards = {
           else pileCards.push(...get.cards(1));
       }
       game.updateRoundNumber();
-      if (pileCards.length) await gainCynoPackCards(player, pileCards, "draw", (event.cards?.length === 1 ? event.cards[0] : event.card));
-      if (!player.isIn()) return;
+      if (pileCards.length) await gainCynoPackCards(target, pileCards, "draw", (event.cards?.length === 1 ? event.cards[0] : event.card));
+      if (!target.isIn()) return;
       const derived = plan.filter(item => item.source === "derived").map(item =>
         createCynoReward(game, (event.cards?.length === 1 ? event.cards[0] : event.card), item.name, ...cynoCardFaces[item.name]));
-      if (derived.length) await gainCynoPackCards(player, derived, "draw");
+      if (derived.length) await gainCynoPackCards(target, derived, "draw");
     },
     ai: { order: 10, value: 10, useful: 10, result: { target: 5 } },
   },

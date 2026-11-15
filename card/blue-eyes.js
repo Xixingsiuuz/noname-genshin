@@ -15,21 +15,23 @@ export function sampleBlueEyes(random = Math.random) {
   return result;
 }
 export function createBlueEyes(source) { return createCynoReward(game, source, "fan_qingyanbailong", ...blueEyesFaces.fan_qingyanbailong); }
-const self = { type: "trick", enable: true, selectTarget: -1, toself: true,
+const self = { type: "trick", enable: true, selectTarget: -1, toself: true, modTarget: true,
   filterTarget: (card, player, target) => player === target };
 const partner = {
   ...self,
-  async content(event, trigger, player) {
+  async content(event) {
+    const player = event.target;
     player.addTempSkill("fan_zhengyi_quota");
     player.addMark("fan_zhengyi_quota", 3, false);
     if (event.card.name === "fan_zhengyichuanshuo") await player.gain(Array.from({ length: 3 }, () => createBlueEyes(event.cards?.length === 1 ? event.cards[0] : event.card)), "draw");
   },
-  ai: { order: 9, value: 6, useful: 3, result: { target(player) { return player.countCards("h", card => card.name === "sha" || card.name === "fan_qingyanbailong") > 0 ? 1 : .1; } } },
+  ai: { order: 9, value: 6, useful: 3, result: { target(_user, player) { return player.countCards("h", card => card.name === "sha" || card.name === "fan_qingyanbailong") > 0 ? 1 : .1; } } },
 };
 export const blueEyesCards = {
   fan_qingyanlonghonglin: {
     ...self,
-    async content(event, trigger, player) {
+    async content(event) {
+      const player = event.target;
       const plan = sampleBlueEyes(), cards = [];
       for (const item of plan.filter(item => item.source === "pile")) {
         const card = get.cardPile2(card => card.name === item.name);

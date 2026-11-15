@@ -3,7 +3,7 @@ import { playCynoSound } from "./cyno-sound.js";
 import{game,get,lib,ui,_status}from"../../../noname.js";
 import{redEyesFaces,sampleRedEyes}from"./red-eyes-data.js";
 const dragons=["fan_heilong","fan_heiganglong"];
-const self={type:"trick",enable:true,selectTarget:-1,toself:true,filterTarget:(c,p,t)=>p===t};
+const self={type:"trick",enable:true,selectTarget:-1,toself:true, modTarget: true,filterTarget:(c,p,t)=>p===t};
 export async function gainRedEyes(player,plan,source){
  const cards=[];for(const item of plan.filter(i=>i.source==="pile")){const card=get.cardPile2(c=>c.name===item.name);if(card){card.remove();card.original="c";cards.push(card)}else cards.push(...get.cards(1));}
  game.updateRoundNumber();if(cards.length)await gainCynoPackCards(player, cards,"draw", source);if(!player.isIn())return;
@@ -11,7 +11,8 @@ export async function gainRedEyes(player,plan,source){
 }
 export function flamePayment(card,player,usedCard){return card!==usedCard&&get.number(card,player)===7&&lib.filter.cardDiscardable(card,player);}
 export const redEyesCards={
- fan_zhenhongzhijuexing:{...self,async content(event,trigger,player){await gainRedEyes(player,sampleRedEyes(),event.cards?.length === 1 ? event.cards[0] : event.card);},ai:{order:10,value:10,result:{target:5}}},
+ fan_zhenhongzhijuexing:{...self,async content(event){
+   const player = event.target; await gainRedEyes(player,sampleRedEyes(),event.cards?.length === 1 ? event.cards[0] : event.card);},ai:{order:10,value:10,result:{target:5}}},
  fan_heilong:{type:"trick",ai:{value:6,useful:5}},fan_heiganglong:{type:"trick",ai:{value:8,useful:7}},
  fan_chuanshuoheishi:{type:"equip",subtype:"equip5",skills:["fan_chuanshuoheishi_move"],enable:true,selectTarget:-1,toself:true,modTarget:true,
   filterTarget:(c,p,t)=>p===t&&t.canEquip(c,true),async content(event){await event.target.equip(event.cards[0]);},ai:{order:9,value:8,basic:{equipValue:8},result:{target:1}}},

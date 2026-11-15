@@ -2,13 +2,14 @@ import { gainCynoPackCards, createCynoReward } from "../ui/cyno-rarity.js";
 import { playCynoSound } from "./cyno-sound.js";
 import{game,get,lib,ui,_status}from"../../../noname.js";
 import{blackwingFaces,sampleBlackwing}from"./blackwing-data.js";
-const self={type:"trick",enable:true,selectTarget:-1,toself:true,filterTarget:(c,p,t)=>p===t};
+const self={type:"trick",enable:true,selectTarget:-1,toself:true, modTarget: true,filterTarget:(c,p,t)=>p===t};
 const black=(c,p)=>get.color(c,p)==="black";
 function heavyArmor(c,p){const name=get.name(c,p);return get.position(c)==="e"&&(name==="fan_chongzhuangkaiyi"||lib.card[name]?.source?.includes("fan_chongzhuangkaiyi"));}
 const armor=(skills)=>({type:"equip",subtype:"equip2",skills,enable:true,selectTarget:-1,toself:true,modTarget:true,
  filterTarget:(c,p,t)=>p===t&&t.canEquip(c,true),async content(event){await event.target.equip(event.cards[0]);},ai:{order:9,value:8,basic:{equipValue:8},result:{target:1}}});
 export const blackwingCards={
- fan_qiheizhixuanfeng:{...self,ai:{order:10,value:10,result:{target:5}},async content(event,trigger,player){
+ fan_qiheizhixuanfeng:{...self,ai:{order:10,value:10,result:{target:5}},async content(event){
+   const player = event.target;
   const plan=sampleBlackwing(),cards=[];
   for(const item of plan.filter(i=>i.source==="pile")){
    const candidates=Array.from(ui.cardPile.childNodes).filter(c=>black(c)&&((c.name==="sha")===(item.kind==="blackSha")));
