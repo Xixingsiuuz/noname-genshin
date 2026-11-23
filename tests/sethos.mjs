@@ -1,0 +1,47 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const status={}; const game={roundNumber:2,hasPlayer(f){assert.equal(typeof f,'function');return f(other)}};
+const other={}; const get={suit:c=>c.suit,position:c=>c.pos};
+const src=readFileSync(new URL('../character/skills/sethos.js',import.meta.url),'utf8').replace(/^import .*;\r?\n/gm,'').replaceAll('export function','function').replace('export default','return');
+const skills=new Function('game','get','_status',src)(game,get,status);
+const phase={fan_yinlu_suits:['heart']};let stat={sha:2};
+const player={storage:{},getStat:()=>stat,getHistory:()=>[{card:{suit:'spade'}}],countDiscardableCards:()=>3,hasHistory:(type,f)=>damage.some(f)};
+let damage=[];status.currentPhase=player; status.event={getParent:name=>name==='phase'?phase:{player}};
+assert.equal(skills.fan_yinlu_effect.mod.cardUsable({suit:'heart'},player),Infinity);
+assert.equal(skills.fan_yinlu_effect.mod.cardUsable({suit:'spade'},player),undefined);
+const use={addCount:true,card:{name:'sha',suit:'heart'}};
+await skills.fan_yinlu_effect.content({},use,player);assert.equal(use.addCount,false);assert.equal(stat.sha,1);
+await skills.fan_yinlu_effect.content({},use,player);assert.equal(stat.sha,1);
+status.currentPhase=other;assert.equal(skills.fan_yinlu_effect.mod.cardUsable({suit:'heart'},player),undefined);
+const material={pos:'o'};const used={name:'useCard',player,card:{name:'sha'},cards:[material]};const ordering={name:'orderingDiscard',relatedEvent:used};const discard={cards:[material],getParent:()=>ordering};
+assert(!skills.fan_guixian.filter(discard,player));material.pos='d';assert(skills.fan_guixian.filter(discard,player));
+damage=[{card:used.card}];assert(!skills.fan_guixian.filter(discard,player));damage=[];
+material.pos='h';assert(!skills.fan_guixian.filter(discard,player));
+const target={isIn:()=>true,getHistory:player.getHistory};assert(skills.fan_yinlu.filter({player:target},player));player.storage.fan_yinlu_round=2;assert(!skills.fan_yinlu.filter({player:target},player));
+console.log('sethos: suit exemption, counter refund, phase ownership, actual discard timing, damage and round limit passed (simulation)');
+// The marker starts with its own extra turn, shows its immutable suit snapshot,
+// and uses native skill removal for end-of-turn/unmark/storage cleanup.
+const effect=skills.fan_yinlu_effect;
+assert(effect.group.includes('fan_yinlu_effect_start'));
+assert.equal(effect.marktext,'路');assert.equal(effect.onremove,true);
+assert(!effect.subSkill.start.filter({}));
+const extra={fan_yinlu_suits:['heart','club']};
+let marks=0,syncs=0,unmarks=0,removed='';
+const marked={storage:{},unmarkSkill(id){assert.equal(id,'fan_yinlu_effect');unmarks++},syncStorage(id){assert.equal(id,'fan_yinlu_effect');syncs++},markSkill(id){assert.equal(id,'fan_yinlu_effect');marks++},removeSkill(id){removed=id}};
+get.translation=suit=>({heart:'红桃',club:'梅花',spade:'黑桃',diamond:'方块'})[suit];
+assert(effect.subSkill.start.filter(extra));
+await effect.subSkill.start.content({},extra,marked);
+assert.equal(marks,1);assert.equal(syncs,1);
+assert.deepEqual(marked.storage.fan_yinlu_effect,['heart','club']);
+extra.fan_yinlu_suits.push('spade');
+const tip=effect.intro.content(marked.storage.fan_yinlu_effect);
+assert(tip.includes('红桃、梅花'));assert(!tip.includes('黑桃'));
+assert(effect.subSkill.clear.filter(extra));
+await effect.subSkill.clear.content({},extra,marked);assert.equal(removed,'fan_yinlu_effect');
+console.log('sethos: 路 marker lifecycle and suit tooltip simulation passed');
+
+await effect.subSkill.start.content({}, {fan_yinlu_suits:[]}, marked);
+assert.equal(marks,1);assert.equal(unmarks,1);
+assert.deepEqual(marked.storage.fan_yinlu_effect,[]);
+assert(effect.subSkill.clear.filter({fan_yinlu_suits:[]}));
+console.log('sethos: no 路 marker for empty exemption suits passed');

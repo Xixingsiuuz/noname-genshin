@@ -198,7 +198,7 @@ export function installCynoRarity(get, lib, ui, game, getPreviewRarity) {
     const intro = nodeintro.call(this, node, ...args);
     const card = node?.link?.name ? node.link : node;
     const definition = lib.card[card?.name];
-    if (definition?.derivation !== "fan_cyno" || !definition.type ||
+    if (!definition?.fanDerivedCardPreview || !definition.type ||
       !intro?.content) return intro;
 
     const label = get.translation(definition.type) + "牌";

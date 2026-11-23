@@ -12,7 +12,7 @@ draw.text((562,8),'After',fill='white')
 for i,(name,(box,size,blur)) in enumerate(specs.items()):
     crop=im.crop(box)
     if blur: crop=crop.filter(ImageFilter.GaussianBlur(blur))
-    crop=crop.resize(size,Image.Resampling.LANCZOS)
+    crop=ImageOps.fit(crop,size,method=Image.Resampling.LANCZOS)
     crop.save(ROOT/f'image/character/portraits/{name}.png')
     # Approximate the user's screenshot viewports, alongside small-size QA.
     preview_size=[(168,202),(216,324),(300,420)][i]

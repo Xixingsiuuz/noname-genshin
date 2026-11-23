@@ -3,12 +3,13 @@ from pathlib import Path
 import html, json, re, urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
-ENTRIES = {'fan_miaosuan_select_voice1': '加入队伍·其一', 'fan_miaosuan_select_voice2': '加入队伍·其二', 'fan_miaosuan_select_voice3': '加入队伍·其三', 'fan_miaosuan_gain_voice1': '闲聊·准备', 'fan_miaosuan_gain_voice2': '初次见面…', 'fan_miaosuan_chengshi_voice1': '突破的感受·承', 'fan_miaosuan_chengshi_voice2': '突破的感受·转', 'fan_haiji1': '元素爆发·其一', 'fan_haiji2': '元素爆发·其二', 'fan_haiji3': '元素爆发·其三', 'fan_kokomi1': '倒下·其一', 'fan_kokomi2': '倒下·其二', 'fan_kokomi3': '倒下·其三'}
+ENTRIES = {'fan_miaosuan_select_voice1': '加入队伍·其一', 'fan_miaosuan_select_voice2': '加入队伍·其二', 'fan_miaosuan_select_voice3': '加入队伍·其三', 'fan_miaosuan_gain_voice1': '闲聊·准备', 'fan_miaosuan_gain_voice2': '初次见面…', 'fan_miaosuan_draw_voice1': '元素战技·其一', 'fan_miaosuan_draw_voice2': '元素战技·其二', 'fan_miaosuan_draw_voice3': '元素战技·其三', 'fan_haiji1': '元素爆发·其一', 'fan_haiji2': '元素爆发·其二', 'fan_haiji3': '元素爆发·其三', 'fan_kokomi1': '倒下·其一', 'fan_kokomi2': '倒下·其二', 'fan_kokomi3': '倒下·其三'}
 
 def main():
     directory = ROOT / 'audio/kokomi'
     source = (directory / 'originals/kokomi-voice-page.html').read_text(encoding='utf8')
-    clips = {}
+    manifest = directory / "originals/kokomi-sources.json"
+    clips = {name: clip for name, clip in json.loads(manifest.read_text(encoding="utf8"))["clips"].items() if clip.get("retired")} if manifest.exists() else {}
     for name, label in ENTRIES.items():
         section = html.unescape(source[source.index('>' + label + '<'):])
         url = re.search(r'data-src="(https://patchwiki\.biligame\.com/[^"<>]+\.mp3)"', section).group(1)

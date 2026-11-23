@@ -1,3 +1,4 @@
+from PIL import ImageOps
 """Keep supplied originals; extract illustrations for the engine's native card frame."""
 from pathlib import Path
 from PIL import Image
@@ -18,7 +19,7 @@ def main():
         # Exclude the supplied card's text/frame; native UI supplies suit, rank and title.
         image = Image.open(original).convert('RGB').crop((205,305,900,985))
         output = ROOT/'image/card'/(name+'-mechanism.png')
-        image.resize((360,352),Image.Resampling.LANCZOS).save(output)
+        ImageOps.fit(image,(360,352),method=Image.Resampling.LANCZOS).save(output)
     directory = ROOT/'image/character/originals'; directory.mkdir(parents=True,exist_ok=True)
     source = directory/'xianyun-20261027.png'
     if not source.exists(): shutil.copy2(TEMP/'codex-clipboard-10024142-227e-4075-a50f-2753b737435b.png',source)

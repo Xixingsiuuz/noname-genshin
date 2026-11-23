@@ -15,7 +15,7 @@ def main():
         crop = original.crop(tuple(round(v * (width if i % 2 == 0 else height)) for i, v in enumerate(box)))
         if blur:
             crop = crop.filter(ImageFilter.GaussianBlur(blur))
-        crop.resize(size, Image.Resampling.LANCZOS).save(ROOT / f'image/character/portraits/{name}.png')
+        ImageOps.fit(crop,size,method=Image.Resampling.LANCZOS).save(ROOT / f'image/character/portraits/{name}.png')
     (ROOT / 'image/character/originals/xiao-centered-crops.json').write_text(json.dumps({
         'source': 'xiao.png', 'coordinates': 'normalized original image coordinates',
         'resampling': 'Lanczos', 'specs': specs,

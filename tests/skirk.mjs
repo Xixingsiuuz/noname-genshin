@@ -114,6 +114,7 @@ let expansions = [];
 const target = {
   isIn: () => true,
   countCards: () => 2,
+  getAllHistory: () => [],
   getCards: () => [{}, {}],
   addSkill() {},
   addTempSkill(skill, expiry) {
@@ -142,24 +143,15 @@ assert.ok(!capture.filter(missed, player), "未发动封印不能扣牌");
 await skills.fan_guiji.content({}, designated);
 assert.equal(calls.pop(), "silence");
 assert.equal(expansions.length, 0, "指定目标时只封印，不立即扣牌");
-assert.equal(capture.filter(missed, player), true, "同一张杀被闪抵消后可扣牌");
-const otherUse = evt("useCard");
-assert.ok(!capture.filter(Object.assign(evt("sha", otherUse), { target }), player), "不影响另一张杀");
-assert.ok(!capture.filter({ ...missed, target: { ...target } }, player), "不影响未封印的其他目标");
-assert.equal(capture.filter({ ...missed, target: { ...target, countCards: () => 0 } }, player), false);
-status.currentPhase = {};
-assert.equal(skills.fan_guiji.filter(designated, player), false);
-assert.equal(capture.filter(missed, player), false, "星灭后的扣牌也不能在回合外发动");
-status.currentPhase = player;
-await capture.content({}, missed);
-await capture.content({}, missed);
-assert.equal(expansions.length, 4, "多次扣置累积");
-assert.equal(skills.fan_guiji_sealed.filter({ num: 0 }, target), false);
-assert.equal(skills.fan_guiji_sealed.filter({ num: 1 }, target), true);
-assert.equal(skills.fan_guiji_sealed.filter({ num: 1 }, { ...target, isIn: () => false }), false);
-await skills.fan_guiji_sealed.content({}, {}, target);
-assert.equal(expansions.length, 0);
-assert.equal(calls.at(-1), "release");
+assert.equal(capture.filter({ ...use, card: designated.card }, player), true);
+const resolved = Object.assign(use, { card: designated.card });
+const guijiDamage = { num: 1, card: resolved.card, getParent: () => resolved };
+target.getAllHistory = (key, filter) => [guijiDamage].filter(filter);
+assert.equal(capture.filter(resolved, player), false, "本杀造成伤害则不摸牌");
+guijiDamage.num = 0;
+assert.equal(capture.filter(resolved, player), true, "未造成伤害则摸牌");
+await capture.content({}, resolved, { async draw(n) { assert.equal(n, 1); } });
+assert.ok(!capture.filter(evt("useCard"), player), "其他杀不会触发");
 const blockerCalls = [];
 const blockedTarget = {
   addSkillBlocker(skill) { blockerCalls.push(["add", skill]); },
@@ -170,4 +162,4 @@ assert.equal(skills.fan_guiji_silenced.skillBlocker("ordinary", blockedTarget), 
 assert.equal(skills.fan_guiji_silenced.skillBlocker("locked", blockedTarget), false);
 skills.fan_guiji_silenced.onremove(blockedTarget, "fan_guiji_silenced");
 assert.deepEqual(blockerCalls, [["add", "fan_guiji_silenced"], ["remove", "fan_guiji_silenced"]]);
-console.log("丝柯克：首次获牌、指定目标封印、同牌同目标闪避扣牌、封印到期清理、扣置累积返还及星灭顺序检查通过。");
+console.log("丝柯克：首次获牌、指定目标封印、未伤害摸牌、封印到期清理及星灭顺序检查通过。");

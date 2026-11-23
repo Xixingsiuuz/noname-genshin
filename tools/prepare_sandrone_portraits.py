@@ -8,8 +8,10 @@ spec=json.loads((root/'originals/sandrone-crops.json').read_text(encoding='utf8'
 board=Image.new('RGB',(900,660),'#333333')
 for i,(name,(box,size,blur)) in enumerate(spec.items()):
  c=im.crop(box)
- if blur:c=c.convert('RGBa').filter(ImageFilter.GaussianBlur(blur)).convert('RGBA')
- c=c.resize(size,Image.Resampling.LANCZOS)
+ if blur:
+  c=c.filter(ImageFilter.GaussianBlur(blur)) if c.mode=='RGB' else c.convert('RGBa').filter(ImageFilter.GaussianBlur(blur)).convert('RGBA')
+ c=ImageOps.fit(c,size,method=Image.Resampling.LANCZOS)
+ bg=Image.new('RGBA',c.size,'#292929');bg.alpha_composite(c.convert('RGBA'));c=bg.convert('RGB')
  c.save(root/f'portraits/{name}.png')
  preview=ImageOps.contain(c,(290,450));board.paste(preview,(i*300,0),preview)
  small=ImageOps.fit(c,(100,140),method=Image.Resampling.LANCZOS);board.paste(small,(i*300+95,480),small)

@@ -1,5 +1,26 @@
+import kaeyaSkills from "./skills/kaeya.js";
+import amberSkills from "./skills/amber.js";
+import lisaSkills from "./skills/lisa.js";
+import kiraraSkills from "./skills/kirara.js";
+import freminetSkills from "./skills/freminet.js";
+import gamingSkills from "./skills/gaming.js";
+import kachinaSkills from "./skills/kachina.js";
+import sethosSkills from "./skills/sethos.js";
+import lynetteSkills from "./skills/lynette.js";
+import charlotteSkills from "./skills/charlotte.js";
+import dahliaSkills from "./skills/dahlia.js";
+import ororonSkills from "./skills/ororon.js";
 import { cynoSoundSkill } from "../card/cyno-sound.js";
+import iansanSkills from "./skills/iansan.js";
+import ifaSkills from "./skills/ifa.js";
+import lanyanSkills from "./skills/lanyan.js";
+import pruneSkills from "./skills/prune.js";
+import illugaSkills from "./skills/illuga.js";
+import durinSkills from "./skills/durin.js";
 import testSkills from "./skills/tester.js";
+import chevreuseSkills from "./skills/chevreuse.js";
+import jahodaSkills from "./skills/jahoda.js";
+import ainoSkills from "./skills/aino.js";
 import cynoSkills from "./skills/cyno.js";
 import alhaithamSkills from "./skills/alhaitham.js";
 import dehyaSkills from "./skills/dehya.js";
@@ -84,7 +105,22 @@ import albedoSkills from "./skills/albedo.js";
 import xiaoSkills from "./skills/xiao.js";
 
 export default {
+  ...kaeyaSkills,
+  ...amberSkills,
+  ...lisaSkills,
+  ...kiraraSkills,
+  ...freminetSkills,
+  ...gamingSkills,
+  ...kachinaSkills,
+  ...sethosSkills,
+  ...lynetteSkills,
+  ...charlotteSkills,
+  ...dahliaSkills,
+  ...ororonSkills,
   ...testSkills,
+  ...chevreuseSkills,
+  ...jahodaSkills,
+  ...ainoSkills,
   ...cynoSkills,
   ...alhaithamSkills,
   ...dehyaSkills,
@@ -146,6 +182,12 @@ export default {
   ...mualaniSkills,
   ...emilieSkills,
   ...sigewinneSkills,
+  ...iansanSkills,
+  ...ifaSkills,
+  ...lanyanSkills,
+  ...pruneSkills,
+  ...illugaSkills,
+  ...durinSkills,
   ...furinaSkills,
   ...xianyunSkills,
   ...chioriSkills,

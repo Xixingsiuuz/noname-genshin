@@ -1,0 +1,632 @@
+[
+  {
+    "file": "tests\\ai-recursion-audit.mjs",
+    "exit": 0,
+    "output": "PASS: Eula virtual-number damage and Citlali last-black-hand nested AI evaluation terminate; repeated evaluation and exception cleanup (simulation).\n"
+  },
+  {
+    "file": "tests\\aino.mjs",
+    "exit": 0,
+    "output": "爱诺：装备换位、跨区销毁及妙械摸牌检查通过。\n"
+  },
+  {
+    "file": "tests\\ajax-ai-recursion.mjs",
+    "exit": 0,
+    "output": "PASS Ajax AI: nested Tiesuo/damage-to-Sha evaluations terminate, unrelated cards excluded, repeated evaluations and exception cleanup (simulation).\n"
+  },
+  {
+    "file": "tests\\ajax-response.mjs",
+    "exit": 0,
+    "output": "PASS: Ajax native chooseToRespond first step plus deferred response, auto-confirm on/off, invalid material, cancellation, event switch and changed demand (simulation).\n"
+  },
+  {
+    "file": "tests\\ajax-voice-delay.mjs",
+    "exit": 0,
+    "output": "PASS Ajax voice-only 900ms separation; rules continue immediately; Shan unchanged; already elapsed delay is not repeated (simulation).\n"
+  },
+  {
+    "file": "tests\\ajax.mjs",
+    "exit": 0,
+    "output": "PASS Ajax v2: mounted triggers; cyclic/nested conversion, Chongzhen targets, resource/voice/link timing, cumulative game uses, matching-turn deferred life loss, nested turns and extra phases, per-slot fill, AI costs (simulation; no live match).\n"
+  },
+  {
+    "file": "tests\\albedo.mjs",
+    "exit": 0,
+    "output": "PASS: Albedo cost/discard/random suit acquisition without a dialog, unavailable cards, expected AI value, half HP, cancellation, revalidation, nested damage, per-turn limit and audio paths (simulation; no live game).\n"
+  },
+  {
+    "file": "tests\\arlecchino-audio.mjs",
+    "exit": 1,
+    "output": "<anonymous_script>:3\nimport smoothPortraits from \"../ui/smooth-portrait-map.js\";\n^^^^^^\n\nSyntaxError: Cannot use import statement outside a module\n    at new Function (<anonymous>)\n    at file:///D:/noname_v1.11.6.1/resources/app/extension/%E5%8E%9F%E7%A5%9E/tests/arlecchino-audio.mjs:31:18\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.14.0\n"
+  },
+  {
+    "file": "tests\\arlecchino-layout.mjs",
+    "exit": 1,
+    "output": "\\\\#!sandbox.{e0f021fc-4215-4398-a0ce-13b784ead90c}\\\\Temp\\\\playwright_chromiumdev_profile-pCHf7E --remote-debugging-pipe --no-startup-window',\n    '  - <launched> pid=37468',\n    '  - [pid=37468][err] [1122/171333.967:ERROR:third_party\\\\crashpad\\\\crashpad\\\\util\\\\win\\\\registration_protocol_win.cc:136] TransactNamedPipe: The pipe has been ended. (0x6D)',\n    '  - [pid=37468][err] [37468:17500:1122/171334.169:ERROR:chrome\\\\browser\\\\edge_dual_engine\\\\dual_engine_sitelist_win.cc:1057] The temporary parsed site list JSON data failed to replace the permanent file. path = C:\\\\Users\\\\22697\\\\AppData\\\\Local\\\\Packages\\\\openai.codex_2p2nqsd0c76g0\\\\AC\\\\#!sandbox.{e0f021fc-4215-4398-a0ce-13b784ead90c}\\\\Temp\\\\playwright_chromiumdev_profile-pCHf7E\\\\Default\\\\DualEngine\\\\SiteList-Enterprise.json temp_path = C:\\\\Users\\\\22697\\\\AppData\\\\Local\\\\packages\\\\openai.codex_2p2nqsd0c76g0\\\\AC\\\\#!sandbox.{e0f021fc-4215-4398-a0ce-13b784ead90c}\\\\Temp\\\\playwright_chromiumdev_profile-pCHf7E\\\\Default\\\\DualEngine\\\\9dd4ee58-850e-4e48-807e-a5794dbf79be.tmp error = -1',\n    '  - [pid=37468][err] [37468:17500:1122/171334.187:ERROR:chrome\\\\browser\\\\edge_dual_engine\\\\dual_engine_sitelist_win.cc:1057] The temporary parsed site list JSON data failed to replace the permanent file. path = C:\\\\Users\\\\22697\\\\AppData\\\\Local\\\\Packages\\\\openai.codex_2p2nqsd0c76g0\\\\AC\\\\#!sandbox.{e0f021fc-4215-4398-a0ce-13b784ead90c}\\\\Temp\\\\playwright_chromiumdev_profile-pCHf7E\\\\Default\\\\DualEngine\\\\SiteList-Consumer.json temp_path = C:\\\\Users\\\\22697\\\\AppData\\\\Local\\\\packages\\\\openai.codex_2p2nqsd0c76g0\\\\AC\\\\#!sandbox.{e0f021fc-4215-4398-a0ce-13b784ead90c}\\\\Temp\\\\playwright_chromiumdev_profile-pCHf7E\\\\Default\\\\DualEngine\\\\dedada18-27b1-4e4f-9891-d3455ad04d7a.tmp error = -1',\n    '  - [pid=37468] <gracefully close start>',\n    '  - [pid=37468] <kill>',\n    '  - [pid=37468] <will force kill>',\n    '  - [pid=37468] taskkill stderr: ERROR: The user name or password is incorrect.',\n    '  - [pid=37468] <process did exit: exitCode=0, signal=null>',\n    '  - [pid=37468] starting temporary directories cleanup',\n    '  - [pid=37468] finished temporary directories cleanup',\n    '  - [pid=37468] <gracefully close end>'\n  ]\n}\n\nNode.js v24.14.0\n"
+  },
+  {
+    "file": "tests\\arlecchino.mjs",
+    "exit": 0,
+    "output": "阿蕾奇诺：阈值、护甲、连环、如月、分支语音、转换牌识别、布局及AI模拟检查通过\n"
+  },
+  {
+    "file": "tests\\audio-layout.mjs",
+    "exit": 1,
+    "output": "node:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n45576 !== 33910\n\n    at file:///D:/noname_v1.11.6.1/resources/app/extension/%E5%8E%9F%E7%A5%9E/tests/audio-layout.mjs:7:86\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: 45576,\n  expected: 33910,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n\nNode.js v24.14.0\n"
+  },
+  {
+    "file": "tests\\auto-confirm-conversions.mjs",
+    "exit": 0,
+    "output": "Native pause-step regression: auto-confirm ON/OFF, Wuzhong, Shan/Sha responses, cancellation, moved material, spent quota, invalid target and manual attack passed.\n"
+  },
+  {
+    "file": "tests\\ayaka-audio.mjs",
+    "exit": 0,
+    "output": "Ayaka audio: native Bailu pool(2), death pool(3), final grouping, subtitles and files passed.\n"
+  },
+  {
+    "file": "tests\\ayaka.mjs",
+    "exit": 0,
+    "output": "Ayaka targeted simulation checks passed\nBinghua AI and voice routing checks passed\nBinghua voice sequencing checks passed\nBinghua X=1..4 and snapshot checks passed\n"
+  },
+  {
+    "file": "tests\\ayato.mjs",
+    "exit": 0,
+    "output": "Ayato: indexed triggers, damage/gain counts, disabled payment, Xingjia global action, ordering, legality, cancellation and AI passed\nXingjia committed reveal: forced selection, no paired Cancel, no post-reveal refund, pre-reveal invalidation passed\nSanxing damage single-color and direct-child gain recursion regression passed\n"
+  },
+  {
+    "file": "tests\\baizhu.mjs",
+    "exit": 0,
+    "output": "Baizhu: own preparation judgment, non-seven, seven, no duplicate skills and independent restoration passed (simulation).\nBaizhu: cross-suit exchange, AI, hand limit tag and non-gift rejection passed (simulation).\nBaizhu: chained slot migration blocked in both directions; undo, final validation and AI passed.\nBaizhu: unique recipient auto-selection, manual confirmation, invalid target and multiple recipients passed.\n"
+  },
+  {
+    "file": "tests\\blackwing.mjs",
+    "exit": 0,
+    "output": "PASS 黑羽：概率、资源注册、转化、使用/响应标记、不叠加、回合结束收牌、黑色用牌摸牌及装备保护（模拟，非对局实测）\n"
+  },
+  {
+    "file": "tests\\blue-eyes.mjs",
+    "exit": 0,
+    "output": "PASS 青眼卡组：抽包分支/升格、牌面资源、三张生成、累计杀额度、成为目标时获得与限次（模拟，未对局实测）\n"
+  },
+  {
+    "file": "tests\\charlotte.mjs",
+    "exit": 0,
+    "output": "Charlotte simulated timing, fixed X, empty remainder and simultaneous decisions passed\nCharlotte AI projection: horse range, armor, insufficient uses and cleanup passed\n"
+  },
+  {
+    "file": "tests\\chasca.mjs",
+    "exit": 0,
+    "output": "Chasca revised rules simulation passed\n"
+  },
+  {
+    "file": "tests\\chiori-audio.mjs",
+    "exit": 0,
+    "output": "PASS: Chiori native 3+3+3+3 audio pools, asset hashes/package, attached use/respond trigger, two sleeves once, unrelated loss and Feiren overlap excluded (simulation).\n"
+  },
+  {
+    "file": "tests\\chiori-selection.mjs",
+    "exit": 0,
+    "output": "PASS: 飞纫单界面、三种杀、任意选取顺序、撤销及失效检查、取消不耗次、原生检查不自动提交\n"
+  },
+  {
+    "file": "tests\\citlali-runtime.mjs",
+    "exit": 0,
+    "output": "PASS Citlali runtime: reproduced StepCompiler closure failure; fixed callback executes via local AsyncCompiler/ArrayCompiler twice; event callback audit; native Card.addGaintag displays 映心 while preserving internal tag. Compiler/node simulation, no live UI.\n"
+  },
+  {
+    "file": "tests\\citlali.mjs",
+    "exit": 0,
+    "output": "PASS Citlali mounted-group event simulation: loseEnd/loseAfter snapshots, original-owner borrowed material/response, stale card cancellation, red/black branches/seat order/departure, complete Miyan chain/cancellation/selection/AI/range-count checks, SB Lianying allocation/cap/expiry. No live game UI.\nPASS Citlali native audio: 17 exact source entries, original/output hashes, encoded peaks, trim/subtitles, silent log calls, native branch playback, death clips and mute switch. No manual listening.\nPASS revised Miyan: ordinary tricks only, cancellation, discard before virtual use, nested damage blocked, turn expiration, undiscardable hand.\n"
+  },
+  {
+    "file": "tests\\clorinde.mjs",
+    "exit": 0,
+    "output": "PASS clorinde: markers, multi-target dedupe, one use-after draw, hand snapshots, exemptions, AI\n"
+  },
+  {
+    "file": "tests\\columbina-recording.mjs",
+    "exit": 0,
+    "output": "Sulv recording: native skill mounting/disable/restore; post-first-use updates; duplicate cards; dark/virtual exclusion; second replay uses latest reverse sequence passed.\n"
+  },
+  {
+    "file": "tests\\columbina.mjs",
+    "exit": 0,
+    "output": "Columbina: replay, round limits, persistent marks, continuous recovery, death thresholds and nesting checks passed.\nColumbina audio: branch selection, cancellation silence, native random pools and 11 original voice assets passed.\nXiayin: native auto-selection and Fangtian last-hand range 1–3, other-hand range 1, fixed-card legality and native AI defaults passed.\n"
+  },
+  {
+    "file": "tests\\confirm.mjs",
+    "exit": 0,
+    "output": "PASS: 原生按钮状态、技能取消后普通用牌、自定义回调及按钮关闭保持一致，支持技能声明成对确认\nPASS: 夏祭原生小型数量按钮、足额点击、返回、资源变化、其他控件和强制顶牌流程（模拟）\n"
+  },
+  {
+    "file": "tests\\cosmic-movement.mjs",
+    "exit": 0,
+    "output": "PASS 宇宙耀变：使用/失牌、获得、交换混合批次、暂存防盗、返还及死亡放行（移动层模拟，非对局实测）\n"
+  },
+  {
+    "file": "tests\\crown-path.mjs",
+    "exit": 0,
+    "output": "crown-path: bootstrap, compulsory succession, native discard zones, lord skills and non-stacking rewards passed (simulation)\n"
+  },
+  {
+    "file": "tests\\cyber-dragon.mjs",
+    "exit": 0,
+    "output": "PASS 电子龙：概率/升格、挂载/资源、永久叠加、固定摸牌例外、整牌无效后封技、锁定武将/装备/卡牌区分（模拟，非对局实测）\n"
+  },
+  {
+    "file": "tests\\cyberse.mjs",
+    "exit": 0,
+    "output": "PASS 电子界：抽样、同点选牌、点数封锁、随机挖矿、第五张窗口及连杀（模拟）\n"
+  },
+  {
+    "file": "tests\\cyno-cards.mjs",
+    "exit": 0,
+    "output": "赛诺：抽样分支、原生销毁区域判定、卡包与模块测试入口检查通过（模拟测试）。\n两批暗置获得、重复牌名缺牌回退、衍生牌梅花7与简短居中提示配置检查通过。\n"
+  },
+  {
+    "file": "tests\\cyno-sound.mjs",
+    "exit": 1,
+    "output": "node:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    'attack',\n-   'explode',\n    'damage'\n  ]\n\n    at file:///D:/noname_v1.11.6.1/resources/app/extension/%E5%8E%9F%E7%A5%9E/tests/cyno-sound.mjs:52:10 {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: [ 'attack', 'damage' ],\n  expected: [ 'attack', 'explode', 'damage' ],\n  operator: 'deepStrictEqual',\n  diff: 'simple'\n}\n\nNode.js v24.14.0\n"
+  },
+  {
+    "file": "tests\\dahlia.mjs",
+    "exit": 0,
+    "output": "Dahlia simulated target, material count, cancellation and snapshot checks passed\nDahlia simulated optional gifts and Wugu target checks passed\nDahlia callback context and card-specific target delegation checks passed\nDahlia all-cards-disabled and target state refresh checks passed\n"
+  },
+  {
+    "file": "tests\\diluc.mjs",
+    "exit": 0,
+    "output": "PASS: Diluc triggers expanded from owned skill; wine cap/cost/turn limit/nesting/rescue/AI; niyan ordering/cancellation/exception; native canUse and hasPlayer API contracts. Simulation, not a live game.\n"
+  },
+  {
+    "file": "tests\\durin.mjs",
+    "exit": 0,
+    "output": "Durin color isolation, consumption, repeat and damage history passed\n"
+  },
+  {
+    "file": "tests\\emilie-ai.mjs",
+    "exit": 0,
+    "output": "PASS Emilie AI: active value ranking, cautious mass cards, response needs, category/tag restrictions, friend/enemy rescue, material depletion\n"
+  },
+  {
+    "file": "tests\\eula.mjs",
+    "exit": 0,
+    "output": "PASS Eula: actual skill-group dispatch; count/reset/cross-turn, four voice routes, nested snapshots, armor quota/cap, post-resolution draw, virtual numbers, disabled dispatch and AI (simulation; no live game).\n"
+  },
+  {
+    "file": "tests\\extension-loading.mjs",
+    "exit": 1,
+    "output": "<anonymous_script>:44\n      installCharacterCategories(lib);\n      ^\n\nReferenceError: installCharacterCategories is not defined\n    at Object.content (eval at <anonymous> (file:///D:/noname_v1.11.6.1/resources/app/extension/%E5%8E%9F%E7%A5%9E/tests/extension-loading.mjs:19:17), <anonymous>:44:7)\n    at file:///D:/noname_v1.11.6.1/resources/app/extension/%E5%8E%9F%E7%A5%9E/tests/extension-loading.mjs:22:11\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.14.0\n"
+  },
+  {
+    "file": "tests\\flins-audio.mjs",
+    "exit": 0,
+    "output": "Flins native audio: 3/2/4 skill pools, 3 death clips, subtitles, files, grouping and confirmed-use hook passed.\nFlins Moke: Fuqi card scope, silent equipment/healing/response cards, native target hints and hooks passed.\n"
+  },
+  {
+    "file": "tests\\flins.mjs",
+    "exit": 0,
+    "output": "Flins: snapshot reveal, response restriction, distance, material legality and selection checks passed.\nFlins: native Bagua probe rejected; real Shan conversion and normal Bagua preserved.\nFlins: equipment blocks responses without Zhangdeng; judgment excluded; zone changes respected.\nFlins: native selection auto-selects original target; material required; illegal target removed.\n"
+  },
+  {
+    "file": "tests\\furina.mjs",
+    "exit": 0,
+    "output": "欢宴顺序检查通过：本地引擎排序、乱序选择、跨座次起点、回合外回退、离场排除及成功后摸牌数\nPASS: Furina loss/damage/heal audio routing before and after success\nPASS: grouped guard, damage thresholds, both resolved states and AI\n"
+  },
+  {
+    "file": "tests\\gaming.mjs",
+    "exit": 0,
+    "output": "gaming escort snapshot regression passed\ndisplay versus reveal regression passed\nthree fixed attack variants passed\n"
+  },
+  {
+    "file": "tests\\ganyu.mjs",
+    "exit": 0,
+    "output": "PASS: Ganyu native charge cap, payment, useCard binding, one-way distance, round quota, cancelled/stale choices, exact discard phase, damage gate and AI (simulation; no live game).\n"
+  },
+  {
+    "file": "tests\\heroes.mjs",
+    "exit": 0,
+    "output": "PASS 英雄卡组：抽样升格、牌面/测试入口、融合技能距离离场复制、固定X及不足弃尽（模拟）。\n"
+  },
+  {
+    "file": "tests\\huanyan-effect.mjs",
+    "exit": 0,
+    "output": "PASS: serialized replay effect start/end with independent sources\n欢宴特效：重复挂载、多来源清理、广播独立执行、无 DOM 环境检查通过\n"
+  },
+  {
+    "file": "tests\\hutao-portraits.mjs",
+    "exit": 1,
+    "output": "<anonymous_script>:3\nimport smoothPortraits from \"./smooth-portrait-map.js\";\n^^^^^^\n\nSyntaxError: Cannot use import statement outside a module\n    at new Function (<anonymous>)\n    at file:///D:/noname_v1.11.6.1/resources/app/extension/%E5%8E%9F%E7%A5%9E/tests/hutao-portraits.mjs:12:46\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.14.0\n"
+  },
+  {
+    "file": "tests\\hutao.mjs",
+    "exit": 1,
+    "output": "<anonymous_script>:125\n      let payHp = current < 3 || !player.hasCard(card => lib.filter.cardDiscardable(card, player, \"fan_nichi\"), \"he\");\n                                         ^\n\nTypeError: player.hasCard is not a function\n    at Object.content (eval at <anonymous> (file:///D:/noname_v1.11.6.1/resources/app/extension/%E5%8E%9F%E7%A5%9E/tests/hutao.mjs:165:13), <anonymous>:125:42)\n    at file:///D:/noname_v1.11.6.1/resources/app/extension/%E5%8E%9F%E7%A5%9E/tests/hutao.mjs:170:23\n\nNode.js v24.14.0\n"
+  },
+  {
+    "file": "tests\\iansan.mjs",
+    "exit": 0,
+    "output": "Iansan simulated skill checks passed\n"
+  },
+  {
+    "file": "tests\\ifa.mjs",
+    "exit": 0,
+    "output": "ifa: mounted reward, card identity, retained/departed partner, one-shot reward and off-turn black conversion passed\n"
+  },
+  {
+    "file": "tests\\illuga.mjs",
+    "exit": 0,
+    "output": "illuga: transfer, independent zero-discard reward, per-target counts, seat order, nested use, round limit, cancellation, all character profiles passed\nilluga AI: enemy gift, own attack, ally support, card cost, relation changes and outside-range support passed\nilluga self defense AI: usable Shan, preserved materials, direct hit, required count and multiple targets passed\n"
+  },
+  {
+    "file": "tests\\ineffa.mjs",
+    "exit": 0,
+    "output": "伊涅芙：蓄力、回合次数、转化交互、装备手牌上限及稳态两张装备结算检查通过\n"
+  },
+  {
+    "file": "tests\\interaction-timeout.mjs",
+    "exit": 0,
+    "output": "PASS 藏蜜模拟：原生强制选择、AI补全、手动方案、重复/外来牌、离场重评、无目标/空牌\n"
+  },
+  {
+    "file": "tests\\itto-audio.mjs",
+    "exit": 0,
+    "output": "PASS: Itto gain-direction and pre-choice timing, capped charge silence, backwater plus move confirmation, comparison reveal deduplication, cancellation and loss timing (simulation).\n"
+  },
+  {
+    "file": "tests\\jahoda.mjs",
+    "exit": 0,
+    "output": "Jahoda: condition, forced/nonlocked, draw/recover, scoped distance and all character profiles passed\nJahoda: sequential Sha, moved loot and owner leaving passed\nJahoda AI: ordinary cost, target capacity, enemies/allies, armor, dodge and fresh resource checks passed\n"
+  },
+  {
+    "file": "tests\\jean.mjs",
+    "exit": 0,
+    "output": "PASS Jean: mounted loss/return events, inner native getl, cancellation, quota/round, seat order, draw then heal, shared voice window. Simulation, not live game.\n"
+  },
+  {
+    "file": "tests\\kazuha-update.mjs",
+    "exit": 0,
+    "output": "万叶：标记上限、批量失牌、觉醒顺序及重复觉醒检查通过\n"
+  },
+  {
+    "file": "tests\\keqing.mjs",
+    "exit": 0,
+    "output": "PASS: Keqing native quota eligibility, shared use/respond allowance, mounted refund, cancellation, material isolation, Yuheng targeting/AI, discard sampling and stale selection (simulation; no live game).\n"
+  },
+  {
+    "file": "tests\\kinich.mjs",
+    "exit": 0,
+    "output": "Kinich: native usage limits, fixed target, turn modes and first-card response checks passed.\n"
+  },
+  {
+    "file": "tests\\klee.mjs",
+    "exit": 0,
+    "output": "PASS: Klee native content compilers (old snapshot ReferenceError reproduced), attached triggers, native damage/nocard and chain bodies, damage/chain splash order, death snapshot, seat order, one voice, redirect joint selection/cancel/payment, multi-target, nested use isolation, expiry and friend/enemy AI (simulation; no live game).\n"
+  },
+  {
+    "file": "tests\\kokomi.mjs",
+    "exit": 0,
+    "output": "PASS Kokomi skill simulation\n"
+  },
+  {
+    "file": "tests\\lanyan.mjs",
+    "exit": 0,
+    "output": "lanyan simulated checks passed\nlanyan AI regression checks passed\n"
+  },
+  {
+    "file": "tests\\lauma.mjs",
+    "exit": 0,
+    "output": "lauma: reveal, equipment/judgment scope, loss snapshots, turn limits, draw/give and recovery passed\n"
+  },
+  {
+    "file": "tests\\linnea.mjs",
+    "exit": 0,
+    "output": "Linnea: target cancellation, round disable, draw continuation, name matching and turn limit passed (simulation).\nLinnea conversion: native material/target selection, no extra use or confirmation stage.\nMissing or moved materials cannot enable conversion.\nJoint selection binds exact material despite stale parent.result; zero, substituted and moved materials rejected.\n"
+  },
+  {
+    "file": "tests\\lynette.mjs",
+    "exit": 0,
+    "output": "lynette: response identity, mounted recorder, delayed tricks, phase ownership, movement/draw/seat-order disposal passed; native phase continuation inspected\nnative phase End/After execution and enabled-character profile coverage passed\ncounter-nullification, unrelated response, cancellation and AI evaluation passed\ndestination included on matching counts, unique destination retained, translation package separation passed\n"
+  },
+  {
+    "file": "tests\\lyney.mjs",
+    "exit": 0,
+    "output": "林尼：8个猜测分支、限次、牌类别、响应限制、红桃转化及弃牌边界检查通过。\n"
+  },
+  {
+    "file": "tests\\mark-replay.mjs",
+    "exit": 0,
+    "output": "PASS native markSkillCharacter replay payload: creation/change captions survive JSON with empty replay storage. Replay-node simulation only.\n"
+  },
+  {
+    "file": "tests\\mavuika-audio.mjs",
+    "exit": 0,
+    "output": "PASS: Mavuika mounted triggers, real discard timing, gain/overflow, confirmed conversion/payment, cancellation/invalid target silence, per-node deduplication, revival seat order, limited reuse rejection, native hasPlayer signature and state-dependent AI (simulation, not live playback).\n"
+  },
+  {
+    "file": "tests\\mavuika-interaction.mjs",
+    "exit": 0,
+    "output": "PASS: Mavuika native backup/restore, selection and confirm hook; direct name picker, cancel/manual confirmation, Sha target selection, automatic response/Peach/Wine with auto-confirm on/off, fixed rescue target, live validation, per-round usage and classic Sha natures (interaction simulation; no live UI test).\n"
+  },
+  {
+    "file": "tests\\mizuki.mjs",
+    "exit": 0,
+    "output": "mizuki: passed\n"
+  },
+  {
+    "file": "tests\\mona.mjs",
+    "exit": 0,
+    "output": "PASS Mona: mounted triggers, cumulative directional distance, expiry, optional start/mandatory complement, cancellation, private single-row permutation, exact native pile insertion, skipped phase, source loss, short deck, exception cleanup and AI. Simulation with native pile methods; no live game.\nPASS native locked classification, foreign-turn expiry rejection, survival choice and friend/enemy/judgment/draw AI ordering.\n"
+  },
+  {
+    "file": "tests\\monarch.mjs",
+    "exit": 0,
+    "output": "PASS 真帝王：抽样、天帝、弃牌失血、领域获得前拦截及到期（模拟）\n"
+  },
+  {
+    "file": "tests\\muniu-selection.mjs",
+    "exit": 0,
+    "output": "PASS: 单辆木牛直接选手牌、原生扣置结算保留、取消恢复、多辆及其他装备入口不变\n"
+  },
+  {
+    "file": "tests\\nahida.mjs",
+    "exit": 0,
+    "output": "纳西妲：四花色与顺序、直接使用与转化边界、转交/暂存失效、结束阶段收牌、永久记录、花囚及兰荫测试通过\n"
+  },
+  {
+    "file": "tests\\navia.mjs",
+    "exit": 0,
+    "output": "navia: damage, lord armor, comparison, discard ownership, direct card selection and cancellation checks passed\n"
+  },
+  {
+    "file": "tests\\neuvillette.mjs",
+    "exit": 0,
+    "output": "PASS: 遗龙按牌数/伤害计数与上限、阶段判断、审判弃牌/无来源伤害、取消退次、泪雨门槛与奖励\n"
+  },
+  {
+    "file": "tests\\nicole-audio.mjs",
+    "exit": 1,
+    "output": "Nicole audio: ended-based sequence, effect completion, exhaustion, mute, stale callbacks and 20 assets/peak measurements passed.\nNicole native Audio parsing: every branch file and subtitle resolved.\n<anonymous_script>:3\nimport smoothPortraits from \"../ui/smooth-portrait-map.js\";\n^^^^^^\n\nSyntaxError: Cannot use import statement outside a module\n    at new Function (<anonymous>)\n    at file:///D:/noname_v1.11.6.1/resources/app/extension/%E5%8E%9F%E7%A5%9E/tests/nicole-audio.mjs:23:18\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.14.0\n"
+  },
+  {
+    "file": "tests\\nicole-confirm-timing.mjs",
+    "exit": 0,
+    "output": "Fixed-target confirmation: check -> pause -> deferred ok/resume, invalid/stale checks and deduplication passed.\n"
+  },
+  {
+    "file": "tests\\nicole.mjs",
+    "exit": 0,
+    "output": "Nicole: attached recorders, multiple targets deduplicated, real ordering discard timing, converted/unrelated cards excluded, mission failure and retained prevention passed.\nNicole Xuanji: seat sorting, declining grants no protection, draw branch, bound expansion card, source-specific prevention and scoped distance passed.\nNicole conversion UI: direct entry, explicit color selection, fixed-target submission, Sha target confirmation and bound materials passed.\nNicole AI: normal native damage evaluation, only current-round immunity before mission completion, completed mission entry guard passed.\nNanman: no target-selection viewAs, bound materials, native target list and direct use result passed.\nXuanji: unusable memory skipped, discarded after queue, order storage cleared passed.\nNicole actual skill branches: one guard voice, one mission-failure voice, one memory draw voice, no per-target duplicates passed.\nNanman regression: zero-card/zero-target intermediate selection, empty UI passes, stale snapshot rejected.\nColor preview: red/black all-material highlights, clearing and cancel cleanup passed.\n"
+  },
+  {
+    "file": "tests\\nilou-ai.mjs",
+    "exit": 0,
+    "output": "Nilou AI: attack/trick/self-draw before equipment, double Peach, legal targets, exhausted Slash, first-use history and phase guards passed (simulation).\nNilou Chuchen AI: default decline, rhythm repair, cost limit, conservative finishing chance and retaining attack passed (simulation).\n"
+  },
+  {
+    "file": "tests\\nilou-audio.mjs",
+    "exit": 0,
+    "output": "Nilou audio: branch timing, silent recorder, one repeat voice, actual exclusion, cancellation/departure and measured peak headroom passed (simulation).\n"
+  },
+  {
+    "file": "tests\\nilou-voice-display.mjs",
+    "exit": 0,
+    "output": "Nilou display: seven exact subtitles, glider hidden, original three playback files retained.\n"
+  },
+  {
+    "file": "tests\\nilou-yin.mjs",
+    "exit": 0,
+    "output": "Nilou Yin: global mounted snapshot, equipment/other targets consume silently, targetless use, each user, cancellation, multiple targets, turn reset and AI passed (simulation).\n"
+  },
+  {
+    "file": "tests\\nilou.mjs",
+    "exit": 0,
+    "output": "Nilou: attached effects, conversion, first use per turn, multiple targets, nested uses, exclusions, distance, extra phase and cancellation passed (simulation).\nNilou useCard timing: grouped snapshot, bonus before Tianhu and no first-use refund passed.\n"
+  },
+  {
+    "file": "tests\\ororon.mjs",
+    "exit": 0,
+    "output": "PASS: 通感单次得失阈值、批量事件去重、藏蜜分配阈值\nPASS: 实际发动流程、获得仅摸牌、失去仅弃牌、弃牌接口、禁弃及取消\nPASS: 藏蜜直接选牌、成对手动确认、取消不取牌、零张与选牌确认\nPASS: 两张联动前瞻、选第一张后重评、无通感或无有利目标不虚增收益、保留危急自救桃\n"
+  },
+  {
+    "file": "tests\\pendulum.mjs",
+    "exit": 0,
+    "output": "PASS 灵摆：抽样升格、装备空栏、低点牌与保护、禁止响应（模拟）\n"
+  },
+  {
+    "file": "tests\\phase-end-control.mjs",
+    "exit": 0,
+    "output": "PASS: 原生出牌步骤重复创建只保留一个结束回合，回调与正常关闭不变\nPASS: 跨事件残留、关闭动画立即隐藏、嵌套事件创建和关闭后重新创建\n"
+  },
+  {
+    "file": "tests\\prune.mjs",
+    "exit": 0,
+    "output": "prune: target history, mounted recorder, shown-card identity and damage branch passed\n"
+  },
+  {
+    "file": "tests\\qiqi-audio.mjs",
+    "exit": 1,
+    "output": "<anonymous_script>:3\nimport smoothPortraits from \"../ui/smooth-portrait-map.js\";\n^^^^^^\n\nSyntaxError: Cannot use import statement outside a module\n    at new Function (<anonymous>)\n    at file:///D:/noname_v1.11.6.1/resources/app/extension/%E5%8E%9F%E7%A5%9E/tests/qiqi-audio.mjs:29:18\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.14.0\n"
+  },
+  {
+    "file": "tests\\qiqi-rest.mjs",
+    "exit": 1,
+    "output": "<anonymous_script>:3\nimport smoothPortraits from \"../ui/smooth-portrait-map.js\";\n^^^^^^\n\nSyntaxError: Cannot use import statement outside a module\n    at new Function (<anonymous>)\n    at file:///D:/noname_v1.11.6.1/resources/app/extension/%E5%8E%9F%E7%A5%9E/tests/qiqi-rest.mjs:7:18\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.14.0\n"
+  },
+  {
+    "file": "tests\\qiqi.mjs",
+    "exit": 0,
+    "output": "PASS Qiqi Due: reveal/gain/discard, seat order, cancellation, zero black, owner departure, independent nonstacking marks, full HP and multihit. Simulation only.\n"
+  },
+  {
+    "file": "tests\\raiden.mjs",
+    "exit": 0,
+    "output": "Raiden: attached triggers, charge transformation, hunt timing, response discard, cancellation and tagged conversion passed (simulation).\nPASS: Raiden blade payment/audio/damage order, invalid target, insufficient charge and silent native logs (simulation)\nPASS: full charge transition audio after skill changes, replaces gain voice, no repeat (simulation)\nPASS: Yushen joint material/name choices, both orders, cancel, bound material loss, native respond and automatic no-target use (simulation)\nPASS: Yushen AI material cost/use value, negative benefit, changing resources and fixed dying target (simulation)\nPASS: Wuxiang sha nature range, current legality, no cost before confirmation, shared cost and limit (simulation)\nPASS: Wuxiang response check/pause deferred completion clears confirmation with auto-confirm on/off (simulation)\n"
+  },
+  {
+    "file": "tests\\red-eyes.mjs",
+    "exit": 0,
+    "output": "PASS 真红眼：开包/黑石概率分支、排除牌、资源、黑炎弹足额支付与黑钢逐层持久标记（模拟，非对局实测）\n"
+  },
+  {
+    "file": "tests\\sandrone.mjs",
+    "exit": 0,
+    "output": "Sandrone: use/respond timing, all foreign zones, one-shot discard access, backwater order and fallback passed (simulation)\nWanli entry: missing filterOk, deferred native check, recursion guard, stale and illegal events passed\nReplay: native storage serialization preserves snapshots and restores computer records\nYaoyue: dynamic male quota, female exemption, deselection and invalid result rejection passed\n"
+  },
+  {
+    "file": "tests\\selection-count.mjs",
+    "exit": 0,
+    "output": "PASS: 原生提示创建顺序、实时选择计数、取消选择和事件切换\n"
+  },
+  {
+    "file": "tests\\sethos.mjs",
+    "exit": 0,
+    "output": "sethos: suit exemption, counter refund, phase ownership, actual discard timing, damage and round limit passed (simulation)\nsethos: 路 marker lifecycle and suit tooltip simulation passed\nsethos: no 路 marker for empty exemption suits passed\n"
+  },
+  {
+    "file": "tests\\shenhe-audio.mjs",
+    "exit": 0,
+    "output": "Shenhe audio: native pools 2/3/3/3, subtitles, existing final grouping and files verified.\n"
+  },
+  {
+    "file": "tests\\shenhe.mjs",
+    "exit": 0,
+    "output": "Shenhe: attached groups, allocation, per-damage consumption, dynamic round quota, free Sha, Xinzhai, transfer and owner death passed (simulation).\n"
+  },
+  {
+    "file": "tests\\six-samurai.mjs",
+    "exit": 0,
+    "output": "PASS six samurai sampling, assets, equipment and color exchange\n"
+  },
+  {
+    "file": "tests\\skill-buttons.mjs",
+    "exit": 0,
+    "output": "PASS: real engine control positioning, recast/equipment/confirm gaps, late resize, hide/show and dynamic controls (simulation)\n"
+  },
+  {
+    "file": "tests\\skill-voices.mjs",
+    "exit": 1,
+    "output": "node:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: dehya:fan_chizong\n    at file:///D:/noname_v1.11.6.1/resources/app/extension/%E5%8E%9F%E7%A5%9E/tests/skill-voices.mjs:92:48\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: false,\n  expected: true,\n  operator: '==',\n  diff: 'simple'\n}\n\nNode.js v24.14.0\n"
+  },
+  {
+    "file": "tests\\skirk.mjs",
+    "exit": 0,
+    "output": "丝柯克：首次获牌、指定目标封印、未伤害摸牌、封印到期清理及星灭顺序检查通过。\n"
+  },
+  {
+    "file": "tests\\sp-sandrone.mjs",
+    "exit": 0,
+    "output": "SP Sandrone simulation passed: eligibility, deduplication, grouped reward, combined sources, independent clearing, exhausted pool\nWanli: native textbuttons, deletion, two additions and cancellation passed (simulation)\n"
+  },
+  {
+    "file": "tests\\stardust-exchange.mjs",
+    "exit": 0,
+    "output": "PASS 星尘改版：双用途与目标、实际弃两张、实际点数/销毁前快照、不足/替换无奖励、移除同步、流星使用后独立奖励（模拟，非对局实测）\n"
+  },
+  {
+    "file": "tests\\stardust-utopia.mjs",
+    "exit": 0,
+    "output": "PASS 星尘/希望皇：抽样、奖励、资源、无效后弃牌、桃转化及倍率消耗（模拟，非对局实测）。\n"
+  },
+  {
+    "file": "tests\\sulv-effect.mjs",
+    "exit": 0,
+    "output": "Sulv VFX: reuse, multiple owners, fade cleanup, restart during fade and style deduplication passed.\n"
+  },
+  {
+    "file": "tests\\sulv-queue.mjs",
+    "exit": 0,
+    "output": "Sulv queue: 12-card sequence, six-card cap, native faces, current fade, rightward reuse, refill, narrow screens, restart and cleanup passed.\n"
+  },
+  {
+    "file": "tests\\trains.mjs",
+    "exit": 0,
+    "output": "PASS 列车：抽包升格、武器范围、联合确认、合法素材、实时范围、防止整次伤害及永久额度（模拟，非对局实测）\n"
+  },
+  {
+    "file": "tests\\update-check.mjs",
+    "exit": 0,
+    "output": "PASS release comparison, version consistency, notification persistence, manual/automatic checks, disabled checks and HTTP failures (simulation; no live game UI).\n"
+  },
+  {
+    "file": "tests\\varka.mjs",
+    "exit": 0,
+    "output": "Varka: slot, conversion, remaining weapons, trick effects and physical-card recovery passed\n"
+  },
+  {
+    "file": "tests\\venti.mjs",
+    "exit": 0,
+    "output": "Venti: Yinyou conditions/allocation, attached cooperation reward/expiry, original skill preservation, Songshi recovery/limit/cancel passed.\n"
+  },
+  {
+    "file": "tests\\wanderer-audio.mjs",
+    "exit": 0,
+    "output": "PASS: native state-specific death pools, speech switch, fallback, idempotence and packaged audio files\nPASS: five detail lines and mounted legacy death recorder with valid native paths\n"
+  },
+  {
+    "file": "tests\\wanderer.mjs",
+    "exit": 0,
+    "output": "Wanderer simulation passed\nWanderer voice state tests passed\n"
+  },
+  {
+    "file": "tests\\wriothesley.mjs",
+    "exit": 0,
+    "output": "new dianyu phase limits and phase ending passed\n"
+  },
+  {
+    "file": "tests\\xianyun.mjs",
+    "exit": 0,
+    "output": "PASS: Xianyun redesign, AI ally/enemy/cap choices, joint selection, real hasPlayer contract, five native card faces, attached equipment triggers, costs, disposal, stored cards and Taiping rules (simulation; no live game).\n"
+  },
+  {
+    "file": "tests\\xiao.mjs",
+    "exit": 0,
+    "output": "PASS Xiao: confirmation, current HP bonus, chain bonus and nested isolation, once-per-use voice queue, post-use HP gating, kill recovery order, quota cleanup, hand limit, AI, native audio pools and mute (simulation).\n"
+  },
+  {
+    "file": "tests\\xilonen-rework.mjs",
+    "exit": 0,
+    "output": "PASS Xilonen: joint selection completeness, yang/yin conversion and order, gift flipping, cumulative hand/rescue bonuses, surviving dying only, limited cancel/repeat, skill exclusions and limited-skill grant. Simulation only.\n"
+  },
+  {
+    "file": "tests\\yaemiko.mjs",
+    "exit": 0,
+    "output": "yaemiko: skill timing, choices, charge caps, female user and physical cards passed\nyaemiko voices: post-resolution Easter replaces normal voice\n"
+  },
+  {
+    "file": "tests\\yelan.mjs",
+    "exit": 0,
+    "output": "Yelan: attached groups, real movement order, payment/cancellation, respond result, snapshots/nesting, dying, sealing, Yuantu, AI and original audio passed (simulation).\n"
+  },
+  {
+    "file": "tests\\yoimiya.mjs",
+    "exit": 0,
+    "output": "Yoimiya: 512 overlap cases, physical traps, hand-only use/discard, batches, first-burst consumption, pile exchange and independent Sha charge passed (simulation).\nXiaji: fixed top slots, original-hand-only swaps, no chained reuse, undo, selection order and final guard passed (simulation).\nYoimiya sequential discard: separate events, awaited nested effects, moved/protected cards, no refill and target departure passed (simulation).\nPASS: direct skill event quantity/view continuation, 2-point payment, cancel/retry, final resource check and once-only audio (simulation).\nPASS: native useSkill dispatch -> awaiting quantity choice -> native control click -> five-card view; 1/2/3 and return (engine-source harness, not live game).\n"
+  },
+  {
+    "file": "tests\\zhongli-rework.mjs",
+    "exit": 0,
+    "output": "PASS: reworked Zhongli contracts, shared armor skill, self-rescue AI, cap, full consumption and voice timing; simulated only\nPASS: Dingqi three voice nodes, cancellation and empty-contract silence\n"
+  },
+  {
+    "file": "tests\\zhongli.mjs",
+    "exit": 0,
+    "output": "钟离：技能结算、AI及分支语音时机模拟通过（未对局实测）\n"
+  },
+  {
+    "file": "tests\\zibai-control-privacy.mjs",
+    "exit": 0,
+    "output": "Zibai control privacy: hidden guesses, recursive/repeated swaps, public reveals, cleanup and scope passed (simulation).\n"
+  },
+  {
+    "file": "tests\\zibai-eyes.mjs",
+    "exit": 0,
+    "output": "Zibai eyes: layered colors, animations, unique SVG IDs, broadcast isolation, native-dialog binding, synchronization and cleanup passed.\n"
+  },
+  {
+    "file": "tests\\zibai.mjs",
+    "exit": 0,
+    "output": "zibai: histories, form ownership/cycle/completion, copied skills, control lifetime/reset, damage costs and shown-material gifts passed\n"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "image\\character\\portraits\\sethos-select.png",
+    "size": [
+      400,
+      480
+    ],
+    "radius": 0.45
+  },
+  {
+    "file": "image\\character\\portraits\\sethos.png",
+    "size": [
+      500,
+      750
+    ],
+    "radius": 0.45
+  },
+  {
+    "file": "image\\character\\portraits\\sethos-detail.png",
+    "size": [
+      900,
+      1260
+    ],
+    "radius": 0.55
+  }
+]

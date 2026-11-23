@@ -1,0 +1,78 @@
+{
+  "page": "https://wiki.biligame.com/ys/杜林语音",
+  "language": "zh-CN",
+  "clips": {
+    "fan_durin1": {
+      "label": "倒下·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/5/53/btp0i6hpdrsk3trbpagxkw98kh31d07.mp3",
+      "bytes": 28439,
+      "subtitle": "这样…算好结局吗？"
+    },
+    "fan_durin2": {
+      "label": "倒下·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/8/8d/hgozz8e5wu7hulodqlsk56rinoc43pi.mp3",
+      "bytes": 15053,
+      "subtitle": "对不起…"
+    },
+    "fan_durin3": {
+      "label": "倒下·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/2/20/2w6gr4tijesh8vbsg3qwhajcu71e5ei.mp3",
+      "bytes": 19373,
+      "subtitle": "我会变成星星吗…"
+    },
+    "fan_hundun1": {
+      "label": "元素爆发·其四",
+      "url": "https://patchwiki.biligame.com/images/ys/e/e7/cv0xs42phmm62ddxc5i0anyzn3nfzrg.mp3",
+      "bytes": 15197,
+      "subtitle": "别靠近我！"
+    },
+    "fan_hundun2": {
+      "label": "元素爆发·其五",
+      "url": "https://patchwiki.biligame.com/images/ys/b/bb/q9h6r1t903h9dfess1c8ov78lznfmb7.mp3",
+      "bytes": 19467,
+      "subtitle": "渊影…焚灭。"
+    },
+    "fan_hundun3": {
+      "label": "元素爆发·其六",
+      "url": "https://patchwiki.biligame.com/images/ys/9/90/0acz5v4kbrl87287athugebcyqvf3v7.mp3",
+      "bytes": 21958,
+      "subtitle": "结局的哀叹。"
+    },
+    "fan_suxing_voice1": {
+      "label": "元素战技·其四",
+      "url": "https://patchwiki.biligame.com/images/ys/4/43/f3y8xm0nid4r7jd79utakkq5504n1bh.mp3",
+      "bytes": 8305,
+      "subtitle": "退后！"
+    },
+    "fan_suxing_voice2": {
+      "label": "元素战技·其五",
+      "url": "https://patchwiki.biligame.com/images/ys/b/bc/j1ock9xlgl5pzb0byboy6l62ltwx86r.mp3",
+      "bytes": 8069,
+      "subtitle": "崩裂！"
+    },
+    "fan_suxing_voice3": {
+      "label": "元素战技·其六",
+      "url": "https://patchwiki.biligame.com/images/ys/1/1a/70xv1rrci7rdn83q5qjwwwrzzg9dqas.mp3",
+      "bytes": 10268,
+      "subtitle": "噬爪！"
+    },
+    "fan_zixu1": {
+      "label": "元素爆发·其一",
+      "url": "https://patchwiki.biligame.com/images/ys/4/44/qblfeqyjz3xhl7u2yuf8z5tzsaahq90.mp3",
+      "bytes": 22744,
+      "subtitle": "故事，才刚开始。"
+    },
+    "fan_zixu2": {
+      "label": "元素爆发·其二",
+      "url": "https://patchwiki.biligame.com/images/ys/0/0b/hxf76rqmalzpwogigsd1j1ejjb66noj.mp3",
+      "bytes": 18262,
+      "subtitle": "腐殖…新生。"
+    },
+    "fan_zixu3": {
+      "label": "元素爆发·其三",
+      "url": "https://patchwiki.biligame.com/images/ys/0/0f/294gsvf8rnpzbjsvamooh12t3bur6t7.mp3",
+      "bytes": 15147,
+      "subtitle": "命途的转折。"
+    }
+  }
+}

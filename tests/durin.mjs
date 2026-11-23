@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const code=readFileSync(new URL('../character/skills/durin.js',import.meta.url),'utf8').replace(/^import .*;\r?\n/,'').replace('export default','return');
+const game={hasPlayer:fn=>[].some(fn),trySkillAudio(){}};
+const skills=new Function('game','get','lib',code)(game,{color:c=>c.color,type:()=> 'basic'},{});
+const red='fan_hundun_weijing_red',black='fan_hundun_weijing_black';
+const marks={[red]:1,[black]:1};
+const p={countMark:k=>marks[k]||0,removeMark(k,n){marks[k]-=n},isIn:()=>true,countCards:()=>1,getHistory:()=>[]};
+const use={card:{name:'sha',color:'red'},targets:[{}],effectCount:1};
+assert(skills.fan_suxing.filter(use,p));await skills.fan_suxing.content({},use,p);
+assert.equal(marks[red],0);assert.equal(marks[black],1);assert.equal(use.effectCount,2);
+assert(!skills.fan_suxing.filter(use,p));
+assert(skills.fan_zixu.filter({},p));p.getHistory=()=>[{}];assert(!skills.fan_zixu.filter({},p));
+assert.deepEqual(skills.fan_hundun.trigger,{player:'damageEnd',source:'damageSource'});
+console.log('Durin color isolation, consumption, repeat and damage history passed');

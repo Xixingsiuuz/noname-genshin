@@ -1,74 +1,84 @@
-import { game, get, lib, _status } from "../../../../noname.js";
+import { game, get, ui } from "../../../../noname.js";
 export default {
   fan_miaosuan_select_voice: { audio: "ext:原神/audio/kokomi/skill:3" },
   fan_miaosuan_gain_voice: { audio: "ext:原神/audio/kokomi/skill:2" },
-  fan_miaosuan_chengshi_voice: { audio: "ext:原神/audio/kokomi/skill:2" },
+  fan_miaosuan_draw_voice: { audio: "ext:原神/audio/kokomi/skill:3" },
   fan_miaosuan: {
     locked: false,
     trigger: { global: "roundStart" },
     direct: true,
     audio: false,
-    group: ["fan_miaosuan_record", "fan_miaosuan_end"],
+    group: ["fan_miaosuan_record", "fan_miaosuan_end", "fan_miaosuan_cleanup"],
     onremove: true,
     async content(event, trigger, player) {
       delete player.storage.fan_miaosuan;
       const result = await player.chooseTarget("妙算：你可以秘密选择一名角色")
-        .set("prompt2", false).set("ai", target => get.attitude(player, target) + (target.hp >= target.maxHp ? 2 : 0)).forResult();
-      if (result.bool) { player.storage.fan_miaosuan = { target: result.targets[0] }; game.trySkillAudio("fan_miaosuan_select_voice", player, true, true); }
+        .set("prompt2", false).set("ai", target => {
+          if (target.hp >= target.maxHp) return 4;
+          return 1 + Math.max(0, get.attitude(player, target)) / 10 + (target.hp === 1 ? 0.5 : 0);
+        }).forResult();
+      if (result.bool && result.targets[0].isIn()) {
+        player.storage.fan_miaosuan = { target: result.targets[0] };
+        game.trySkillAudio("fan_miaosuan_select_voice", player, true, true);
+      }
     },
     subSkill: {
       record: {
         charlotte: true, forced: true, popup: false,
         trigger: { global: "recoverEnd" },
-        filter: event => event.num > 0,
+        filter(event, player) {
+          return event.num > 0 && event.player === player.storage.fan_miaosuan?.target &&
+            event.getParent("phase").name === "phase";
+        },
         async content(event, trigger, player) {
-          if (player.storage.fan_miaosuan_round !== game.roundNumber) {
-            player.storage.fan_miaosuan_round = game.roundNumber;
-            player.storage.fan_miaosuan_recovered = [];
-          }
-          player.storage.fan_miaosuan_recovered.add(trigger.player);
+          const state = player.storage.fan_miaosuan;
+          if (state?.target === trigger.player) state.recoveredTurn = trigger.getParent("phase");
+        },
+      },
+      cleanup: {
+        charlotte: true, forced: true, popup: false, forceDie: true,
+        trigger: { global: "roundEnd" },
+        async content(event, trigger, player) {
+          delete player.storage.fan_miaosuan;
         },
       },
       end: {
         locked: false, forced: true, popup: false,
-        trigger: { global: "roundEnd" },
-        filter: (event, player) => !!player.storage.fan_miaosuan,
+        trigger: { global: "phaseAfter" },
+        filter(event, player) {
+          const state = player.storage.fan_miaosuan;
+          return state?.target.isIn() &&
+            (state.recoveredTurn === event || state.target.hp >= state.target.maxHp);
+        },
         async content(event, trigger, player) {
           const state = player.storage.fan_miaosuan;
-          delete player.storage.fan_miaosuan;
-          if (!state.target.isIn()) return;
-          const recovered = player.storage.fan_miaosuan_round === game.roundNumber && player.getStorage("fan_miaosuan_recovered").includes(state.target);
+          if (!state?.target.isIn()) return;
+          const recovered = state.recoveredTurn === trigger;
           const full = state.target.hp >= state.target.maxHp;
           if (!recovered && !full) return;
-          const cards = [];
-          for (const name of new Set(get.zhinangs())) {
-            const card = get.cardPile(card => card.name === name && !cards.includes(card));
-            if (card) cards.push(card);
-          }
-          if (cards.length) {
-            game.trySkillAudio("fan_miaosuan_gain_voice", player, true, true);
-            await player.gain(cards, "gain2");
-            if (player.isIn() && state.target.isIn() && state.target !== player && player.countCards("h")) {
-              const result = await player.chooseCard("h", [0, Math.min(cards.length, player.countCards("h"))], `妙算：交给${get.translation(state.target)}至多${cards.length}张手牌`)
-                .set("prompt2", false).set("ai", card => get.attitude(player, state.target) > 0 ? 6 - get.value(card) : -1).forResult();
-              if (result.bool && state.target.isIn()) {
-                const give = result.cards.filter(card => player.getCards("h").includes(card));
-                if (give.length) await player.give(give, state.target);
-              }
-            }
-          }
+          game.trySkillAudio("fan_miaosuan_draw_voice", player, true, true);
+          await player.draw();
           if (!recovered || !full || !player.isIn()) return;
-          const known = get.zhinangs();
-          const options = lib.inpile.filter(name => get.type(name) === "trick" && !known.includes(name));
-          if (!options.length) return;
-          const result = await player.chooseButton(["乘势：记录一种智囊牌", [options, "vcard"]], true)
-            .set("ai", button => get.value({ name: button.link[2] }, player)).forResult();
-          if (result.bool && options.includes(result.links[0][2]) && !get.zhinangs().includes(result.links[0][2])) {
-            game.broadcastAll(function (name) {
-              (_status.fan_miaosuan_names || (_status.fan_miaosuan_names = []));
-              if (!_status.fan_miaosuan_names.includes(name)) _status.fan_miaosuan_names.push(name);
-            }, result.links[0][2]);
-            game.trySkillAudio("fan_miaosuan_chengshi_voice", player, true, true);
+
+          const names = new Set(get.zhinangs());
+          const card = Array.from(ui.cardPile.childNodes)
+            .filter(card => names.has(card.name)).randomGet();
+          if (!card) return;
+          game.trySkillAudio("fan_miaosuan_gain_voice", player, true, true);
+          await player.gain(card, "gain2");
+          if (!player.isIn() || !player.getCards("h").includes(card)) return;
+          const result = await player.chooseTarget("乘势：你可以将此牌交给一名其他角色",
+            (card, player, target) => target !== player)
+            .set("prompt2", false).set("ai", target => {
+              if (get.tag(card, "damage") && player.hasSkill("fan_haiji")) {
+                return get.attitude(player, target) - 1;
+              }
+              return get.attitude(player, target) * get.value(card, target) -
+                5 * get.value(card, player);
+            }).forResult();
+          if (result.bool && player.isIn() && result.targets[0].isIn() &&
+              result.targets[0] !== player && player.getCards("h").includes(card)) {
+            await player.give(card, result.targets[0]);
           }
         },
       },

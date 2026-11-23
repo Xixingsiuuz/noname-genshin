@@ -7,12 +7,14 @@ path = ROOT/'extension.js'
 text = path.read_text(encoding='utf8')
 marker = '      "audio/yelan/die/fan_yelan.mp3",'
 if '"audio/kokomi/die/fan_kokomi1.mp3"' not in text:
-    text = text.replace(marker, '\n'.join('      '+json.dumps(c['output'])+',' for c in clips.values())+'\n'+marker)
+    text = text.replace(marker, '\n'.join('      '+json.dumps(c['output'])+',' for c in clips.values() if 'output' in c)+'\n'+marker)
     path.write_text(text,encoding='utf8')
 path = ROOT/'audio/catalog.json'
 catalog = [c for c in json.loads(path.read_text(encoding='utf8')) if c.get('role') != 'kokomi']
 for clip in clips.values():
     for key in ('original','output'):
+        if key not in clip:
+            continue
         data = (ROOT/clip[key]).read_bytes()
         catalog.append(dict(role='kokomi',path=clip[key],bytes=len(data),sha256=hashlib.sha256(data).hexdigest()))
 path.write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
@@ -23,6 +25,8 @@ path = ROOT/'character/voices.js'
 text = path.read_text(encoding='utf8')
 values = {}
 for clip in clips.values():
+    if 'output' not in clip:
+        continue
     key = '#ext:原神/' + clip['output'][:-4]
     if '/die/' in key: key += ':die'
     values[key] = clip['text']

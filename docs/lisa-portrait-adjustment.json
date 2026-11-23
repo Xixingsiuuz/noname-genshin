@@ -1,0 +1,62 @@
+{
+  "source": "image/character/originals/lisa.png",
+  "frames": {
+    "lisa-select": [
+      [
+        781,
+        291,
+        2349,
+        2487
+      ],
+      [
+        360,
+        504
+      ]
+    ],
+    "lisa": [
+      [
+        574,
+        27,
+        2466,
+        2676
+      ],
+      [
+        600,
+        840
+      ]
+    ],
+    "lisa-detail": [
+      [
+        0,
+        0,
+        2890,
+        2890
+      ],
+      [
+        1200,
+        1290
+      ]
+    ]
+  },
+  "scale_change_percent": {
+    "select": -10.06,
+    "arena": -8.03,
+    "detail_horizontal": -6.92,
+    "detail_vertical": 0
+  },
+  "select_second_adjustment": {
+    "previous_frame": [
+      859,
+      401,
+      2271,
+      2377
+    ],
+    "new_frame": [
+      781,
+      291,
+      2349,
+      2487
+    ],
+    "relative_scale": 0.9005102040816326
+  }
+}

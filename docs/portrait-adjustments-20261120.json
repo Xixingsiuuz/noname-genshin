@@ -1,0 +1,85 @@
+{
+  "method": "ImageOps.fit, uniform scaling with centered crop",
+  "specs": {
+    "prune": [
+      "prune.png",
+      [
+        790,
+        150,
+        1230,
+        810
+      ],
+      [
+        500,
+        750
+      ]
+    ],
+    "prune-select": [
+      "prune.png",
+      [
+        825,
+        150,
+        1200,
+        600
+      ],
+      [
+        400,
+        480
+      ]
+    ],
+    "prune-detail": [
+      "prune.png",
+      [
+        760,
+        140,
+        1290,
+        865
+      ],
+      [
+        760,
+        1040
+      ]
+    ],
+    "ifa": [
+      "ifa.jpg",
+      [
+        375,
+        355,
+        960,
+        1233
+      ],
+      [
+        500,
+        750
+      ]
+    ],
+    "ifa-select": [
+      "ifa.jpg",
+      [
+        440,
+        355,
+        900,
+        907
+      ],
+      [
+        400,
+        480
+      ]
+    ],
+    "ifa-detail": [
+      "ifa.jpg",
+      [
+        100,
+        260,
+        1080,
+        1430
+      ],
+      [
+        840,
+        1003
+      ]
+    ]
+  },
+  "lanyan": "existing independent crops, median 3 then Gaussian 0.45",
+  "originals": "unchanged"
+}

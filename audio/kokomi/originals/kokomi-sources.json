@@ -64,9 +64,8 @@
       "url": "https://patchwiki.biligame.com/images/ys/8/86/esq7vo0z2b6uli27ecom0fxts3ij3wh.mp3",
       "bytes": 92192,
       "original": "audio/kokomi/originals/fan_miaosuan_chengshi_voice1.mp3",
-      "output": "audio/kokomi/skill/fan_miaosuan_chengshi_voice1.mp3",
-      "output_bytes": 92192,
-      "trim_seconds": null
+      "trim_seconds": null,
+      "retired": true
     },
     "fan_miaosuan_chengshi_voice2": {
       "label": "突破的感受·转",
@@ -74,9 +73,8 @@
       "url": "https://patchwiki.biligame.com/images/ys/6/68/gizmln4gxcjprtvp8nthctfpfg4olmm.mp3",
       "bytes": 104864,
       "original": "audio/kokomi/originals/fan_miaosuan_chengshi_voice2.mp3",
-      "output": "audio/kokomi/skill/fan_miaosuan_chengshi_voice2.mp3",
-      "output_bytes": 104864,
-      "trim_seconds": null
+      "trim_seconds": null,
+      "retired": true
     },
     "fan_haiji1": {
       "label": "元素爆发·其一",
@@ -137,6 +135,39 @@
       "output": "audio/kokomi/die/fan_kokomi3.mp3",
       "output_bytes": 45728,
       "trim_seconds": null
+    },
+    "fan_miaosuan_draw_voice1": {
+      "label": "元素战技·其一",
+      "text": "帮帮忙！",
+      "url": "https://patchwiki.biligame.com/images/ys/9/98/bco8go9ex6318w7jgmcndh40il7vqt9.mp3",
+      "bytes": 12704,
+      "original": "audio/kokomi/originals/fan_miaosuan_draw_voice1.mp3",
+      "output": "audio/kokomi/skill/fan_miaosuan_draw_voice1.mp3",
+      "output_bytes": 12704,
+      "trim_seconds": null,
+      "verified_date": "2026-11-15"
+    },
+    "fan_miaosuan_draw_voice2": {
+      "label": "元素战技·其二",
+      "text": "别担心。",
+      "url": "https://patchwiki.biligame.com/images/ys/f/fa/o39icmpi7q14o84m64jfuwevbm6ufjx.mp3",
+      "bytes": 15392,
+      "original": "audio/kokomi/originals/fan_miaosuan_draw_voice2.mp3",
+      "output": "audio/kokomi/skill/fan_miaosuan_draw_voice2.mp3",
+      "output_bytes": 15392,
+      "trim_seconds": null,
+      "verified_date": "2026-11-15"
+    },
+    "fan_miaosuan_draw_voice3": {
+      "label": "元素战技·其三",
+      "text": "休养生息。",
+      "url": "https://patchwiki.biligame.com/images/ys/c/c1/9qzat8ahswmyr6nu3d0jdt3v6a27bmi.mp3",
+      "bytes": 21920,
+      "original": "audio/kokomi/originals/fan_miaosuan_draw_voice3.mp3",
+      "output": "audio/kokomi/skill/fan_miaosuan_draw_voice3.mp3",
+      "output_bytes": 21920,
+      "trim_seconds": null,
+      "verified_date": "2026-11-15"
     }
   }
 }

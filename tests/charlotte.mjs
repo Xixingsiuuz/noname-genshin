@@ -1,0 +1,48 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const game={roundNumber:1,players:[]};
+const get={attitude:()=>1,value:()=>2};
+const ui={selected:{buttons:[]}};
+const status={};
+Array.prototype.sortBySeat=function(){return this};
+const src=readFileSync(new URL('../character/skills/charlotte.js',import.meta.url),'utf8').replace(/^\uFEFF/,'').replace(/^import .*;\r?\n/gm,'').replaceAll('export function','function').replace('export default','return');
+const skills=new Function('game','get','ui','_status',src)(game,get,ui,status);
+const c1={},c2={},c3={}, phase={};let expansions=[c1,c2,c3],draws=0,discard=0,gained=[];
+const target={isIn:()=>true,countCards:()=>1,getExpansions:()=>expansions,async loseToDiscardpile(c){expansions=expansions.filter(x=>!(Array.isArray(c)?c:[c]).includes(x))},async gain(c){gained=c;expansions=[]}};
+const p={storage:{},isIn:()=>true,countCards:()=>1,async draw(){draws++},chooseToDiscard(zone,n,forced){assert.equal(zone,'he');assert(forced);discard=n;return {set(){return Promise.resolve()}}},chooseButton(){return {set(){return this},async forResult(){return {links:[c1]}}}}};
+game.players=[p,target];
+assert(skills.fan_baoshe.filter({card:{name:'sha'}},p));p.storage.fan_baoshe_round=1;assert(!skills.fan_baoshe.filter({card:{name:'sha'}},p));game.roundNumber=2;assert(skills.fan_baoshe.filter({card:{name:'sha'}},p));assert(!skills.fan_baoshe.filter({card:{name:'tao'}},p));
+p.storage.fan_zhenxiang={target,cards:[c1,c2,c3],x:3,phase};
+const ev={target,getParent:()=>phase};
+assert(skills.fan_zhenxiang.subSkill.expose.filter(ev,p));assert(!skills.fan_zhenxiang.subSkill.expose.filter({...ev,getParent:()=>({})},p));
+await skills.fan_zhenxiang.subSkill.expose.content({},ev,p);assert.equal(draws,1);assert.deepEqual(expansions,[c2,c3]);
+expansions=[c3];await skills.fan_zhenxiang.subSkill.end.content({},phase,p);assert.deepEqual(gained,[c3]);assert.equal(discard,3);assert(!p.storage.fan_zhenxiang);
+p.storage.fan_zhenxiang={target,cards:[c1],x:1,phase};discard=0;expansions=[];await skills.fan_zhenxiang.subSkill.end.content({},phase,p);assert.equal(discard,0);
+const order=[];const donors=[0,1].map(i=>({isIn:()=>true,countCards:()=>1,getCards:()=>[c1],async give(){order.push('give'+i)}}));
+game.players=[p,...donors];p.chooseCardOL=(list)=>{assert.deepEqual(list,donors);order.push('chooseAll');return {set(){return this},async forResult(){return [{bool:true,cards:[c1]},{bool:false}]}}};
+delete p.storage.fan_baoshe_round;await skills.fan_baoshe.content({},{card:{name:'sha'}},p);assert.deepEqual(order,['chooseAll','give0']);assert(!skills.fan_baoshe.filter({card:{name:'sha'}},p));
+console.log('Charlotte simulated timing, fixed X, empty remainder and simultaneous decisions passed');
+
+const helpers = new Function('game','get','ui','_status',src.replace(/return \{\r?\n  fan_zhenxiang:/, 'return {projectedUses, coverScore,\n  fan_zhenxiang:'))(game,get,ui,status);
+const horse={subtype:'equip3'}, armor={subtype:'equip2'}, attack={name:'sha'};
+const enemy={getCards:()=>[horse,armor],hasSkillTag:()=>false};
+const originalTag=enemy.hasSkillTag;
+const originalSelection=[];ui.selected.cards=originalSelection;
+get.subtype=c=>c.subtype;get.attitude=()=>-5;get.value=()=>7;
+get.effect=()=>enemy.hasSkillTag('unequip2') ? 2 : -1;
+const attacker={getCards:()=>[attack],canUse(card,target,distance,count){assert.equal(count,true);return ui.selected.cards.includes(horse)}};
+assert.equal(helpers.projectedUses(attacker,enemy),0);
+assert.equal(helpers.projectedUses(attacker,enemy,[horse,armor]),1);
+// Independently cover the horse when armor does not block the attack.
+get.effect=()=>2;
+assert(helpers.coverScore(attacker,enemy,horse)>0);
+assert.equal(helpers.projectedUses(attacker,enemy),0);
+assert.equal(ui.selected.cards,originalSelection);assert.equal(enemy.hasSkillTag,originalTag);
+attacker.canUse=()=>true;get.effect=()=>enemy.hasSkillTag('unequip2')?2:-1;
+assert(helpers.coverScore(attacker,enemy,armor)>0);
+assert(helpers.coverScore(attacker,enemy,horse,[armor])<0); // two covers, only one likely use
+attacker.canUse=()=>false;assert(helpers.coverScore(attacker,enemy,armor)<0);
+get.effect=()=>{throw Error('projection failure')};attacker.canUse=()=>true;
+assert.throws(()=>helpers.projectedUses(attacker,enemy,[armor]),/projection failure/);
+assert.equal(ui.selected.cards,originalSelection);assert.equal(enemy.hasSkillTag,originalTag);
+console.log('Charlotte AI projection: horse range, armor, insufficient uses and cleanup passed');

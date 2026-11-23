@@ -21,6 +21,6 @@ for name, (source, box) in CROPS.items():
             # Prefilter at source resolution and use a smaller, smoothly sampled asset.
             size = (300, 420)
             portrait = portrait.filter(ImageFilter.GaussianBlur(radius=0.5 * portrait.width / size[0]))
-        portrait.resize(size, Image.Resampling.LANCZOS).save(
+        ImageOps.fit(portrait,size,method=Image.Resampling.LANCZOS).save(
             ROOT / f"portraits/{name}-avatar-20261027.png", optimize=True
         )

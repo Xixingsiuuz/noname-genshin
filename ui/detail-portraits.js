@@ -16,7 +16,27 @@ export function installDetailPortraits(ui, lib) {
   if (preset && !preset.fanGanyuPortrait) {
     const character = function (...args) {
       const node = preset.apply(this, args);
+      if (node?.link === "fan_kaeya") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/kaeya-select.png")`;
+      if (node?.link === "fan_amber") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/amber-select.png")`;
+      if (node?.link === "fan_lisa") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/lisa-select.png")`;
+      if (node?.link === "fan_kirara") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/kirara-select.png")`;
+      if (node?.link === "fan_gaming") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/gaming-select.png")`;
+      if (node?.link === "fan_kachina") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/kachina-select.png")`;
+      if (node?.link === "fan_sethos") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/sethos-select.png")`;
+      if (node?.link === "fan_lynette") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/lynette-select.png")`;
+      if (node?.link === "fan_charlotte") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/charlotte-select.png")`;
+      if (node?.link === "fan_dahlia") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/dahlia-select.png")`;
+      if (node?.link === "fan_iansan") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/iansan-select.png")`;
+      if (node?.link === "fan_freminet") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/freminet-select.png")`;
+      if (node?.link === "fan_ororon") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/ororon-select.png")`;
+      if (node?.link === "fan_ifa") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/ifa-select.png")`;
+      if (node?.link === "fan_lanyan") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/lanyan-select.png")`;
+      if (node?.link === "fan_illuga") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/illuga-select.png")`;
       if (node?.link === "fan_mokuai_ceshi") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/mokuai-ceshi-select.png")`;
+      if (node?.link === "fan_prune") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/prune-select.png")`;
+      if (node?.link === "fan_chevreuse") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/chevreuse-select.png")`;
+      if (node?.link === "fan_jahoda") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/jahoda-select.png")`;
+      if (node?.link === "fan_aino") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/aino-select.png")`;
       if (node?.link === "fan_cyno") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/cyno-select.png")`;
       if (node?.link === "fan_alhaitham") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/alhaitham-select.png")`;
       if (node?.link === "fan_dehya") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/dehya-select.png")`;
@@ -24,6 +44,7 @@ export function installDetailPortraits(ui, lib) {
       if (["fan_sandrone", "fan_sp_sandrone"].includes(node?.link)) node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/sandrone-select.png")`;
       if (node?.link === "fan_re_zhongli") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/zhongli-rework-select.png")`;
       if (node?.link === "fan_linnea") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/linnea-select.png")`;
+      if (node?.link === "fan_durin") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/durin-select.png")`;
       if (node?.link === "fan_nicole") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/nicole-select.png")`;
       if (["fan_citlali", "fan_citlali_revised"].includes(node?.link)) node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/citlali-select.png")`;
       if (node?.link === "fan_tighnari") node.style.backgroundImage = `url("${lib.assetURL}extension/原神/image/character/portraits/tighnari-select.png")`;
@@ -40,16 +61,37 @@ export function installDetailPortraits(ui, lib) {
     ui.create.buttonPresets.character = character;
   }
   const detailImages = {
+    fan_amber: "amber-detail.png",
+    fan_lisa: "lisa-detail.png",
+    fan_kirara: "kirara-detail.png",
     fan_wanderer: "../originals/wanderer.png",
     ...Object.fromEntries(Object.entries(originalPortraits).map(([id, path]) => [id, `../${path.slice("image/character/".length)}`])),
+    fan_kaeya: "kaeya-detail.png",
     fan_mokuai_ceshi: "mokuai-ceshi-detail.png",
+    fan_prune: "prune-detail.png",
+    fan_chevreuse: "chevreuse-detail.png",
+    fan_jahoda: "jahoda-detail.png",
+    fan_aino: "aino-detail.png",
     fan_cyno: "cyno-detail.png",
     fan_alhaitham: "alhaitham-detail.png",
     fan_dehya: "dehya-detail.png",
     fan_re_zhongli: "zhongli-rework-detail.png",
     fan_sp_sandrone: "sandrone-detail.png",
     fan_sandrone: "sandrone-detail.png",
+    fan_gaming: "gaming-detail.png",
+    fan_kachina: "kachina-detail.png",
+    fan_sethos: "sethos-detail.png",
+    fan_lynette: "lynette-detail.png",
+    fan_charlotte: "charlotte-detail.png",
+    fan_dahlia: "dahlia-detail.png",
+    fan_iansan: "iansan-detail.png",
+    fan_ifa: "ifa-detail.png",
+    fan_freminet: "freminet-detail.png",
+    fan_ororon: "ororon-detail.png",
+    fan_lanyan: "lanyan-detail.png",
+    fan_illuga: "illuga-detail.png",
     fan_linnea: "linnea-detail.png",
+    fan_durin: "durin-detail.png",
     fan_nicole: "nicole-detail.png",
     fan_citlali: "citlali-detail.png",
     fan_citlali_revised: "citlali-detail.png",

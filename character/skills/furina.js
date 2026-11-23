@@ -149,7 +149,26 @@ export default {
     ai: { effect: { target(card, source, target) {
       if (target.storage.fan_zhongyu_state || !get.tag(card, "damage")) return;
       const current = get.event();
-      const damage = current?.card === card ? (current.num ?? current.baseDamage ?? get.tag(card, "damage")) : get.tag(card, "damage");
+      // damageEffect uses a synthetic damage card while the response event is nested
+      // under sha. Read that sha's actual damage, including wine's extraDamage.
+      let damage = current?.card === card ? (current.num ?? current.baseDamage ?? get.tag(card, "damage")) : get.tag(card, "damage");
+      if (["damage", "firedamage", "thunderdamage"].includes(card.name)) {
+        const seen = new Set();
+        let event = current;
+        while (event && !seen.has(event)) {
+          seen.add(event);
+          if (event.name === "sha") {
+            if (event.player === source && event.target === target
+              && typeof event.baseDamage === "number" && typeof event.extraDamage === "number"
+              && !source.hasSkillTag("jueqing", false, target) && !target.hasSkill("gangzhi")) {
+              damage = event.baseDamage + event.extraDamage;
+            }
+            break;
+          }
+          if (event.name === "damage" || event.name === "useCard") break;
+          event = typeof event.getParent === "function" ? event.getParent() : null;
+        }
+      }
       if (damage > 1) return "zeroplayertarget";
     } } },
     dutySkill: true,

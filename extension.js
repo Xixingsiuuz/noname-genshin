@@ -1,3 +1,4 @@
+import { installCharacterCategories } from "./character/categories.js";
 import { installCynoRarity } from "./ui/cyno-rarity.js";
 import { installWandererDeathAudio } from "./ui/wanderer-voices.js";
 import { createUpdateChecker, EXTENSION_VERSION } from "./ui/update-check.js";
@@ -64,6 +65,7 @@ export default function () {
   const extension = {
     name: "原神",
     content() {
+      installCharacterCategories(lib);
       installWandererDeathAudio(game, lib, get);
       updater.start();
       installSharedZhinang(get, () => _status);
@@ -207,17 +209,27 @@ export default function () {
       card: createCardPackage(),
     },
     files: {
-      character: ["image/character/portraits/tighnari.png", "image/character/portraits/tighnari-select.png", "image/character/portraits/tighnari-detail.png", "image/character/originals/cyno.png", "image/character/portraits/cyno.png", "image/character/portraits/cyno-select.png", "image/character/portraits/cyno-detail.png", "image/character/originals/alhaitham.jpg", "image/character/portraits/alhaitham.png", "image/character/portraits/alhaitham-select.png", "image/character/portraits/alhaitham-detail.png", "image/character/originals/dehya.jpg", "image/character/portraits/dehya.png", "image/character/portraits/dehya-select.png", "image/character/portraits/dehya-detail.png", "image/character/originals/wanderer.png", "image/character/portraits/wanderer.png", "image/character/portraits/wanderer-select.png", "image/character/portraits/wanderer-detail.png", "image/character/originals/zhongli-rework.png", "image/character/portraits/zhongli-rework.png", "image/character/portraits/zhongli-rework-select.png", "image/character/portraits/zhongli-rework-detail.png", ...Object.values(smoothPortraits), "image/character/originals/sandrone.png", "image/character/portraits/sandrone.png", "image/character/portraits/sandrone-select.png", "image/character/portraits/sandrone-detail.png", "image/character/originals/nicole.png", "image/character/portraits/nicole.png", "image/character/portraits/nicole-select.png", "image/character/portraits/nicole-detail.png", "image/character/originals/citlali.png", "image/character/portraits/citlali.png", "image/character/portraits/citlali-select.png", "image/character/portraits/citlali-detail.png", "image/character/originals/mona.png", "image/character/portraits/mona.png", "image/character/portraits/mona-select.png", "image/character/portraits/mona-detail.png", "image/character/originals/qiqi.png", "image/character/portraits/qiqi.png", "image/character/portraits/qiqi-select.png", "image/character/portraits/qiqi-detail.png", "image/character/portraits/jean-select-centered-20261028.png", "image/character/portraits/jean-centered-20261028.png", "image/character/portraits/jean-detail-centered-20261028.png", "image/character/originals/jean.png", "image/character/portraits/jean.png", "image/character/portraits/jean-select.png", "image/character/portraits/jean-detail.png", "image/character/portraits/xiao-centered-20261027.png", "image/character/portraits/xiao-detail-centered-20261027.png", "image/character/originals/xiao.png", "image/character/portraits/xiao.png", "image/character/portraits/xiao-select.png", "image/character/portraits/xiao-detail.png", "image/character/originals/hutao.png", "image/character/originals/hutao-skin1.jpg", "image/character/originals/hutao-skin2.png",
+      character: ["image/character/originals/kaeya.png", "image/character/portraits/kaeya.png", "image/character/portraits/kaeya-select.png", "image/character/portraits/kaeya-detail.png", "image/character/originals/lisa.png", "image/character/portraits/lisa.png", "image/character/portraits/lisa-select.png", "image/character/portraits/lisa-detail.png", "image/character/originals/kirara.png", "image/character/portraits/kirara.png", "image/character/portraits/kirara-select.png", "image/character/portraits/kirara-detail.png", "image/character/originals/chevreuse.jpg", "image/character/portraits/chevreuse.png", "image/character/portraits/chevreuse-select.png", "image/character/portraits/chevreuse-detail.png", "image/character/originals/dahlia.png", "image/character/portraits/dahlia.png", "image/character/portraits/dahlia-select.png", "image/character/portraits/dahlia-detail.png", "image/character/originals/jahoda.jpg", "image/character/portraits/jahoda.png", "image/character/portraits/jahoda-select.png", "image/character/portraits/jahoda-detail.png", "image/character/originals/aino.jpg", "image/character/portraits/aino.png", "image/character/portraits/aino-select.png", "image/character/portraits/aino-detail.png", "image/character/portraits/tighnari.png", "image/character/portraits/tighnari-select.png", "image/character/portraits/tighnari-detail.png", "image/character/originals/cyno.png", "image/character/portraits/cyno.png", "image/character/portraits/cyno-select.png", "image/character/portraits/cyno-detail.png", "image/character/originals/alhaitham.jpg", "image/character/portraits/alhaitham.png", "image/character/portraits/alhaitham-select.png", "image/character/portraits/alhaitham-detail.png", "image/character/originals/dehya.jpg", "image/character/portraits/dehya.png", "image/character/portraits/dehya-select.png", "image/character/portraits/dehya-detail.png", "image/character/originals/wanderer.png", "image/character/portraits/wanderer.png", "image/character/portraits/wanderer-select.png", "image/character/portraits/wanderer-detail.png", "image/character/originals/zhongli-rework.png", "image/character/portraits/zhongli-rework.png", "image/character/portraits/zhongli-rework-select.png", "image/character/portraits/zhongli-rework-detail.png", ...Object.values(smoothPortraits), "image/character/originals/sandrone.png", "image/character/portraits/sandrone.png", "image/character/portraits/sandrone-select.png", "image/character/portraits/sandrone-detail.png", "image/character/originals/nicole.png", "image/character/portraits/nicole.png", "image/character/portraits/nicole-select.png", "image/character/portraits/nicole-detail.png", "image/character/originals/citlali.png", "image/character/portraits/citlali.png", "image/character/portraits/citlali-select.png", "image/character/portraits/citlali-detail.png", "image/character/originals/mona.png", "image/character/portraits/mona.png", "image/character/portraits/mona-select.png", "image/character/portraits/mona-detail.png", "image/character/originals/qiqi.png", "image/character/portraits/qiqi.png", "image/character/portraits/qiqi-select.png", "image/character/portraits/qiqi-detail.png", "image/character/portraits/jean-select-centered-20261028.png", "image/character/portraits/jean-centered-20261028.png", "image/character/portraits/jean-detail-centered-20261028.png", "image/character/originals/jean.png", "image/character/portraits/jean.png", "image/character/portraits/jean-select.png", "image/character/portraits/jean-detail.png", "image/character/portraits/xiao-centered-20261027.png", "image/character/portraits/xiao-detail-centered-20261027.png", "image/character/originals/xiao.png", "image/character/portraits/xiao.png", "image/character/portraits/xiao-select.png", "image/character/portraits/xiao-detail.png", "image/character/originals/hutao.png", "image/character/originals/hutao-skin1.jpg", "image/character/originals/hutao-skin2.png",
         "image/character/portraits/hutao.png", "image/character/portraits/hutao-select.png", "image/character/portraits/hutao-detail.png",
         "image/character/portraits/hutao-skin1.png", "image/character/portraits/hutao-skin1-select.png", "image/character/portraits/hutao-skin1-detail.png",
         "image/character/portraits/hutao-skin2.png", "image/character/portraits/hutao-skin2-select.png", "image/character/portraits/hutao-skin2-detail.png",
         "image/skin/fan_hutao/1.png", "image/skin/fan_hutao/2.png",
       "audio/linnea/skill/fan_bowen_reveal_voice1.mp3","audio/linnea/skill/fan_bowen_reveal_voice2.mp3","audio/linnea/skill/fan_bowen_convert_voice1.mp3","audio/linnea/skill/fan_bowen_convert_voice2.mp3","audio/linnea/skill/fan_bowen_convert_voice3.mp3","audio/linnea/skill/fan_bowen_convert_voice4.mp3","audio/linnea/skill/fan_bowen_convert_voice5.mp3","audio/linnea/skill/fan_shizhi_draw_voice1.mp3","audio/linnea/skill/fan_shizhi_draw_voice2.mp3","audio/linnea/skill/fan_shizhi_cancel_voice1.mp3","audio/linnea/skill/fan_shizhi_cancel_voice2.mp3","audio/linnea/skill/fan_shizhi_cancel_voice3.mp3","audio/linnea/die/fan_linnea1.mp3","audio/linnea/die/fan_linnea2.mp3","audio/linnea/die/fan_linnea3.mp3",
+        "image/character/originals/sethos.png", "image/character/portraits/sethos.png", "image/character/portraits/sethos-select.png", "image/character/portraits/sethos-detail.png",
+        "image/character/originals/lynette.png", "image/character/portraits/lynette.png", "image/character/portraits/lynette-select.png", "image/character/portraits/lynette-detail.png",
+        "image/character/originals/charlotte.png", "image/character/portraits/charlotte.png", "image/character/portraits/charlotte-select.png", "image/character/portraits/charlotte-detail.png",
+        "image/character/originals/gaming.png", "image/character/portraits/gaming.png", "image/character/portraits/gaming-select.png", "image/character/portraits/gaming-detail.png",
+        "image/character/originals/kachina.png", "image/character/portraits/kachina.png", "image/character/portraits/kachina-select.png", "image/character/portraits/kachina-detail.png",
+        "image/character/originals/freminet.png", "image/character/portraits/freminet.png", "image/character/portraits/freminet-select.png", "image/character/portraits/freminet-detail.png",
+        "image/character/originals/iansan.png", "image/character/portraits/iansan.png", "image/character/portraits/iansan-select.png", "image/character/portraits/iansan-detail.png",
+        "image/character/originals/ifa.jpg", "image/character/portraits/ifa.png", "image/character/portraits/ifa-select.png", "image/character/portraits/ifa-detail.png",
+        "image/character/originals/lanyan.jpg", "image/character/portraits/lanyan.png", "image/character/portraits/lanyan-select.png", "image/character/portraits/lanyan-detail.png",
+        "image/character/originals/illuga.jpg", "image/character/portraits/illuga.png", "image/character/portraits/illuga-select.png", "image/character/portraits/illuga-detail.png",
         "image/character/originals/linnea.jpg", "image/character/portraits/linnea.png", "image/character/portraits/linnea-select.png", "image/character/portraits/linnea-detail.png",
         "image/character/originals/ganyu.png", "image/character/portraits/ganyu.png", "image/character/portraits/ganyu-select.png", "image/character/portraits/ganyu-detail.png", "image/character/portraits/xianyun.png", "image/character/portraits/xianyun-avatar-20261027.png",
         "image/character/portraits/skirk-v2.png", "image/character/portraits/skirk-avatar-20261027.png",
         "image/character/portraits/navia-centered-20261104.png", "image/character/smooth/navia-centered-20261104.png", "image/character/portraits/shenhe.png", "image/character/portraits/shenhe-avatar-20261027.png"],
-      card: [...cynoPackArt, "image/card/fan_pengrenshenji-mechanism.png", "image/card/fan_zhuxing-mechanism.png",
+      card: ["image/card/fan_zhongquanchujiya-framed.png", ...cynoPackArt, "image/card/fan_pengrenshenji-mechanism.png", "image/card/fan_zhuxing-mechanism.png",
         "image/card/fan_guizhongji-mechanism.png", "image/card/fan_chengehu-mechanism.png"],
       skill: [], audio: [
         "audio/dehya/skill/fan_chizong1.mp3", "audio/dehya/skill/fan_chizong2.mp3", "audio/dehya/skill/fan_chizong3.mp3", "audio/dehya/skill/fan_shixue_self1.mp3", "audio/dehya/skill/fan_shixue_self2.mp3", "audio/dehya/skill/fan_shixue_self3.mp3", "audio/dehya/skill/fan_shixue_ally1.mp3", "audio/dehya/skill/fan_shixue_ally2.mp3", "audio/dehya/skill/fan_shixue_ally3.mp3", "audio/dehya/die/fan_dehya1.mp3", "audio/dehya/die/fan_dehya2.mp3", "audio/dehya/die/fan_dehya3.mp3",
@@ -506,6 +518,18 @@ export default function () {
       "audio/sandrone/die/fan_sandrone2.mp3",
       "audio/sandrone/die/fan_sandrone3.mp3",
 
+        "audio/durin/skill/fan_hundun1.mp3",
+        "audio/durin/skill/fan_hundun2.mp3",
+        "audio/durin/skill/fan_hundun3.mp3",
+        "audio/durin/skill/fan_suxing_voice1.mp3",
+        "audio/durin/skill/fan_suxing_voice2.mp3",
+        "audio/durin/skill/fan_suxing_voice3.mp3",
+        "audio/durin/skill/fan_zixu1.mp3",
+        "audio/durin/skill/fan_zixu2.mp3",
+        "audio/durin/skill/fan_zixu3.mp3",
+        "audio/durin/die/fan_durin1.mp3",
+        "audio/durin/die/fan_durin2.mp3",
+        "audio/durin/die/fan_durin3.mp3",
         "audio/nicole/die/fan_nicole1.mp3",
         "audio/nicole/die/fan_nicole2.mp3",
         "audio/nicole/die/fan_nicole3.mp3",
@@ -739,8 +763,9 @@ export default function () {
       "audio/kokomi/skill/fan_miaosuan_select_voice3.mp3",
       "audio/kokomi/skill/fan_miaosuan_gain_voice1.mp3",
       "audio/kokomi/skill/fan_miaosuan_gain_voice2.mp3",
-      "audio/kokomi/skill/fan_miaosuan_chengshi_voice1.mp3",
-      "audio/kokomi/skill/fan_miaosuan_chengshi_voice2.mp3",
+      "audio/kokomi/skill/fan_miaosuan_draw_voice1.mp3",
+      "audio/kokomi/skill/fan_miaosuan_draw_voice2.mp3",
+      "audio/kokomi/skill/fan_miaosuan_draw_voice3.mp3",
       "audio/kokomi/skill/fan_haiji1.mp3",
       "audio/kokomi/skill/fan_haiji2.mp3",
       "audio/kokomi/skill/fan_haiji3.mp3",

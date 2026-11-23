@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const src=readFileSync(new URL('../ui/selection-count.js',import.meta.url),'utf8').replace(/^import .*;\r?\n/gm,'').replace('export function','function');
+const game={check(){}},ui={selected:{cards:[]}},status={};
+new Function('game','ui','_status',src+';installSelectionCount();')(game,ui,status);
+const event={fanSelectionCount:true,selectCard:[0,2]};status.event=event;
+game.check();event.promptbar={};await Promise.resolve();assert.equal(event.promptbar.textContent,'已选择的牌数：0/2');
+ui.selected.cards=[{},{}];game.check();assert.equal(event.promptbar.textContent,'已选择的牌数：2/2');
+ui.selected.cards.pop();game.check();assert.equal(event.promptbar.textContent,'已选择的牌数：1/2');
+status.event={};game.check();await Promise.resolve();assert.equal(event.promptbar.textContent,'已选择的牌数：1/2');
+console.log('PASS: 原生提示创建顺序、实时选择计数、取消选择和事件切换');

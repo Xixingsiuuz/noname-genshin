@@ -23,7 +23,7 @@ def main():
    if kind=='detail':
     # Independently frame each detail to fill the native tall portrait, preserving originals.
     cropped.thumbnail((1100,1600),Image.Resampling.LANCZOS)
-   else: cropped=cropped.resize(size,Image.Resampling.LANCZOS)
+   else: cropped=ImageOps.fit(cropped,size,method=Image.Resampling.LANCZOS)
    dest=portraits/(key+('-'+kind if kind!='avatar' else '')+'.png'); cropped.save(dest)
    if kind=='avatar' and key!='hutao': shutil.copy2(dest,skin/('1.png' if key.endswith('1') else '2.png'))
    preview=ImageOps.contain(cropped,(145,210),Image.Resampling.LANCZOS)

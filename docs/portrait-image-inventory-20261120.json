@@ -1,0 +1,2666 @@
+[
+  {
+    "path": "image\\character\\arlecchino.jpg",
+    "size": [
+      1440,
+      2560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\chasca.png",
+    "size": [
+      750,
+      750
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\chiori.jpg",
+    "size": [
+      700,
+      1244
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\clorinde.png",
+    "size": [
+      543,
+      898
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\columbina.png",
+    "size": [
+      2500,
+      2500
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\emilie.png",
+    "size": [
+      750,
+      750
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\escoffier.jpg",
+    "size": [
+      750,
+      750
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\flins.jpg",
+    "size": [
+      1080,
+      2300
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\furina.avif",
+    "size": [
+      1052,
+      1052
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\ineffa.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\kinich-portrait.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\lauma.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\mizuki.png",
+    "size": [
+      750,
+      750
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\mualani-portrait.png",
+    "size": [
+      756,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\nahida.png",
+    "size": [
+      750,
+      750
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\navia.avif",
+    "size": [
+      1052,
+      1052
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\raiden-portrait.png",
+    "size": [
+      1060,
+      1484
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\sigewinne.jpg",
+    "size": [
+      750,
+      750
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\varesa.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\wriothesley.jpg",
+    "size": [
+      1440,
+      2560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\xilonen.jpg",
+    "size": [
+      750,
+      750
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\yaemiko-original.jpg",
+    "size": [
+      3000,
+      3000
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\闲云2026.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\aino.jpg",
+    "size": [
+      1080,
+      2035
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\ajax.png",
+    "size": [
+      2048,
+      1024
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\originals\\albedo.png",
+    "size": [
+      2500,
+      2500
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\alhaitham.jpg",
+    "size": [
+      4130,
+      2160
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\ayaka-2021.png",
+    "size": [
+      2000,
+      2000
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\ayato.png",
+    "size": [
+      2500,
+      2500
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\baizhu.png",
+    "size": [
+      750,
+      750
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\citlali-review.png",
+    "size": [
+      920,
+      670
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\citlali.png",
+    "size": [
+      3000,
+      3000
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\cyno.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\dehya.jpg",
+    "size": [
+      3509,
+      1974
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\diluc.png",
+    "size": [
+      2048,
+      1024
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\originals\\durin.jpg",
+    "size": [
+      8250,
+      4642
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\eula.png",
+    "size": [
+      2500,
+      2500
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\ganyu.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\originals\\hutao-skin1.jpg",
+    "size": [
+      1178,
+      2048
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\hutao-skin2.png",
+    "size": [
+      1554,
+      1554
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\hutao.png",
+    "size": [
+      750,
+      1899
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\originals\\ifa.jpg",
+    "size": [
+      1080,
+      1920
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\originals\\illuga-select-review.png",
+    "size": [
+      362,
+      225
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\illuga.jpg",
+    "size": [
+      1080,
+      2180
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\itto.png",
+    "size": [
+      1080,
+      1080
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\jahoda-crop-review.png",
+    "size": [
+      1050,
+      850
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\jahoda.jpg",
+    "size": [
+      1080,
+      2372
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\jean-review.png",
+    "size": [
+      1100,
+      850
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\jean.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\keqing.png",
+    "size": [
+      2500,
+      2500
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\klee.png",
+    "size": [
+      3000,
+      3000
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\lanyan.jpg",
+    "size": [
+      5376,
+      3024
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\linnea.jpg",
+    "size": [
+      1080,
+      1997
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\mokuai-ceshi.jpg",
+    "size": [
+      2500,
+      2500
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\mona-review.png",
+    "size": [
+      900,
+      700
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\mona.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\nefer.png",
+    "size": [
+      800,
+      1778
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\neuvillette.jpg",
+    "size": [
+      383,
+      680
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\nicole-review.jpg",
+    "size": [
+      1000,
+      690
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\nicole.png",
+    "size": [
+      2048,
+      1024
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\originals\\nilou.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\originals\\prune.png",
+    "size": [
+      2048,
+      1024
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\originals\\qiqi-review.png",
+    "size": [
+      900,
+      660
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\qiqi.png",
+    "size": [
+      3000,
+      3000
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\raiden.png",
+    "size": [
+      5000,
+      5000
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\sandrone-review.jpg",
+    "size": [
+      900,
+      660
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\sandrone.png",
+    "size": [
+      2048,
+      1024
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\originals\\shenhe.jpg",
+    "size": [
+      3840,
+      2160
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\varka-card.png",
+    "size": [
+      1098,
+      1542
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\originals\\varka.png",
+    "size": [
+      750,
+      1899
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\venti-card.png",
+    "size": [
+      1098,
+      1542
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\originals\\venti.png",
+    "size": [
+      750,
+      750
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\wanderer.png",
+    "size": [
+      2500,
+      2500
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\xianyun-20261027.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\xiao-centered-review.png",
+    "size": [
+      700,
+      700
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\xiao.png",
+    "size": [
+      2500,
+      2500
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\yelan.png",
+    "size": [
+      3000,
+      3000
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\yoimiya.png",
+    "size": [
+      2500,
+      2500
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\originals\\zhongli-rework.png",
+    "size": [
+      2500,
+      2500
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\zhongli.png",
+    "size": [
+      2048,
+      1024
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\originals\\zibai-2026.avif",
+    "size": [
+      1052,
+      1052
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\originals\\zibai-card.png",
+    "size": [
+      1098,
+      1542
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\portraits\\aino-detail.png",
+    "size": [
+      1080,
+      1760
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\aino-select.png",
+    "size": [
+      300,
+      400
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\aino.png",
+    "size": [
+      480,
+      640
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\ajax.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\albedo.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\alhaitham-detail.png",
+    "size": [
+      900,
+      1260
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\alhaitham-select.png",
+    "size": [
+      240,
+      360
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\alhaitham.png",
+    "size": [
+      320,
+      480
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\arlecchino.png",
+    "size": [
+      600,
+      800
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\portraits\\ayaka.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\ayato.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\baizhu.png",
+    "size": [
+      490,
+      655
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\chasca.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\chiori.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\citlali-detail.png",
+    "size": [
+      960,
+      1200
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\citlali-select.png",
+    "size": [
+      180,
+      252
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\citlali.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\clorinde.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\columbina.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\cyno-detail.png",
+    "size": [
+      1000,
+      900
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\cyno-select.png",
+    "size": [
+      240,
+      240
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\cyno.png",
+    "size": [
+      360,
+      450
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\dehya-detail.png",
+    "size": [
+      900,
+      1261
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\dehya-select.png",
+    "size": [
+      180,
+      218
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\dehya.png",
+    "size": [
+      240,
+      333
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\diluc.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\durin-detail.png",
+    "size": [
+      1200,
+      1230
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\durin-select.png",
+    "size": [
+      420,
+      550
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\durin.png",
+    "size": [
+      590,
+      790
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\emilie.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\escoffier.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\eula.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\flins.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\furina.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\ganyu-detail.png",
+    "size": [
+      900,
+      1260
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\ganyu-select.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\ganyu.png",
+    "size": [
+      500,
+      700
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\hutao-detail.png",
+    "size": [
+      720,
+      1008
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\hutao-select.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\hutao-skin1-detail.png",
+    "size": [
+      1100,
+      1541
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\hutao-skin1-select.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\hutao-skin1.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\hutao-skin2-detail.png",
+    "size": [
+      1100,
+      1540
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\hutao-skin2-select.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\hutao-skin2.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\hutao.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\ifa-detail.png",
+    "size": [
+      840,
+      1003
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\portraits\\ifa-select.png",
+    "size": [
+      400,
+      480
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\portraits\\ifa.png",
+    "size": [
+      500,
+      750
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\portraits\\illuga-detail.png",
+    "size": [
+      790,
+      872
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\illuga-select.png",
+    "size": [
+      360,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\illuga.png",
+    "size": [
+      500,
+      600
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\ineffa.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\itto.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\jahoda-detail.png",
+    "size": [
+      780,
+      1080
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\jahoda-select.png",
+    "size": [
+      400,
+      480
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\jahoda.png",
+    "size": [
+      480,
+      720
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\jean-centered-20261028.png",
+    "size": [
+      360,
+      495
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\jean-detail-centered-20261028.png",
+    "size": [
+      780,
+      1080
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\jean-detail.png",
+    "size": [
+      780,
+      1080
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\jean-select-centered-20261028.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\jean-select.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\jean.png",
+    "size": [
+      360,
+      495
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\kazuha.png",
+    "size": [
+      560,
+      750
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\portraits\\keqing.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\klee.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\kokomi-detail.png",
+    "size": [
+      720,
+      996
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\kokomi.png",
+    "size": [
+      600,
+      810
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\lanyan-detail.png",
+    "size": [
+      1320,
+      1120
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\lanyan-select.png",
+    "size": [
+      480,
+      640
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\lanyan.png",
+    "size": [
+      600,
+      900
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\lauma.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\linnea-detail.png",
+    "size": [
+      900,
+      1104
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\linnea-select.png",
+    "size": [
+      240,
+      288
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\linnea.png",
+    "size": [
+      400,
+      503
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\lyney.png",
+    "size": [
+      560,
+      700
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\mavuika.png",
+    "size": [
+      750,
+      750
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\portraits\\mizuki.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\mokuai-ceshi-avatar.png",
+    "size": [
+      480,
+      680
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\mokuai-ceshi-detail.png",
+    "size": [
+      1000,
+      1250
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\mokuai-ceshi-select.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\mona-detail.png",
+    "size": [
+      608,
+      864
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\mona-select.png",
+    "size": [
+      180,
+      252
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\mona.png",
+    "size": [
+      360,
+      480
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\mualani.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\nahida.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\navia-centered-20261104.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\navia.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\nefer-upper-body.png",
+    "size": [
+      1060,
+      1484
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\nefer.png",
+    "size": [
+      450,
+      630
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\neuvillette.png",
+    "size": [
+      340,
+      476
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\nicole-detail.png",
+    "size": [
+      700,
+      980
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\portraits\\nicole-select.png",
+    "size": [
+      180,
+      252
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\nicole.png",
+    "size": [
+      320,
+      448
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\nilou.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\portraits\\prune-detail.png",
+    "size": [
+      760,
+      1040
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\prune-select.png",
+    "size": [
+      400,
+      480
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\prune.png",
+    "size": [
+      500,
+      750
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\qiqi-detail.png",
+    "size": [
+      950,
+      1200
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\qiqi-select.png",
+    "size": [
+      240,
+      300
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\qiqi.png",
+    "size": [
+      360,
+      500
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\raiden.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\sandrone-detail.png",
+    "size": [
+      750,
+      1050
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\portraits\\sandrone-select.png",
+    "size": [
+      260,
+      364
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\portraits\\sandrone.png",
+    "size": [
+      380,
+      532
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\portraits\\shenhe-avatar-20261027.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\shenhe.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\sigewinne.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\skirk-avatar-20261027.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\skirk-v2.png",
+    "size": [
+      1060,
+      1484
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\skirk.png",
+    "size": [
+      600,
+      840
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\tighnari-detail.png",
+    "size": [
+      640,
+      900
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\portraits\\tighnari-select.png",
+    "size": [
+      150,
+      202
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\tighnari.png",
+    "size": [
+      200,
+      269
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\varesa.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\varka.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\venti.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\wanderer-detail.png",
+    "size": [
+      1100,
+      1174
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\wanderer-select.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\wanderer.png",
+    "size": [
+      480,
+      672
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\wriothesley.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\xianyun-20261027.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\xianyun-avatar-20261027.png",
+    "size": [
+      520,
+      802
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\xianyun.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\xiao-centered-20261027.png",
+    "size": [
+      360,
+      492
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\xiao-detail-centered-20261027.png",
+    "size": [
+      1056,
+      1327
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\xiao-detail.png",
+    "size": [
+      1056,
+      1100
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\xiao-select.png",
+    "size": [
+      180,
+      246
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\xiao.png",
+    "size": [
+      360,
+      492
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\yaemiko.png",
+    "size": [
+      600,
+      840
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\yelan.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\yoimiya.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\portraits\\zhongli-rework-detail.png",
+    "size": [
+      2040,
+      2400
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\zhongli-rework-select.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\zhongli-rework.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\zhongli.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\portraits\\zibai.png",
+    "size": [
+      400,
+      560
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\aino-select.png",
+    "size": [
+      300,
+      400
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\aino.png",
+    "size": [
+      300,
+      400
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\ajax.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\albedo.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\alhaitham-select.png",
+    "size": [
+      240,
+      360
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\alhaitham.png",
+    "size": [
+      300,
+      450
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\arlecchino.png",
+    "size": [
+      300,
+      400
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\smooth\\ayaka.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\ayato.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\baizhu.png",
+    "size": [
+      300,
+      401
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\chasca.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\chiori.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\citlali-select.png",
+    "size": [
+      180,
+      252
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\citlali.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\clorinde.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\columbina.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\cyno-select.png",
+    "size": [
+      240,
+      240
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\cyno.png",
+    "size": [
+      300,
+      375
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\dehya-select.png",
+    "size": [
+      180,
+      218
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\dehya.png",
+    "size": [
+      240,
+      333
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\diluc.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\durin-select.png",
+    "size": [
+      300,
+      393
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\durin.png",
+    "size": [
+      300,
+      402
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\emilie.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\escoffier.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\eula.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\flins.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\furina.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\ganyu-select.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\ganyu.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\hutao-select.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\hutao-skin1-select.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\hutao-skin1.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\hutao-skin2-select.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\hutao-skin2.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\hutao.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\ifa-select.png",
+    "size": [
+      300,
+      360
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\smooth\\ifa.png",
+    "size": [
+      300,
+      450
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\smooth\\illuga-select.png",
+    "size": [
+      300,
+      350
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\illuga.png",
+    "size": [
+      300,
+      360
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\ineffa.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\itto.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\jahoda-select.png",
+    "size": [
+      300,
+      360
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\jahoda.png",
+    "size": [
+      300,
+      450
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\jean-centered-20261028.png",
+    "size": [
+      300,
+      412
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\jean-select-centered-20261028.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\kazuha.png",
+    "size": [
+      300,
+      402
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\smooth\\keqing.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\kinich-portrait.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\smooth\\klee.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\kokomi.png",
+    "size": [
+      300,
+      405
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\lanyan-select.png",
+    "size": [
+      300,
+      400
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\lanyan.png",
+    "size": [
+      300,
+      450
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\lauma.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\linnea-select.png",
+    "size": [
+      240,
+      288
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\linnea.png",
+    "size": [
+      300,
+      377
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\lyney.png",
+    "size": [
+      300,
+      375
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\mavuika.png",
+    "size": [
+      300,
+      300
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\smooth\\mizuki.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\mokuai-ceshi-avatar.png",
+    "size": [
+      300,
+      425
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\mokuai-ceshi-select.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\mona-select.png",
+    "size": [
+      180,
+      252
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\mona.png",
+    "size": [
+      300,
+      400
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\mualani.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\nahida.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\navia-centered-20261104.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\navia.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\nefer.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\neuvillette.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\nicole-select.png",
+    "size": [
+      180,
+      252
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\nicole.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\nilou.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\smooth\\prune-select.png",
+    "size": [
+      300,
+      360
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\prune.png",
+    "size": [
+      300,
+      450
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\qiqi-select.png",
+    "size": [
+      240,
+      300
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\qiqi.png",
+    "size": [
+      300,
+      417
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\raiden.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\sandrone-select.png",
+    "size": [
+      260,
+      364
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\smooth\\sandrone.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\smooth\\sigewinne.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\tighnari-select.png",
+    "size": [
+      150,
+      202
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\tighnari.png",
+    "size": [
+      200,
+      269
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\varesa.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\varka.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\venti.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\wanderer-select.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\wanderer.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\wriothesley.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\xianyun-avatar-20261027.png",
+    "size": [
+      300,
+      463
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\xiao-centered-20261027.png",
+    "size": [
+      300,
+      410
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\xiao-select.png",
+    "size": [
+      180,
+      246
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\xilonen.png",
+    "size": [
+      300,
+      300
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\yaemiko.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\yelan.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\yoimiya.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "path": "image\\character\\smooth\\zhongli-rework-select.png",
+    "size": [
+      240,
+      336
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\zhongli-rework.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\zhongli.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  },
+  {
+    "path": "image\\character\\smooth\\zibai.png",
+    "size": [
+      300,
+      420
+    ],
+    "alpha": null
+  }
+]

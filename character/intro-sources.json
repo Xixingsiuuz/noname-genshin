@@ -1,4 +1,16 @@
 {
+  "fan_charlotte": {
+    "name": "夏洛蒂",
+    "url": "https://wiki.biligame.com/ys/夏洛蒂",
+    "intro": "充满活力的蒸汽鸟报记者，每时每刻都在为「真相」而奔走。",
+    "nicknames": "小记者、狗仔队、三月七、射影姬(机)、下落地、佳能400蒂"
+  },
+  "fan_durin": {
+    "name": "杜林",
+    "url": "https://wiki.biligame.com/ys/杜林",
+    "intro": "在魔女M笔下诞生的龙，最终来到了人类的世界。而他的「故事」，也仍在继续。",
+    "nicknames": "希穆兰卡的杜林、千星之国的至高夜龙、小杜林、科斯魔"
+  },
   "fan_sandrone": {
     "name": "桑多涅",
     "url": "https://wiki.biligame.com/ys/桑多涅",
@@ -353,6 +365,12 @@
     "intro": "身份成谜的流浪人士。衣着打扮像是修验者，言行却并不是修验者应有的模样。",
     "nicknames": "散兵Scaramouche、斯卡拉姆齐、国崩、倾奇者、浮浪人、黑主、崩崩小圆帽、七叶寂照秘密主、正机之神、崩坏三、七彩阳光秘密主、阿帽（纳西妲取名）"
   },
+  "fan_aino": {
+    "name": "爱诺",
+    "url": "https://wiki.biligame.com/ys/爱诺",
+    "intro": "挪德卡莱的天才机械发明家，喜欢有趣的机械和甜食。",
+    "nicknames": "小蛋卷、水刻晴、艾尔海淼、我知道(外网梗〖I know〗)"
+  },
   "fan_cyno": {
     "name": "赛诺",
     "url": "https://wiki.biligame.com/ys/赛诺",
@@ -388,5 +406,112 @@
     "url": "https://wiki.biligame.com/ys/钟离",
     "intro": "被「往生堂」请来的神秘客卿，知识渊博，对各种事物都颇有见地。",
     "nicknames": "钟离、「往生堂」客卿、岩王帝君（岩王爷）、契约之神、商业之神、炉火之神、贵金之神、七天神像的噩梦、社会废人、未来可期真君、矿工头子、废人养成器、听书人、往生堂预备第七十八代堂主、岩主天星葬火之战与魔神战争前，统一文明时代，兹白所称、莫先生魔神战争前，虞黄衣时代"
+  },
+  "fan_jahoda": {
+    "name": "雅珂达",
+    "url": "https://wiki.biligame.com/ys/雅珂达",
+    "intro": "十分可靠，无所不能（自称）的「秘闻馆」员工。",
+    "nicknames": "奈芙尔的下属、捡破烂的（爱诺）、提瓦特表情帝、挪德卡莱最强战力、行走的表情包、可达鸭"
+  },
+  "fan_illuga": {
+    "name": "叶洛亚",
+    "url": "https://wiki.biligame.com/ys/叶洛亚",
+    "intro": "调查分队「魇夜之莺」成员，执灯人最年轻的分队长。",
+    "nicknames": "小少爷（菲林斯）"
+  },
+  "fan_prune": {
+    "name": "布伦妮",
+    "url": "https://wiki.biligame.com/ys/布伦妮",
+    "intro": "小小的「魔女猎人」。从挪德卡莱跋涉而来，只为了讨伐那位在她口中以大欺小、无恶不作的魔女。",
+    "nicknames": "小大人、紫色包菜/紫甘蓝、风锤前锋军"
+  },
+  "fan_lanyan": {
+    "name": "蓝砚",
+    "url": "https://wiki.biligame.com/ys/蓝砚",
+    "intro": "沉玉谷来的藤编师，神清骨秀，像山间清泉一般灵动。",
+    "nicknames": "风刻晴、风鹰侠、艾尔海飍、小砚子"
+  },
+  "fan_ifa": {
+    "name": "伊法",
+    "url": "https://wiki.biligame.com/ys/伊法",
+    "intro": "来自花羽会的兽医，由衷热爱着与人、动物，以及其他生灵为伴的生活。",
+    "nicknames": "哥们"
+  },
+  "fan_iansan": {
+    "name": "伊安珊",
+    "url": "https://wiki.biligame.com/ys/伊安珊",
+    "intro": "沃陆之邦健身俱乐部的总教练，闻名纳塔的营养师。",
+    "nicknames": "「乌威佐力量」的伊安珊、123、6星雷神"
+  },
+  "fan_ororon": {
+    "name": "欧洛伦",
+    "url": "https://wiki.biligame.com/ys/欧洛伦",
+    "intro": "来自烟谜主的年轻人，却与万千生灵一起，生活在原野之中。",
+    "nicknames": "「庇笛奉献」的欧洛伦、大孙子、哥们2号、菜满（种菜的萨满）"
+  },
+  "fan_dahlia": {
+    "name": "塔利雅",
+    "url": "https://wiki.biligame.com/ys/塔利雅",
+    "intro": "西风教会的助祭，风神在教会的代行人。",
+    "nicknames": "影月月"
+  },
+  "fan_lynette": {
+    "name": "琳妮特",
+    "url": "https://wiki.biligame.com/ys/琳妮特",
+    "intro": "寡言少语，罕有表情的魔术助手，性情像猫一样难以猜测。",
+    "nicknames": "枫丹猫猫、机械杀手"
+  },
+  "fan_sethos": {
+    "name": "赛索斯",
+    "url": "https://wiki.biligame.com/ys/赛索斯",
+    "intro": "缄默之殿的继承者。背负着秘密，自沙中而来。",
+    "nicknames": "sss、沙漠绿眼睛（流浪者称呼）"
+  },
+  "fan_kachina": {
+    "name": "卡齐娜",
+    "url": "https://wiki.biligame.com/ys/卡齐娜",
+    "intro": "纳茨卡延的年轻战士，受赐古名「乌沙博蒂」。",
+    "nicknames": "「乌沙博蒂坚强」的卡齐娜、打桩姬、徒弟"
+  },
+  "fan_gaming": {
+    "url": "https://wiki.biligame.com/ys/嘉明",
+    "checked": "2026-11-22"
+  },
+  "fan_chevreuse": {
+    "name": "夏沃蕾",
+    "url": "https://wiki.biligame.com/ys/夏沃蕾",
+    "intro": "时刻恪守着心中「正义」的特巡队队长，手中的铳枪只会指向负罪之人。",
+    "nicknames": "（6星）蕾神、夏侯惇、西琳"
+  },
+  "fan_freminet": {
+    "name": "菲米尼",
+    "url": "https://wiki.biligame.com/ys/菲米尼",
+    "intro": "精于潜水的寡言少年，在如寒冰般拒人千里的外表下，藏有一颗无瑕的纯真之心。",
+    "nicknames": "企鹅"
+  },
+  "fan_kirara": {
+    "name": "绮良良",
+    "url": "https://wiki.biligame.com/ys/绮良良",
+    "intro": "稻妻快递公司「狛荷屋」的送货员，一只热爱自己工作、向往人类社会的「猫又」。",
+    "nicknames": "「狛荷屋」金牌级快递员、猫又、绮猫猫、草猫猫",
+    "checked": "2026-11-22"
+  },
+  "fan_lisa": {
+    "name": "丽莎",
+    "url": "https://wiki.biligame.com/ys/丽莎",
+    "intro": "慵懒而博学的图书管理员，须弥教令院「两百年一见」的天才毕业生。",
+    "nicknames": "图书管理员、win~win~win、丽莎阿姨（可莉专属）、蒙德雷神"
+  },
+  "fan_amber": {
+    "name": "安柏",
+    "url": "https://wiki.biligame.com/ys/安柏",
+    "intro": "永远充满活力的女孩，骑士团最优秀，同时也是最后的侦察骑士",
+    "nicknames": "侦察骑士、快乐小火把（七圣召唤游戏名）、燃炬焚棘真君、打火姬、初代目提瓦特第一火弓"
+  },
+  "fan_kaeya": {
+    "name": "凯亚",
+    "url": "https://wiki.biligame.com/ys/凯亚",
+    "intro": "异国面容的剑斗士，西风骑士团的头脑派人物。",
+    "nicknames": "凯子哥、骑兵小队队长、踏(凝)冰渡海真君、矿工头子、花脸猫"
   }
 }

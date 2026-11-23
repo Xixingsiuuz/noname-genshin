@@ -1,6 +1,7 @@
 import { get } from "../../../noname.js";
 import { yaemikoCards, yaemikoCardTranslate } from "./yaemiko.js";
 import { xianyunCards, xianyunCardTranslate } from "./xianyun.js";
+import { ainoCards, ainoCardTranslate } from "./aino.js";
 import { cynoCards, cynoCardTranslate } from "./cyno.js";
 import { blueEyesCards, blueEyesTranslate } from "./blue-eyes.js";
 import { heroCards, heroTranslate } from "./heroes.js";
@@ -63,6 +64,7 @@ export function createCardPackage() {
     card: {
       ...yaemikoCards,
       ...xianyunCards,
+      ...ainoCards,
       ...cynoCards,
       ...blueEyesCards,
       ...heroCards,
@@ -81,6 +83,7 @@ export function createCardPackage() {
     translate: {
       ...yaemikoCardTranslate,
       ...xianyunCardTranslate,
+      ...ainoCardTranslate,
       ...cynoCardTranslate,
       ...blueEyesTranslate,
       ...heroTranslate,
@@ -102,9 +105,12 @@ export function createCardPackage() {
 
   const numerals = "①②③④⑤⑥⑦⑧⑨⑩";
   for (const [name, card] of Object.entries(pack.card)) {
+    if (card.derivation) {
+      pack.card[name] = Object.defineProperties({}, Object.getOwnPropertyDescriptors(card));
+      pack.card[name].fanDerivedCardPreview = true;
+    }
     if (card.derivation === "fan_cyno") {
       const globals = Array.isArray(card.global) ? card.global : card.global ? [card.global] : [];
-      pack.card[name] = Object.defineProperties({}, Object.getOwnPropertyDescriptors(card));
       pack.card[name].global = [...globals, "fan_cyno_card_sound"];
     }
     const key = name + "_info";

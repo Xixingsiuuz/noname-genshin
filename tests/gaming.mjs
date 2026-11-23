@@ -1,0 +1,38 @@
+import {readFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+let losses=[];
+const game={players:[{getAllHistory(type,fn){losses.forEach(fn);}}],dead:[]};
+const get={position:c=>c.position};
+let code=readFileSync(new URL('../character/skills/gaming.js',import.meta.url),'utf8').replace(/^import .*;\r?\n/,'').replace('export function escortCards','function escortCards').replace('export const danceAttacks','const danceAttacks').replace('export function danceLegal','function danceLegal').replace('export default','const skills =');
+const {escortCards,skills}=new Function('game','get','lib','ui','_status',code+';return {escortCards,skills};')(game,get,{}, {}, {});
+const card={cardid:'a',position:'d',tags:[],hasGaintag(t){return this.tags.includes(t);},addGaintag(t){this.tags.push(t);},removeGaintag(t){this.tags=this.tags.filter(x=>x!==t);}};
+const use={name:'useCard'};
+const loss={cards:[card],gaintag_map:{a:['fan_baobiao_tag']},getParent:()=>use};
+losses=[loss];
+const event={cards:[card],getParent:()=>({name:'orderingDiscard',relatedEvent:use})};
+assert.deepEqual(escortCards(event),[card]);
+card.position='o';assert.deepEqual(escortCards(event),[]);
+card.position='d';
+const secondUse={name:'useCard'};
+assert.deepEqual(escortCards({cards:[card],getParent:()=>({name:'orderingDiscard',relatedEvent:secondUse})}),[]);
+const expansion={name:'addToExpansion'};
+assert.deepEqual(escortCards({cards:[card],getParent:()=>({name:'orderingDiscard',relatedEvent:expansion})}),[]);
+skills.fan_baobiao.subSkill.record.content({}, {cards:[card]});
+assert(card.hasGaintag('fan_baobiao_tag'));
+assert.deepEqual(skills.fan_baobiao.subSkill.record.trigger.global,['showCardsAfter']);
+console.log('gaming escort snapshot regression passed');
+
+const recorder=skills.fan_baobiao.subSkill.record;
+card.tags=[];
+assert.equal(recorder.filter({isFlash:true}),false);
+recorder.content({}, {cards:[card],isFlash:true});
+assert.equal(card.hasGaintag('fan_baobiao_tag'),false);
+assert.equal(recorder.filter({isFlash:false,flashAnimation:true}),true);
+recorder.content({}, {cards:[card],isFlash:false,flashAnimation:true});
+assert.equal(card.hasGaintag('fan_baobiao_tag'),true);
+console.log('display versus reveal regression passed');
+
+assert.equal(skills.fan_wushou_use.viewAs.nature,undefined);
+assert.equal(skills.fan_wushou_use_fire.viewAs.nature,'fire');
+assert.equal(skills.fan_wushou_use_thunder.viewAs.nature,'thunder');
+console.log('three fixed attack variants passed');

@@ -106,8 +106,13 @@ export default {
     locked: false,
     filter(event, player) { return game.hasPlayer(owner => canVisit(player, owner)); },
     filterTarget(card, player, target) { return canVisit(player, target); },
-    selectTarget: 1,
-    prompt: "兴家：观看一名角色的手牌并获得一张",
+    selectTarget() {
+      const player = get.player();
+      return game.filterPlayer(owner => canVisit(player, owner)).length === 1 ? -1 : 1;
+    },
+    manualConfirm: true,
+    fanPairedConfirm: true,
+    prompt: "兴家：观看神里绫人的手牌并获得其中一张",
     prompt2: false,
     async content(event, trigger, player) {
       const owner = event.target;

@@ -20,65 +20,198 @@ if (typeof document !== "undefined") document.addEventListener("mouseover", even
   node.title = String(lib.translate[id + "_info"] || skillTranslateForLegacy[id + "_info"] || "").replace(/<[^>]*>/g, "");
 });
 
-
-export const characterTranslate = { fan_cyno: "赛诺", fan_mokuai_ceshi: "模块测试", fan_alhaitham: "艾尔海森", fan_dehya: "迪希雅", fan_sp_sandrone: "SP桑多涅", fan_sp_sandrone_prefix: "SP", fan_sandrone: "桑多涅", fan_linnea: "莉奈娅", fan_tighnari: "提纳里", fan_mona: "莫娜", fan_qiqi: "七七", fan_jean: "琴", fan_xiao: "魈", fan_itto: "荒泷一斗", fan_yaemiko: "八重神子", fan_xilonen: "希诺宁", fan_kinich: "基尼奇", fan_mualani: "玛拉妮", fan_emilie: "艾梅莉埃", fan_sigewinne: "希格雯", fan_furina: "芙宁娜", fan_xianyun: "闲云", fan_chiori: "千织", fan_clorinde: "克洛琳德" };
-
-characterTranslate.fan_albedo = "阿贝多";
-characterTranslate.fan_citlali_revised = "茜特菈莉";
-characterTranslate.fan_citlali = "茜特菈莉";
-characterTranslate.fan_ganyu = "甘雨";
-characterTranslate.fan_hutao = "胡桃";
-characterTranslate.fan_yelan = "夜兰";
-characterTranslate.fan_ajax = "阿贾克斯";
-characterTranslate.fan_keqing = "刻晴";
-characterTranslate.fan_zhongli = "钟离";
-characterTranslate.fan_ayato = "神里绫人";
-characterTranslate.fan_raiden = "雷电影";
-characterTranslate.fan_venti = "温迪";
-characterTranslate.fan_nilou = "妮露";
-
-characterTranslate.fan_baizhu = "白术";
-
-characterTranslate.fan_varka = "法尔伽";
-characterTranslate.fan_zibai = "兹白";
-characterTranslate.fan_nefer = "奈芙尔";
-characterTranslate.fan_columbina = "哥伦比娅";
-characterTranslate.fan_flins = "菲林斯";
-
-characterTranslate.fan_chasca = "恰斯卡";
-characterTranslate.fan_lauma = "菈乌玛";
-characterTranslate.fan_ineffa = "伊涅芙";
-characterTranslate.fan_navia = "娜维娅";
-characterTranslate.fan_navia_prefix = "明花蔓舵";
-characterTranslate.fan_lyney = "林尼";
-characterTranslate.fan_lyney_prefix = "惑光幻戏";
-characterTranslate.fan_arlecchino = "阿蕾奇诺";
-characterTranslate.fan_mavuika = "玛薇卡";
-characterTranslate.fan_varesa = "瓦蕾莎";
-characterTranslate.fan_escoffier = "爱可菲";
-characterTranslate.fan_skirk = "丝柯克";
-characterTranslate.fan_skirk_prefix = "虚渊暗星";
-
-characterTranslate.fan_neuvillette = "那维莱特";
-characterTranslate.fan_neuvillette_prefix = "谕告的潮音";
-characterTranslate.fan_wriothesley = "莱欧斯利";
-characterTranslate.fan_wriothesley_prefix = "寂罪的密使";
-
-characterTranslate.fan_mizuki = "梦见月瑞希";
-characterTranslate.fan_mizuki_prefix = "绮梦缱绻";
-characterTranslate.fan_nahida = "纳西妲";
-characterTranslate.fan_nahida_prefix = "白草净华";
-
-characterTranslate.fan_ayaka = "神里绫华";
-characterTranslate.fan_shenhe = "申鹤";
-
-characterTranslate.fan_yoimiya = "宵宫";
-
-characterTranslate.fan_diluc = "迪卢克";
-characterTranslate.fan_eula = "优菈";
+export const characterTranslate = {
+  fan_kaeya: "凯亚",
+  fan_amber: "安伯",
+  fan_lisa: "丽莎",
+  fan_guancang: "馆藏",
+  fan_guancang_info: "出牌阶段限一次，你可以令手牌数不大于你的所有其他角色依次选择一项：交给你一张锦囊牌；受到1点雷电伤害。",
+  fan_wucha: "午茶",
+  fan_wucha_info: "出牌阶段结束时，若你本阶段未使用过【杀】，你回复1点体力。",
+  fan_kirara: "绮良良",
+  fan_freminet: "菲米尼",
+  fan_gaming: "嘉明",
+  fan_kachina: "卡齐娜",
+  fan_sethos: "赛索斯",
+  fan_lynette: "琳妮特",
+  fan_charlotte: "夏洛蒂",
+  fan_dahlia: "塔利雅",
+  fan_ororon: "欧洛伦",
+  fan_iansan: "伊安珊",
+  fan_ifa: "伊法",
+  fan_lanyan: "蓝砚",
+  fan_prune: "布伦妮",
+  fan_illuga: "叶洛亚",
+  fan_cyno: "赛诺",
+  fan_mokuai_ceshi: "模块测试",
+  fan_alhaitham: "艾尔海森",
+  fan_dehya: "迪希雅",
+  fan_sp_sandrone: "SP桑多涅",
+  fan_sp_sandrone_prefix: "SP",
+  fan_sandrone: "桑多涅",
+  fan_linnea: "莉奈娅",
+  fan_tighnari: "提纳里",
+  fan_mona: "莫娜",
+  fan_qiqi: "七七",
+  fan_jean: "琴",
+  fan_xiao: "魈",
+  fan_itto: "荒泷一斗",
+  fan_yaemiko: "八重神子",
+  fan_xilonen: "希诺宁",
+  fan_kinich: "基尼奇",
+  fan_mualani: "玛拉妮",
+  fan_emilie: "艾梅莉埃",
+  fan_sigewinne: "希格雯",
+  fan_chevreuse: "夏沃蕾",
+  fan_hewei: "合围",
+  fan_hewei_info: "出牌阶段限一次，你可以弃置一张牌并选择一名角色，弃置你与其攻击范围内均包含的所有角色各一张牌，并使这些角色进入连环状态。",
+  fan_guzhen: "固阵",
+  fan_guzhen_info: "一名角色受到属性伤害后，你可以令一名角色回复1点体力或摸两张牌。",
+  fan_furina: "芙宁娜",
+  fan_xianyun: "闲云",
+  fan_chiori: "千织",
+  fan_clorinde: "克洛琳德",
+  fan_albedo: "阿贝多",
+  fan_citlali_revised: "茜特菈莉",
+  fan_citlali: "茜特菈莉",
+  fan_ganyu: "甘雨",
+  fan_hutao: "胡桃",
+  fan_yelan: "夜兰",
+  fan_ajax: "阿贾克斯",
+  fan_keqing: "刻晴",
+  fan_zhongli: "钟离",
+  fan_ayato: "神里绫人",
+  fan_raiden: "雷电影",
+  fan_venti: "温迪",
+  fan_nilou: "妮露",
+  fan_baizhu: "白术",
+  fan_varka: "法尔伽",
+  fan_zibai: "兹白",
+  fan_nefer: "奈芙尔",
+  fan_columbina: "哥伦比娅",
+  fan_flins: "菲林斯",
+  fan_chasca: "恰斯卡",
+  fan_lauma: "菈乌玛",
+  fan_ineffa: "伊涅芙",
+  fan_navia: "娜维娅",
+  fan_navia_prefix: "明花蔓舵",
+  fan_lyney: "林尼",
+  fan_lyney_prefix: "惑光幻戏",
+  fan_arlecchino: "阿蕾奇诺",
+  fan_mavuika: "玛薇卡",
+  fan_varesa: "瓦蕾莎",
+  fan_escoffier: "爱可菲",
+  fan_jahoda: "雅珂达",
+  fan_aino: "爱诺",
+  fan_skirk: "丝柯克",
+  fan_skirk_prefix: "虚渊暗星",
+  fan_neuvillette: "那维莱特",
+  fan_neuvillette_prefix: "谕告的潮音",
+  fan_wriothesley: "莱欧斯利",
+  fan_wriothesley_prefix: "寂罪的密使",
+  fan_mizuki: "梦见月瑞希",
+  fan_mizuki_prefix: "绮梦缱绻",
+  fan_nahida: "纳西妲",
+  fan_nahida_prefix: "白草净华",
+  fan_ayaka: "神里绫华",
+  fan_shenhe: "申鹤",
+  fan_yoimiya: "宵宫",
+  fan_diluc: "迪卢克",
+  fan_eula: "优菈",
+  fan_kazuha: "枫原万叶",
+  fan_kokomi: "珊瑚宫心海",
+  fan_klee: "可莉",
+  fan_nicole: "尼可",
+  fan_re_zhongli: "钟离",
+  fan_wanderer: "流浪者",
+  fan_durin: "杜林",
+};
 
 export function createSkillTranslate() {
+  const duck = get.poptip("fan_zhongquanchujiya");
   return skillTranslateForLegacy = {
+    fan_lengren: "冷刃",
+    fan_lengren_info: "你使用【杀】对一名角色造成伤害时，你可以依次弃置该角色两张牌。",
+    fan_cangfeng: "藏锋",
+    fan_cangfeng_info: "出牌阶段限一次，你可以亮出牌堆顶的四张牌并秘密选择其中一张，令一名其他角色获得至少一张亮出的牌，你获得其余的牌。若该角色以此法获得了你选择的牌，弃置其获得的牌，然后你视为对其使用一张【杀】。",
+    fan_zhencha: "侦察",
+    fan_zhencha_info: "出牌阶段限一次，你可以观看一名其他角色至多X张手牌，将已标记的牌交给任意角色，然后标记观看的牌（X为你的攻击范围）。",
+    fan_guanjun: "冠军",
+    fan_guanjun_info: "锁定技，每轮开始时，你执行一个额外回合。",
+    fan_bohe: "狛荷",
+    fan_bohe_info: "出牌阶段限一次，你可以交给一名其他角色一张牌并展示之。该角色使用此牌时，你摸X张牌并回复1点体力（X为此牌在该角色手牌中经过的结束阶段数，至多为5）。",
+    fan_bugui: "不跪",
+    fan_bugui_info: "锁定技，一名角色使用【杀】选择目标时，若你是合法目标，其必须选择你为目标。",
+    fan_shenqian: "深潜",
+    fan_shenqian_info: "当你使用牌指定目标后，观看牌堆底的三张牌，并将其中一张置于牌堆顶。当你成为一张牌的目标后，摸一张牌。",
+    fan_wushou: "舞兽",
+    fan_wushou_info: "出牌阶段限一次，你可以展示任意名角色各一张手牌，若这些牌颜色相同，这些角色依次将这些牌当【杀】使用，否则这些角色各摸一张牌。",
+    fan_baobiao: "保镖",
+    fan_baobiao_tag: "镖",
+    fan_baobiao_info: "当一张牌被展示后，将其标记为“镖”。有“镖”进入弃牌堆后，你可以获得之。",
+    fan_baishi: "拜师",
+    fan_baishi_info: "当你造成或受到伤害后，你可以选择一名角色，你与其手牌数较少的一方将手牌摸至与对方相同。",
+    fan_zhuanzhuan: "转转",
+    fan_zhuanzhuan_info: "出牌阶段限一次，若场上装备区有牌的角色数不少于2，你可以令这些角色同时选择一项：将装备区的一张牌置入下一名此技能目标角色的装备区；受到你造成的1点伤害。",
+    fan_daiji: "待机",
+    fan_daiji_info: "锁定技，其他角色于出牌阶段使用以你为目标的牌后，若你未响应，本阶段结束。",
+    fan_qiaoshi: "巧施",
+    fan_qiaoshi_info: "出牌阶段限一次，你可以移动场上一张装备牌，并摸等于移入的装备区的牌数张牌。然后若场上有其他装备区与此区域内的牌数相同，则将这些装备区的牌置入弃牌堆。",
+
+    fan_yinlu_effect: "路",
+    fan_yinlu: "引路",
+    fan_yinlu_info: "每轮限一次，一名角色的回合结束时，你可以弃置X张牌，令该角色执行一个额外回合，其使用上个回合未使用过的花色的牌无距离和次数限制，直到出牌阶段结束（X为4-其本回合使用过的牌的花色数）。",
+    fan_guixian: "归贤",
+    fan_guixian_info: "你使用的【杀】结算后若未造成伤害，你可以将此牌交给一名其他角色并摸一张牌。",
+    fan_zhenxiang: "真相",
+    fan_zhenxiang_cards: "真相",
+    fan_zhenxiang_info: "出牌阶段开始时，你可以将一名角色的X张牌置于其武将牌上。本阶段你使用牌指定该角色为目标时，将其武将牌上的一张牌置入弃牌堆。若如此做，你摸一张牌。本阶段结束时，若其武将牌上有牌，其获得之，然后你弃置X张牌。",
+    fan_baoshe: "报社",
+    fan_baoshe_info: "锁定技，每轮限一次，当你成为【杀】的目标时，若你的手牌数为全场最少，其他角色同时选择是否交给你一张牌。",
+    fan_zhuji: "祝祭",
+    fan_zhuji_info: "出牌阶段开始时，你可以令所有其他角色各选择是否交给你一张手牌，然后你视为使用一张以你和以此法交出牌的角色为目标的【五谷丰登】。",
+    fan_haoshi: "好事",
+    fan_haoshi_info: "出牌阶段，你可以将X张牌当一张任意普通锦囊牌使用，只能指定本回合未成为过你使用牌目标的角色为目标（X未本回合未成为过你使用牌目标的角色数）。",
+    fan_cangmi: "藏蜜",
+    fan_cangmi_info: "准备阶段，你可以将牌堆顶的X张牌和至多两张牌置于你的武将牌上（X为你武将牌上的牌数）；结束阶段，若你武将牌上的牌数大于体力值，你将这些牌分配给任意角色。",
+    fan_tonggan: "通感",
+    fan_tonggan_info: "当你一次性获得/失去至少两张牌后，你可以令一名角色摸/弃置一张牌。",
+    fan_yujie: "羽结",
+    fan_yujie_info: "出牌阶段开始时，你可以令一名手牌数少于你的角色摸两张牌，然后其交给你其中一张牌并展示之。你使用此牌后，若另一张牌不在该角色的手牌中，你摸两张牌。",
+    fan_jijiu: "疾救",
+    fan_jijiu_info: "你的回合外，你可以将一张黑色牌当【桃】使用。",
+    fan_yujie_tag: "羽结",
+    fan_liemo: "猎魔",
+    fan_liemo_info: "出牌阶段，你可以视为对一名本回合未以此法选择过的角色使用一张【火攻】，此牌结算后若未造成伤害，该角色可以交给你其展示的牌。",
+    fan_rumo: "入魔",
+    fan_rumo_info: "结束阶段，若你本回合对其他角色造成过伤害，你可以弃置这些角色各一张牌；否则，你可以和任意名本回合失去过牌的角色各摸一张牌。",
+    fan_yinling: "银翎",
+    fan_yinling_tag: "翎",
+    fan_yinling_info: "出牌阶段限一次，你可以展示两张花色相同的牌标记为“翎”，并将其交给一名其他角色。该角色使用或打出“翎”时，你与其各摸一张牌。该角色回合结束时，你获得仍在其区域内的“翎”。",
+    fan_zhenxie: "镇邪",
+    fan_zhenxie_info: "一名角色受到属性伤害时，你可以弃置该角色区域内的一张牌，若此牌为黑色，则防止此伤害。",
+    fan_xunye: "巡夜",
+    fan_xunye_info: "一名角色成为【杀】的目标后，你可以弃置至多两张牌，若该角色在你攻击范围内且不为你，其获得这些牌。此【杀】结算后：若此【杀】未造成伤害，你摸X张牌并弃置此【杀】使用者X张牌（X为你弃置的牌数）；否则，你可以令该角色摸一张牌。",
+    fan_tuoshen: "脱身",
+    fan_tuoshen_info: "每轮限一次，当你成为一张牌的非唯一目标时，你可以取消之，然后摸两张牌。",
+    fan_haigou: "海钩",
+    fan_haigou_info: "出牌阶段限一次，你可以弃置任意张牌并展示一名角色等量张手牌，该角色依次对你使用其展示的【杀】，然后你获得其余的牌。",
+    fan_baocang: "宝藏",
+    fan_baocang_info: "一名角色的结束阶段，若你已受伤且手牌数小于体力值，你摸一张牌并回复1点体力。",
+    fan_miaoxie: "妙械",
+    fan_miaoxie_info: "一名角色装备区的牌进入弃牌堆时，你摸一张牌。",
+    fan_chongya: "冲鸭",
+    fan_chongya_move: "冲鸭",
+    fan_chongya_info: `锁定技，准备阶段，若场上没有${duck}，你将${duck}置入你的装备区。出牌阶段限一次，你可以弃置X张牌，将${duck}移动至一名其他角色的装备区（将对应栏位的原有装备置入弃牌堆。X为你与该角色的距离）。${duck}进入装备区以外的区域时，将其销毁。`,
+
+    fan_hundun: "混沌",
+    fan_hundun_info: '当你造成或受到伤害后，你可以亮出牌堆顶的两张牌，获得其中一张，然后将另一张牌置入弃牌堆，并获得一个与其颜色相同的“未竟”标记。',
+    fan_suxing: "苏醒",
+    fan_suxing_info: '锁定技，你使用一张基本牌或普通锦囊牌指定目标时，移除一个此牌颜色相同的“未竟”，然后：若场上有未成为此牌目标的合法目标角色，你令其中一名角色也成为此牌的目标；否则，此牌多结算一次。',
+    fan_hundun_weijing_red: "红色未竟",
+    fan_hundun_weijing_black: "黑色未竟",
+    fan_zixu: "自叙",
+    fan_zixu_info: '结束阶段，若你本回合未造成过伤害，你可以将一张牌置入弃牌堆，获得一个与其颜色相同的“未竟”。',
     fan_lengfeng: "冷风",
     fan_lengfeng_info: "你对其他角色造成伤害时，该角色可以弃置两张牌，然后此伤害-1。",
     fan_zhaohuan: "召唤",
@@ -149,6 +282,12 @@ export function createSkillTranslate() {
     fan_bowu_info: "出牌阶段开始时，你可以展示一名其他角色一张手牌，然后你于回合内使用此类别的牌时，摸一张牌。",
     fan_xunlin: "巡林",
     fan_xunlin_info: "每回合限一次，你可以将一张♦牌当任意基本牌使用或打出。",
+    fan_jiaolian: "教练",
+    fan_jiaolian_info: `出牌阶段结束时，若本阶段你因使用而进入弃牌堆中的牌有：红色牌，你回复1点体力；黑色牌，你摸两张牌。${get.poptip("rule_chengshi")}：你可以令一名其他角色获得此技能直到其回合结束。`,
+    fan_liliang: "力量",
+    fan_liliang_info: "每轮限一次，当你受到伤害后，你摸一张牌且手牌上限+1。",
+    fan_liliang_limit: "力量",
+    fan_liliang_limit_info: "手牌上限增加。",
     fan_zhuyao_info: `锁定技，当你失去最后的手牌后，若这些牌中：有黑色牌，你令一名角色失去1点体力；有红色牌，你与【映心】角色各摸一张牌。${get.poptip("rule_chengshi")}：直到你的下个回合开始，你视为拥有${get.poptip("fan_citlali_lianying")}。`,
     fan_citlali_lianying: "连营",
     fan_citlali_lianying_info: "其他角色的回合结束时，你可以观看牌堆顶的X张牌，然后将这些牌交给任意角色（X为你本回合失去的牌数+1，至多为5）。",
@@ -230,11 +369,11 @@ export function createSkillTranslate() {
     fan_binghua_info: "蓄力技（1/4），出牌阶段限一次，你可以令一名其他角色选择一项：<br>1.直到该角色的下个回合结束，你与其计算彼此的距离均视为1，当其中一名角色使用牌指定另一名角色为目标时，可以消耗1个蓄力点并获得后者区域内的一张牌；<br>2.你与其各弃置X张【杀】，然后摸X张牌（X为你的蓄力点数且至少为1）。",
 
     fan_guiwang: "鬼王",
-    fan_guiwang_info: "蓄力技（0/5），当你造成或受到1点伤害后，获得1个蓄力点，然后选择一项：摸一张牌；移动场上一张装备牌。若你的蓄力点数量已达到上限，你可以背水：消耗所有蓄力点，弃置任意名角色区域内各一张牌。",
+    fan_guiwang_info: `蓄力技（0/5），当你造成或受到1点伤害后，获得1个蓄力点，然后选择一项：摸一张牌；移动场上一张装备牌。若你的蓄力点数量已达到上限，你可以${get.poptip("rule_beishui")}：消耗所有蓄力点，弃置任意名角色区域内各一张牌。`,
     fan_yongyi: "勇仪",
     fan_yongyi_info: "出牌阶段限一次，你可以与一名其他角色拼点，没赢的角色须选择一项：弃置装备区的一张牌；受到另一名角色造成的1点伤害。若你没赢，此技能视为未发动过。",
     fan_miaosuan: "妙算",
-    fan_miaosuan_info: `每轮开始时，你可以秘密选择一名角色，本轮结束时，若该角色本轮内回复过体力或体力值已满，你获得每种${get.poptip("rule_zhinang")}牌各一张，然后将至多等量张手牌交给该角色。${get.poptip("rule_chengshi")}：将一种不为智囊牌的锦囊牌名记录为智囊牌。`,
+    fan_miaosuan_info: `每轮开始时，你可以秘密选择一名角色。直到本轮结束，每回合结束时，若该角色本回合内回复过体力或体力值已满，你摸一张牌。${get.poptip("rule_chengshi")}：你从牌堆随机获得一张${get.poptip("rule_zhinang")}牌，然后可以将此牌交给一名其他角色。`,
     fan_haiji: "海姬",
     fan_haiji_info: "锁定技，当你造成伤害时，防止此伤害，然后令一名角色回复1点体力。",
     fan_jilv: "羁旅",
@@ -445,14 +584,13 @@ export function createSkillTranslate() {
     fan_ruyue_info: "限定技，准备阶段，你可以选择一项效果：<br>1.回复体力至上限，删除【炉火】的选项1；<br>2.失去体力至1点，在本局游戏中，你的【闪】、【桃】、【酒】均视为【火杀】，删除【炉火】的选项2.",
     fan_jianliu: "剑流",
     fan_jianliu_backup: "剑流",
-    fan_jianliu_info: "你每阶段首次获得牌后，你可以立即将其中一张牌当无距离限制的普通【杀】使用。",
+    fan_jianliu_info: "你每阶段首次获得牌后，可以将其中一张牌当无距离限制的普通【杀】使用。",
     fan_guiji: "归寂",
-    fan_guiji_info: "你使用【杀】指定目标后，可以令目标非锁定技失效直到当前回合结束，若其使用【闪】抵消此【杀】，则你可以将其所有手牌扣置于其武将牌上。该角色下次受到伤害后，其获得这些牌。",
+    fan_guiji_info: "你使用【杀】指定一名角色为目标后，可以令目标非锁定技失效直到本回合结束，然后若此【杀】未对其造成伤害，你摸一张牌。",
     fan_guiji_capture: "归寂",
     fan_guiji_silenced: "归寂·封印",
-    fan_guiji_sealed: "归寂",
     fan_xingmie: "星灭",
-    fan_xingmie_info: "限定技，准备阶段，你可以令本局游戏的【剑流】和【归寂】不能于你的回合外发动。若如此做，本局游戏内你的【杀】造成的伤害+1，那之后，你摸两张牌。",
+    fan_xingmie_info: "限定技，准备阶段，你可以令本局游戏的【剑流】和【归寂】不能于你的回合外发动。若如此做，本局游戏内你的【杀】造成的伤害+1，然后你摸两张牌。",
     fan_xingmie_buff: "星灭",
     fan_tiaoshuang: "调霜",
     fan_tiaoshuang_info: `出牌阶段开始时，你可以弃置一张牌，令一名角色获得另一名角色区域内的一张牌，那之后，若获得牌的角色：<br>手牌数不大于目标角色，该角色摸1张牌；<br>体力值不大于目标角色，该角色回复1点体力。<br>${get.poptip("rule_chengshi")}：若该角色不为你，你执行相同的效果。`,
@@ -592,14 +730,3 @@ export function createSkillTranslate() {
     fan_xianyou_info: "主公技，出牌阶段限一次，你可以弃置一名其他蜀势力角色区域内的一张牌，然后你摸两张牌。",
   };
 }
-
-characterTranslate.fan_kazuha = "枫原万叶";
-
-characterTranslate.fan_kokomi = "珊瑚宫心海";
-characterTranslate.fan_klee = "可莉";
-
-characterTranslate.fan_nicole = "尼可";
-
-characterTranslate.fan_re_zhongli = "钟离";
-
-characterTranslate.fan_wanderer = "流浪者";

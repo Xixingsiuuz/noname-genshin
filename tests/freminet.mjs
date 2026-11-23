@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+const code=fs.readFileSync('character/skills/freminet.js','utf8').replace(/^import .*;\r?\n/,'').replace('export default','globalThis.skills =');
+const pile={firstChild:null,insertBefore(c){this.top=c;}};
+const cards=[1,2,3].map(n=>({n,parentNode:pile}));
+let draws=0;
+const context={game:{updateRoundNumber(){},log(){}},ui:{cardPile:pile},get:{bottomCards(n,back){assert.equal(n,3);assert.equal(back,true);return cards;}}};
+vm.createContext(context);vm.runInContext(code,context);
+const skill=context.skills.fan_shenqian;
+assert.equal(skill.filter({isFirstTarget:true},null,'useCardToPlayered'),true);
+assert.equal(skill.filter({isFirstTarget:false},null,'useCardToPlayered'),false);
+assert.equal(skill.filter({},null,'useCardToTargeted'),true);
+const player={isIn:()=>true,draw:async()=>draws++,chooseButton(){return {set(){return this;},forResult:async()=>({links:[cards[1]]})};}};
+await skill.content({triggername:'useCardToPlayered'},{},player);
+assert.equal(pile.top,cards[1]);
+await skill.content({triggername:'useCardToTargeted'},{},player);assert.equal(draws,1);
+console.log('Freminet event and private selection simulation passed');

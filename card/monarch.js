@@ -22,6 +22,13 @@ export const monarchCards={
   const selection=player.chooseButton(["天帝：选择一张牌",shown],true)
    .set("filterButton",b=>b.link.parentNode===ui.cardPile)
    .set("ai",b=>canUse(b.link)?useValue(b.link):0);
+  // The local action controls deliberately disable native OK. Timeout AI must
+  // return its result directly rather than retrying that disabled confirmation.
+  selection.set("processAI", () => {
+   const available=shown.filter(card=>card.parentNode===ui.cardPile);
+   available.sort((a,b)=>(canUse(b)?useValue(b):0)-(canUse(a)?useValue(a):0));
+   return available.length?{bool:true,links:[available[0]]}:{bool:false};
+  });
   let control, operation;
   if(selection.isMine?.()){
    // The action buttons submit the selected card directly.

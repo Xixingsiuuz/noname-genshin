@@ -2,7 +2,6 @@ import { lib, game, get, _status } from "../../../../noname.js";
 
 const phases = new Set(["phaseZhunbei", "phaseJudge", "phaseDraw", "phaseUse", "phaseDiscard", "phaseJieshu"]);
 const phaseOf = event => event.getParent(parent => phases.has(parent.name), true);
-const sealedTag = "fan_guiji_sealed";
 const sword = card => ({ name: "sha", cards: [card], storage: { fan_jianliu: true } });
 const canUseSword = (card, player) =>
   player.getCards("h").includes(card)
@@ -90,26 +89,19 @@ export default {
     subSkill: {
       capture: {
         audio: "ext:原神/audio/skirk/skill:2",
-        trigger: { player: "shaMiss" },
+        trigger: { player: "useCardAfter" },
+        forced: true,
         locked: false,
         filter(event, player) {
-          return (!player.storage.fan_xingmie || _status.currentPhase === player)
-            && event.target.isIn() && event.target.countCards("h") > 0
-            && event.getParent("useCard").fan_guiji_targets?.includes(event.target);
+          return event.fan_guiji_targets?.some(target => !target.getAllHistory("damage",
+            damage => damage.num > 0 && damage.card === event.card && damage.getParent("useCard") === event
+          ).length);
         },
-        prompt: "归寂：是否扣置目标的所有手牌？",
-        prompt2: false,
-        check(event, player) { return get.attitude(player, event.target) < 0; },
-        logTarget: "target",
-        async content(event, trigger) {
-          const target = trigger.target;
-          if (!target.isIn() || !target.countCards("h")) return;
-          // 目标独立持有效果：封印到期及丝柯克离场均不影响日后返还。
-          target.addSkill(sealedTag);
-          await target.addToExpansion({
-            cards: target.getCards("h"), source: target, animate: "giveAuto",
-            visible: false, gaintag: [sealedTag],
-          });
+        async content(event, trigger, player) {
+          const targets = trigger.fan_guiji_targets.filter(target => !target.getAllHistory("damage",
+            damage => damage.num > 0 && damage.card === trigger.card && damage.getParent("useCard") === trigger
+          ).length);
+          await player.draw(targets.length);
         },
       },
     },
@@ -125,37 +117,6 @@ export default {
     mark: true,
     marktext: "封",
     intro: { content: "非锁定技失效，直到当前回合结束。" },
-  },
-  fan_guiji_sealed: {
-    charlotte: true,
-    trigger: { player: "damageAfter" },
-    forced: true,
-    popup: false,
-    filter(event, player) {
-      return event.num > 0 && player.isIn() && player.getExpansions(sealedTag).length > 0;
-    },
-    async content(event, trigger, player) {
-      // damageAfter 已在伤害扣血及濒死结算之后；死亡时引擎自动弃置 x 区。
-      const cards = player.getExpansions(sealedTag);
-      if (cards.length && player.isIn()) await player.gain(cards, "draw");
-      if (!player.getExpansions(sealedTag).length) player.removeSkill(sealedTag);
-    },
-    marktext: "寂",
-    intro: {
-      markcount: "expansion",
-      content(storage, player) {
-        return `共有${player.getExpansions(sealedTag).length}张扣置牌，下次受到伤害后获得。`;
-      },
-      mark(dialog, storage, player) {
-        const cards = player.getExpansions(sealedTag);
-        if (player === game.me || player.isUnderControl()) dialog.addAuto(cards);
-        else dialog.addText(`共有${cards.length}张扣置牌`);
-      },
-    },
-    onremove(player) {
-      const cards = player.getExpansions(sealedTag);
-      if (cards.length) player.loseToDiscardpile(cards);
-    },
   },
   fan_xingmie: {
     audio: "ext:原神/audio/skirk/skill:3",

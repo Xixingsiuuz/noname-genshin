@@ -59,7 +59,7 @@ def main():
             assert 0 <= left < right <= image.width
             assert 0 <= top < bottom <= image.height
             assert (right - left) * SIZE[1] == (bottom - top) * SIZE[0]
-            portrait = image.crop(box).resize(SIZE, Image.Resampling.LANCZOS)
+            portrait = ImageOps.fit(image.crop(box), SIZE, method=Image.Resampling.LANCZOS)
             portrait.save(OUTPUT / f"{name}.png", optimize=True)
         print(f"{name}: {SIZE[0]}x{SIZE[1]}")
 
