@@ -30,3 +30,12 @@ Thumbs.db
 *.pem
 *.key
 /developer-mode.local.js
+
+# Local development helpers (not required by the extension runtime)
+/tools/
+/docs/*
+!/docs/development-notes.md
+!/docs/release-*.md
+!/docs/update-*.md
+/.sync*/
+/.sync-*.py
